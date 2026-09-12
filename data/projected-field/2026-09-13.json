@@ -1,0 +1,32 @@
+{
+  "snapshotDate": "2026-09-13",
+  "status": "PROVISIONAL_RESEARCH_WATCHLIST",
+  "disclaimer": "This is a Hub projection, not Racing Victoria's official Order of Entry. It combines known ballot exemptions, current exposed class, market prominence and staying profile. It will be rebuilt after official handicaps on 17 September.",
+  "projected24": [
+    {"rank":1,"horse":"Half Yours","band":"Very likely","reason":"Defending Melbourne Cup winner; elite established Cup profile."},
+    {"rank":2,"horse":"Aeliana","band":"Very likely","reason":"Multiple Group 1 winner and leading local Cup candidate."},
+    {"rank":3,"horse":"Defiantly","band":"Qualified","reason":"Prix Kergorlay Golden Ticket winner."},
+    {"rank":4,"horse":"Tawny Port","band":"Qualified","reason":"Belmont Gold Cup Golden Ticket winner."},
+    {"rank":5,"horse":"Zakouma","band":"Qualified","reason":"Andrew Ramsden Golden Ticket winner."},
+    {"rank":6,"horse":"Shockletz","band":"Qualified","reason":"Archer Stakes Golden Ticket winner on 12 September."},
+    {"rank":7,"horse":"Stinger Glass","band":"Very likely","reason":"High-profile Japanese staying nomination."},
+    {"rank":8,"horse":"James J Braddock","band":"Very likely","reason":"Prominent international staying contender."},
+    {"rank":9,"horse":"Sir Delius","band":"Very likely","reason":"Established high-class Australian staying profile."},
+    {"rank":10,"horse":"Birdman","band":"Likely","reason":"Progressive imported stayer with strong Australian profile."},
+    {"rank":11,"horse":"Goodie Two Shoes","band":"Likely","reason":"Proven high-class staying mare from Joseph O'Brien."},
+    {"rank":12,"horse":"Light Infantry Man","band":"Likely","reason":"Elite Australian Group 1 class; stamina remains the key question."},
+    {"rank":13,"horse":"Middle Earth","band":"Likely","reason":"High-class import with strong staying credentials."},
+    {"rank":14,"horse":"River Of Stars","band":"Likely","reason":"Quality staying mare in the Waller team."},
+    {"rank":15,"horse":"Zahrann","band":"Likely","reason":"Strong European staying profile now with Ciaron Maher."},
+    {"rank":16,"horse":"Vauban","band":"Likely","reason":"Established international staying class and prior Cup exposure."},
+    {"rank":17,"horse":"Soulcombe","band":"Likely","reason":"Proven Australian staying performer with Cup credentials."},
+    {"rank":18,"horse":"Land Legend","band":"Likely","reason":"Established Australian staying form and previous Cup pathway."},
+    {"rank":19,"horse":"Highland Bling","band":"Bubble","reason":"Imported stayer with upside; handicap and declarations important."},
+    {"rank":20,"horse":"King Pedro","band":"Bubble","reason":"Progressive staying nomination with upside."},
+    {"rank":21,"horse":"The Euphrates","band":"Bubble","reason":"Staying-bred contender in a major Cups stable."},
+    {"rank":22,"horse":"Christmas Day","band":"Bubble","reason":"Northern Hemisphere 3YO with high upside but age-scale and travel uncertainty."},
+    {"rank":23,"horse":"Causeway","band":"Bubble","reason":"Northern Hemisphere 3YO; lightly exposed and highly sensitive to handicap treatment."},
+    {"rank":24,"horse":"Pinhole","band":"Bubble","reason":"Waller staying prospect in the current projection cut line."}
+  ],
+  "nextSix": ["Ohope Wins","Golden Century","Sam Hawkens","Starzintheireyes","Point Of Law","Wine Dark Sea"]
+}
