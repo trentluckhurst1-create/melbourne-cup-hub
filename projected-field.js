@@ -41,6 +41,18 @@ function projectedFieldView(){
   <div class="panel spaced-panel"><h3>Known Ballot-Exempt Horses</h3><div class="section-copy">Golden Ticket status is a qualification advantage, not the same thing as handicap merit or our projected ranking.</div>${qualificationData?`<div class="table-wrap"><table class="data-table"><thead><tr><th>Horse</th><th>Qualifying Race</th><th>Status</th></tr></thead><tbody>${qualificationData.qualified.map(x=>`<tr><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td>${x.race}</td><td>${tag(x.status.includes('uncertain')?'Qualified · uncertain':'Qualified','green')}</td></tr>`).join('')}</tbody></table></div>`:'<div class="placeholder compact">Qualification layer loading…</div>'}</div>`;
 }
 
+const projectedDashboardBase=dashboard;
+dashboard=function(){
+  const base=projectedDashboardBase();
+  if(!projectedFieldData) return base;
+  const p=projectedFieldData.projected24||[];
+  const inHorse=p.find(x=>x.rank===24)?.horse||'—';
+  const outHorse=projectedFieldData.nextSix?.[0]||'—';
+  const q=qualificationData?.qualified?.length??0;
+  const w=weightPredictions?.predictions?.length??0;
+  return base+`<section class="section-block"><div class="section-header"><div><div class="kicker">Field Pulse</div><h2>Projected Cut Line</h2><div class="section-copy">Current research projection before official handicaps.</div></div><button class="mini-button" onclick="openView('order')">Projected 24 →</button></div><div class="cut-line-strip"><div><span>PROJECTED IN #24</span><strong>${inHorse}</strong></div><div class="cut-divider">CUT</div><div><span>FIRST OUT #25</span><strong>${outHorse}</strong></div></div><div class="metric-grid spaced-panel">${metric('Projected',p.length,'Current Hub field')}${metric('Golden Tickets',q,'Known ballot exemptions')}${metric('Weights Modelled',w,'Pre-release estimates')}${metric('First Acceptances','29 Sep','Major field reduction')}${metric('Final Field','24','Cup starters')}</div></section>`;
+};
+
 const projectedRenderBase=render;
 render=function(view='dashboard'){
   if(view==='order'){
@@ -52,4 +64,4 @@ render=function(view='dashboard'){
   projectedRenderBase(view);
 };
 
-loadProjectedField();
+loadProjectedField().then(()=>{if(currentView==='dashboard')render('dashboard');});
