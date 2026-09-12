@@ -18,10 +18,10 @@ async function loadCupData(){
     const res = await fetch('./data/nominations/2026-09-01.json', {cache:'no-store'});
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     cupData = await res.json();
-    document.getElementById('updated').textContent = 'Official nominations loaded · snapshot 1 Sep 2026';
+    document.getElementById('updated-label').textContent = 'Official nominations loaded · snapshot 1 Sep 2026';
   }catch(err){
     console.error('Nomination load failed',err);
-    document.getElementById('updated').textContent = 'Nomination data unavailable';
+    document.getElementById('updated-label').textContent = 'Nomination data unavailable';
   }
 }
 
