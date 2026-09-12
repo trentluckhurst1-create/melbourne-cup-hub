@@ -1,0 +1,23 @@
+{
+  "snapshotDate": "2026-09-13",
+  "definition": "Known ballot-exempt Golden Ticket winners relevant to the 2026 Lexus Melbourne Cup as at this snapshot.",
+  "qualified": [
+    {"horse":"Whisky On The Hill","race":"Roy Higgins","location":"Flemington","status":"Qualified","note":"Domestic Golden Ticket winner."},
+    {"horse":"Zakouma","race":"Andrew Ramsden","location":"Flemington","status":"Qualified","note":"Domestic Golden Ticket winner."},
+    {"horse":"Tawny Port","race":"Belmont Gold Cup","location":"Saratoga, USA","status":"Qualified","note":"International Golden Ticket winner."},
+    {"horse":"Daiquiri Bay","race":"Ebor Handicap","location":"York, UK","status":"Qualified - participation uncertain","note":"Golden Ticket secured; trainer indicated travel to Melbourne was unlikely immediately after the race."},
+    {"horse":"Defiantly","race":"Prix Kergorlay","location":"Deauville, France","status":"Qualified","note":"First winner of the Prix Kergorlay Melbourne Cup Golden Ticket."},
+    {"horse":"Shockletz","race":"Archer Stakes","location":"Flemington","status":"Qualified","note":"Won the Archer Stakes on 12 September 2026 and is ballot-exempt."}
+  ],
+  "futureDomesticGoldenTicketRaces": [
+    {"race":"The Bart Cummings","date":"2026-10-03"},
+    {"race":"Caulfield Cup","date":"2026-10-17"},
+    {"race":"Geelong Cup","date":"2026-10-21"},
+    {"race":"Moonee Valley Gold Cup","date":"2026-10-23"},
+    {"race":"Cox Plate","date":"2026-10-24"}
+  ],
+  "sourceNotes": [
+    "Victoria Racing Club Golden Ticket Entry page",
+    "Victoria Racing Club Archer Stakes report dated 12 September 2026"
+  ]
+}
