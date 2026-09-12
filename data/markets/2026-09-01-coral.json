@@ -1,0 +1,22 @@
+{
+  "snapshotDate": "2026-09-01",
+  "bookmaker": "Coral",
+  "market": "2026 Melbourne Cup futures",
+  "source": "Racing Post Melbourne Cup nominations article published 1 September 2026",
+  "status": "Historical market snapshot - not current live odds",
+  "runners": [
+    {"horse":"Aeliana","odds":10.0},
+    {"horse":"Defiantly","odds":10.0},
+    {"horse":"Half Yours","odds":12.0},
+    {"horse":"James J Braddock","odds":14.0},
+    {"horse":"Point Of Law","odds":16.0},
+    {"horse":"Stinger Glass","odds":16.0},
+    {"horse":"Trustyourinstinct","odds":16.0},
+    {"horse":"Constitution Hill","odds":20.0},
+    {"horse":"Goodie Two Shoes","odds":20.0},
+    {"horse":"Green Spaces","odds":20.0},
+    {"horse":"Hopewell Rock","odds":20.0},
+    {"horse":"Wine Dark Sea","odds":20.0},
+    {"horse":"Zahrann","odds":20.0}
+  ]
+}
