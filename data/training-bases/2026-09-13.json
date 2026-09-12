@@ -1,0 +1,54 @@
+{
+  "snapshotDate": "2026-09-13",
+  "definition": "Current horse-specific training location. This is not the trainer's nationality, broad training region or permanent head office. It should reflect the yard/base from which the horse is currently being prepared where a reliable current source is available.",
+  "policy": {
+    "horseSpecific": true,
+    "dateStamped": true,
+    "doNotInferFromTrainerPrimaryBase": true,
+    "unknownDisplay": "Researching"
+  },
+  "bases": {
+    "Half Yours": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders / McEvoy Flemington barn reporting",
+      "confidence": "Verified horse-specific"
+    },
+    "Aeliana": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
+      "confidence": "Verified horse-specific"
+    },
+    "Birdman": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
+      "confidence": "Verified horse-specific"
+    },
+    "Light Infantry Man": {
+      "trainingBase": "Cranbourne",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
+      "confidence": "Verified horse-specific"
+    },
+    "Ohope Wins": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
+      "confidence": "Verified horse-specific"
+    },
+    "Sir Delius": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
+      "confidence": "Verified horse-specific"
+    }
+  }
+}
