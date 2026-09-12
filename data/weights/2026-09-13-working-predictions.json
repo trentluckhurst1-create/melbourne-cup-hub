@@ -1,0 +1,30 @@
+{
+  "snapshotDate": "2026-09-13",
+  "status": "WORKING_PRE_RELEASE",
+  "freezeTarget": "2026-09-16T23:59:00+10:00",
+  "method": "Horse-by-horse handicap estimate using current exposed class, Group 1 record, staying profile, likely Australian handicap treatment, historical Melbourne Cup compression, age/sex context and Northern Hemisphere three-year-old treatment. These are estimates, not official weights.",
+  "rules": {
+    "minimumTopweightKg": 59.0,
+    "minimumOlderHorseKg": 51.0,
+    "minimumThreeYearOldKg": 49.0,
+    "nh3yoSpecialHandling": true,
+    "doNotMapInternationalRatingsDirectlyToKg": true
+  },
+  "predictions": [
+    {"horse":"Half Yours","predictedKg":58.0,"rangeLow":57.5,"rangeHigh":58.5,"confidence":"Medium","tier":"Topweight contender","reason":"Reigning Melbourne Cup winner and Caulfield Cup-Melbourne Cup double winner; must rise materially from his 2025 handicap but historical Cup practice argues against automatically forcing him to 59kg."},
+    {"horse":"Light Infantry Man","predictedKg":57.5,"rangeLow":57.0,"rangeHigh":58.0,"confidence":"Medium","tier":"Upper handicap","reason":"Multiple elite Australian Group 1 performances and proven Flemington class; 3200m suitability is separate from handicap merit."},
+    {"horse":"Aeliana","predictedKg":56.5,"rangeLow":56.0,"rangeHigh":57.0,"confidence":"Medium","tier":"Upper handicap","reason":"High-class mare with multiple Group 1 wins. Mare allowance/history and lack of Melbourne Cup win keep her below an automatic 59kg anchor."},
+    {"horse":"Sir Delius","predictedKg":56.5,"rangeLow":56.0,"rangeHigh":57.0,"confidence":"Medium","tier":"Upper handicap","reason":"High-class imported stayer with strong Australian Group 1 credentials and established staying profile."},
+    {"horse":"Stinger Glass","predictedKg":56.0,"rangeLow":55.5,"rangeHigh":56.5,"confidence":"Low-Medium","tier":"Upper-middle","reason":"Japanese staying class warrants respect, but Australian Cup treatment requires translation rather than direct rating conversion."},
+    {"horse":"Defiantly","predictedKg":55.5,"rangeLow":55.0,"rangeHigh":56.0,"confidence":"Medium","tier":"Upper-middle","reason":"Prix Kergorlay winner with proven extreme-distance form and ballot exemption; likely to receive a meaningful but not crushing handicap."},
+    {"horse":"James J Braddock","predictedKg":55.0,"rangeLow":54.5,"rangeHigh":55.5,"confidence":"Low-Medium","tier":"Upper-middle","reason":"Progressive international stayer with strong market profile; estimate remains sensitive to latest European rating interpretation."},
+    {"horse":"Birdman","predictedKg":54.5,"rangeLow":54.0,"rangeHigh":55.0,"confidence":"Medium","tier":"Middle handicap","reason":"Improving imported stayer with strong Australian progression but not yet exposed at the same elite level as the upper-weight group."},
+    {"horse":"Goodie Two Shoes","predictedKg":54.0,"rangeLow":53.5,"rangeHigh":54.5,"confidence":"Medium","tier":"Middle handicap","reason":"Proven staying mare with high-class European form; likely to receive a competitive Cup weight rather than top-end impost."},
+    {"horse":"Tawny Port","predictedKg":54.0,"rangeLow":53.5,"rangeHigh":54.5,"confidence":"Low-Medium","tier":"Middle handicap","reason":"Belmont Gold Cup qualification supports staying merit, but US form requires cautious conversion into the Australian scale."},
+    {"horse":"Shockletz","predictedKg":52.5,"rangeLow":52.0,"rangeHigh":53.0,"confidence":"Medium","tier":"Light-middle","reason":"Archer Stakes win guarantees ballot exemption but does not automatically imply a large handicap; likely competitive lightweight profile."},
+    {"horse":"Zakouma","predictedKg":52.0,"rangeLow":51.5,"rangeHigh":52.5,"confidence":"Medium","tier":"Light-middle","reason":"Andrew Ramsden qualification secures a berth path; exposed class suggests a light handicap remains likely."},
+    {"horse":"Whisky On The Hill","predictedKg":51.5,"rangeLow":51.0,"rangeHigh":52.0,"confidence":"Medium","tier":"Lightweight","reason":"Roy Higgins qualification is valuable for ballot status, while handicap merit still points toward the lower end of the older-horse scale."},
+    {"horse":"Christmas Day","predictedKg":50.5,"rangeLow":49.5,"rangeHigh":51.5,"confidence":"Low","tier":"NH 3YO","reason":"Northern Hemisphere three-year-old. Must be treated on age-adjusted Cup scale; a direct older-horse international rating conversion would materially overstate the likely weight."},
+    {"horse":"Causeway","predictedKg":50.0,"rangeLow":49.0,"rangeHigh":51.0,"confidence":"Low","tier":"NH 3YO","reason":"Northern Hemisphere three-year-old treatment applies. Estimate intentionally sits near the age-adjusted lower scale until more exposed staying form is available."}
+  ]
+}
