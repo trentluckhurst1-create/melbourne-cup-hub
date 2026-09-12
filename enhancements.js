@@ -58,23 +58,27 @@ function marketsView(){
 }
 
 function confidenceTag(c){if(c==='Medium') return tag(c,'green');if(c==='Low') return tag(c,'red');return tag(c,'gold');}
+function weightStatus(x){return x.activeCupStatus?`<span class="tag red">${x.activeCupStatus}</span>`:'<span class="tag green">Modelled</span>';}
 
 function weightsView(){
   const w=weightRules;
   const p=weightPredictions;
   if(!w||!p) return '<div class="placeholder">Loading handicap framework…</div>';
-  const preds=[...(p.predictions||[])].sort((a,b)=>b.predictedKg-a.predictedKg);
-  return `<div class="section-header"><div><div class="kicker">Working Pre-Handicap Model · ${p.snapshotDate}</div><h2>Weights & Handicap</h2><div class="section-copy">These are Hub estimates, not official weights. They remain editable research until the pre-release freeze, then will be scored against Racing Victoria on 17 September.</div></div></div>
+  const preds=[...(p.predictions||[])].sort((a,b)=>b.predictedKg-a.predictedKg||a.horse.localeCompare(b.horse));
+  const covered=p.coverage?.weightsModelled??preds.length;
+  const universe=p.coverage?.officialNominees??101;
+  const anchor=p.rules?.topweightAnchorHorse||'Researching';
+  return `<div class="section-header"><div><div class="kicker">Full-Field Pre-Handicap Model · ${p.snapshotDate}</div><h2>Weights & Handicap</h2><div class="section-copy">These are Hub estimates, not official weights. The entire original nomination universe is now modelled before the pre-release freeze, then every prediction will be scored against Racing Victoria on 17 September.</div></div></div>
   <section class="metric-grid">
-    ${metric('Minimum Topweight','59.0kg','Official handicap rule')}
+    ${metric('Coverage',`${covered}/${universe}`,'Original nominees modelled')}
+    ${metric('Topweight Anchor',anchor,'Provisional 59kg scale anchor')}
     ${metric('Minimum Weight','51.0kg','Older horses')}
     ${metric('3YO Minimum','49.0kg','Age-adjusted floor')}
-    ${metric('Predictions',preds.length,'Working estimates')}
-    ${metric('Freeze','16 Sep','Before official release')}
+    ${metric('Freeze','16 Sep','23:59 Melbourne time')}
   </section>
-  <section class="profile-grid"><div class="panel"><h3>Handicap Model Rules</h3><div class="rule-list">${w.methodologyNotes.map((n,i)=>`<div class="rule-row"><span>${String(i+1).padStart(2,'0')}</span><p>${n}</p></div>`).join('')}</div></div><div class="panel"><h3>Model Discipline</h3><p class="analysis-copy">The Cup scale must contain a 59kg topweight at handicap declaration, but that does not mean the reigning winner or highest-profile mare must automatically be assigned 59kg. We estimate each horse first, then assess how Racing Victoria is likely to anchor and compress the scale.</p><p class="analysis-copy">Northern Hemisphere three-year-olds are handled separately. Their overseas ratings are not converted directly into older-horse kilograms, which avoids the inflated weights that a naive ratings-to-kg mapping can produce.</p><div class="audit-banner"><strong>Status</strong><span>Working model · not frozen · official comparison begins 17 Sep</span></div></div></section>
-  <div class="panel"><div class="panel-head"><div><h3>Working Weight Board</h3><div class="panel-sub">Estimated range shows uncertainty before official declarations.</div></div><span class="tag gold">PRE-RELEASE</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Rank</th><th>Horse</th><th>Pred.</th><th>Range</th><th>Tier</th><th>Confidence</th><th>Reasoning</th></tr></thead><tbody>${preds.map((x,i)=>`<tr><td>${i+1}</td><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td><strong>${x.predictedKg.toFixed(1)}kg</strong></td><td>${x.rangeLow.toFixed(1)}–${x.rangeHigh.toFixed(1)}</td><td>${x.tier}</td><td>${confidenceTag(x.confidence)}</td><td class="wrap-cell">${x.reason}</td></tr>`).join('')}</tbody></table></div></div>
-  <div class="panel spaced-panel"><h3>Official Audit</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>Horse</th><th>Hub Prediction</th><th>Official</th><th>Error</th><th>State</th></tr></thead><tbody>${preds.map(x=>`<tr><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td>${x.predictedKg.toFixed(1)}kg</td><td>—</td><td>—</td><td><span class="muted">Awaiting 17 Sep</span></td></tr>`).join('')}</tbody></table></div></div>`;
+  <section class="profile-grid"><div class="panel"><h3>Handicap Model Rules</h3><div class="rule-list">${w.methodologyNotes.map((n,i)=>`<div class="rule-row"><span>${String(i+1).padStart(2,'0')}</span><p>${n}</p></div>`).join('')}</div></div><div class="panel"><h3>Model Discipline</h3><p class="analysis-copy">The Cup scale must contain a 59kg topweight at handicap declaration. The working board therefore uses a provisional scale anchor rather than pretending the raw merit order can ignore Racing Victoria's declaration rule.</p><p class="analysis-copy">Northern Hemisphere three-year-olds are handled separately. Their overseas ratings are not converted directly into older-horse kilograms, which avoids the inflated weights that a naive ratings-to-kg mapping can produce.</p><p class="analysis-copy">Inactive original nominees remain visible for audit integrity, but they are clearly marked and are not treated as live Cup runners.</p><div class="audit-banner"><strong>Status</strong><span>${covered}/${universe} modelled · full-field working board · official comparison begins 17 Sep</span></div></div></section>
+  <div class="panel"><div class="panel-head"><div><h3>Working Weight Board</h3><div class="panel-sub">Estimated range shows uncertainty before official declarations.</div></div><span class="tag gold">FULL FIELD</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Rank</th><th>Horse</th><th>Pred.</th><th>Range</th><th>Tier</th><th>Confidence</th><th>Status</th><th>Reasoning</th></tr></thead><tbody>${preds.map((x,i)=>`<tr><td>${i+1}</td><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td><strong>${x.predictedKg.toFixed(1)}kg</strong></td><td>${x.rangeLow.toFixed(1)}–${x.rangeHigh.toFixed(1)}</td><td>${x.tier}</td><td>${confidenceTag(x.confidence)}</td><td>${weightStatus(x)}</td><td class="wrap-cell">${x.reason}</td></tr>`).join('')}</tbody></table></div></div>
+  <div class="panel spaced-panel"><h3>Official Audit</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>Horse</th><th>Hub Prediction</th><th>Official</th><th>Error</th><th>State</th></tr></thead><tbody>${preds.map(x=>`<tr><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td>${x.predictedKg.toFixed(1)}kg</td><td>—</td><td>—</td><td>${x.activeCupStatus?`<span class="muted">${x.activeCupStatus}</span>`:'<span class="muted">Awaiting 17 Sep</span>'}</td></tr>`).join('')}</tbody></table></div></div>`;
 }
 
 const originalRender=render;
