@@ -1,0 +1,8 @@
+{
+  "snapshotDate":"2026-09-13",
+  "universe":"Official 2026 Melbourne Cup nominations",
+  "targetRunsPerHorse":8,
+  "canonicalRatingSource":"Timeform",
+  "policy":{"noMixedRatingScales":true,"noSubscriberScraping":true,"noEstimatedTimeformValues":true,"unknownDisplay":"Researching","publicSubscriberData":false},
+  "horses":{}
+}
