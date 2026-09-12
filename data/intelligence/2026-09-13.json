@@ -1,0 +1,75 @@
+{
+  "snapshotDate": "2026-09-13",
+  "horses": {
+    "Half Yours": {
+      "ageSex": "6YO Gelding",
+      "trainingBase": "Flemington",
+      "campaignStatus": "Melbourne Cup defence campaign underway",
+      "latestNote": "Reigning Melbourne Cup winner and 2025 Caulfield Cup-Melbourne Cup double winner. Resumed in the 2026 Makybe Diva Stakes campaign at Flemington.",
+      "cupRelevance": "Defending champion; proven 3200m and elite handicap profile.",
+      "source": "VRC current spring reporting"
+    },
+    "Aeliana": {
+      "ageSex": "5YO Mare",
+      "trainingBase": "Flemington",
+      "campaignStatus": "Spring campaign active",
+      "latestNote": "Dual Group 1 winner in the Ranvet Stakes and Tancred Stakes last autumn. Cox Plate and Melbourne Cup have been identified as preferred spring targets.",
+      "cupRelevance": "Top-class mare with proven 2400m Group 1 form and a live Melbourne Cup profile.",
+      "source": "VRC / Racing.com spring reporting"
+    },
+    "Birdman": {
+      "ageSex": "6YO Gelding",
+      "trainingBase": "Flemington",
+      "campaignStatus": "Spring campaign active",
+      "latestNote": "Improved sharply in 2026 for Chris Waller, including strong Flemington form and major middle-distance performances.",
+      "cupRelevance": "Progressive imported stayer with improving Australian profile.",
+      "source": "VRC current spring reporting"
+    },
+    "Light Infantry Man": {
+      "ageSex": "8YO Gelding",
+      "trainingBase": "Cranbourne",
+      "campaignStatus": "Spring campaign active",
+      "latestNote": "Dual Australian Cup winner with an excellent Flemington record; being prepared from Ciaron Maher's Cranbourne base.",
+      "cupRelevance": "Elite Flemington performer, though 3200m suitability remains a key Cup question.",
+      "source": "VRC 2026 Makybe Diva Stakes contenders"
+    },
+    "Ohope Wins": {
+      "ageSex": "5YO Mare",
+      "trainingBase": "Flemington",
+      "campaignStatus": "Spring campaign active",
+      "latestNote": "ATC Oaks winner from the Chris Waller stable and part of his Flemington spring team.",
+      "cupRelevance": "Group 1 staying mare with upside and a profile suited to longer spring targets.",
+      "source": "VRC current spring reporting"
+    },
+    "Sir Delius": {
+      "ageSex": "6YO Horse",
+      "trainingBase": "Flemington",
+      "campaignStatus": "Spring campaign active",
+      "latestNote": "Gai Waterhouse and Adrian Bott are using Flemington as his spring base while targeting the major Melbourne features.",
+      "cupRelevance": "High-class European-bred stayer with proven Australian Group 1 form.",
+      "source": "VRC current spring reporting"
+    }
+  },
+  "events": [
+    {
+      "date": "2026-09-15",
+      "title": "Late nominations close",
+      "detail": "12 noon deadline for late entries."
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Melbourne Cup handicaps",
+      "detail": "Official weights released; Hub predicted-v-official comparison begins."
+    },
+    {
+      "date": "2026-09-29",
+      "title": "First declarations",
+      "detail": "First major field reduction and status update."
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Lexus Melbourne Cup",
+      "detail": "Flemington, 3200m, Group 1."
+    }
+  ]
+}
