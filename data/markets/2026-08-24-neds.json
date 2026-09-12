@@ -1,0 +1,21 @@
+{
+  "snapshotDate": "2026-08-24",
+  "bookmaker": "Neds",
+  "market": "2026 Melbourne Cup futures",
+  "source": "Bets.com.au market snapshot, odds stated correct 24 August 2026",
+  "status": "Historical market snapshot - not current live odds",
+  "runners": [
+    {"horse":"Aeliana","odds":10.0},
+    {"horse":"Half Yours","odds":10.0},
+    {"horse":"James J Braddock","odds":13.0},
+    {"horse":"Sir Delius","odds":13.0},
+    {"horse":"Defiantly","odds":15.0},
+    {"horse":"Green Spaces","odds":15.0},
+    {"horse":"Wine Dark Sea","odds":15.0},
+    {"horse":"Stinger Glass","odds":17.0},
+    {"horse":"Croix Du Nord","odds":21.0},
+    {"horse":"Hopewell Rock","odds":21.0},
+    {"horse":"Middle Earth","odds":21.0},
+    {"horse":"Varandir","odds":21.0}
+  ]
+}
