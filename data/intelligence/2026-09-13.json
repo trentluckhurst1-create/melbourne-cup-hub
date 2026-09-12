@@ -40,28 +40,28 @@
       "latestNote": "ATC Oaks winner from the Chris Waller stable and part of his Flemington spring team.",
       "cupRelevance": "Group 1 staying mare with upside and a profile suited to longer spring targets.",
       "source": "VRC current spring reporting"
+    },
+    "Treasurethe Moment": {
+      "ageSex": "5YO Mare",
+      "trainingBase": "Mornington",
+      "campaignStatus": "Spring campaign active",
+      "latestNote": "Four-time Group 1 winner with an exceptional staying-to-middle-distance profile; current VRC stable listing places Matt Laurie at Mornington.",
+      "cupRelevance": "Elite mare with proven 2400m-2500m credentials; stamina at 3200m and likely handicap are the key Cup questions.",
+      "source": "VRC 2026 All-Star Mile / spring reporting"
+    },
+    "She’s A Hustler": {
+      "ageSex": "6YO Mare",
+      "trainingBase": "Cranbourne",
+      "campaignStatus": "Spring campaign active",
+      "latestNote": "Entered for the Caulfield Cup, Cox Plate and Melbourne Cup and resumed into the Makybe Diva Stakes from Grahame Begg's Cranbourne operation.",
+      "cupRelevance": "Progressive mare with a strong strike rate; still needs to prove elite staying class and 3200m suitability.",
+      "source": "VRC 11 Sep 2026 / Makybe Diva Stakes contenders"
     }
   },
   "events": [
-    {
-      "date": "2026-09-15",
-      "title": "Late nominations close",
-      "detail": "12 noon deadline for late entries."
-    },
-    {
-      "date": "2026-09-17",
-      "title": "Melbourne Cup handicaps",
-      "detail": "Official weights released; Hub predicted-v-official comparison begins."
-    },
-    {
-      "date": "2026-09-29",
-      "title": "First declarations",
-      "detail": "First major field reduction and status update."
-    },
-    {
-      "date": "2026-11-03",
-      "title": "Lexus Melbourne Cup",
-      "detail": "Flemington, 3200m, Group 1."
-    }
+    {"date":"2026-09-15","title":"Late nominations close","detail":"12 noon deadline for late entries."},
+    {"date":"2026-09-17","title":"Melbourne Cup handicaps","detail":"Official weights released; Hub predicted-v-official comparison begins."},
+    {"date":"2026-09-29","title":"First declarations","detail":"First major field reduction and status update."},
+    {"date":"2026-11-03","title":"Lexus Melbourne Cup","detail":"Flemington, 3200m, Group 1."}
   ]
 }
