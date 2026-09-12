@@ -1,5 +1,6 @@
 let qualificationData=null;
 let marketSnapshot=null;
+let marketHistory=[];
 let weightRules=null;
 let weightPredictions=null;
 let extrasPromise=null;
@@ -9,9 +10,10 @@ function loadExtras(){
   extrasPromise=Promise.all([
     fetch('./data/qualification/2026-09-13.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
     fetch('./data/markets/2026-08-24-neds.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
+    fetch('./data/markets/2026-09-01-coral.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
     fetch('./data/weights/2026-handicap-rules.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
     fetch('./data/weights/2026-09-13-working-predictions.json',{cache:'no-store'}).then(r=>r.ok?r.json():null)
-  ]).then(([q,m,w,p])=>{qualificationData=q;marketSnapshot=m;weightRules=w;weightPredictions=p;(q?.qualified||[]).forEach(x=>GOLDEN_TICKETS.add(x.horse));return true;});
+  ]).then(([q,m1,m2,w,p])=>{qualificationData=q;marketSnapshot=m2||m1;marketHistory=[m1,m2].filter(Boolean);weightRules=w;weightPredictions=p;(q?.qualified||[]).forEach(x=>GOLDEN_TICKETS.add(x.horse));return true;});
   return extrasPromise;
 }
 
@@ -30,25 +32,32 @@ function qualificationView(){
   <div class="panel spaced-panel"><h3>Remaining Golden Ticket Races</h3><div class="ticket-grid">${q.futureDomesticGoldenTicketRaces.map(x=>`<div class="ticket-card"><div class="ticket-date">${new Date(x.date+'T00:00:00').toLocaleDateString('en-AU',{day:'numeric',month:'short'})}</div><strong>${x.race}</strong></div>`).join('')}</div></div>`;
 }
 
-function marketsView(){
-  const m=marketSnapshot;
-  if(!m) return '<div class="placeholder">Loading market snapshot…</div>';
-  return `<div class="section-header"><div><div class="kicker">Market History · Evidence Preserved</div><h2>Melbourne Cup Markets</h2><div class="section-copy">This first market is deliberately date-stamped rather than presented as live. New snapshots will be appended so moves and drifts can be measured properly.</div></div></div>
-  <section class="metric-grid">
-    ${metric('Snapshot','24 Aug','Neds futures')}
-    ${metric('Favourite','$10.00','Aeliana / Half Yours')}
-    ${metric('Tracked',m.runners.length,'Quoted runners in snapshot')}
-    ${metric('Live Feed','Pending','Will not fake stale prices')}
-    ${metric('History','Enabled','Snapshots retained')}
-  </section>
-  <div class="panel"><div class="panel-head"><div><h3>24 August 2026 Market</h3><div class="panel-sub">Historical snapshot — not current odds.</div></div><span class="tag gold">${m.bookmaker}</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Rank</th><th>Horse</th><th>Odds</th><th>Implied %</th><th>Status</th></tr></thead><tbody>${m.runners.map((x,i)=>`<tr><td>${i+1}</td><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td>$${x.odds.toFixed(2)}</td><td>${(100/x.odds).toFixed(1)}%</td><td>${i<2?tag('Joint favourite','green'):tag('Tracked')}</td></tr>`).join('')}</tbody></table></div></div>`;
+function movementLabel(oldOdds,newOdds){
+  if(oldOdds==null) return '<span class="muted">New quote</span>';
+  if(newOdds<oldOdds) return tag(`Firmed ${oldOdds.toFixed(0)}→${newOdds.toFixed(0)}`,'green');
+  if(newOdds>oldOdds) return tag(`Drifted ${oldOdds.toFixed(0)}→${newOdds.toFixed(0)}`,'red');
+  return '<span class="muted">Unchanged</span>';
 }
 
-function confidenceTag(c){
-  if(c==='Medium') return tag(c,'green');
-  if(c==='Low') return tag(c,'red');
-  return tag(c,'gold');
+function marketsView(){
+  const latest=marketSnapshot;
+  if(!latest) return '<div class="placeholder">Loading market snapshots…</div>';
+  const previous=marketHistory.length>1?marketHistory[marketHistory.length-2]:null;
+  const prevMap=new Map((previous?.runners||[]).map(x=>[x.horse,x.odds]));
+  const latestOfficial=(latest.runners||[]).filter(x=>horseByName(x.horse));
+  return `<div class="section-header"><div><div class="kicker">Market History · ${marketHistory.length} Snapshots Preserved</div><h2>Melbourne Cup Markets</h2><div class="section-copy">Every price board is date-stamped. We compare snapshots but never relabel historical prices as live current odds.</div></div></div>
+  <section class="metric-grid">
+    ${metric('Latest Snapshot','1 Sep','Coral futures via Racing Post')}
+    ${metric('Favourite','$10.00','Aeliana / Defiantly')}
+    ${metric('Official Nominees',latestOfficial.length,'Quoted in latest snapshot')}
+    ${metric('Snapshots',marketHistory.length,'24 Aug + 1 Sep')}
+    ${metric('Live Feed','Pending','No stale odds presented as live')}
+  </section>
+  <div class="panel"><div class="panel-head"><div><h3>1 September 2026 Market</h3><div class="panel-sub">Historical snapshot — movement compares against 24 August where the same horse was quoted.</div></div><span class="tag gold">${latest.bookmaker}</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Rank</th><th>Horse</th><th>1 Sep</th><th>24 Aug</th><th>Movement</th><th>Implied %</th></tr></thead><tbody>${latestOfficial.map((x,i)=>{const old=prevMap.get(x.horse);return `<tr><td>${i+1}</td><td class="horse">${horseLink(x.horse)}</td><td><strong>$${x.odds.toFixed(2)}</strong></td><td>${old!=null?`$${old.toFixed(2)}`:'—'}</td><td>${movementLabel(old,x.odds)}</td><td>${(100/x.odds).toFixed(1)}%</td></tr>`}).join('')}</tbody></table></div></div>
+  <div class="panel spaced-panel"><div class="panel-head"><div><h3>Snapshot Archive</h3><div class="panel-sub">Raw historical boards are retained even when a quoted horse was not in the official nomination set.</div></div></div><div class="timeline">${marketHistory.map(m=>`<div class="timeline-row"><div class="timeline-date">${new Date(m.snapshotDate+'T00:00:00').toLocaleDateString('en-AU',{day:'2-digit',month:'short'})}</div><div><strong>${m.bookmaker} · ${m.runners.length} quoted runners</strong><div class="timeline-copy">${m.status}</div></div></div>`).join('')}</div></div>`;
 }
+
+function confidenceTag(c){if(c==='Medium') return tag(c,'green');if(c==='Low') return tag(c,'red');return tag(c,'gold');}
 
 function weightsView(){
   const w=weightRules;
