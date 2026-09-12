@@ -1,11 +1,8 @@
 let matrixReady=false;
 
 function latestLeadup(name){return (leadupData?.events||[]).filter(x=>x.horse===name).sort((a,b)=>b.date.localeCompare(a.date))[0]||null;}
-function publicFormRec(name){return publicFormData?.horses?.[name]||null;}
-function tfStatusRec(name){
-  const unresolved=new Set(timeformPublicStatus?.unresolved||[]);
-  return unresolved.has(name)?'Unresolved':'Matched';
-}
+function publicFormRec(name){return formIntelData?.horses?.[name]||null;}
+function tfStatusRec(name){return privateTfMatched(name)?'Matched':'Unresolved';}
 function staminaBand(name){
   const runs=publicFormRec(name)?.runs||[];
   if(!runs.length)return 'Researching';
@@ -63,7 +60,7 @@ render=function(view='dashboard'){
  if(view==='analysis'){
    document.getElementById('page-title').textContent='Race Analysis';
    const root=document.getElementById('app-content');
-   if(!cupData||!publicFormData||!timeformPublicStatus||!weightPredictions||!projectedFieldData||!qualificationData){root.innerHTML='<div class="placeholder">Loading full-field intelligence matrix…</div>';Promise.all([loadCupData?.(),loadPublicForm?.(),loadTimeformPublicStatus?.(),loadExtras(),loadProjectedField(),loadLeadups?.()]).then(()=>render(view));return;}
+   if(!cupData||!formIntelData||!timeformStatusData||!weightPredictions||!projectedFieldData||!qualificationData){root.innerHTML='<div class="placeholder">Loading full-field intelligence matrix…</div>';Promise.all([loadFormIntel(),loadExtras(),loadProjectedField(),loadLeadups?.()]).then(()=>render(view));return;}
    root.innerHTML=intelligenceMatrixView();return;
  }
  matrixRenderBase(view);
