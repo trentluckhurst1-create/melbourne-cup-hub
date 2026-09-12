@@ -1,0 +1,31 @@
+{
+  "snapshotDate":"2026-09-13",
+  "source":"Timeform",
+  "access":"Authorised user subscription via private Codex session",
+  "publicSubscriberData":false,
+  "officialNominees":101,
+  "profilesMatched":90,
+  "profilesUnresolved":11,
+  "resolvedAmbiguousProfiles":13,
+  "protectedRatingsPublished":0,
+  "unresolvedHorses":[
+    "Darkbonee",
+    "Jenni Multabella",
+    "Jennivamoose",
+    "Johnich",
+    "Manzor Blue",
+    "Nearco Frod",
+    "Sapphire Siren",
+    "Shockletz",
+    "Tarvue",
+    "Thebudgiesmugla",
+    "Wolfgang"
+  ],
+  "policy":{
+    "privateDatasetGitIgnored":true,
+    "noNonTimeformSubstitution":true,
+    "noFabricatedRatings":true,
+    "publicSiteShowsCoverageOnly":true
+  },
+  "note":"The private extraction contains structured Timeform profile and recent-run data for matched horses. This public-safe file exposes only coverage and audit status, not subscriber-only rating values."
+}
