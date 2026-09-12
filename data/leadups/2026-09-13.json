@@ -1,0 +1,15 @@
+{
+  "snapshotDate":"2026-09-13",
+  "definition":"Dated lead-up activity for official 2026 Melbourne Cup nominees. Results and plans are preserved as separate events rather than overwritten.",
+  "events":[
+    {"date":"2026-09-12","horse":"Shockletz","type":"Result","race":"Lexus Archer Stakes","track":"Flemington","distanceM":2500,"result":"1st","status":"Golden Ticket","note":"Won by 2.25 lengths and secured ballot exemption for the Melbourne Cup.","source":"Victoria Racing Club"},
+    {"date":"2026-09-12","horse":"She’s A Hustler","type":"Result","race":"Crown Makybe Diva Stakes","track":"Flemington","distanceM":1600,"result":"5th","status":"Completed","note":"Finished fifth in the Group 1 spring opener; Melbourne Cup remains among her nominated spring targets.","source":"Racing Post / VRC"},
+    {"date":"2026-09-12","horse":"Half Yours","type":"Result","race":"Crown Makybe Diva Stakes","track":"Flemington","distanceM":1600,"result":"6th","status":"Completed","note":"Defending Melbourne Cup winner resumed with a sixth over 1600m as his staying campaign builds.","source":"Racing Post / VRC"},
+    {"date":"2026-09-12","horse":"Light Infantry Man","type":"Result","race":"Crown Makybe Diva Stakes","track":"Flemington","distanceM":1600,"result":"8th","status":"Completed","note":"Resumed over 1600m; Cup relevance remains dependent on his ability to stretch to 3200m.","source":"Racing Post / VRC"},
+    {"date":"2026-09-12","horse":"Ohope Wins","type":"Result","race":"Crown Makybe Diva Stakes","track":"Flemington","distanceM":1600,"result":"9th","status":"Completed","note":"ATC Oaks winner resumed over 1600m in open Group 1 company.","source":"Racing Post / VRC"},
+    {"date":"2026-09-12","horse":"Treasurethe Moment","type":"Result","race":"Crown Makybe Diva Stakes","track":"Flemington","distanceM":1600,"result":"10th","status":"Completed","note":"Returned in the Group 1 Makybe Diva Stakes; 2400m-2500m record keeps her relevant to staying features despite the first-up result.","source":"Racing Post / VRC"},
+    {"date":"2026-09-12","horse":"Aeliana","type":"Race Status","race":"Crown Makybe Diva Stakes","track":"Flemington","distanceM":1600,"result":"Non-runner","status":"Did not start","note":"Listed for the race but did not run.","source":"Racing Post"},
+    {"date":"2026-09-12","horse":"Birdman","type":"Race Status","race":"Crown Makybe Diva Stakes","track":"Flemington","distanceM":1600,"result":"Non-runner","status":"Did not start","note":"Listed for the race but did not run.","source":"Racing Post"},
+    {"date":"2026-09-13","horse":"Goodie Two Shoes","type":"Planned Start","race":"Curragh engagement","track":"Curragh","distanceM":null,"result":"Pending","status":"Due to race","note":"Joseph O'Brien has identified another Melbourne Cup attempt as a target if her preparation continues satisfactorily.","source":"At The Races / Joseph O'Brien stable tour"}
+  ]
+}
