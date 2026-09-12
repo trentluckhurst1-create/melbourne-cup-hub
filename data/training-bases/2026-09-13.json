@@ -5,58 +5,15 @@
     "horseSpecific": true,
     "dateStamped": true,
     "doNotInferFromTrainerPrimaryBase": true,
-    "unknownDisplay": "Researching",
-    "officialNominationIntegrity": true
+    "unknownDisplay": "Researching"
   },
   "bases": {
-    "Half Yours": {
-      "trainingBase": "Flemington",
-      "stateCountry": "VIC, Australia",
-      "verifiedDate": "2026-09-13",
-      "source": "Victoria Racing Club / Racing.com current spring reporting; campaign based at Flemington",
-      "confidence": "Verified horse-specific"
-    },
-    "Aeliana": {
-      "trainingBase": "Flemington",
-      "stateCountry": "VIC, Australia",
-      "verifiedDate": "2026-09-13",
-      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders / Flemington trackwork reporting",
-      "confidence": "Verified horse-specific"
-    },
-    "Birdman": {
-      "trainingBase": "Flemington",
-      "stateCountry": "VIC, Australia",
-      "verifiedDate": "2026-09-13",
-      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders / Flemington trackwork reporting",
-      "confidence": "Verified horse-specific"
-    },
-    "Light Infantry Man": {
-      "trainingBase": "Cranbourne",
-      "stateCountry": "VIC, Australia",
-      "verifiedDate": "2026-09-13",
-      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
-      "confidence": "Verified horse-specific"
-    },
-    "Ohope Wins": {
-      "trainingBase": "Flemington",
-      "stateCountry": "VIC, Australia",
-      "verifiedDate": "2026-09-13",
-      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders / Flemington trackwork reporting",
-      "confidence": "Verified horse-specific"
-    },
-    "Treasurethe Moment": {
-      "trainingBase": "Mornington",
-      "stateCountry": "VIC, Australia",
-      "verifiedDate": "2026-09-13",
-      "source": "Victoria Racing Club horse profile identifying Matt Laurie (Mornington)",
-      "confidence": "Verified horse-specific"
-    },
-    "She’s A Hustler": {
-      "trainingBase": "Cranbourne",
-      "stateCountry": "VIC, Australia",
-      "verifiedDate": "2026-09-13",
-      "source": "Victoria Racing Club current spring reporting / Grahame Begg Cranbourne operation",
-      "confidence": "Verified horse-specific"
-    }
+    "Half Yours": {"trainingBase":"Flemington","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders / McEvoy Flemington barn reporting","confidence":"Verified horse-specific"},
+    "Aeliana": {"trainingBase":"Flemington","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders","confidence":"Verified horse-specific"},
+    "Birdman": {"trainingBase":"Flemington","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders","confidence":"Verified horse-specific"},
+    "Light Infantry Man": {"trainingBase":"Cranbourne","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders","confidence":"Verified horse-specific"},
+    "Ohope Wins": {"trainingBase":"Flemington","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders","confidence":"Verified horse-specific"},
+    "Treasurethe Moment": {"trainingBase":"Mornington","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Victoria Racing Club - 2026 All-Star Mile contenders / current Matt Laurie Mornington stable listing","confidence":"Verified horse-specific"},
+    "She’s A Hustler": {"trainingBase":"Cranbourne","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders / 11 Sep spring report","confidence":"Verified horse-specific"}
   }
 }
