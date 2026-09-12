@@ -10,6 +10,8 @@ function loadTrainerBases(){
   return trainerBasePromise;
 }
 
+function trainerRecord(name){return (trainerBaseData?.trainers??[]).find(x=>x.trainer===name)??null;}
+
 function trainerBasesView(){
   const rows=trainerBaseData?.trainers??[];
   const intl=rows.filter(x=>x.country!=='Australia'&&x.country!=='New Zealand').length;
@@ -45,6 +47,15 @@ function bindTrainerBases(){
   }));
   search?.addEventListener('input',()=>paintTrainerBases(active,search.value)); paintTrainerBases();
 }
+
+const trainerHorseDetailBase=horseDetailView;
+horseDetailView=function(name){
+  const html=trainerHorseDetailBase(name);
+  const h=horseByName(name); if(!h)return html;
+  const tr=trainerRecord(h.trainer); if(!tr)return html;
+  const extra=`<section class="panel profile-section trainer-operation"><div class="panel-head"><div><h3>Trainer Operation</h3><div class="panel-sub">Stable geography is separate from this horse's current preparation base.</div></div></div><div class="profile-list"><div><span>Trainer</span><strong>${tr.trainer}</strong></div><div><span>Primary base</span><strong>${tr.primaryBase}</strong></div><div><span>Other bases</span><strong>${(tr.otherBases||[]).length?tr.otherBases.join(' · '):'—'}</strong></div><div><span>Horse current base</span><strong>${currentBase(name)}</strong></div><div><span>Verification</span><strong>${tr.verification}</strong></div></div></section>`;
+  return html+extra;
+};
 
 const trainerRenderBase=render;
 render=function(view='dashboard'){
