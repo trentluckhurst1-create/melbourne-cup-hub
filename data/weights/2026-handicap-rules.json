@@ -1,0 +1,21 @@
+{
+  "race":"2026 Lexus Melbourne Cup",
+  "snapshotDate":"2026-09-13",
+  "officialHandicapsDate":"2026-09-17",
+  "rules":{
+    "minimumTopweightAtDeclarationKg":59.0,
+    "minimumWeightKg":51.0,
+    "minimumWeightThreeYearOldKg":49.0,
+    "declaredWeightSpreadKg":8.0,
+    "minimumTopweightAtAcceptancesKg":57.0,
+    "raisingPolicy":"If weights need to be raised at final acceptances, Caulfield and Melbourne Cup weights are raised uniformly."
+  },
+  "methodologyNotes":[
+    "The topweight anchor is mandatory: at least one horse must be allotted 59kg when Cup handicaps are declared.",
+    "A normal ratings-to-weight conversion alone is therefore insufficient; the field must be scaled around the handicapper's selected anchor horse.",
+    "International ratings, Australian ratings, age/sex, proven Group form, staying performances and the horse's position relative to the topweight all require review.",
+    "Northern Hemisphere three-year-olds must be treated on the applicable three-year-old scale rather than as fully mature older horses.",
+    "Our pre-release estimates will be frozen before 17 September and retained after the official weights are published so prediction error can be audited."
+  ],
+  "source":"Racing Victoria Handicapping Principles and 2025-26 handicap-condition changes"
+}
