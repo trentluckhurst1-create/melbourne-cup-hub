@@ -1,0 +1,15 @@
+{
+ "snapshotDate":"2026-09-13",
+ "status":"FRAMEWORK_BUILDING",
+ "canonicalClassSource":"Timeform",
+ "minimumInputsForNumericCupRating":["currentTimeformRating","recentTimeformPerformanceHistory","predictedOrOfficialCupWeight"],
+ "components":[
+  {"id":"class","label":"Timeform Class","description":"Current Master Rating and relevant peak ability."},
+  {"id":"form","label":"Current Form","description":"Recent Timeform performance ratings, consistency and trajectory."},
+  {"id":"stamina","label":"3200m Suitability","description":"Staying evidence, distance record and stamina profile."},
+  {"id":"handicap","label":"Weight Efficiency","description":"Ability relative to Cup handicap, age and sex scale."},
+  {"id":"conditions","label":"Race Conditions","description":"Flemington, going, tempo, map and field-size suitability."},
+  {"id":"campaign","label":"Preparation","description":"Lead-up quality, timing, travel, quarantine and campaign readiness."}
+ ],
+ "rules":{"noMixedClassRatings":true,"noScoreWithoutTimeform":true,"noFakeMissingValues":true,"officialWeightsReplacePredictedAfterRelease":true}
+}
