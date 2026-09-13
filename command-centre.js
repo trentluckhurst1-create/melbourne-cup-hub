@@ -30,7 +30,8 @@ function commandCentreDashboard(){
   const topWeights=commandTopWeights();
   const gaps=commandResearchGaps();
   const internationals=commandInternational();
-  const qualified=qualificationData?.qualified||[];
+  const knownTickets=qualificationData?.qualified||[];
+  const nominatedTickets=knownTickets.filter(x=>horseByName(x.horse));
   const verifiedBases=Object.keys(trainingBaseData?.bases||{}).length;
   const tfMatched=timeformStatusData?.profilesMatched||0;
   const formLoaded=Object.values(formIntelData?.horses||{}).filter(x=>(x.runs||[]).length>0).length;
@@ -41,7 +42,7 @@ function commandCentreDashboard(){
   return `
   <section class="cc-statusbar">
     <div><span class="cc-live-dot"></span><strong>2026 MELBOURNE CUP WORKSPACE</strong></div>
-    <div class="cc-status-items"><span>${cupData?.snapshot?.totalEntries||101} nominees</span><span>${projected.length}/24 projected</span><span>${qualified.length} qualified</span><span>${c.days}d ${c.hours}h to race</span></div>
+    <div class="cc-status-items"><span>${cupData?.snapshot?.totalEntries||101} nominees</span><span>${projected.length}/24 projected</span><span>${nominatedTickets.length} nominated tickets</span><span>${c.days}d ${c.hours}h to race</span></div>
   </section>
 
   <section class="cc-metrics">
@@ -77,7 +78,8 @@ function commandCentreDashboard(){
   </section>
 
   <section class="panel cc-panel cc-qualified"><div class="cc-panel-head"><div><span class="cc-label">BALLOT EXEMPTIONS</span><h3>Golden Ticket Control</h3></div><button class="mini-button" onclick="openView('order')">Qualification</button></div>
-    <div class="cc-ticket-row">${qualified.map(x=>`<button onclick="${horseByName(x.horse)?`openHorse('${x.horse.replace(/'/g,"\\'")}')`:'void 0'}"><span>QUALIFIED</span><strong>${x.horse}</strong><em>${x.race}</em></button>`).join('')}</div>
+    <div class="cc-ticket-summary"><span>${nominatedTickets.length} official nominees with tickets</span><span>${knownTickets.length} known tickets overall</span></div>
+    <div class="cc-ticket-row">${knownTickets.map(x=>`<button class="${horseByName(x.horse)?'':'cc-ticket-nonmember'}" onclick="${horseByName(x.horse)?`openHorse('${x.horse.replace(/'/g,"\\'")}')`:'void 0'}"><span>${horseByName(x.horse)?'NOMINATED · QUALIFIED':'TICKET · NOT IN ORIGINAL 101'}</span><strong>${x.horse}</strong><em>${x.race}</em></button>`).join('')}</div>
   </section>`;
 }
 
