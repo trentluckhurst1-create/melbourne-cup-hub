@@ -3,6 +3,15 @@
   const nav=document.getElementById('nav');
   if(!nav)return;
 
+  if(!nav.querySelector('button[data-view="silks"]')){
+    const horses=nav.querySelector('button[data-view="horses"]');
+    if(horses){
+      const btn=document.createElement('button');btn.dataset.view='silks';btn.textContent='Silks & Colours';
+      btn.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentView='silks';selectedHorse=null;render('silks');});
+      horses.after(btn);
+    }
+  }
+
   const groups=[
     {before:'dashboard',label:'Workspace'},
     {before:'weights',label:'Cup Intelligence'},
@@ -29,11 +38,6 @@
   if(title)title.textContent='PRO RACING WORKSPACE · 2026';
 
   const refresh=document.getElementById('refresh-button');
-  if(refresh){
-    refresh.textContent='Sync';
-    refresh.title='Reload the latest Hub data';
-  }
-
-  const main=document.querySelector('.main');
-  if(main)main.setAttribute('role','main');
+  if(refresh){refresh.textContent='Sync';refresh.title='Reload the latest Hub data';}
+  const main=document.querySelector('.main');if(main)main.setAttribute('role','main');
 })();
