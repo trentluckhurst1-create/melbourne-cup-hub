@@ -1,0 +1,9 @@
+{
+  "provider": "Ladbrokes Australia",
+  "source": "Ladbrokes Affiliates API",
+  "status": "CONFIG_REQUIRED",
+  "live": false,
+  "fetchedAt": null,
+  "reason": "The live adapter is installed. The scheduled sync requires Entain partner identification and confirmation of republication approval before public prices are written to this feed.",
+  "runners": []
+}
