@@ -1,0 +1,8 @@
+{
+  "snapshotDate":"2026-09-13",
+  "method":"Additional exact racing-colour descriptions from public race/form records. Entries here override older partial records.",
+  "horses":{
+    "Machine Gun Gracie":{"status":"exact","colours":"Yellow, Black Horseshoe, Striped Sleeves, Quartered Cap","body":"#f1d74d","sleeves":"#f1d74d","cap":"#f1d74d","pattern":"black-horseshoe-striped-sleeves-quarter-cap","source":"Racing Australia — Royal Randwick form, 11 Apr 2026"},
+    "Thebudgiesmugla":{"status":"exact","colours":"White, Navy Blue Darby Racing Logos, Navy Blue Armbands And Cap With Logo","body":"#ffffff","sleeves":"#ffffff","cap":"#14213d","pattern":"darby-logos-armbands","source":"Racing Australia — Warwick Farm trial form, 13 Apr 2026"}
+  }
+}
