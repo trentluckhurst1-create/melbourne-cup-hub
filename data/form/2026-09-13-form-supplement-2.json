@@ -1,0 +1,40 @@
+{
+  "snapshotDate":"2026-09-13",
+  "type":"public-form-supplement",
+  "policy":{"factualOnly":true,"noEstimatedTimeformValues":true,"mergeIntoPrimaryByHorse":true},
+  "horses":{
+    "Changingoftheguard":{"runs":[
+      {"date":"2026-08-22","race":"Randwick 2000m","track":"Randwick","country":"AUS","distanceM":2000,"going":null,"classGroup":null,"finish":"8th","fieldSize":8,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"RaceHub / public race record"},
+      {"date":"2026-05-16","race":"Lexus Andrew Ramsden","track":"Flemington","country":"AUS","distanceM":2800,"going":"Good 4","classGroup":"Listed","finish":"13th","fieldSize":14,"weightCarried":"58.5kg","performanceRating":null,"timefigure":null,"source":"RaceHub / public race record"},
+      {"date":"2026-04-11","race":"Schweppes Sydney Cup","track":"Randwick","country":"AUS","distanceM":3200,"going":"Good 4","classGroup":"Group 1","finish":"1st","fieldSize":14,"weightCarried":"55.5kg","performanceRating":null,"timefigure":null,"source":"Australian Turf Club / Racing Australia / Racing NSW"},
+      {"date":"2026-04-04","race":"Chairman's Quality","track":"Randwick","country":"AUS","distanceM":2600,"going":null,"classGroup":"Group 2","finish":"9th","fieldSize":11,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"RaceHub / public race record"},
+      {"date":"2026-03-28","race":"Tancred Stakes","track":"Rosehill","country":"AUS","distanceM":2400,"going":"Soft 6","classGroup":"Group 1","finish":"7th","fieldSize":8,"weightCarried":"59.0kg","performanceRating":null,"timefigure":null,"source":"Racing NSW"},
+      {"date":"2026-03-14","race":"Sky High Stakes","track":"Rosehill","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 3","finish":"6th","fieldSize":7,"weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Racing NSW"},
+      {"date":"2026-02-28","race":"Verry Elleegant Stakes","track":"Randwick","country":"AUS","distanceM":1600,"going":"Soft 5","classGroup":"Group 1","finish":"8th","fieldSize":9,"weightCarried":"59.0kg","performanceRating":null,"timefigure":null,"source":"Racing NSW"}
+    ]},
+    "Newlook":{"runs":[
+      {"date":"2026-06-13","race":"Brisbane Cup","track":"Eagle Farm","country":"AUS","distanceM":3200,"going":null,"classGroup":"Group 2","finish":"4th","fieldSize":12,"weightCarried":"55.5kg","performanceRating":null,"timefigure":null,"source":"Public race record"},
+      {"date":"2026-04-11","race":"Schweppes Sydney Cup","track":"Randwick","country":"AUS","distanceM":3200,"going":"Good 4","classGroup":"Group 1","finish":"8th","fieldSize":14,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Racing.com / public race record"},
+      {"date":"2026-04-04","race":"Chairman's Quality","track":"Randwick","country":"AUS","distanceM":2600,"going":"Soft 7","classGroup":"Group 2","finish":"1st","fieldSize":11,"weightCarried":"53.0kg","performanceRating":null,"timefigure":null,"source":"Racing NSW"}
+    ]},
+    "Tajanis":{"runs":[
+      {"date":"2026-05-31","race":"Sportsbet Sandown Cup","track":"Sandown Lakeside","country":"AUS","distanceM":3200,"going":"Soft 7","classGroup":"Listed","finish":"3rd","fieldSize":8,"weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Racing NSW / Racing.com"},
+      {"date":"2026-04-15","race":"Doomben Handicap","track":"Doomben","country":"AUS","distanceM":2040,"going":null,"classGroup":null,"finish":"7th","fieldSize":7,"weightCarried":"58.0kg","performanceRating":null,"timefigure":null,"source":"Victoria Racing Club public form"}
+    ]},
+    "Suffolk Star":{"runs":[
+      {"date":"2026-05-16","race":"Lexus Andrew Ramsden","track":"Flemington","country":"AUS","distanceM":2800,"going":"Good 4","classGroup":"Listed","finish":"4th","fieldSize":14,"weightCarried":"58.5kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-04-15","race":"BM74 3000m","track":"Sandown Lakeside","country":"AUS","distanceM":3000,"going":"Soft 5","classGroup":"BM74","finish":"1st","fieldSize":null,"weightCarried":"58.0kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-03-11","race":"BM70 3000m","track":"Sandown Hillside","country":"AUS","distanceM":3000,"going":"Good 4","classGroup":"BM70","finish":"1st","fieldSize":null,"weightCarried":"57.5kg","performanceRating":null,"timefigure":null,"source":"Breednet"}
+    ]},
+    "Athabascan":{"runs":[
+      {"date":"2026-05-30","race":"Premier's Cup","track":"Eagle Farm","country":"AUS","distanceM":2400,"going":"Soft 5","classGroup":"Group 3","finish":"5th","fieldSize":14,"weightCarried":"55.0kg","performanceRating":null,"timefigure":null,"source":"Racing NSW"},
+      {"date":"2026-04-11","race":"Schweppes Sydney Cup","track":"Randwick","country":"AUS","distanceM":3200,"going":"Good 4","classGroup":"Group 1","finish":"4th","fieldSize":14,"weightCarried":"53.0kg","performanceRating":null,"timefigure":null,"source":"Australian Turf Club / Racing NSW"},
+      {"date":"2026-04-04","race":"Chairman's Quality","track":"Randwick","country":"AUS","distanceM":2600,"going":"Soft 7","classGroup":"Group 2","finish":"3rd","fieldSize":11,"weightCarried":"55.5kg","performanceRating":null,"timefigure":null,"source":"Racing NSW"},
+      {"date":"2026-03-21","race":"NE Manion Cup","track":"Rosehill","country":"AUS","distanceM":2400,"going":"Soft 6","classGroup":"Group 3","finish":"3rd","fieldSize":14,"weightCarried":"55.0kg","performanceRating":null,"timefigure":null,"source":"Racing NSW"}
+    ]},
+    "Soul Of Spain":{"runs":[
+      {"date":"2026-04-11","race":"Schweppes Sydney Cup","track":"Randwick","country":"AUS","distanceM":3200,"going":"Good 4","classGroup":"Group 1","finish":"2nd","fieldSize":14,"weightCarried":"54.5kg","performanceRating":null,"timefigure":null,"source":"Australian Turf Club / Racing NSW"},
+      {"date":"2026-03-28","race":"Tancred Stakes","track":"Rosehill","country":"AUS","distanceM":2400,"going":"Soft 6","classGroup":"Group 1","finish":"6th","fieldSize":8,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Racing NSW"}
+    ]}
+  }
+}
