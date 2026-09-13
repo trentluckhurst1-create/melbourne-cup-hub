@@ -28,8 +28,9 @@ function loadFormIntel(){
     fetch('./data/form/2026-09-13-form-supplement-6.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('./data/form/2026-09-13-form-supplement-7.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('./data/form/2026-09-13-form-supplement-8.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
+    fetch('./data/form/2026-09-13-form-supplement-9.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('./data/timeform/2026-09-13-public-status.json',{cache:'no-store'}).then(r=>r.ok?r.json():null)
-  ]).then(([f,supp2,supp3,supp4,supp5,supp6,supp7,supp8,s])=>{formIntelData=mergeFormDatasets(f,[supp2,supp3,supp4,supp5,supp6,supp7,supp8]);timeformStatusData=s;return formIntelData;}).catch(()=>null);
+  ]).then(([f,supp2,supp3,supp4,supp5,supp6,supp7,supp8,supp9,s])=>{formIntelData=mergeFormDatasets(f,[supp2,supp3,supp4,supp5,supp6,supp7,supp8,supp9]);timeformStatusData=s;return formIntelData;}).catch(()=>null);
   return formIntelPromise;
 }
 
