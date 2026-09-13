@@ -1,0 +1,40 @@
+{
+  "snapshotDate":"2026-09-13",
+  "sourcePolicy":"Public factual race records only. Timeform rating fields remain null in public data.",
+  "horses":{
+    "Onesmoothoperator":{"runs":[
+      {"date":"2026-02-28","race":"Blamey Stakes","track":"Flemington","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"Group 2","finish":"9th","fieldSize":null,"weightCarried":"58kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2025-11-04","race":"Melbourne Cup","track":"Flemington","country":"AUS","distanceM":3200,"going":"Soft 5","classGroup":"Group 1","finish":"16th","fieldSize":24,"weightCarried":"53kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2025-10-24","race":"Moonee Valley Gold Cup","track":"Moonee Valley","country":"AUS","distanceM":2500,"going":"Good 3","classGroup":"Group 2","finish":"1st","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2025-08-23","race":"Ebor Handicap","track":"York","country":"GB","distanceM":2800,"going":"Good to Firm","classGroup":"Handicap","finish":"19th","fieldSize":null,"weightCarried":"134lb","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2025-07-12","race":"John Smith's Silver Cup Stakes","track":"York","country":"GB","distanceM":2800,"going":"Good to Firm","classGroup":"Group 3","finish":"4th","fieldSize":null,"weightCarried":"126lb","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2025-06-28","race":"Northumberland Plate","track":"Newcastle","country":"GB","distanceM":3300,"going":"Standard","classGroup":"Handicap","finish":"8th","fieldSize":null,"weightCarried":"138lb","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2025-02-21","race":"Nad Al Sheba Trophy","track":"Meydan","country":"UAE","distanceM":2800,"going":"Good","classGroup":"Group 3","finish":"3rd","fieldSize":null,"weightCarried":"130lb","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2025-01-24","race":"Al Khail Trophy","track":"Meydan","country":"UAE","distanceM":2800,"going":"Good","classGroup":"Group 3","finish":"7th","fieldSize":null,"weightCarried":"132lb","performanceRating":null,"timefigure":null,"source":"Breednet public race record"}
+    ]},
+    "Okita Soushi":{"runs":[
+      {"date":"2026-08-29","race":"Chandon Heatherlie Stakes","track":"Caulfield","country":"AUS","distanceM":1700,"going":"Soft 6","classGroup":"Listed","finish":"16th","fieldSize":16,"weightCarried":"58.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race result"},
+      {"date":"2025-08-23","race":"Ascend Sales Trophies Hcp","track":"Moonee Valley","country":"AUS","distanceM":1523,"going":"Good 4","classGroup":null,"finish":"10th","fieldSize":null,"weightCarried":"61kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2025-01-18","race":"TAB Australian Cup Race Day BM100","track":"Flemington","country":"AUS","distanceM":2000,"going":"Good 3","classGroup":"BM100","finish":"10th","fieldSize":null,"weightCarried":"60kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2024-11-05","race":"Melbourne Cup","track":"Flemington","country":"AUS","distanceM":3200,"going":"Good 4","classGroup":"Group 1","finish":"3rd","fieldSize":null,"weightCarried":"51kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2024-10-25","race":"Moonee Valley Gold Cup","track":"Moonee Valley","country":"AUS","distanceM":2500,"going":"Good 3","classGroup":"Group 2","finish":"1st","fieldSize":null,"weightCarried":"55kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2024-10-12","race":"Herbert Power Stakes","track":"Caulfield","country":"AUS","distanceM":2400,"going":"Good 3","classGroup":"Group 2","finish":"2nd","fieldSize":null,"weightCarried":"54.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2024-09-21","race":"MRC Foundation Cup","track":"Caulfield","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 3","finish":"14th","fieldSize":null,"weightCarried":"55kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2024-08-31","race":"Quayclean Hcp","track":"Caulfield","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":null,"finish":"8th","fieldSize":null,"weightCarried":"58.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"}
+    ]},
+    "Think Giant":{"runs":[
+      {"date":"2026-08-22","race":"Sandown-Hillside R3","track":"Sandown-Hillside","country":"AUS","distanceM":2400,"going":null,"classGroup":null,"finish":"4th","fieldSize":10,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"RaceHub public form"},
+      {"date":"2026-07-18","race":"Flemington R8","track":"Flemington","country":"AUS","distanceM":2000,"going":"Soft 6","classGroup":"BM100","finish":"4th","fieldSize":13,"weightCarried":"53kg","performanceRating":null,"timefigure":null,"source":"RaceHub public form"},
+      {"date":"2026-06-27","race":"Caulfield R7","track":"Caulfield","country":"AUS","distanceM":1700,"going":"Soft 7","classGroup":"BM78","finish":"7th","fieldSize":15,"weightCarried":"61kg","performanceRating":null,"timefigure":null,"source":"RaceHub public form"},
+      {"date":"2025-09-28","race":"Cologne Open","track":"Cologne","country":"GER","distanceM":2400,"going":"Soft","classGroup":"Open","finish":"5th","fieldSize":6,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"RaceHub public form"},
+      {"date":"2025-08-15","race":"Clairefontaine Open","track":"Clairefontaine","country":"FR","distanceM":2400,"going":"Good","classGroup":"Open","finish":"3rd","fieldSize":6,"weightCarried":"57.5kg","performanceRating":null,"timefigure":null,"source":"RaceHub public form"},
+      {"date":"2025-07-24","race":"Compiegne Open","track":"Compiegne","country":"FR","distanceM":2000,"going":"Heavy","classGroup":"Open","finish":"5th","fieldSize":8,"weightCarried":"58kg","performanceRating":null,"timefigure":null,"source":"RaceHub public form"},
+      {"date":"2025-06-24","race":"Chantilly Restricted","track":"Chantilly","country":"FR","distanceM":2000,"going":"Good","classGroup":"Restricted","finish":"1st","fieldSize":6,"weightCarried":"59.5kg","performanceRating":null,"timefigure":null,"source":"RaceHub public form"},
+      {"date":"2024-10-13","race":"Cologne Open","track":"Cologne","country":"GER","distanceM":1600,"going":"Soft","classGroup":"Open","finish":"2nd","fieldSize":5,"weightCarried":"58kg","performanceRating":null,"timefigure":null,"source":"RaceHub public form"}
+    ]},
+    "Tarvue":{"runs":[
+      {"date":"2026-08-29","race":"Caulfield R1","track":"Caulfield","country":"AUS","distanceM":null,"going":null,"classGroup":null,"finish":"12th","fieldSize":null,"weightCarried":"61kg","performanceRating":null,"timefigure":null,"source":"Breednet Caulfield results"},
+      {"date":"2026-03-06","race":"Manhari Torney Night Cup","track":"Pakenham","country":"AUS","distanceM":2500,"going":null,"classGroup":"Listed","finish":"6th","fieldSize":null,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Breednet public race record"}
+    ]}
+  }
+}
