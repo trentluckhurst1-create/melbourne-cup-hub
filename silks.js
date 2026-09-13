@@ -1,6 +1,17 @@
 let cupSilksData=null;let cupSilksPromise=null;
 const silkBaseHorseLink=horseLink;
-function loadCupSilks(){if(cupSilksPromise)return cupSilksPromise;cupSilksPromise=fetch('./data/silks/2026-09-13.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{cupSilksData=d;return d}).catch(()=>null);return cupSilksPromise;}
+async function loadCupSilks(){
+ if(cupSilksPromise)return cupSilksPromise;
+ cupSilksPromise=Promise.all([
+  fetch('./data/silks/2026-09-13.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
+  fetch('./data/silks/2026-09-13-supplement-2.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
+ ]).then(([base,supp])=>{
+  if(!base)return null;
+  cupSilksData={...base,horses:{...(base.horses||{}),...(supp?.horses||{})}};
+  return cupSilksData;
+ }).catch(()=>null);
+ return cupSilksPromise;
+}
 function silkRec(name){return cupSilksData?.horses?.[name]||null;}
 function silkIcon(name,size='sm'){
  const r=silkRec(name);const state=r?.status||'researching';const cls=`silk-icon silk-${size} ${state} ${r?.pattern||''}`;
