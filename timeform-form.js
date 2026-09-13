@@ -2,12 +2,28 @@ let formIntelData=null;
 let formIntelPromise=null;
 let timeformStatusData=null;
 
+function mergeFormDatasets(primary,supplements=[]){
+  const out=primary||{horses:{}};
+  out.horses=out.horses||{};
+  for(const supplement of supplements.filter(Boolean)){
+    for(const [horse,rec] of Object.entries(supplement.horses||{})){
+      const existing=out.horses[horse]||{runs:[]};
+      const byKey=new Map((existing.runs||[]).map(r=>[`${r.date}|${r.race}|${r.track}`,r]));
+      for(const run of (rec.runs||[])) byKey.set(`${run.date}|${run.race}|${run.track}`,run);
+      existing.runs=[...byKey.values()].sort((a,b)=>(b.date||'').localeCompare(a.date||'')).slice(0,out.targetRunsPerHorse||8);
+      out.horses[horse]={...existing,...rec,runs:existing.runs};
+    }
+  }
+  return out;
+}
+
 function loadFormIntel(){
   if(formIntelPromise) return formIntelPromise;
   formIntelPromise=Promise.all([
     fetch('./data/form/2026-09-13-form-index.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
+    fetch('./data/form/2026-09-13-form-supplement-2.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('./data/timeform/2026-09-13-public-status.json',{cache:'no-store'}).then(r=>r.ok?r.json():null)
-  ]).then(([f,s])=>{formIntelData=f;timeformStatusData=s;return f;}).catch(()=>null);
+  ]).then(([f,supp,s])=>{formIntelData=mergeFormDatasets(f,[supp]);timeformStatusData=s;return formIntelData;}).catch(()=>null);
   return formIntelPromise;
 }
 
