@@ -1,9 +1,9 @@
 {
   "provider": "Ladbrokes Australia",
   "source": "Ladbrokes Affiliates API",
-  "status": "CONFIG_REQUIRED",
-  "live": false,
+  "status": "PUBLICATION_APPROVAL_REQUIRED",
   "fetchedAt": null,
-  "reason": "The live adapter is installed. The scheduled sync requires Entain partner identification and confirmation of republication approval before public prices are written to this feed.",
+  "live": false,
+  "reason": "The Ladbrokes Affiliates API terms state API information is for personal use and must not be republished without written permission from Entain Australia and New Zealand. Set LADBROKES_REPUBLICATION_APPROVED=true only after approval is held.",
   "runners": []
 }
