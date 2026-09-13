@@ -1,6 +1,7 @@
 let privateTimeformSession=null;
 let privateTfHandle=null;
 let privateTfAutoState='checking';
+let privateTfRecoveryState='idle';
 
 function tfNorm(v){return String(v??'').trim().toLowerCase().replace(/[’']/g,"'").replace(/\s+/g,' ');}
 function tfRuns(rec){return rec?.lastRuns||rec?.runs||rec?.ratedRuns||rec?.performanceRuns||[];}
@@ -19,7 +20,7 @@ function tfTimefigureValue(x){for(const k of ['timefigure','timeFigure','TF','ti
 function tfMasterValue(rec){for(const k of ['currentMasterRating','masterRating','timeformRating','rating']) if(Number.isFinite(Number(rec?.[k]))) return Number(rec[k]);return null;}
 function privateTfStats(){const hs=privateTimeformSession?.horses||{};const rows=Object.values(hs);let ratedRuns=0;rows.forEach(r=>ratedRuns+=tfRuns(r).filter(x=>tfRatingValue(x)!==null).length);return {horses:rows.length,masters:rows.filter(r=>tfMasterValue(r)!==null).length,ratedRuns};}
 
-function tfDb(){return new Promise((resolve,reject)=>{const req=indexedDB.open('melbourne-cup-hub-private',1);req.onupgradeneeded=()=>req.result.createObjectStore('files');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}
+function tfDb(){return new Promise((resolve,reject)=>{const req=indexedDB.open('melbourne-cup-hub-private',1);req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains('files'))req.result.createObjectStore('files');};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}
 async function saveTfHandle(handle){try{const db=await tfDb();await new Promise((resolve,reject)=>{const tx=db.transaction('files','readwrite');tx.objectStore('files').put(handle,'timeform-json');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);});privateTfHandle=handle;}catch(e){console.warn('Could not remember Timeform file handle',e);}}
 async function getTfHandle(){try{const db=await tfDb();return await new Promise((resolve,reject)=>{const tx=db.transaction('files','readonly');const req=tx.objectStore('files').get('timeform-json');req.onsuccess=()=>resolve(req.result||null);req.onerror=()=>reject(req.error);});}catch(e){return null;}}
 async function clearTfHandle(){try{const db=await tfDb();await new Promise((resolve,reject)=>{const tx=db.transaction('files','readwrite');tx.objectStore('files').delete('timeform-json');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);});}catch(e){}privateTfHandle=null;}
@@ -29,35 +30,77 @@ async function loadTfHandle(handle,{request=false}={}){
   let permission='granted';
   try{if(handle.queryPermission)permission=await handle.queryPermission({mode:'read'});if(permission!=='granted'&&request&&handle.requestPermission)permission=await handle.requestPermission({mode:'read'});}catch(e){permission='prompt';}
   if(permission!=='granted')return false;
-  const file=await handle.getFile();privateTimeformSession=await parseTfFile(file);privateTfHandle=handle;privateTfAutoState='loaded';return true;
+  try{
+    const file=await handle.getFile();privateTimeformSession=await parseTfFile(file);privateTfHandle=handle;privateTfAutoState='loaded';return true;
+  }catch(e){
+    if(e?.name==='NotFoundError'){privateTfAutoState='missing';await clearTfHandle();}
+    throw e;
+  }
 }
+
 async function connectTfFile(){
   try{
     if(privateTfHandle&&await loadTfHandle(privateTfHandle,{request:true})){render(currentView);return;}
     if(window.showOpenFilePicker){
       const [handle]=await window.showOpenFilePicker({id:'melbourne-cup-timeform',multiple:false,startIn:'documents',types:[{description:'Timeform JSON',accept:{'application/json':['.json']}}]});
-      await saveTfHandle(handle);await loadTfHandle(handle,{request:true});render(currentView);return;
+      const parsed=await parseTfFile(await handle.getFile());privateTimeformSession=parsed;await saveTfHandle(handle);privateTfAutoState='loaded';render(currentView);return;
     }
     document.getElementById('private-tf-file')?.click();
   }catch(err){if(err?.name!=='AbortError')alert(`Could not connect Timeform JSON: ${err.message}`);}
 }
+
+async function findTfJsonInDirectory(dirHandle,depth=0,maxDepth=7){
+  if(depth>maxDepth)return null;
+  const dirs=[];const files=[];
+  for await(const entry of dirHandle.values()){
+    if(entry.kind==='file'&&entry.name.toLowerCase().endsWith('.json'))files.push(entry);
+    else if(entry.kind==='directory')dirs.push(entry);
+  }
+  files.sort((a,b)=>{
+    const ae=a.name==='2026-09-13.json'?0:1;const be=b.name==='2026-09-13.json'?0:1;return ae-be||a.name.localeCompare(b.name);
+  });
+  for(const handle of files){
+    try{const file=await handle.getFile();if(file.size>25*1024*1024)continue;const parsed=await parseTfFile(file);const n=Object.keys(parsed.horses||{}).length;if(n>=50)return {handle,parsed,name:file.name,count:n};}catch(e){}
+  }
+  dirs.sort((a,b)=>{
+    const score=n=>/timeform|melbourne|cup|codex|document|project|work/i.test(n)?0:1;return score(a.name)-score(b.name)||a.name.localeCompare(b.name);
+  });
+  for(const child of dirs){const found=await findTfJsonInDirectory(child,depth+1,maxDepth);if(found)return found;}
+  return null;
+}
+
+async function recoverTfFromFolder(){
+  if(!window.showDirectoryPicker){alert('Folder recovery requires Chrome or Edge. Use Choose JSON instead.');return;}
+  try{
+    privateTfRecoveryState='searching';render(currentView);
+    const dir=await window.showDirectoryPicker({id:'melbourne-cup-timeform-recovery',mode:'read',startIn:'documents'});
+    const found=await findTfJsonInDirectory(dir);
+    if(!found){privateTfRecoveryState='not-found';render(currentView);alert('No private Timeform dataset was found under that folder. Choose a broader folder, such as your user folder or Documents.');return;}
+    privateTimeformSession=found.parsed;await saveTfHandle(found.handle);privateTfAutoState='loaded';privateTfRecoveryState='found';render(currentView);
+  }catch(err){privateTfRecoveryState='idle';if(err?.name!=='AbortError')alert(`Timeform recovery failed: ${err.message}`);render(currentView);}
+}
+
 async function autoLoadRememberedTf(){
   if(privateTimeformSession)return true;
   privateTfAutoState='checking';
   privateTfHandle=await getTfHandle();
   if(!privateTfHandle){privateTfAutoState='not-connected';return false;}
-  try{const ok=await loadTfHandle(privateTfHandle,{request:false});privateTfAutoState=ok?'loaded':'permission-needed';if(ok&&typeof render==='function')render(currentView);return ok;}catch(e){privateTfAutoState='error';return false;}
+  try{const ok=await loadTfHandle(privateTfHandle,{request:false});privateTfAutoState=ok?'loaded':'permission-needed';if(ok&&typeof render==='function')render(currentView);return ok;}catch(e){privateTfAutoState=e?.name==='NotFoundError'?'missing':'error';return false;}
 }
 
 function privateTfControls(){
-  const s=privateTfStats();
-  const connected=!!privateTfHandle;
-  const title=privateTimeformSession?'Timeform data loaded':connected?'Timeform file remembered':'Connect your private Timeform JSON once';
-  const sub=privateTimeformSession?`${s.horses} horses · ${s.masters} master ratings · ${s.ratedRuns} rated runs`:connected?'Click Load Timeform if browser permission is needed. Future visits will auto-load when permission remains granted.':'First connection requires browser approval. The file handle is then remembered locally on this device.';
-  const button=privateTimeformSession?'Reload Timeform':connected?'Load Timeform':'Connect Timeform';
-  return `<div class="private-tf-box"><div><span class="private-tf-kicker">PRIVATE · LOCAL FILE</span><strong>${title}</strong><em>${sub}</em></div><div class="private-tf-actions"><button class="ghost-button private-tf-load" id="private-tf-connect">${button}</button><input id="private-tf-file" type="file" accept="application/json,.json" hidden>${privateTimeformSession||connected?'<button class="ghost-button" id="private-tf-clear">Forget file</button>':''}</div></div>`;
+  const s=privateTfStats();const connected=!!privateTfHandle;
+  let title='Private Timeform JSON not connected';let sub='Use Find Timeform JSON to search an entire folder tree automatically, or Choose JSON if you already know where the file is.';
+  if(privateTfRecoveryState==='searching'){title='Searching for Timeform JSON…';sub='Scanning JSON files under the folder you selected and validating the dataset contents.';}
+  if(privateTfRecoveryState==='not-found'){title='Timeform JSON not found in that folder';sub='Choose a broader folder and run Find Timeform JSON again.';}
+  if(privateTfAutoState==='missing'){title='Remembered Timeform file no longer exists';sub='The old local file handle is dead. Recover the file from another folder or regenerate the private dataset.';}
+  if(connected&&!privateTimeformSession){title='Timeform file remembered';sub='Click Load Timeform if browser permission needs to be restored.';}
+  if(privateTimeformSession){title='Timeform data loaded';sub=`${s.horses} horses · ${s.masters} master ratings · ${s.ratedRuns} rated runs`;}
+  const primary=privateTimeformSession?'Reload Timeform':connected?'Load Timeform':'Choose JSON';
+  return `<div class="private-tf-box"><div><span class="private-tf-kicker">PRIVATE · LOCAL FILE</span><strong>${title}</strong><em>${sub}</em></div><div class="private-tf-actions">${!privateTimeformSession&&!connected?'<button class="ghost-button private-tf-find" id="private-tf-find">Find Timeform JSON</button>':''}<button class="ghost-button private-tf-load" id="private-tf-connect">${primary}</button><input id="private-tf-file" type="file" accept="application/json,.json" hidden>${privateTimeformSession||connected?'<button class="ghost-button" id="private-tf-clear">Forget file</button>':''}</div></div>`;
 }
 function bindPrivateTfControls(){
+  const find=document.getElementById('private-tf-find');if(find&&!find.dataset.bound){find.dataset.bound='1';find.onclick=recoverTfFromFolder;}
   const connect=document.getElementById('private-tf-connect');if(connect&&!connect.dataset.bound){connect.dataset.bound='1';connect.onclick=connectTfFile;}
   const input=document.getElementById('private-tf-file');if(input&&!input.dataset.bound){input.dataset.bound='1';input.addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{privateTimeformSession=await parseTfFile(f);privateTfAutoState='loaded-session-only';render(currentView);}catch(err){alert(`Could not load private Timeform JSON: ${err.message}`);}});}
   const clear=document.getElementById('private-tf-clear');if(clear)clear.onclick=async()=>{privateTimeformSession=null;await clearTfHandle();closePrivateTfPanel();render(currentView);};
@@ -72,7 +115,7 @@ function openPrivateTfPanel(horse){
   const html=`<div class="tf-modal-backdrop" id="private-tf-modal" onclick="if(event.target===this)closePrivateTfPanel()"><section class="tf-modal-panel" role="dialog" aria-modal="true" aria-label="${horse} Timeform ratings"><div class="tf-modal-head"><div><span class="private-tf-kicker">PRIVATE TIMEFORM DETAIL</span><h2>${horse}</h2><p>${rec?'Private Timeform profile loaded':'No private Timeform profile matched'}</p></div><button class="tf-modal-close" onclick="closePrivateTfPanel()" aria-label="Close">×</button></div><div class="tf-modal-metrics"><div><span>MASTER TFR</span><strong>${master??'—'}</strong></div><div><span>LATEST TFR</span><strong>${stats.last??'—'}</strong></div><div><span>PEAK WINDOW</span><strong>${stats.peak??'—'}</strong></div><div><span>AVG WINDOW</span><strong>${stats.avg??'—'}</strong></div><div><span>RATED RUNS</span><strong>${stats.count}</strong></div></div><div class="tf-modal-table"><table class="data-table"><thead><tr><th>Date</th><th>Race</th><th>Track</th><th>Dist.</th><th>Finish</th><th>TFR</th><th>Timefig</th><th>Match</th></tr></thead><tbody>${matchedRows.map(x=>`<tr><td>${x.r.date||'—'}</td><td>${x.r.race||'—'}</td><td>${x.r.track||'—'}</td><td>${x.r.distanceM?`${x.r.distanceM}m`:'—'}</td><td>${x.r.finish||'—'}</td><td class="tf-private-value">${x.rating??'—'}</td><td class="tf-private-value">${x.timefig??'—'}</td><td>${x.tr?'<span class="tf-match-ok">Matched</span>':'<span class="tf-match-miss">No join</span>'}</td></tr>`).join('')}</tbody></table></div></section></div>`;
   closePrivateTfPanel();document.body.insertAdjacentHTML('beforeend',html);document.body.classList.add('tf-modal-open');
 }
-window.openPrivateTfPanel=openPrivateTfPanel;window.closePrivateTfPanel=closePrivateTfPanel;
+window.openPrivateTfPanel=openPrivateTfPanel;window.closePrivateTfPanel=closePrivateTfPanel;window.recoverTfFromFolder=recoverTfFromFolder;
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closePrivateTfPanel();});
 
 const publicTimeformView=timeformView;
