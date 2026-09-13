@@ -1,4 +1,13 @@
 let internationalReady=false;
+let internationalPrepData=null;
+let internationalPrepPromise=null;
+
+function loadInternationalPrep(){
+  if(internationalPrepPromise)return internationalPrepPromise;
+  internationalPrepPromise=fetch('./data/intelligence/2026-09-13-international-preparation.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{internationalPrepData=d;return d;}).catch(()=>null);
+  return internationalPrepPromise;
+}
+function prepRecord(name){return internationalPrepData?.horses?.[name]||null;}
 
 function latestLeadupFor(name){
   const events=(leadupData?.events||[]).filter(e=>e.horse===name).sort((a,b)=>String(b.date).localeCompare(String(a.date)));
@@ -16,11 +25,12 @@ function internationalRaidersView(){
   const withBase=horses.filter(h=>baseRecord(h.horse)).length;
   const withWeight=horses.filter(h=>weightRec(h.horse)).length;
   const projected=horses.filter(h=>projectedRec(h.horse)).length;
+  const prepVerified=horses.filter(h=>prepRecord(h.horse)).length;
   const ireland=horses.filter(h=>['Aidan O’Brien','Joseph O’Brien','Emmet Mullins'].includes(h.trainer)).length;
-  return `<div class="section-header"><div><div class="kicker">23 Overseas-Trained Nominations</div><h2>International Raiders</h2><div class="section-copy">One board for every overseas-trained Melbourne Cup nomination: trainer base, current horse location, qualification, likely handicap, projected field position and latest lead-up evidence.</div></div></div>
-  <section class="metric-grid">${metric('International',horses.length,'Official nominees')}${metric('Ireland',ireland,'Aidan / Joseph O’Brien + Emmet Mullins')}${metric('Current Base Verified',withBase,'Horse-specific, not trainer HQ')}${metric('Weights Modelled',withWeight,'Hub working estimates')}${metric('Projected 24',projected,'Current research watchlist')}</section>
-  <div class="panel"><div class="panel-head"><div><h3>International Contender Board</h3><div class="panel-sub">Current location remains “Researching” unless verified for the individual horse.</div></div><span class="tag gold">LIVE RESEARCH</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>#</th><th>Horse</th><th>Trainer</th><th>Trainer Base</th><th>Current Horse Base</th><th>Weight</th><th>Projected</th><th>Qualification</th><th>Latest Lead-up</th></tr></thead><tbody>${horses.map(h=>{const tr=trainerRecord(h.trainer);const w=weightRec(h.horse);const p=projectedRec(h.horse);const q=qualificationFor(h.horse);const l=latestLeadupFor(h.horse);return `<tr><td>${h.nominationNumber}</td><td class="horse">${horseLink(h.horse)}</td><td>${h.trainer}</td><td>${tr?.primaryBase||'Researching'}</td><td>${baseCell(h.horse)}</td><td>${w?`${Number(w.predictedKg).toFixed(1)}kg`:'—'}</td><td>${p?`#${p.rank} · ${p.band||''}`:'—'}</td><td>${q?tag(q.status||'Qualified','green'):'<span class="muted">Standard ballot</span>'}</td><td>${l?`${l.date} · ${l.race} · ${l.result||l.status}`:'<span class="muted">Researching</span>'}</td></tr>`}).join('')}</tbody></table></div></div>
-  <section class="profile-grid"><div class="panel"><h3>International Monitoring</h3><div class="rule-list"><div class="rule-row"><span>01</span><p>Track European and Japanese preparation races without assuming participation.</p></div><div class="rule-row"><span>02</span><p>Separate trainer headquarters from each horse's actual current preparation location.</p></div><div class="rule-row"><span>03</span><p>Record quarantine, travel and CT/veterinary status only when confirmed.</p></div><div class="rule-row"><span>04</span><p>Use Timeform as the common class scale once the private authorised dataset is joined.</p></div></div></div><div class="panel"><h3>Travel & Vet Windows</h3><div class="profile-list"><div><span>Shipment 1 quarantine / CT</span><strong>3–10 Oct</strong></div><div><span>Shipment 2 quarantine / CT</span><strong>17–24 Oct</strong></div><div><span>Pre-Melbourne CT window</span><strong>16–29 Oct</strong></div><div><span>Vet inspection #1</span><strong>29–30 Oct</strong></div><div><span>Vet inspection #2</span><strong>2 Nov</strong></div></div></div></section>`;
+  return `<div class="section-header"><div><div class="kicker">23 Overseas-Trained Nominations</div><h2>International Raiders</h2><div class="section-copy">One board for every overseas-trained Melbourne Cup nomination: trainer base, current horse location, preparation/travel status, qualification, likely handicap, projected field position and latest lead-up evidence.</div></div></div>
+  <section class="metric-grid">${metric('International',horses.length,'Official nominees')}${metric('Ireland',ireland,'Aidan / Joseph O’Brien + Emmet Mullins')}${metric('Current Base Verified',withBase,'Horse-specific, not trainer HQ')}${metric('Prep Status',prepVerified,'Verified campaign records')}${metric('Projected 24',projected,'Current research watchlist')}</section>
+  <div class="panel"><div class="panel-head"><div><h3>International Contender Board</h3><div class="panel-sub">Current location remains “Researching” unless verified for the individual horse. Campaign status does not imply confirmed travel unless the source says so.</div></div><span class="tag gold">LIVE RESEARCH</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>#</th><th>Horse</th><th>Trainer</th><th>Trainer Base</th><th>Current Horse Base</th><th>Prep Status</th><th>Weight</th><th>Projected</th><th>Qualification</th><th>Latest Lead-up</th></tr></thead><tbody>${horses.map(h=>{const tr=trainerRecord(h.trainer);const w=weightRec(h.horse);const p=projectedRec(h.horse);const q=qualificationFor(h.horse);const l=latestLeadupFor(h.horse);const prep=prepRecord(h.horse);return `<tr><td>${h.nominationNumber}</td><td class="horse">${horseLink(h.horse)}</td><td>${h.trainer}</td><td>${tr?.primaryBase||'Researching'}</td><td>${baseCell(h.horse)}</td><td class="wrap-cell">${prep?`${prep.campaignStatus}<br><span class="muted">${prep.nextRun}</span>`:'<span class="muted">Researching</span>'}</td><td>${w?`${Number(w.predictedKg).toFixed(1)}kg`:'—'}</td><td>${p?`#${p.rank} · ${p.band||''}`:'—'}</td><td>${q?tag(q.status||'Qualified','green'):'<span class="muted">Standard ballot</span>'}</td><td>${l?`${l.date} · ${l.race} · ${l.result||l.status}`:'<span class="muted">Researching</span>'}</td></tr>`}).join('')}</tbody></table></div></div>
+  <section class="profile-grid"><div class="panel"><h3>International Monitoring</h3><div class="rule-list"><div class="rule-row"><span>01</span><p>Track European and Japanese preparation races without assuming participation.</p></div><div class="rule-row"><span>02</span><p>Separate trainer headquarters from each horse's actual current preparation location.</p></div><div class="rule-row"><span>03</span><p>Record quarantine, travel and CT/veterinary status only when confirmed.</p></div><div class="rule-row"><span>04</span><p>Distinguish a confirmed traveller from a horse for whom Melbourne remains only an option.</p></div><div class="rule-row"><span>05</span><p>Use Timeform as the common class scale once the private authorised dataset is joined.</p></div></div></div><div class="panel"><h3>Travel & Vet Windows</h3><div class="profile-list"><div><span>Shipment 1 quarantine / CT</span><strong>3–10 Oct</strong></div><div><span>Shipment 2 quarantine / CT</span><strong>17–24 Oct</strong></div><div><span>Pre-Melbourne CT window</span><strong>16–29 Oct</strong></div><div><span>Vet inspection #1</span><strong>29–30 Oct</strong></div><div><span>Vet inspection #2</span><strong>2 Nov</strong></div></div></div></section>`;
 }
 
 const internationalRenderBase=render;
@@ -33,8 +43,10 @@ render=function(view='dashboard'){
     if(!leadupData) pending.push(loadLeadups());
     if(!qualificationData||!weightPredictions) pending.push(loadExtras());
     if(!projectedFieldData) pending.push(loadProjectedField());
+    if(!internationalPrepData) pending.push(loadInternationalPrep());
     if(pending.length){root.innerHTML='<div class="placeholder">Loading international intelligence…</div>';Promise.all(pending).then(()=>render(view));return;}
     root.innerHTML=internationalRaidersView();return;
   }
   internationalRenderBase(view);
 };
+loadInternationalPrep();
