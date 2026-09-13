@@ -1,0 +1,16 @@
+{
+  "snapshotDate":"2026-09-13",
+  "method":"Further exact racing-colour descriptions verified from public Australian race/form records. Exact entries override earlier partial or unresolved records.",
+  "horses":{
+    "Aethelflaed":{"status":"exact","colours":"Black, White Stars, White Sleeves, Orange Armband And Cap","body":"#111111","sleeves":"#ffffff","cap":"#f07c24","pattern":"white-stars-orange-armband-cap","source":"Flemington printable form guide — 4 Nov 2023; ownership M C Goodson & D D Perron"},
+    "Darkbonee":{"status":"exact","colours":"Green And Yellow Checks, Striped Sleeves, Seams Cap","body":"#16834a","sleeves":"#f1d74d","cap":"#16834a","pattern":"green-yellow-checks-striped-sleeves","source":"Racing Australia — Flemington form, 17 Jan 2026"},
+    "Grand Pierro":{"status":"exact","colours":"Black, Old Gold Star, Checked Sleeves And Cap","body":"#111111","sleeves":"#b28b35","cap":"#111111","pattern":"old-gold-star-checked-sleeves-cap","source":"Sportsbet/Punters form record — Grand Syndicates Banjo"},
+    "Male Model":{"status":"exact","colours":"Bottle Green, White Dollar Sign, Bottle Green And White Hooped Sleeves, White Cap","body":"#0f5132","sleeves":"#ffffff","cap":"#ffffff","pattern":"white-dollar-hooped-sleeves","source":"Ballarat printable form guide — John Thom ownership"},
+    "Manzor Blue":{"status":"exact","colours":"Navy Blue, White Band With Navy Blue And Red Stylised Logo Front And Back, White Armbands And Cap","body":"#14213d","sleeves":"#14213d","cap":"#ffffff","pattern":"white-band-logo-armbands","source":"NZ public form record / Sportsbet Form — Go Racing colours"},
+    "Mr Monaco":{"status":"exact","colours":"Red, Blueblood Logo, Red Sleeves, Blueblood Logo, Red And White Star Cap","body":"#c92a2a","sleeves":"#c92a2a","cap":"#c92a2a","pattern":"blueblood-logo-star-cap","source":"Wizard of Odds — Sydney Cup form, 11 Apr 2026"},
+    "Nearco Frod":{"status":"exact","colours":"Navy Blue, Gold Hoops, White Sleeves And Cap","body":"#14213d","sleeves":"#ffffff","cap":"#ffffff","pattern":"gold-hoops","source":"Racing Australia / TAB form — OTI Racing, 2026"},
+    "Pounding":{"status":"exact","colours":"White, Red Gatecrasher, Royal Blue And White Spots Sleeves And Cap","body":"#ffffff","sleeves":"#1456a0","cap":"#1456a0","pattern":"red-gatecrasher-blue-white-spots","source":"Public Flemington form guide — Rosemont/Wylie Dalziel ownership"},
+    "Zahrann":{"status":"exact","colours":"Navy Blue, Pale Yellow Spots, Halved Sleeves, Quartered Cap","body":"#14213d","sleeves":"#f1df83","cap":"#14213d","pattern":"yellow-spots-halved","source":"Sportsbet public Bendigo form guide, 2 May 2026"},
+    "Soulcombe":{"status":"partial","colours":"Navy Blue And Pale Yellow Spots Kheir ownership colours; exact current sleeve/cap arrangement still being checked","body":"#14213d","sleeves":"#f1df83","cap":"#14213d","pattern":"kheir-blue-yellow","source":"Racing.com Kheir ownership colours plus public Soulcombe racecards"}
+  }
+}
