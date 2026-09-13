@@ -1,0 +1,85 @@
+{
+  "snapshotDate": "2026-09-13",
+  "sourcePolicy": "Public factual race records only. Timeform performanceRating/timefigure fields intentionally null; subscriber-only ratings remain private.",
+  "horses": {
+    "Nearco Frod": {
+      "runs": [
+        {"date":"2026-08-22","race":"McMahon's Dairy Hcp","track":"Sandown-Hillside","country":"AUS","distanceM":2400,"going":"Heavy 8","classGroup":null,"finish":"1st","fieldSize":null,"weightCarried":"54kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-08-01","race":"TAB We're On","track":"Flemington","country":"AUS","distanceM":2520,"going":"Good 4","classGroup":"BM84","finish":"1st","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-07-15","race":"Thoroughbred Club Of Australia","track":"Sandown-Hillside","country":"AUS","distanceM":2400,"going":"Heavy 9","classGroup":"BM74","finish":"1st","fieldSize":null,"weightCarried":"59.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-07-01","race":"Evergreen Turf","track":"Sandown-Lakeside","country":"AUS","distanceM":2400,"going":"Heavy 9","classGroup":"BM74","finish":"1st","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-06-21","race":"Cloudcon Construction Software","track":"Cranbourne","country":"AUS","distanceM":2025,"going":"Soft 7","classGroup":"BM66","finish":"2nd","fieldSize":null,"weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-05-29","race":"Freemantle Feeds","track":"Pakenham","country":"AUS","distanceM":2000,"going":"Heavy 8","classGroup":"BM62","finish":"3rd","fieldSize":null,"weightCarried":"61kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2025-07-05","race":"Mahogany Challenge Final","track":"Flemington","country":"AUS","distanceM":2500,"going":"Soft 5","classGroup":null,"finish":"9th","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2025-06-21","race":"Ken Cox Hcp","track":"Flemington","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":null,"finish":"8th","fieldSize":null,"weightCarried":"58.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"}
+      ]
+    },
+    "Sapphire Siren": {
+      "runs": [
+        {"date":"2026-08-19","race":"Sportsbet Jockey Watch","track":"Sandown-Lakeside","country":"AUS","distanceM":1600,"going":"Soft 7","classGroup":"BM70","finish":"1st","fieldSize":null,"weightCarried":"59.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-03-25","race":"LockettLED.au","track":"Sandown-Lakeside","country":"AUS","distanceM":2100,"going":"Soft 5","classGroup":"BM74","finish":"1st","fieldSize":null,"weightCarried":"55kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-02-26","race":"Ladbrokes Future Stars Series Final Hcp","track":"Pakenham","country":"AUS","distanceM":1400,"going":"Good 4","classGroup":"Class 3","finish":"3rd","fieldSize":null,"weightCarried":"55.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-01-29","race":"Ladbrokes Future Stars Series Heat 6 Mdn Plate","track":"Pakenham","country":"AUS","distanceM":1200,"going":"Good 4","classGroup":"Maiden","finish":"1st","fieldSize":null,"weightCarried":"57.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2025-06-26","race":"Bendigo Magazine Mdn Plate","track":"Bendigo","country":"AUS","distanceM":1300,"going":"Heavy 8","classGroup":"Maiden","finish":"3rd","fieldSize":null,"weightCarried":"57.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"}
+      ]
+    },
+    "Strictly Business": {
+      "runs": [
+        {"date":"2026-05-02","race":"South Australian Derby","track":"Morphettville","country":"AUS","distanceM":2518,"going":"Soft 7","classGroup":"Group 1","finish":"2nd","fieldSize":null,"weightCarried":"54.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-04-25","race":"Australasian Oaks","track":"Morphettville","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 1","finish":"13th","fieldSize":null,"weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-04-03","race":"AC Accounting Country Oaks","track":"Ballarat","country":"AUS","distanceM":2000,"going":"Good 3","classGroup":null,"finish":"8th","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-03-21","race":"Alexandra Stakes","track":"Caulfield","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"Group 3","finish":"5th","fieldSize":null,"weightCarried":"60kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2025-11-06","race":"Crown Oaks","track":"Flemington","country":"AUS","distanceM":2500,"going":"Good 3","classGroup":"Group 1","finish":"1st","fieldSize":null,"weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2025-11-01","race":"Wakeful Stakes","track":"Flemington","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 2","finish":"2nd","fieldSize":null,"weightCarried":"55kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2025-10-24","race":"Tooheys Form-Crete Mdn Plate","track":"Ballarat","country":"AUS","distanceM":1400,"going":"Soft 5","classGroup":"Maiden","finish":"1st","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"}
+      ]
+    },
+    "Sir Chartwell": {
+      "runs": [
+        {"date":"2026-05-31","race":"Sandown Cup","track":"Sandown-Lakeside","country":"AUS","distanceM":3200,"going":"Soft 7","classGroup":"Listed","finish":"5th","fieldSize":null,"weightCarried":"55kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-05-16","race":"Andrew Ramsden Plate","track":"Flemington","country":"AUS","distanceM":2800,"going":"Good 4","classGroup":"Listed","finish":"3rd","fieldSize":null,"weightCarried":"58.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-04-25","race":"TAB We're On","track":"Flemington","country":"AUS","distanceM":2500,"going":"Good 4","classGroup":"BM84","finish":"4th","fieldSize":null,"weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-03-28","race":"Roy Higgins","track":"Flemington","country":"AUS","distanceM":2600,"going":"Soft 7","classGroup":"Listed","finish":"5th","fieldSize":null,"weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-03-14","race":"DCE","track":"Caulfield","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"BM84","finish":"6th","fieldSize":null,"weightCarried":"58.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-02-28","race":"Asahi Super Dry","track":"Randwick","country":"AUS","distanceM":2000,"going":"Soft 6","classGroup":"BM88","finish":"10th","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"}
+      ]
+    },
+    "Portland": {
+      "runs": [
+        {"date":"2026-06-13","race":"The Queen Elizabeth II Cup","track":"Rosehill","country":"AUS","distanceM":2400,"going":"Soft 5","classGroup":"Listed","finish":"5th","fieldSize":null,"weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-05-30","race":"Lord Mayor's Cup","track":"Rosehill","country":"AUS","distanceM":2000,"going":null,"classGroup":"Listed","finish":"1st","fieldSize":null,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Breednet public stakes record"},
+        {"date":"2026-03-28","race":"Neville Sellwood Stakes","track":"Rosehill","country":"AUS","distanceM":2000,"going":"Soft 7","classGroup":"Group 2","finish":"3rd","fieldSize":null,"weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"}
+      ]
+    },
+    "Manzor Blue": {
+      "runs": [
+        {"date":"2026-08-22","race":"Charlie Whyte Hcp","track":"Hastings","country":"NZ","distanceM":1600,"going":"Heavy 8","classGroup":null,"finish":"4th","fieldSize":null,"weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-01-17","race":"Wellington Cup","track":"Trentham","country":"NZ","distanceM":3200,"going":null,"classGroup":"Group 3","finish":"1st","fieldSize":null,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Breednet stakes record"},
+        {"date":"2026-03-07","race":"Auckland Cup","track":"Ellerslie","country":"NZ","distanceM":3200,"going":null,"classGroup":"Group 2","finish":"2nd","fieldSize":null,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Breednet stakes record"}
+      ]
+    },
+    "Wolfgang": {
+      "runs": [
+        {"date":"2026-08-28","race":"Saddlery Warehouse","track":"Cambridge Synthetic","country":"NZ","distanceM":1550,"going":"Synthetic","classGroup":"BM87","finish":"1st","fieldSize":null,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-03-21","race":"NZ St Leger","track":"Trentham","country":"NZ","distanceM":2500,"going":"Soft 5","classGroup":"Listed","finish":"12th","fieldSize":null,"weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-03-07","race":"Multi Ethnic Xtravaganza Pasifika Hcp","track":"New Plymouth Raceway","country":"NZ","distanceM":2000,"going":"Soft 6","classGroup":null,"finish":"7th","fieldSize":null,"weightCarried":"60kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2025-11-15","race":"New Zealand Cup","track":"Riccarton Park","country":"NZ","distanceM":3200,"going":null,"classGroup":"Group 3","finish":"12th","fieldSize":null,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2025-01-18","race":"Wellington Cup","track":"Trentham","country":"NZ","distanceM":3200,"going":null,"classGroup":"Group 3","finish":"1st","fieldSize":null,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Breednet / Mapperley Stud report"}
+      ]
+    },
+    "Zahrann": {
+      "runs": [
+        {"date":"2026-06-06","race":"Flemington Community Plate","track":"Flemington","country":"AUS","distanceM":2000,"going":"Heavy 8","classGroup":"BM100","finish":"3rd","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+        {"date":"2026-05-16","race":"L.V. Lachal","track":"Flemington","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"BM100","finish":"5th","fieldSize":null,"weightCarried":"60kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"}
+      ]
+    },
+    "Point Of Law": {
+      "runs": [
+        {"date":"2026-07-09","race":"Bahrain Trophy Stakes","track":"Newmarket","country":"GB","distanceM":2615,"going":"Good to Firm","classGroup":"Group 3","finish":"1st","fieldSize":5,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"At The Races public form"},
+        {"date":"2026-06-17","race":"Queen's Vase","track":"Ascot","country":"GB","distanceM":2816,"going":"Good to Firm","classGroup":"Group 2","finish":"4th","fieldSize":11,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"At The Races public form"},
+        {"date":"2026-05-15","race":"Coolmore City Of Troy EBF Maiden Stakes","track":"Newbury","country":"GB","distanceM":2012,"going":"Good","classGroup":"Class 3","finish":"1st","fieldSize":9,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"At The Races public form"},
+        {"date":"2026-04-11","race":"TigerBet.co.uk National Extra Places Paid Novice Stakes","track":"Yarmouth","country":"GB","distanceM":2033,"going":"Good","classGroup":"Class 3","finish":"2nd","fieldSize":5,"weightCarried":"9-4","performanceRating":null,"timefigure":null,"source":"Timeform public profile / At The Races public form"}
+      ]
+    }
+  }
+}
