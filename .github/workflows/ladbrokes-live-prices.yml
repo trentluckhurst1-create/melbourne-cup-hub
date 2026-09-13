@@ -2,6 +2,10 @@ name: Ladbrokes Live Prices
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/fetch-ladbrokes-live.mjs'
+      - '.github/workflows/ladbrokes-live-prices.yml'
   schedule:
     - cron: '*/10 * * * *'
 
