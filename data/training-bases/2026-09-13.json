@@ -20,6 +20,7 @@
     "Land Legend": {"trainingBase":"Cranbourne","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Racing Australia 2026 Cranbourne jump-out records - Land Legend for Ciaron Maher","confidence":"Verified horse-specific"},
     "Shockletz": {"trainingBase":"Cranbourne","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Breednet current horse profile / Racing NSW current form - Shockletz, Ciaron Maher, Cranbourne","confidence":"Verified horse-specific"},
     "Highland Bling": {"trainingBase":"Pakenham","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"OTI Racing current horse profile / Breednet - Phillip & Tommy Stokes, Pakenham","confidence":"Verified horse-specific"},
-    "King Pedro": {"trainingBase":"Randwick","stateCountry":"NSW, Australia","verifiedDate":"2026-09-13","source":"OTI Racing 12 Aug 2026 spring update - King Pedro back in work at Randwick","confidence":"Verified horse-specific"}
+    "King Pedro": {"trainingBase":"Randwick","stateCountry":"NSW, Australia","verifiedDate":"2026-09-13","source":"OTI Racing 12 Aug 2026 spring update - King Pedro back in work at Randwick","confidence":"Verified horse-specific"},
+    "Soulcombe": {"trainingBase":"Flemington","stateCountry":"VIC, Australia","verifiedDate":"2026-09-13","source":"Racing.com 13 Apr 2026 - owner Ozzie Kheir confirmed Soulcombe back with Chris Waller at Flemington; subsequent 29 Aug race return confirms active campaign","confidence":"Verified horse-specific"}
   }
 }
