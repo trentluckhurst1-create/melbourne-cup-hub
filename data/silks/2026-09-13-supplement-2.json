@@ -1,0 +1,18 @@
+{
+  "snapshotDate":"2026-09-13",
+  "method":"Exact racing-colour descriptions transcribed from public race/form records. These records override earlier partial entries for the same horse.",
+  "horses":{
+    "Land Legend":{"status":"exact","colours":"White, Red Epaulettes And Armbands, Red And White Striped Cap, Red Pom Pom","body":"#ffffff","sleeves":"#ffffff","cap":"#ffffff","pattern":"red-epaulettes-armbands-striped-cap","source":"Racing Australia — Caulfield form, 9 May 2026"},
+    "King Pedro":{"status":"exact","colours":"Navy Blue, Gold Hoops, White Sleeves And Cap","body":"#14213d","sleeves":"#ffffff","cap":"#ffffff","pattern":"gold-hoops","source":"Racing NSW — Warwick Farm trial form, 3 Sep 2026"},
+    "Light Infantry Man":{"status":"exact","colours":"Navy Blue, Pale Yellow Spots, Halved Sleeves, Diamonds Cap","body":"#14213d","sleeves":"#f1df83","cap":"#14213d","pattern":"yellow-spots-halved-diamonds-cap","source":"Racing Australia — Flemington form, 28 Mar 2026"},
+    "Highland Bling":{"status":"exact","colours":"Navy Blue, Gold Hoops, White Sleeves And Cap","body":"#14213d","sleeves":"#ffffff","cap":"#ffffff","pattern":"gold-hoops","source":"Racing Australia — Morphettville form, 9 Mar 2026"},
+    "Shockletz":{"status":"exact","colours":"Black, Orange Checked Sash, Checked Cap","body":"#111111","sleeves":"#111111","cap":"#f07c24","pattern":"orange-checked-sash-cap","source":"Wizard of Odds — Bendigo Golden Mile form, 2 May 2026"},
+    "Campaldino":{"status":"exact","colours":"White, Navy Blue Darby Racing Logos, Navy Blue Armbands And Cap With Logo","body":"#ffffff","sleeves":"#ffffff","cap":"#14213d","pattern":"darby-logos-armbands","source":"Racing NSW — horse profile / Randwick form, 4 Apr 2026"},
+    "Jenni Multabella":{"status":"exact","colours":"Sky Blue And Purple Diamonds","body":"#87ceeb","sleeves":"#87ceeb","cap":"#6b2c91","pattern":"purple-diamonds","source":"Racing Australia — Sale form, 28 Jun 2026"},
+    "Don Diego De Vega":{"status":"exact","colours":"Royal Blue, White Horseshoe, Black And White Checked Sleeves And Cap","body":"#1456a0","sleeves":"#ffffff","cap":"#111111","pattern":"white-horseshoe-checked-sleeves-cap","source":"Racing Australia — Randwick trial form, 19 Feb 2026"},
+    "Machine Gun Gracie":{"status":"exact","colours":"Yellow, Black Horseshoe, Striped Sleeves, Quartered Cap","body":"#f1d74d","sleeves":"#f1d74d","cap":"#f1d74d","pattern":"black-horseshoe-striped-sleeves-quarter-cap","source":"Racing Australia — Rosehill form, 21 Mar 2026"},
+    "Sapphire Siren":{"status":"exact","colours":"Navy Blue, White Diabolo Sleeves","body":"#14213d","sleeves":"#ffffff","cap":"#14213d","pattern":"white-diabolo-sleeves","source":"Racing Australia — Pakenham form, 26 Feb 2026"},
+    "Newlook":{"status":"exact","colours":"Red, Yellow Epaulettes And Best Bloodstock Logo, Red Cap","body":"#c92a2a","sleeves":"#c92a2a","cap":"#c92a2a","pattern":"yellow-epaulettes-best-bloodstock","source":"Racing Australia — Randwick form, 11 Apr 2026"},
+    "Sir Chartwell":{"status":"exact","colours":"Navy Blue, Gold Hoops, White Sleeves And Cap","body":"#14213d","sleeves":"#ffffff","cap":"#ffffff","pattern":"gold-hoops","source":"Racing Australia — Randwick form, 24 May 2025"}
+  }
+}
