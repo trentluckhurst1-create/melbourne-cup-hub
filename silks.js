@@ -5,10 +5,11 @@ async function loadCupSilks(){
  cupSilksPromise=Promise.all([
   fetch('./data/silks/2026-09-13.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
   fetch('./data/silks/2026-09-13-supplement-2.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-  fetch('./data/silks/2026-09-13-supplement-3.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
- ]).then(([base,supp2,supp3])=>{
+  fetch('./data/silks/2026-09-13-supplement-3.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
+  fetch('./data/silks/2026-09-13-supplement-4.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
+ ]).then(([base,supp2,supp3,supp4])=>{
   if(!base)return null;
-  cupSilksData={...base,horses:{...(base.horses||{}),...(supp2?.horses||{}),...(supp3?.horses||{})}};
+  cupSilksData={...base,horses:{...(base.horses||{}),...(supp2?.horses||{}),...(supp3?.horses||{}),...(supp4?.horses||{})}};
   return cupSilksData;
  }).catch(()=>null);
  return cupSilksPromise;
