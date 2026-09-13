@@ -1,0 +1,10 @@
+{
+  "snapshotDate":"2026-09-13",
+  "universe":101,
+  "policy":"Silks are horse/owner-specific. Exact colours and patterns are only rendered when verified from a public racing source; unknowns remain Researching rather than inheriting trainer colours.",
+  "horses":{
+    "Aeliana":{"status":"verified","colours":"Purple, White Stars And Cap","body":"#6b2c91","sleeves":"#6b2c91","cap":"#ffffff","pattern":"white-stars","source":"Racing Australia / Racing NSW 2026 form profile"},
+    "Half Yours":{"status":"verified","colours":"Light Blue And Black","body":"#78c8e8","sleeves":"#78c8e8","cap":"#111111","pattern":"black-detail","source":"Racing.com — How Half Yours got his colours, 5 Nov 2025"},
+    "Treasurethe Moment":{"status":"verified","colours":"Bottle Green, White Checked Sleeves, White Cap","body":"#0f5132","sleeves":"#ffffff","cap":"#ffffff","pattern":"checked-sleeves","source":"Racing NSW horse profile, 11 Apr 2026"}
+  }
+}
