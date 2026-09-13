@@ -96,7 +96,6 @@ function outputRunner(r,official){
 async function write(obj){await fs.mkdir(path.dirname(OUT),{recursive:true});await fs.writeFile(OUT,JSON.stringify(obj,null,2)+'\n');}
 
 async function main(){
-  const now=new Date().toISOString();
   const nominations=JSON.parse(await fs.readFile(NOMINATIONS,'utf8'));
   const officialByNorm=new Map((nominations.horses||[]).map(h=>[norm(h.horse),h]));
 
@@ -105,7 +104,7 @@ async function main(){
       provider:'Ladbrokes Australia',
       source:'Ladbrokes Affiliates API',
       status:'PUBLICATION_APPROVAL_REQUIRED',
-      fetchedAt:now,
+      fetchedAt:null,
       live:false,
       reason:'The Ladbrokes Affiliates API terms state API information is for personal use and must not be republished without written permission from Entain Australia and New Zealand. Set LADBROKES_REPUBLICATION_APPROVED=true only after approval is held.',
       runners:[]
@@ -114,6 +113,7 @@ async function main(){
     return;
   }
 
+  const now=new Date().toISOString();
   const futures=await getJson(`${API_BASE}/futures?enc=json`);
   const best=findCupFuture(futures);
   const eventId=best.race.id||best.race.event_id;
@@ -152,7 +152,7 @@ async function main(){
 }
 
 main().catch(async err=>{
-  const obj={provider:'Ladbrokes Australia',source:'Ladbrokes Affiliates API',status:'API_ERROR',live:false,fetchedAt:new Date().toISOString(),error:String(err?.stack||err),runners:[]};
+  const obj={provider:'Ladbrokes Australia',source:'Ladbrokes Affiliates API',status:'API_ERROR',live:false,fetchedAt:null,error:String(err?.stack||err),runners:[]};
   await write(obj);
   console.error(err);
   process.exitCode=1;
