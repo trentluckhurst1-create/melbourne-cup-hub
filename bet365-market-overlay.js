@@ -1,6 +1,7 @@
 let bet365Snapshot=null;
 let betGoldSnapshot=null;
 let currentMarketPromise=null;
+let currentMarketLoaded=false;
 
 function xDate(x){return String(x?.snapshotDate||'');}
 function normMarketHorse(v){return String(v||'').toLowerCase().replace(/[’']/g,'').replace(/[^a-z0-9]+/g,' ').trim();}
@@ -19,10 +20,10 @@ async function loadCurrentMarketSnapshots(){
     fetch('./data/markets/2026-09-13-bet365.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('./data/markets/2026-09-13-betgold.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
   ]).then(([b365,bg])=>{
-    bet365Snapshot=b365;betGoldSnapshot=bg;
+    bet365Snapshot=b365;betGoldSnapshot=bg;currentMarketLoaded=true;
     addMarketSnapshot(b365);addMarketSnapshot(bg);
     return [b365,bg].filter(Boolean);
-  });
+  }).catch(err=>{currentMarketLoaded=true;console.warn('Current market snapshots unavailable',err);return [];});
   return currentMarketPromise;
 }
 
@@ -55,7 +56,8 @@ function bestPriceBoard(){
   const both=rows.filter(x=>x.best.quotes.length>1).length;
   const projected=new Set((projectedFieldData?.projected24||[]).map(x=>x.horse));
   const projectedCovered=rows.filter(x=>projected.has(x.horse)).length;
-  return `<section class="panel current-market-panel"><div class="panel-head"><div><div class="kicker">Current Public Market Comparison</div><h3>Best Price Board</h3><div class="panel-sub">Bet365 and BetGold public-web snapshots captured 13 Sep. Best price is the highest decimal win price currently stored by the Hub.</div></div><span class="tag green">2 CURRENT SOURCES</span></div>
+  const sourceCount=(bet365Snapshot?1:0)+(betGoldSnapshot?1:0);
+  return `<section class="panel current-market-panel"><div class="panel-head"><div><div class="kicker">Current Public Market Comparison</div><h3>Best Price Board</h3><div class="panel-sub">Bet365 and BetGold public-web snapshots captured 13 Sep. Best price is the highest decimal win price currently stored by the Hub.</div></div><span class="tag green">${sourceCount} CURRENT SOURCE${sourceCount===1?'':'S'}</span></div>
   <section class="metric-grid current-market-metrics">${metric('Priced Nominees',rows.length,'Current public snapshots')}${metric('Two-Book Quotes',both,'Direct current comparison')}${metric('Projected 24 Covered',projectedCovered,'Current field model')}${metric('Best-Price Rule','MAX','Highest stored decimal win quote')}${metric('Snapshot Date','13 Sep','Odds can move at any time')}</section>
   <div class="market-warning"><strong>Price discipline:</strong> these are dated public-web snapshots, not guaranteed executable live quotes. Always verify with the bookmaker before betting.</div>
   <div class="table-wrap"><table class="data-table"><thead><tr><th>Horse</th><th>Best Win</th><th>Book</th><th>Implied</th><th>Bet365</th><th>BetGold</th><th>Book Spread</th><th>Projected</th></tr></thead><tbody>${rows.map(x=>`<tr><td class="horse">${horseLink(x.horse)}</td><td><strong class="best-price">$${x.best.odds.toFixed(2)}</strong></td><td>${x.best.bookmaker}</td><td>${x.best.implied.toFixed(1)}%</td><td>${quoteCell(x.horse,'bet365')}</td><td>${quoteCell(x.horse,'BetGold')}</td><td>${x.best.quotes.length>1?`$${x.best.spread.toFixed(2)}`:'—'}</td><td>${x.projected?`#${x.projected.rank}`:'—'}</td></tr>`).join('')}</tbody></table></div></section>`;
@@ -70,7 +72,7 @@ if(typeof dossierMarket==='function'){
 
 const currentBooksRenderBase=render;
 render=function(view='dashboard'){
-  if((view==='markets'||selectedHorse)&&(!bet365Snapshot||!betGoldSnapshot)){
+  if((view==='markets'||selectedHorse)&&!currentMarketLoaded){
     const root=document.getElementById('app-content');
     if(view==='markets'&&root)root.innerHTML='<div class="placeholder">Loading current bookmaker snapshots…</div>';
     loadCurrentMarketSnapshots().then(()=>currentBooksRenderBase(view));
@@ -80,5 +82,5 @@ render=function(view='dashboard'){
 };
 
 loadCurrentMarketSnapshots().then(()=>{
-  if(typeof currentView!=='undefined'&&(currentView==='markets'||selectedHorse))render(currentView);
+  if(typeof currentView!=='undefined'&&(currentView==='dashboard'||currentView==='markets'||selectedHorse))render(currentView);
 }).catch(()=>{});
