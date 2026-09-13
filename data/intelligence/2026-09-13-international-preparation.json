@@ -1,0 +1,53 @@
+{
+  "snapshotDate": "2026-09-13",
+  "definition": "Verified campaign and travel-preparation status for overseas-trained Melbourne Cup nominees. This is not a substitute for horse-specific current training-base verification.",
+  "horses": {
+    "Stinger Glass": {
+      "campaignStatus": "Melbourne Cup direct",
+      "preExportPlan": "Northern Farm Ten-ei quarantine, then travel to Melbourne",
+      "nextRun": "No further start planned before Melbourne Cup",
+      "source": "Racing.com, 13 Jul 2026",
+      "confidence": "Verified"
+    },
+    "James J Braddock": {
+      "campaignStatus": "Melbourne Cup preparation with Joseph O’Brien",
+      "preExportPlan": "European lead-up then quarantine/travel to Melbourne",
+      "nextRun": "Cup campaign continuing after Kilternan Stakes",
+      "source": "Racing.com, 23 Jul 2026 / 11 Sep 2026",
+      "confidence": "Verified"
+    },
+    "Goodie Two Shoes": {
+      "campaignStatus": "Melbourne Cup return path",
+      "preExportPlan": "International campaign under Joseph O’Brien",
+      "nextRun": "Cup campaign continuing after Kilternan Stakes",
+      "source": "Racing.com, 2 Aug 2026 / 11 Sep 2026",
+      "confidence": "Verified"
+    },
+    "Trustyourinstinct": {
+      "campaignStatus": "Melbourne Cup option",
+      "preExportPlan": "Irish campaign under Joseph O’Brien",
+      "nextRun": "Irish St Leger declared/pending as at Melbourne morning 13 Sep",
+      "source": "Racing.com, 19 Jul 2026 / 11 Sep 2026",
+      "confidence": "Verified as option, not confirmed traveller"
+    },
+    "Defiantly": {
+      "campaignStatus": "Qualified Melbourne Cup contender",
+      "preExportPlan": "International campaign after Prix Kergorlay Golden Ticket",
+      "nextRun": "Researching",
+      "source": "VRC / Racing Post",
+      "confidence": "Verified qualification"
+    },
+    "Constitution Hill": {
+      "campaignStatus": "Inactive for Melbourne Cup",
+      "preExportPlan": "No Melbourne Cup trip",
+      "nextRun": "Melbourne Cup campaign abandoned after failing ballot qualification",
+      "source": "Racing.com, 6 Sep 2026",
+      "confidence": "Verified"
+    }
+  },
+  "policy": {
+    "doNotInferCurrentHorseBase": true,
+    "doNotAssumeTravel": true,
+    "separateConfirmedTravellerFromCupOption": true
+  }
+}
