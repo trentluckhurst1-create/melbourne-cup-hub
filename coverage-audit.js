@@ -13,7 +13,10 @@ function coverageSnapshot(){
   const trainers=new Set((trainerBaseData?.trainers||[]).map(x=>x.trainer));
   const trainerCoverage=(cupData?.horses||[]).filter(h=>trainers.has(h.trainer)).length;
   const qualifiedNominees=(qualificationData?.qualified||[]).filter(x=>official.has(x.horse)).length;
-  return {total,verifiedBases,profiles,weights,projected,trainerCoverage,qualifiedNominees};
+  const formCoverage=(cupData?.horses||[]).filter(h=>(formIntelData?.horses?.[h.horse]?.runs||[]).length>0).length;
+  const fullForm=(cupData?.horses||[]).filter(h=>(formIntelData?.horses?.[h.horse]?.runs||[]).length>=8).length;
+  const tfIdentity=(cupData?.horses||[]).filter(h=>typeof privateTfMatched==='function'&&privateTfMatched(h.horse)).length;
+  return {total,verifiedBases,profiles,weights,projected,trainerCoverage,qualifiedNominees,formCoverage,fullForm,tfIdentity};
 }
 
 function researchQueue(){
@@ -40,6 +43,8 @@ function coveragePanel(){
     <div class="coverage-grid">
       ${coverageBar('Trainer operation mapped',c.trainerCoverage,c.total,'Primary and secondary stable locations separated from horse location.')}
       ${coverageBar('Current horse base verified',c.verifiedBases,c.total,'Horse-specific preparation location only; unknown horses remain Researching.')}
+      ${coverageBar('Public form history loaded',c.formCoverage,c.total,`${c.fullForm} horses currently have a full eight-run verified window.`)}
+      ${coverageBar('Timeform identity matched',c.tfIdentity,c.total,'Identity layer only. Numerical Timeform ratings remain pending and are not counted here.')}
       ${coverageBar('Rich horse profile',c.profiles,c.total,'Age/sex, campaign and Cup-relevance intelligence currently populated.')}
       ${coverageBar('Working weight estimate',c.weights,c.total,'Pre-release handicap estimate with range and reasoning.')}
       ${coverageBar('Projected-field assessment',c.projected,c.total,'Current top-24 projection; remaining horses are not yet ranked into the cut-line board.')}
