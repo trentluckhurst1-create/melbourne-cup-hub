@@ -1,0 +1,60 @@
+{
+  "snapshotDate":"2026-09-13",
+  "universe":"Official 2026 Melbourne Cup nominations",
+  "targetRunsPerHorse":8,
+  "ratingPolicy":"Factual public form only. Non-Timeform ratings from source pages are deliberately not imported into performanceRating or timefigure.",
+  "horses":{
+    "Causeway":{"runs":[
+      {"date":"2026-09-05","race":"Kentucky Downs 3yo feature","track":"Kentucky Downs","country":"USA","distanceM":2000,"going":null,"classGroup":null,"finish":"5th","fieldSize":10,"weightCarried":"8-10","performanceRating":null,"timefigure":null,"source":"Irishracing public form"},
+      {"date":"2026-07-14","race":"Grand Prix de Paris","track":"Longchamp","country":"FR","distanceM":2400,"going":"Good to Soft","classGroup":"Group 1","finish":"7th","fieldSize":7,"weightCarried":"9-2","performanceRating":null,"timefigure":null,"source":"Irishracing public form / netkeiba public form"},
+      {"date":"2026-06-19","race":"King Edward VII Stakes","track":"Ascot","country":"GB","distanceM":2400,"going":"Good to Firm","classGroup":"Group 2","finish":"1st","fieldSize":5,"weightCarried":"9-2","performanceRating":null,"timefigure":null,"source":"Irishracing public form / netkeiba public form"},
+      {"date":"2026-05-23","race":"Gallinule Stakes","track":"Curragh","country":"IRE","distanceM":2000,"going":"Good","classGroup":"Group 3","finish":"1st","fieldSize":9,"weightCarried":"9-5","performanceRating":null,"timefigure":null,"source":"Irishracing public form / netkeiba public form"},
+      {"date":"2026-05-04","race":"Tetrarch Stakes","track":"Curragh","country":"IRE","distanceM":1600,"going":"Good","classGroup":"Listed","finish":"1st","fieldSize":7,"weightCarried":"9-5","performanceRating":null,"timefigure":null,"source":"Irishracing public form"},
+      {"date":"2026-03-22","race":"Naas 3yo Handicap","track":"Naas","country":"IRE","distanceM":1400,"going":"Soft","classGroup":"Handicap","finish":"1st","fieldSize":13,"weightCarried":"9-12","performanceRating":null,"timefigure":null,"source":"Irishracing public form"},
+      {"date":"2025-10-04","race":"2yo Maiden","track":"Curragh","country":"IRE","distanceM":1400,"going":"Soft to Heavy","classGroup":"Maiden","finish":"1st","fieldSize":13,"weightCarried":"9-5","performanceRating":null,"timefigure":null,"source":"Irishracing public form"},
+      {"date":"2025-09-20","race":"2yo Maiden","track":"Gowran Park","country":"IRE","distanceM":1600,"going":"Heavy","classGroup":"Maiden","finish":"4th","fieldSize":9,"weightCarried":"9-0","performanceRating":null,"timefigure":null,"source":"Irishracing public form"}
+    ]},
+    "Pierre Bonnard":{"runs":[
+      {"date":"2026-08-19","race":"Great Voltigeur Stakes","track":"York","country":"GB","distanceM":2400,"going":"Good","classGroup":"Group 2","finish":"2nd","fieldSize":6,"weightCarried":"9-2","performanceRating":null,"timefigure":null,"source":"Irishracing public form"},
+      {"date":"2026-06-28","race":"Irish Derby","track":"Curragh","country":"IRE","distanceM":2400,"going":"Good","classGroup":"Group 1","finish":"3rd","fieldSize":8,"weightCarried":"9-2","performanceRating":null,"timefigure":null,"source":"Irishracing public form"},
+      {"date":"2026-06-06","race":"Derby Stakes","track":"Epsom","country":"GB","distanceM":2400,"going":"Soft","classGroup":"Group 1","finish":"7th","fieldSize":13,"weightCarried":"9-2","performanceRating":null,"timefigure":null,"source":"Irishracing public form"},
+      {"date":"2026-05-10","race":"Derby Trial Stakes","track":"Leopardstown","country":"IRE","distanceM":2000,"going":"Good","classGroup":"Group 3","finish":"2nd","fieldSize":5,"weightCarried":"9-5","performanceRating":null,"timefigure":null,"source":"Irishracing public form"}
+    ]},
+    "Starford":{"runs":[
+      {"date":"2026-06-30","race":"Roscommon Listed Stakes","track":"Roscommon","country":"IRE","distanceM":2400,"going":"Good","classGroup":"Listed","finish":"3rd","fieldSize":8,"weightCarried":"10-0","performanceRating":null,"timefigure":null,"source":"Irishracing public form / GG public form"},
+      {"date":"2026-05-08","race":"Huxley Stakes","track":"Chester","country":"GB","distanceM":2100,"going":"Good","classGroup":"Group 2","finish":"6th","fieldSize":9,"weightCarried":"9-3","performanceRating":null,"timefigure":null,"source":"Irishracing public form / GG public form"},
+      {"date":"2026-04-19","race":"Alleged Stakes","track":"Curragh","country":"IRE","distanceM":2000,"going":"Soft","classGroup":"Group 3","finish":"1st","fieldSize":12,"weightCarried":"9-5","performanceRating":null,"timefigure":null,"source":"Irishracing public form / Racing Post public report"}
+    ]},
+    "Hopewell Rock":{"runs":[
+      {"date":"2026-08-22","race":"Ebor Handicap","track":"York","country":"GB","distanceM":2816,"going":"Good to Soft","classGroup":"Class 2 Handicap","finish":"2nd","fieldSize":22,"weightCarried":"9-7","performanceRating":null,"timefigure":null,"source":"Irishracing / GG public form"},
+      {"date":"2026-08-01","race":"Goodwood 1m6f Handicap","track":"Goodwood","country":"GB","distanceM":2816,"going":"Good to Firm","classGroup":"Class 2 Handicap","finish":"1st","fieldSize":13,"weightCarried":"9-8","performanceRating":null,"timefigure":null,"source":"Irishracing / GG public form"},
+      {"date":"2026-06-19","race":"Royal Ascot 1m4f Handicap","track":"Ascot","country":"GB","distanceM":2400,"going":"Good to Firm","classGroup":"Class 2 Handicap","finish":"6th","fieldSize":17,"weightCarried":"9-8","performanceRating":null,"timefigure":null,"source":"Irishracing / GG public form"},
+      {"date":"2026-05-02","race":"Newmarket 1m4f Handicap","track":"Newmarket","country":"GB","distanceM":2400,"going":"Good to Firm","classGroup":"Class 2 Handicap","finish":"3rd","fieldSize":8,"weightCarried":"9-8","performanceRating":null,"timefigure":null,"source":"Irishracing public form"}
+    ]},
+    "Enfjaar":{"runs":[
+      {"date":"2026-08-01","race":"Goodwood 1m4f Listed","track":"Goodwood","country":"GB","distanceM":2400,"going":"Good to Firm","classGroup":"Listed","finish":"1st","fieldSize":null,"weightCarried":"9-3","performanceRating":null,"timefigure":null,"source":"HorseRacing.net / Racingtips public form"},
+      {"date":"2026-06-16","race":"Wolferton Stakes","track":"Ascot","country":"GB","distanceM":2000,"going":"Good to Firm","classGroup":"Listed","finish":"8th","fieldSize":null,"weightCarried":"9-5","performanceRating":null,"timefigure":null,"source":"HorseRacing.net / Racingtips public form"},
+      {"date":"2026-05-22","race":"Goodwood Listed Stakes","track":"Goodwood","country":"GB","distanceM":2000,"going":"Good","classGroup":"Listed","finish":"3rd","fieldSize":null,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"HorseRacing.net public form"}
+    ]},
+    "Kizlyar":{"runs":[
+      {"date":"2026-08-22","race":"Curragh 1m6f Stakes","track":"Curragh","country":"IRE","distanceM":2816,"going":"Good","classGroup":null,"finish":"2nd","fieldSize":6,"weightCarried":"9-9","performanceRating":null,"timefigure":null,"source":"Irishracing public form"},
+      {"date":"2026-06-16","race":"Ascot Stakes","track":"Ascot","country":"GB","distanceM":4000,"going":"Good to Firm","classGroup":"Class 2 Handicap","finish":"1st","fieldSize":20,"weightCarried":"9-3","performanceRating":null,"timefigure":null,"source":"Irishracing public form"},
+      {"date":"2026-05-12","race":"Killarney 1m6f Flat","track":"Killarney","country":"IRE","distanceM":2816,"going":"Good","classGroup":null,"finish":"1st","fieldSize":6,"weightCarried":"9-12","performanceRating":null,"timefigure":null,"source":"Irishracing public form"}
+    ]},
+    "Wine Dark Sea":{"runs":[
+      {"date":"2026-08-15","race":"Newbury 1m5f Listed","track":"Newbury","country":"GB","distanceM":2700,"going":"Good to Firm","classGroup":"Listed","finish":"1st","fieldSize":5,"weightCarried":"9-8","performanceRating":null,"timefigure":null,"source":"Irishracing / GG public form"},
+      {"date":"2026-07-10","race":"Newmarket 1m6f Handicap","track":"Newmarket","country":"GB","distanceM":2816,"going":"Good to Firm","classGroup":"Class 2 Handicap","finish":"5th","fieldSize":10,"weightCarried":"8-12","performanceRating":null,"timefigure":null,"source":"Irishracing / Racing Post public result"},
+      {"date":"2026-06-24","race":"Cumberland Plate Handicap","track":"Carlisle","country":"GB","distanceM":2200,"going":"Good to Firm","classGroup":"Class 4 Handicap","finish":"1st","fieldSize":10,"weightCarried":"10-1","performanceRating":null,"timefigure":null,"source":"Irishracing / At The Races public form"},
+      {"date":"2026-05-09","race":"Ascot 1m4f Handicap","track":"Ascot","country":"GB","distanceM":2400,"going":"Good to Firm","classGroup":"Class 3 Handicap","finish":"1st","fieldSize":14,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"At The Races public form"}
+    ]},
+    "Wootton Verni":{"runs":[
+      {"date":"2026-08-29","race":"Chandon Heatherlie Stakes","track":"Caulfield","country":"AUS","distanceM":1700,"going":"Soft 6","classGroup":"Listed","finish":"10th","fieldSize":null,"weightCarried":"60.5kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2026-08-15","race":"P.B. Lawrence Stakes","track":"Caulfield","country":"AUS","distanceM":1400,"going":"Soft 6","classGroup":"Group 2","finish":"8th","fieldSize":null,"weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet public race record"},
+      {"date":"2026-04-11","race":"Queen Elizabeth Stakes","track":"Randwick","country":"AUS","distanceM":2000,"going":null,"classGroup":"Group 1","finish":"6th","fieldSize":null,"weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Racing Post public result"},
+      {"date":"2026-03-28","race":"Neville Sellwood Stakes","track":"Rosehill","country":"AUS","distanceM":2000,"going":"Soft 7","classGroup":"Group 2","finish":"1st","fieldSize":7,"weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Racing Australia public form"}
+    ]},
+    "Winday":{"runs":[
+      {"date":"2026-08-27","race":"Ffos Las 1m4f Maiden","track":"Ffos Las","country":"GB","distanceM":2400,"going":null,"classGroup":"Maiden","finish":"1st","fieldSize":5,"weightCarried":"9-7","performanceRating":null,"timefigure":null,"source":"Racing Post public result"}
+    ]}
+  }
+}
