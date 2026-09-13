@@ -1,0 +1,65 @@
+let privateTimeformSession=null;
+
+function tfNorm(v){return String(v??'').trim().toLowerCase().replace(/[’']/g,"'").replace(/\s+/g,' ');}
+function tfRuns(rec){return rec?.lastRuns||rec?.runs||rec?.ratedRuns||rec?.performanceRuns||[];}
+function tfHorseRec(name){return privateTimeformSession?.horses?.[name]||privateTimeformSession?.horses?.[Object.keys(privateTimeformSession?.horses||{}).find(k=>tfNorm(k)===tfNorm(name))]||null;}
+function tfRunMatch(horse,run){
+  const rec=tfHorseRec(horse); if(!rec)return null;
+  const candidates=tfRuns(rec);
+  const exact=candidates.find(x=>String(x.date||'')===String(run.date||'')&&tfNorm(x.track)===tfNorm(run.track)&&tfNorm(x.race)===tfNorm(run.race));
+  if(exact)return exact;
+  const dateTrack=candidates.find(x=>String(x.date||'')===String(run.date||'')&&tfNorm(x.track)===tfNorm(run.track));
+  if(dateTrack)return dateTrack;
+  return candidates.find(x=>String(x.date||'')===String(run.date||''))||null;
+}
+function tfRatingValue(x){
+  for(const k of ['performanceRating','tfr','TFR','rating','timeformRating']) if(Number.isFinite(Number(x?.[k]))) return Number(x[k]);
+  return null;
+}
+function tfTimefigureValue(x){
+  for(const k of ['timefigure','timeFigure','TF','timefig']) if(Number.isFinite(Number(x?.[k]))) return Number(x[k]);
+  return null;
+}
+function tfMasterValue(rec){
+  for(const k of ['currentMasterRating','masterRating','timeformRating','rating']) if(Number.isFinite(Number(rec?.[k]))) return Number(rec[k]);
+  return null;
+}
+function privateTfStats(){
+  const hs=privateTimeformSession?.horses||{}; const rows=Object.values(hs);
+  let ratedRuns=0; rows.forEach(r=>ratedRuns+=tfRuns(r).filter(x=>tfRatingValue(x)!==null).length);
+  return {horses:rows.length,masters:rows.filter(r=>tfMasterValue(r)!==null).length,ratedRuns};
+}
+function privateTfControls(){
+  const s=privateTfStats();
+  return `<div class="private-tf-box"><div><span class="private-tf-kicker">PRIVATE · SESSION ONLY</span><strong>${privateTimeformSession?'Timeform data loaded':'Load your private Timeform JSON'}</strong><em>${privateTimeformSession?`${s.horses} horses · ${s.masters} master ratings · ${s.ratedRuns} rated runs`:'The file stays in this browser session and is never uploaded or committed.'}</em></div><div class="private-tf-actions"><label class="ghost-button private-tf-load">${privateTimeformSession?'Replace file':'Load JSON'}<input id="private-tf-file" type="file" accept="application/json,.json" hidden></label>${privateTimeformSession?'<button class="ghost-button" id="private-tf-clear">Clear</button>':''}</div></div>`;
+}
+function bindPrivateTfControls(){
+  const input=document.getElementById('private-tf-file');
+  if(input&&!input.dataset.bound){input.dataset.bound='1';input.addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const parsed=JSON.parse(await f.text());if(!parsed||typeof parsed!=='object'||!parsed.horses)throw new Error('Expected a JSON object containing horses.');privateTimeformSession=parsed;render(currentView);}catch(err){alert(`Could not load private Timeform JSON: ${err.message}`);}});}
+  const clear=document.getElementById('private-tf-clear'); if(clear)clear.onclick=()=>{privateTimeformSession=null;render(currentView);};
+}
+function privateTfRunTable(horse,runs){
+  return `<div class="private-tf-run-table"><table class="data-table"><thead><tr><th>Date</th><th>Race</th><th>Track</th><th>Dist.</th><th>Finish</th><th>TFR</th><th>Timefig</th></tr></thead><tbody>${runs.map(r=>{const tr=tfRunMatch(horse,r);const rt=tfRatingValue(tr);const tf=tfTimefigureValue(tr);return `<tr><td>${r.date||'—'}</td><td>${r.race||'—'}</td><td>${r.track||'—'}</td><td>${r.distanceM?`${r.distanceM}m`:'—'}</td><td>${r.finish||'—'}</td><td class="tf-private-value">${rt??'—'}</td><td class="tf-private-value">${tf??'—'}</td></tr>`}).join('')}</tbody></table></div>`;
+}
+
+const publicTimeformView=timeformView;
+timeformView=function(){
+  const base=publicTimeformView();
+  if(!privateTimeformSession)return privateTfControls()+base;
+  const s=privateTfStats();
+  const board=(cupData?.horses||[]).map(h=>{const rec=tfHorseRec(h.horse);const m=tfMasterValue(rec);const rr=tfRuns(rec).filter(x=>tfRatingValue(x)!==null);return `<tr><td>${h.nominationNumber}</td><td class="horse">${horseLink(h.horse)}</td><td>${h.trainer}</td><td class="tf-private-value">${m??'—'}</td><td>${rr.length}</td><td>${rec?tag('Private loaded','green'):'<span class="muted">No private match</span>'}</td></tr>`}).join('');
+  return privateTfControls()+`<section class="metric-grid private-tf-metrics">${metric('Private Horses',s.horses,'Loaded this session')}${metric('Master Ratings',s.masters,'Timeform values')}${metric('Rated Runs',s.ratedRuns,'Run-level TFR values')}${metric('Storage','MEMORY ONLY','Cleared on refresh')}</section><div class="panel"><div class="panel-head"><div><h3>Private Timeform Rating Board</h3><div class="panel-sub">Visible only in this browser session. These values are not part of the public repository.</div></div><span class="tag green">PRIVATE</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>#</th><th>Horse</th><th>Trainer</th><th>Master TFR</th><th>Rated Runs</th><th>State</th></tr></thead><tbody>${board}</tbody></table></div></div>`+base;
+};
+
+const publicFormGuideView=formGuideView;
+formGuideView=function(){
+  if(!privateTimeformSession)return privateTfControls()+publicFormGuideView();
+  const cards=(cupData?.horses||[]).map(h=>{const r=formIntelData?.horses?.[h.horse]||{};const runs=r.runs||[];const last=runs[0];const rec=tfHorseRec(h.horse);const master=tfMasterValue(rec);const lastTf=last?tfRatingValue(tfRunMatch(h.horse,last)):null;return `<article class="horse-card private-tf-card"><div class="horse-card-top"><div><div class="horse-number">NOM ${h.nominationNumber}</div><button class="horse-card-name" onclick="openHorse('${h.horse.replace(/'/g,"\\'")}')">${h.horse}</button><div class="horse-country">${h.country} · ${h.trainer}</div></div>${rec?tag('TF private','green'):tag('TF unresolved')}</div><div class="horse-card-grid"><div><span>MASTER TFR</span><strong class="tf-private-value">${master??'—'}</strong></div><div><span>LAST RUN TFR</span><strong class="tf-private-value">${lastTf??'—'}</strong></div><div><span>FORM RUNS</span><strong>${runs.length}/8</strong></div><div><span>LAST RUN</span><strong>${last?`${last.finish||'—'} · ${last.track||'—'}`:'Researching'}</strong></div></div>${privateTfRunTable(h.horse,runs)}</article>`}).join('');
+  return privateTfControls()+`<div class="section-header"><div><div class="kicker">Private Timeform + Public Form</div><h2>Melbourne Cup Form Guide</h2><div class="section-copy">Your private Timeform values are joined to the public factual run history in memory for this session only.</div></div></div><div class="horse-grid private-form-grid">${cards}</div>`;
+};
+
+const privateTfRenderBase=render;
+render=function(view='dashboard'){
+  privateTfRenderBase(view);
+  if(view==='timeform'||view==='form') setTimeout(bindPrivateTfControls,0);
+};
