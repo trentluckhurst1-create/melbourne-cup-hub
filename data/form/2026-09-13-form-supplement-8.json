@@ -1,0 +1,53 @@
+{
+  "snapshotDate":"2026-09-13",
+  "targetRunsPerHorse":8,
+  "canonicalRatingSource":"Timeform",
+  "policy":{"performanceRating":"private Timeform only","timefigure":"private Timeform only","noMixedRatingScales":true},
+  "horses":{
+    "Starzintheireyes":{"runs":[
+      {"date":"2026-09-05","race":"The Agency Real Estate","track":"Randwick","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"BM94","finish":"2nd","fieldSize":null,"weightCarried":"55.5kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-06-06","race":"Flemington Community Plate","track":"Flemington","country":"AUS","distanceM":2000,"going":"Heavy 8","classGroup":"BM100","finish":"6th","fieldSize":null,"weightCarried":"53kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-05-23","race":"General Australia","track":"Randwick","country":"AUS","distanceM":2000,"going":"Heavy 8","classGroup":"BM88","finish":"3rd","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-05-02","race":"The Lawn Shed","track":"Hawkesbury","country":"AUS","distanceM":1800,"going":"Good 4","classGroup":"BM78","finish":"2nd","fieldSize":null,"weightCarried":"61kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2025-10-25","race":"St Simon Stakes","track":"Newbury","country":"GB","distanceM":2400,"going":"Soft","classGroup":"Group 3","finish":"5th","fieldSize":9,"weightCarried":"9-0","performanceRating":null,"timefigure":null,"source":"Timeform public results / Breednet"},
+      {"date":"2025-09-24","race":"Foundation Stakes","track":"Goodwood","country":"GB","distanceM":2000,"going":"Good to Soft","classGroup":"Listed","finish":"7th","fieldSize":11,"weightCarried":"8-13","performanceRating":null,"timefigure":null,"source":"Timeform public results / Breednet"},
+      {"date":"2024-10-12","race":"Zetland Stakes","track":"Newmarket","country":"GB","distanceM":2000,"going":"Good to Soft","classGroup":"Group 3","finish":"1st","fieldSize":7,"weightCarried":"9-4","performanceRating":null,"timefigure":null,"source":"Timeform public results / Breednet"},
+      {"date":"2024-09-10","race":"British Stallion Studs EBF Novice Stakes","track":"Leicester","country":"GB","distanceM":1400,"going":"Soft","classGroup":"Novice","finish":"1st","fieldSize":11,"weightCarried":"9-2","performanceRating":null,"timefigure":null,"source":"Timeform public results / Breednet"}
+    ]},
+    "Nil Bua Gan Dua":{"runs":[
+      {"date":"2026-09-05","race":"Kentucky Downs Stakes","track":"Kentucky Downs","country":"USA","distanceM":2110,"going":null,"classGroup":null,"finish":"4th","fieldSize":10,"weightCarried":"8-8","performanceRating":null,"timefigure":null,"source":"Sporting Life"},
+      {"date":"2026-07-25","race":"Gowran Park 12f race","track":"Gowran Park","country":"IRE","distanceM":2450,"going":"Good","classGroup":null,"finish":"1st","fieldSize":7,"weightCarried":"9-5","performanceRating":null,"timefigure":null,"source":"Sporting Life"},
+      {"date":"2026-07-09","race":"Newmarket 13f race","track":"Newmarket","country":"GB","distanceM":2615,"going":"Good to Firm","classGroup":null,"finish":"4th","fieldSize":5,"weightCarried":"9-3","performanceRating":null,"timefigure":null,"source":"Sporting Life"},
+      {"date":"2025-10-18","race":"Eyrefield Stakes","track":"Leopardstown","country":"IRE","distanceM":1800,"going":"Good to Soft","classGroup":"Group 3","finish":"5th","fieldSize":8,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Timeform public results"},
+      {"date":"2025-09-13","race":"Leopardstown Group 2","track":"Leopardstown","country":"IRE","distanceM":1600,"going":"Good","classGroup":"Group 2","finish":"3rd","fieldSize":4,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Timeform public results"},
+      {"date":"2025-08-23","race":"Curragh Maiden","track":"Curragh","country":"IRE","distanceM":1400,"going":"Good","classGroup":"Maiden","finish":"4th","fieldSize":14,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Timeform public results"}
+    ]},
+    "Sam Hawkens":{"runs":[
+      {"date":"2026-08-08","race":"Premier's Cup Prelude","track":"Randwick","country":"AUS","distanceM":1800,"going":"Good 4","classGroup":null,"finish":"10th","fieldSize":null,"weightCarried":"55kg","performanceRating":null,"timefigure":null,"source":"Breednet / Racing NSW"},
+      {"date":"2025-10-18","race":"St Leger Stakes","track":"Randwick","country":"AUS","distanceM":2600,"going":"Good 4","classGroup":"Stakes","finish":"7th","fieldSize":10,"weightCarried":null,"performanceRating":null,"timefigure":null,"source":"Timeform public results"},
+      {"date":"2025-08-02","race":"Goodwood 1m6f Handicap","track":"Goodwood","country":"GB","distanceM":2816,"going":"Good to Soft","classGroup":"Class 2 Handicap","finish":"1st","fieldSize":14,"weightCarried":"8-10","performanceRating":null,"timefigure":null,"source":"Sporting Life / Sky Sports"},
+      {"date":"2025-06-15","race":"Hamilton 1m5f Handicap","track":"Hamilton","country":"GB","distanceM":2630,"going":"Good to Soft","classGroup":"Class 3 Handicap","finish":"1st","fieldSize":11,"weightCarried":"9-9","performanceRating":null,"timefigure":null,"source":"Sporting Life / Sky Sports"},
+      {"date":"2025-05-11","race":"Newcastle 12.5f Handicap","track":"Newcastle","country":"GB","distanceM":2510,"going":"Standard","classGroup":"Class 3 Handicap","finish":"1st","fieldSize":11,"weightCarried":"9-0","performanceRating":null,"timefigure":null,"source":"Sporting Life / Sky Sports"}
+    ]},
+    "Pinhole":{"runs":[
+      {"date":"2026-09-05","race":"The Agency Real Estate","track":"Randwick","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"BM94","finish":"3rd","fieldSize":null,"weightCarried":"52.5kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-06-27","race":"Ranvet Stayers Cup","track":"Rosehill","country":"AUS","distanceM":2400,"going":"Soft 6","classGroup":"BM90","finish":"2nd","fieldSize":null,"weightCarried":"53.5kg","performanceRating":null,"timefigure":null,"source":"Breednet / Racing NSW"},
+      {"date":"2026-06-10","race":"Asahi Super Dry","track":"Randwick-Kensington","country":"AUS","distanceM":2400,"going":"Soft 5","classGroup":"BM78","finish":"1st","fieldSize":null,"weightCarried":"60.5kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-05-23","race":"General Australia","track":"Randwick","country":"AUS","distanceM":2000,"going":"Heavy 8","classGroup":"BM88","finish":"4th","fieldSize":null,"weightCarried":"54.5kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-05-09","race":"Elite Sand & Soil","track":"Gosford","country":"AUS","distanceM":2100,"going":"Good 4","classGroup":"BM78","finish":"9th","fieldSize":null,"weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2025-07-25","race":"Ascot 12f Handicap","track":"Ascot","country":"GB","distanceM":2400,"going":"Good","classGroup":"Handicap","finish":"1st","fieldSize":5,"weightCarried":"9-9","performanceRating":null,"timefigure":null,"source":"Irishracing.com"},
+      {"date":"2025-06-18","race":"Queen's Vase","track":"Ascot","country":"GB","distanceM":2800,"going":"Good to Firm","classGroup":"Group 2","finish":"8th","fieldSize":13,"weightCarried":"9-2","performanceRating":null,"timefigure":null,"source":"Irishracing.com"},
+      {"date":"2025-05-07","race":"Chester Vase","track":"Chester","country":"GB","distanceM":2400,"going":"Good","classGroup":"Group 3","finish":"4th","fieldSize":8,"weightCarried":"9-2","performanceRating":null,"timefigure":null,"source":"Irishracing.com"}
+    ]},
+    "Soul Of Spain":{"runs":[
+      {"date":"2026-09-05","race":"Chelmsford Stakes","track":"Randwick","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"Group 2","finish":"8th","fieldSize":null,"weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-08-20","race":"Rowley Mile","track":"Hawkesbury","country":"AUS","distanceM":1600,"going":"Soft 6","classGroup":"Listed","finish":"6th","fieldSize":null,"weightCarried":"60.5kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-04-11","race":"Sydney Cup","track":"Randwick","country":"AUS","distanceM":3200,"going":"Good 4","classGroup":"Group 1","finish":"2nd","fieldSize":null,"weightCarried":"54.5kg","performanceRating":null,"timefigure":null,"source":"Breednet / ATC"},
+      {"date":"2026-03-28","race":"Tancred Stakes","track":"Rosehill","country":"AUS","distanceM":2400,"going":"Soft 6","classGroup":"Group 1","finish":"6th","fieldSize":null,"weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-03-14","race":"Sky High Stakes","track":"Rosehill","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 3","finish":"2nd","fieldSize":null,"weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2026-02-28","race":"Verry Elleegant Stakes","track":"Randwick","country":"AUS","distanceM":1600,"going":"Soft 5","classGroup":"Group 1","finish":"4th","fieldSize":null,"weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet / Timeform public results"},
+      {"date":"2026-02-14","race":"Apollo Stakes","track":"Randwick","country":"AUS","distanceM":1400,"going":"Good 4","classGroup":"Group 2","finish":"9th","fieldSize":null,"weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet"},
+      {"date":"2025-10-18","race":"St Leger Stakes","track":"Randwick","country":"AUS","distanceM":2600,"going":"Good 4","classGroup":"Stakes","finish":"3rd","fieldSize":10,"weightCarried":"57.5kg","performanceRating":null,"timefigure":null,"source":"Breednet / Timeform public results"}
+    ]}
+  }
+}
