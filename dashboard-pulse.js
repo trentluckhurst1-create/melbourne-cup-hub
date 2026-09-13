@@ -8,13 +8,14 @@ function dashboardMarketPulse(){
   const projectedPriced=currentRows.filter(x=>projected.has(x.horse)).length;
   const favourite=currentRows[0]||null;
   const twoBook=currentRows.filter(x=>x.best?.quotes?.length>1).length;
+  const currentSources=(bet365Snapshot?1:0)+(betGoldSnapshot?1:0);
   const liveOn=typeof ladbrokesIsLive==='function'&&ladbrokesIsLive();
   const liveCount=liveOn?(ladbrokesLiveData?.runners||[]).filter(x=>Number.isFinite(Number(x.odds))).length:0;
   const freshness=typeof ladbrokesFreshness==='function'?ladbrokesFreshness():{state:'offline',label:'Not connected'};
   const fetched=ladbrokesLiveData?.fetchedAt?new Date(ladbrokesLiveData.fetchedAt).toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit'}):'—';
   return `<section class="cc-grid-main section-block">
     <div class="panel cc-panel"><div class="cc-panel-head"><div><span class="cc-label">MARKET CONTROL</span><h3>Current Public Price Pulse</h3></div><button class="mini-button" onclick="openView('markets')">Markets</button></div>
-      <div class="metric-grid">${metric('Current Sources',`${bet365Snapshot?1:0+betGoldSnapshot?1:0}`,'Bet365 + BetGold snapshots')}${metric('Priced Nominees',currentRows.length,'Current public-web coverage')}${metric('Two-Book Quotes',twoBook,'Direct comparison available')}${metric('Projected 24',projectedPriced,'Current-priced contenders')}${metric('Market Leader',favourite?`$${favourite.best.odds.toFixed(2)}`:'—',favourite?`${favourite.horse} · ${favourite.best.bookmaker}`:'No current price')}</div>
+      <div class="metric-grid">${metric('Current Sources',currentSources,'Bet365 + BetGold snapshots')}${metric('Priced Nominees',currentRows.length,'Current public-web coverage')}${metric('Two-Book Quotes',twoBook,'Direct comparison available')}${metric('Projected 24',projectedPriced,'Current-priced contenders')}${metric('Market Leader',favourite?`$${favourite.best.odds.toFixed(2)}`:'—',favourite?`${favourite.horse} · ${favourite.best.bookmaker}`:'No current price')}</div>
       <div class="market-warning market-live-ok">Current public bookmaker snapshots are active in the Hub. These are dated observations, not guaranteed executable live prices; verify with the bookmaker before betting.</div>
       <div class="cc-mini-table">${currentRows.slice(0,7).map((x,i)=>`<div><span>${i+1}</span><strong>${horseLink(x.horse)}</strong><b>$${x.best.odds.toFixed(2)}</b><em>${x.best.bookmaker}${x.projected?` · #${x.projected.rank}`:''}</em></div>`).join('')}</div>
     </div>
