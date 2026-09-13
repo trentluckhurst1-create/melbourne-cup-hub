@@ -1,0 +1,76 @@
+{
+  "snapshotDate":"2026-09-13",
+  "purpose":"Complete recent race-start windows for major Melbourne Cup contenders. Barrier trials and jump-outs are excluded. Timeform fields remain private-only.",
+  "horses":{
+    "Aeliana":{"runs":[
+      {"date":"2026-08-22","race":"Winx Stakes","track":"Randwick","country":"AUS","distanceM":1400,"going":"Soft 5","classGroup":"Group 1","finish":"11th","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-03-28","race":"Kia Tancred Stakes","track":"Rosehill","country":"AUS","distanceM":2400,"going":"Soft 6","classGroup":"Group 1","finish":"1st","weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-03-21","race":"Ranvet Stakes","track":"Rosehill","country":"AUS","distanceM":2000,"going":"Soft 6","classGroup":"Group 1","finish":"1st","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-02-28","race":"Verry Elleegant Stakes","track":"Randwick","country":"AUS","distanceM":1600,"going":"Soft 5","classGroup":"Group 1","finish":"2nd","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-02-14","race":"Apollo Stakes","track":"Randwick","country":"AUS","distanceM":1400,"going":"Good 4","classGroup":"Group 2","finish":"2nd","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-10-25","race":"Cox Plate","track":"Moonee Valley","country":"AUS","distanceM":2040,"going":"Good 4","classGroup":"Group 1","finish":"6th","weightCarried":"55.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-10-04","race":"Turnbull Stakes","track":"Flemington","country":"AUS","distanceM":2000,"going":"Good 3","classGroup":"Group 1","finish":"5th","weightCarried":"55kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-09-13","race":"Makybe Diva Stakes","track":"Flemington","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"Group 1","finish":"2nd","weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"}
+    ]},
+    "Birdman":{"runs":[
+      {"date":"2026-08-29","race":"Memsie Stakes","track":"Caulfield","country":"AUS","distanceM":1400,"going":"Soft 6","classGroup":"Group 1","finish":"6th","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-05-23","race":"Doomben Cup","track":"Doomben","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 1","finish":"1st","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-05-09","race":"A.D. Hollindale Stakes","track":"Gold Coast","country":"AUS","distanceM":1800,"going":"Good 4","classGroup":"Group 2","finish":"2nd","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-03-28","race":"Australian Cup","track":"Flemington","country":"AUS","distanceM":2000,"going":"Soft 7","classGroup":"Group 1","finish":"5th","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-03-14","race":"Peter Young Stakes","track":"Caulfield","country":"AUS","distanceM":1800,"going":"Good 4","classGroup":"Group 2","finish":"1st","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-02-28","race":"Blamey Stakes","track":"Flemington","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"Group 2","finish":"1st","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-02-14","race":"The Elms Handicap","track":"Flemington","country":"AUS","distanceM":1400,"going":"Good 4","classGroup":"Listed","finish":"4th","weightCarried":"60kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-11-08","race":"Queen Elizabeth Stakes","track":"Flemington","country":"AUS","distanceM":2600,"going":"Heavy 8","classGroup":"Group 3","finish":"8th","weightCarried":"60kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"}
+    ]},
+    "Middle Earth":{"runs":[
+      {"date":"2026-08-29","race":"Heatherlie Stakes","track":"Caulfield","country":"AUS","distanceM":1700,"going":"Soft 6","classGroup":"Listed","finish":"8th","weightCarried":"61.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-05-16","race":"JRA Chairman's Handicap","track":"Doomben","country":"AUS","distanceM":2000,"going":"Soft 7","classGroup":"Group 3","finish":"1st","weightCarried":"60.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-05-02","race":"Hawkesbury Gold Cup","track":"Hawkesbury","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"Group 3","finish":"9th","weightCarried":"59.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-04-11","race":"Anniversary Vase","track":"Caulfield","country":"AUS","distanceM":1600,"going":"Soft 6","classGroup":"Listed","finish":"8th","weightCarried":"61kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-11-04","race":"Melbourne Cup","track":"Flemington","country":"AUS","distanceM":3200,"going":"Soft 5","classGroup":"Group 1","finish":"3rd","weightCarried":"54.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-10-25","race":"JRA Cup","track":"Moonee Valley","country":"AUS","distanceM":2040,"going":"Good 4","classGroup":"Group 3","finish":"3rd","weightCarried":"60kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-10-18","race":"Caulfield Cup","track":"Caulfield","country":"AUS","distanceM":2400,"going":"Good 4","classGroup":"Group 1","finish":"11th","weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-10-04","race":"Turnbull Stakes","track":"Flemington","country":"AUS","distanceM":2000,"going":"Good 3","classGroup":"Group 1","finish":"9th","weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"}
+    ]},
+    "Half Yours":{"runs":[
+      {"date":"2026-09-12","race":"Makybe Diva Stakes","track":"Flemington","country":"AUS","distanceM":1600,"going":"Good 3","classGroup":"Group 1","finish":"6th","weightCarried":null,"performanceRating":null,"timefigure":null,"source":"VRC / public result"},
+      {"date":"2026-06-13","race":"The Q22","track":"Eagle Farm","country":"AUS","distanceM":2200,"going":"Heavy 9","classGroup":"Group 2","finish":"4th","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-05-23","race":"Doomben Cup","track":"Doomben","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 1","finish":"4th","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-05-09","race":"A.D. Hollindale Stakes","track":"Gold Coast","country":"AUS","distanceM":1800,"going":"Good 4","classGroup":"Group 2","finish":"4th","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-04-18","race":"All Aged Stakes","track":"Randwick","country":"AUS","distanceM":1400,"going":"Good 4","classGroup":"Group 1","finish":"9th","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-11-04","race":"Melbourne Cup","track":"Flemington","country":"AUS","distanceM":3200,"going":"Soft 5","classGroup":"Group 1","finish":"1st","weightCarried":"53kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-10-18","race":"Caulfield Cup","track":"Caulfield","country":"AUS","distanceM":2400,"going":"Good 4","classGroup":"Group 1","finish":"1st","weightCarried":"52.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-10-04","race":"Turnbull Stakes","track":"Flemington","country":"AUS","distanceM":2000,"going":"Good 3","classGroup":"Group 1","finish":"4th","weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"}
+    ]},
+    "Ohope Wins":{"runs":[
+      {"date":"2026-08-15","race":"P.B. Lawrence Stakes","track":"Caulfield","country":"AUS","distanceM":1400,"going":"Soft 6","classGroup":"Group 2","finish":"11th","weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-04-11","race":"Australian Oaks","track":"Randwick","country":"AUS","distanceM":2400,"going":"Good 4","classGroup":"Group 1","finish":"1st","weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-03-28","race":"Vinery Stud Stakes","track":"Rosehill","country":"AUS","distanceM":2000,"going":"Soft 6","classGroup":"Group 1","finish":"4th","weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-02-21","race":"New Zealand Oaks","track":"Ellerslie","country":"NZ","distanceM":2400,"going":"Soft 5","classGroup":"Group 1","finish":"1st","weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-02-07","race":"David & Karyn Ellis Fillies Classic","track":"Te Rapa","country":"NZ","distanceM":2100,"going":"Good 4","classGroup":"Group 2","finish":"1st","weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-01-01","race":"Sir Patrick Hogan Stakes","track":"Ellerslie","country":"NZ","distanceM":2000,"going":"Soft 6","classGroup":"Group 2","finish":"1st","weightCarried":"56.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-12-20","race":"Nationwide Livestock Mile Maiden","track":"Te Rapa","country":"NZ","distanceM":1600,"going":"Soft 5","classGroup":"Maiden","finish":"2nd","weightCarried":"55kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-12-06","race":"Dunstan Horsefeeds Maiden","track":"Pukekohe Park","country":"NZ","distanceM":1600,"going":"Soft 5","classGroup":"Maiden","finish":"5th","weightCarried":"55kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"}
+    ]},
+    "She’s A Hustler":{"runs":[
+      {"date":"2026-09-12","race":"Makybe Diva Stakes","track":"Flemington","country":"AUS","distanceM":1600,"going":"Good 3","classGroup":"Group 1","finish":"5th","weightCarried":null,"performanceRating":null,"timefigure":null,"source":"VRC / public result"},
+      {"date":"2026-06-13","race":"The Q22","track":"Eagle Farm","country":"AUS","distanceM":2200,"going":"Heavy 9","classGroup":"Group 2","finish":"5th","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-05-23","race":"Doomben Cup","track":"Doomben","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 1","finish":"5th","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-05-09","race":"A.D. Hollindale Stakes","track":"Gold Coast","country":"AUS","distanceM":1800,"going":"Good 4","classGroup":"Group 2","finish":"3rd","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-04-11","race":"Queen Of The Turf Stakes","track":"Randwick","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"Group 1","finish":"4th","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-11-29","race":"Zipping Classic","track":"Caulfield","country":"AUS","distanceM":2400,"going":"Soft 6","classGroup":"Group 2","finish":"1st","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-11-08","race":"Matriarch Stakes","track":"Flemington","country":"AUS","distanceM":2000,"going":"Heavy 8","classGroup":"Group 2","finish":"2nd","weightCarried":"57kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-10-25","race":"Tesio Stakes","track":"Moonee Valley","country":"AUS","distanceM":2040,"going":"Good 4","classGroup":"Group 3","finish":"1st","weightCarried":"54kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"}
+    ]},
+    "Saint George":{"runs":[
+      {"date":"2026-08-29","race":"Brad Masters Plumbing Handicap","track":"Caulfield","country":"AUS","distanceM":2000,"going":"Soft 7","classGroup":null,"finish":"1st","weightCarried":"61.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-07-18","race":"VRC Member Richard John Rowlands Plate","track":"Flemington","country":"AUS","distanceM":2000,"going":"Soft 6","classGroup":"BM100","finish":"1st","weightCarried":"58.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-06-20","race":"The David Bourke Handicap","track":"Flemington","country":"AUS","distanceM":1620,"going":"Soft 7","classGroup":null,"finish":"4th","weightCarried":"57.5kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-02-14","race":"Be Captivated Trophy","track":"Flemington","country":"AUS","distanceM":2500,"going":"Good 4","classGroup":null,"finish":"4th","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2026-01-17","race":"Australian Cup Race Day BM100","track":"Flemington","country":"AUS","distanceM":2000,"going":"Good 3","classGroup":"BM100","finish":"1st","weightCarried":"60kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-12-27","race":"Pepsi Max BM100","track":"Cranbourne","country":"AUS","distanceM":2025,"going":"Good 3","classGroup":"BM100","finish":"1st","weightCarried":"59kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-12-06","race":"Ballarat Cup","track":"Ballarat","country":"AUS","distanceM":2000,"going":"Soft 6","classGroup":"Listed","finish":"6th","weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"},
+      {"date":"2025-11-04","race":"Kirin Ichiban Plate","track":"Flemington","country":"AUS","distanceM":1800,"going":"Soft 5","classGroup":"Listed","finish":"2nd","weightCarried":"56kg","performanceRating":null,"timefigure":null,"source":"Breednet race record"}
+    ]}
+  }
+}
