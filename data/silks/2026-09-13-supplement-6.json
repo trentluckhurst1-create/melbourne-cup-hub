@@ -1,0 +1,16 @@
+{
+  "snapshotDate":"2026-09-13",
+  "method":"Sixth evidence-gated silks pass. Current Australian racing records are preferred; international records remain partial where only owner/silk identity is securely established.",
+  "horses":{
+    "Aethelwulf":{"status":"exact","colours":"White, Red Vee, Hooped Sleeves, Vee On Cap","body":"#ffffff","sleeves":"#ffffff","cap":"#ffffff","pattern":"red-vee-hoops","source":"Public Australian racing form record"},
+    "Enfjaar":{"status":"partial","colours":"Shadwell racing silks — royal blue and white identity verified; exact 2026 pattern transcription pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"shadwell","source":"Public UK racecard / Shadwell ownership record"},
+    "Hopewell Rock":{"status":"partial","colours":"Current ownership silks identified from UK racecards; exact pattern transcription pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"uk-owner-verified","source":"Public UK racecard evidence"},
+    "Highwayman":{"status":"partial","colours":"Joseph O'Brien international runner — owner silk identity verified from Irish/UK racecards; exact textual pattern pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"international-owner-verified","source":"Public Irish/UK racecard evidence"},
+    "Kizlyar":{"status":"partial","colours":"Owner silk identity verified from Irish racecards; exact textual pattern pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"international-owner-verified","source":"Public Irish racecard evidence"},
+    "Nil Bua Gan Dua":{"status":"partial","colours":"Owner silk identity verified from Irish racecards; exact textual pattern pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"international-owner-verified","source":"Public Irish racecard evidence"},
+    "River Tiber":{"status":"partial","colours":"Coolmore ownership silk set verified; exact race allocation/pattern transcription pending","body":"#14213d","sleeves":"#14213d","cap":"#14213d","pattern":"coolmore-owner-set","source":"Public European racecard / ownership record"},
+    "Stinger Glass":{"status":"partial","colours":"Current Japanese owner racing colours identified; exact English pattern transcription pending","body":"#ffffff","sleeves":"#1456a0","cap":"#1456a0","pattern":"japan-owner-verified","source":"Public JRA/racecard ownership evidence"},
+    "Tiberius Thunder":{"status":"partial","colours":"Owner racing silk identity verified from European racecards; exact textual pattern pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"international-owner-verified","source":"Public European racecard evidence"},
+    "Wolfgang":{"status":"partial","colours":"2026 Melbourne Cup nominee identity isolated from unrelated Australian namesakes; owner colours remain under exact transcription review","body":"#777777","sleeves":"#aaaaaa","cap":"#777777","pattern":"identity-verified-pattern-pending","source":"Official Cup nomination identity cross-check; unrelated namesakes excluded"}
+  }
+}
