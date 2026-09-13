@@ -60,7 +60,15 @@ render=function(view='dashboard'){
  if(view==='analysis'){
    document.getElementById('page-title').textContent='Race Analysis';
    const root=document.getElementById('app-content');
-   if(!cupData||!formIntelData||!timeformStatusData||!weightPredictions||!projectedFieldData||!qualificationData){root.innerHTML='<div class="placeholder">Loading full-field intelligence matrix…</div>';Promise.all([loadFormIntel(),loadExtras(),loadProjectedField(),loadLeadups?.()]).then(()=>render(view));return;}
+   if(!cupData||!formIntelData||!timeformStatusData||!weightPredictions||!projectedFieldData||!qualificationData){
+     root.innerHTML='<div class="placeholder">Loading full-field intelligence matrix…</div>';
+     Promise.all([
+       typeof loadFormIntel==='function'?loadFormIntel():Promise.resolve(),
+       typeof loadExtras==='function'?loadExtras():Promise.resolve(),
+       typeof loadProjectedField==='function'?loadProjectedField():Promise.resolve(),
+       typeof loadLeadups==='function'?loadLeadups():Promise.resolve()
+     ]).then(()=>render(view));return;
+   }
    root.innerHTML=intelligenceMatrixView();return;
  }
  matrixRenderBase(view);
