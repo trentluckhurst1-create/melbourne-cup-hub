@@ -1,0 +1,10 @@
+{
+  "snapshotDate":"2026-09-13",
+  "method":"Further exact racing-colour verification from public Australian race/form records. Entries override earlier partial/unresolved records.",
+  "horses":{
+    "Barnavara":{"status":"exact","colours":"Bottle Green, White Checked Sleeves, White Cap","body":"#0f5132","sleeves":"#ffffff","cap":"#ffffff","pattern":"checked-sleeves","source":"Racing Australia — Rosehill Gardens form, 28 Mar 2026"},
+    "Jennivamoose":{"status":"exact","colours":"Sky Blue And Purple Diamonds","body":"#87ceeb","sleeves":"#87ceeb","cap":"#6b2c91","pattern":"purple-diamonds","source":"Public Australian race form — Moonee Valley profile"},
+    "Tarvue":{"status":"exact","colours":"Black And Gold Stripes, Pale Blue Sleeves And Cap","body":"#111111","sleeves":"#a8d8e8","cap":"#a8d8e8","pattern":"black-gold-stripes","source":"Racing Australia — Pakenham form, 6 Mar 2026"},
+    "Future History":{"status":"exact","colours":"Green And White Hoops","body":"#16834a","sleeves":"#16834a","cap":"#16834a","pattern":"green-white-hoops","source":"Racing.com — Peter Trainor ownership colours; Godolphin racecard confirms Future History ownership/silk identity"}
+  }
+}
