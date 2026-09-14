@@ -24,34 +24,57 @@ function commandInternational(){
     projected:typeof projectedRec==='function'?projectedRec(h.horse):null
   })).filter(x=>x.prep||x.projected).sort((a,b)=>(a.projected?.rank||99)-(b.projected?.rank||99)).slice(0,7);
 }
+function commandChangeFeed(){
+  const out=[];
+  const market=typeof marketUniverse==='function'?marketUniverse():[];
+  for(const m of market.filter(x=>x.material).sort((a,b)=>Math.abs(b.impliedMovePct)-Math.abs(a.impliedMovePct)).slice(0,5)){
+    out.push({date:m.last.date,type:'MARKET',horse:m.horse,title:`${m.previousSameBook?`$${m.previousSameBook.odds.toFixed(2)} → `:''}$${m.last.odds.toFixed(2)} · ${m.last.bookmaker}`,detail:`${m.change<0?'SHORTENED':'DRIFTED'} · ${Math.abs(m.impliedMovePct).toFixed(0)}% implied-probability move`,view:'markets'});
+  }
+  for(const e of [...(leadupData?.events||[])].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,8)){
+    out.push({date:e.date,type:e.status==='Golden Ticket'?'FIELD':'FORM',horse:e.horse,title:e.race,detail:e.result&&e.result!=='Pending'?e.result:(e.status||e.note||'Campaign update'),view:e.status==='Golden Ticket'?'order':'leadups'});
+  }
+  return out.sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,8);
+}
+function commandEvidenceState(){
+  const tf=timeformStatusData?.profilesMatched||0;
+  const form=Object.values(formIntelData?.horses||{}).filter(x=>(x.runs||[]).length>0).length;
+  const bases=Object.keys(trainingBaseData?.bases||{}).length;
+  const weights=weightPredictions?.predictions?.length||0;
+  const market=typeof marketUniverse==='function'?marketUniverse().length:0;
+  return {tf,form,bases,weights,market};
+}
 function commandCentreDashboard(){
   const projected=commandProjected();
   const latest=commandLatestEvents();
   const topWeights=commandTopWeights();
   const gaps=commandResearchGaps();
   const internationals=commandInternational();
+  const changes=commandChangeFeed();
+  const evidence=commandEvidenceState();
   const knownTickets=qualificationData?.qualified||[];
   const nominatedTickets=knownTickets.filter(x=>horseByName(x.horse));
-  const verifiedBases=Object.keys(trainingBaseData?.bases||{}).length;
-  const tfMatched=timeformStatusData?.profilesMatched||0;
-  const formLoaded=Object.values(formIntelData?.horses||{}).filter(x=>(x.runs||[]).length>0).length;
   const cutIn=projected.find(x=>x.rank===24)?.horse||'—';
   const firstOut=projectedFieldData?.nextSix?.[0]||'—';
   const topweight=topWeights[0];
   const c=daysToCup();
+  const marketState=typeof snapshotState==='function'?snapshotState(marketSnapshots?.[marketSnapshots.length-1]):{label:'NO LIVE CLAIM'};
   return `
   <section class="cc-statusbar">
-    <div><span class="cc-live-dot"></span><strong>2026 MELBOURNE CUP WORKSPACE</strong></div>
-    <div class="cc-status-items"><span>${cupData?.snapshot?.totalEntries||101} nominees</span><span>${projected.length}/24 projected</span><span>${nominatedTickets.length} nominated tickets</span><span>${c.days}d ${c.hours}h to race</span></div>
+    <div><span class="cc-workspace-dot"></span><strong>2026 MELBOURNE CUP WORKSPACE</strong></div>
+    <div class="cc-status-items"><span>${cupData?.snapshot?.totalEntries||101} nominees</span><span>${projected.length}/24 projected</span><span>${nominatedTickets.length} nominated tickets</span><span>Market: ${marketState.label}</span><span>${c.days}d ${c.hours}h to race</span></div>
+  </section>
+
+  <section class="panel cc-panel cc-changes"><div class="cc-panel-head"><div><span class="cc-label">DELTA INTELLIGENCE</span><h3>What Changed?</h3><div class="panel-sub">Newest material market, field and campaign changes. Static facts are deliberately suppressed.</div></div><span class="tag gold">DATED EVIDENCE</span></div>
+    <div class="cc-change-feed">${changes.length?changes.map(x=>`<button onclick="${x.horse&&horseByName(x.horse)?`openHorse('${x.horse.replace(/'/g,"\\'")}')`:`openView('${x.view}')`}"><span class="cc-change-type">${x.type}</span><span class="cc-change-date">${x.date||'—'}</span><span class="cc-change-main"><strong>${x.horse||'Cup-wide'} · ${x.title}</strong><em>${x.detail}</em></span></button>`).join(''):'<div class="cc-no-change">No new material changes in the loaded evidence.</div>'}</div>
   </section>
 
   <section class="cc-metrics">
     <button class="cc-metric" onclick="openView('order')"><span>PROJECTED CUT</span><strong>${cutIn}</strong><em>#24 · first out ${firstOut}</em></button>
     <button class="cc-metric" onclick="openView('weights')"><span>TOP WEIGHT MODEL</span><strong>${topweight?topweight.predictedKg.toFixed(1)+'kg':'—'}</strong><em>${topweight?.horse||'Awaiting model'}</em></button>
-    <button class="cc-metric" onclick="openView('timeform')"><span>TIMEFORM MATCHED</span><strong>${tfMatched}/101</strong><em>${101-tfMatched} identity gaps</em></button>
-    <button class="cc-metric" onclick="openView('form')"><span>PUBLIC FORM</span><strong>${formLoaded}/101</strong><em>horses with verified runs</em></button>
-    <button class="cc-metric" onclick="openView('horses')"><span>CURRENT BASES</span><strong>${verifiedBases}/101</strong><em>horse-specific verified</em></button>
-    <button class="cc-metric" onclick="openView('leadups')"><span>LATEST EVENT</span><strong>${latest[0]?.horse||'—'}</strong><em>${latest[0]?.race||'No event'}</em></button>
+    <button class="cc-metric" onclick="openView('timeform')"><span>TIMEFORM IDENTITY</span><strong>${evidence.tf}/101</strong><em>numeric ratings remain separate</em></button>
+    <button class="cc-metric" onclick="openView('form')"><span>PUBLIC FORM</span><strong>${evidence.form}/101</strong><em>horses with verified runs</em></button>
+    <button class="cc-metric" onclick="openView('horses')"><span>CURRENT BASES</span><strong>${evidence.bases}/101</strong><em>horse-specific verified</em></button>
+    <button class="cc-metric" onclick="openView('markets')"><span>MARKET COVERAGE</span><strong>${evidence.market}/101</strong><em>stored bookmaker evidence</em></button>
   </section>
 
   <section class="cc-grid-main">
@@ -67,7 +90,7 @@ function commandCentreDashboard(){
 
   <section class="cc-grid-secondary">
     <div class="panel cc-panel"><div class="cc-panel-head"><div><span class="cc-label">HANDICAP</span><h3>Weight Leaders</h3></div><button class="mini-button" onclick="openView('weights')">Full board</button></div>
-      <div class="cc-mini-table">${topWeights.map((x,i)=>`<div><span>${i+1}</span><strong>${horseLink(x.horse)}</strong><b>${Number(x.predictedKg).toFixed(1)}kg</b><em>${x.confidence}</em></div>`).join('')}</div>
+      <div class="cc-mini-table">${topWeights.map((x,i)=>`<div><span>${i+1}</span><strong>${horseLink(x.horse)}</strong><b>${Number(x.predictedKg).toFixed(1)}kg</b><em>MODELLED · ${x.confidence}</em></div>`).join('')}</div>
     </div>
     <div class="panel cc-panel"><div class="cc-panel-head"><div><span class="cc-label">INTERNATIONAL</span><h3>Campaign Monitor</h3></div><button class="mini-button" onclick="openView('international')">Raiders</button></div>
       <div class="cc-mini-table">${internationals.map(x=>`<div><span>${x.projected?'#'+x.projected.rank:'—'}</span><strong>${horseLink(x.horse)}</strong><b>${x.prep?.campaignStatus||x.projected?.band||'Researching'}</b><em>${x.prep?.nextRun||x.trainer}</em></div>`).join('')}</div>
@@ -100,6 +123,7 @@ render=function(view='dashboard'){
     if(!leadupData)pending.push(loadLeadups());
     if(!formIntelData||!timeformStatusData)pending.push(loadFormIntel());
     if(typeof loadInternationalPrep==='function'&&!internationalPrepData)pending.push(loadInternationalPrep());
+    if(typeof loadMarketWorkbench==='function'&&!marketSnapshots.length)pending.push(loadMarketWorkbench());
     if(pending.length){root.innerHTML='<div class="placeholder">Loading command centre intelligence…</div>';Promise.all(pending).then(()=>render('dashboard'));return;}
   }
   commandRenderBase(view);
