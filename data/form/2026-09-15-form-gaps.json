@@ -1,0 +1,97 @@
+{
+  "snapshotDate": "2026-09-15",
+  "gapCount": 13,
+  "gaps": [
+    {
+      "horse": "Christmas Day",
+      "actualRuns": 7,
+      "missingRuns": 1,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Constitution Hill",
+      "actualRuns": 1,
+      "missingRuns": 7,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Golden Century",
+      "actualRuns": 7,
+      "missingRuns": 1,
+      "racehubStatus": "OK",
+      "careerStarts": 33
+    },
+    {
+      "horse": "James J Braddock",
+      "actualRuns": 1,
+      "missingRuns": 7,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Knight’s Choice",
+      "actualRuns": 2,
+      "missingRuns": 6,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Manzor Blue",
+      "actualRuns": 7,
+      "missingRuns": 1,
+      "racehubStatus": "OK",
+      "careerStarts": 23
+    },
+    {
+      "horse": "Piazza San Marco",
+      "actualRuns": 1,
+      "missingRuns": 7,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Pierre Bonnard",
+      "actualRuns": 3,
+      "missingRuns": 5,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Point Of Law",
+      "actualRuns": 4,
+      "missingRuns": 4,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Sons And Lovers",
+      "actualRuns": 1,
+      "missingRuns": 7,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Trustyourinstinct",
+      "actualRuns": 3,
+      "missingRuns": 5,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Winday",
+      "actualRuns": 1,
+      "missingRuns": 7,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    },
+    {
+      "horse": "Wine Dark Sea",
+      "actualRuns": 4,
+      "missingRuns": 4,
+      "racehubStatus": "HTTP_404",
+      "careerStarts": null
+    }
+  ]
+}
