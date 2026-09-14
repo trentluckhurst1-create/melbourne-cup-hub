@@ -8,18 +8,18 @@ from bs4 import BeautifulSoup
 
 ROOT=Path(__file__).resolve().parents[1]
 NOMS=ROOT/'data/nominations/2026-09-01.json'
-OUT=ROOT/'data/form/2026-09-15-racehub-full-form.json'
-AUDIT=ROOT/'data/form/2026-09-15-form-coverage-audit.json'
+FORM_DIR=ROOT/'data/form'
+OUT=FORM_DIR/'2026-09-15-full-form.json'
+AUDIT=FORM_DIR/'2026-09-15-form-coverage-audit.json'
+RACEHUB_RAW=FORM_DIR/'2026-09-15-racehub-full-form.json'
 BASE='https://racehub.com.au/horses/'
 UA='Mozilla/5.0 (compatible; MelbourneCupHub/1.0; public-form-research)'
 
 def slugify(name):
     s=name.lower().replace('’',"'")
-    s=re.sub(r"['.]",'',s)
-    s=re.sub(r'[^a-z0-9]+','-',s).strip('-')
-    return s
+    s=re.sub(r"['.]",'',s);s=re.sub(r'[^a-z0-9]+','-',s).strip('-');return s
 
-def txt(el): return re.sub(r'\s+',' ',el.get_text(' ',strip=True)).strip() if el else ''
+def txt(el):return re.sub(r'\s+',' ',el.get_text(' ',strip=True)).strip() if el else ''
 def parse_distance(s):
     m=re.search(r'(\d{3,4})\s*m',s or '',re.I);return int(m.group(1)) if m else None
 
@@ -43,8 +43,7 @@ def parse_profile(name):
         hs=[txt(x).lower() for x in table.find_all('th')];joined='|'.join(hs)
         if 'date' in joined and 'track' in joined and ('dist' in joined or 'distance' in joined) and 'finish' in joined:target=table
     if target is None:return {'horse':name,'url':url,'status':'FORM_TABLE_NOT_FOUND','runs':[]}
-    headers=[txt(x) for x in target.find_all('th')]
-    hmap={re.sub(r'[^a-z0-9]','',h.lower()):i for i,h in enumerate(headers)}
+    headers=[txt(x) for x in target.find_all('th')];hmap={re.sub(r'[^a-z0-9]','',h.lower()):i for i,h in enumerate(headers)}
     def idx(*keys):
         for key in keys:
             kk=re.sub(r'[^a-z0-9]','',key.lower())
@@ -74,30 +73,61 @@ def parse_profile(name):
         else:pos=finish
         runs.append({'date':date,'race':race_no or 'Public race record','track':track_clean or race_track,'country':None,'distanceM':parse_distance(val('dist')),'going':val('cond') or None,'classGroup':val('class') or None,'finish':pos,'fieldSize':field,'weightCarried':val('wgt') or None,'margin':val('margin') or None,'performanceRating':None,'timefigure':None,'source':'RaceHub public form history','sourceUrl':url})
         if len(runs)>=8:break
-    career_starts=None
-    m=re.search(r'Career\s+(\d+)\s*:',page,re.I) or re.search(r'From\s+(\d+)\s+starts',page,re.I)
+    career_starts=None;m=re.search(r'Career\s+(\d+)\s*:',page,re.I) or re.search(r'From\s+(\d+)\s+starts',page,re.I)
     if m:career_starts=int(m.group(1))
     return {'horse':name,'url':url,'status':'OK' if runs else 'NO_ACTUAL_RUNS','runs':runs,'careerStarts':career_starts,'careerComplete':bool(career_starts is not None and career_starts<=7 and len(runs)>=career_starts)}
 
+def run_key(r):return f"{r.get('date','')}|{r.get('track','')}|{r.get('race','')}"
+def is_actual(r):
+    s=(str(r.get('race',''))+' '+str(r.get('classGroup',''))).lower();return 'trial' not in s and 'jump-out' not in s and 'jumpout' not in s
+
+def load_existing(horses):
+    merged={h:{'runs':[],'careerComplete':False} for h in horses}
+    skip={OUT.name,AUDIT.name,RACEHUB_RAW.name}
+    for path in sorted(FORM_DIR.glob('*.json')):
+        if path.name in skip:continue
+        try:d=json.loads(path.read_text(encoding='utf-8'))
+        except:continue
+        for h,rec in (d.get('horses') or {}).items():
+            if h not in merged:continue
+            by={run_key(r):r for r in merged[h]['runs'] if is_actual(r)}
+            for r in rec.get('runs',[]):
+                if is_actual(r):by[run_key(r)]=r
+            merged[h]['runs']=sorted(by.values(),key=lambda r:r.get('date',''),reverse=True)
+            if rec.get('careerComplete') is True:merged[h]['careerComplete']=True
+    return merged
+
 def main():
     data=json.loads(NOMS.read_text(encoding='utf-8'));horses=[h['horse'] for h in data['horses']]
-    results={}
+    existing=load_existing(horses);results={}
     with ThreadPoolExecutor(max_workers=14) as ex:
         fut={ex.submit(parse_profile,name):name for name in horses}
         done=0
         for f in as_completed(fut):
             rec=f.result();results[rec['horse']]=rec;done+=1
-            print(f"[{done:03d}/101] {rec['horse']}: {rec['status']} runs={len(rec['runs'])} career={rec.get('careerStarts')}",flush=True)
-    out={'snapshotDate':'2026-09-15','type':'public-form-full-field','source':'RaceHub public horse profiles','sourcePolicy':'Publicly accessible form history only; trials/jump-outs excluded; no Timeform values inferred','targetRunsPerHorse':8,'horses':{}}
+            print(f"[{done:03d}/101] {rec['horse']}: {rec['status']} racehub={len(rec['runs'])} existing={len(existing[rec['horse']]['runs'])}",flush=True)
+    raw={'snapshotDate':'2026-09-15','type':'public-form-full-field-racehub','targetRunsPerHorse':8,'horses':{}}
+    canonical={'snapshotDate':'2026-09-15','type':'public-form-full-field-canonical','sourcePolicy':'Merge verified public Hub evidence with RaceHub public form histories; trials/jump-outs excluded; no Timeform values inferred','targetRunsPerHorse':8,'horses':{}}
     audit=[]
     for i,name in enumerate(horses,1):
-        rec=results[name];out['horses'][name]={'runs':rec['runs']}
-        if rec.get('careerComplete'):out['horses'][name]['careerComplete']=True
-        audit.append({'nominationNumber':i,'horse':name,'status':rec['status'],'actualRuns':len(rec['runs']),'careerStarts':rec.get('careerStarts'),'careerComplete':rec.get('careerComplete',False),'sourceUrl':rec['url']})
-    OUT.parent.mkdir(parents=True,exist_ok=True);OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
-    complete=sum(1 for x in audit if x['actualRuns']>=8 or x['careerComplete']);partial=sum(1 for x in audit if 0<x['actualRuns']<8 and not x['careerComplete']);zero=sum(1 for x in audit if x['actualRuns']==0)
-    AUDIT.write_text(json.dumps({'snapshotDate':'2026-09-15','universe':len(audit),'targetRunsPerHorse':8,'completeOrCareerComplete':complete,'partial':partial,'zero':zero,'rows':audit},ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
-    print(f"SUMMARY complete={complete} partial={partial} zero={zero}")
-    if complete==0 and partial==0:raise SystemExit(2)
+        rec=results[name];raw['horses'][name]={'runs':rec['runs']}
+        base=existing[name];by={run_key(r):r for r in base['runs'] if is_actual(r)}
+        for r in rec['runs']:
+            k=run_key(r)
+            # Existing named race records are preferred over generic RaceHub R# rows when dates/tracks match.
+            same=[ek for ek,er in by.items() if er.get('date')==r.get('date') and str(er.get('track','')).lower()==str(r.get('track','')).lower()]
+            if same:continue
+            by[k]=r
+        runs=sorted(by.values(),key=lambda r:r.get('date',''),reverse=True)[:8]
+        career=bool(base.get('careerComplete') or rec.get('careerComplete'))
+        canonical['horses'][name]={'runs':runs}
+        if career:canonical['horses'][name]['careerComplete']=True
+        state='COMPLETE' if len(runs)>=8 else ('CAREER_COMPLETE' if career and len(runs)>0 else ('PARTIAL' if runs else 'ZERO'))
+        audit.append({'nominationNumber':i,'horse':name,'state':state,'actualRuns':len(runs),'racehubStatus':rec['status'],'racehubRuns':len(rec['runs']),'careerStarts':rec.get('careerStarts'),'careerComplete':career,'sourceUrl':rec['url']})
+    RACEHUB_RAW.write_text(json.dumps(raw,ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
+    OUT.write_text(json.dumps(canonical,ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
+    complete=sum(1 for x in audit if x['state'] in ('COMPLETE','CAREER_COMPLETE'));partial=sum(1 for x in audit if x['state']=='PARTIAL');zero=sum(1 for x in audit if x['state']=='ZERO')
+    AUDIT.write_text(json.dumps({'snapshotDate':'2026-09-15','universe':101,'targetRunsPerHorse':8,'completeOrCareerComplete':complete,'partial':partial,'zero':zero,'rows':audit},ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
+    print(f"CANONICAL SUMMARY complete={complete} partial={partial} zero={zero}")
 
 if __name__=='__main__':main()
