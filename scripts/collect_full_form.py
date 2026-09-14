@@ -11,6 +11,7 @@ NOMS=ROOT/'data/nominations/2026-09-01.json'
 FORM_DIR=ROOT/'data/form'
 OUT=FORM_DIR/'2026-09-15-full-form.json'
 AUDIT=FORM_DIR/'2026-09-15-form-coverage-audit.json'
+GAPS=FORM_DIR/'2026-09-15-form-gaps.json'
 RACEHUB_RAW=FORM_DIR/'2026-09-15-racehub-full-form.json'
 BASE='https://racehub.com.au/horses/'
 UA='Mozilla/5.0 (compatible; MelbourneCupHub/1.0; public-form-research)'
@@ -83,7 +84,7 @@ def is_actual(r):
 
 def load_existing(horses):
     merged={h:{'runs':[],'careerComplete':False} for h in horses}
-    skip={OUT.name,AUDIT.name,RACEHUB_RAW.name}
+    skip={OUT.name,AUDIT.name,GAPS.name,RACEHUB_RAW.name}
     for path in sorted(FORM_DIR.glob('*.json')):
         if path.name in skip:continue
         try:d=json.loads(path.read_text(encoding='utf-8'))
@@ -113,21 +114,21 @@ def main():
         rec=results[name];raw['horses'][name]={'runs':rec['runs']}
         base=existing[name];by={run_key(r):r for r in base['runs'] if is_actual(r)}
         for r in rec['runs']:
-            k=run_key(r)
-            # Existing named race records are preferred over generic RaceHub R# rows when dates/tracks match.
             same=[ek for ek,er in by.items() if er.get('date')==r.get('date') and str(er.get('track','')).lower()==str(r.get('track','')).lower()]
             if same:continue
-            by[k]=r
+            by[run_key(r)]=r
         runs=sorted(by.values(),key=lambda r:r.get('date',''),reverse=True)[:8]
         career=bool(base.get('careerComplete') or rec.get('careerComplete'))
         canonical['horses'][name]={'runs':runs}
         if career:canonical['horses'][name]['careerComplete']=True
         state='COMPLETE' if len(runs)>=8 else ('CAREER_COMPLETE' if career and len(runs)>0 else ('PARTIAL' if runs else 'ZERO'))
-        audit.append({'nominationNumber':i,'horse':name,'state':state,'actualRuns':len(runs),'racehubStatus':rec['status'],'racehubRuns':len(rec['runs']),'careerStarts':rec.get('careerStarts'),'careerComplete':career,'sourceUrl':rec['url']})
-    RACEHUB_RAW.write_text(json.dumps(raw,ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
-    OUT.write_text(json.dumps(canonical,ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
+        audit.append({'nominationNumber':i,'horse':name,'state':state,'actualRuns':len(runs),'missingRuns':max(0,8-len(runs)) if state=='PARTIAL' else 0,'racehubStatus':rec['status'],'racehubRuns':len(rec['runs']),'careerStarts':rec.get('careerStarts'),'careerComplete':career,'sourceUrl':rec['url']})
+    RACEHUB_RAW.write_text(json.dumps(raw,ensure_ascii=False,indent=2)+"\n",encoding='utf-8');OUT.write_text(json.dumps(canonical,ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
     complete=sum(1 for x in audit if x['state'] in ('COMPLETE','CAREER_COMPLETE'));partial=sum(1 for x in audit if x['state']=='PARTIAL');zero=sum(1 for x in audit if x['state']=='ZERO')
     AUDIT.write_text(json.dumps({'snapshotDate':'2026-09-15','universe':101,'targetRunsPerHorse':8,'completeOrCareerComplete':complete,'partial':partial,'zero':zero,'rows':audit},ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
+    gaps=[{'horse':x['horse'],'actualRuns':x['actualRuns'],'missingRuns':x['missingRuns'],'racehubStatus':x['racehubStatus'],'careerStarts':x['careerStarts']} for x in audit if x['state'] in ('PARTIAL','ZERO')]
+    GAPS.write_text(json.dumps({'snapshotDate':'2026-09-15','gapCount':len(gaps),'gaps':gaps},ensure_ascii=False,indent=2)+"\n",encoding='utf-8')
     print(f"CANONICAL SUMMARY complete={complete} partial={partial} zero={zero}")
+    print('GAPS '+', '.join(f"{x['horse']}({x['actualRuns']}/8)" for x in gaps))
 
 if __name__=='__main__':main()
