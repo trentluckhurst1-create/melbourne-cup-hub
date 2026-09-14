@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'scripts/validate_unique_form.py'
+      - 'data/form/2026-09-15-unique-completion-overrides.json'
       - '.github/workflows/validate-unique-form.yml'
 permissions:
   contents: write
@@ -26,3 +27,4 @@ jobs:
           git commit -m "Audit unique actual starts across all 101 nominees"
           git pull --rebase origin main
           git push origin main
+# final strict audit trigger 2
