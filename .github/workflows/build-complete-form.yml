@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/augment_form_parallel.py'
+      - 'scripts/apply_form_overrides.py'
+      - 'data/form/2026-09-15-form-authoritative-overrides.json'
       - 'data/form/2026-09-15-form-canonical.json'
       - 'data/form/2026-09-15-form-coverage-ledger.json'
       - '.github/workflows/build-complete-form.yml'
@@ -23,8 +25,12 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install requests
+      - name: Apply authoritative verified form overrides
+        run: python scripts/apply_form_overrides.py
       - name: Parallel identity-guarded form completion
         run: python scripts/augment_form_parallel.py
+      - name: Re-apply authoritative overrides after automated pass
+        run: python scripts/apply_form_overrides.py
       - name: Commit canonical form and audit
         run: |
           git config user.name "github-actions[bot]"
