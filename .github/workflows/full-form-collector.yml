@@ -4,6 +4,7 @@ on:
     paths:
       - '.github/workflows/full-form-collector.yml'
       - 'data/form/2026-09-15-form-final-overrides.json'
+      - 'data/form/2026-09-15-form-pierre-fix.json'
 permissions:
   contents: write
 jobs:
@@ -30,4 +31,4 @@ jobs:
             git pull --rebase origin main
             git push origin main
           fi
-# final 101-horse audit trigger 5
+# Pierre final audit trigger 6
