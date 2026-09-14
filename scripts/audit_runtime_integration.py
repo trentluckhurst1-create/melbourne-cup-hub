@@ -18,8 +18,8 @@ def check(name,ok,detail):
     checks.append({'name':name,'ok':bool(ok),'detail':detail})
     if not ok: errors.append(f'{name}: {detail}')
 
-check('strict_form_file_exists',STRICT.exists(),str(STRICT.relative_to(ROOT)))
-check('strict_audit_exists',AUDIT.exists(),str(AUDIT.relative_to(ROOT)))
+check('strict_form_file_exists',STRICT.exists(),STRICT.relative_to(ROOT).as_posix())
+check('strict_audit_exists',AUDIT.exists(),AUDIT.relative_to(ROOT).as_posix())
 check('obsolete_supplement_loader_inactive','form-supplement-14-loader.js' not in scripts,'old supplement overlay must not load')
 
 tf=(ROOT/'timeform-form.js').read_text(encoding='utf-8')

@@ -13,6 +13,8 @@ SKIP={
  '2026-09-15-full-form.json','2026-09-15-form-coverage-audit.json','2026-09-15-form-gaps.json',
  '2026-09-15-unique-full-form.json','2026-09-15-unique-form-audit.json','2026-09-15-unique-form-gaps.json',
  '2026-09-15-form-coverage-ledger.json','2026-09-15-form-canonical.json'
+ ,'2026-09-15-ras-browser-capture.json','2026-09-15-ras-form-guide-enrichment.json',
+ '2026-09-15-ras-form-guide-audit.json','2026-09-15-ras-http-search-capture.json'
 }
 NONSTART={'scr','scratched','wd','withdrawn','nr','non-runner','dns','did not start'}
 
