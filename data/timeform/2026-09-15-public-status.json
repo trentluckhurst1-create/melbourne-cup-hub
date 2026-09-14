@@ -1,0 +1,29 @@
+{
+  "snapshotDate": "2026-09-15",
+  "source": "Timeform",
+  "access": "Authorised user-supplied subscriber screenshots; private local dataset only",
+  "publicSubscriberData": false,
+  "officialNominees": 101,
+  "projectedTop24": 24,
+  "projectedTop24ProfilesCaptured": 22,
+  "projectedTop24ProfilesNotFound": 2,
+  "projectedTop24HistoriesFlaggedIncomplete": 2,
+  "projectedTop24NotFound": [
+    "Shockletz",
+    "Zakouma"
+  ],
+  "projectedTop24IncompleteHistories": [
+    "Zahrann",
+    "Ohope Wins"
+  ],
+  "protectedRatingsPublished": 0,
+  "policy": {
+    "privateDatasetLocalOnly": true,
+    "noNonTimeformSubstitution": true,
+    "noFabricatedRatings": true,
+    "publicSiteShowsCoverageOnly": true,
+    "ratingModifiersPreservedPrivately": true,
+    "disciplineRatingsKeptSeparate": true
+  },
+  "note": "A private TF-MANUAL-1.0 dataset was built from user-supplied authenticated screenshots for the projected Top 24. It contains 22 matched profiles and visible run-level ratings, preserves +/p/? modifiers, keeps Flat/Hurdle/Chase ratings separate, and flags incomplete histories. Subscriber-only numerical values are deliberately excluded from this public repository file."
+}
