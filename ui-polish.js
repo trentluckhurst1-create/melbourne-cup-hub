@@ -32,7 +32,24 @@
     });
   }
 
+  function installReferenceToggle(){
+    const secondary=['connections','history'];
+    secondary.forEach(id=>nav.querySelector(`button[data-view="${id}"]`)?.classList.add('nav-secondary'));
+    if(nav.querySelector('.nav-more-toggle'))return;
+    const anchor=nav.querySelector('button[data-view="connections"]');
+    if(!anchor)return;
+    const toggle=document.createElement('button');
+    toggle.type='button';toggle.className='nav-more-toggle';toggle.textContent='More Reference';toggle.setAttribute('aria-expanded','false');
+    toggle.addEventListener('click',()=>{
+      const open=nav.classList.toggle('show-secondary');
+      toggle.textContent=open?'Hide Reference':'More Reference';
+      toggle.setAttribute('aria-expanded',String(open));
+    });
+    anchor.before(toggle);
+  }
+
   decorateNav();
+  installReferenceToggle();
 
   const title=document.querySelector('.brand-subtitle');
   if(title)title.textContent='PRO RACING WORKSPACE · 2026';
