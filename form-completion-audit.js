@@ -1,5 +1,10 @@
 function actualRaceRuns(horse){
-  return (formIntelData?.horses?.[horse]?.runs||[]).filter(r=>!String(r.classGroup||'').toLowerCase().includes('trial')&&!String(r.race||'').toLowerCase().includes('trial')&&!String(r.race||'').toLowerCase().includes('jump-out'));
+  const runs=formIntelData?.horses?.[horse]?.runs||[];
+  return runs.filter(r=>{
+    const text=`${r.classGroup||''} ${r.race||''}`.toLowerCase();
+    const finish=String(r.finish||'').trim().toLowerCase();
+    return !text.includes('trial')&&!text.includes('jump-out')&&!text.includes('jumpout')&&!['scr','scratched','wd','withdrawn','nr','non-runner','dns','did not start'].includes(finish);
+  });
 }
 function formRunKey(r){return `${r.date||''}|${r.track||''}|${r.race||''}`;}
 function formLatestDate(horse){return actualRaceRuns(horse).map(r=>r.date).filter(Boolean).sort().at(-1)||null;}
@@ -12,7 +17,8 @@ function formSourceState(horse){
 }
 function formIntegrityIssues(horse){
   const runs=actualRaceRuns(horse);const issues=[];
-  const keys=runs.map(formRunKey);if(new Set(keys).size!==keys.length)issues.push('duplicate run');
+  const dates=runs.map(r=>r.date).filter(Boolean);
+  if(new Set(dates).size!==dates.length)issues.push('duplicate start date');
   if(runs.some(r=>!r.date))issues.push('missing date');
   if(runs.some(r=>!r.track))issues.push('missing track');
   if(runs.some(r=>!r.race))issues.push('missing race');
@@ -55,10 +61,10 @@ function formCoveragePriority(x){
 function formCoverageAuditPanel(){
   const a=formCompletionSummary();
   const gaps=a.rows.filter(x=>x.state==='RESEARCH_GAP'||x.state==='INTEGRITY_FLAG').sort((x,y)=>formCoveragePriority(x)-formCoveragePriority(y)||x.runs-y.runs||x.h.nominationNumber-y.h.nominationNumber);
-  return `<section class="section-block"><div class="section-header"><div><div class="kicker">Coverage Control · Actual Race Starts Only</div><h2>101-Horse Form Completion Audit</h2><div class="section-copy">Target = latest eight actual race starts. Trials and jump-outs never count. A horse with fewer than eight career starts is complete only when the dataset explicitly certifies its full career; missing or unsourced rows are flagged rather than silently accepted.</div></div></div>
-  <section class="metric-grid">${metric('8/8 Complete',a.complete,'Full recent race window')}${metric('Career Complete',a.career,'Explicitly certified full career')}${metric('Research Gaps',a.gaps,'Below required coverage')}${metric('Integrity Flags',a.flagged,'Run/source problems')}${metric('Fully Sourced',a.sourced,'Every loaded run has provenance')}${metric('≤30d Latest Run',a.current30,'Recent evidence present')}</section>
-  <div class="panel"><div class="panel-head"><div><h3>Priority Coverage Queue</h3><div class="panel-sub">Projected-field runners and integrity failures are automatically promoted above ordinary gaps.</div></div><span class="tag gold">${gaps.length} OPEN</span></div>
-  ${gaps.length?`<div class="table-wrap"><table class="data-table"><thead><tr><th>Priority</th><th>#</th><th>Horse</th><th>Trainer</th><th>Runs</th><th>Missing</th><th>Latest</th><th>Sources</th><th>TF Identity</th><th>Issue</th></tr></thead><tbody>${gaps.map(x=>`<tr><td>${x.projectedRank?`PROJ #${x.projectedRank}`:(x.state==='INTEGRITY_FLAG'?'FLAG':'OPEN')}</td><td>${x.h.nominationNumber}</td><td class="horse">${horseLink(x.h.horse)}</td><td>${x.h.trainer}</td><td><strong>${x.runs}/8</strong></td><td>${Math.max(0,8-x.runs)}</td><td>${x.latest||'—'}${x.ageDays!==null?`<div class="muted">${x.ageDays}d ago</div>`:''}</td><td><span class="tag ${x.source.className}">${x.source.label}</span></td><td>${privateTfMatched(x.h.horse)?tag('Matched','green'):'<span class="muted">Unresolved</span>'}</td><td>${x.issues.length?`<span class="tag red">${x.issues.join(' · ')}</span>`:'<span class="muted">coverage gap</span>'}</td></tr>`).join('')}</tbody></table></div>`:'<div class="audit-banner"><strong>FORM COVERAGE COMPLETE</strong><span>Every nominee is either 8/8 or explicitly certified full-career complete, with no integrity flags.</span></div>'}</div></section>`;
+  return `<section class="section-block"><div class="section-header"><div><div class="kicker">Coverage Control · Strict Unique Actual Starts</div><h2>101-Horse Form Completion Audit</h2><div class="section-copy">Target = latest eight unique actual race starts. Trials, jump-outs, scratchings and non-starters never count. Same-day duplicate descriptions count once. A horse with fewer than eight career starts is complete only when the dataset explicitly certifies its full career.</div></div></div>
+  <section class="metric-grid">${metric('8/8 Complete',a.complete,'Eight unique actual starts')}${metric('Career Complete',a.career,'Explicitly certified full career')}${metric('Research Gaps',a.gaps,'Below required coverage')}${metric('Integrity Flags',a.flagged,'Duplicate/source/run problems')}${metric('Fully Sourced',a.sourced,'Every loaded run has provenance')}${metric('≤30d Latest Run',a.current30,'Recent evidence present')}</section>
+  <div class="panel"><div class="panel-head"><div><h3>Priority Coverage Queue</h3><div class="panel-sub">Projected-field runners and integrity failures are automatically promoted above ordinary gaps.</div></div><span class="tag ${gaps.length?'gold':'green'}">${gaps.length} OPEN</span></div>
+  ${gaps.length?`<div class="table-wrap"><table class="data-table"><thead><tr><th>Priority</th><th>#</th><th>Horse</th><th>Trainer</th><th>Runs</th><th>Missing</th><th>Latest</th><th>Sources</th><th>TF Identity</th><th>Issue</th></tr></thead><tbody>${gaps.map(x=>`<tr><td>${x.projectedRank?`PROJ #${x.projectedRank}`:(x.state==='INTEGRITY_FLAG'?'FLAG':'OPEN')}</td><td>${x.h.nominationNumber}</td><td class="horse">${horseLink(x.h.horse)}</td><td>${x.h.trainer}</td><td><strong>${x.runs}/8</strong></td><td>${Math.max(0,8-x.runs)}</td><td>${x.latest||'—'}${x.ageDays!==null?`<div class="muted">${x.ageDays}d ago</div>`:''}</td><td><span class="tag ${x.source.className}">${x.source.label}</span></td><td>${privateTfMatched(x.h.horse)?tag('Matched','green'):'<span class="muted">Unresolved</span>'}</td><td>${x.issues.length?`<span class="tag red">${x.issues.join(' · ')}</span>`:'<span class="muted">coverage gap</span>'}</td></tr>`).join('')}</tbody></table></div>`:'<div class="audit-banner"><strong>FORM COVERAGE COMPLETE</strong><span>101/101 resolved: every nominee is either 8/8 unique actual starts or explicitly certified full-career complete, with no integrity flags.</span></div>'}</div></section>`;
 }
 
 const formAuditRenderBase=render;
