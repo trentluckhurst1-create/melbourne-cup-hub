@@ -1,0 +1,48 @@
+{
+  "snapshotDate":"2026-09-15",
+  "type":"public-form-supplement",
+  "priority":"PROJECTED_24_FORM_COMPLETION",
+  "policy":{"factualOnly":true,"mergeIntoPrimaryByHorse":true,"excludeTrials":true},
+  "horses":{
+    "Goodie Two Shoes":{"runs":[
+      {"date":"2026-09-12","race":"Kilternan Stakes","track":"Leopardstown","country":"IRE","distanceM":2400,"going":"Good","classGroup":"Group 3","finish":"10th","fieldSize":10,"weightCarried":"62kg","margin":1.25,"source":"Breednet public race record"},
+      {"date":"2026-08-01","race":"Lillie Langtry Stakes","track":"Goodwood","country":"GB","distanceM":2800,"going":"Good to Firm","classGroup":"Group 2","finish":"1st","fieldSize":6,"weightCarried":"61kg","margin":0.1,"source":"Breednet public race record"},
+      {"date":"2026-07-08","race":"Stanerra Stakes","track":"Fairyhouse","country":"IRE","distanceM":2800,"going":"Good","classGroup":"Group 3","finish":"2nd","fieldSize":9,"weightCarried":"61kg","margin":1.5,"source":"Breednet public race record"},
+      {"date":"2026-06-19","race":"Martin Molony Stakes","track":"Limerick","country":"IRE","distanceM":2500,"going":"Soft","classGroup":"Listed","finish":"8th","fieldSize":10,"weightCarried":"60.5kg","margin":3.5,"source":"Breednet public race record"},
+      {"date":"2025-11-04","race":"Melbourne Cup","track":"Flemington","country":"AUS","distanceM":3200,"going":"Soft 5","classGroup":"Group 1","finish":"2nd","fieldSize":24,"weightCarried":"51.5kg","margin":2.8,"source":"Breednet public race record"},
+      {"date":"2025-08-02","race":"Lillie Langtry Stakes","track":"Goodwood","country":"GB","distanceM":2800,"going":"Good to Soft","classGroup":"Group 2","finish":"3rd","fieldSize":8,"weightCarried":"61kg","margin":4.25,"source":"Breednet public race record"},
+      {"date":"2025-07-09","race":"Stanerra Stakes","track":"Fairyhouse","country":"IRE","distanceM":2800,"going":"Good","classGroup":"Group 3","finish":"1st","fieldSize":9,"weightCarried":"61kg","source":"Breednet public race record"},
+      {"date":"2025-05-30","race":"His Majesty's Plate","track":"Down Royal","country":"IRE","distanceM":3200,"going":"Good","classGroup":"Listed","finish":"1st","fieldSize":8,"weightCarried":"59kg","source":"Breednet public race record"}
+    ]},
+    "Zahrann":{"runs":[
+      {"date":"2026-08-29","race":"Heatherlie Stakes","track":"Caulfield","country":"AUS","distanceM":1700,"going":null,"classGroup":"Listed","finish":"4th","fieldSize":16,"weightCarried":null,"margin":1.65,"source":"RaceHub public form history"},
+      {"date":"2026-06-06","race":"BM100","track":"Flemington","country":"AUS","distanceM":2000,"going":"Heavy 8","classGroup":"BM100","finish":"3rd","fieldSize":14,"weightCarried":"57kg","margin":1.0,"source":"RaceHub public form history"},
+      {"date":"2026-05-16","race":"BM100","track":"Flemington","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"BM100","finish":"5th","fieldSize":11,"weightCarried":"60kg","margin":1.8,"source":"RaceHub public form history"},
+      {"date":"2025-09-13","race":"Irish Champion Stakes meeting 2011m","track":"Leopardstown","country":"IRE","distanceM":2011,"going":"Dead","classGroup":"Open","finish":"7th","fieldSize":8,"weightCarried":"58.5kg","margin":10.5,"source":"RaceHub public form history"},
+      {"date":"2025-08-16","race":"Curragh 2011m Open","track":"Curragh","country":"IRE","distanceM":2011,"going":"Good","classGroup":"Open","finish":"1st","fieldSize":6,"weightCarried":"58kg","source":"RaceHub public form history"},
+      {"date":"2025-06-20","race":"Ascot 2414m Class 1","track":"Ascot","country":"GB","distanceM":2414,"going":"Firm","classGroup":"Class 1","finish":"2nd","fieldSize":9,"weightCarried":"58kg","margin":0.8,"source":"RaceHub public form history"},
+      {"date":"2025-06-05","race":"Leopardstown 2414m Open","track":"Leopardstown","country":"IRE","distanceM":2414,"going":"Good","classGroup":"Open","finish":"1st","fieldSize":9,"weightCarried":"59.5kg","source":"RaceHub public form history"},
+      {"date":"2025-05-06","race":"Cork Maiden","track":"Cork","country":"IRE","distanceM":2112,"going":"Good","classGroup":"Maiden","finish":"1st","fieldSize":5,"weightCarried":"60kg","source":"RaceHub public form history"}
+    ]},
+    "Soulcombe":{"runs":[
+      {"date":"2026-08-29","race":"Heatherlie Stakes","track":"Caulfield","country":"AUS","distanceM":1700,"going":"Soft 6","classGroup":"Listed","finish":"14th","fieldSize":null,"weightCarried":"59.5kg","margin":24.9,"source":"Breednet public race record"},
+      {"date":"2023-11-07","race":"Melbourne Cup","track":"Flemington","country":"AUS","distanceM":3200,"going":"Good 4","classGroup":"Group 1","finish":"2nd","fieldSize":24,"weightCarried":"53.5kg","margin":2.3,"source":"Breednet public race record"},
+      {"date":"2023-10-21","race":"Caulfield Cup","track":"Caulfield","country":"AUS","distanceM":2400,"going":"Good 4","classGroup":"Group 1","finish":"7th","fieldSize":null,"weightCarried":"53.5kg","margin":5.5,"source":"Breednet public race record"},
+      {"date":"2023-10-07","race":"Turnbull Stakes","track":"Flemington","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 1","finish":"3rd","fieldSize":null,"weightCarried":"56kg","margin":2.2,"source":"Breednet public race record"},
+      {"date":"2023-09-23","race":"Underwood Stakes","track":"Caulfield","country":"AUS","distanceM":1800,"going":"Good 3","classGroup":"Group 1","finish":"4th","fieldSize":null,"weightCarried":"59kg","margin":1.4,"source":"Breednet public race record"},
+      {"date":"2023-09-02","race":"Heatherlie Stakes","track":"Caulfield","country":"AUS","distanceM":1700,"going":"Good 4","classGroup":"Listed","finish":"1st","fieldSize":null,"weightCarried":"58.5kg","margin":0.8,"source":"Breednet public race record"},
+      {"date":"2023-03-25","race":"Roy Higgins","track":"Flemington","country":"AUS","distanceM":2600,"going":"Good 4","classGroup":"Listed","finish":"2nd","fieldSize":null,"weightCarried":"56.5kg","margin":2.8,"source":"Breednet public race record"},
+      {"date":"2023-03-04","race":"Randwick City Stakes","track":"Randwick","country":"AUS","distanceM":2000,"going":"Soft 6","classGroup":"Listed","finish":"8th","fieldSize":null,"weightCarried":"58.5kg","margin":5.0,"source":"Breednet public race record"}
+    ]},
+    "The Euphrates":{"runs":[
+      {"date":"2026-09-05","race":"Randwick 1600m","track":"Randwick","country":"AUS","distanceM":1600,"going":null,"classGroup":null,"finish":"4th","fieldSize":9,"weightCarried":null,"margin":2.77,"source":"RaceHub public form history"},
+      {"date":"2024-10-19","race":"Ascot 3118m Class 1","track":"Ascot","country":"GB","distanceM":3118,"going":"Soft","classGroup":"Class 1","finish":"7th","fieldSize":9,"weightCarried":"57.5kg","margin":21.8,"source":"RaceHub public form history"},
+      {"date":"2024-09-29","race":"Irish Cesarewitch","track":"Curragh","country":"IRE","distanceM":3419,"going":"Good","classGroup":"RS110","finish":"1st","fieldSize":30,"weightCarried":"58kg","source":"RaceHub public form history"},
+      {"date":"2024-09-15","race":"Curragh 2816m Open","track":"Curragh","country":"IRE","distanceM":2816,"going":"Good","classGroup":"Open","finish":"4th","fieldSize":6,"weightCarried":"58kg","margin":3.8,"source":"RaceHub public form history"},
+      {"date":"2024-08-24","race":"Leopardstown 2414m Open","track":"Leopardstown","country":"IRE","distanceM":2414,"going":"Good","classGroup":"Open","finish":"2nd","fieldSize":4,"weightCarried":"56.5kg","margin":5.0,"source":"RaceHub public form history"},
+      {"date":"2024-07-27","race":"Gowran Park 2414m Open","track":"Gowran Park","country":"IRE","distanceM":2414,"going":"Good","classGroup":"Open","finish":"1st","fieldSize":7,"weightCarried":"59.5kg","source":"RaceHub public form history"},
+      {"date":"2024-06-30","race":"Curragh 2414m Open","track":"Curragh","country":"IRE","distanceM":2414,"going":"Good","classGroup":"Open","finish":"6th","fieldSize":8,"weightCarried":"58kg","margin":8.0,"source":"RaceHub public form history"},
+      {"date":"2024-06-21","race":"Ascot 2414m Class 1","track":"Ascot","country":"GB","distanceM":2414,"going":"Good","classGroup":"Class 1","finish":"5th","fieldSize":14,"weightCarried":"58kg","margin":9.5,"source":"RaceHub public form history"}
+    ]}
+  }
+}
