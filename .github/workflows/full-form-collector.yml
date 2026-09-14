@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -19,11 +21,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/form/2026-09-15-racehub-full-form.json data/form/2026-09-15-form-coverage-audit.json
+          git add data/form/2026-09-15-racehub-full-form.json data/form/2026-09-15-full-form.json data/form/2026-09-15-form-coverage-audit.json
           if git diff --cached --quiet; then
             echo "No form changes"
           else
-            git commit -m "Populate full-field public form from RaceHub"
-            git push
+            git commit -m "Populate canonical full-field public form"
+            git pull --rebase origin main
+            git push origin main
           fi
-# parallel collector trigger 2
+# canonical merge trigger 3
