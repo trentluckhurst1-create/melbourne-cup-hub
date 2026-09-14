@@ -4,9 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - 'scripts/build_complete_form.py'
       - 'scripts/augment_form_parallel.py'
-      - 'data/form/**'
+      - 'data/form/2026-09-15-form-canonical.json'
+      - 'data/form/2026-09-15-form-coverage-ledger.json'
       - '.github/workflows/build-complete-form.yml'
   workflow_dispatch:
 
@@ -22,10 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install requests beautifulsoup4
-      - name: Build canonical 101-horse form
-        run: python scripts/build_complete_form.py
-      - name: Parallel identity-guarded Breednet completion
+      - run: pip install requests
+      - name: Parallel identity-guarded form completion
         run: python scripts/augment_form_parallel.py
       - name: Commit canonical form and audit
         run: |
@@ -33,5 +31,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/form/2026-09-15-form-canonical.json data/form/2026-09-15-form-coverage-ledger.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Build canonical 101-horse form coverage"
+          git commit -m "Advance canonical 101-horse form coverage"
           git push
