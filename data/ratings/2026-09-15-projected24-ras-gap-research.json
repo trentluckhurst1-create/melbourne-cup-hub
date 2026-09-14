@@ -1,0 +1,87 @@
+{
+  "snapshotDate": "2026-09-15",
+  "purpose": "Research ledger for unresolved projected-24 Racing & Sports rating gaps",
+  "policy": "Only figures explicitly identified by Racing & Sports as an RAS/RR/Rating metric may be promoted into the public RAS peak map. Timeform figures, ambiguous race-card numbers, handicap weights and inferred values are excluded.",
+  "unresolved": [
+    {
+      "horse": "Highland Bling",
+      "status": "LOGIN_GATED",
+      "publicEvidence": [
+        {
+          "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-09-12/R10?showPriceComparison=1",
+          "evidence": "Public form guide exposes career/form data but states 'Log in to view all runs and ratings'."
+        },
+        {
+          "url": "https://www.racingandsports.com.au/news/racing/news/2026-03-08/2026-adelaide-cup-runner-by-runner-preview/710557",
+          "evidence": "Public preview confirms staying profile but provides no explicit RAS rating."
+        }
+      ],
+      "rasPeak": null
+    },
+    {
+      "horse": "River Of Stars",
+      "status": "LOGIN_GATED",
+      "publicEvidence": [
+        {
+          "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-08-29/R9?showPriceComparison=1",
+          "evidence": "Public form guide includes the runner but historical ratings are login-gated; no explicit public RAS peak identified."
+        }
+      ],
+      "rasPeak": null
+    },
+    {
+      "horse": "Shockletz",
+      "status": "AMBIGUOUS_PUBLIC_METRICS_PLUS_LOGIN_GATED",
+      "publicEvidence": [
+        {
+          "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-09-12/R5?showPriceComparison=1",
+          "evidence": "Standard public form page exposes career/run data and an unlabeled numeric display near the runner row, but also states 'Log in to view all runs and ratings'. The unlabeled number is not promoted to RAS."
+        },
+        {
+          "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-09-12/R5/enhanced-form",
+          "evidence": "Enhanced Form search result exposes a long sequence of structured numbers for Shockletz, but without a reliable public header mapping in the fetched response. Values are retained as unclassified source evidence only and are not relabeled RAS."
+        },
+        {
+          "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-12/shockletz-earns-melbourne-cup-berth/721323",
+          "evidence": "Confirms Archer Stakes win and ballot exemption; no explicit RAS rating published."
+        }
+      ],
+      "rasPeak": null
+    },
+    {
+      "horse": "Soulcombe",
+      "status": "LOGIN_GATED",
+      "publicEvidence": [
+        {
+          "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-08-29/R9?showPriceComparison=1",
+          "evidence": "Public page confirms 2023 Melbourne Cup second over 3200m and states 'Log in to view all runs and ratings'. No explicit current RAS peak verified."
+        }
+      ],
+      "rasPeak": null
+    },
+    {
+      "horse": "The Euphrates",
+      "status": "UNRESOLVED_PUBLIC",
+      "publicEvidence": [],
+      "note": "Public R&S form/news searches have not produced an explicit RAS peak. Do not substitute Timeform or handicap-based values.",
+      "rasPeak": null
+    },
+    {
+      "horse": "Vauban",
+      "status": "PUBLIC_TIMEFORM_FOUND_BUT_RAS_UNRESOLVED",
+      "publicEvidence": [
+        {
+          "url": "https://www.racingandsports.com.au/news/racing/news/2026-03-14/vauban-returns-with-another-sky-high-effort/710926",
+          "evidence": "Public article confirms current campaign context but does not publish an explicit RAS figure."
+        },
+        {
+          "url": "https://www.racingandsports.com.au/news/betting/horse-racing-tips/2024-04-11/melbourne-cup-preview-and-selections-from-chris-scholtz/672229",
+          "evidence": "Public article explicitly cites a UK Timeform rating for Vauban; this is excluded from RAS by policy."
+        }
+      ],
+      "rasPeak": null
+    }
+  ],
+  "projected24RasUnresolvedCount": 6,
+  "promotionsToRasPublicPeaksThisPass": 0
+}
