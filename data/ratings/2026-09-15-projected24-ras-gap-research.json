@@ -9,7 +9,7 @@
       "publicEvidence": [
         {
           "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-09-12/R10?showPriceComparison=1",
-          "evidence": "Public form guide exposes career/form data but states 'Log in to view all runs and ratings'."
+          "evidence": "Public form guide exposes career/form data but states 'Log in to view all runs and ratings'. The runner-row number 61 is unlabeled in the public rendering and is not promoted to RAS."
         },
         {
           "url": "https://www.racingandsports.com.au/news/racing/news/2026-03-08/2026-adelaide-cup-runner-by-runner-preview/710557",
@@ -40,7 +40,7 @@
       "publicEvidence": [
         {
           "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-09-12/R5?showPriceComparison=1",
-          "evidence": "Standard public form page exposes career/run data and an unlabeled numeric display near the runner row, but also states 'Log in to view all runs and ratings'. The unlabeled number is not promoted to RAS."
+          "evidence": "Standard public form page exposes career/run data and an unlabeled runner-row number 83, but also states 'Log in to view all runs and ratings'. The unlabeled number is not promoted to RAS."
         },
         {
           "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-09-12/R5/enhanced-form",
@@ -55,20 +55,29 @@
     },
     {
       "horse": "Soulcombe",
-      "status": "LOGIN_GATED",
+      "status": "PUBLIC_HISTORICAL_RAS_FOUND_CURRENT_LOGIN_GATED",
       "publicEvidence": [
         {
+          "url": "https://www.racingandsports.com.au/news/bloodstock/australia/2022-11-08/how-the-cup-carnival-winners-rated/595341",
+          "evidence": "Racing & Sports article states Soulcombe 'went 115+' when winning the 2022 Queen's Cup. This is stored as a verified published historical R&S performance rating, not as current or career peak."
+        },
+        {
           "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-08-29/R9?showPriceComparison=1",
-          "evidence": "Public page confirms 2023 Melbourne Cup second over 3200m and states 'Log in to view all runs and ratings'. No explicit current RAS peak verified."
+          "evidence": "Public page confirms 2023 Melbourne Cup second over 3200m and states 'Log in to view all runs and ratings'. The runner-row number 85 is unlabeled and is not promoted to RAS."
         }
       ],
+      "verifiedPublishedHistoricalRasRating": "115+",
       "rasPeak": null
     },
     {
       "horse": "The Euphrates",
-      "status": "UNRESOLVED_PUBLIC",
-      "publicEvidence": [],
-      "note": "Public R&S form/news searches have not produced an explicit RAS peak. Do not substitute Timeform or handicap-based values.",
+      "status": "LOGIN_GATED_CURRENT",
+      "publicEvidence": [
+        {
+          "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/randwick/2026-09-05/R9?showPriceComparison=1",
+          "evidence": "Public form guide exposes career and run history but states 'Log in to view all runs and ratings'. No explicit public RAS figure has been verified."
+        }
+      ],
       "rasPeak": null
     }
   ],
@@ -81,6 +90,7 @@
       "evidence": "Racing & Sports-authored analysis states Vauban was the second-highest horse on the Racing & Sports ratings and explicitly says he held a peak rating of 122 when second to Kyprios in the Group 1 Irish St Leger. The 2024 VRC final-field article 'By Racing And Sports' independently labels Vauban 'Racing & Sports Rating: 122'."
     }
   ],
-  "projected24RasUnresolvedCount": 5,
+  "projected24RasPeakUnresolvedCount": 5,
+  "projected24WithVerifiedPublishedRasButPeakUnconfirmed": ["River Of Stars", "Soulcombe"],
   "promotionsToRasPublicPeaksThisPass": 1
 }
