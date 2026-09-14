@@ -24,6 +24,7 @@
     "current-contender-board.js",
     "ladbrokes-live.js",
     "command-centre.js",
+    "dashboard-visual-refresh.js",
     "form-pulse.js",
     "silks.js",
     "integrity-fixes.js",
@@ -1022,7 +1023,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "27 files passed node --check"
+      "detail": "28 files passed node --check"
     }
   ],
   "pass": true,
