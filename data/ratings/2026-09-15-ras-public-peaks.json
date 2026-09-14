@@ -1,0 +1,22 @@
+{
+  "snapshotDate":"2026-09-15",
+  "ratingScale":"Racing And Sports",
+  "metric":"published peak RAS rating",
+  "policy":"Only figures explicitly supported by public Racing And Sports evidence are stored. Timeform figures are not substituted.",
+  "sources":[
+    {"url":"https://www.racingandsports.com.au/news/racing/news/2026-09-02/melbourne-cup-rating-the-internationals/720667","scope":"All 23 international nominees peak RAS ratings"},
+    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-03-23/talking-points-21st-of-march-2026/711437","scope":"Aeliana peak 123"},
+    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2025-10-11/talking-points-flemington-carnival-2025/704138","scope":"Half Yours Melbourne Cup peak 122"},
+    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-05-25/talking-points-23rd-of-may-2026/715300","scope":"Birdman peak 124"},
+    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-05-18/talking-points-saturday-16th-of-may-2026/714873","scope":"Zakouma peak 109"},
+    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-04-07/talking-points-saturday-4th-of-april-2026/712365","scope":"Green Spaces 116"},
+    {"url":"https://www.racingandsports.com.au/news/racing/news/2026-03-26/real-punters-play-here-australian-cup/711607","scope":"Light Infantry Man career peak 122"},
+    {"url":"https://www.racingandsports.com.au/news/racing/previews/2026-03-26/the-melbourne-mail-flemington-28th-of-march-2026/711608","scope":"Litzdeel 108"},
+    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-04-13/talking-points-saturday-11th-of-april-2026/712714","scope":"She's A Hustler prior peak 116"},
+    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-07-21/talking-points-20th-of-july-2026/718490","scope":"King Pedro peak 110"},
+    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/0001-01-01/talking-points-saturday-11th-of-april-2026/712714","scope":"Ohope Wins peak 111"},
+    {"url":"https://www.racingandsports.com.au/news/racing/previews/0001-01-01/the-melbourne-mail-2nd-of-may-2026/713786","scope":"Zahrann top rating 115"},
+    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2025-10-06/talking-points-saturday-4th-of-october-2025/701524","scope":"Land Legend 115; Royal Supremacy 113"}
+  ],
+  "ratings":{"Half Yours":122,"Aeliana":123,"Christmas Day":123,"Defiantly":121,"Pierre Bonnard":120,"Enfjaar":119,"Causeway":118,"Hopewell Rock":117,"Stinger Glass":117,"Trustyourinstinct":117,"Wine Dark Sea":117,"Starford":116,"Tawny Port":116,"Goodie Two Shoes":114,"James J Braddock":114,"Small Fry":113,"Constitution Hill":111,"Omni Man":111,"Kizlyar":109,"Amelia Earhart":108,"Highwayman":107,"Nil Bua Gan Dua":108,"Piazza San Marco":104,"Winday":88,"Zakouma":109,"Birdman":124,"Middle Earth":119,"Zahrann":115,"Land Legend":115,"King Pedro":110,"Ohope Wins":111,"Green Spaces":116,"Light Infantry Man":122,"Litzdeel":108,"She's A Hustler":116,"Royal Supremacy":113}
+}
