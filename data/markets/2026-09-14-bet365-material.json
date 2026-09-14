@@ -1,0 +1,16 @@
+{
+  "snapshotDate": "2026-09-14",
+  "bookmaker": "bet365",
+  "market": "2026 Melbourne Cup futures - material-move observation",
+  "partial": true,
+  "source": "Public bet365 Melbourne Cup market page observation captured 14 September 2026",
+  "sourceUrl": "https://www.bet365.com/hub/en-gb/horse-racing/meetings/melbourne-cup",
+  "status": "Partial public-web snapshot for verified material movers only; not a live API or complete market board",
+  "oddsFormatOriginal": "fractional",
+  "runners": [
+    {"horse":"Highwayman","odds":15.0,"display":"14/1"},
+    {"horse":"Shockletz","odds":15.0,"display":"14/1"},
+    {"horse":"James J Braddock","odds":26.0,"display":"25/1"},
+    {"horse":"Goodie Two Shoes","odds":34.0,"display":"33/1"}
+  ]
+}
