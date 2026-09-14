@@ -53,6 +53,8 @@ Capture public R&S Enhanced Form fields only when the page exposes them without 
 - `PFR`: Hub-computed public form rating; remains independent.
 - `Timeform`: separate protected/subscriber layer; never infer it from R&S.
 - If an R&S page says `Log in to view all runs and ratings`, do not bypass it. Use only the public material available.
+- `Venue Buddy display rating`: the standalone integer displayed on a race card beside a horse's current form/weight block (for example values such as 78, 86, 88 or 98) is **not to be treated as an RAS performance rating unless R&S explicitly identifies that field as such**. Preserve it only as an ambiguous display/handicap-style field if useful, with provenance, and never write it into `RAS_PUBLIC_PEAKS` or any RAS performance namespace.
+- `RR` in Venue Buddy historical tables is a separate labelled column. Do not populate RR from the standalone display integer, and do not infer missing RR values from that number.
 
 ## Derived Hub fields after ingestion
 
