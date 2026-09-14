@@ -3,6 +3,7 @@ let marketSnapshot=null;
 let marketHistory=[];
 let weightRules=null;
 let weightPredictions=null;
+let officialWeights=null;
 let extrasPromise=null;
 
 function loadExtras(){
@@ -12,8 +13,9 @@ function loadExtras(){
     fetch('./data/markets/2026-08-24-neds.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
     fetch('./data/markets/2026-09-01-coral.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
     fetch('./data/weights/2026-handicap-rules.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
-    fetch('./data/weights/2026-09-13-working-predictions.json',{cache:'no-store'}).then(r=>r.ok?r.json():null)
-  ]).then(([q,m1,m2,w,p])=>{qualificationData=q;marketSnapshot=m2||m1;marketHistory=[m1,m2].filter(Boolean);weightRules=w;weightPredictions=p;(q?.qualified||[]).forEach(x=>GOLDEN_TICKETS.add(x.horse));return true;});
+    fetch('./data/weights/2026-09-13-working-predictions.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
+    fetch('./data/weights/2026-official.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
+  ]).then(([q,m1,m2,w,p,o])=>{qualificationData=q;marketSnapshot=m2||m1;marketHistory=[m1,m2].filter(Boolean);weightRules=w;weightPredictions=p;officialWeights=o;(q?.qualified||[]).forEach(x=>GOLDEN_TICKETS.add(x.horse));return true;});
   return extrasPromise;
 }
 
@@ -59,6 +61,28 @@ function marketsView(){
 
 function confidenceTag(c){if(c==='Medium') return tag(c,'green');if(c==='Low') return tag(c,'red');return tag(c,'gold');}
 function weightStatus(x){return x.activeCupStatus?`<span class="tag red">${x.activeCupStatus}</span>`:'<span class="tag green">Modelled</span>';}
+function officialWeightMap(){return new Map((officialWeights?.weights||[]).map(x=>[x.horse,x]));}
+function weightAuditRows(preds){
+  const map=officialWeightMap();
+  return preds.map(x=>{
+    const o=map.get(x.horse)||null;
+    const official=o?Number(o.weightKg):null;
+    const error=Number.isFinite(official)?official-Number(x.predictedKg):null;
+    return {...x,official,error,officialRecord:o};
+  });
+}
+function weightAuditStats(rows){
+  const scored=rows.filter(x=>Number.isFinite(x.error));
+  if(!scored.length)return {scored:0,mae:null,bias:null,withinHalf:0,withinOne:0,bigMisses:0};
+  const mae=scored.reduce((s,x)=>s+Math.abs(x.error),0)/scored.length;
+  const bias=scored.reduce((s,x)=>s+x.error,0)/scored.length;
+  return {scored:scored.length,mae,bias,withinHalf:scored.filter(x=>Math.abs(x.error)<=0.5).length,withinOne:scored.filter(x=>Math.abs(x.error)<=1).length,bigMisses:scored.filter(x=>Math.abs(x.error)>=2).length};
+}
+function weightErrorCell(x){
+  if(!Number.isFinite(x.error))return '<span class="muted">—</span>';
+  const abs=Math.abs(x.error);const cls=abs<=0.5?'green':abs>=2?'red':'gold';
+  return tag(`${x.error>0?'+':''}${x.error.toFixed(1)}kg`,cls);
+}
 
 function weightsView(){
   const w=weightRules;
@@ -68,17 +92,22 @@ function weightsView(){
   const covered=p.coverage?.weightsModelled??preds.length;
   const universe=p.coverage?.officialNominees??101;
   const anchor=p.rules?.topweightAnchorHorse||'Researching';
-  return `<div class="section-header"><div><div class="kicker">Full-Field Pre-Handicap Model · ${p.snapshotDate}</div><h2>Weights & Handicap</h2><div class="section-copy">These are Hub estimates, not official weights. The entire original nomination universe is now modelled before the pre-release freeze, then every prediction will be scored against Racing Victoria on 17 September.</div></div></div>
+  const auditRows=weightAuditRows(preds);
+  const audit=weightAuditStats(auditRows);
+  const officialReleased=officialWeights?.status==='OFFICIAL'&&audit.scored>0;
+  return `<div class="section-header"><div><div class="kicker">Full-Field Pre-Handicap Model · ${p.snapshotDate}</div><h2>Weights & Handicap</h2><div class="section-copy">${officialReleased?'Official handicaps are loaded. Every pre-release Hub prediction is now frozen and scored against the declared weights.':'These are Hub estimates, not official weights. The pre-release board is frozen for later scoring against Racing Victoria.'}</div></div></div>
   <section class="metric-grid">
     ${metric('Coverage',`${covered}/${universe}`,'Original nominees modelled')}
-    ${metric('Topweight Anchor',anchor,'Provisional 59kg scale anchor')}
-    ${metric('Minimum Weight','51.0kg','Older horses')}
-    ${metric('3YO Minimum','49.0kg','Age-adjusted floor')}
-    ${metric('Freeze','16 Sep','23:59 Melbourne time')}
+    ${metric(officialReleased?'Official Loaded':'Topweight Anchor',officialReleased?`${audit.scored}/${universe}`:anchor,officialReleased?'Declared weights matched':'Provisional 59kg scale anchor')}
+    ${metric(officialReleased?'Model MAE': 'Minimum Weight',officialReleased?`${audit.mae.toFixed(2)}kg`:'51.0kg',officialReleased?'Absolute prediction error':'Older horses')}
+    ${metric(officialReleased?'Model Bias':'3YO Minimum',officialReleased?`${audit.bias>0?'+':''}${audit.bias.toFixed(2)}kg`:'49.0kg',officialReleased?'Official minus predicted':'Age-adjusted floor')}
+    ${metric(officialReleased?'Within ±0.5kg':'Official Release',officialReleased?`${audit.withinHalf}/${audit.scored}`:'17 Sep',officialReleased?'Best calibrated calls':'Racing Victoria handicaps')}
   </section>
-  <section class="profile-grid"><div class="panel"><h3>Handicap Model Rules</h3><div class="rule-list">${w.methodologyNotes.map((n,i)=>`<div class="rule-row"><span>${String(i+1).padStart(2,'0')}</span><p>${n}</p></div>`).join('')}</div></div><div class="panel"><h3>Model Discipline</h3><p class="analysis-copy">The Cup scale must contain a 59kg topweight at handicap declaration. The working board therefore uses a provisional scale anchor rather than pretending the raw merit order can ignore Racing Victoria's declaration rule.</p><p class="analysis-copy">Northern Hemisphere three-year-olds are handled separately. Their overseas ratings are not converted directly into older-horse kilograms, which avoids the inflated weights that a naive ratings-to-kg mapping can produce.</p><p class="analysis-copy">Inactive original nominees remain visible for audit integrity, but they are clearly marked and are not treated as live Cup runners.</p><div class="audit-banner"><strong>Status</strong><span>${covered}/${universe} modelled · full-field working board · official comparison begins 17 Sep</span></div></div></section>
-  <div class="panel"><div class="panel-head"><div><h3>Working Weight Board</h3><div class="panel-sub">Estimated range shows uncertainty before official declarations.</div></div><span class="tag gold">FULL FIELD</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Rank</th><th>Horse</th><th>Pred.</th><th>Range</th><th>Tier</th><th>Confidence</th><th>Status</th><th>Reasoning</th></tr></thead><tbody>${preds.map((x,i)=>`<tr><td>${i+1}</td><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td><strong>${x.predictedKg.toFixed(1)}kg</strong></td><td>${x.rangeLow.toFixed(1)}–${x.rangeHigh.toFixed(1)}</td><td>${x.tier}</td><td>${confidenceTag(x.confidence)}</td><td>${weightStatus(x)}</td><td class="wrap-cell">${x.reason}</td></tr>`).join('')}</tbody></table></div></div>
-  <div class="panel spaced-panel"><h3>Official Audit</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>Horse</th><th>Hub Prediction</th><th>Official</th><th>Error</th><th>State</th></tr></thead><tbody>${preds.map(x=>`<tr><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td>${x.predictedKg.toFixed(1)}kg</td><td>—</td><td>—</td><td>${x.activeCupStatus?`<span class="muted">${x.activeCupStatus}</span>`:'<span class="muted">Awaiting 17 Sep</span>'}</td></tr>`).join('')}</tbody></table></div></div>`;
+  <section class="profile-grid"><div class="panel"><h3>Handicap Model Rules</h3><div class="rule-list">${w.methodologyNotes.map((n,i)=>`<div class="rule-row"><span>${String(i+1).padStart(2,'0')}</span><p>${n}</p></div>`).join('')}</div></div><div class="panel"><h3>Model Discipline</h3><p class="analysis-copy">The pre-release board remains immutable after the freeze. Official weights are loaded into a separate ledger and compared; they never overwrite the model prediction.</p><p class="analysis-copy">Northern Hemisphere three-year-olds remain a separate calibration problem rather than being converted mechanically from older-horse overseas ratings.</p><p class="analysis-copy">Inactive original nominees stay in the audit universe so prediction accuracy cannot be improved by deleting difficult calls after the fact.</p><div class="audit-banner"><strong>Status</strong><span>${officialReleased?`${audit.scored} official weights scored · ${audit.bigMisses} misses of 2kg+`:`${covered}/${universe} modelled · official comparison armed for 17 Sep`}</span></div></div></section>
+  <div class="panel"><div class="panel-head"><div><h3>Working Weight Board</h3><div class="panel-sub">Estimated range shows uncertainty before official declarations.</div></div><span class="tag gold">PRE-RELEASE FREEZE</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Rank</th><th>Horse</th><th>Pred.</th><th>Range</th><th>Tier</th><th>Confidence</th><th>Status</th><th>Reasoning</th></tr></thead><tbody>${preds.map((x,i)=>`<tr><td>${i+1}</td><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td><strong>${x.predictedKg.toFixed(1)}kg</strong></td><td>${x.rangeLow.toFixed(1)}–${x.rangeHigh.toFixed(1)}</td><td>${x.tier}</td><td>${confidenceTag(x.confidence)}</td><td>${weightStatus(x)}</td><td class="wrap-cell">${x.reason}</td></tr>`).join('')}</tbody></table></div></div>
+  <div class="panel spaced-panel"><div class="panel-head"><div><h3>Official Weight Audit</h3><div class="panel-sub">Predictions remain untouched. Official values and errors are joined from a separate dated ledger.</div></div><span class="tag ${officialReleased?'green':'gold'}">${officialReleased?'OFFICIAL LOADED':'ARMED · PENDING RELEASE'}</span></div>
+  ${officialReleased?`<section class="metric-grid">${metric('Scored',audit.scored,'Matched official handicaps')}${metric('MAE',`${audit.mae.toFixed(2)}kg`,'Mean absolute error')}${metric('Bias',`${audit.bias>0?'+':''}${audit.bias.toFixed(2)}kg`,'Official minus predicted')}${metric('±0.5kg',audit.withinHalf,'Near-exact predictions')}${metric('2kg+ Misses',audit.bigMisses,'Priority review cases')}</section>`:''}
+  <div class="table-wrap"><table class="data-table"><thead><tr><th>Horse</th><th>Hub Prediction</th><th>Official</th><th>Error</th><th>Audit State</th></tr></thead><tbody>${auditRows.map(x=>`<tr><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td>${x.predictedKg.toFixed(1)}kg</td><td>${Number.isFinite(x.official)?`${x.official.toFixed(1)}kg`:'—'}</td><td>${weightErrorCell(x)}</td><td>${x.activeCupStatus?`<span class="muted">${x.activeCupStatus}</span>`:(Number.isFinite(x.official)?tag('Scored','green'):'<span class="muted">Awaiting official weight</span>')}</td></tr>`).join('')}</tbody></table></div></div>`;
 }
 
 const originalRender=render;
@@ -97,6 +126,7 @@ render=function(view='dashboard'){
 loadExtras().then(()=>{
   if(currentView==='dashboard'){
     const label=document.getElementById('updated-label');
-    if(label) label.textContent=`101 nominations · ${Object.keys(trainingBaseData?.bases??{}).length} bases verified · ${qualificationData?.qualified?.length??0} Golden Tickets known · ${weightPredictions?.predictions?.length??0} weights modelled`;
+    const officialCount=(officialWeights?.weights||[]).length;
+    if(label) label.textContent=`101 nominations · ${Object.keys(trainingBaseData?.bases??{}).length} bases verified · ${qualificationData?.qualified?.length??0} Golden Tickets known · ${weightPredictions?.predictions?.length??0} weights modelled${officialCount?` · ${officialCount} official weights loaded`:''}`;
   }
 });
