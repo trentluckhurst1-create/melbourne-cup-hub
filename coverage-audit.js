@@ -13,10 +13,14 @@ function coverageSnapshot(){
   const trainers=new Set((trainerBaseData?.trainers||[]).map(x=>x.trainer));
   const trainerCoverage=(cupData?.horses||[]).filter(h=>trainers.has(h.trainer)).length;
   const qualifiedNominees=(qualificationData?.qualified||[]).filter(x=>official.has(x.horse)).length;
+  const formAudit=typeof formCompletionSummary==='function'?formCompletionSummary():null;
   const formCoverage=(cupData?.horses||[]).filter(h=>(formIntelData?.horses?.[h.horse]?.runs||[]).length>0).length;
-  const fullForm=(cupData?.horses||[]).filter(h=>(formIntelData?.horses?.[h.horse]?.runs||[]).length>=8).length;
+  const fullForm=formAudit?formAudit.complete+formAudit.career:(cupData?.horses||[]).filter(h=>(formIntelData?.horses?.[h.horse]?.runs||[]).length>=8).length;
+  const formGaps=formAudit?.gaps??Math.max(0,total-fullForm);
+  const formFlags=formAudit?.flagged??0;
   const tfIdentity=(cupData?.horses||[]).filter(h=>typeof privateTfMatched==='function'&&privateTfMatched(h.horse)).length;
-  return {total,verifiedBases,profiles,weights,projected,trainerCoverage,qualifiedNominees,formCoverage,fullForm,tfIdentity};
+  const marketCoverage=typeof marketUniverse==='function'?intersectCount(marketUniverse().map(x=>x.horse)):0;
+  return {total,verifiedBases,profiles,weights,projected,trainerCoverage,qualifiedNominees,formCoverage,fullForm,formGaps,formFlags,tfIdentity,marketCoverage};
 }
 
 function researchQueue(){
@@ -29,28 +33,33 @@ function researchQueue(){
   const missingBase=byPriority.filter(x=>!baseNames.has(x)).slice(0,12);
   const missingProfile=byPriority.filter(x=>!profileNames.has(x)).slice(0,12);
   const missingWeight=byPriority.filter(x=>!weightNames.has(x)).slice(0,12);
-  return {missingBase,missingProfile,missingWeight};
+  const formRows=typeof formCompletionSummary==='function'?formCompletionSummary().rows:[];
+  const formByHorse=new Map(formRows.map(x=>[x.h.horse,x]));
+  const missingForm=byPriority.filter(x=>{const f=formByHorse.get(x);return !f||f.state==='RESEARCH_GAP'||f.state==='INTEGRITY_FLAG';}).slice(0,12);
+  return {missingBase,missingProfile,missingWeight,missingForm,formByHorse};
 }
 
-function queueColumn(title,names,kind){
-  return `<div class="queue-col"><div class="queue-title">${title}</div>${names.length?names.map((name,i)=>`<button class="queue-item" onclick="${horseByName(name)?`openHorse('${name.replace(/'/g,"\\'")}')`:'void 0'}"><span>${String(i+1).padStart(2,'0')}</span><strong>${name}</strong><em>${kind}</em></button>`).join(''):'<div class="queue-empty">Complete</div>'}</div>`;
+function queueColumn(title,names,kind,detailFn=null){
+  return `<div class="queue-col"><div class="queue-title">${title}</div>${names.length?names.map((name,i)=>`<button class="queue-item" onclick="${horseByName(name)?`openHorse('${name.replace(/'/g,"\\'")}')`:'void 0'}"><span>${String(i+1).padStart(2,'0')}</span><strong>${name}</strong><em>${detailFn?detailFn(name):kind}</em></button>`).join(''):'<div class="queue-empty">Complete</div>'}</div>`;
 }
 
 function coveragePanel(){
   const c=coverageSnapshot();
   const q=researchQueue();
-  return `<section class="section-block"><div class="section-header"><div><div class="kicker">Research Coverage Audit</div><h2>101-Horse Intelligence Completion</h2><div class="section-copy">Every percentage is calculated against the official nomination file. Non-nominees cannot inflate completion numbers.</div></div></div>
+  return `<section class="section-block"><div class="section-header"><div><div class="kicker">Research Coverage Audit</div><h2>101-Horse Intelligence Completion</h2><div class="section-copy">Every percentage is calculated against the official nomination file. Non-nominees cannot inflate completion numbers, and form completion requires a full eight-run window or an explicit full-career certification.</div></div></div>
     <div class="coverage-grid">
       ${coverageBar('Trainer operation mapped',c.trainerCoverage,c.total,'Primary and secondary stable locations separated from horse location.')}
       ${coverageBar('Current horse base verified',c.verifiedBases,c.total,'Horse-specific preparation location only; unknown horses remain Researching.')}
-      ${coverageBar('Public form history loaded',c.formCoverage,c.total,`${c.fullForm} horses currently have a full eight-run verified window.`)}
+      ${coverageBar('Any public form loaded',c.formCoverage,c.total,`${c.fullForm} horses satisfy complete-window rules · ${c.formGaps} gaps · ${c.formFlags} integrity flags.`)}
+      ${coverageBar('Form completion certified',c.fullForm,c.total,'Eight actual starts or explicitly certified complete career; trials do not count.')}
       ${coverageBar('Timeform identity matched',c.tfIdentity,c.total,'Identity layer only. Numerical Timeform ratings remain pending and are not counted here.')}
+      ${coverageBar('Dated market evidence',c.marketCoverage,c.total,'At least one stored bookmaker observation with source context.')}
       ${coverageBar('Rich horse profile',c.profiles,c.total,'Age/sex, campaign and Cup-relevance intelligence currently populated.')}
       ${coverageBar('Working weight estimate',c.weights,c.total,'Pre-release handicap estimate with range and reasoning.')}
       ${coverageBar('Projected-field assessment',c.projected,c.total,'Current top-24 projection; remaining horses are not yet ranked into the cut-line board.')}
     </div>
-    <div class="coverage-foot"><span>${c.qualifiedNominees} current Golden Ticket winners are also official nominees.</span><span>Integrity rule: official nomination set is the denominator.</span></div>
-    <div class="research-queue"><div class="panel-head"><div><h3>Priority Research Queue</h3><div class="panel-sub">Projected-field horses are automatically pushed to the front. Completing an item removes it from this queue.</div></div><span class="tag gold">LIVE AUDIT</span></div><div class="queue-grid">${queueColumn('Current Base Missing',q.missingBase,'verify location')}${queueColumn('Profile Missing',q.missingProfile,'build dossier')}${queueColumn('Weight Missing',q.missingWeight,'model handicap')}</div></div>
+    <div class="coverage-foot"><span>${c.qualifiedNominees} current Golden Ticket winners are also official nominees.</span><span>Integrity rule: official nomination set is always the denominator.</span></div>
+    <div class="research-queue"><div class="panel-head"><div><h3>Priority Research Queue</h3><div class="panel-sub">Projected-field horses are automatically pushed to the front. Form gaps now sit beside base, profile and handicap gaps rather than being hidden in a separate screen.</div></div><span class="tag gold">LIVE AUDIT</span></div><div class="queue-grid">${queueColumn('Form Coverage',q.missingForm,'complete form',name=>{const f=q.formByHorse.get(name);return f?`${f.runs}/8 · ${f.state==='INTEGRITY_FLAG'?'integrity flag':'missing '+Math.max(0,8-f.runs)}`:'not loaded';})}${queueColumn('Current Base Missing',q.missingBase,'verify location')}${queueColumn('Profile Missing',q.missingProfile,'build dossier')}${queueColumn('Weight Missing',q.missingWeight,'model handicap')}</div></div>
   </section>`;
 }
 
