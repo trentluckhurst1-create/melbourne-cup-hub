@@ -145,121 +145,94 @@
           "going": "Good 3",
           "classGroup": "BM100",
           "finish": "2nd",
-          "fieldSize": null,
           "weightCarried": "53kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet"
+          "margin": 0.8,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-04-18",
+          "race": "John McGrath Auto Group Plate",
+          "track": "Canberra",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Soft 5",
+          "classGroup": "Class 1",
+          "finish": "1st",
+          "weightCarried": "57kg",
+          "margin": 3.9,
+          "source": "Breednet public race record"
         },
         {
           "date": "2023-11-09",
-          "race": "VRC Oaks",
+          "race": "Kennedy Oaks",
           "track": "Flemington",
           "country": "AUS",
           "distanceM": 2500,
-          "going": null,
+          "going": "Good 4",
           "classGroup": "Group 1",
           "finish": "2nd",
-          "fieldSize": 14,
           "weightCarried": "56kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "RacingBase / Races.com.au"
+          "margin": 2.3,
+          "source": "Breednet public race record"
         },
         {
           "date": "2023-11-04",
-          "race": "Wakeful Stakes",
+          "race": "TAB Wakeful Stakes",
           "track": "Flemington",
           "country": "AUS",
           "distanceM": 2000,
           "going": "Good 4",
           "classGroup": "Group 2",
           "finish": "4th",
-          "fieldSize": 13,
           "weightCarried": "55kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Racing Australia"
+          "margin": 3.6,
+          "source": "Breednet public race record"
         },
         {
           "date": "2023-10-21",
-          "race": "Class 1 Set Weights",
+          "race": "ITC Legends Raceday Plate",
           "track": "Kembla Grange",
           "country": "AUS",
           "distanceM": 2000,
           "going": "Good 4",
           "classGroup": "Class 1",
           "finish": "1st",
-          "fieldSize": 7,
           "weightCarried": "55kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Flemington form guide archive"
+          "margin": 1.3,
+          "source": "Breednet public race record"
         },
         {
           "date": "2023-10-05",
-          "race": "Maiden Set Weights",
+          "race": "Now Serving Stone & Wood Maiden Plate",
           "track": "Gosford",
           "country": "AUS",
           "distanceM": 1900,
           "going": "Soft 5",
           "classGroup": "Maiden",
           "finish": "2nd",
-          "fieldSize": 10,
           "weightCarried": "55kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Flemington form guide archive"
+          "margin": 2.5,
+          "source": "Breednet public race record"
         },
         {
           "date": "2023-09-22",
-          "race": "Super Maiden",
+          "race": "Coolmore Super Maiden Handicap",
           "track": "Scone",
           "country": "AUS",
           "distanceM": 1400,
           "going": "Good 4",
           "classGroup": "Maiden",
           "finish": "7th",
-          "fieldSize": 13,
           "weightCarried": "55kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Racing NSW / Flemington form guide archive"
+          "margin": 3.4,
+          "source": "Breednet public race record"
         }
-      ]
+      ],
+      "careerComplete": true,
+      "formIdentityVerified": true
     },
     "Aethelwulf": {
       "runs": [
-        {
-          "date": "2026-08-29",
-          "race": "Merrylands RSL",
-          "track": "Rosehill",
-          "country": "AUS",
-          "distanceM": 2000,
-          "going": "Good 4",
-          "classGroup": "BM78",
-          "finish": "1st",
-          "fieldSize": null,
-          "weightCarried": "58kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet"
-        },
-        {
-          "date": "2026-08-05",
-          "race": "Asahi Super Dry",
-          "track": "Canterbury",
-          "country": "AUS",
-          "distanceM": 1900,
-          "going": "Good 4",
-          "classGroup": "BM72",
-          "finish": "1st",
-          "fieldSize": null,
-          "weightCarried": "58kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet"
-        },
         {
           "date": "2026-07-16",
           "race": "Site Drop Handicap",
@@ -269,58 +242,52 @@
           "going": "Good 4",
           "classGroup": "Class 1",
           "finish": "1st",
-          "fieldSize": null,
           "weightCarried": "60kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet"
+          "margin": 6.5,
+          "source": "Breednet public race record"
         },
         {
           "date": "2026-06-27",
-          "race": "Skillsons Constructions Handicap",
+          "race": "Skillsons Constructions Pty Ltd Handicap",
           "track": "Newcastle",
           "country": "AUS",
           "distanceM": 1400,
           "going": "Heavy 8",
           "classGroup": "Class 1",
           "finish": "5th",
-          "fieldSize": null,
           "weightCarried": "60kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet"
+          "margin": 1.6,
+          "source": "Breednet public race record"
         },
         {
           "date": "2026-06-06",
-          "race": "Palmieri Legal Chambers Maiden",
+          "race": "Palmieri Legal Chambers Maiden Plate",
           "track": "Newcastle",
           "country": "AUS",
           "distanceM": 1400,
           "going": "Soft 6",
           "classGroup": "Maiden",
           "finish": "1st",
-          "fieldSize": null,
           "weightCarried": "59kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet"
+          "margin": 5.2,
+          "source": "Breednet public race record"
         },
         {
           "date": "2025-12-19",
-          "race": "Brad Writer Constructions Maiden",
+          "race": "Brad Writer Constructions Maiden Handicap",
           "track": "Goulburn",
           "country": "AUS",
           "distanceM": 1500,
           "going": "Good 3",
           "classGroup": "Maiden",
           "finish": "2nd",
-          "fieldSize": null,
           "weightCarried": "57.5kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet"
+          "margin": 0.6,
+          "source": "Breednet public race record"
         }
-      ]
+      ],
+      "careerComplete": true,
+      "formIdentityVerified": true
     },
     "Age Of Sail": {
       "runs": [
@@ -483,21 +450,111 @@
     "Asterix": {
       "runs": [
         {
-          "date": "2026-09-05",
-          "race": "Ranvet So You Think Stakes",
-          "track": "Sandown Hillside",
+          "date": "2026-06-27",
+          "race": "Tattersall's Cup",
+          "track": "Eagle Farm",
           "country": "AUS",
-          "distanceM": 1500,
-          "going": null,
-          "classGroup": null,
+          "distanceM": 2400,
+          "going": "Soft 6",
+          "classGroup": "Group 3",
+          "finish": "1st",
+          "weightCarried": "56.5kg",
+          "margin": 0.5,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-06-13",
+          "race": "Q22",
+          "track": "Eagle Farm",
+          "country": "AUS",
+          "distanceM": 2200,
+          "going": "Heavy 9",
+          "classGroup": "Group 2",
+          "finish": "6th",
+          "weightCarried": "59kg",
+          "margin": 5.5,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-05-23",
+          "race": "Doomben Cup",
+          "track": "Doomben",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Good 4",
+          "classGroup": "Group 1",
+          "finish": "6th",
+          "weightCarried": "59kg",
+          "margin": 7.2,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-05-09",
+          "race": "Gosford Gold Cup",
+          "track": "Gosford",
+          "country": "AUS",
+          "distanceM": 2100,
+          "going": "Good 4",
+          "classGroup": "Listed",
+          "finish": "1st",
+          "weightCarried": "61kg",
+          "margin": 1.0,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-04-18",
+          "race": "JRA Plate",
+          "track": "Randwick",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Good 4",
+          "classGroup": "Group 3",
+          "finish": "1st",
+          "weightCarried": "59kg",
+          "margin": 0.6,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-12-13",
+          "race": "Christmas Cup",
+          "track": "Randwick",
+          "country": "AUS",
+          "distanceM": 2400,
+          "going": "Good 4",
+          "classGroup": "Listed",
+          "finish": "2nd",
+          "weightCarried": "59.5kg",
+          "margin": 0.2,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-11-15",
+          "race": "The Beauford",
+          "track": "Newcastle",
+          "country": "AUS",
+          "distanceM": 2300,
+          "going": "Good 4",
+          "classGroup": "Listed",
+          "finish": "1st",
+          "weightCarried": "57.5kg",
+          "margin": 1.0,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-10-18",
+          "race": "St Leger Stakes",
+          "track": "Randwick",
+          "country": "AUS",
+          "distanceM": 2600,
+          "going": "Good 4",
+          "classGroup": "Listed",
           "finish": "5th",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
+          "weightCarried": "58.5kg",
+          "margin": 3.0,
           "source": "Breednet public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "Athabascan": {
       "runs": [
@@ -1281,12 +1338,9 @@
           "country": "AUS",
           "distanceM": 2000,
           "going": "Soft 7",
-          "classGroup": null,
+          "classGroup": "Handicap",
           "finish": "13th",
-          "fieldSize": null,
           "weightCarried": "54.5kg",
-          "performanceRating": null,
-          "timefigure": null,
           "source": "Breednet public race record"
         },
         {
@@ -1298,13 +1352,89 @@
           "going": "Soft 6",
           "classGroup": "BM100",
           "finish": "1st",
-          "fieldSize": null,
           "weightCarried": "53kg",
-          "performanceRating": null,
-          "timefigure": null,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-01-17",
+          "race": "TAB Australian Cup Race Day BM100",
+          "track": "Flemington",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Good 3",
+          "classGroup": "BM100",
+          "finish": "3rd",
+          "weightCarried": "53kg",
+          "margin": 0.8,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-01-03",
+          "race": "Prestige Jayco Geelong BM66",
+          "track": "Geelong",
+          "country": "AUS",
+          "distanceM": 1700,
+          "going": "Good 4",
+          "classGroup": "BM66",
+          "finish": "1st",
+          "weightCarried": "61kg",
+          "margin": 0.5,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-12-10",
+          "race": "Sportsbet Fixed Odds Exotics BM66",
+          "track": "Sandown Lakeside",
+          "country": "AUS",
+          "distanceM": 1600,
+          "going": "Good 4",
+          "classGroup": "BM66",
+          "finish": "1st",
+          "weightCarried": "58.5kg",
+          "margin": 1.3,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-11-30",
+          "race": "Matko Hire Goodbye Albany Farewell Australia BM66",
+          "track": "Warrnambool",
+          "country": "AUS",
+          "distanceM": 1400,
+          "going": "Soft 6",
+          "classGroup": "BM66",
+          "finish": "2nd",
+          "weightCarried": "58.5kg",
+          "margin": 0.5,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-06-21",
+          "race": "Rod Johnson Handicap",
+          "track": "Flemington",
+          "country": "AUS",
+          "distanceM": 1620,
+          "going": "Good 4",
+          "classGroup": "Handicap",
+          "finish": "3rd",
+          "weightCarried": "54kg",
+          "margin": 1.8,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-06-01",
+          "race": "Sportsbet Fast Form BM64",
+          "track": "Sandown Lakeside",
+          "country": "AUS",
+          "distanceM": 1400,
+          "going": "Good 4",
+          "classGroup": "BM64",
+          "finish": "3rd",
+          "weightCarried": "59kg",
+          "margin": 1.5,
           "source": "Breednet public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "Deakin": {
       "runs": [
@@ -1317,13 +1447,102 @@
           "going": "Soft 6",
           "classGroup": "Listed",
           "finish": "3rd",
-          "fieldSize": null,
           "weightCarried": "57.5kg",
-          "performanceRating": null,
-          "timefigure": null,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-05-09",
+          "race": "Hahn Cummings Stakes",
+          "track": "Morphettville",
+          "country": "AUS",
+          "distanceM": 1600,
+          "going": "Soft 6",
+          "classGroup": "Group 3",
+          "finish": "5th",
+          "weightCarried": "56kg",
+          "margin": 3.3,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-10-18",
+          "race": "Caulfield Cup",
+          "track": "Caulfield",
+          "country": "AUS",
+          "distanceM": 2400,
+          "going": "Good 4",
+          "classGroup": "Group 1",
+          "finish": "8th",
+          "weightCarried": "54kg",
+          "margin": 3.2,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-10-04",
+          "race": "Turnbull Stakes",
+          "track": "Flemington",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Good 3",
+          "classGroup": "Group 1",
+          "finish": "6th",
+          "weightCarried": "55kg",
+          "margin": 2.8,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-09-13",
+          "race": "Ronald McDonald House Charities Trophy",
+          "track": "Flemington",
+          "country": "AUS",
+          "distanceM": 1700,
+          "going": "Good 4",
+          "classGroup": "Handicap",
+          "finish": "7th",
+          "weightCarried": "60.5kg",
+          "margin": 3.0,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-08-30",
+          "race": "Sportsbet Feed BM100",
+          "track": "Caulfield",
+          "country": "AUS",
+          "distanceM": 1400,
+          "going": "Soft 5",
+          "classGroup": "BM100",
+          "finish": "12th",
+          "weightCarried": "61.5kg",
+          "margin": 9.6,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-03-29",
+          "race": "Lexus Roy Higgins",
+          "track": "Flemington",
+          "country": "AUS",
+          "distanceM": 2600,
+          "going": "Good 4",
+          "classGroup": "Listed",
+          "finish": "1st",
+          "weightCarried": "57kg",
+          "margin": 0.4,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-02-21",
+          "race": "Manhari Torney Night Cup",
+          "track": "Moonee Valley",
+          "country": "AUS",
+          "distanceM": 2500,
+          "going": "Good 3",
+          "classGroup": "Listed",
+          "finish": "1st",
+          "weightCarried": "54kg",
+          "margin": 5.5,
           "source": "Breednet public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "Defiantly": {
       "runs": [
@@ -1472,50 +1691,96 @@
       "runs": [
         {
           "date": "2026-08-01",
-          "race": "Goodwood 1m4f Listed",
+          "race": "Goodwood 1m4f Handicap",
           "track": "Goodwood",
           "country": "GB",
           "distanceM": 2400,
           "going": "Good to Firm",
-          "classGroup": "Listed",
+          "classGroup": "Handicap",
           "finish": "1st",
-          "fieldSize": null,
-          "weightCarried": "9-3",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "HorseRacing.net / Racingtips public form"
+          "fieldSize": 8,
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-06-16",
-          "race": "Wolferton Stakes",
+          "race": "Royal Ascot Handicap",
           "track": "Ascot",
           "country": "GB",
           "distanceM": 2000,
           "going": "Good to Firm",
-          "classGroup": "Listed",
+          "classGroup": "Handicap",
           "finish": "8th",
-          "fieldSize": null,
-          "weightCarried": "9-5",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "HorseRacing.net / Racingtips public form"
+          "fieldSize": 16,
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-05-22",
-          "race": "Goodwood Listed Stakes",
+          "race": "Goodwood 1m2f",
           "track": "Goodwood",
           "country": "GB",
           "distanceM": 2000,
-          "going": "Good",
-          "classGroup": "Listed",
+          "classGroup": "Handicap",
           "finish": "3rd",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "HorseRacing.net public form"
+          "fieldSize": 9,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-07-19",
+          "race": "Newbury 1m2f",
+          "track": "Newbury",
+          "country": "GB",
+          "distanceM": 2000,
+          "classGroup": "Handicap",
+          "finish": "3rd",
+          "fieldSize": 5,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-06-17",
+          "race": "Royal Ascot Handicap",
+          "track": "Ascot",
+          "country": "GB",
+          "distanceM": 2000,
+          "classGroup": "Handicap",
+          "finish": "4th",
+          "fieldSize": 16,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-05-29",
+          "race": "Sandown 1m2f",
+          "track": "Sandown",
+          "country": "GB",
+          "distanceM": 2000,
+          "classGroup": "Handicap",
+          "finish": "5th",
+          "fieldSize": 7,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2024-09-21",
+          "race": "Ayr 1m2f",
+          "track": "Ayr",
+          "country": "GB",
+          "distanceM": 2000,
+          "classGroup": "Handicap",
+          "finish": "2nd",
+          "fieldSize": 9,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2024-08-24",
+          "race": "York 1m1f",
+          "track": "York",
+          "country": "GB",
+          "distanceM": 1800,
+          "classGroup": "Handicap",
+          "finish": "5th",
+          "fieldSize": 9,
+          "source": "Sporting Life public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "Floating": {
       "runs": [
@@ -1589,16 +1854,106 @@
           "track": "Eagle Farm",
           "country": "AUS",
           "distanceM": 2400,
-          "going": null,
+          "going": "Soft 6",
           "classGroup": "Group 3",
           "finish": "6th",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
+          "weightCarried": "56.5kg",
+          "margin": 13.7,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-05-30",
+          "race": "Lord Mayor's Cup",
+          "track": "Eagle Farm",
+          "country": "AUS",
+          "distanceM": 1800,
+          "going": "Soft 5",
+          "classGroup": "Group 3",
+          "finish": "3rd",
+          "weightCarried": "58kg",
+          "margin": 0.3,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-05-16",
+          "race": "JRA Chairman's Handicap",
+          "track": "Doomben",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Soft 7",
+          "classGroup": "Group 3",
+          "finish": "4th",
+          "weightCarried": "60.5kg",
+          "margin": 1.8,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-01-26",
+          "race": "Australia Day Cup",
+          "track": "Warwick Farm",
+          "country": "AUS",
+          "distanceM": 2400,
+          "going": "Good 4",
+          "classGroup": "Listed",
+          "finish": "4th",
+          "weightCarried": "61kg",
+          "margin": 2.4,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-01-17",
+          "race": "January Cup",
+          "track": "Rosehill",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Heavy 8",
+          "classGroup": "Listed",
+          "finish": "1st",
+          "weightCarried": "61kg",
+          "margin": 0.9,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-12-31",
+          "race": "Bagot Handicap",
+          "track": "Flemington",
+          "country": "AUS",
+          "distanceM": 2800,
+          "going": "Good 4",
+          "classGroup": "Listed",
+          "finish": "1st",
+          "weightCarried": "60kg",
+          "margin": 0.8,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-12-13",
+          "race": "Christmas Cup",
+          "track": "Randwick",
+          "country": "AUS",
+          "distanceM": 2400,
+          "going": "Good 4",
+          "classGroup": "Listed",
+          "finish": "1st",
+          "weightCarried": "57.5kg",
+          "margin": 0.2,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-11-29",
+          "race": "ATC Cup",
+          "track": "Rosehill",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Good 4",
+          "classGroup": "Listed",
+          "finish": "6th",
+          "weightCarried": "58kg",
+          "margin": 3.0,
           "source": "Breednet public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "Golden Century": {
       "runs": [
@@ -2042,11 +2397,21 @@
           "going": "Heavy 9",
           "classGroup": "Group 2",
           "finish": "7th",
-          "fieldSize": null,
           "weightCarried": "54kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet"
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-05-30",
+          "race": "Premier's Cup",
+          "track": "Eagle Farm",
+          "country": "AUS",
+          "distanceM": 2400,
+          "going": "Soft 5",
+          "classGroup": "Group 3",
+          "finish": "11th",
+          "weightCarried": "54kg",
+          "margin": 11.1,
+          "source": "Breednet public race record"
         },
         {
           "date": "2026-04-11",
@@ -2057,11 +2422,9 @@
           "going": "Good 4",
           "classGroup": "Group 1",
           "finish": "3rd",
-          "fieldSize": null,
           "weightCarried": "51kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "ATC / Breednet"
+          "margin": 0.6,
+          "source": "Breednet public race record"
         },
         {
           "date": "2026-03-09",
@@ -2072,13 +2435,64 @@
           "going": "Good 4",
           "classGroup": "Group 2",
           "finish": "2nd",
-          "fieldSize": null,
           "weightCarried": "53kg",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet"
+          "margin": 0.1,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-02-21",
+          "race": "Lord Reims Stakes",
+          "track": "Morphettville",
+          "country": "AUS",
+          "distanceM": 2600,
+          "going": "Good 4",
+          "classGroup": "Group 3",
+          "finish": "2nd",
+          "weightCarried": "56kg",
+          "margin": 0.1,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-02-07",
+          "race": "Herald Sun BM70",
+          "track": "Caulfield",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Good 4",
+          "classGroup": "BM70",
+          "finish": "5th",
+          "weightCarried": "60.5kg",
+          "margin": 3.9,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-10-03",
+          "race": "Manhari BM74",
+          "track": "Moonee Valley",
+          "country": "AUS",
+          "distanceM": 3000,
+          "going": "Good 4",
+          "classGroup": "BM74",
+          "finish": "2nd",
+          "weightCarried": "59kg",
+          "margin": 0.2,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-09-21",
+          "race": "TAB We're On BM70",
+          "track": "Flemington",
+          "country": "AUS",
+          "distanceM": 2550,
+          "going": "Good 4",
+          "classGroup": "BM70",
+          "finish": "1st",
+          "weightCarried": "58kg",
+          "margin": 1.3,
+          "source": "Breednet public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "Highwayman": {
       "runs": [
@@ -2209,65 +2623,94 @@
       "runs": [
         {
           "date": "2026-08-22",
-          "race": "Ebor Handicap",
+          "race": "York 1m6f Handicap",
           "track": "York",
           "country": "GB",
-          "distanceM": 2816,
-          "going": "Good to Soft",
-          "classGroup": "Class 2 Handicap",
+          "distanceM": 2800,
+          "classGroup": "Handicap",
           "finish": "2nd",
           "fieldSize": 22,
-          "weightCarried": "9-7",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing / GG public form"
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-08-01",
           "race": "Goodwood 1m6f Handicap",
           "track": "Goodwood",
           "country": "GB",
-          "distanceM": 2816,
-          "going": "Good to Firm",
-          "classGroup": "Class 2 Handicap",
+          "distanceM": 2800,
+          "classGroup": "Handicap",
           "finish": "1st",
           "fieldSize": 13,
-          "weightCarried": "9-8",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing / GG public form"
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-06-19",
-          "race": "Royal Ascot 1m4f Handicap",
+          "race": "Royal Ascot Handicap",
           "track": "Ascot",
           "country": "GB",
           "distanceM": 2400,
-          "going": "Good to Firm",
-          "classGroup": "Class 2 Handicap",
+          "classGroup": "Handicap",
           "finish": "6th",
           "fieldSize": 17,
-          "weightCarried": "9-8",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing / GG public form"
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-05-02",
-          "race": "Newmarket 1m4f Handicap",
+          "race": "Newmarket 1m4f",
           "track": "Newmarket",
           "country": "GB",
           "distanceM": 2400,
-          "going": "Good to Firm",
-          "classGroup": "Class 2 Handicap",
+          "classGroup": "Handicap",
           "finish": "3rd",
           "fieldSize": 8,
-          "weightCarried": "9-8",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing public form"
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-11-08",
+          "race": "Doncaster 1m4f Handicap",
+          "track": "Doncaster",
+          "country": "GB",
+          "distanceM": 2400,
+          "classGroup": "Handicap",
+          "finish": "9th",
+          "fieldSize": 22,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-10-07",
+          "race": "Leicester 1m4f",
+          "track": "Leicester",
+          "country": "GB",
+          "distanceM": 2400,
+          "classGroup": "Handicap",
+          "finish": "2nd",
+          "fieldSize": 9,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-09-11",
+          "race": "Doncaster 1m2f",
+          "track": "Doncaster",
+          "country": "GB",
+          "distanceM": 2000,
+          "classGroup": "Handicap",
+          "finish": "2nd",
+          "fieldSize": 10,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-08-16",
+          "race": "Newbury 1m2f",
+          "track": "Newbury",
+          "country": "GB",
+          "distanceM": 2000,
+          "classGroup": "Handicap",
+          "finish": "3rd",
+          "fieldSize": 5,
+          "source": "Sporting Life public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "James J Braddock": {
       "runs": [
@@ -2762,14 +3205,12 @@
           "track": "Grafton",
           "country": "AUS",
           "distanceM": 2350,
-          "going": null,
+          "going": "Good 3",
           "classGroup": "Listed",
           "finish": "1st",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Racing.com"
+          "weightCarried": "54.5kg",
+          "margin": 0.2,
+          "source": "Breednet public race record"
         },
         {
           "date": "2026-06-27",
@@ -2777,16 +3218,93 @@
           "track": "Rosehill",
           "country": "AUS",
           "distanceM": 2400,
-          "going": null,
-          "classGroup": null,
+          "going": "Soft 6",
+          "classGroup": "BM90",
           "finish": "1st",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Racing.com"
+          "weightCarried": "54.5kg",
+          "margin": 3.0,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-06-13",
+          "race": "Ranvet BM78",
+          "track": "Rosehill",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Soft 5",
+          "classGroup": "BM78",
+          "finish": "2nd",
+          "weightCarried": "57.5kg",
+          "margin": 0.1,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-05-09",
+          "race": "Elite Sand & Soil BM78",
+          "track": "Gosford",
+          "country": "AUS",
+          "distanceM": 2100,
+          "going": "Good 4",
+          "classGroup": "BM78",
+          "finish": "2nd",
+          "weightCarried": "58.5kg",
+          "margin": 0.4,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-04-25",
+          "race": "Battle Of The Dardanelles BM78",
+          "track": "Randwick",
+          "country": "AUS",
+          "distanceM": 1600,
+          "going": "Good 4",
+          "classGroup": "BM78",
+          "finish": "7th",
+          "weightCarried": "58.5kg",
+          "margin": 1.1,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-12-20",
+          "race": "Schweppes BM78",
+          "track": "Randwick",
+          "country": "AUS",
+          "distanceM": 2400,
+          "going": "Good 4",
+          "classGroup": "BM78",
+          "finish": "2nd",
+          "weightCarried": "58kg",
+          "margin": 0.3,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-12-07",
+          "race": "Captivant @ Kia Ora BM78",
+          "track": "Rosehill",
+          "country": "AUS",
+          "distanceM": 2000,
+          "going": "Good 4",
+          "classGroup": "BM78",
+          "finish": "2nd",
+          "weightCarried": "57kg",
+          "margin": 1.6,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-11-22",
+          "race": "Rustic Touch Custom Builder & Designer Plate",
+          "track": "Gosford",
+          "country": "AUS",
+          "distanceM": 2100,
+          "going": "Good 4",
+          "classGroup": "Class 1",
+          "finish": "1st",
+          "weightCarried": "59kg",
+          "margin": 8.2,
+          "source": "Breednet public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "Kings Valley": {
       "runs": [
@@ -2916,18 +3434,14 @@
       "runs": [
         {
           "date": "2026-08-22",
-          "race": "Curragh 1m6f Stakes",
+          "race": "Curragh 1m6f",
           "track": "Curragh",
           "country": "IRE",
-          "distanceM": 2816,
-          "going": "Good",
-          "classGroup": null,
+          "distanceM": 2800,
+          "classGroup": "Handicap",
           "finish": "2nd",
           "fieldSize": 6,
-          "weightCarried": "9-9",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing public form"
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-06-16",
@@ -2935,31 +3449,79 @@
           "track": "Ascot",
           "country": "GB",
           "distanceM": 4000,
-          "going": "Good to Firm",
-          "classGroup": "Class 2 Handicap",
+          "classGroup": "Handicap",
           "finish": "1st",
           "fieldSize": 20,
-          "weightCarried": "9-3",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing public form"
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-05-12",
-          "race": "Killarney 1m6f Flat",
+          "race": "Killarney 1m6f",
           "track": "Killarney",
           "country": "IRE",
-          "distanceM": 2816,
-          "going": "Good",
-          "classGroup": null,
+          "distanceM": 2850,
+          "classGroup": "Handicap",
           "finish": "1st",
           "fieldSize": 6,
-          "weightCarried": "9-12",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing public form"
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2026-03-30",
+          "race": "Navan 1m6f",
+          "track": "Navan",
+          "country": "IRE",
+          "distanceM": 2800,
+          "classGroup": "Handicap",
+          "finish": "10th",
+          "fieldSize": 11,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2026-01-12",
+          "race": "Punchestown Hurdle",
+          "track": "Punchestown",
+          "country": "IRE",
+          "distanceM": 3250,
+          "classGroup": "Hurdle",
+          "finish": "3rd",
+          "fieldSize": 15,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-12-27",
+          "race": "Leopardstown Hurdle",
+          "track": "Leopardstown",
+          "country": "IRE",
+          "distanceM": 3200,
+          "classGroup": "Hurdle",
+          "finish": "9th",
+          "fieldSize": 19,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-12-07",
+          "race": "Cork Hurdle",
+          "track": "Cork",
+          "country": "IRE",
+          "distanceM": 3400,
+          "classGroup": "Hurdle",
+          "finish": "5th",
+          "fieldSize": 11,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-06-27",
+          "race": "Compiegne 1m6f",
+          "track": "Compiegne",
+          "country": "FR",
+          "distanceM": 2800,
+          "classGroup": "Handicap",
+          "finish": "1st",
+          "fieldSize": 10,
+          "source": "Sporting Life public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "Klondike": {
       "runs": [
@@ -5008,18 +5570,13 @@
     "Pounding": {
       "runs": [
         {
-          "date": "2026-07-16",
-          "race": "Grafton Cup",
-          "track": "Grafton",
+          "date": "2026-06-13",
+          "race": "Q22",
+          "track": "Eagle Farm",
           "country": "AUS",
-          "distanceM": 2350,
-          "going": null,
-          "classGroup": "Listed",
-          "finish": "8th",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
+          "distanceM": 2200,
+          "classGroup": "Group 2",
+          "finish": "2nd",
           "source": "Breednet public race record"
         },
         {
@@ -5028,16 +5585,72 @@
           "track": "Flemington",
           "country": "AUS",
           "distanceM": 2800,
-          "going": null,
           "classGroup": "Listed",
           "finish": "2nd",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet stakes record"
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-05-09",
+          "race": "BM100",
+          "track": "Caulfield",
+          "country": "AUS",
+          "distanceM": 2000,
+          "classGroup": "BM100",
+          "finish": "4th",
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-04-18",
+          "race": "Mornington Cup",
+          "track": "Mornington",
+          "country": "AUS",
+          "distanceM": 2400,
+          "classGroup": "Listed",
+          "finish": "2nd",
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-04-04",
+          "race": "Easter Cup",
+          "track": "Caulfield",
+          "country": "AUS",
+          "distanceM": 2000,
+          "classGroup": "Group 3",
+          "finish": "7th",
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-03-22",
+          "race": "Bairnsdale Cup",
+          "track": "Bairnsdale",
+          "country": "AUS",
+          "distanceM": 1600,
+          "classGroup": "Listed",
+          "finish": "2nd",
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-03-07",
+          "race": "Shaftesbury Avenue Handicap",
+          "track": "Flemington",
+          "country": "AUS",
+          "distanceM": 1400,
+          "classGroup": "Group 3",
+          "finish": "7th",
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2026-02-14",
+          "race": "BM90",
+          "track": "Flemington",
+          "country": "AUS",
+          "distanceM": 1200,
+          "classGroup": "BM90",
+          "finish": "7th",
+          "source": "Breednet public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "River Of Stars": {
       "runs": [
@@ -6311,50 +6924,94 @@
       "runs": [
         {
           "date": "2026-06-30",
-          "race": "Roscommon Listed Stakes",
+          "race": "Roscommon 1m4f",
           "track": "Roscommon",
           "country": "IRE",
           "distanceM": 2400,
-          "going": "Good",
-          "classGroup": "Listed",
+          "classGroup": "Handicap",
           "finish": "3rd",
           "fieldSize": 8,
-          "weightCarried": "10-0",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing public form / GG public form"
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-05-08",
-          "race": "Huxley Stakes",
+          "race": "Chester 1m2f",
           "track": "Chester",
           "country": "GB",
-          "distanceM": 2100,
-          "going": "Good",
-          "classGroup": "Group 2",
+          "distanceM": 2000,
+          "classGroup": "Handicap",
           "finish": "6th",
           "fieldSize": 9,
-          "weightCarried": "9-3",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing public form / GG public form"
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-04-19",
-          "race": "Alleged Stakes",
+          "race": "Curragh 1m2f",
           "track": "Curragh",
           "country": "IRE",
           "distanceM": 2000,
-          "going": "Soft",
-          "classGroup": "Group 3",
+          "classGroup": "Handicap",
           "finish": "1st",
           "fieldSize": 12,
-          "weightCarried": "9-5",
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Irishracing public form / Racing Post public report"
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2026-04-03",
+          "race": "Curragh 1m2f",
+          "track": "Curragh",
+          "country": "IRE",
+          "distanceM": 2000,
+          "classGroup": "Handicap",
+          "finish": "5th",
+          "fieldSize": 18,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-11-02",
+          "race": "Curragh 1m4f",
+          "track": "Curragh",
+          "country": "IRE",
+          "distanceM": 2400,
+          "classGroup": "Handicap",
+          "finish": "7th",
+          "fieldSize": 15,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-09-22",
+          "race": "Listowel 1m3f",
+          "track": "Listowel",
+          "country": "IRE",
+          "distanceM": 2200,
+          "classGroup": "Handicap",
+          "finish": "1st",
+          "fieldSize": 11,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-07-28",
+          "race": "Galway 1m4f",
+          "track": "Galway",
+          "country": "IRE",
+          "distanceM": 2500,
+          "classGroup": "Handicap",
+          "finish": "2nd",
+          "fieldSize": 11,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-07-01",
+          "race": "Roscommon 1m2f",
+          "track": "Roscommon",
+          "country": "IRE",
+          "distanceM": 2100,
+          "classGroup": "Handicap",
+          "finish": "1st",
+          "fieldSize": 10,
+          "source": "Sporting Life public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "Starzintheireyes": {
       "runs": [
@@ -6937,36 +7594,96 @@
     "Tawny Port": {
       "runs": [
         {
-          "date": "2026-06-05",
+          "date": "2026-09-10",
+          "race": "Bowling Green Gold Cup",
+          "track": "Kentucky Downs",
+          "country": "USA",
+          "distanceM": 3300,
+          "classGroup": "Listed",
+          "finish": "1st",
+          "source": "Public Kentucky Downs result coverage"
+        },
+        {
+          "date": "2026-06-04",
           "race": "Belmont Gold Cup",
           "track": "Saratoga",
           "country": "USA",
           "distanceM": 3200,
-          "going": null,
-          "classGroup": "Grade 2",
+          "going": "Firm",
+          "classGroup": "Group 2",
           "finish": "1st",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Victoria Racing Club"
+          "fieldSize": 8,
+          "source": "Sporting Life public race record"
         },
         {
           "date": "2026-04-18",
-          "race": "Elkhorn Stakes",
+          "race": "Keeneland 1m4f",
           "track": "Keeneland",
           "country": "USA",
-          "distanceM": 2414,
-          "going": null,
-          "classGroup": "Grade 2",
+          "distanceM": 2400,
+          "going": "Firm",
+          "classGroup": "Group 2",
           "finish": "4th",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Victoria Racing Club"
+          "fieldSize": 11,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-11-01",
+          "race": "Del Mar 1m4f",
+          "track": "Del Mar",
+          "country": "USA",
+          "distanceM": 2400,
+          "classGroup": "Group 1",
+          "finish": "9th",
+          "fieldSize": 14,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-10-04",
+          "race": "Woodbine 1m4f",
+          "track": "Woodbine",
+          "country": "CAN",
+          "distanceM": 2400,
+          "classGroup": "Group 1",
+          "finish": "2nd",
+          "fieldSize": 10,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2024-09-07",
+          "race": "Kentucky Downs 1m4f",
+          "track": "Kentucky Downs",
+          "country": "USA",
+          "distanceM": 2400,
+          "classGroup": "Group 2",
+          "finish": "3rd",
+          "fieldSize": 9,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2024-07-20",
+          "race": "Monmouth 1m3f",
+          "track": "Monmouth",
+          "country": "USA",
+          "distanceM": 2200,
+          "classGroup": "Group 2",
+          "finish": "3rd",
+          "fieldSize": 11,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2024-06-15",
+          "race": "Monmouth 1m1f",
+          "track": "Monmouth",
+          "country": "USA",
+          "distanceM": 1800,
+          "classGroup": "Group 3",
+          "finish": "3rd",
+          "fieldSize": 9,
+          "source": "Sporting Life public race record"
         }
-      ]
+      ],
+      "formIdentityVerified": true
     },
     "The Euphrates": {
       "runs": [

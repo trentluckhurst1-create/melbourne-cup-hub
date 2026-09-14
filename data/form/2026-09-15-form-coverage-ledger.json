@@ -1,8 +1,8 @@
 {
   "total": 101,
-  "complete": 46,
-  "careerComplete": 0,
-  "unresolved": 55,
+  "complete": 58,
+  "careerComplete": 2,
+  "unresolved": 41,
   "rows": [
     {
       "nominationNumber": 1,
@@ -13,14 +13,14 @@
     {
       "nominationNumber": 2,
       "horse": "Aethelflaed",
-      "runs": 6,
-      "state": "UNRESOLVED"
+      "runs": 7,
+      "state": "CAREER_COMPLETE"
     },
     {
       "nominationNumber": 3,
       "horse": "Aethelwulf",
-      "runs": 6,
-      "state": "UNRESOLVED"
+      "runs": 4,
+      "state": "CAREER_COMPLETE"
     },
     {
       "nominationNumber": 4,
@@ -37,8 +37,8 @@
     {
       "nominationNumber": 6,
       "horse": "Asterix",
-      "runs": 1,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 7,
@@ -97,14 +97,14 @@
     {
       "nominationNumber": 16,
       "horse": "Darkbonee",
-      "runs": 2,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 17,
       "horse": "Deakin",
-      "runs": 1,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 18,
@@ -121,8 +121,8 @@
     {
       "nominationNumber": 20,
       "horse": "Enfjaar",
-      "runs": 3,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 21,
@@ -133,8 +133,8 @@
     {
       "nominationNumber": 22,
       "horse": "Future History",
-      "runs": 1,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 23,
@@ -169,8 +169,8 @@
     {
       "nominationNumber": 28,
       "horse": "Highland Bling",
-      "runs": 3,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 29,
@@ -181,8 +181,8 @@
     {
       "nominationNumber": 30,
       "horse": "Hopewell Rock",
-      "runs": 4,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 31,
@@ -217,8 +217,8 @@
     {
       "nominationNumber": 36,
       "horse": "King Pedro",
-      "runs": 2,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 37,
@@ -229,8 +229,8 @@
     {
       "nominationNumber": 38,
       "horse": "Kizlyar",
-      "runs": 3,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 39,
@@ -373,8 +373,8 @@
     {
       "nominationNumber": 62,
       "horse": "Pounding",
-      "runs": 2,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 63,
@@ -457,8 +457,8 @@
     {
       "nominationNumber": 76,
       "horse": "Starford",
-      "runs": 3,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 77,
@@ -505,8 +505,8 @@
     {
       "nominationNumber": 84,
       "horse": "Tawny Port",
-      "runs": 2,
-      "state": "UNRESOLVED"
+      "runs": 8,
+      "state": "COMPLETE"
     },
     {
       "nominationNumber": 85,
@@ -610,62 +610,5 @@
       "runs": 1,
       "state": "UNRESOLVED"
     }
-  ],
-  "parallelStatus": {
-    "Enfjaar": "NO_PAGE",
-    "Barnavara": "NO_PAGE",
-    "Highland Bling": "NO_PAGE",
-    "Green Spaces": "NO_PAGE",
-    "Campaldino": "NO_PAGE",
-    "Athabascan": "NO_PAGE",
-    "Floating": "NO_PAGE",
-    "Future History": "NO_PAGE",
-    "Constitution Hill": "NO_PAGE",
-    "Don Diego De Vega": "NO_PAGE",
-    "Deakin": "NO_PAGE",
-    "Darkbonee": "NO_PAGE",
-    "James J Braddock": "NO_PAGE",
-    "Hopewell Rock": "NO_PAGE",
-    "Kizlyar": "NO_PAGE",
-    "Aethelwulf": "NO_PAGE",
-    "Jennivamoose": "NO_PAGE",
-    "Machine Gun Gracie": "NO_PAGE",
-    "Newlook": "NO_PAGE",
-    "Manzor Blue": "NO_PAGE",
-    "King Pedro": "NO_PAGE",
-    "Mr Monaco": "NO_PAGE",
-    "Knight’s Choice": "NO_PAGE",
-    "Piazza San Marco": "NO_PAGE",
-    "Pierre Bonnard": "NO_PAGE",
-    "Piggyback": "NO_PAGE",
-    "Point Of Law": "NO_PAGE",
-    "Sam Hawkens": "NO_PAGE",
-    "Portland": "NO_PAGE",
-    "Pounding": "NO_PAGE",
-    "Sir Chartwell": "NO_PAGE",
-    "Sapphire Siren": "NO_PAGE",
-    "So You Are": "NO_PAGE",
-    "Starford": "NO_PAGE",
-    "Sons And Lovers": "NO_PAGE",
-    "Storm Leopard": "NO_PAGE",
-    "Strictly Business": "NO_PAGE",
-    "Suffolk Star": "NO_PAGE",
-    "Tawny Port": "NO_PAGE",
-    "Tajanis": "NO_PAGE",
-    "Tarvue": "NO_PAGE",
-    "Vauban": "NO_PAGE",
-    "Wigmore": "NO_PAGE",
-    "Torranzino": "NO_PAGE",
-    "Trustyourinstinct": "NO_PAGE",
-    "Wolfgang": "NO_PAGE",
-    "Wine Dark Sea": "NO_PAGE",
-    "Winday": "NO_PAGE",
-    "Yellow Jersey": "NO_PAGE",
-    "Zakouma": "NO_PAGE",
-    "Aethelflaed": "NO_PAGE",
-    "Asterix": "NO_PAGE",
-    "Age Of Sail": "IDENTITY_HEADER_MISSING",
-    "Golden Century": "IDENTITY_HEADER_MISSING",
-    "Christmas Day": "IDENTITY_HEADER_MISSING"
-  }
+  ]
 }
