@@ -1,0 +1,25 @@
+{
+  "snapshotDate": "2026-09-13",
+  "observedAt": "2026-09-13T15:17:10+10:00",
+  "bookmaker": "Ladbrokes Australia",
+  "market": "2026 Melbourne Cup 3200m All In",
+  "source": "Public Ladbrokes Melbourne Cup odds page",
+  "sourceUrl": "https://www.ladbrokes.com.au/blog/betting-info/melbourne-cup/",
+  "status": "Dated public-page observation; not a live API feed",
+  "runners": [
+    {"horse":"Aeliana","odds":10.0},
+    {"horse":"Defiantly","odds":11.0},
+    {"horse":"Half Yours","odds":11.0},
+    {"horse":"Green Spaces","odds":15.0},
+    {"horse":"James J Braddock","odds":15.0},
+    {"horse":"Shockletz","odds":15.0},
+    {"horse":"Stinger Glass","odds":15.0},
+    {"horse":"Wine Dark Sea","odds":15.0},
+    {"horse":"Highwayman","odds":17.0},
+    {"horse":"Hopewell Rock","odds":17.0},
+    {"horse":"Trustyourinstinct","odds":17.0},
+    {"horse":"Saint George","odds":21.0},
+    {"horse":"Zahrann","odds":21.0},
+    {"horse":"Birdman","odds":26.0}
+  ]
+}
