@@ -13,8 +13,8 @@ function snapshotState(s){
   if(!s)return {label:'UNAVAILABLE',cls:'red'};
   if(s.live===true)return {label:'LIVE APPROVED',cls:'green'};
   const age=snapshotAgeDays(s.snapshotDate);
-  if(age!==null&&age<=1)return {label:'RECENT SNAPSHOT',cls:'green'};
-  return {label:'HISTORICAL',cls:'gold'};
+  if(age!==null&&age<=1)return {label:s.partial?'RECENT PARTIAL':'RECENT SNAPSHOT',cls:s.partial?'gold':'green'};
+  return {label:s.partial?'HISTORICAL PARTIAL':'HISTORICAL',cls:'gold'};
 }
 function formatObserved(s){
   if(!s?.observedAt)return s?.snapshotDate||'—';
@@ -28,7 +28,8 @@ function loadMarketWorkbench(){
     './data/markets/2026-09-13-bet365.json',
     './data/markets/2026-09-13-betgold.json',
     './data/markets/2026-09-13-ladbrokes.json',
-    './data/markets/2026-09-14-ladbrokes.json'
+    './data/markets/2026-09-14-ladbrokes.json',
+    './data/markets/2026-09-14-bet365-material.json'
   ];
   marketWorkbenchPromise=Promise.all([
     ...files.map(f=>fetch(f,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)),
@@ -50,7 +51,7 @@ function marketUniverse(){
     for(const r of snap.runners||[]){
       if(!names.has(r.horse))continue;
       byHorse[r.horse]=byHorse[r.horse]||{horse:r.horse,points:[]};
-      byHorse[r.horse].points.push({date:snap.snapshotDate,observedAt:snap.observedAt||null,bookmaker:snap.bookmaker,odds:Number(r.odds),source:snap.source,status:snap.status||'Stored snapshot'});
+      byHorse[r.horse].points.push({date:snap.snapshotDate,observedAt:snap.observedAt||null,bookmaker:snap.bookmaker,odds:Number(r.odds),source:snap.source,status:snap.status||'Stored snapshot',partial:!!snap.partial});
     }
   }
   return Object.values(byHorse).map(x=>{
@@ -67,7 +68,10 @@ function marketUniverse(){
     return x;
   });
 }
-function latestSnapshot(){return marketSnapshots[marketSnapshots.length-1]||null;}
+function latestSnapshot(){
+  const complete=marketSnapshots.filter(x=>!x.partial);
+  return complete[complete.length-1]||marketSnapshots[marketSnapshots.length-1]||null;
+}
 function latestOfficialRows(){
   const latest=latestSnapshot();
   const official=new Set((cupData?.horses||[]).map(h=>h.horse));
@@ -104,7 +108,7 @@ function marketRows(){
 function signalRowHtml(r){
   const pct=Math.abs(r.impliedMovePct||0).toFixed(1);
   const cls=r.direction==='SHORTENED'?'market-signal-up':'market-signal-down';
-  return `<button class="market-signal-row ${cls}" onclick="openHorse('${r.horse.replace(/'/g,"\\'")}')"><span class="market-signal-rank">${r.projectedRank?`#${r.projectedRank}`:'—'}</span><span class="market-signal-horse"><strong>${r.horse}</strong><em>${r.last.bookmaker}</em></span><span class="market-signal-price">$${r.previousSameBook.odds.toFixed(2)} → <strong>$${r.last.odds.toFixed(2)}</strong></span><span class="market-signal-move">${r.direction}<strong>${r.direction==='SHORTENED'?'+':'-'}${pct}%</strong></span></button>`;
+  return `<button class="market-signal-row ${cls}" onclick="openHorse('${r.horse.replace(/'/g,"\\'")}')"><span class="market-signal-rank">${r.projectedRank?`#${r.projectedRank}`:'—'}</span><span class="market-signal-horse"><strong>${r.horse}</strong><em>${r.last.bookmaker}${r.last.partial?' · partial observation':''}</em></span><span class="market-signal-price">$${r.previousSameBook.odds.toFixed(2)} → <strong>$${r.last.odds.toFixed(2)}</strong></span><span class="market-signal-move">${r.direction}<strong>${r.direction==='SHORTENED'?'+':'-'}${pct}%</strong></span></button>`;
 }
 function marketsWorkbenchView(){
   const rows=marketRows();const snaps=marketSnapshots;
@@ -117,29 +121,29 @@ function marketsWorkbenchView(){
   const projectedSignals=signals.filter(x=>x.projectedRank);
   const leader=currentLeader();
   const latestDate=latest?.snapshotDate;
-  const latestSources=new Set(snaps.filter(x=>x.snapshotDate===latestDate).map(x=>x.bookmaker)).size;
+  const latestSources=new Set(snaps.filter(x=>x.snapshotDate===latestDate&&!x.partial).map(x=>x.bookmaker)).size;
   const liveAllowed=marketFeedStatus?.live===true;
   return `<div class="section-header"><div><div class="kicker">Futures Market Command</div><h2>Melbourne Cup Markets</h2><div class="section-copy">Same-book movement, market leadership and projected-field relevance are separated from ordinary bookmaker disagreement. Every displayed price retains its observation date and source state.</div></div></div>
   <section class="metric-grid">${metric('Market Leader',leader?`$${leader.odds.toFixed(2)}`:'—',leader?`${leader.horse}${leader.clear?' · clear leader':' · joint leader'}`:'No stored market')}${metric('Material Moves',signals.length,'15%+ same-book implied move')}${metric('Projected Movers',projectedSignals.length,'Material moves inside Hub top 24')}${metric('Current-Date Sources',latestSources,latestDate||'No current snapshot')}${metric('Nominees Covered',covered,`of ${official.size}`)}${metric('Live Feed',liveAllowed?'AVAILABLE':'NOT PUBLISHED',liveAllowed?'Approved live source':'Snapshots only')}</section>
 
-  <section class="panel market-signal-panel"><div class="panel-head"><div><div class="kicker">Actionable Delta</div><h3>Material Market Signals</h3><div class="panel-sub">Only same-book 15%+ implied-probability changes appear here. Cross-book differences never masquerade as moves.</div></div><span class="tag ${signals.length?'gold':'green'}">${signals.length?`${signals.length} SIGNALS`:'NO MATERIAL MOVE'}</span></div>
+  <section class="panel market-signal-panel"><div class="panel-head"><div><div class="kicker">Actionable Delta</div><h3>Material Market Signals</h3><div class="panel-sub">Only same-book 15%+ implied-probability changes appear here. Partial observations can confirm a move, but never define the full market leader or consensus.</div></div><span class="tag ${signals.length?'gold':'green'}">${signals.length?`${signals.length} SIGNALS`:'NO MATERIAL MOVE'}</span></div>
     ${signals.length?`<div class="market-signal-list">${signals.map(signalRowHtml).join('')}</div>`:'<div class="news-empty">No material same-book moves in the loaded observations.</div>'}
   </section>
 
   <section class="market-command-grid">
-    <div class="panel market-command-card"><span>LEADER</span><strong>${leader?leader.horse:'—'}</strong><b>${leader?`$${leader.odds.toFixed(2)}`:'—'}</b><em>${leader?.clear?'Clear favourite on latest stored board':leader?'Joint favourite on latest stored board':'No market loaded'}</em></div>
-    <div class="panel market-command-card"><span>FRESHEST SOURCE</span><strong>${latest?.bookmaker||'—'}</strong><b>${formatObserved(latest)}</b><em>${state.label} · not guaranteed executable live price</em></div>
-    <div class="panel market-command-card"><span>CROSS-BOOK CONFIDENCE</span><strong>${latestSources>=2?'MULTI-SOURCE':'SINGLE SOURCE'}</strong><b>${latestSources} current-date source${latestSources===1?'':'s'}</b><em>${latestSources>=2?'Consensus can be assessed':'Do not infer consensus from stale books'}</em></div>
+    <div class="panel market-command-card"><span>LEADER</span><strong>${leader?leader.horse:'—'}</strong><b>${leader?`$${leader.odds.toFixed(2)}`:'—'}</b><em>${leader?.clear?'Clear favourite on latest complete stored board':leader?'Joint favourite on latest complete stored board':'No market loaded'}</em></div>
+    <div class="panel market-command-card"><span>FRESHEST COMPLETE SOURCE</span><strong>${latest?.bookmaker||'—'}</strong><b>${formatObserved(latest)}</b><em>${state.label} · not guaranteed executable live price</em></div>
+    <div class="panel market-command-card"><span>CROSS-BOOK CONFIDENCE</span><strong>${latestSources>=2?'MULTI-SOURCE':'SINGLE SOURCE'}</strong><b>${latestSources} complete source${latestSources===1?'':'s'} on latest date</b><em>${latestSources>=2?'Consensus can be assessed':'Partial observations do not count as consensus'}</em></div>
   </section>
 
-  <div class="market-warning"><strong>Integrity rule:</strong> bookmaker-to-bookmaker differences are not labelled as price moves. A move requires two observations from the same bookmaker. Recent snapshots are still not called live unless an approved feed explicitly says so.</div>
-  <div class="market-source-strip">${snaps.map(s=>{const st=snapshotState(s);return `<div class="market-source-card"><span>${formatObserved(s)}</span><strong>${s.bookmaker}</strong><div>${(s.runners||[]).filter(r=>official.has(r.horse)).length} official nominees</div><div><span class="tag ${st.cls}">${st.label}</span></div></div>`}).join('')}</div>
+  <div class="market-warning"><strong>Integrity rule:</strong> bookmaker-to-bookmaker differences are not labelled as price moves. A move requires two observations from the same bookmaker. Partial snapshots may confirm individual moves but are excluded from full-board leader/consensus calculations.</div>
+  <div class="market-source-strip">${snaps.map(s=>{const st=snapshotState(s);return `<div class="market-source-card"><span>${formatObserved(s)}</span><strong>${s.bookmaker}</strong><div>${(s.runners||[]).filter(r=>official.has(r.horse)).length} official nominees${s.partial?' · partial':''}</div><div><span class="tag ${st.cls}">${st.label}</span></div></div>`}).join('')}</div>
   <div class="market-toolbar"><input id="market-search" class="search" type="search" placeholder="Search horse…"><button class="market-chip ${marketFilter==='all'?'active':''}" data-market-filter="all">All</button><button class="market-chip ${marketFilter==='movers'?'active':''}" data-market-filter="movers">Material movers</button><button class="market-chip ${marketFilter==='projectedmovers'?'active':''}" data-market-filter="projectedmovers">Top-24 movers</button><button class="market-chip ${marketFilter==='projected'?'active':''}" data-market-filter="projected">Projected 24</button><button class="market-chip ${marketFilter==='international'?'active':''}" data-market-filter="international">International</button><button class="market-chip ${marketFilter==='tickets'?'active':''}" data-market-filter="tickets">Golden Ticket</button></div>
   <div class="panel"><div class="panel-head"><div><h3>Price Evidence Board</h3><div class="panel-sub">Latest stored observation with a same-book comparison only when a valid prior observation exists.</div></div><span class="tag ${state.cls}">${state.label}</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Horse</th><th>Latest Stored</th><th>Implied</th><th>Valid Movement</th><th>Previous Same Book</th><th>Source State</th><th>Projected</th></tr></thead><tbody id="market-board-body">${rows.map(r=>marketRowHtml(r)).join('')}</tbody></table></div></div>`;
 }
 function marketRowHtml(r){
-  const p=projectedRec(r.horse);const st=snapshotState({snapshotDate:r.last.date});
-  return `<tr data-market-horse="${r.horse.toLowerCase()}"><td class="horse">${horseLink(r.horse)}</td><td><strong>$${r.last.odds.toFixed(2)}</strong><div class="muted">${r.last.bookmaker} · ${r.last.date}</div></td><td>${r.implied?.toFixed(1)||'—'}%</td><td>${movementLabel(r)}</td><td>${r.previousSameBook?`$${r.previousSameBook.odds.toFixed(2)} · ${r.previousSameBook.date}`:'—'}</td><td><span class="tag ${st.cls}">${st.label}</span></td><td>${p?`#${p.rank}`:'—'}</td></tr>`;
+  const p=projectedRec(r.horse);const st=snapshotState({snapshotDate:r.last.date,partial:r.last.partial});
+  return `<tr data-market-horse="${r.horse.toLowerCase()}"><td class="horse">${horseLink(r.horse)}</td><td><strong>$${r.last.odds.toFixed(2)}</strong><div class="muted">${r.last.bookmaker} · ${r.last.date}${r.last.partial?' · partial':''}</div></td><td>${r.implied?.toFixed(1)||'—'}%</td><td>${movementLabel(r)}</td><td>${r.previousSameBook?`$${r.previousSameBook.odds.toFixed(2)} · ${r.previousSameBook.date}`:'—'}</td><td><span class="tag ${st.cls}">${st.label}</span></td><td>${p?`#${p.rank}`:'—'}</td></tr>`;
 }
 function bindMarketsWorkbench(){
   document.querySelectorAll('[data-market-filter]').forEach(btn=>btn.onclick=()=>{marketFilter=btn.dataset.marketFilter;render('markets');});
