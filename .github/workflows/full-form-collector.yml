@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/full-form-collector.yml'
+      - 'data/form/2026-09-15-form-final-overrides.json'
 permissions:
   contents: write
 jobs:
@@ -29,4 +30,4 @@ jobs:
             git pull --rebase origin main
             git push origin main
           fi
-# gap manifest trigger 4
+# final 101-horse audit trigger 5
