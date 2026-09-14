@@ -26,3 +26,4 @@ jobs:
             git commit -m "Populate full-field public form from RaceHub"
             git push
           fi
+# parallel collector trigger 2
