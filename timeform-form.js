@@ -20,21 +20,13 @@ function mergeFormDatasets(primary,supplements=[]){
 function loadFormIntel(){
   if(formIntelPromise) return formIntelPromise;
   formIntelPromise=Promise.all([
-    fetch('./data/form/2026-09-13-form-index.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
-    fetch('./data/form/2026-09-13-form-supplement-2.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-13-form-supplement-3.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-13-form-supplement-4.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-13-form-supplement-5.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-13-form-supplement-6.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-13-form-supplement-7.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-13-form-supplement-8.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-13-form-supplement-9.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-13-form-supplement-10.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-13-form-supplement-11.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-14-form-supplement-12.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./data/form/2026-09-14-form-supplement-13.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
+    fetch('./data/form/2026-09-15-full-form.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
     fetch('./data/timeform/2026-09-13-public-status.json',{cache:'no-store'}).then(r=>r.ok?r.json():null)
-  ]).then(([f,supp2,supp3,supp4,supp5,supp6,supp7,supp8,supp9,supp10,supp11,supp12,supp13,s])=>{formIntelData=mergeFormDatasets(f,[supp2,supp3,supp4,supp5,supp6,supp7,supp8,supp9,supp10,supp11,supp12,supp13]);timeformStatusData=s;return formIntelData;}).catch(()=>null);
+  ]).then(([f,s])=>{
+    formIntelData=f||{snapshotDate:'2026-09-15',targetRunsPerHorse:8,horses:{}};
+    timeformStatusData=s;
+    return formIntelData;
+  }).catch(()=>null);
   return formIntelPromise;
 }
 
@@ -46,7 +38,7 @@ function formCoverage(){
   const total=(cupData?.horses||[]).length;
   const withForm=(cupData?.horses||[]).filter(h=>publicActualRuns(h.horse).length>0).length;
   const audit=typeof formCompletionSummary==='function'?formCompletionSummary():null;
-  const fullWindow=audit?audit.complete+audit.career:(cupData?.horses||[]).filter(h=>publicActualRuns(h.horse).length>=8).length;
+  const fullWindow=audit?audit.complete+audit.career:(cupData?.horses||[]).filter(h=>publicActualRuns(h.horse).length>=8||formIntelData?.horses?.[h.horse]?.careerComplete===true).length;
   const matched=timeformStatusData?.profilesMatched??0;
   const unresolved=timeformStatusData?.profilesUnresolved??Math.max(0,total-matched);
   return {total,withForm,fullWindow,matched,unresolved,gaps:audit?.gaps??Math.max(0,total-fullWindow),flagged:audit?.flagged??0};
@@ -73,7 +65,8 @@ function tfStaminaEvidence(horse){
 }
 function formStateForCard(horse){
   if(typeof formCompletionState==='function')return formCompletionState(horse);
-  const n=tfFormCount(horse);return {state:n>=8?'COMPLETE':'RESEARCH_GAP',runs:Math.min(n,8),label:`${Math.min(n,8)}/8`,className:n>=8?'green':n>=5?'gold':'red'};
+  const n=tfFormCount(horse),career=formIntelData?.horses?.[horse]?.careerComplete===true;
+  return {state:n>=8?'COMPLETE':career?'CAREER_COMPLETE':'RESEARCH_GAP',runs:Math.min(n,8),label:career&&n<8?`${n}/${n} CAREER`:`${Math.min(n,8)}/8`,className:(n>=8||career)?'green':n>=5?'gold':'red'};
 }
 function pfrForCard(horse){try{return typeof publicFormRating==='function'?publicFormRating(horse):null;}catch(e){return null;}}
 
@@ -82,7 +75,7 @@ function timeformView(){
   const unresolved=(cupData?.horses||[]).filter(h=>!privateTfMatched(h.horse));
   return `<div class="section-header"><div><div class="kicker">Private Timeform Layer · Public PFR Available Now</div><h2>Timeform Intelligence</h2><div class="section-copy">The identity layer is preserved. Genuine numerical Timeform ratings remain private/pending; the separate Hub PFR scale now gives us a public-form comparison without substituting or fabricating Timeform values.</div></div></div>
   <section class="metric-grid">${metric('Official Nominees',c.total,'Common comparison universe')}${metric('Profiles Matched',c.matched,`${c.unresolved} unresolved identities`)}${metric('Form Complete',c.fullWindow,`${c.gaps} gaps · ${c.flagged} integrity flags`)}${metric('Public PFR','ACTIVE','Separate Hub scale')}${metric('Timeform Values','PENDING','No substitution')}</section>
-  <section class="profile-grid"><div class="panel"><h3>Rating Architecture</h3><div class="rule-list"><div class="rule-row"><span>01</span><p>Timeform remains the preferred private comparative class scale once genuine values are restored.</p></div><div class="rule-row"><span>02</span><p>PFR-1.0 independently rates verified public race performances using race class, result, field size and available margin.</p></div><div class="rule-row"><span>03</span><p>Run-level Timeform fields stay empty until genuine Timeform values are available.</p></div><div class="rule-row"><span>04</span><p>PFR, OR, RPR and other scales are never relabelled as Timeform.</p></div><div class="rule-row"><span>05</span><p>Cup-specific overlays remain separate: stamina, weight, Flemington, going, pace, preparation and travel.</p></div></div></div><div class="panel"><h3>Current Recovery State</h3><p class="analysis-copy">${c.matched} of ${c.total} official nominees have a preserved Timeform identity match. Public PFR values are now usable immediately, while private Timeform numeric values remain pending rather than fabricated.</p><div class="audit-banner"><strong>STATUS</strong><span>PFR active · Timeform identity preserved · numeric TF ratings pending</span></div>${unresolved.length?`<div class="panel-sub" style="margin-top:12px">Unresolved: ${unresolved.map(h=>h.horse).join(' · ')}</div>`:''}</div></section>
+  <section class="profile-grid"><div class="panel"><h3>Rating Architecture</h3><div class="rule-list"><div class="rule-row"><span>01</span><p>Timeform remains the preferred private comparative class scale once genuine values are restored.</p></div><div class="rule-row"><span>02</span><p>PFR-1.1 independently rates verified public race performances using race class, result, field size and available margin.</p></div><div class="rule-row"><span>03</span><p>Run-level Timeform fields stay empty until genuine Timeform values are available.</p></div><div class="rule-row"><span>04</span><p>PFR, OR, RPR and other scales are never relabelled as Timeform.</p></div><div class="rule-row"><span>05</span><p>Cup-specific overlays remain separate: stamina, weight, Flemington, going, pace, preparation and travel.</p></div></div></div><div class="panel"><h3>Current Recovery State</h3><p class="analysis-copy">${c.matched} of ${c.total} official nominees have a preserved Timeform identity match. Public PFR values are now usable immediately, while private Timeform numeric values remain pending rather than fabricated.</p><div class="audit-banner"><strong>STATUS</strong><span>101-horse public form complete · PFR active · Timeform numeric values separate</span></div>${unresolved.length?`<div class="panel-sub" style="margin-top:12px">Unresolved Timeform identities: ${unresolved.map(h=>h.horse).join(' · ')}</div>`:''}</div></section>
   <div class="panel"><div class="panel-head"><div><h3>101-Horse Timeform Readiness Board</h3><div class="panel-sub">Public PFR sits beside Timeform readiness, never inside the Timeform column.</div></div><span class="tag gold">TF NUMERIC PENDING</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>#</th><th>Horse</th><th>PFR</th><th>TF Identity</th><th>Form State</th><th>Stamina Evidence</th><th>TF Rating State</th></tr></thead><tbody>${(cupData?.horses||[]).map(h=>{const matched=privateTfMatched(h.horse);const f=formStateForCard(h.horse);const pfr=pfrForCard(h.horse);return `<tr><td>${h.nominationNumber}</td><td class="horse">${horseLink(h.horse)}</td><td>${pfr?`${pfr.current.toFixed(1)} · ${publicFormBand(pfr)}`:'—'}</td><td>${matched?tag('Matched','green'):'<span class="muted">Unresolved</span>'}</td><td><span class="tag ${f.className}">${f.label}</span></td><td>${tfStaminaEvidence(h.horse)}</td><td>${matched?'<span class="muted">Identity ready · numeric rating pending</span>':'<span class="muted">Identity research required</span>'}</td></tr>`}).join('')}</tbody></table></div></div>`;
 }
 
@@ -91,8 +84,8 @@ function formGuideView(){
   const projected=new Map((projectedFieldData?.projected24||[]).map(x=>[x.horse,x.rank]));
   const rated=(cupData?.horses||[]).map(h=>({h,pfr:pfrForCard(h.horse)})).filter(x=>x.pfr).sort((a,b)=>b.pfr.current-a.pfr.current);
   const pfrLeader=rated[0]||null;
-  return `<div class="section-header"><div><div class="kicker">Every Nominee · Form + Public Ratings</div><h2>Melbourne Cup Form Guide</h2><div class="section-copy">Each loaded public start now carries a PFR-1.0 performance rating. Current form, peak performance, trajectory and staying-rated peaks are visible across the entire nomination list while Timeform remains separate.</div></div></div>
-  <section class="metric-grid">${metric('Nominees',c.total,'Official 1 Sep snapshot')}${metric('Any Public Form',c.withForm,'Horses with actual race history')}${metric('Form Complete',c.fullWindow,'8/8 or certified full career')}${metric('PFR Leader',pfrLeader?pfrLeader.h.horse:'—',pfrLeader?`${pfrLeader.pfr.current.toFixed(1)} current`:'No rating')}${metric('Research Gaps',c.gaps,'Still incomplete')}${metric('Integrity Flags',c.flagged,'Source/run issues')}</section>
+  return `<div class="section-header"><div><div class="kicker">Every Nominee · Complete Public Form</div><h2>Melbourne Cup Form Guide</h2><div class="section-copy">The official 101-horse nomination universe is now complete to eight actual race starts per horse, or the horse's complete career where fewer than eight actual starts exist. Trials and jump-outs are excluded.</div></div></div>
+  <section class="metric-grid">${metric('Nominees',c.total,'Official 1 Sep snapshot')}${metric('Any Public Form',c.withForm,'101-horse coverage')}${metric('Form Complete',c.fullWindow,'8/8 or certified full career')}${metric('PFR Leader',pfrLeader?pfrLeader.h.horse:'—',pfrLeader?`${pfrLeader.pfr.current.toFixed(1)} current`:'No rating')}${metric('Research Gaps',c.gaps,'Target: zero')}${metric('Integrity Flags',c.flagged,'Source/run issues')}</section>
   <div class="horse-grid">${(cupData?.horses||[]).map(h=>{const runs=publicActualRuns(h.horse);const last=runs[0];const matched=privateTfMatched(h.horse);const f=formStateForCard(h.horse);const rank=projected.get(h.horse);const pfr=pfrForCard(h.horse);const traj=pfr?.trajectory===null||pfr?.trajectory===undefined?'Limited':`${pfr.trajectoryLabel}${pfr.trajectory!==null?` ${pfr.trajectory>0?'+':''}${pfr.trajectory.toFixed(1)}`:''}`;return `<article class="horse-card"><div class="horse-card-top"><div><div class="horse-number">NOM ${h.nominationNumber}${rank?` · PROJ #${rank}`:''}</div><button class="horse-card-name" onclick="openHorse('${h.horse.replace(/'/g,"\\'")}')">${h.horse}</button><div class="horse-country">${h.country} · ${h.trainer}</div></div><span class="tag ${f.className}">${f.label}</span></div><div class="horse-card-grid"><div><span>PFR CURRENT</span><strong>${pfr?pfr.current.toFixed(1):'—'}</strong></div><div><span>PEAK</span><strong>${pfr?pfr.peak.toFixed(1):'—'}</strong></div><div><span>TRAJECTORY</span><strong>${pfr?traj:'—'}</strong></div><div><span>2800M+ PEAK</span><strong>${pfr?.longStayPeak!==null&&pfr?.longStayPeak!==undefined?pfr.longStayPeak.toFixed(1):'—'}</strong></div><div><span>LAST VERIFIED RUN</span><strong>${last?`${last.finish||'—'} · ${last.track||'—'}`:'Researching'}</strong></div><div><span>STAMINA</span><strong>${tfStaminaEvidence(h.horse)}</strong></div><div><span>TIMEFORM</span><strong>${matched?'Identity ready · numeric pending':'Identity unresolved'}</strong></div><div><span>FORM STATE</span><strong>${f.state.replace(/_/g,' ')}</strong></div></div></article>`}).join('')}</div>`;
 }
 
