@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/build_complete_form.py'
+      - 'scripts/augment_form_parallel.py'
       - 'scripts/augment_form_via_reader.py'
       - 'data/form/**'
       - '.github/workflows/build-complete-form.yml'
@@ -25,7 +26,9 @@ jobs:
       - run: pip install requests beautifulsoup4
       - name: Build canonical 101-horse form
         run: python scripts/build_complete_form.py
-      - name: Reader fallback for blocked public sources
+      - name: Parallel identity-guarded Breednet completion
+        run: python scripts/augment_form_parallel.py
+      - name: Reader fallback for remaining public sources
         run: python scripts/augment_form_via_reader.py
       - name: Commit canonical form and audit
         run: |
