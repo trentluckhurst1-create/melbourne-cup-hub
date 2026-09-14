@@ -2,8 +2,8 @@
   "snapshotDate": "2026-09-15",
   "universe": 101,
   "targetRunsPerHorse": 8,
-  "completeOrCareerComplete": 100,
-  "partial": 1,
+  "completeOrCareerComplete": 101,
+  "partial": 0,
   "zero": 0,
   "rows": [
     {
@@ -681,9 +681,9 @@
     {
       "nominationNumber": 57,
       "horse": "Pierre Bonnard",
-      "state": "PARTIAL",
-      "actualRuns": 7,
-      "missingRuns": 1,
+      "state": "COMPLETE",
+      "actualRuns": 8,
+      "missingRuns": 0,
       "racehubStatus": "HTTP_404",
       "racehubRuns": 0,
       "careerStarts": null,

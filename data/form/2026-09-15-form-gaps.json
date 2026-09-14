@@ -1,13 +1,5 @@
 {
   "snapshotDate": "2026-09-15",
-  "gapCount": 1,
-  "gaps": [
-    {
-      "horse": "Pierre Bonnard",
-      "actualRuns": 7,
-      "missingRuns": 1,
-      "racehubStatus": "HTTP_404",
-      "careerStarts": null
-    }
-  ]
+  "gapCount": 0,
+  "gaps": []
 }

@@ -6875,6 +6875,20 @@
           "fieldSize": 8,
           "weightCarried": "9-4",
           "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2025-08-15",
+          "race": "Irish Stallion Farms EBF Maiden",
+          "track": "Dundalk",
+          "country": "IRE",
+          "distanceM": 1600,
+          "going": "Standard",
+          "classGroup": "Maiden",
+          "finish": "1st",
+          "fieldSize": 12,
+          "weightCarried": "9-7",
+          "source": "Sporting Life public race result",
+          "sourceUrl": "https://www.sportinglife.com/racing/results/2025-08-15/dundalk/873939/irish-stallion-farms-ebf-maiden"
         }
       ]
     },
