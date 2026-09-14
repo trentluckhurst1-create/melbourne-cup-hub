@@ -37,5 +37,23 @@ function publicFormRating(name){
   return {version:PUBLIC_FORM_RATING_VERSION,current:Math.round(current*10)/10,peak:Math.round(peak*10)/10,rasPeak:publicRasPeak(name),stayingPeak:stayingPeak===null?null:Math.round(stayingPeak*10)/10,longStayPeak:longStayPeak===null?null:Math.round(longStayPeak*10)/10,trajectory:trajectory===null?null:Math.round(trajectory*10)/10,trajectoryLabel,runs:runs.length,latest};
 }
 function publicFormBand(r){if(!r)return 'UNRATED';if(r.current>=108)return 'ELITE';if(r.current>=103)return 'G1/G2';if(r.current>=98)return 'GROUP';if(r.current>=93)return 'LISTED+';if(r.current>=88)return 'STRONG';if(r.current>=82)return 'COMPETITIVE';return 'DEVELOPING';}
-function cupPublicLens(name){const r=publicFormRating(name);if(!r)return null;const w=typeof weightRec==='function'?weightRec(name):null;const official=typeof officialWeightRec==='function'?officialWeightRec(name):null;const kg=official?.weightKg??w?.predictedKg??null;let stamina=0;if(r.longStayPeak!==null)stamina=8;else if(r.stayingPeak!==null)stamina=5;const formDepth=Math.min(5,r.runs/8*5);const trend=r.trajectory===null?0:Math.max(-3,Math.min(3,r.trajectory/2));const handicap=kg===null?0:Math.max(-3,Math.min(4,(57-Number(kg))*0.8));const raw=r.current+stamina+formDepth+trend+handicap;return {score:Math.round(raw*10)/10,weightKg:kg,stamina,formDepth:Math.round(formDepth*10)/10,trend:Math.round(trend*10)/10,handicap:Math.round(handicap*10)/10};}
+function cupOfficialWeight(name){
+  try{
+    if(typeof officialWeightMap!=='function')return null;
+    const rec=officialWeightMap().get(name);
+    return rec&&Number.isFinite(Number(rec.weightKg))?Number(rec.weightKg):null;
+  }catch(e){return null;}
+}
+function cupPublicLens(name){
+  const r=publicFormRating(name);if(!r)return null;
+  const w=typeof weightRec==='function'?weightRec(name):null;
+  const officialKg=cupOfficialWeight(name);
+  const kg=Number.isFinite(officialKg)?officialKg:(w&&Number.isFinite(Number(w.predictedKg))?Number(w.predictedKg):null);
+  let stamina=0;if(r.longStayPeak!==null)stamina=8;else if(r.stayingPeak!==null)stamina=5;
+  const formDepth=Math.min(5,r.runs/8*5);
+  const trend=r.trajectory===null?0:Math.max(-3,Math.min(3,r.trajectory/2));
+  const handicap=kg===null?0:Math.max(-3,Math.min(4,(57-Number(kg))*0.8));
+  const raw=r.current+stamina+formDepth+trend+handicap;
+  return {score:Math.round(raw*10)/10,weightKg:kg,weightState:Number.isFinite(officialKg)?'OFFICIAL':kg!==null?'MODELLED':'PENDING',stamina,formDepth:Math.round(formDepth*10)/10,trend:Math.round(trend*10)/10,handicap:Math.round(handicap*10)/10};
+}
 window.publicRunRating=publicRunRating;window.publicRatedRuns=publicRatedRuns;window.publicFormRating=publicFormRating;window.publicFormBand=publicFormBand;window.publicRasPeak=publicRasPeak;window.cupPublicLens=cupPublicLens;
