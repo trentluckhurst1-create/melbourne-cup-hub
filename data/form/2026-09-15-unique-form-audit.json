@@ -2,10 +2,10 @@
   "snapshotDate": "2026-09-15",
   "universe": 101,
   "targetRunsPerHorse": 8,
-  "complete": 87,
-  "careerComplete": 6,
-  "resolved": 93,
-  "partial": 8,
+  "complete": 94,
+  "careerComplete": 7,
+  "resolved": 101,
+  "partial": 0,
   "zero": 0,
   "rows": [
     {
@@ -38,10 +38,10 @@
     {
       "nominationNumber": 4,
       "horse": "Age Of Sail",
-      "state": "PARTIAL",
-      "uniqueActualRuns": 5,
-      "knownUniqueCareerDates": 5,
-      "missingRuns": 3,
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
       "careerComplete": false
     },
     {
@@ -74,10 +74,10 @@
     {
       "nominationNumber": 8,
       "horse": "Barnavara",
-      "state": "PARTIAL",
-      "uniqueActualRuns": 6,
-      "knownUniqueCareerDates": 6,
-      "missingRuns": 2,
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
       "careerComplete": false
     },
     {
@@ -101,10 +101,10 @@
     {
       "nominationNumber": 11,
       "horse": "Campaldino",
-      "state": "PARTIAL",
-      "uniqueActualRuns": 5,
-      "knownUniqueCareerDates": 5,
-      "missingRuns": 3,
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
       "careerComplete": false
     },
     {
@@ -290,11 +290,11 @@
     {
       "nominationNumber": 32,
       "horse": "Jenni Multabella",
-      "state": "PARTIAL",
+      "state": "CAREER_COMPLETE",
       "uniqueActualRuns": 7,
       "knownUniqueCareerDates": 7,
-      "missingRuns": 1,
-      "careerComplete": false
+      "missingRuns": 0,
+      "careerComplete": true
     },
     {
       "nominationNumber": 33,
@@ -434,10 +434,10 @@
     {
       "nominationNumber": 48,
       "horse": "Mr Monaco",
-      "state": "PARTIAL",
-      "uniqueActualRuns": 6,
-      "knownUniqueCareerDates": 6,
-      "missingRuns": 2,
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
       "careerComplete": false
     },
     {
@@ -461,10 +461,10 @@
     {
       "nominationNumber": 51,
       "horse": "Nil Bua Gan Dua",
-      "state": "PARTIAL",
-      "uniqueActualRuns": 6,
-      "knownUniqueCareerDates": 6,
-      "missingRuns": 2,
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
       "careerComplete": false
     },
     {
@@ -704,10 +704,10 @@
     {
       "nominationNumber": 78,
       "horse": "Stinger Glass",
-      "state": "PARTIAL",
-      "uniqueActualRuns": 3,
-      "knownUniqueCareerDates": 3,
-      "missingRuns": 5,
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
       "careerComplete": false
     },
     {
@@ -722,10 +722,10 @@
     {
       "nominationNumber": 80,
       "horse": "Strictly Business",
-      "state": "PARTIAL",
-      "uniqueActualRuns": 7,
-      "knownUniqueCareerDates": 7,
-      "missingRuns": 1,
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
       "careerComplete": false
     },
     {
