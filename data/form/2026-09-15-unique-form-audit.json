@@ -1,0 +1,921 @@
+{
+  "snapshotDate": "2026-09-15",
+  "universe": 101,
+  "targetRunsPerHorse": 8,
+  "complete": 87,
+  "careerComplete": 6,
+  "resolved": 93,
+  "partial": 8,
+  "zero": 0,
+  "rows": [
+    {
+      "nominationNumber": 1,
+      "horse": "Aeliana",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 2,
+      "horse": "Aethelflaed",
+      "state": "CAREER_COMPLETE",
+      "uniqueActualRuns": 7,
+      "knownUniqueCareerDates": 7,
+      "missingRuns": 0,
+      "careerComplete": true
+    },
+    {
+      "nominationNumber": 3,
+      "horse": "Aethelwulf",
+      "state": "CAREER_COMPLETE",
+      "uniqueActualRuns": 6,
+      "knownUniqueCareerDates": 6,
+      "missingRuns": 0,
+      "careerComplete": true
+    },
+    {
+      "nominationNumber": 4,
+      "horse": "Age Of Sail",
+      "state": "PARTIAL",
+      "uniqueActualRuns": 5,
+      "knownUniqueCareerDates": 5,
+      "missingRuns": 3,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 5,
+      "horse": "Amelia Earhart",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 6,
+      "horse": "Asterix",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 7,
+      "horse": "Athabascan",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 11,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 8,
+      "horse": "Barnavara",
+      "state": "PARTIAL",
+      "uniqueActualRuns": 6,
+      "knownUniqueCareerDates": 6,
+      "missingRuns": 2,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 9,
+      "horse": "Bella Montagna",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 10,
+      "horse": "Birdman",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 11,
+      "horse": "Campaldino",
+      "state": "PARTIAL",
+      "uniqueActualRuns": 5,
+      "knownUniqueCareerDates": 5,
+      "missingRuns": 3,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 12,
+      "horse": "Causeway",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 13,
+      "horse": "Changingoftheguard",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 14,
+      "horse": "Christmas Day",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 15,
+      "horse": "Constitution Hill",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 16,
+      "horse": "Darkbonee",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 17,
+      "horse": "Deakin",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 18,
+      "horse": "Defiantly",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 19,
+      "horse": "Don Diego De Vega",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 20,
+      "horse": "Enfjaar",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 21,
+      "horse": "Floating",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 22,
+      "horse": "Future History",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 23,
+      "horse": "Golden Century",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 24,
+      "horse": "Goodie Two Shoes",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 25,
+      "horse": "Grand Pierro",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 11,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 26,
+      "horse": "Green Spaces",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 27,
+      "horse": "Half Yours",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 28,
+      "horse": "Highland Bling",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 29,
+      "horse": "Highwayman",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 30,
+      "horse": "Hopewell Rock",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 31,
+      "horse": "James J Braddock",
+      "state": "CAREER_COMPLETE",
+      "uniqueActualRuns": 6,
+      "knownUniqueCareerDates": 6,
+      "missingRuns": 0,
+      "careerComplete": true
+    },
+    {
+      "nominationNumber": 32,
+      "horse": "Jenni Multabella",
+      "state": "PARTIAL",
+      "uniqueActualRuns": 7,
+      "knownUniqueCareerDates": 7,
+      "missingRuns": 1,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 33,
+      "horse": "Jennivamoose",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 34,
+      "horse": "Johnich",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 35,
+      "horse": "Juja Kibo",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 36,
+      "horse": "King Pedro",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 37,
+      "horse": "Kings Valley",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 38,
+      "horse": "Kizlyar",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 39,
+      "horse": "Klondike",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 40,
+      "horse": "Knight’s Choice",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 41,
+      "horse": "Land Legend",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 10,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 42,
+      "horse": "Light Infantry Man",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 43,
+      "horse": "Litzdeel",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 44,
+      "horse": "Machine Gun Gracie",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 45,
+      "horse": "Male Model",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 46,
+      "horse": "Manzor Blue",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 47,
+      "horse": "Middle Earth",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 48,
+      "horse": "Mr Monaco",
+      "state": "PARTIAL",
+      "uniqueActualRuns": 6,
+      "knownUniqueCareerDates": 6,
+      "missingRuns": 2,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 49,
+      "horse": "Nearco Frod",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 50,
+      "horse": "Newlook",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 51,
+      "horse": "Nil Bua Gan Dua",
+      "state": "PARTIAL",
+      "uniqueActualRuns": 6,
+      "knownUniqueCareerDates": 6,
+      "missingRuns": 2,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 52,
+      "horse": "Ohope Wins",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 53,
+      "horse": "Okita Soushi",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 54,
+      "horse": "Omni Man",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 10,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 55,
+      "horse": "Onesmoothoperator",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 56,
+      "horse": "Piazza San Marco",
+      "state": "CAREER_COMPLETE",
+      "uniqueActualRuns": 6,
+      "knownUniqueCareerDates": 6,
+      "missingRuns": 0,
+      "careerComplete": true
+    },
+    {
+      "nominationNumber": 57,
+      "horse": "Pierre Bonnard",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 58,
+      "horse": "Piggyback",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 59,
+      "horse": "Pinhole",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 10,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 60,
+      "horse": "Point Of Law",
+      "state": "CAREER_COMPLETE",
+      "uniqueActualRuns": 4,
+      "knownUniqueCareerDates": 4,
+      "missingRuns": 0,
+      "careerComplete": true
+    },
+    {
+      "nominationNumber": 61,
+      "horse": "Portland",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 62,
+      "horse": "Pounding",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 10,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 63,
+      "horse": "River Of Stars",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 64,
+      "horse": "Royal Supremacy",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 65,
+      "horse": "Saint George",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 66,
+      "horse": "Sam Hawkens",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 67,
+      "horse": "Sapphire Siren",
+      "state": "CAREER_COMPLETE",
+      "uniqueActualRuns": 5,
+      "knownUniqueCareerDates": 5,
+      "missingRuns": 0,
+      "careerComplete": true
+    },
+    {
+      "nominationNumber": 68,
+      "horse": "She’s A Hustler",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 69,
+      "horse": "Shockletz",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 70,
+      "horse": "Sir Chartwell",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 71,
+      "horse": "Small Fry",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 72,
+      "horse": "So You Are",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 73,
+      "horse": "Sons And Lovers",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 74,
+      "horse": "Soul Of Spain",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 75,
+      "horse": "Soulcombe",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 76,
+      "horse": "Starford",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 77,
+      "horse": "Starzintheireyes",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 78,
+      "horse": "Stinger Glass",
+      "state": "PARTIAL",
+      "uniqueActualRuns": 3,
+      "knownUniqueCareerDates": 3,
+      "missingRuns": 5,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 79,
+      "horse": "Storm Leopard",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 80,
+      "horse": "Strictly Business",
+      "state": "PARTIAL",
+      "uniqueActualRuns": 7,
+      "knownUniqueCareerDates": 7,
+      "missingRuns": 1,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 81,
+      "horse": "Suffolk Star",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 10,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 82,
+      "horse": "Tajanis",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 83,
+      "horse": "Tarvue",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 84,
+      "horse": "Tawny Port",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 85,
+      "horse": "The Euphrates",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 11,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 86,
+      "horse": "Thebudgiesmugla",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 87,
+      "horse": "Think Giant",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 88,
+      "horse": "Torranzino",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 89,
+      "horse": "Treasurethe Moment",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 90,
+      "horse": "Trustyourinstinct",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 91,
+      "horse": "Valiant King",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 92,
+      "horse": "Vauban",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 93,
+      "horse": "Vegas Jack",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 94,
+      "horse": "Wigmore",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 95,
+      "horse": "Winday",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 96,
+      "horse": "Wine Dark Sea",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 97,
+      "horse": "Wolfgang",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 12,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 98,
+      "horse": "Wootton Verni",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 99,
+      "horse": "Yellow Jersey",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 100,
+      "horse": "Zahrann",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 9,
+      "missingRuns": 0,
+      "careerComplete": false
+    },
+    {
+      "nominationNumber": 101,
+      "horse": "Zakouma",
+      "state": "COMPLETE",
+      "uniqueActualRuns": 8,
+      "knownUniqueCareerDates": 8,
+      "missingRuns": 0,
+      "careerComplete": false
+    }
+  ]
+}
