@@ -1,6 +1,6 @@
 // Public factual form rating layer.
 // This is NOT Timeform and never populates Timeform fields.
-// PFR remains a transparent Hub scale. RAS values below are published Racing And Sports peak ratings only.
+// PFR remains a transparent Hub scale. RAS values below are the best explicitly verified published Racing And Sports values currently available.
 
 const PUBLIC_FORM_RATING_VERSION='PFR-1.3';
 const RAS_PUBLIC_PEAKS={
@@ -9,7 +9,8 @@ const RAS_PUBLIC_PEAKS={
   'Goodie Two Shoes':114,'James J Braddock':114,'Small Fry':113,'Constitution Hill':111,'Omni Man':111,'Kizlyar':109,
   'Amelia Earhart':108,'Highwayman':107,'Nil Bua Gan Dua':108,'Piazza San Marco':104,'Winday':88,
   'Zakouma':109,'Birdman':124,'Middle Earth':119,'Zahrann':115,'Land Legend':115,'King Pedro':110,'Ohope Wins':111,
-  'Green Spaces':116,'Light Infantry Man':122,'Litzdeel':108,"She's A Hustler":116,'Royal Supremacy':113,'Vauban':122
+  'Green Spaces':116,'Light Infantry Man':122,'Litzdeel':108,"She's A Hustler":116,'Royal Supremacy':114,'Vauban':122,
+  'Athabascan':113,'Changingoftheguard':118,'River Of Stars':118
 };
 function publicRasPeak(name){const v=RAS_PUBLIC_PEAKS[name];return Number.isFinite(v)?v:null;}
 
