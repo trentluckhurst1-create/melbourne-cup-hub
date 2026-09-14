@@ -22,11 +22,27 @@ function orderWeight(name){try{const w=typeof weightRec==='function'?weightRec(n
 function orderStamina(name){try{return typeof staminaBand==='function'?staminaBand(name):'Researching';}catch(e){return 'Researching';}}
 function orderReady(name){try{return typeof readinessScore==='function'?`${readinessScore(name)}/6`:'—';}catch(e){return '—';}}
 function orderCampaign(name){try{return typeof currentCampaign==='function'?currentCampaign(name):'Researching';}catch(e){return 'Researching';}}
-function orderQualified(name){
-  try{return typeof qualificationState==='function'&&qualificationState(name)==='Golden Ticket';}catch(e){return false;}
-}
+function orderQualified(name){try{return typeof qualificationState==='function'&&qualificationState(name)==='Golden Ticket';}catch(e){return false;}}
 function orderInternational(name){const h=horseByName(name);return h?.trainingRegion==='International';}
 function orderFormCount(name){try{return (formIntelData?.horses?.[name]?.runs||[]).length;}catch(e){return 0;}}
+function orderMarket(name){try{return typeof marketUniverse==='function'?marketUniverse().find(x=>x.horse===name)||null:null;}catch(e){return null;}}
+function orderTf(name){try{return typeof privateTfMatched==='function'?privateTfMatched(name):!(timeformStatusData?.unresolvedHorses||[]).includes(name);}catch(e){return false;}}
+function orderEvidence(name){
+  const parts=[
+    {k:'FORM',ok:orderFormCount(name)>=3,state:'VERIFIED'},
+    {k:'BASE',ok:!!baseRecord(name),state:'VERIFIED'},
+    {k:'WT',ok:!!(typeof weightRec==='function'&&weightRec(name)),state:'MODELLED'},
+    {k:'MKT',ok:!!orderMarket(name),state:'DATED'},
+    {k:'TF',ok:orderTf(name),state:'IDENTITY'}
+  ];
+  return {score:parts.filter(x=>x.ok).length,parts};
+}
+function orderEvidenceHtml(name){
+  const e=orderEvidence(name);
+  const cls=e.score>=4?'green':e.score>=3?'gold':'red';
+  const detail=e.parts.map(x=>`${x.k}:${x.ok?x.state:'GAP'}`).join(' · ');
+  return `<span class="tag ${cls}" title="${detail}">${e.score}/5</span>`;
+}
 function orderProjectedRows(){
   const d=projectedFieldData||{};
   const inside=(d.projected24||[]).map(x=>({...x,state:'IN',projected:true}));
@@ -43,6 +59,7 @@ function orderFilteredRows(){
     if(orderFilter==='qualified'&&!orderQualified(x.horse))return false;
     if(orderFilter==='international'&&!orderInternational(x.horse))return false;
     if(orderFilter==='stayers'&&!/3200|3000|2800/.test(orderStamina(x.horse)))return false;
+    if(orderFilter==='lowevidence'&&orderEvidence(x.horse).score>=4)return false;
     return true;
   });
 }
@@ -51,7 +68,7 @@ function setOrderQuery(v){orderQuery=v;render('order');setTimeout(()=>{const el=
 window.setOrderFilter=setOrderFilter;window.setOrderQuery=setOrderQuery;
 
 function orderControls(){
-  const filters=[['all','All 30'],['in','Projected 24'],['bubble','Cut-line'],['qualified','Golden Ticket'],['international','International'],['stayers','2800m+ evidence']];
+  const filters=[['all','All 30'],['in','Projected 24'],['bubble','Cut-line'],['qualified','Golden Ticket'],['international','International'],['stayers','2800m+ evidence'],['lowevidence','Evidence gaps']];
   return `<div class="order-tools"><input id="order-search" class="order-search" value="${orderQuery.replace(/"/g,'&quot;')}" placeholder="Search horse or trainer…" oninput="setOrderQuery(this.value)">${filters.map(([k,l])=>`<button class="order-filter ${orderFilter===k?'active':''}" onclick="setOrderFilter('${k}')">${l}</button>`).join('')}</div>`;
 }
 
@@ -61,6 +78,7 @@ function projectedFieldView(){
   const projected=d.projected24||[];
   const bubble=projected.filter(x=>x.band==='Bubble').length;
   const qualified=projected.filter(x=>orderQualified(x.horse)).length;
+  const lowEvidence=projected.filter(x=>orderEvidence(x.horse).score<4).length;
   const rows=orderFilteredRows();
   const in24=projected.find(x=>x.rank===24)?.horse||'—';
   const firstOut=d.nextSix?.[0]||'—';
@@ -69,15 +87,17 @@ function projectedFieldView(){
     ${metric('Projected Field',projected.length,'Current Hub top 24')}
     ${metric('Qualified in 24',qualified,'Known Golden Ticket nominees')}
     ${metric('Bubble',bubble,'Ranks 20–24 currently fragile')}
+    ${metric('Evidence Gaps',lowEvidence,'Projected runners below 4/5 maturity')}
     ${metric('Next Six',(d.nextSix||[]).length,'Immediate cut-line pressure')}
     ${metric('Official Weights','17 Sep','Projection rebuild trigger')}
   </section>
   <div class="order-summary"><div><span>IN #24</span><strong>${in24}</strong></div><div><span>FIRST OUT #25</span><strong>${firstOut}</strong></div><div><span>FIELD SIZE</span><strong>24</strong></div><div><span>NEXT MAJOR RESET</span><strong>Weights · 17 Sep</strong></div></div>
-  <div class="panel order-board"><div class="panel-head"><div><h3>Cut-Line Board · #1–#30</h3><div class="panel-sub">One decision board joining projection, handicap estimate, staying evidence, latest preparation and research maturity.</div></div><span class="tag gold">PROVISIONAL</span></div>${orderControls()}<div class="table-wrap"><table class="data-table"><thead><tr><th>Proj.</th><th>Horse</th><th>Trainer</th><th>Band</th><th>Pred. Wt</th><th>Stamina</th><th>Form</th><th>Latest Prep</th><th>Ready</th><th>Reason</th></tr></thead><tbody>${rows.length?rows.map((x,i)=>{
+  <div class="panel order-board"><div class="panel-head"><div><h3>Cut-Line Board · #1–#30</h3><div class="panel-sub">Projection and evidence maturity are shown separately. A strong rank is not presented as high-confidence when the underlying coverage is thin.</div></div><span class="tag gold">PROVISIONAL</span></div>${orderControls()}<div class="table-wrap"><table class="data-table"><thead><tr><th>Proj.</th><th>Horse</th><th>Trainer</th><th>Band</th><th>Evidence</th><th>Pred. Wt</th><th>Stamina</th><th>Form</th><th>Latest Prep</th><th>Ready</th><th>Reason</th></tr></thead><tbody>${rows.length?rows.map(x=>{
     const h=horseByName(x.horse);const rowClass=x.rank===24?'cut-line-row':x.rank===25?'first-out-row':'';const state=x.projected?bandTag(x.band):'<span class="tag">First out</span>';
-    const marker=x.rank===25?`<tr class="cut-marker"><td colspan="10">CURRENT PROJECTED FIELD CUT · 24 IN / 6 IMMEDIATE CHASERS</td></tr>`:'';
-    return `${marker}<tr class="${rowClass}"><td class="order-rank ${x.projected?'':'out'}">#${x.rank}</td><td class="horse">${h?horseLink(x.horse):x.horse}</td><td>${h?.trainer||'—'}</td><td>${state}</td><td>${orderWeight(x.horse)}</td><td>${orderStamina(x.horse)}</td><td>${orderFormCount(x.horse)}/8</td><td class="wrap-cell">${orderCampaign(x.horse)}</td><td>${orderReady(x.horse)}</td><td class="order-reason">${x.reason}</td></tr>`;
-  }).join(''):`<tr><td colspan="10" class="order-empty">No horses match this filter.</td></tr>`}</tbody></table></div></div>
+    const marker=x.rank===25?`<tr class="cut-marker"><td colspan="11">CURRENT PROJECTED FIELD CUT · 24 IN / 6 IMMEDIATE CHASERS</td></tr>`:'';
+    return `${marker}<tr class="${rowClass}"><td class="order-rank ${x.projected?'':'out'}">#${x.rank}</td><td class="horse">${h?horseLink(x.horse):x.horse}</td><td>${h?.trainer||'—'}</td><td>${state}</td><td>${orderEvidenceHtml(x.horse)}</td><td>${orderWeight(x.horse)}</td><td>${orderStamina(x.horse)}</td><td>${orderFormCount(x.horse)}/8</td><td class="wrap-cell">${orderCampaign(x.horse)}</td><td>${orderReady(x.horse)}</td><td class="order-reason">${x.reason}</td></tr>`;
+  }).join(''):`<tr><td colspan="11" class="order-empty">No horses match this filter.</td></tr>`}</tbody></table></div></div>
+  <div class="panel spaced-panel"><div class="panel-head"><div><h3>Evidence Key</h3><div class="panel-sub">Maturity score counts FORM (3+ verified starts), BASE (horse-specific verified), WT (modelled), MKT (dated bookmaker evidence) and TF (identity matched). It is not a performance rating.</div></div></div><div class="rule-list"><div class="rule-row"><span>V</span><p><strong>VERIFIED</strong> = factual source-backed evidence loaded.</p></div><div class="rule-row"><span>M</span><p><strong>MODELLED</strong> = Hub estimate, kept distinct from official fact.</p></div><div class="rule-row"><span>D</span><p><strong>DATED</strong> = observed market snapshot; not live unless explicitly approved and timestamped.</p></div><div class="rule-row"><span>G</span><p><strong>GAP</strong> = missing evidence remains visible and does not get silently inferred.</p></div></div></div>
   <div class="panel spaced-panel"><div class="panel-head"><div><h3>Qualification Control</h3><div class="panel-sub">Golden Ticket status is a ballot exemption, not an automatic handicap or projected-ranking advantage.</div></div></div>${qualificationData?`<div class="table-wrap"><table class="data-table"><thead><tr><th>Horse</th><th>Official Nominee?</th><th>Qualifying Race</th><th>Projected Position</th><th>Status</th></tr></thead><tbody>${qualificationData.qualified.map(x=>{const p=projected.find(y=>y.horse===x.horse);return `<tr><td class="horse">${horseByName(x.horse)?horseLink(x.horse):x.horse}</td><td>${horseByName(x.horse)?tag('Yes','green'):'<span class="muted">No / unconfirmed</span>'}</td><td>${x.race}</td><td>${p?`#${p.rank}`:'—'}</td><td>${tag(x.status.includes('uncertain')?'Qualified · uncertain':'Qualified','green')}</td></tr>`}).join('')}</tbody></table></div>`:'<div class="placeholder compact">Qualification layer loading…</div>'}</div>
   <div class="panel spaced-panel"><div class="panel-head"><div><h3>Projection Integrity Notes</h3><div class="panel-sub">Rules currently governing this provisional field.</div></div></div><div class="rule-list">${(d.integrityNotes||[]).map((n,i)=>`<div class="rule-row"><span>${String(i+1).padStart(2,'0')}</span><p>${n}</p></div>`).join('')}</div></div>`;
 }
@@ -99,7 +119,7 @@ render=function(view='dashboard'){
   if(view==='order'){
     document.getElementById('page-title').textContent='Order of Entry';
     const root=document.getElementById('app-content');
-    if(!projectedFieldData){root.innerHTML='<div class="placeholder">Loading projected field…</div>';Promise.all([loadProjectedField(),typeof loadExtras==='function'?loadExtras():Promise.resolve(),typeof loadFormIntel==='function'?loadFormIntel():Promise.resolve(),typeof loadLeadups==='function'?loadLeadups():Promise.resolve()]).then(()=>render('order'));return;}
+    if(!projectedFieldData){root.innerHTML='<div class="placeholder">Loading projected field…</div>';Promise.all([loadProjectedField(),typeof loadExtras==='function'?loadExtras():Promise.resolve(),typeof loadFormIntel==='function'?loadFormIntel():Promise.resolve(),typeof loadLeadups==='function'?loadLeadups():Promise.resolve(),typeof loadMarketWorkbench==='function'?loadMarketWorkbench():Promise.resolve()]).then(()=>render('order'));return;}
     root.innerHTML=projectedFieldView();return;
   }
   projectedRenderBase(view);
