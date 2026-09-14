@@ -6,7 +6,6 @@ on:
     paths:
       - 'scripts/build_complete_form.py'
       - 'scripts/augment_form_parallel.py'
-      - 'scripts/augment_form_via_reader.py'
       - 'data/form/**'
       - '.github/workflows/build-complete-form.yml'
   workflow_dispatch:
@@ -28,8 +27,6 @@ jobs:
         run: python scripts/build_complete_form.py
       - name: Parallel identity-guarded Breednet completion
         run: python scripts/augment_form_parallel.py
-      - name: Reader fallback for remaining public sources
-        run: python scripts/augment_form_via_reader.py
       - name: Commit canonical form and audit
         run: |
           git config user.name "github-actions[bot]"
