@@ -66,6 +66,25 @@ function formPulseControls(){
 function setFormPulseFilter(v){formPulseFilter=v;if(currentView==='dashboard')render('dashboard');else if(currentView==='ratings')render('ratings');}
 window.setFormPulseFilter=setFormPulseFilter;
 
+function formPulseLeaders(all){
+  const current=[...all].filter(x=>x.r).sort((a,b)=>b.r.current-a.r.current)[0]||null;
+  const staying=[...all].filter(x=>x.r?.longStayPeak!==null&&x.r?.longStayPeak!==undefined).sort((a,b)=>b.r.longStayPeak-a.r.longStayPeak)[0]||null;
+  const improver=[...all].filter(x=>x.r?.trajectory!==null&&x.r?.trajectory!==undefined).sort((a,b)=>b.r.trajectory-a.r.trajectory)[0]||null;
+  const fresh=[...all].filter(x=>formPulseFreshness(x).days!==null).sort((a,b)=>formPulseFreshness(a).days-formPulseFreshness(b).days)[0]||null;
+  const lens=[...all].filter(x=>x.lens).sort((a,b)=>b.lens.score-a.lens.score)[0]||null;
+  return {current,staying,improver,fresh,lens};
+}
+function formPulseLeaderStrip(all){
+  const l=formPulseLeaders(all);
+  const card=(label,x,value,detail)=>`<button onclick="${x?`openHorse('${x.p.horse.replace(/'/g,"\\'")}')`:'void 0'}"><span>${label}</span><strong>${x?x.p.horse:'—'}</strong><b>${x?value:'—'}</b><em>${x?detail:'No evidence'}</em></button>`;
+  return `<div class="fp-leaders">
+    ${card('CURRENT PFR',l.current,l.current?.r.current.toFixed(1),'Best recent three-run rating')}
+    ${card('2800M+ PEAK',l.staying,l.staying?.r.longStayPeak.toFixed(1),'Best loaded long-staying performance')}
+    ${card('FASTEST IMPROVER',l.improver,l.improver?.r.trajectory!==null?`${l.improver.r.trajectory>0?'+':''}${l.improver.r.trajectory.toFixed(1)}`:'—','Current vs older loaded form')}
+    ${card('FRESHEST CAMPAIGN',l.fresh,l.fresh?formPulseFreshness(l.fresh).label:'—',l.fresh?.latest?`${l.fresh.latest.finish||'—'} · ${l.fresh.latest.race||'—'}`:'No run')}
+    ${card('CUP LENS',l.lens,l.lens?.lens.score.toFixed(1),'PFR + stamina + depth + trend + handicap')}
+  </div>`;
+}
 function formPulsePanel(){
   const all=formPulseRows();
   const rows=formPulseFiltered();
@@ -77,6 +96,7 @@ function formPulsePanel(){
   const best=[...all].filter(x=>x.lens).sort((a,b)=>b.lens.score-a.lens.score)[0]||null;
   return `<section class="panel cc-panel fp-panel"><div class="cc-panel-head"><div><span class="cc-label">FORM + CLASS + STAMINA</span><h3>Projected 24 · Form Pulse</h3><div class="panel-sub">Recent public performance ratings, trajectory, staying peak and market context. PFR is a Hub public-form scale; RAS and Timeform remain separate external/private benchmarks.</div></div><button class="mini-button" onclick="openView('ratings')">Full ratings →</button></div>
     <section class="fp-metrics"><div><span>RATED</span><strong>${rated}/24</strong></div><div><span>FORM COMPLETE</span><strong>${complete}/24</strong></div><div><span>IMPROVING</span><strong>${improving}</strong></div><div><span>2800M+ RATED</span><strong>${stayers}</strong></div><div><span>RAN ≤21D</span><strong>${fresh}</strong></div><div><span>CUP LENS</span><strong>${best?best.p.horse:'—'}</strong><em>${best?best.lens.score.toFixed(1):'—'}</em></div></section>
+    ${formPulseLeaderStrip(all)}
     ${formPulseControls()}
     <div class="table-wrap"><table class="data-table fp-table"><thead><tr><th>#</th><th>Horse</th><th>Profile</th><th>Latest 3 PFR</th><th>Current</th><th>Peak</th><th>RAS</th><th>2800m+</th><th>Trajectory</th><th>Last Run</th><th>Fresh</th><th>Wt</th><th>Market</th><th>Cup Lens</th></tr></thead><tbody>${rows.length?rows.map(x=>{const profile=formPulseProfile(x),freshness=formPulseFreshness(x);return `<tr><td>#${x.p.rank}</td><td class="horse">${horseLink(x.p.horse)}</td><td><span class="tag ${profile.cls}">${profile.label}</span></td><td>${formPulseLatestThree(x)}</td><td><strong>${x.r?x.r.current.toFixed(1):'—'}</strong></td><td>${x.r?x.r.peak.toFixed(1):'—'}</td><td>${x.ras??'—'}</td><td>${x.r?.longStayPeak!==null&&x.r?.longStayPeak!==undefined?x.r.longStayPeak.toFixed(1):'—'}</td><td>${formPulseTrajectory(x)}</td><td class="wrap-cell">${x.latest?`${x.latest.finish||'—'} · ${x.latest.race||'—'}`:'—'}</td><td><span class="tag ${freshness.cls}">${freshness.label}</span></td><td>${Number.isFinite(x.kg)?`${x.kg.toFixed(1)}kg`:'—'}</td><td class="fp-market">${formPulseMarket(x)}</td><td><strong>${x.lens?x.lens.score.toFixed(1):'—'}</strong></td></tr>`;}).join(''):'<tr><td colspan="14" class="order-empty">No projected runners match this filter.</td></tr>'}</tbody></table></div>
   </section>`;
