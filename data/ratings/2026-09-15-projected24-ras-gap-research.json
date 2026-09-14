@@ -1,7 +1,7 @@
 {
   "snapshotDate": "2026-09-15",
   "purpose": "Research ledger for unresolved projected-24 Racing & Sports rating gaps",
-  "policy": "Only figures explicitly identified by Racing & Sports as an RAS/RR/Rating metric may be promoted into the public RAS peak map. Timeform figures, ambiguous race-card numbers, handicap weights and inferred values are excluded.",
+  "policy": "Only figures explicitly identified by Racing & Sports as an RAS/RR/Rating metric may be promoted into the public RAS peak map. Timeform figures, ambiguous race-card numbers, handicap weights and inferred values are excluded. Racing & Sports-authored material published by an official racing body is acceptable when the metric is explicitly labelled Racing & Sports Rating.",
   "unresolved": [
     {
       "horse": "Highland Bling",
@@ -20,13 +20,18 @@
     },
     {
       "horse": "River Of Stars",
-      "status": "LOGIN_GATED",
+      "status": "PUBLIC_RAS_CURRENT_FOUND_PEAK_UNRESOLVED",
       "publicEvidence": [
         {
           "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-08-29/R9?showPriceComparison=1",
           "evidence": "Public form guide includes the runner but historical ratings are login-gated; no explicit public RAS peak identified."
+        },
+        {
+          "url": "https://www.vrc.com.au/latest-news/the-24-runners-in-this-years-lexus-melbourne-cup/",
+          "evidence": "2025 VRC final-field article written by Trent Crebbin - Racing And Sports explicitly publishes 'Racing & Sports Rating - 118' for River Of Stars. This is retained as a verified published R&S rating but is not promoted to the peak map because the article does not explicitly identify it as her career peak."
         }
       ],
+      "verifiedPublishedRasRating": 118,
       "rasPeak": null
     },
     {
@@ -65,23 +70,17 @@
       "publicEvidence": [],
       "note": "Public R&S form/news searches have not produced an explicit RAS peak. Do not substitute Timeform or handicap-based values.",
       "rasPeak": null
-    },
-    {
-      "horse": "Vauban",
-      "status": "PUBLIC_TIMEFORM_FOUND_BUT_RAS_UNRESOLVED",
-      "publicEvidence": [
-        {
-          "url": "https://www.racingandsports.com.au/news/racing/news/2026-03-14/vauban-returns-with-another-sky-high-effort/710926",
-          "evidence": "Public article confirms current campaign context but does not publish an explicit RAS figure."
-        },
-        {
-          "url": "https://www.racingandsports.com.au/news/betting/horse-racing-tips/2024-04-11/melbourne-cup-preview-and-selections-from-chris-scholtz/672229",
-          "evidence": "Public article explicitly cites a UK Timeform rating for Vauban; this is excluded from RAS by policy."
-        }
-      ],
-      "rasPeak": null
     }
   ],
-  "projected24RasUnresolvedCount": 6,
-  "promotionsToRasPublicPeaksThisPass": 0
+  "resolvedThisResearch": [
+    {
+      "horse": "Vauban",
+      "status": "RESOLVED_PUBLIC_RAS_PEAK",
+      "rasPeak": 122,
+      "source": "https://www.vrc.com.au/latest-news/melbourne-cup-what-it-takes-to-win/",
+      "evidence": "Racing & Sports-authored analysis states Vauban was the second-highest horse on the Racing & Sports ratings and explicitly says he held a peak rating of 122 when second to Kyprios in the Group 1 Irish St Leger. The 2024 VRC final-field article 'By Racing And Sports' independently labels Vauban 'Racing & Sports Rating: 122'."
+    }
+  ],
+  "projected24RasUnresolvedCount": 5,
+  "promotionsToRasPublicPeaksThisPass": 1
 }
