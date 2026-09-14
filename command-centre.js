@@ -7,15 +7,17 @@ function commandTopWeights(){
 function commandProjected(){return projectedFieldData?.projected24||[];}
 function commandResearchGaps(){
   const unresolvedTf=new Set(timeformStatusData?.unresolvedHorses||[]);
+  const projected=new Map((projectedFieldData?.projected24||[]).map(x=>[x.horse,x.rank]));
   return (cupData?.horses||[]).map(h=>{
-    const runs=(formIntelData?.horses?.[h.horse]?.runs||[]).length;
+    const form=typeof formCompletionState==='function'?formCompletionState(h.horse):{state:'RESEARCH_GAP',runs:(formIntelData?.horses?.[h.horse]?.runs||[]).length};
+    const formOk=form.state==='COMPLETE'||form.state==='CAREER_COMPLETE';
     let missing=0;
-    if(runs<3)missing++;
+    if(!formOk)missing++;
     if(!baseRecord(h.horse))missing++;
     if(unresolvedTf.has(h.horse))missing++;
     if(!weightRec(h.horse))missing++;
-    return {horse:h.horse,trainer:h.trainer,runs,missing,tf:!unresolvedTf.has(h.horse),base:!!baseRecord(h.horse),weight:!!weightRec(h.horse)};
-  }).sort((a,b)=>b.missing-a.missing||a.runs-b.runs||a.horse.localeCompare(b.horse)).slice(0,8);
+    return {horse:h.horse,trainer:h.trainer,runs:form.runs,formState:form.state,formOk,missing,tf:!unresolvedTf.has(h.horse),base:!!baseRecord(h.horse),weight:!!weightRec(h.horse),projectedRank:projected.get(h.horse)||null};
+  }).filter(x=>x.missing>0).sort((a,b)=>(a.projectedRank?0:1)-(b.projectedRank?0:1)||(a.projectedRank||99)-(b.projectedRank||99)||b.missing-a.missing||a.runs-b.runs||a.horse.localeCompare(b.horse)).slice(0,8);
 }
 function commandInternational(){
   return (cupData?.horses||[]).filter(h=>h.trainingRegion==='International').map(h=>({
@@ -37,11 +39,14 @@ function commandChangeFeed(){
 }
 function commandEvidenceState(){
   const tf=timeformStatusData?.profilesMatched||0;
-  const form=Object.values(formIntelData?.horses||{}).filter(x=>(x.runs||[]).length>0).length;
+  const audit=typeof formCompletionSummary==='function'?formCompletionSummary():null;
+  const formAny=(cupData?.horses||[]).filter(h=>(typeof publicActualRuns==='function'?publicActualRuns(h.horse):(formIntelData?.horses?.[h.horse]?.runs||[])).length>0).length;
+  const formComplete=audit?audit.complete+audit.career:0;
+  const formFlags=audit?.flagged||0;
   const bases=Object.keys(trainingBaseData?.bases||{}).length;
   const weights=weightPredictions?.predictions?.length||0;
   const market=typeof marketUniverse==='function'?marketUniverse().length:0;
-  return {tf,form,bases,weights,market};
+  return {tf,formAny,formComplete,formFlags,bases,weights,market};
 }
 function commandCentreDashboard(){
   const projected=commandProjected();
@@ -72,7 +77,7 @@ function commandCentreDashboard(){
     <button class="cc-metric" onclick="openView('order')"><span>PROJECTED CUT</span><strong>${cutIn}</strong><em>#24 · first out ${firstOut}</em></button>
     <button class="cc-metric" onclick="openView('weights')"><span>TOP WEIGHT MODEL</span><strong>${topweight?topweight.predictedKg.toFixed(1)+'kg':'—'}</strong><em>${topweight?.horse||'Awaiting model'}</em></button>
     <button class="cc-metric" onclick="openView('timeform')"><span>TIMEFORM IDENTITY</span><strong>${evidence.tf}/101</strong><em>numeric ratings remain separate</em></button>
-    <button class="cc-metric" onclick="openView('form')"><span>PUBLIC FORM</span><strong>${evidence.form}/101</strong><em>horses with verified runs</em></button>
+    <button class="cc-metric" onclick="openView('form')"><span>FORM COMPLETE</span><strong>${evidence.formComplete}/101</strong><em>${evidence.formAny} with form · ${evidence.formFlags} flags</em></button>
     <button class="cc-metric" onclick="openView('horses')"><span>CURRENT BASES</span><strong>${evidence.bases}/101</strong><em>horse-specific verified</em></button>
     <button class="cc-metric" onclick="openView('markets')"><span>MARKET COVERAGE</span><strong>${evidence.market}/101</strong><em>stored bookmaker evidence</em></button>
   </section>
@@ -95,8 +100,8 @@ function commandCentreDashboard(){
     <div class="panel cc-panel"><div class="cc-panel-head"><div><span class="cc-label">INTERNATIONAL</span><h3>Campaign Monitor</h3></div><button class="mini-button" onclick="openView('international')">Raiders</button></div>
       <div class="cc-mini-table">${internationals.map(x=>`<div><span>${x.projected?'#'+x.projected.rank:'—'}</span><strong>${horseLink(x.horse)}</strong><b>${x.prep?.campaignStatus||x.projected?.band||'Researching'}</b><em>${x.prep?.nextRun||x.trainer}</em></div>`).join('')}</div>
     </div>
-    <div class="panel cc-panel"><div class="cc-panel-head"><div><span class="cc-label">DATA CONTROL</span><h3>Research Queue</h3></div><button class="mini-button" onclick="openView('analysis')">Matrix</button></div>
-      <div class="cc-gap-list">${gaps.map(x=>`<button onclick="openHorse('${x.horse.replace(/'/g,"\\'")}')"><div><strong>${x.horse}</strong><span>${x.trainer}</span></div><div class="cc-gap-badges"><i class="${x.runs>=3?'ok':''}">F ${x.runs}</i><i class="${x.base?'ok':''}">B</i><i class="${x.tf?'ok':''}">TF</i><i class="${x.weight?'ok':''}">W</i></div></button>`).join('')}</div>
+    <div class="panel cc-panel"><div class="cc-panel-head"><div><span class="cc-label">DATA CONTROL</span><h3>Research Queue</h3></div><button class="mini-button" onclick="openView('form')">Coverage audit</button></div>
+      <div class="cc-gap-list">${gaps.map(x=>`<button onclick="openHorse('${x.horse.replace(/'/g,"\\'")}')"><div><strong>${x.horse}</strong><span>${x.projectedRank?`Projected #${x.projectedRank} · `:''}${x.trainer}</span></div><div class="cc-gap-badges"><i class="${x.formOk?'ok':''}">F ${x.runs}</i><i class="${x.base?'ok':''}">B</i><i class="${x.tf?'ok':''}">TF</i><i class="${x.weight?'ok':''}">W</i></div></button>`).join('')}</div>
     </div>
   </section>
 
