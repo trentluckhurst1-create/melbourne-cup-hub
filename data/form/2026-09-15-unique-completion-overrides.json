@@ -1,0 +1,86 @@
+{
+  "snapshotDate":"2026-09-15",
+  "type":"strict-unique-form-completion-overrides",
+  "policy":{"oneStartPerCalendarDate":true,"excludeTrialsJumpoutsNonStarters":true,"factualPublicSourcesOnly":true,"targetRunsPerHorse":8},
+  "horses":{
+    "Age Of Sail":{"runs":[
+      {"date":"2026-09-04","race":"Wyong Cup","track":"Wyong","country":"AUS","distanceM":2100,"going":"Good 4","classGroup":"Listed","finish":"7th","weightCarried":"54kg","margin":2.8,"source":"Breednet public race record"},
+      {"date":"2026-08-08","race":"Premier's Cup Prelude","track":"Randwick","country":"AUS","distanceM":1800,"going":"Good 4","finish":"9th","weightCarried":"54kg","margin":5.0,"source":"Breednet public race record"},
+      {"date":"2026-04-04","race":"Chairman's Quality","track":"Randwick","country":"AUS","distanceM":2600,"going":"Soft 7","classGroup":"Group 2","finish":"8th","weightCarried":"53kg","margin":5.1,"source":"Breednet public race record"},
+      {"date":"2026-03-07","race":"Auckland Cup","track":"Ellerslie","country":"NZ","distanceM":3200,"going":"Good 4","classGroup":"Group 2","finish":"3rd","weightCarried":"54kg","margin":8.0,"source":"Breednet public race record"},
+      {"date":"2026-02-21","race":"Racing And Sports BM100","track":"Rosehill","country":"AUS","distanceM":1400,"going":"Good 4","classGroup":"BM100","finish":"6th","weightCarried":"55.5kg","margin":3.8,"source":"Breednet public race record"},
+      {"date":"2026-01-26","race":"Australia Day Cup","track":"Warwick Farm","country":"AUS","distanceM":2400,"going":"Good 4","classGroup":"Listed","finish":"2nd","weightCarried":"53kg","margin":0.1,"source":"Breednet public race record"},
+      {"date":"2026-01-10","race":"Wyong Equine Clinic BM88","track":"Wyong","country":"AUS","distanceM":2100,"going":"Good 4","classGroup":"BM88","finish":"6th","weightCarried":"60.5kg","margin":6.3,"source":"Breednet public race record"},
+      {"date":"2025-12-13","race":"Christmas Cup","track":"Randwick","country":"AUS","distanceM":2400,"going":"Good 4","classGroup":"Listed","finish":"6th","weightCarried":"53kg","margin":3.0,"source":"Breednet public race record"}
+    ]},
+    "Barnavara":{"runs":[
+      {"date":"2026-08-29","race":"Heatherlie Stakes","track":"Caulfield","country":"AUS","distanceM":1700,"going":"Soft 6","classGroup":"Listed","finish":"15th","fieldSize":16,"weightCarried":"60kg","margin":25.6,"source":"Breednet public race record"},
+      {"date":"2025-10-05","race":"Prix de l'Opera","track":"ParisLongchamp","country":"FR","distanceM":2000,"going":"Very Soft","classGroup":"Group 1","finish":"1st","fieldSize":12,"weightCarried":"8-11","source":"Sporting Life public race record"},
+      {"date":"2025-09-14","race":"Blandford Stakes","track":"Curragh","country":"IRE","distanceM":2000,"going":"Good to Yielding","classGroup":"Group 2","finish":"1st","fieldSize":11,"weightCarried":"9-2","source":"Sporting Life public race record"},
+      {"date":"2025-08-30","race":"Snow Fairy Fillies Stakes","track":"Curragh","country":"IRE","distanceM":1800,"going":"Good to Yielding","classGroup":"Group 3","finish":"3rd","fieldSize":7,"weightCarried":"9-3","source":"Sporting Life public race record"},
+      {"date":"2025-06-25","race":"Naas Fillies Stakes","track":"Naas","country":"IRE","distanceM":2000,"going":"Good","classGroup":"Group 3","finish":"1st","fieldSize":9,"weightCarried":"9-2","source":"Sporting Life public race record"},
+      {"date":"2025-06-07","race":"Navan Fillies Stakes","track":"Navan","country":"IRE","distanceM":1600,"going":"Yielding","classGroup":"Listed","finish":"1st","fieldSize":12,"weightCarried":"8-12","source":"Sporting Life public race record"},
+      {"date":"2025-05-05","race":"Athasi Stakes","track":"Curragh","country":"IRE","distanceM":1600,"going":"Good","classGroup":"Group 3","finish":"3rd","fieldSize":11,"weightCarried":"9-2","source":"Sporting Life public race record"},
+      {"date":"2025-03-30","race":"Leopardstown 7f Stakes","track":"Leopardstown","country":"IRE","distanceM":1400,"going":"Good to Yielding","classGroup":"Class 1","finish":"7th","fieldSize":13,"weightCarried":"9-2","source":"Sporting Life public race record"}
+    ]},
+    "Campaldino":{"runs":[
+      {"date":"2026-09-05","race":"Chelmsford Stakes","track":"Randwick","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"Group 2","finish":"9th","weightCarried":"59kg","margin":4.1,"source":"Breednet public race record"},
+      {"date":"2026-04-04","race":"Chairman's Quality","track":"Randwick","country":"AUS","distanceM":2600,"going":"Soft 7","classGroup":"Group 2","finish":"2nd","weightCarried":"59kg","margin":1.2,"source":"Breednet public race record"},
+      {"date":"2026-03-21","race":"NE Manion Cup","track":"Rosehill","country":"AUS","distanceM":2400,"going":"Soft 6","classGroup":"Group 3","finish":"7th","weightCarried":"59kg","margin":3.8,"source":"Breednet public race record"},
+      {"date":"2026-03-07","race":"Randwick City Stakes","track":"Randwick","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Listed","finish":"1st","weightCarried":"55kg","margin":1.2,"source":"Breednet public race record"},
+      {"date":"2026-02-21","race":"Parramatta Cup","track":"Rosehill","country":"AUS","distanceM":1900,"going":"Good 4","classGroup":"Group 3","finish":"5th","weightCarried":"55.5kg","margin":2.2,"source":"Breednet public race record"},
+      {"date":"2025-06-14","race":"Brisbane Cup","track":"Eagle Farm","country":"AUS","distanceM":3200,"going":"Good 3","classGroup":"Group 2","finish":"1st","weightCarried":"55.5kg","margin":1.3,"source":"Breednet public race record"},
+      {"date":"2025-05-31","race":"Queen Elizabeth II Cup","track":"Eagle Farm","country":"AUS","distanceM":2400,"going":"Heavy 8","classGroup":"Group 3","finish":"1st","weightCarried":"54kg","margin":1.7,"source":"Breednet public race record"},
+      {"date":"2025-04-25","race":"Anzac Day Cup","track":"Randwick-Kensington","country":"AUS","distanceM":2400,"going":"Soft 7","classGroup":"BM78","finish":"1st","weightCarried":"56kg","margin":0.4,"source":"Breednet public race record"}
+    ]},
+    "Jenni Multabella":{"careerComplete":true,"runs":[
+      {"date":"2026-08-29","race":"Sportsbet Fixed Odds Exotics BM78","track":"Caulfield","country":"AUS","distanceM":1800,"going":"Soft 7","classGroup":"BM78","finish":"2nd","weightCarried":"53.5kg","margin":1.0,"source":"Breednet public race record"},
+      {"date":"2026-08-08","race":"Drummond Golf BM74","track":"Caulfield Heath","country":"AUS","distanceM":1600,"going":"Soft 6","classGroup":"BM74","finish":"2nd","weightCarried":"57kg","margin":0.1,"source":"Breednet public race record"},
+      {"date":"2026-07-22","race":"Sportsbet Fixed Odds Exotics BM70","track":"Sandown-Hillside","country":"AUS","distanceM":1400,"going":"Soft 6","classGroup":"BM70","finish":"1st","weightCarried":"54.5kg","margin":1.5,"source":"Breednet public race record"},
+      {"date":"2026-06-28","race":"Ladbrokes Place Extra To 10th BM62","track":"Sale","country":"AUS","distanceM":1205,"going":"Heavy 8","classGroup":"BM62","finish":"3rd","weightCarried":"58.5kg","margin":1.7,"source":"Breednet public race record"},
+      {"date":"2025-11-12","race":"Sportsbet Race Replays BM66","track":"Caulfield Heath","country":"AUS","distanceM":1600,"going":"Soft 5","classGroup":"BM66","finish":"6th","weightCarried":"57kg","margin":6.1,"source":"Breednet public race record"},
+      {"date":"2025-10-24","race":"Hygain Winners Choice BM62","track":"Ballarat","country":"AUS","distanceM":1400,"going":"Good 4","classGroup":"BM62","finish":"2nd","weightCarried":"61kg","margin":0.5,"source":"Breednet public race record"},
+      {"date":"2024-07-04","race":"Become A Member Today Maiden Plate","track":"Sale","country":"AUS","distanceM":1106,"going":"Soft 6","classGroup":"Maiden","finish":"1st","weightCarried":"56kg","margin":1.3,"source":"Breednet public race record"}
+    ]},
+    "Mr Monaco":{"runs":[
+      {"date":"2026-08-20","race":"Rowley Mile","track":"Hawkesbury","country":"AUS","distanceM":1600,"going":"Soft 6","classGroup":"Listed","finish":"4th","weightCarried":"56kg","margin":2.4,"source":"Breednet public race record"},
+      {"date":"2026-04-11","race":"Sydney Cup","track":"Randwick","country":"AUS","distanceM":3200,"going":"Good 4","classGroup":"Group 1","finish":"11th","weightCarried":"52kg","margin":7.2,"source":"Breednet public race record"},
+      {"date":"2026-03-21","race":"NE Manion Cup","track":"Rosehill","country":"AUS","distanceM":2400,"going":"Soft 6","classGroup":"Group 3","finish":"1st","weightCarried":"53kg","margin":0.2,"source":"Breednet public race record"},
+      {"date":"2026-02-28","race":"Asahi Super Dry BM88","track":"Randwick","country":"AUS","distanceM":2000,"going":"Soft 6","classGroup":"BM88","finish":"1st","weightCarried":"57.5kg","margin":0.1,"source":"Breednet public race record"},
+      {"date":"2026-02-07","race":"IVE BM84","track":"Caulfield","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"BM84","finish":"5th","weightCarried":"58.5kg","margin":2.5,"source":"Breednet public race record"},
+      {"date":"2025-10-15","race":"Schweppes BM84","track":"Caulfield","country":"AUS","distanceM":2400,"going":"Good 4","classGroup":"BM84","finish":"1st","weightCarried":"56kg","margin":0.2,"source":"Breednet public race record"},
+      {"date":"2025-09-20","race":"IVE BM84","track":"Caulfield","country":"AUS","distanceM":2000,"going":"Good 3","classGroup":"BM84","finish":"8th","weightCarried":"56kg","margin":3.8,"source":"Breednet public race record"},
+      {"date":"2025-08-23","race":"Ladbrokes Top 2/3/4 Betting BM84","track":"Moonee Valley","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"BM84","finish":"12th","weightCarried":"56.5kg","margin":7.6,"source":"Breednet public race record"}
+    ]},
+    "Nil Bua Gan Dua":{"runs":[
+      {"date":"2026-09-05","race":"Kempton 1m2f110y Stakes","track":"Kempton","country":"GB","distanceM":2100,"classGroup":"Class 1","finish":"4th","fieldSize":10,"weightCarried":"8-8","source":"Sporting Life public race record"},
+      {"date":"2026-07-25","race":"Marble City Stakes","track":"Gowran Park","country":"IRE","distanceM":2400,"going":"Good","classGroup":"Listed","finish":"1st","fieldSize":7,"weightCarried":"9-5","source":"Sporting Life / IrishRacing public race record"},
+      {"date":"2026-07-09","race":"Bahrain Trophy Stakes","track":"Newmarket","country":"GB","distanceM":2600,"going":"Good to Firm","classGroup":"Group 3","finish":"4th","fieldSize":5,"weightCarried":"9-3","margin":4.25,"source":"Sporting Life / IrishRacing public race record"},
+      {"date":"2026-06-20","race":"Ascot 1m2f Handicap","track":"Ascot","country":"GB","distanceM":2000,"going":"Good to Firm","classGroup":"Handicap","finish":"4th","fieldSize":16,"weightCarried":"9-3","margin":2.25,"source":"Sporting Life / IrishRacing public race record"},
+      {"date":"2026-05-11","race":"Roscommon 1m2f Stakes","track":"Roscommon","country":"IRE","distanceM":2000,"going":"Good","classGroup":"Class 1","finish":"1st","fieldSize":5,"weightCarried":"9-5","margin":2.25,"source":"Sporting Life / IrishRacing public race record"},
+      {"date":"2026-04-24","race":"Cork Maiden","track":"Cork","country":"IRE","distanceM":1600,"going":"Good to Yielding","classGroup":"Maiden","finish":"3rd","fieldSize":8,"weightCarried":"9-8","margin":5.5,"source":"Sporting Life / IrishRacing public race record"},
+      {"date":"2025-10-18","race":"Eyrefield Stakes","track":"Leopardstown","country":"IRE","distanceM":1800,"going":"Yielding","classGroup":"Group 3","finish":"5th","fieldSize":8,"weightCarried":"9-5","margin":6.06,"source":"Sporting Life / IrishRacing public race record"},
+      {"date":"2025-09-13","race":"Champions Juvenile Stakes","track":"Leopardstown","country":"IRE","distanceM":1600,"going":"Good to Yielding","classGroup":"Group 2","finish":"3rd","fieldSize":4,"weightCarried":"9-5","margin":5.5,"source":"Sporting Life / IrishRacing public race record"}
+    ]},
+    "Stinger Glass":{"runs":[
+      {"date":"2026-06-14","race":"Takarazuka Kinen","track":"Hanshin","country":"JPN","distanceM":2200,"going":"Soft","classGroup":"Group 1","finish":"13th","fieldSize":18,"weightCarried":"58kg","margin":2.7,"source":"netkeiba public race record"},
+      {"date":"2026-02-21","race":"Diamond Stakes","track":"Tokyo","country":"JPN","distanceM":3400,"going":"Good","classGroup":"Group 3","finish":"1st","fieldSize":15,"weightCarried":"57.5kg","margin":0.2,"source":"netkeiba public race record"},
+      {"date":"2025-11-09","race":"Copa Republica Argentina","track":"Tokyo","country":"JPN","distanceM":2500,"going":"Good","classGroup":"Group 2","finish":"2nd","fieldSize":18,"weightCarried":"57kg","margin":0.1,"source":"netkeiba public race record"},
+      {"date":"2025-07-27","race":"Sapporo Nikkei Sho","track":"Sapporo","country":"JPN","distanceM":2600,"going":"Good to Soft","classGroup":"Listed","finish":"1st","fieldSize":10,"weightCarried":"57kg","margin":0.1,"source":"netkeiba public race record"},
+      {"date":"2025-06-01","race":"Meguro Kinen","track":"Tokyo","country":"JPN","distanceM":2500,"going":"Good","classGroup":"Group 2","finish":"11th","fieldSize":18,"weightCarried":"56.5kg","margin":1.0,"source":"netkeiba public race record"},
+      {"date":"2025-03-09","race":"Wangan Stakes","track":"Nakayama","country":"JPN","distanceM":2500,"going":"Good to Soft","classGroup":"3 Win","finish":"1st","fieldSize":12,"weightCarried":"57kg","margin":0.4,"source":"netkeiba public race record"},
+      {"date":"2024-12-22","race":"Goodluck Handicap","track":"Nakayama","country":"JPN","distanceM":2500,"going":"Good","classGroup":"2 Win","finish":"1st","fieldSize":16,"weightCarried":"56kg","margin":0.3,"source":"netkeiba public race record"},
+      {"date":"2024-09-16","race":"Asahi Hai St Lite Kinen","track":"Nakayama","country":"JPN","distanceM":2200,"going":"Good","classGroup":"Group 2","finish":"5th","fieldSize":14,"weightCarried":"57kg","margin":1.1,"source":"netkeiba public race record"}
+    ]},
+    "Strictly Business":{"runs":[
+      {"date":"2026-05-02","race":"South Australian Derby","track":"Morphettville","country":"AUS","distanceM":2518,"going":"Soft 7","classGroup":"Group 1","finish":"2nd","weightCarried":"54.5kg","margin":0.2,"source":"Breednet public race record"},
+      {"date":"2026-04-25","race":"Australasian Oaks","track":"Morphettville","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 1","finish":"13th","weightCarried":"56kg","margin":8.6,"source":"Breednet public race record"},
+      {"date":"2026-04-03","race":"Country Oaks","track":"Ballarat","country":"AUS","distanceM":2000,"going":"Good 3","finish":"8th","weightCarried":"57kg","margin":7.0,"source":"Breednet public race record"},
+      {"date":"2026-03-21","race":"Alexandra Stakes","track":"Caulfield","country":"AUS","distanceM":1600,"going":"Good 4","classGroup":"Group 3","finish":"5th","weightCarried":"60kg","margin":5.2,"source":"Breednet public race record"},
+      {"date":"2025-11-06","race":"Crown Oaks","track":"Flemington","country":"AUS","distanceM":2500,"going":"Good 3","classGroup":"Group 1","finish":"1st","weightCarried":"56kg","margin":3.5,"source":"Breednet public race record"},
+      {"date":"2025-11-01","race":"Wakeful Stakes","track":"Flemington","country":"AUS","distanceM":2000,"going":"Good 4","classGroup":"Group 2","finish":"2nd","weightCarried":"55kg","margin":1.3,"source":"Breednet public race record"},
+      {"date":"2025-10-24","race":"Form-Crete Maiden Plate","track":"Ballarat","country":"AUS","distanceM":1400,"going":"Soft 5","classGroup":"Maiden","finish":"1st","weightCarried":"57kg","margin":0.5,"source":"Breednet public race record"},
+      {"date":"2025-03-29","race":"VOBIS Gold Plate","track":"Flemington","country":"AUS","distanceM":1400,"going":"Good 4","finish":"7th","weightCarried":"55kg","margin":6.2,"source":"Breednet public race record"}
+    ]}
+  }
+}
