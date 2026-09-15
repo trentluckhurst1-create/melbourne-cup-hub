@@ -1,9 +1,9 @@
 {
-  "snapshotDate":"2026-09-13",
-  "method":"Sixth evidence-gated silks pass. Current Australian racing records are preferred; international records remain partial where only owner/silk identity is securely established.",
+  "snapshotDate":"2026-09-15",
+  "method":"Sixth evidence-gated silks pass, corrected 15 Sep. Current Australian racing records are preferred; international records remain partial where only owner/silk identity is securely established. Stale ownership evidence is explicitly rejected.",
   "horses":{
     "Aethelwulf":{"status":"exact","colours":"White, Red Vee, Hooped Sleeves, Vee On Cap","body":"#ffffff","sleeves":"#ffffff","cap":"#ffffff","pattern":"red-vee-hoops","source":"Public Australian racing form record"},
-    "Enfjaar":{"status":"partial","colours":"Shadwell racing silks — royal blue and white identity verified; exact 2026 pattern transcription pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"shadwell","source":"Public UK racecard / Shadwell ownership record"},
+    "Enfjaar":{"status":"partial","colours":"Current colours under verification — do not use historic Shadwell blue/white as current evidence","body":"#777777","sleeves":"#aaaaaa","cap":"#777777","pattern":"current-owner-pattern-pending","source":"2026 public profile identifies current owners as Mr T & Mrs L Standish & Mrs A Spence; historic Shadwell ownership/colours rejected as stale"},
     "Hopewell Rock":{"status":"partial","colours":"Current ownership silks identified from UK racecards; exact pattern transcription pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"uk-owner-verified","source":"Public UK racecard evidence"},
     "Highwayman":{"status":"partial","colours":"Joseph O'Brien international runner — owner silk identity verified from Irish/UK racecards; exact textual pattern pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"international-owner-verified","source":"Public Irish/UK racecard evidence"},
     "Kizlyar":{"status":"partial","colours":"Owner silk identity verified from Irish racecards; exact textual pattern pending","body":"#1456a0","sleeves":"#ffffff","cap":"#1456a0","pattern":"international-owner-verified","source":"Public Irish racecard evidence"},
