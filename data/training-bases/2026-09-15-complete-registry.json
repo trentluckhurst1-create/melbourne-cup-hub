@@ -480,11 +480,11 @@
       "otherTrainerBases": []
     },
     "Knight’s Choice": {
-      "trainingBase": "Macedon Lodge, Mount Macedon, VIC",
+      "trainingBase": "Ballarat, VIC",
       "stateCountry": "Australia",
       "verifiedDate": "2026-09-15",
-      "source": "Trainer operation registry: John Symons & Sheila Laxon — 2026 permanent-base reporting",
-      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "source": "User-confirmed trainer operation base: John Symons & Sheila Laxon — Ballarat",
+      "confidence": "User-confirmed trainer-operation base; horse-specific current yard not separately verified",
       "basis": "TRAINER_OPERATION_BASE",
       "horseSpecificCurrentVerified": false,
       "trainerOperationFallback": true,
