@@ -17,6 +17,7 @@
     "public-form-ratings.js",
     "private-pfr-engine.js",
     "pfr-projection-v2.js",
+    "universe-contract.js",
     "ratings-rankings.js",
     "international-raiders.js",
     "intelligence-matrix.js",
@@ -1027,7 +1028,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "32 files passed node --check"
+      "detail": "33 files passed node --check"
     }
   ],
   "pass": true,
