@@ -12,8 +12,8 @@ $outputDir = Join-Path $RepoRoot 'output\ras-rating-scrape'
 $rawDir = Join-Path $outputDir 'raw'
 New-Item -ItemType Directory -Force -Path $rawDir | Out-Null
 
-$audit = Get-Content -Raw $auditPath | ConvertFrom-Json
-$ratings = Get-Content -Raw $ratingPath | ConvertFrom-Json
+$audit = [IO.File]::ReadAllText($auditPath, [Text.Encoding]::UTF8) | ConvertFrom-Json
+$ratings = [IO.File]::ReadAllText($ratingPath, [Text.Encoding]::UTF8) | ConvertFrom-Json
 $existing = @{}
 $ratings.ratings.PSObject.Properties | ForEach-Object { $existing[$_.Name] = [int]$_.Value }
 $horses = if ($IncludeExisting) { @($audit.horses.horse) } else { @($audit.missing.rasPublicRating) }
@@ -33,12 +33,29 @@ function ConvertTo-PlainText {
 
 function Find-RasUrls {
   param([string]$Horse)
-  $q = [uri]::EscapeDataString(('site:racingandsports.com.au "{0}" "rating"' -f $Horse))
-  try { $html = (Invoke-WebRequest -Uri "https://www.google.com/search?q=$q" -Headers $headers -TimeoutSec 30).Content }
-  catch { return @() }
-  return @([regex]::Matches($html, 'https://www\.racingandsports\.com\.au/[^"&<> ]+').Value |
-    ForEach-Object { [System.Net.WebUtility]::HtmlDecode($_) -replace '%3F.*$','' } |
-    Where-Object { $_ -match '/(thoroughbred/horse|news/racing)/' } | Select-Object -Unique)
+  $query = ('site:racingandsports.com.au "{0}" rating' -f $Horse)
+  $q = [uri]::EscapeDataString($query)
+  $found = [System.Collections.Generic.List[string]]::new()
+
+  try {
+    [xml]$rss = (Invoke-WebRequest -UseBasicParsing -Uri "https://www.bing.com/search?format=rss&q=$q" -Headers $headers -TimeoutSec 30).Content
+    @($rss.rss.channel.item.link) | Where-Object {
+      $_ -match '^https://www\.racingandsports\.com\.au/(thoroughbred/horse|news/racing)/'
+    } | ForEach-Object { $found.Add([string]$_) }
+  } catch {}
+
+  if ($found.Count -eq 0) {
+    try {
+      $html = (Invoke-WebRequest -UseBasicParsing -Uri "https://www.google.com/search?q=$q" -Headers $headers -TimeoutSec 30).Content
+      [regex]::Matches($html, '(?:/url\?q=|url=)(https?%?3?A?%?2?F%?2?Fwww\.racingandsports\.com\.au[^&"<> ]+)|https://www\.racingandsports\.com\.au/[^"&<> ]+') |
+        ForEach-Object {
+          $raw = if ($_.Groups[1].Success) { $_.Groups[1].Value } else { $_.Value }
+          $decoded = [uri]::UnescapeDataString([System.Net.WebUtility]::HtmlDecode($raw))
+          if ($decoded -match '^https://www\.racingandsports\.com\.au/(thoroughbred/horse|news/racing)/') { $found.Add($decoded) }
+        }
+    } catch {}
+  }
+  return @($found | Select-Object -Unique)
 }
 
 $rows = [System.Collections.Generic.List[object]]::new()
@@ -49,7 +66,7 @@ foreach ($horse in $horses) {
   foreach ($url in $urls | Select-Object -First 6) {
     Start-Sleep -Seconds $DelaySeconds
     try {
-      $html = (Invoke-WebRequest -Uri $url -Headers $headers -TimeoutSec 45).Content
+      $html = (Invoke-WebRequest -UseBasicParsing -Uri $url -Headers $headers -TimeoutSec 45).Content
       if ($html -match '(?i)verify you are human|performing security verification|cf-chl-') { $status = 'CLOUDFLARE_BLOCKED'; continue }
       $plain = ConvertTo-PlainText $html
       $safeName = $horse -replace '[^A-Za-z0-9_-]', '_'
