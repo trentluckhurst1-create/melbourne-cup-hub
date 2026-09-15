@@ -33,7 +33,7 @@ function ConvertTo-PlainText {
 
 function Find-RasUrls {
   param([string]$Horse)
-  $query = ('site:racingandsports.com.au "{0}" rating' -f $Horse)
+  $query = ('site:racingandsports.com.au "{0}"' -f $Horse)
   $q = [uri]::EscapeDataString($query)
   $found = [System.Collections.Generic.List[string]]::new()
 
@@ -43,6 +43,16 @@ function Find-RasUrls {
       $_ -match '^https://www\.racingandsports\.com\.au/(thoroughbred/horse|news/racing)/'
     } | ForEach-Object { $found.Add([string]$_) }
   } catch {}
+
+  if ($found.Count -eq 0) {
+    try {
+      $html = (Invoke-WebRequest -UseBasicParsing -Uri "https://html.duckduckgo.com/html/?q=$q" -Headers $headers -TimeoutSec 30).Content
+      [regex]::Matches($html, 'uddg=([^&"]+)') | ForEach-Object {
+        $decoded = [uri]::UnescapeDataString($_.Groups[1].Value)
+        if ($decoded -match '^https://www\.racingandsports\.com\.au/(thoroughbred/horse|news/racing)/') { $found.Add($decoded) }
+      }
+    } catch {}
+  }
 
   if ($found.Count -eq 0) {
     try {
