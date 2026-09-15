@@ -1,0 +1,93 @@
+{
+  "schema": "melbourne_cup_hub.ras_horse_recovery.v1",
+  "as_of": "2026-09-16",
+  "policy": {
+    "universe": "101_original_melbourne_cup_nominees",
+    "identity_validation_required": true,
+    "no_rating_inference": true,
+    "rating_systems_separate": true,
+    "missing_public_rating": "NOT_PUBLICLY_EXPOSED"
+  },
+  "verified": {
+    "Golden Century": {
+      "ras_id": 2152676,
+      "country": "NZ",
+      "foal_date": "2021-10-13",
+      "sex": "gelding",
+      "trainer": "Chris Waller",
+      "sire": "Pierro",
+      "dam": "Breeze",
+      "career_starts": 15,
+      "career_wins": 2,
+      "career_placings": 8,
+      "winning_distances_m": [1900, 2000],
+      "source": "https://www.racingandsports.com.au/thoroughbred/horse/golden-century/2152676"
+    },
+    "Barnavara": {
+      "ras_id": 2167998,
+      "country": "IRE",
+      "foal_date": "2022-05-03",
+      "sex": "mare",
+      "trainer": "Chris Waller",
+      "sire": "Calyx",
+      "dam": "Alfea",
+      "career_starts": 15,
+      "career_wins": 5,
+      "career_placings": 5,
+      "winning_distances_m": [1207, 1609, 2000, 2011, 2112],
+      "source": "https://www.racingandsports.com.au/thoroughbred/horse/barnavara/2167998"
+    },
+    "Juja Kibo": {
+      "ras_id": 2187987,
+      "country": "IRE",
+      "foal_date": "2021-02-15",
+      "sex": "gelding",
+      "trainer": "Ciaron Maher",
+      "sire": "Belardo",
+      "dam": "Na Zdorovie",
+      "career_starts": 16,
+      "career_wins": 4,
+      "career_placings": 7,
+      "winning_distances_m": [1800, 1911, 2000, 2400],
+      "source": "https://www.racingandsports.com.au/thoroughbred/horse/juja-kibo/2187987"
+    },
+    "Deakin": {
+      "ras_id": 1944028,
+      "country": "FR",
+      "foal_date": "2020-02-26",
+      "sex": "gelding",
+      "trainer": "Phillip & Tommy Stokes",
+      "sire": "Australia",
+      "dam": "Dealbata",
+      "career_starts": 20,
+      "career_wins": 5,
+      "career_placings": 4,
+      "winning_distances_m": [2000, 2313, 2500, 2514, 2600],
+      "source": "https://www.racingandsports.com.au/thoroughbred/horse/deakin/1944028"
+    },
+    "Aethelwulf": {
+      "trainer": "Matthew Smith",
+      "identity_status": "AUSTRALIAN_RUNNER_CONFIRMED",
+      "campaign_2026": "four wins from five starts through 2026-08-29",
+      "latest_verified_win": "Rosehill 2000m, 2026-08-29",
+      "warning": "Do not use similarly named South African horse profile without pedigree/trainer match",
+      "source": "https://www.racingandsports.com.au/news/racing/news/2026-08-29/boom-stayer-aethelwulf-romps-in-again/720472"
+    },
+    "Soul Of Spain": {
+      "trainer": "Chris Waller",
+      "country": "IRE",
+      "sire": "Phoenix Of Spain",
+      "dam": "Aimhigin Lass",
+      "verified_achievement": "2025 Newcastle Cup winner",
+      "source": "https://www.racingandsports.com.au/thoroughbred/feature-race/australia/newcaslte-cup/351"
+    }
+  },
+  "rating_evidence": {
+    "Treasurethe Moment": {
+      "ras_peak_rating": 124,
+      "status": "EXPLICIT_RAS_PEAK_EVIDENCE_REQUIRED_IN_CANONICAL_MERGE",
+      "note": "Keep separate from Timeform unless source text explicitly identifies Racing and Sports scale. Revalidate source wording before canonical promotion."
+    }
+  },
+  "next_stage": "Expand verified identities and historical form to all 101 nominees; preserve source provenance per horse; promote ratings only from explicit R&S-labelled evidence."
+}
