@@ -60,9 +60,9 @@
       "pct": 79.21
     },
     "rasPublicRating": {
-      "count": 40,
+      "count": 45,
       "total": 101,
-      "pct": 39.6
+      "pct": 44.55
     },
     "marketObserved": {
       "count": 100,
@@ -148,15 +148,12 @@
       "Juja Kibo",
       "Kings Valley",
       "Klondike",
-      "Knight’s Choice",
       "Machine Gun Gracie",
       "Male Model",
       "Manzor Blue",
       "Mr Monaco",
       "Nearco Frod",
       "Newlook",
-      "Okita Soushi",
-      "Onesmoothoperator",
       "Piggyback",
       "Pinhole",
       "Point Of Law",
@@ -180,9 +177,7 @@
       "The Euphrates",
       "Thebudgiesmugla",
       "Think Giant",
-      "Torranzino",
       "Treasurethe Moment",
-      "Valiant King",
       "Vegas Jack",
       "Wigmore",
       "Wolfgang",
@@ -1071,7 +1066,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
@@ -1357,7 +1352,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
@@ -1401,7 +1396,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
@@ -2127,7 +2122,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
@@ -2193,7 +2188,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
