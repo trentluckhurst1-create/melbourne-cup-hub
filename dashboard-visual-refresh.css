@@ -1,4 +1,4 @@
-/* Approved 15 Sep dashboard readability + hierarchy refresh. */
+/* Dashboard efficiency + readability audit — 16 Sep 2026. */
 body{font-size:15px}
 .nav button{font-size:13.5px;min-height:39px}
 .brand-title{font-size:14px}.brand-subtitle{font-size:9.5px}
@@ -8,17 +8,17 @@ body{font-size:15px}
 .panel h3{font-size:15px}.panel-sub{font-size:11.5px}
 .data-table{font-size:12.5px}.data-table th{font-size:10px}.data-table td{height:39px}
 .metric-label{font-size:10px}.metric-value{font-size:21px}.metric-sub{font-size:11px}
-.cc-statusbar{padding:11px 14px;font-size:11px}.cc-statusbar strong{font-size:11px}.cc-status-items{gap:18px}
-.cc-changes{padding:16px 18px;margin-bottom:12px}.cc-changes .cc-panel-head{margin-bottom:8px}
-.cc-updates-title{display:flex;align-items:center;gap:9px;margin:0!important;font-size:18px!important;line-height:1.1;font-weight:800;letter-spacing:-.015em;color:#f1f5f9}.cc-updates-title span{font-size:19px;line-height:1;color:#e0b94f}
-.cc-change-feed{gap:0 18px}.cc-change-feed>button{grid-template-columns:68px 76px 1fr;gap:10px;min-height:56px;padding:9px 4px}.cc-change-type,.cc-change-date{font-size:10px}.cc-change-main strong{font-size:12.5px}.cc-change-main em{font-size:10.5px;margin-top:4px}.cc-no-change{font-size:11.5px}
-/* User-audited removals: summary strip and Research Queue are not part of the dashboard. */
-.cc-metrics{display:none!important}
-.cc-grid-secondary>.cc-panel:nth-child(3){display:none!important}
-.cc-grid-secondary{grid-template-columns:1fr 1fr!important}
-.cc-grid-main,.cc-grid-secondary{gap:11px;margin-bottom:11px}.cc-panel{padding:15px}.cc-panel-head{margin-bottom:12px}.cc-panel-head h3{font-size:15px}.cc-label{font-size:9px}
-.cc-runner-list>button{grid-template-columns:32px 1fr auto;min-height:44px;gap:8px}.cc-rank{font-size:10px}.cc-runner strong{font-size:12.5px}.cc-runner em{font-size:9.5px}.cc-runner-list>button>span:last-child{font-size:10.5px}
-.cc-cut{padding:10px 12px;font-size:10px}.cc-cut i{font-size:9px}.cc-feed-row{grid-template-columns:54px 1fr auto;min-height:50px}.cc-feed-row>div:first-child span{font-size:10px}.cc-feed-row strong{font-size:12.5px}.cc-feed-row em{font-size:10px}.cc-feed-row>div:last-child{font-size:10.5px}
-.cc-mini-table>div{grid-template-columns:32px 1fr auto;min-height:45px}.cc-mini-table>div>span{font-size:10px}.cc-mini-table>div>strong{font-size:12px}.cc-mini-table>div>b{font-size:10.5px}.cc-mini-table>div>em{font-size:9.5px}.cc-ticket-summary{font-size:10px}.cc-ticket-row span{font-size:9px}.cc-ticket-row strong{font-size:12.5px}.cc-ticket-row em{font-size:9.5px}
-@media(min-width:1200px){#app-content{padding-top:22px}.cc-grid-main{grid-template-columns:1.2fr .8fr}}
-@media(max-width:760px){.cc-change-feed>button{grid-template-columns:58px 62px 1fr}.cc-updates-title{font-size:16px!important}.cc-grid-secondary{grid-template-columns:1fr!important}}
+.cc-statusbar{padding:9px 14px;font-size:10px;margin-bottom:10px}.cc-statusbar strong{font-size:10px}.cc-status-items{gap:15px}
+.cc-changes{padding:14px 18px;margin-bottom:10px}.cc-changes .cc-panel-head{margin-bottom:5px}
+.cc-updates-title{display:flex;align-items:center;gap:9px;margin:0!important;font-size:17px!important;line-height:1.1;font-weight:800;letter-spacing:-.015em;color:#f1f5f9}.cc-updates-title span{font-size:18px;line-height:1;color:#e0b94f}
+.cc-change-feed{gap:0 18px}.cc-change-feed>button{grid-template-columns:64px 72px 1fr;gap:9px;min-height:49px;padding:7px 4px}.cc-change-type,.cc-change-date{font-size:9px}.cc-change-main strong{font-size:12px}.cc-change-main em{font-size:10px;margin-top:3px}.cc-no-change{font-size:11px}
+/* Dashboard audit: specialist field/lead-up/weight/international/ticket boards live in their own tabs. */
+.cc-metrics,.cc-grid-main,.cc-grid-secondary,.cc-qualified{display:none!important}
+.fp-panel{margin-top:0!important}
+.fp-panel>.cc-panel-head{margin-bottom:9px}
+.fp-panel>.cc-panel-head h3{font-size:16px}
+.fp-metrics{margin-bottom:8px!important}
+.fp-leaders{margin-bottom:8px!important}
+.fp-controls{margin-bottom:8px!important}
+@media(min-width:1200px){#app-content{padding-top:16px}}
+@media(max-width:760px){.cc-change-feed>button{grid-template-columns:54px 58px 1fr}.cc-updates-title{font-size:15px!important}}
