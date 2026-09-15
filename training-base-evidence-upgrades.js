@@ -2,6 +2,8 @@
 (function(){
  const U=(trainingBase,source,sourceUrl,stateCountry='Australia')=>({trainingBase,stateCountry,verifiedDate:'2026-09-15',source,sourceUrl,confidence:'Verified horse-specific/current-stable evidence',basis:'HORSE_SPECIFIC_CURRENT',horseSpecificCurrentVerified:true,trainerOperationFallback:false}); const entry='https://symonslaxonracing.com.au/racing-detail/26307080269/133538/N/'; const E=(base,country='Australia')=>U(base,`Melbourne Cup entry — Location: ${base}`,entry,country); const Q='https://www.vrc.com.au/latest-news/first-batch-of-international-cup-entries-enter-quarantine/';
  const upgrades={
+ 'Male Model':U('Ballarat, VIC','Current Breednet horse profile — John Thom, Ballarat','https://www.breednet.com.au/horse/male-model'),
+ 'Wolfgang':U('Matamata, New Zealand','Current Breednet horse profile — Peter & Shaun McKay, Matamata','https://www.breednet.com.au/horse/wolfgang','New Zealand'),
  'Barnavara':U('Flemington, VIC','Current Racenet horse profile — Chris Waller, based at Flemington','https://www.racenet.com.au/profiles/horse/barnavara-ire'),
  'Bella Montagna':U('Randwick, NSW','Current Racing Zone horse profile — Waterhouse & Bott at Randwick','https://www.racingzone.com.au/horse/1119134-bella-montagna/'),
  'Klondike':U('Randwick, NSW','Racing NSW current horse record — O\'Shea & Charlton (Randwick); Randwick trials August and September 2026','https://mdata.racingnsw.com.au/InteractiveForm/HorseFullForm.aspx?horsecode=MTc4MTA0OTc1MzY%3D&src=horseform'),
