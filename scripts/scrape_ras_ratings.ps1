@@ -1,6 +1,6 @@
 param(
   [string]$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path,
-  [int]$DelaySeconds = 3,
+  [int]$DelaySeconds = 2,
   [switch]$IncludeExisting
 )
 
@@ -31,60 +31,107 @@ function ConvertTo-PlainText {
   return ($text -replace '\s+', ' ').Trim()
 }
 
+function ConvertTo-Slug {
+  param([string]$Horse)
+  $s = $Horse.Normalize([Text.NormalizationForm]::FormD)
+  $sb = New-Object Text.StringBuilder
+  foreach ($c in $s.ToCharArray()) {
+    if ([Globalization.CharUnicodeInfo]::GetUnicodeCategory($c) -ne [Globalization.UnicodeCategory]::NonSpacingMark) { [void]$sb.Append($c) }
+  }
+  $s = $sb.ToString().Normalize([Text.NormalizationForm]::FormC).ToLowerInvariant()
+  $s = $s -replace '[’''`]', ''
+  $s = $s -replace '[^a-z0-9]+', '-'
+  return $s.Trim('-')
+}
+
+function Add-RasHorseUrlsFromHtml {
+  param([string]$Html, [System.Collections.Generic.List[string]]$Found)
+  $decodedHtml = [System.Net.WebUtility]::HtmlDecode($Html)
+  $patterns = @(
+    'https?://(?:www\.)?racingandsports\.com\.au/thoroughbred/horse/[a-z0-9-]+/\d+',
+    '(?:https?%3A%2F%2F)?(?:www\.)?racingandsports\.com\.au%2Fthoroughbred%2Fhorse%2F[a-z0-9%\-]+%2F\d+',
+    '/thoroughbred/horse/[a-z0-9-]+/\d+'
+  )
+  foreach ($p in $patterns) {
+    foreach ($m in [regex]::Matches($decodedHtml, $p, 'IgnoreCase')) {
+      $u = [uri]::UnescapeDataString($m.Value)
+      if ($u -like '/thoroughbred/*') { $u = 'https://www.racingandsports.com.au' + $u }
+      if ($u -notmatch '^https?://') { $u = 'https://' + $u }
+      if ($u -match '^https://(?:www\.)?racingandsports\.com\.au/thoroughbred/horse/[a-z0-9-]+/\d+$') { $Found.Add($u) }
+    }
+  }
+}
+
 function Find-RasUrls {
   param([string]$Horse)
-  $query = ('site:racingandsports.com.au "{0}"' -f $Horse)
-  $q = [uri]::EscapeDataString($query)
+  $slug = ConvertTo-Slug $Horse
   $found = [System.Collections.Generic.List[string]]::new()
+  $queries = @(
+    ('site:racingandsports.com.au/thoroughbred/horse "{0}"' -f $Horse),
+    ('site:racingandsports.com.au/thoroughbred/horse/{0} "{1}"' -f $slug, $Horse),
+    ('racing and sports {0} horse' -f $Horse)
+  )
 
-  try {
-    [xml]$rss = (Invoke-WebRequest -UseBasicParsing -Uri "https://www.bing.com/search?format=rss&q=$q" -Headers $headers -TimeoutSec 30).Content
-    @($rss.rss.channel.item.link) | Where-Object {
-      $_ -match '^https://www\.racingandsports\.com\.au/(thoroughbred/horse|news/racing)/'
-    } | ForEach-Object { $found.Add([string]$_) }
-  } catch {}
+  foreach ($query in $queries) {
+    $q = [uri]::EscapeDataString($query)
+    try {
+      $html = (Invoke-WebRequest -UseBasicParsing -Uri "https://www.google.com/search?num=10&q=$q" -Headers $headers -TimeoutSec 30).Content
+      Add-RasHorseUrlsFromHtml -Html $html -Found $found
+    } catch {}
+    if ($found.Count -gt 0) { break }
 
-  if ($found.Count -eq 0) {
+    try {
+      $html = (Invoke-WebRequest -UseBasicParsing -Uri "https://www.bing.com/search?q=$q&count=10" -Headers $headers -TimeoutSec 30).Content
+      Add-RasHorseUrlsFromHtml -Html $html -Found $found
+    } catch {}
+    if ($found.Count -gt 0) { break }
+
     try {
       $html = (Invoke-WebRequest -UseBasicParsing -Uri "https://html.duckduckgo.com/html/?q=$q" -Headers $headers -TimeoutSec 30).Content
-      [regex]::Matches($html, 'uddg=([^&"]+)') | ForEach-Object {
-        $decoded = [uri]::UnescapeDataString($_.Groups[1].Value)
-        if ($decoded -match '^https://www\.racingandsports\.com\.au/(thoroughbred/horse|news/racing)/') { $found.Add($decoded) }
+      Add-RasHorseUrlsFromHtml -Html $html -Found $found
+      foreach ($m in [regex]::Matches($html, 'uddg=([^&"]+)')) {
+        $decoded = [uri]::UnescapeDataString($m.Groups[1].Value)
+        if ($decoded -match '^https://(?:www\.)?racingandsports\.com\.au/thoroughbred/horse/[a-z0-9-]+/\d+') { $found.Add($decoded) }
       }
     } catch {}
+    if ($found.Count -gt 0) { break }
   }
 
-  if ($found.Count -eq 0) {
-    try {
-      $html = (Invoke-WebRequest -UseBasicParsing -Uri "https://www.google.com/search?q=$q" -Headers $headers -TimeoutSec 30).Content
-      [regex]::Matches($html, '(?:/url\?q=|url=)(https?%?3?A?%?2?F%?2?Fwww\.racingandsports\.com\.au[^&"<> ]+)|https://www\.racingandsports\.com\.au/[^"&<> ]+') |
-        ForEach-Object {
-          $raw = if ($_.Groups[1].Success) { $_.Groups[1].Value } else { $_.Value }
-          $decoded = [uri]::UnescapeDataString([System.Net.WebUtility]::HtmlDecode($raw))
-          if ($decoded -match '^https://www\.racingandsports\.com\.au/(thoroughbred/horse|news/racing)/') { $found.Add($decoded) }
-        }
-    } catch {}
-  }
-  return @($found | Select-Object -Unique)
+  # Last-resort search against the R&S site itself. We only harvest explicit horse-profile URLs.
+  try {
+    $rq = [uri]::EscapeDataString($Horse)
+    $html = (Invoke-WebRequest -UseBasicParsing -Uri "https://www.racingandsports.com.au/search?q=$rq" -Headers $headers -TimeoutSec 30).Content
+    Add-RasHorseUrlsFromHtml -Html $html -Found $found
+  } catch {}
+
+  return @($found | Select-Object -Unique | Where-Object { $_ -match ('/thoroughbred/horse/' + [regex]::Escape($slug) + '/\d+$') })
 }
 
 $rows = [System.Collections.Generic.List[object]]::new()
+$index = 0
 foreach ($horse in $horses) {
-  Write-Host ("[{0}/{1}] {2}" -f ($rows.Count + 1), $horses.Count, $horse)
+  $index++
+  Write-Host ("[{0}/{1}] {2}" -f $index, $horses.Count, $horse)
   $urls = @(Find-RasUrls -Horse $horse)
-  $status = 'NO_PUBLIC_RAS_PAGE'; $candidate = $null; $evidence = $null; $sourceUrl = $null
+  $status = 'NO_PUBLIC_RAS_PAGE'; $candidate = $null; $evidence = $null; $sourceUrl = $null; $fetchError = $null
+
   foreach ($url in $urls | Select-Object -First 6) {
     Start-Sleep -Seconds $DelaySeconds
     try {
-      $html = (Invoke-WebRequest -UseBasicParsing -Uri $url -Headers $headers -TimeoutSec 45).Content
-      if ($html -match '(?i)verify you are human|performing security verification|cf-chl-') { $status = 'CLOUDFLARE_BLOCKED'; continue }
+      $resp = Invoke-WebRequest -UseBasicParsing -Uri $url -Headers $headers -TimeoutSec 45
+      $html = $resp.Content
+      if ($html -match '(?i)verify you are human|performing security verification|cf-chl-|just a moment') { $status = 'CLOUDFLARE_BLOCKED'; continue }
       $plain = ConvertTo-PlainText $html
+      if ($plain -notmatch ('(?i)\b' + [regex]::Escape(($horse -replace '[’'']','')) + '\b')) {
+        $status = 'PAGE_IDENTITY_MISMATCH'; continue
+      }
       $safeName = $horse -replace '[^A-Za-z0-9_-]', '_'
       Set-Content -Path (Join-Path $rawDir ("{0}_{1}.txt" -f $safeName, [Math]::Abs($url.GetHashCode()))) -Value "URL=$url`r`nHORSE=$horse`r`n`r`n$plain" -Encoding utf8
+
       $patterns = @(
-        '(?i)Racing\s*(?:and|&)\s*Sports\s+(?:peak\s+)?rating\D{0,25}(?<rating>\d{2,3})',
-        '(?i)R&S\s+(?:peak\s+)?rating\D{0,25}(?<rating>\d{2,3})',
-        '(?i)(?:career|new|peak|top)\s+rating\D{0,25}(?<rating>\d{2,3})'
+        '(?i)Racing\s*(?:and|&)\s*Sports\s+(?:peak\s+)?rating\D{0,35}(?<rating>\d{2,3})',
+        '(?i)R&S\s+(?:peak\s+)?rating\D{0,35}(?<rating>\d{2,3})',
+        '(?i)(?:career|new|peak|top)\s+rating\D{0,35}(?<rating>\d{2,3})'
       )
       foreach ($pattern in $patterns) {
         $m = [regex]::Match($plain, $pattern)
@@ -92,16 +139,33 @@ foreach ($horse in $horses) {
           $value = [int]$m.Groups['rating'].Value
           if ($value -ge 50 -and $value -le 140) {
             $candidate = $value; $sourceUrl = $url; $status = 'CANDIDATE_REQUIRES_REVIEW'
-            $start = [Math]::Max(0, $m.Index - 140); $length = [Math]::Min(420, $plain.Length - $start)
+            $start = [Math]::Max(0, $m.Index - 180); $length = [Math]::Min(520, $plain.Length - $start)
             $evidence = $plain.Substring($start, $length); break
           }
         }
       }
       if ($candidate) { break }
-      if ($status -ne 'CLOUDFLARE_BLOCKED') { $status = 'PAGE_FOUND_NO_EXPLICIT_RAS_RATING' }
-    } catch { $status = if ($_.Exception.Response.StatusCode.value__ -eq 403) { 'HTTP_403' } else { 'FETCH_ERROR' } }
+      if ($status -notmatch 'BLOCKED|MISMATCH') { $status = 'PAGE_FOUND_NO_EXPLICIT_RAS_RATING'; $sourceUrl = $url }
+    } catch {
+      $fetchError = $_.Exception.Message
+      $code = $null
+      try { $code = $_.Exception.Response.StatusCode.value__ } catch {}
+      $status = if ($code -eq 403) { 'HTTP_403' } elseif ($code -eq 404) { 'HTTP_404' } else { 'FETCH_ERROR' }
+    }
   }
-  $rows.Add([pscustomobject]@{ horse=$horse; existing_rating=$(if ($existing.ContainsKey($horse)) {$existing[$horse]} else {$null}); candidate_rating=$candidate; status=$status; source_url=$sourceUrl; evidence=$evidence; urls_checked=($urls -join ' | ') })
+
+  $rows.Add([pscustomobject]@{
+    horse=$horse
+    slug=(ConvertTo-Slug $horse)
+    existing_rating=$(if ($existing.ContainsKey($horse)) {$existing[$horse]} else {$null})
+    candidate_rating=$candidate
+    status=$status
+    source_url=$sourceUrl
+    evidence=$evidence
+    urls_found=$urls.Count
+    urls_checked=($urls -join ' | ')
+    fetch_error=$fetchError
+  })
   Start-Sleep -Seconds $DelaySeconds
 }
 
@@ -114,10 +178,13 @@ $rows | ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 -Path $jsonPath
   'RACING & SPORTS PUBLIC RATING SCRAPE',
   ('RUN_UTC={0}' -f [DateTime]::UtcNow.ToString('o')),
   ('HORSES={0}' -f $rows.Count),
+  ('URLS_DISCOVERED={0}' -f @($rows | Where-Object urls_found -gt 0).Count),
   ('CANDIDATES={0}' -f @($rows | Where-Object status -eq 'CANDIDATE_REQUIRES_REVIEW').Count),
   ('NO_EXPLICIT_RATING={0}' -f @($rows | Where-Object status -eq 'PAGE_FOUND_NO_EXPLICIT_RAS_RATING').Count),
   ('NO_PAGE={0}' -f @($rows | Where-Object status -eq 'NO_PUBLIC_RAS_PAGE').Count),
+  ('IDENTITY_MISMATCH={0}' -f @($rows | Where-Object status -eq 'PAGE_IDENTITY_MISMATCH').Count),
   ('BLOCKED={0}' -f @($rows | Where-Object status -match 'BLOCKED|403').Count),
+  ('FETCH_ERRORS={0}' -f @($rows | Where-Object status -match '^FETCH_ERROR$|^HTTP_404$').Count),
   '',
   'Candidates are not automatically promoted into the canonical ratings file.',
   'Review evidence text to ensure the number is explicitly an R&S rating, not an official handicap rating.'
