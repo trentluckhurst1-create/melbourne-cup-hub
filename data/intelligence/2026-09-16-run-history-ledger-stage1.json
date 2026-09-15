@@ -1,0 +1,71 @@
+{
+  "schema": "melbourne_cup_hub.run_history_ledger.stage1.v1",
+  "as_of": "2026-09-16",
+  "universe": "101_original_melbourne_cup_nominees",
+  "purpose": "Canonical staging ledger for verified identities, historical runs and rating-system-separated evidence.",
+  "rules": {
+    "identity_validation_required": true,
+    "no_rating_inference": true,
+    "systems_kept_separate": ["R&S enhanced-form rating", "R&S/RSSR result field", "Timeform", "official handicap rating", "Melbourne Cup weight"],
+    "same_name_profiles_rejected_unless_pedigree_or_trainer_matches": true
+  },
+  "rating_dictionary": {
+    "LSR": "Racing & Sports Last Start Rating",
+    "50d": "Racing & Sports last 50 days rating",
+    "BL3": "Racing & Sports best of last three ratings",
+    "12m": "Racing & Sports twelve-month high rating, weight adjusted as described by R&S",
+    "Career": "Racing & Sports Career Best Rating",
+    "RSSR": "R&S result-page field; retained separately and not automatically equated to Career/12m/peak",
+    "Timeform": "separate Timeform scale"
+  },
+  "identity_certifications": {
+    "Aethelflaed": {
+      "country": "AUS",
+      "foaled": 2020,
+      "sire": "Saxon Warrior",
+      "trainer": "Matthew Smith",
+      "career_evidence": "R&S sibling report: 7 starts, 2 wins, 3 placings; winning range includes 1400m-2500m; G1 placing",
+      "current_form_evidence": "R&S Rosehill 2026-09-12 R4 lists Aethelflaed, Matthew Smith, form 2x12x",
+      "sources": [
+        "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/hawkesbury/2026-07-02/R3/sibling-report",
+        "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/rosehill/2026-09-12/R4"
+      ]
+    },
+    "Klondike": {
+      "country": "GB",
+      "sire": "Galileo",
+      "dam": "Koora",
+      "trainer": "John O'Shea & Tom Charlton",
+      "verified_run": {"race": "Doomben Cup", "finish": 6, "weight_kg": 59.0},
+      "source": "https://www.racingandsports.com.au/news/racing/news/0001-01-01/a-closer-look-doomben-cup/690416?courseCode=DOOM"
+    },
+    "Portland": {
+      "country": "IRE",
+      "sire": "Dubawi",
+      "dam": "Zagitova",
+      "trainer": "Matthew Smith",
+      "verified_runs": [
+        {"date": "2026-05-30", "race": "Lord Mayor's Cup", "distance_m": 2000, "finish": 1, "weight_kg": 53.5},
+        {"date": "2026-03-28", "race": "Neville Sellwood Stakes G2", "finish": 3, "weight_kg": 56.0}
+      ],
+      "sources": [
+        "https://www.racingandsports.com.au/thoroughbred/feature-race/australia/lord-mayors-cup/815",
+        "https://www.racingandsports.com.au/news/racing/news/2026-03-28/wootton-verni-wins-group-2-asahi-super-dry-neville-sellwood-stakes-post-race-trainer-and-jockey-quotes/711794"
+      ]
+    }
+  },
+  "extraction_status": {
+    "identity_resolution": "substantially_complete",
+    "run_history_normalisation": "IN_PROGRESS",
+    "enhanced_form_metric_extraction": "IN_PROGRESS",
+    "canonical_rating_promotion": "BLOCKED_UNTIL_LABEL_AND_IDENTITY_VALIDATED",
+    "official_2026_cup_weight_ingestion": "PENDING_OFFICIAL_RELEASE"
+  },
+  "next": [
+    "Enumerate all 101 nominees into one ledger",
+    "Recover every publicly exposed chronological run from R&S form pages and race results",
+    "Extract numeric LSR/50d/BL3/12m/Career only where the runner row is actually exposed",
+    "Keep RSSR and Timeform in separate namespaces",
+    "Generate per-horse coverage flags and final missing-evidence list"
+  ]
+}
