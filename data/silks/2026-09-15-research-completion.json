@@ -1,0 +1,23 @@
+{
+  "snapshotDate":"2026-09-15",
+  "universeSupplement":16,
+  "policy":"Exact text descriptions are taken from public racecards or the current registered owner's documented colours. No protected numerical ratings are included.",
+  "horses":{
+    "Amelia Earhart":{"status":"exact","colours":"Dark Blue","body":"#14213d","sleeves":"#14213d","cap":"#14213d","pattern":"solid","source":"At The Races Leopardstown racecard, 10 Jul 2025; same Magnier/Tabor/Smith ownership"},
+    "Constitution Hill":{"status":"exact","colours":"White, Black Cap","body":"#ffffff","sleeves":"#ffffff","cap":"#111111","pattern":"solid-black-cap","source":"Sportsbet/Punters Aintree form guide, 3 Apr 2025; Michael Buckley colours reaffirmed Racing Post 16 Jun 2026"},
+    "Okita Soushi":{"status":"exact","colours":"Green And Red Stripes","body":"#16834a","sleeves":"#c92a2a","cap":"#16834a","pattern":"red-stripes","source":"Australian public form guide under Toshihiro Matsumoto ownership; current owner Toshihiro Matsumoto confirmed Sporting Life 2026"},
+    "Omni Man":{"status":"exact","colours":"Navy Blue, White Band And Gold Go Racing Logo, Armbands And Cap","body":"#14213d","sleeves":"#14213d","cap":"#14213d","pattern":"go-racing-band-logo","source":"Current Go Racing ownership confirmed Irish Racing/Timeform 2026; registered Go Racing colours confirmed Racing Australia on Tajanis/Soul Of Spain"},
+    "Onesmoothoperator":{"status":"exact","colours":"Light Blue, Dark Blue Hollow Box, Striped Sleeves And Cap","body":"#78c8e8","sleeves":"#1456a0","cap":"#1456a0","pattern":"hollow-box-striped","source":"Racing NSW current horse profile, 2026"},
+    "Point Of Law":{"status":"exact","colours":"Purple, Gold Braid, Scarlet Sleeves, Black Velvet Cap, Gold Fringe","body":"#6b2c91","sleeves":"#c92a2a","cap":"#111111","pattern":"gold-braid","source":"At The Races Yarmouth racecard, 11 Apr 2026; Royal colours"},
+    "Soul Of Spain":{"status":"exact","colours":"Navy Blue, White Band And Gold Racing Logo, Armbands And Cap","body":"#14213d","sleeves":"#14213d","cap":"#14213d","pattern":"go-racing-band-logo","source":"DRF Australian public form, Feb 2026"},
+    "Strictly Business":{"status":"exact","colours":"Navy Blue, Gold Crowns","body":"#14213d","sleeves":"#14213d","cap":"#14213d","pattern":"gold-crowns","source":"Racing Australia Ballarat profile, 3 Apr 2026"},
+    "Suffolk Star":{"status":"exact","colours":"Royal Blue, Red Dice And Seams","body":"#1456a0","sleeves":"#1456a0","cap":"#1456a0","pattern":"red-dice-seams","source":"Wizard Of Odds Flemington Andrew Ramsden profile, 16 May 2026"},
+    "Tajanis":{"status":"exact","colours":"Navy Blue, White Band And Go Racing Logo, Armbands And Cap","body":"#14213d","sleeves":"#14213d","cap":"#14213d","pattern":"go-racing-band-logo","source":"Racing Australia Doomben profile, 28 Mar 2026"},
+    "Think Giant":{"status":"exact","colours":"Navy Blue, Gold Hoops, White Sleeves And Cap","body":"#14213d","sleeves":"#ffffff","cap":"#ffffff","pattern":"gold-hoops","source":"VRC Crown Makybe Diva Stakes digital racebook, 12 Sep 2026"},
+    "Torranzino":{"status":"exact","colours":"Emerald Green, Gold Vee, Red Sleeves, Quartered Cap","body":"#087f5b","sleeves":"#c92a2a","cap":"#087f5b","pattern":"gold-vee-quartered","source":"Sportsbet public form, Warrnambool 2025; same Paul Preusker horse/ownership"},
+    "Vegas Jack":{"status":"exact","colours":"Maroon, Grey And White Stripes, Hooped Sleeves, Maroon Cap","body":"#6e2639","sleeves":"#ffffff","cap":"#6e2639","pattern":"grey-white-stripes-hoops","source":"Wizard Of Odds Geelong profile, 22 Apr 2026"},
+    "Wigmore":{"status":"exact","colours":"Navy Blue, Gold Hoops, White Sleeves And Cap","body":"#14213d","sleeves":"#ffffff","cap":"#ffffff","pattern":"gold-hoops","source":"Racing Australia Morphettville profile, 25 Apr 2026"},
+    "Winday":{"status":"exact","colours":"Sky Blue, Light Pink Braces, Striped Cap, Black Peak","body":"#78c8e8","sleeves":"#78c8e8","cap":"#78c8e8","pattern":"pink-braces-striped-cap","source":"TAB NZ public form, 30 May 2026; Paul Byrne ownership"},
+    "Yellow Jersey":{"status":"exact","colours":"Claret, Gold Braid, Claret Sleeves, Claret Cap, Silver Peak","body":"#7b1f3a","sleeves":"#7b1f3a","cap":"#7b1f3a","pattern":"gold-braid-silver-peak","source":"DRF Deauville public profile, 14 Aug 2025; Qatar Racing ownership retained"}
+  }
+}
