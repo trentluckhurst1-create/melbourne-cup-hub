@@ -33,7 +33,8 @@
     "silks.js",
     "integrity-fixes.js",
     "ui-polish.js",
-    "form-guide-pro.js"
+    "form-guide-pro.js",
+    "pfr-ui-labels.js"
   ],
   "checks": [
     {
@@ -1028,7 +1029,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "33 files passed node --check"
+      "detail": "34 files passed node --check"
     }
   ],
   "pass": true,
