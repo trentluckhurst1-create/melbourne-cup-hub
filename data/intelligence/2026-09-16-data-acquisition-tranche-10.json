@@ -1,0 +1,67 @@
+{
+  "schema": "melbourne_cup_hub.data_acquisition.tranche10.v1",
+  "as_of": "2026-09-16",
+  "policy": {
+    "acquisition_only": true,
+    "identity_validation_required": true,
+    "no_rating_inference": true,
+    "preserve_source_defects": true
+  },
+  "horses": {
+    "The Euphrates": {
+      "identity": {"country":"GB","sex":"gelding","sire":"Frankel","dam":"Auld Alliance","trainer":"Gai Waterhouse & Adrian Bott"},
+      "career_snapshot": {"starts":11,"wins":3,"seconds":2,"thirds":1,"good":"7:2-1-0","soft":"1:0-0-0","heavy":"3:1-1-1","turf":"11:3-2-1"},
+      "historical_runs": [
+        {"date":"2024-10-19","track":"Ascot","distance_m":3118,"class":"G2","finish":7,"margin_l":21.8,"going":"Soft","jockey":"C Soumillon","weight_kg":57.5,"sp":23},
+        {"date":"2024-09-29","track":"Curragh","distance_m":3419,"class":"HCP","finish":1,"margin_l":0.5,"going":"Good","jockey":"Ryan Moore","weight_kg":58.0,"sp":4.5},
+        {"date":"2024-09-15","track":"Curragh","distance_m":2816,"class":"G1","finish":4,"margin_l":3.8,"going":"Good","jockey":"W M Lordan","weight_kg":58.0,"sp":41},
+        {"date":"2024-08-08","track":"Leopardstown","distance_m":2414,"class":"G3","finish":2,"margin_l":5.0,"going":"Good","jockey":"Ryan Moore","weight_kg":56.5,"sp":2.2},
+        {"date":"2024-07-27","track":"Gowran Park","distance_m":2414,"class":"Listed","finish":1,"margin_l":0.5,"going":"Good","jockey":"W J Lee","weight_kg":59.5,"sp":2.5},
+        {"date":"2024-06-30","track":"Curragh","distance_m":2414,"class":"G1","finish":6,"margin_l":8.0,"going":"Good","jockey":"Dylan Browne McMonagle","weight_kg":58.0,"sp":23},
+        {"date":"2024-06-21","track":"Ascot","distance_m":2414,"class":"G2","finish":5,"margin_l":9.5,"going":"Good-Firm","jockey":"Declan McDonogh","weight_kg":58.0,"sp":41},
+        {"date":"2024-05-11","track":"Lingfield","distance_m":2334,"class":"Listed","finish":4,"margin_l":8.5,"going":"Good","jockey":"Declan McDonogh","weight_kg":58.0,"sp":7},
+        {"date":"2024-04-07","track":"Leopardstown","distance_m":2011,"class":"G3","finish":2,"margin_l":3.0,"going":"Heavy","jockey":"Dylan Browne McMonagle","weight_kg":59.5,"sp":8}
+      ],
+      "source":"https://www.racingandsports.com.au/form-guide/thoroughbred/australia/randwick/2026-09-05/R9?showPriceComparison=1"
+    },
+    "Knight's Choice": {
+      "identity": {"country":"AUS","foal_date":"2019-09-20","sex":"gelding","sire":"Extreme Choice","dam":"Midnight Pearl","trainer":"J G Symons & S Laxon"},
+      "career_profile": {"starts":28,"wins":6,"placings":5,"prizemoney_aud":5869550,"win_distances":{"1600":3,"1650":1,"2000":1,"3200":1}},
+      "recent_form_snapshot_pre_2026_08_29": {"starts":27,"wins":6,"seconds":3,"thirds":2,"good":"16:5-1-1","soft":"8:1-1-1","heavy":"3:0-1-0"},
+      "historical_runs": [
+        {"date":"2026-06-13","track":"Eagle Farm","distance_m":2200,"class":"G2","finish":8,"margin_l":6.2,"going":"Heavy","jockey":"Robbie Dolan","weight_kg":59.0,"sp":51},
+        {"date":"2026-05-30","track":"Eagle Farm","distance_m":1800,"class":"G3","finish":10,"margin_l":6.0,"going":"Soft","jockey":"Robbie Dolan","weight_kg":60.0,"sp":71},
+        {"date":"2026-05-09","track":"Gold Coast","distance_m":1800,"class":"G2","finish":7,"margin_l":7.5,"going":"Good","jockey":"Dylan Dunn","weight_kg":59.0,"sp":101}
+      ],
+      "current_nomination": {"date":"2026-09-19","track":"Caulfield","race":"Naturalism Stakes","distance_m":2000},
+      "sources":["https://www.racingandsports.com.au/thoroughbred/horse/knights-choice/1873469","https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-08-29/R9?showPriceComparison=1","https://www.racingandsports.com.au/news/racing/news/2026-08-19/dry-track-brings-out-best-in-knights-choice/719926"]
+    },
+    "Pounding": {
+      "identity": {"country":"AUS","sex":"gelding","sire":"Exceed And Excel","dam":"Silent Entrance","trainer":"Peter G Moody & Katherine Coleman"},
+      "verified_2026_runs": [
+        {"date":"2026-06-27","track":"Eagle Farm","distance_m":2400,"class":"G3 Tattersall's Cup","finish":2,"weight_kg":56.0,"jockey":"Luke Nolen","sp":3.7},
+        {"date":"2026-06-13","track":"Eagle Farm","distance_m":2200,"class":"G2","finish":"behind Royal Supremacy"}
+      ],
+      "note":"Do not confuse with Asterix: one R&S field extraction places Asterix's Tavistock/Mourasana career block adjacent to Pounding. Pedigree is explicitly Exceed And Excel-Silent Entrance.",
+      "source":"https://www.racingandsports.com.au/news/racing/previews/2026-06-26/brisbane-best-eagle-farm-27-june-2026/717112"
+    },
+    "Golden Century": {
+      "identity": {"country":"NZ","foaled":2021,"sex":"gelding","sire":"Pierro","dam":"Breeze","dam_sire":"Sea The Stars","trainer":"Chris Waller"},
+      "verified_2026_entries": [
+        {"date":"2026-06-27","track":"Rosehill","distance_m":1800,"form":"087x5","weight_kg":59.5,"jockey":"Siena Grima"},
+        {"date":"2026-07-04","track":"Rosehill","distance_m":2000,"form":"1x807","weight_kg":58.5,"jockey":"Siena Grima"},
+        {"date":"2026-09-12","track":"Rosehill","distance_m":2400,"form":"06393","weight_kg":56.5,"jockey":"Zac Lloyd"}
+      ],
+      "enhanced_form_raw": {"as_of":"2026-09-12","values":[44.0,44.0,44.0,45.5,49.5,51.0,50.5,0.0,51.0],"status":"RAW_UNMAPPED_DO_NOT_PROMOTE"},
+      "data_quality_warning":"R&S 2026-09-12 full-field extraction incorrectly duplicates Appeared's Justify/Living The Life career block beneath Golden Century. The sibling report and runner index independently certify Golden Century as Pierro-Breeze. Do not ingest the duplicated career/run block.",
+      "sources":["https://www.racingandsports.com.au/form-guide/thoroughbred/australia/rosehill/2026-09-12/R3/sibling-report","https://www.racingandsports.com.au/form-guide/thoroughbred/australia/rosehill/2026-09-12/R3/enhanced-form","https://www.racingandsports.com.au/form-guide/thoroughbred/australia/rosehill/2026-09-12/runners-index"]
+    }
+  },
+  "acquisition_findings": [
+    "The Euphrates now has nine individually recovered European runs from April-October 2024 plus a complete 11-start public snapshot.",
+    "Knight's Choice now has current profile totals, going splits from the pre-return field, three 2026 Queensland runs and a 19 September Naturalism Stakes nomination.",
+    "Pounding identity contamination risk identified and explicitly quarantined: the Tavistock-Mourasana 29-start block belongs to Asterix, not Pounding.",
+    "Golden Century extraction defect identified and quarantined: the Rosehill full-field page duplicates Appeared's career/run block. Golden Century identity remains Pierro-Breeze and raw Enhanced Form numbers remain unmapped."
+  ],
+  "status":"ACQUISITION_CONTINUES"
+}
