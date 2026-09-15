@@ -31,7 +31,8 @@
     "form-pulse.js",
     "silks.js",
     "integrity-fixes.js",
-    "ui-polish.js"
+    "ui-polish.js",
+    "form-guide-pro.js"
   ],
   "checks": [
     {
@@ -1026,7 +1027,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "31 files passed node --check"
+      "detail": "32 files passed node --check"
     }
   ],
   "pass": true,
