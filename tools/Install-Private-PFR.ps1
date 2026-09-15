@@ -1,23 +1,31 @@
 $ErrorActionPreference = 'Stop'
-$RepoRaw = 'https://raw.githubusercontent.com/trentluckhurst1-create/melbourne-cup-hub/main'
+$RepoUrl = 'https://github.com/trentluckhurst1-create/melbourne-cup-hub.git'
 $PrivateRoot = Join-Path $HOME 'Documents\MelbourneCupHubPrivate'
-$DataPath = Join-Path $PrivateRoot 'pfr-private.json'
-$ServerPath = Join-Path $PrivateRoot 'private_pfr_server.py'
+$RepoPath = Join-Path $PrivateRoot 'melbourne-cup-hub'
+$PrivateDir = Join-Path $RepoPath 'private'
+$DataPath = Join-Path $PrivateDir 'pfr-private.json'
 $LauncherPath = Join-Path $PrivateRoot 'Start-Melbourne-Cup-Hub-Private.ps1'
 $DesktopShortcut = Join-Path ([Environment]::GetFolderPath('Desktop')) 'Melbourne Cup Hub Private.lnk'
-$HubUrl = 'https://trentluckhurst1-create.github.io/melbourne-cup-hub/'
 
 New-Item -ItemType Directory -Force -Path $PrivateRoot | Out-Null
-Invoke-WebRequest "$RepoRaw/tools/private_pfr_server.py" -OutFile $ServerPath
 
+if (-not (Test-Path (Join-Path $RepoPath '.git'))) {
+    if (Test-Path $RepoPath) { Remove-Item $RepoPath -Recurse -Force }
+    git clone $RepoUrl $RepoPath
+} else {
+    git -C $RepoPath fetch origin
+    git -C $RepoPath reset --hard origin/main
+}
+
+New-Item -ItemType Directory -Force -Path $PrivateDir | Out-Null
 if (-not (Test-Path $DataPath)) {
     $searchRoots = @((Join-Path $HOME 'Downloads'), (Join-Path $HOME 'Documents')) | Where-Object { Test-Path $_ }
     $candidate = Get-ChildItem $searchRoots -File -Filter '*.json' -Recurse -ErrorAction SilentlyContinue |
-        Where-Object { $_.Name -match 'timeform-private-projected24|timeform.*private|2026-09-15-timeform-private' } |
+        Where-Object { $_.FullName -ne $DataPath -and $_.Name -match 'timeform-private-projected24|timeform.*private|2026-09-15-timeform-private|pfr-private' } |
         Sort-Object LastWriteTime -Descending |
         Select-Object -First 1
     if (-not $candidate) {
-        throw "Private ratings JSON was not found automatically. Put the downloaded private JSON in Downloads and run this installer again."
+        throw 'Private PFR JSON was not found automatically. Put the private JSON in Downloads and run this installer again.'
     }
     Copy-Item $candidate.FullName $DataPath -Force
 }
@@ -25,15 +33,20 @@ if (-not (Test-Path $DataPath)) {
 $launcher = @'
 $ErrorActionPreference = 'Stop'
 $root = Join-Path $HOME 'Documents\MelbourneCupHubPrivate'
-$data = Join-Path $root 'pfr-private.json'
-$server = Join-Path $root 'private_pfr_server.py'
-$env:MCH_PFR_DATA = $data
+$repo = Join-Path $root 'melbourne-cup-hub'
+$data = Join-Path $repo 'private\pfr-private.json'
+if (-not (Test-Path $data)) { throw "Private PFR data missing: $data" }
+
+# Keep the local software shell current while preserving the untracked private/ dataset.
+git -C $repo fetch origin | Out-Null
+git -C $repo reset --hard origin/main | Out-Null
+
 $existing = Get-NetTCPConnection -LocalPort 8765 -State Listen -ErrorAction SilentlyContinue
 if (-not $existing) {
-    Start-Process -WindowStyle Hidden -FilePath 'python' -ArgumentList @($server)
+    Start-Process -WindowStyle Hidden -FilePath 'python' -ArgumentList @('-m','http.server','8765','--bind','127.0.0.1','--directory',$repo)
     Start-Sleep -Milliseconds 900
 }
-Start-Process 'https://trentluckhurst1-create.github.io/melbourne-cup-hub/'
+Start-Process 'http://127.0.0.1:8765/'
 '@
 Set-Content -Path $LauncherPath -Value $launcher -Encoding UTF8
 
@@ -42,12 +55,13 @@ $shortcut = $ws.CreateShortcut($DesktopShortcut)
 $shortcut.TargetPath = 'powershell.exe'
 $shortcut.Arguments = "-NoProfile -ExecutionPolicy Bypass -File `"$LauncherPath`""
 $shortcut.WorkingDirectory = $PrivateRoot
-$shortcut.Description = 'Open Melbourne Cup Hub with private PFR ratings'
+$shortcut.Description = 'Open the local Melbourne Cup Hub with private PFR ratings'
 $shortcut.Save()
 
 Write-Host ''
 Write-Host 'PRIVATE PFR SETUP COMPLETE' -ForegroundColor Green
+Write-Host "Local repo: $RepoPath"
 Write-Host "Private data: $DataPath"
 Write-Host "Desktop shortcut: $DesktopShortcut"
-Write-Host 'Opening the Hub now...'
+Write-Host 'The shortcut now updates the Hub and opens the fully local private workspace.'
 & $LauncherPath
