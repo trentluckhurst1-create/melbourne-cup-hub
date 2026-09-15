@@ -1,0 +1,5 @@
+# Local/private evidence must never be published.
+private/
+*.local.json
+.env
+.env.*
