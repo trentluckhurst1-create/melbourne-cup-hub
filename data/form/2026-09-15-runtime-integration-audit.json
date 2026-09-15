@@ -2,6 +2,7 @@
   "snapshotDate": "2026-09-15",
   "activeScripts": [
     "app.js",
+    "legacy-pfr-cleanup.js",
     "evolve.js",
     "enhancements.js",
     "trainer-bases.js",
@@ -1032,7 +1033,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "37 files passed node --check"
+      "detail": "38 files passed node --check"
     }
   ],
   "pass": true,
