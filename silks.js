@@ -3,7 +3,7 @@ const silkBaseHorseLink=horseLink;
 function silkNameKey(name){return String(name||'').normalize('NFKD').replace(/[’‘`]/g,"'").replace(/[^a-z0-9]/gi,'').toLowerCase();}
 async function loadCupSilks(){
  if(cupSilksPromise)return cupSilksPromise;
- const files=['2026-09-13.json','2026-09-13-supplement-2.json','2026-09-13-supplement-3.json','2026-09-13-supplement-4.json','2026-09-13-supplement-5.json','2026-09-13-supplement-6.json'];
+ const files=['2026-09-13.json','2026-09-13-supplement-2.json','2026-09-13-supplement-3.json','2026-09-13-supplement-4.json','2026-09-13-supplement-5.json','2026-09-13-supplement-6.json','2026-09-15-research-completion.json'];
  cupSilksPromise=Promise.all(files.map(f=>fetch(`./data/silks/${f}`,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null))).then(parts=>{
   const base=parts[0];if(!base)return null;
   const horses=Object.assign({},...parts.filter(Boolean).map(p=>p.horses||{}));
