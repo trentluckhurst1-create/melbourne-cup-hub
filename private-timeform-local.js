@@ -11,7 +11,7 @@ function tfRatingValue(x){for(const k of ['performanceRating','tfr','TFR','ratin
 function tfRatingDisplay(x){if(x?.ratingDisplay)return String(x.ratingDisplay);const v=tfRatingValue(x);return v??'—';}
 function tfTimefigureValue(x){for(const k of ['timefigure','timeFigure','TF','timefig'])if(Number.isFinite(Number(x?.[k])))return Number(x[k]);return null;}
 function tfMasterValue(rec){for(const k of ['currentMasterRating','masterRating','timeformRating','rating'])if(Number.isFinite(Number(rec?.[k])))return Number(rec[k]);return null;}
-function tfMasterDisplay(rec){return rec?.masterRatingDisplay||rec?.disciplines?.flat||tfMasterValue(rec)??'—';}
+function tfMasterDisplay(rec){const display=rec?.masterRatingDisplay||rec?.disciplines?.flat;if(display!==undefined&&display!==null&&display!=='')return display;const value=tfMasterValue(rec);return value??'—';}
 function tfState(rec){if(!rec)return 'No private match';if(rec.matchStatus==='NOT_FOUND')return 'Not found';if(String(rec.historyCompleteness||'').startsWith('INCOMPLETE'))return 'Partial history';return 'Private loaded';}
 function privateTfStats(){const hs=privateTimeformSession?.horses||{};const rows=Object.values(hs);let ratedRuns=0;rows.forEach(r=>ratedRuns+=tfRuns(r).filter(x=>tfRatingValue(x)!==null).length);return {horses:rows.length,matched:rows.filter(r=>r.matchStatus!=='NOT_FOUND').length,masters:rows.filter(r=>tfMasterValue(r)!==null).length,ratedRuns};}
 function tfDb(){return new Promise((resolve,reject)=>{const req=indexedDB.open('melbourne-cup-hub-private',1);req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains('files'))req.result.createObjectStore('files');};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}
