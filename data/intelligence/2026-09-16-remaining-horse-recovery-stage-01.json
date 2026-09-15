@@ -1,0 +1,185 @@
+{
+  "schema": "melbourne_cup_hub.remaining_horse_recovery.v1",
+  "as_of": "2026-09-16",
+  "purpose": "Immediate remaining-horse data acquisition before downstream project work",
+  "policy": {
+    "identity_validation_required": true,
+    "no_rating_inference": true,
+    "rating_systems_separate": true,
+    "official_form_preferred": true,
+    "same_name_collision_rejected": true
+  },
+  "recovered": {
+    "Aethelflaed": {
+      "country": "AUS",
+      "foal_date": "2020-10-13",
+      "sex": "mare",
+      "trainer": "Matthew Smith",
+      "sire": "Saxon Warrior",
+      "dam": "Chasing Mammon",
+      "career_snapshot": "8:2-3-0",
+      "latest_verified_run": "2026-09-12 Rosehill BM88 1800m - 6th",
+      "stakes_form": "2nd 2023 VRC Oaks G1",
+      "source": "https://www.breednet.com.au/horse/aethelflaed"
+    },
+    "Floating": {
+      "country": "AUS",
+      "foal_date": "2018-09-17",
+      "sex": "gelding",
+      "trainer": "Matthew Smith",
+      "sire": "Puissance De Lune",
+      "dam": "Goujon",
+      "career_snapshot": "37:7-7-2",
+      "prizemoney_aud": 715405,
+      "winning_distance_range_m": [1300, 2000],
+      "latest_verified_run": "2026-08-29 Rosehill BM100 1500m - 8th",
+      "stakes_form": ["1st 2024 ATC Cup Listed", "2nd 2025 JRA Chairman's Quality G3"],
+      "source": "https://mdata.racingnsw.com.au/InteractiveForm/HorseFullForm.aspx?Key=2026Jul03%2CNSW%2CRoyal+Randwick%2CTrial&horsecode=MTg5ODU1MDkwMzI%3D&raceentry=NTY0NTQ0NTg1Nzg%3D&src=horseform&stage=Acceptances"
+    },
+    "Kings Valley": {
+      "country": "IRE",
+      "foal_date": "2021-03-29",
+      "sex": "gelding",
+      "trainer": "Ciaron Maher",
+      "sire": "Territories",
+      "dam": "Crystal Etoile",
+      "career_snapshot_public": "22:6-5-3",
+      "latest_verified_run": "2026-09-05 Sandown Hillside So You Think Stakes 1500m - 8th",
+      "verified_achievement": "1st 2026 Mornington Cup Listed 2400m",
+      "source": "https://www.breednet.com.au/horse/kings-valley"
+    },
+    "Klondike": {
+      "country": "GB",
+      "foal_date": "2020-04-29",
+      "sex": "gelding",
+      "trainer": "John O'Shea & Tom Charlton",
+      "sire": "Galileo",
+      "dam": "Koora",
+      "career_snapshot_official": "11:3-1-0",
+      "prizemoney_aud": 251326,
+      "winning_distance_range_m": [2212, 2816],
+      "source": "https://mdata.racingnsw.com.au/InteractiveForm/HorseFullForm.aspx?horsecode=MTc4MTA0OTc1MzY%3D&src=horseform"
+    },
+    "Newlook": {
+      "country": "FR",
+      "sex": "gelding",
+      "trainer": "Trent Busuttin & Natalie Young",
+      "sire": "New Bay",
+      "dam": "Skysweeper",
+      "official_handicap_rating_2026_04_04": 92,
+      "verified_achievement": "1st 2026 Chairman's Quality G2 2600m",
+      "source": "https://mdata.racingnsw.com.au/FreeFields/Nominations.aspx?Key=2026Apr04%2CNSW%2CRoyal+Randwick"
+    },
+    "Sir Chartwell": {
+      "country": "FR",
+      "foal_date": "2021-05-03",
+      "sex": "gelding",
+      "trainer": "Annabel & Rob Archibald",
+      "sire": "Churchill",
+      "dam": "Sidewalk",
+      "verified_2026_form": ["3rd 2026 Andrew Ramsden Listed 2800m", "5th 2026 Sandown Cup Listed 3200m"],
+      "official_handicap_rating_2026_04_25": 79,
+      "source": "https://www.racingaustralia.horse/FreeFields/AllForm.aspx?Key=2026Apr25%2CVIC%2CFlemington&recentForm=N"
+    },
+    "Sons And Lovers": {
+      "country": "GB",
+      "sex": "gelding",
+      "trainer": "Joseph O'Brien",
+      "sire": "Study Of Man",
+      "dam": "So In Love",
+      "career_snapshot": "18:4-1-5",
+      "distance_2400m_snapshot": "3:1-0-1",
+      "verified_achievement": "1st 2026 Prix Maurice de Nieuil G2 2800m",
+      "latest_verified_run": "2026-09-12 Leopardstown Kilternan Stakes G3 2400m",
+      "source": "https://www.racingandsports.com.au/form-guide/thoroughbred/ireland/leopardstown/2026-09-12/R4?showPriceComparison=1"
+    },
+    "Jenni Multabella": {
+      "country": "NZ",
+      "foal_date": "2021-09-08",
+      "sex": "mare",
+      "trainer": "Lloyd Kennewell",
+      "sire": "Ace High",
+      "dam": "La Belle Beel",
+      "career_snapshot": "7:2-3-1",
+      "latest_verified_run": "2026-08-29 Caulfield BM78 1800m - 2nd",
+      "source": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-08-29/R2?showPriceComparison=1"
+    },
+    "Valiant King": {
+      "country": "GB",
+      "foal_date": "2020-03-27",
+      "sex": "gelding",
+      "trainer": "Chris Waller",
+      "sire": "Roaring Lion",
+      "dam": "Assembly",
+      "career_snapshot_official": "25:2-3-3",
+      "prizemoney_aud": 1067007,
+      "winning_distance_range_m": [2011, 2520],
+      "verified_achievement": "1st 2025 Bart Cummings G3 2520m",
+      "ras_public_rating": 116,
+      "ras_rating_evidence": "VRC Racing & Sports-authored 2025 Melbourne Cup runner profile explicitly labels Racing & Sports Rating - 116",
+      "source": "https://mdata.racingnsw.com.au/InteractiveForm/HorseFullForm.aspx?Key=2026Apr11%2CNSW%2CRoyal+Randwick&horsecode=MjA3MTA3NTAwNTA%3D&raceentry=NTk4ODQ5ODM3MjA%3D&src=horseform&stage=Weights"
+    },
+    "Portland": {
+      "country": "IRE",
+      "foal_date": "2021-05-09",
+      "sex": "gelding",
+      "trainer": "Matthew Smith",
+      "sire": "Dubawi",
+      "dam": "Zagitova",
+      "career_snapshot_official": "19:3-1-5",
+      "prizemoney_aud": 340602,
+      "winning_distance_range_m": [1408, 2414],
+      "source": "https://mdata.racingnsw.com.au/InteractiveForm/HorseFullForm.aspx?horsecode=MTkzMjMxMDIxNzY%3D&src=horseform"
+    },
+    "Wolfgang": {
+      "country": "NZ",
+      "foal_date": "2018-11-06",
+      "sex": "gelding",
+      "trainer": "Peter & Shaun McKay",
+      "sire": "Puccini",
+      "dam": "Navy Beach",
+      "career_snapshot": "52:9-6-5",
+      "prizemoney_aud_public": 677167,
+      "verified_achievement": "1st 2025 Wellington Cup G3",
+      "latest_verified_run": "2026-03-21 Trentham NZ St Leger 2500m - 12th",
+      "identity_warning": "Reject Australian Exceed And Excel/Rodney Hay Wolfgang; correct Cup nominee is NZ Puccini gelding trained by Peter McKay",
+      "source": "https://www.breednet.com.au/horse/wolfgang"
+    },
+    "Point Of Law": {
+      "country": "GB",
+      "foal_date": "2023-03-19",
+      "sex": "colt",
+      "current_australian_trainer": "Ciaron Maher",
+      "former_trainer": "John & Thady Gosden",
+      "sire": "Frankel",
+      "dam": "Portfolio",
+      "career_snapshot_pre_export": "4:2-1-0",
+      "verified_achievement": "1st 2026 Bahrain Trophy G3 13f",
+      "official_rating_after_bahrain_trophy": 101,
+      "current_status_2026_09_13": "In UK pre-export quarantine for Melbourne; Caulfield and Melbourne Cups nominations confirmed",
+      "source": "https://www.racing.com/news/2026/09/13/news-international-caulfield-cup-horses-enter-quarantine"
+    },
+    "Yellow Jersey": {
+      "country": "FR",
+      "sex": "horse",
+      "trainer": "Tony & Calvin McEvoy",
+      "sire": "Dubawi",
+      "former_trainer": "Andre Fabre",
+      "european_profile": "Won first three starts; third in 2025 G2 Conseil de Paris",
+      "australian_debut_plan": "2026 Eagle Farm Listed Wayne Wilson",
+      "source": "https://www.racing.com/news/2026/06/11/news-team-mcevoy-to-unveil-cox-plate-hope"
+    }
+  },
+  "remaining_identity_or_data_gaps": [
+    "Complete R&S public rating search for horses without explicit labelled R&S values",
+    "Complete chronological run histories for every recovered horse",
+    "Recover current official handicap ratings where available",
+    "Recover all current-preparation runs through 2026-09-16",
+    "Validate remaining nominee profiles against the 101-horse nomination list before canonical merge"
+  ],
+  "critical_corrections": {
+    "Wolfgang": "Correct nominee is Wolfgang (NZ), Puccini x Navy Beach, Peter McKay; prior Australian same-name match is rejected.",
+    "Valiant King": "Correct nominee is Valiant King (GB), Roaring Lion x Assembly, Chris Waller; Turkish same-name profile is rejected.",
+    "Point Of Law": "Correct nominee is 2023 GB Frankel colt formerly Gosden and now Ciaron Maher; old Australian mare same-name profile is rejected."
+  }
+}
