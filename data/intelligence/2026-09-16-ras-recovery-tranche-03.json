@@ -1,0 +1,18 @@
+{
+  "schema":"melbourne_cup_hub.ras_recovery_tranche.v1",
+  "as_of":"2026-09-16",
+  "policy":{"identity_validation_required":true,"no_rating_inference":true,"rating_systems_separate":true},
+  "verified":{
+    "Johnich":{"ras_id":2300043,"country":"AUS","foal_date":"2022-10-31","sex":"gelding","trainer":"Jason Warren","sire":"Dundeel","dam":"Play That Song","career_starts_at_profile_capture":2,"career_wins_at_profile_capture":0,"career_placings_at_profile_capture":2,"source":"https://www.racingandsports.com.au/thoroughbred/horse/johnich/2300043"},
+    "Wigmore":{"ras_id":2332515,"country":"NZ","foal_date":"2022-10-06","sex":"gelding","trainer":"Phillip Stokes","sire":"Sweynesse","dam":"Del Mondo","career_starts":7,"career_wins":1,"career_placings":2,"winning_distances_m":[1600],"verified_achievement":"2026 South Australian Derby G1 2500m winner","source":"https://ras-lb.racingandsports.com.au/thoroughbred/horse/wigmore/2332515","achievement_source":"https://www.racingandsports.co.uk/news/bloodstock/australia/2026-05-04/pedigree-profile-wigmore/714032"},
+    "Jennivamoose":{"ras_id":2066090,"country":"NZ","foal_date":"2019-08-24","sex":"mare","trainer":"Ciaron Maher","sire":"Vadamos","dam":"So Ard","career_starts":18,"career_wins":5,"career_placings":6,"winning_distances_m":[1765,2040,2400,2500],"latest_verified_run":"3rd 2026-09-12 Lexus Archer Stakes 2500m","source":"https://www.racingandsports.co.uk/amp/thoroughbred/horse/jennivamoose/2066090"},
+    "Manzor Blue":{"identity_status":"PARTIALLY_VERIFIED","trainer":"Lisa Latta","latest_indexed_form":"2026-08-22 Hastings Open Mile 1600m, form string 4612x","source":"https://www.racingandsports.com.au/form-guide/thoroughbred/new-zealand/hastings/2026-08-22/race-fields"},
+    "So You Are":{"identity_status":"VERIFIED_CURRENT_RUNNER","country":"AUS","trainer":"Stirling Osland","sire":"So You Think","dam":"Tornado Gal","verified_2026_win":"2026-05-02 Eagle Farm BM90 1825m Heavy","trainer_note":"win was first below 2000m, implying earlier wins were 2000m+","source":"https://www.racingandsports.com.au/news/racing/news/2026-05-02/so-you-are-wins-magic-millions-benchmark-90-handicap-post-race-trainer-and-jockey-quotes/713929"},
+    "Treasurethe Moment":{"ras_id":2176082,"country":"AUS","foal_date":"2021-11-01","sex":"mare","trainer":"Matt Laurie","sire":"Alabama Express","dam":"Draconic Treasure","career_starts":21,"career_wins":11,"career_placings":7,"total_prizemoney_aud":4217150,"winning_distances_m":[1312,1400,1600,2000,2400,2500],"source":"https://www.racingandsports.com.au/thoroughbred/horse/treasurethe-moment/2176082"}
+  },
+  "rating_corrections":{
+    "Treasurethe Moment":{"value":124,"rating_system":"TIMEFORM","status":"EXPLICIT_TIMEFORM_NOT_RAS","evidence":"R&S trainer profile explicitly labels Treasurethe Moment Timeform Rating 124","source":"https://www.racingandsports.co.uk/thoroughbred/trainer/matt-laurie-12412","canonical_action":"REMOVE_OR_QUARANTINE_ANY_124_VALUE_PREVIOUSLY_TREATED_AS_RAS_PEAK_UNLESS_SEPARATE_EXPLICIT_RAS_EVIDENCE_IS_FOUND"}
+  },
+  "unresolved_from_this_pass":["Floating","Kings Valley","Klondike","Newlook","Sir Chartwell","Sons And Lovers","Yellow Jersey","Aethelflaed","Jenni Multabella"],
+  "notes":"Search results were only promoted where identity evidence was adequate. Same-name or weak matches remain unresolved."
+}
