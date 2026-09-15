@@ -10,6 +10,7 @@
     "leadups.js",
     "timeform-form.js",
     "private-timeform-local.js",
+    "private-pfr-autoload.js",
     "timeform-pending-guard.js",
     "form-completion-audit.js",
     "private-timeform-audit.js",
@@ -1023,7 +1024,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "28 files passed node --check"
+      "detail": "29 files passed node --check"
     }
   ],
   "pass": true,
