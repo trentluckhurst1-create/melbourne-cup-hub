@@ -16,6 +16,7 @@
     "private-timeform-audit.js",
     "public-form-ratings.js",
     "private-pfr-engine.js",
+    "pfr-projection-v2.js",
     "ratings-rankings.js",
     "international-raiders.js",
     "intelligence-matrix.js",
@@ -1025,7 +1026,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "30 files passed node --check"
+      "detail": "31 files passed node --check"
     }
   ],
   "pass": true,
