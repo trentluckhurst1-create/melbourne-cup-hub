@@ -6,6 +6,7 @@
     "evolve.js",
     "enhancements.js",
     "trainer-bases.js",
+    "training-base-complete.js",
     "projected-field.js",
     "coverage-audit.js",
     "leadups.js",
@@ -1034,7 +1035,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "39 files passed node --check"
+      "detail": "40 files passed node --check"
     }
   ],
   "pass": true,
