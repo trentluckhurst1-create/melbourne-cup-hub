@@ -18,6 +18,7 @@
     "private-pfr-engine.js",
     "pfr-projection-v2.js",
     "universe-contract.js",
+    "pfr-public-mode-fix.js",
     "ratings-rankings.js",
     "international-raiders.js",
     "intelligence-matrix.js",
@@ -1029,7 +1030,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "34 files passed node --check"
+      "detail": "35 files passed node --check"
     }
   ],
   "pass": true,
