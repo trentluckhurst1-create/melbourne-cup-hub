@@ -1,0 +1,1235 @@
+{
+  "snapshotDate": "2026-09-15",
+  "definition": "Complete 101-horse best-available training-base registry. HORSE_SPECIFIC_CURRENT means the current preparation base has direct horse-specific evidence. TRAINER_OPERATION_BASE is a transparent fallback to the verified trainer operation base and must not be represented as proof that the horse is physically at that yard.",
+  "policy": {
+    "universe": 101,
+    "noBlankHorseBase": true,
+    "noFalseHorseSpecificClaim": true,
+    "horseSpecificEvidencePreferred": true
+  },
+  "coverage": {
+    "nominees": 101,
+    "baseDisplayed": 101,
+    "horseSpecificCurrentVerified": 14,
+    "trainerOperationFallback": 87
+  },
+  "bases": {
+    "Aeliana": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Aethelflaed": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Matthew Smith — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Aethelwulf": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Matthew Smith — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Age Of Sail": {
+      "trainingBase": "Newcastle, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Kris Lees — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Amelia Earhart": {
+      "trainingBase": "Ballydoyle, County Tipperary",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Aidan O’Brien — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Asterix": {
+      "trainingBase": "Rosehill / Sydney, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Chris Waller — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC",
+        "Gold Coast, QLD"
+      ]
+    },
+    "Athabascan": {
+      "trainingBase": "Randwick, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: John O’Shea & Tom Charlton — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Barnavara": {
+      "trainingBase": "Rosehill / Sydney, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Chris Waller — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC",
+        "Gold Coast, QLD"
+      ]
+    },
+    "Bella Montagna": {
+      "trainingBase": "Tulloch Lodge / Randwick, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Gai Waterhouse & Adrian Bott — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC"
+      ]
+    },
+    "Birdman": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Campaldino": {
+      "trainingBase": "Tulloch Lodge / Randwick, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Gai Waterhouse & Adrian Bott — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC"
+      ]
+    },
+    "Causeway": {
+      "trainingBase": "Ballydoyle, County Tipperary",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Aidan O’Brien — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Changingoftheguard": {
+      "trainingBase": "Newcastle, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Kris Lees — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Christmas Day": {
+      "trainingBase": "Ballydoyle, County Tipperary",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Aidan O’Brien — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Constitution Hill": {
+      "trainingBase": "Seven Barrows, Lambourn, Berkshire",
+      "stateCountry": "United Kingdom",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Nicky Henderson — Lambourn Trainers Association",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Darkbonee": {
+      "trainingBase": "Warrnambool, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Symon Wilde — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC"
+      ]
+    },
+    "Deakin": {
+      "trainingBase": "Pakenham, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Phillip & Tommy Stokes — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Morphettville, SA"
+      ]
+    },
+    "Defiantly": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Don Diego De Vega": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Annabel & Rob Archibald — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Scone, NSW"
+      ]
+    },
+    "Enfjaar": {
+      "trainingBase": "Carlburg Stables, Newmarket, Suffolk",
+      "stateCountry": "United Kingdom",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Roger Varian — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Floating": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Matthew Smith — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Future History": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Gregory Hickman — Racing NSW",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Golden Century": {
+      "trainingBase": "Rosehill / Sydney, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Chris Waller — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC",
+        "Gold Coast, QLD"
+      ]
+    },
+    "Goodie Two Shoes": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Grand Pierro": {
+      "trainingBase": "Mornington / Tuerong, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Jason Warren — Official stable website / Racing NSW",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Bass, VIC"
+      ]
+    },
+    "Green Spaces": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Bjorn Baker — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Half Yours": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders / McEvoy Flemington barn reporting",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Highland Bling": {
+      "trainingBase": "Pakenham",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "OTI Racing current horse profile / Breednet - Phillip & Tommy Stokes, Pakenham",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Highwayman": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Hopewell Rock": {
+      "trainingBase": "Craven House Stables, Newmarket, Suffolk",
+      "stateCountry": "United Kingdom",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: George Boughey — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "James J Braddock": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Jenni Multabella": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Lloyd Kennewell — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Jennivamoose": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ciaron Maher — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC",
+        "Fingal, VIC",
+        "Pakenham, VIC",
+        "Bobs Farm / Anna Bay, NSW",
+        "Crown Lodge / Sydney, NSW"
+      ]
+    },
+    "Johnich": {
+      "trainingBase": "Mornington / Tuerong, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Jason Warren — Official stable website / Racing NSW",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Bass, VIC"
+      ]
+    },
+    "Juja Kibo": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ciaron Maher — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC",
+        "Fingal, VIC",
+        "Pakenham, VIC",
+        "Bobs Farm / Anna Bay, NSW",
+        "Crown Lodge / Sydney, NSW"
+      ]
+    },
+    "King Pedro": {
+      "trainingBase": "Randwick",
+      "stateCountry": "NSW, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "OTI Racing 12 Aug 2026 spring update - King Pedro back in work at Randwick",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Kings Valley": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ciaron Maher — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC",
+        "Fingal, VIC",
+        "Pakenham, VIC",
+        "Bobs Farm / Anna Bay, NSW",
+        "Crown Lodge / Sydney, NSW"
+      ]
+    },
+    "Kizlyar": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Klondike": {
+      "trainingBase": "Randwick, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: John O’Shea & Tom Charlton — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Knight’s Choice": {
+      "trainingBase": "Macedon Lodge, Mount Macedon, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: John Symons & Sheila Laxon — 2026 permanent-base reporting",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Sunshine Coast, QLD"
+      ]
+    },
+    "Land Legend": {
+      "trainingBase": "Cranbourne",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Racing Australia 2026 Cranbourne jump-out records - Land Legend for Ciaron Maher",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Light Infantry Man": {
+      "trainingBase": "Cranbourne",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Litzdeel": {
+      "trainingBase": "Flemington, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Danny O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "13th Beach / Barwon Heads, VIC",
+        "Geelong, VIC"
+      ]
+    },
+    "Machine Gun Gracie": {
+      "trainingBase": "Lindsay Park, Euroa, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ben, Will & JD Hayes — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC"
+      ]
+    },
+    "Male Model": {
+      "trainingBase": "Ballarat, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: John Thom — Ballarat trainer directory",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Manzor Blue": {
+      "trainingBase": "Awapuni, Palmerston North",
+      "stateCountry": "New Zealand",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Lisa Latta — LOVERACING.NZ / stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Middle Earth": {
+      "trainingBase": "Cranbourne",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Breednet current horse profile - trainer C Maher, Cranbourne",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Mr Monaco": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ciaron Maher — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC",
+        "Fingal, VIC",
+        "Pakenham, VIC",
+        "Bobs Farm / Anna Bay, NSW",
+        "Crown Lodge / Sydney, NSW"
+      ]
+    },
+    "Nearco Frod": {
+      "trainingBase": "Ballarat, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Tony & Calvin McEvoy — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC"
+      ]
+    },
+    "Newlook": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Trent Busuttin & Natalie Young — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Nil Bua Gan Dua": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Ohope Wins": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Okita Soushi": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ciaron Maher — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC",
+        "Fingal, VIC",
+        "Pakenham, VIC",
+        "Bobs Farm / Anna Bay, NSW",
+        "Crown Lodge / Sydney, NSW"
+      ]
+    },
+    "Omni Man": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Onesmoothoperator": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Tim Fitzsimmons — Current Australian operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Piazza San Marco": {
+      "trainingBase": "Ballydoyle, County Tipperary",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Aidan O’Brien — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Pierre Bonnard": {
+      "trainingBase": "Ballydoyle, County Tipperary",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Aidan O’Brien — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Piggyback": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ciaron Maher — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC",
+        "Fingal, VIC",
+        "Pakenham, VIC",
+        "Bobs Farm / Anna Bay, NSW",
+        "Crown Lodge / Sydney, NSW"
+      ]
+    },
+    "Pinhole": {
+      "trainingBase": "Rosehill / Sydney, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Chris Waller — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC",
+        "Gold Coast, QLD"
+      ]
+    },
+    "Point Of Law": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ciaron Maher — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC",
+        "Fingal, VIC",
+        "Pakenham, VIC",
+        "Bobs Farm / Anna Bay, NSW",
+        "Crown Lodge / Sydney, NSW"
+      ]
+    },
+    "Portland": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Matthew Smith — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Pounding": {
+      "trainingBase": "Pakenham, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Peter G Moody & Katherine Coleman — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "River Of Stars": {
+      "trainingBase": "Rosehill / Sydney, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Chris Waller — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC",
+        "Gold Coast, QLD"
+      ]
+    },
+    "Royal Supremacy": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ciaron Maher — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC",
+        "Fingal, VIC",
+        "Pakenham, VIC",
+        "Bobs Farm / Anna Bay, NSW",
+        "Crown Lodge / Sydney, NSW"
+      ]
+    },
+    "Saint George": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ciaron Maher — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Ballarat, VIC",
+        "Fingal, VIC",
+        "Pakenham, VIC",
+        "Bobs Farm / Anna Bay, NSW",
+        "Crown Lodge / Sydney, NSW"
+      ]
+    },
+    "Sam Hawkens": {
+      "trainingBase": "Randwick, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: John O’Shea & Tom Charlton — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Sapphire Siren": {
+      "trainingBase": "Pakenham, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Bill Papazaharoudakis — Trainer licensing/public race data",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "She’s A Hustler": {
+      "trainingBase": "Cranbourne",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 Crown Makybe Diva Stakes contenders / 11 Sep spring report",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Shockletz": {
+      "trainingBase": "Cranbourne",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Breednet current horse profile / Racing NSW current form - Shockletz, Ciaron Maher, Cranbourne",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Sir Chartwell": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Annabel & Rob Archibald — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Scone, NSW"
+      ]
+    },
+    "Small Fry": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "So You Are": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Bjorn Baker — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Sons And Lovers": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Soul Of Spain": {
+      "trainingBase": "Rosehill / Sydney, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Chris Waller — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC",
+        "Gold Coast, QLD"
+      ]
+    },
+    "Soulcombe": {
+      "trainingBase": "Flemington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Racing.com 13 Apr 2026 - owner Ozzie Kheir confirmed Soulcombe back with Chris Waller at Flemington; subsequent 29 Aug race return confirms active campaign",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Starford": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Starzintheireyes": {
+      "trainingBase": "Randwick, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: John O’Shea & Tom Charlton — Current",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Stinger Glass": {
+      "trainingBase": "Ritto Training Center, Shiga",
+      "stateCountry": "Japan",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Yasuo Tomomichi — JRA training-centre operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Storm Leopard": {
+      "trainingBase": "Lindsay Park, Euroa, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Ben, Will & JD Hayes — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC"
+      ]
+    },
+    "Strictly Business": {
+      "trainingBase": "Miners Rest / Ballarat, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Thomas Carberry — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Suffolk Star": {
+      "trainingBase": "Horsham, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Paul Preusker — Racing NSW / Victorian trainer data",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Tajanis": {
+      "trainingBase": "Pakenham, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Charlotte Littlefield — Public trainer directory",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Tarvue": {
+      "trainingBase": "Pakenham, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: John Sadler — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Tawny Port": {
+      "trainingBase": "Belmont Park, Elmont, New York",
+      "stateCountry": "United States",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Miguel Clement — Official Clement Racing website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Payson Park, Indiantown, Florida",
+        "Saratoga Race Course, New York"
+      ]
+    },
+    "The Euphrates": {
+      "trainingBase": "Tulloch Lodge / Randwick, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Gai Waterhouse & Adrian Bott — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC"
+      ]
+    },
+    "Thebudgiesmugla": {
+      "trainingBase": "Warwick Farm, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Bjorn Baker — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Think Giant": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Mick Price & Michael Kent (Jnr) — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Warrnambool, VIC"
+      ]
+    },
+    "Torranzino": {
+      "trainingBase": "Horsham, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Paul Preusker — Racing NSW / Victorian trainer data",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Treasurethe Moment": {
+      "trainingBase": "Mornington",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Victoria Racing Club - 2026 All-Star Mile contenders / current Matt Laurie Mornington stable listing",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Trustyourinstinct": {
+      "trainingBase": "Carriganóg Racing, Owning Hill near Piltown, County Kilkenny",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Joseph O’Brien — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Valiant King": {
+      "trainingBase": "Rosehill / Sydney, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Chris Waller — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC",
+        "Gold Coast, QLD"
+      ]
+    },
+    "Vauban": {
+      "trainingBase": "Tulloch Lodge / Randwick, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Gai Waterhouse & Adrian Bott — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC"
+      ]
+    },
+    "Vegas Jack": {
+      "trainingBase": "Spreyton, TAS",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Craig Conron — Current training operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Wigmore": {
+      "trainingBase": "Pakenham, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Phillip & Tommy Stokes — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Morphettville, SA"
+      ]
+    },
+    "Winday": {
+      "trainingBase": "Bagenalstown, County Carlow",
+      "stateCountry": "Ireland",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Emmet Mullins — Current Racing Post base + Sep 2026 relocation reporting",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Coolcullen yard, Carlow/Kilkenny border — move planned for 2027"
+      ]
+    },
+    "Wine Dark Sea": {
+      "trainingBase": "Beckhampton House, Wiltshire",
+      "stateCountry": "United Kingdom",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Harry Charlton — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Wolfgang": {
+      "trainingBase": "Matamata",
+      "stateCountry": "New Zealand",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Peter McKay — LOVERACING.NZ",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    },
+    "Wootton Verni": {
+      "trainingBase": "Rosehill / Sydney, NSW",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Chris Waller — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC",
+        "Gold Coast, QLD"
+      ]
+    },
+    "Yellow Jersey": {
+      "trainingBase": "Ballarat, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Tony & Calvin McEvoy — Current multi-base operation",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": [
+        "Flemington, VIC"
+      ]
+    },
+    "Zahrann": {
+      "trainingBase": "Cranbourne",
+      "stateCountry": "VIC, Australia",
+      "verifiedDate": "2026-09-13",
+      "source": "Racing NSW current form - Zahrann listed (Cranbourne) for Ciaron Maher on 29 Aug 2026",
+      "confidence": "Verified horse-specific",
+      "basis": "HORSE_SPECIFIC_CURRENT",
+      "horseSpecificCurrentVerified": true,
+      "trainerOperationFallback": false
+    },
+    "Zakouma": {
+      "trainingBase": "Cranbourne, VIC",
+      "stateCountry": "Australia",
+      "verifiedDate": "2026-09-15",
+      "source": "Trainer operation registry: Grahame Begg — Official stable website",
+      "confidence": "Best available trainer-operation base; horse-specific current yard not separately verified",
+      "basis": "TRAINER_OPERATION_BASE",
+      "horseSpecificCurrentVerified": false,
+      "trainerOperationFallback": true,
+      "otherTrainerBases": []
+    }
+  }
+}
