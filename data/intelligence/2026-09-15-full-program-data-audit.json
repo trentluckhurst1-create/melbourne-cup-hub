@@ -40,9 +40,9 @@
       "pct": 100.0
     },
     "horseSpecificTrainingBaseVerified": {
-      "count": 77,
+      "count": 78,
       "total": 101,
-      "pct": 76.24
+      "pct": 77.23
     },
     "trainerOperationBaseVerified": {
       "count": 101,
@@ -74,7 +74,7 @@
       "total": 101
     },
     "runtimeTrainingBaseEvidence": {
-      "count": 68,
+      "count": 69,
       "total": 101
     }
   },
@@ -91,7 +91,6 @@
       "Constitution Hill",
       "Defiantly",
       "Don Diego De Vega",
-      "Enfjaar",
       "Goodie Two Shoes",
       "Green Spaces",
       "Highwayman",
@@ -633,9 +632,9 @@
       "weightModel": true,
       "trainingBase": "Carlburg Stables, Newmarket, Suffolk",
       "trainingBaseAvailable": true,
-      "horseSpecificTrainingBaseVerified": false,
-      "trainingBaseBasis": "TRAINER_OPERATION_BASE",
-      "runtimeTrainingBaseEvidence": false,
+      "horseSpecificTrainingBaseVerified": true,
+      "trainingBaseBasis": "HORSE_SPECIFIC_CURRENT_RUNTIME_OVERLAY",
+      "runtimeTrainingBaseEvidence": true,
       "trainerOperationBase": "Carlburg Stables, Newmarket, Suffolk",
       "trainerOperationBaseVerified": true,
       "silkStatus": "partial",
@@ -1076,7 +1075,7 @@
       "horseSpecificTrainingBaseVerified": false,
       "trainingBaseBasis": "TRAINER_OPERATION_BASE",
       "runtimeTrainingBaseEvidence": false,
-      "trainerOperationBase": "Macedon Lodge, Mount Macedon, VIC",
+      "trainerOperationBase": "Ballarat, VIC",
       "trainerOperationBaseVerified": true,
       "silkStatus": "exact",
       "silkPresent": true,
