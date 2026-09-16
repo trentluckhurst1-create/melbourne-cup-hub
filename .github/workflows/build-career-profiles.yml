@@ -1,0 +1,33 @@
+name: build full career profiles
+on:
+  push:
+    paths:
+      - 'scripts/collect_career_profiles.py'
+      - '.github/workflows/build-career-profiles.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/collect_career_profiles.py
+      - name: Commit full-career data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/profiles/2026-09-17-public-full-career.json data/profiles/2026-09-17-public-full-career-audit.json
+          if git diff --cached --quiet; then
+            echo "No career profile changes"
+          else
+            git commit -m "Populate 101-horse full-career profile dataset"
+            git pull --rebase origin main
+            git push origin main
+          fi
