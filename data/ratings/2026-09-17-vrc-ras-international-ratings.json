@@ -1,0 +1,50 @@
+{
+  "snapshotDate": "2026-09-17",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "ratingSystem": "Racing & Sports peak rating",
+  "fieldSemantics": "Explicitly labelled RAS rating by VRC; not Timeform, not official handicap rating, not inferred",
+  "source": {
+    "publisher": "Victoria Racing Club",
+    "title": "Lexus Melbourne Cup: Rating the Internationals",
+    "url": "https://www.vrc.com.au/latest-news/lexus-melbourne-cup-rating-the-internationals/",
+    "accessedDate": "2026-09-17"
+  },
+  "identityPolicy": {
+    "canonicalUniverse": "data/nominations/2026-09-01.json",
+    "canonicalSpellingWinsOnConflict": true,
+    "note": "VRC article renders Amelia Earheart; canonical official nomination ledger is Amelia Earhart. Rating retained against canonical Amelia Earhart with source spelling recorded, rather than creating a second identity."
+  },
+  "ratings": [
+    {"horse":"Christmas Day","rasPeakRating":123},
+    {"horse":"Defiantly","rasPeakRating":121},
+    {"horse":"Pierre Bonnard","rasPeakRating":120},
+    {"horse":"Enfjaar","rasPeakRating":119},
+    {"horse":"Causeway","rasPeakRating":118},
+    {"horse":"Hopewell Rock","rasPeakRating":117},
+    {"horse":"Stinger Glass","rasPeakRating":117},
+    {"horse":"Trustyourinstinct","rasPeakRating":117},
+    {"horse":"Wine Dark Sea","rasPeakRating":117},
+    {"horse":"Starford","rasPeakRating":116},
+    {"horse":"Tawny Port","rasPeakRating":116},
+    {"horse":"Goodie Two Shoes","rasPeakRating":114},
+    {"horse":"James J Braddock","rasPeakRating":114},
+    {"horse":"Small Fry","rasPeakRating":113},
+    {"horse":"Constitution Hill","rasPeakRating":111},
+    {"horse":"Omni Man","rasPeakRating":111},
+    {"horse":"Kizlyar","rasPeakRating":109},
+    {"horse":"Amelia Earhart","sourceHorseSpelling":"Amelia Earheart","rasPeakRating":108},
+    {"horse":"Nil Bua Gan Dua","rasPeakRating":108},
+    {"horse":"Highwayman","rasPeakRating":107},
+    {"horse":"Piazza San Marco","rasPeakRating":104},
+    {"horse":"Winday","rasPeakRating":88}
+  ],
+  "coverage": {
+    "ratingsCaptured": 22,
+    "articleContext": "VRC ranks 2026 Melbourne Cup internationals by peak RAS rating",
+    "missingRatingsAreNotInferred": true
+  },
+  "separation": {
+    "timeform": "SEPARATE_DATASET_ONLY",
+    "officialHandicapRating": "SEPARATE_FIELD_ONLY"
+  }
+}
