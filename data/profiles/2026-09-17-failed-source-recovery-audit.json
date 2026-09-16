@@ -1,18 +1,19 @@
 {
-  "snapshotDate": "2026-09-17",
-  "type": "failed-source-career-recovery-audit",
-  "originalFailedCount": 25,
-  "recoveredCount": 25,
-  "unresolvedCount": 0,
-  "status": "COMPLETE",
-  "rule": "A failed RaceHub request is an acquisition failure only; no horse is assigned a zero-start record. Full-career evidence is reacquired from alternate public/official/subscriber evidence, with Flat and jumps separated where applicable.",
-  "horses": [
-    "Amelia Earhart","Causeway","Christmas Day","Constitution Hill","Enfjaar","Goodie Two Shoes","Highwayman","Hopewell Rock","James J Braddock","Kizlyar","Knight's Choice","Nil Bua Gan Dua","Onesmoothoperator","Piazza San Marco","Pierre Bonnard","Point Of Law","She's A Hustler","Small Fry","Sons And Lovers","Starford","Stinger Glass","Tawny Port","Trustyourinstinct","Winday","Wine Dark Sea"
-  ],
-  "integrityNotes": [
-    "Point Of Law is locked to the user-supplied Timeform profile: 4 Flat starts, 2 wins, 1 second, Timeform master rating 109, trainer Harry Eustace.",
-    "Goodie Two Shoes is now code-separated: 16 Flat starts/7 wins and 7 jumps starts/1 win; unproven second/third allocation between codes is intentionally omitted.",
+  "snapshotDate":"2026-09-17",
+  "type":"failed-source-career-recovery-audit",
+  "originalFailedCount":25,
+  "recoveredCount":25,
+  "unresolvedAcquisitionCount":0,
+  "verificationPendingCount":9,
+  "status":"PROVISIONAL_VERIFICATION_PENDING",
+  "rule":"A failed public collector request is an acquisition failure only; no horse is assigned a zero-start record. Alternate evidence may recover the record, but provisional code splits or non-official totals remain flagged until independently verified. Subscriber-only numerical ratings are never published in this public audit.",
+  "horses":["Amelia Earhart","Causeway","Christmas Day","Constitution Hill","Enfjaar","Goodie Two Shoes","Highwayman","Hopewell Rock","James J Braddock","Kizlyar","Knight's Choice","Nil Bua Gan Dua","Onesmoothoperator","Piazza San Marco","Pierre Bonnard","Point Of Law","She's A Hustler","Small Fry","Sons And Lovers","Starford","Stinger Glass","Tawny Port","Trustyourinstinct","Winday","Wine Dark Sea"],
+  "verificationPending":["Goodie Two Shoes","Knight's Choice","Onesmoothoperator","She's A Hustler","Tawny Port","Causeway","Constitution Hill","Pierre Bonnard","Winday"],
+  "integrityNotes":[
+    "Point Of Law public record is limited to career/result facts; subscriber-only numerical ratings have been removed from public data.",
+    "Goodie Two Shoes has an established all-code total, but its Flat/jumps allocation remains provisional pending row-level code verification.",
     "Constitution Hill, Small Fry, Trustyourinstinct, Winday and Goodie Two Shoes have jumps activity kept outside Melbourne Cup Flat career totals.",
-    "Same-name/identity-sensitive records are not merged without identity evidence."
+    "Same-name and identity-sensitive records are not merged without identity evidence.",
+    "Recovered means acquisition succeeded; it does not imply every recovered record has completed final independent verification."
   ]
 }
