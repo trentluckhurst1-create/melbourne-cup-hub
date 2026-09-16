@@ -1,0 +1,64 @@
+{
+  "schema":"melbourne_cup_hub.data_acquisition.tranche15.v1",
+  "as_of":"2026-09-16T14:46:29+10:00",
+  "policy":{"acquisition_only":true,"no_rating_inference":true,"timeform_separate":true,"source_conflicts_quarantined":true},
+  "verified_ras_evidence":{
+    "Light Infantry Man":{
+      "ras_rating":121,
+      "race":"Australian Cup",
+      "date":"2026-03-28",
+      "distance_m":2000,
+      "class":"Group 1",
+      "result":"1st",
+      "source":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-03-30/talking-points-saturday-28th-of-march-2026/711902",
+      "evidence":"Racing & Sports explicitly states Light Infantry Man ran to a RAS rating of 121 in the 2026 Australian Cup. This is run-specific evidence and does not replace the separately verified career peak 122 already stored."
+    },
+    "Half Yours":{
+      "ras_rating":122,
+      "race":"Melbourne Cup",
+      "date":"2025-11-04",
+      "distance_m":3200,
+      "class":"Group 1",
+      "result":"1st",
+      "source":"https://www.racingandsports.com.au/news/racing/insight-analysis/2025-10-11/talking-points-flemington-carnival-2025/704138",
+      "evidence":"Racing & Sports explicitly states Half Yours improved his RAS rating from 120 to 122 in the Melbourne Cup. The same article separately labels the Timeform figure as 120; the two scales remain separated."
+    }
+  },
+  "verified_2026_preparation_evidence":{
+    "Half Yours":{
+      "facts":[
+        "Tony McEvoy stated Half Yours would resume in the Group 1 All Aged Stakes at Randwick before a Queensland preparation.",
+        "The stated Queensland sequence was Hollindale Stakes 1800m, Doomben Cup 2000m and Q22 2200m.",
+        "The stated Melbourne spring plan was Makybe Diva Stakes 1600m, Turnbull Stakes 2000m, Cox Plate 2000m at Flemington, then Melbourne Cup 3200m if all went well.",
+        "A 22 May 2026 report documented mild right-hind lameness on pre-race veterinary inspection ahead of the Doomben Cup, requiring a further race-morning examination. This is retained as dated preparation evidence, not treated as a continuing injury diagnosis."
+      ],
+      "sources":[
+        "https://www.racingandsports.com.au/news/racing/news/2026-04-17/half-yours-begins-melbourne-cup-defence-at-royal-randwick/712954",
+        "https://www.racingandsports.com.au/news/racing/news/2026-05-22/half-yours-deemed-lame-by-qld-vets/715114"
+      ]
+    },
+    "Light Infantry Man":{
+      "facts":[
+        "Won the 2026 Australian Cup over 2000m at Flemington with an explicitly published RAS run rating of 121.",
+        "Racing & Sports' Australian Cup preview explicitly described his 2025 Australian Cup 122 as his career peak at that time."
+      ],
+      "sources":[
+        "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-03-30/talking-points-saturday-28th-of-march-2026/711902",
+        "https://www.racingandsports.com.au/news/racing/news/2026-03-26/real-punters-play-here-australian-cup/711607"
+      ]
+    }
+  },
+  "quarantine":[],
+  "coverage_ledger_check":{
+    "universe":101,
+    "identity_accounted":101,
+    "form_present":101,
+    "historical_coverage_ledger_file":"data/form/2026-09-15-form-coverage-ledger.json",
+    "historical_ledger_complete":58,
+    "historical_ledger_career_complete":2,
+    "historical_ledger_unresolved":41,
+    "latest_tranche_reviewed":"data/intelligence/2026-09-16-data-acquisition-tranche-14.json",
+    "status":"INCOMPLETE_PUBLIC_FIELD_LEVEL_ACQUISITION_CONTINUES",
+    "note":"The fixed 101-horse universe remains fully accounted for at identity/form-presence level, but required public field-level acquisition has not yet been exhausted or explicitly documented unavailable for every horse. No completion notification is warranted."
+  }
+}
