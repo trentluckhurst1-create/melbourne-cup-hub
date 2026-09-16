@@ -2,6 +2,8 @@
 // Purpose: use the richest already-loaded factual record before rendering a dash.
 // Never invents a value; it only merges canonical form, rated form and dated lead-up evidence.
 (function(){
+  // Shockletz won the 2026 Lexus Archer Stakes and is now ballot-exempt.
+  try{if(typeof GOLDEN_TICKETS!=='undefined')GOLDEN_TICKETS.add('Shockletz');}catch(_){}
   const nonEmpty=v=>v!==undefined&&v!==null&&v!==''&&v!=='—';
   const key=r=>`${String(r?.date||'').slice(0,10)}|${String(r?.race||r?.raceName||'').trim().toLowerCase()}|${String(r?.track||r?.venue||'').trim().toLowerCase()}`;
   const mergeRich=(a,b)=>{const out={...(a||{})};for(const [k,v] of Object.entries(b||{})){if(nonEmpty(v)||!nonEmpty(out[k]))out[k]=v;}return out;};
