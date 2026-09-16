@@ -1,0 +1,42 @@
+{
+  "schema": "melbourne_cup_hub.data_acquisition.tranche21.v1",
+  "as_of": "2026-09-17T03:47:05+10:00",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "policy": {
+    "acquisition_only": true,
+    "no_rating_inference": true,
+    "timeform_separate": true,
+    "source_conflicts_quarantined": true
+  },
+  "verified_public_evidence": {
+    "official_2026_melbourne_cup_weights": {
+      "status": "NOT_YET_PUBLIC_AT_CHECK_TIME",
+      "scheduled_release_local": "2026-09-17T12:00:00+10:00",
+      "checked_local": "2026-09-17T03:47:05+10:00",
+      "source": {
+        "publisher": "Victoria Racing Club",
+        "title": "101 nominations received for the 166th Lexus Melbourne Cup",
+        "url": "https://www.vrc.com.au/latest-news/101-nominations-received-for-the-166th-lexus-melbourne-cup/"
+      },
+      "acquisition_rule": "Do not populate official Cup weights before the scheduled public release. Re-check after 12:00 Melbourne time and ingest the published official table with horse-level provenance."
+    },
+    "nomination_universe_confirmation": {
+      "nominees": 101,
+      "locally_trained": 78,
+      "international": 23,
+      "source": "https://www.vrc.com.au/latest-news/101-nominations-received-for-the-166th-lexus-melbourne-cup/"
+    }
+  },
+  "coverage_ledger_check": {
+    "universe": 101,
+    "identity_accounted": 101,
+    "form_present": 101,
+    "historical_ledger_complete": 58,
+    "historical_ledger_career_complete": 2,
+    "historical_ledger_unresolved": 41,
+    "ras_peak_ratings_explicitly_captured": 22,
+    "official_2026_cup_weights_publicly_obtainable_at_check": 0,
+    "status": "INCOMPLETE_PUBLIC_FIELD_LEVEL_ACQUISITION_CONTINUES",
+    "note": "All 101 identities and at least some form are accounted for, but 41 historical ledgers remain unresolved and the official 2026 Cup weights were not yet released at this check. No missing rating or weight was inferred."
+  }
+}
