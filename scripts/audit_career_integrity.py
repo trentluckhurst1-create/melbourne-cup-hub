@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json,re
+import json,re,unicodedata
 from pathlib import Path
 from datetime import date
 ROOT=Path(__file__).resolve().parents[1]
@@ -9,19 +9,34 @@ VERIFIED=ROOT/'data/profiles/2026-09-17-career-stats.json'
 OUT=ROOT/'data/profiles/2026-09-17-career-integrity-audit.json'
 TODAY=date(2026,9,17)
 
-def norm(s): return re.sub(r'[^a-z0-9]','',str(s or '').lower())
+def norm(s):
+ s=unicodedata.normalize('NFKD',str(s or '')).replace('’',"'").replace('‘',"'")
+ return re.sub(r'[^a-z0-9]','',s.lower())
 def pos(v):
  m=re.match(r'\s*(\d+)',str(v or ''))
  return int(m.group(1)) if m else None
+def index_by_norm(d):
+ out={}
+ for k,v in d.items():
+  nk=norm(k)
+  if nk in out and out[nk][0]!=k:
+   raise ValueError(f'Normalized horse-name collision: {out[nk][0]!r} vs {k!r}')
+  out[nk]=(k,v)
+ return out
 
 def main():
  noms=json.loads(NOMS.read_text(encoding='utf-8'))
  names=[h['horse'] for h in noms['horses']]
- public=json.loads(PUBLIC.read_text(encoding='utf-8')).get('horses',{})
- verified=json.loads(VERIFIED.read_text(encoding='utf-8')).get('horses',{})
+ public_raw=json.loads(PUBLIC.read_text(encoding='utf-8')).get('horses',{})
+ verified_raw=json.loads(VERIFIED.read_text(encoding='utf-8')).get('horses',{})
+ public=index_by_norm(public_raw); verified=index_by_norm(verified_raw)
  rows=[]; critical=0; warning=0
+ identity_review={'aethelwulf','goldencentury','portland','pounding','saintgeorge','sapphiresiren','wolfgang','valiantking'}
  for name in names:
-  p=public.get(name,{}) or {}; v=verified.get(name,{}) or {}; runs=p.get('runs',[]) or []
+  nk=norm(name)
+  p=(public.get(nk) or (None,{}))[1] or {}
+  v=(verified.get(nk) or (None,{}))[1] or {}
+  runs=p.get('runs',[]) or []
   issues=[]; seen={}
   for i,r in enumerate(runs):
    d=r.get('date'); track=norm(r.get('track'))
@@ -45,15 +60,14 @@ def main():
   vc=v.get('career') or {}
   if vc and runs and isinstance(vc.get('starts'),int) and vc['starts']!=len(runs):
    issues.append({'severity':'WARNING','code':'VERIFIED_VS_PUBLIC_STARTS','verified':vc['starts'],'publicRuns':len(runs),'note':'May be a stale public snapshot; verified layer must take precedence.'})
-  # Known same-name / contamination risk requires manual identity confirmation before promotion.
-  if name in {'Aethelwulf','Golden Century','Portland','Pounding','Saint George','Sapphire Siren','Wolfgang','Valiant King'}:
+  if nk in identity_review and not v:
    issues.append({'severity':'WARNING','code':'IDENTITY_REVIEW_REQUIRED'})
   if not runs and not v: issues.append({'severity':'CRITICAL','code':'NO_CAREER_EVIDENCE'})
   sev='PASS'
   if any(x['severity']=='CRITICAL' for x in issues): sev='CRITICAL';critical+=1
   elif issues: sev='WARNING';warning+=1
   rows.append({'horse':name,'status':sev,'publicRuns':len(runs),'verifiedOverride':bool(v),'issues':issues})
- out={'snapshotDate':'2026-09-17','universe':len(names),'policy':'Recent-form/PFR windows are never career evidence. Verified/official career records override public baseline. Warnings require review before promotion; critical records must not be shown as verified career data.','summary':{'pass':len(names)-critical-warning,'warning':warning,'critical':critical},'rows':rows}
+ out={'snapshotDate':'2026-09-17','universe':len(names),'policy':'Recent-form/PFR windows are never career evidence. Horse-name joins are punctuation/Unicode normalized. Verified/official career records override public baseline. Warnings require review before promotion; critical records must not be shown as verified career data.','summary':{'pass':len(names)-critical-warning,'warning':warning,'critical':critical},'rows':rows}
  OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(json.dumps(out['summary']))
 if __name__=='__main__': main()
