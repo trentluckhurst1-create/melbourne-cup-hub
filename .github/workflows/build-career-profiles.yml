@@ -4,6 +4,8 @@ on:
     paths:
       - 'scripts/collect_career_profiles.py'
       - 'scripts/audit_career_integrity.py'
+      - 'scripts/audit_form_integrity.py'
+      - 'data/form/2026-09-15-unique-full-form.json'
       - 'data/profiles/2026-09-17-career-stats.json'
       - 'data/profiles/2026-09-17-identity-certified-career-overrides.json'
       - '.github/workflows/build-career-profiles.yml'
@@ -23,15 +25,16 @@ jobs:
       - run: pip install requests beautifulsoup4
       - run: python scripts/collect_career_profiles.py
       - run: python scripts/audit_career_integrity.py
-      - name: Commit full-career data and integrity audit
+      - run: python scripts/audit_form_integrity.py
+      - name: Commit career and form integrity outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/profiles/2026-09-17-public-full-career.json data/profiles/2026-09-17-public-full-career-audit.json data/profiles/2026-09-17-career-integrity-audit.json
+          git add data/profiles/2026-09-17-public-full-career.json data/profiles/2026-09-17-public-full-career-audit.json data/profiles/2026-09-17-career-integrity-audit.json data/form/2026-09-17-form-integrity-audit.json
           if git diff --cached --quiet; then
-            echo "No career profile changes"
+            echo "No integrity changes"
           else
-            git commit -m "Audit 101-horse full-career profile dataset"
+            git commit -m "Audit 101-horse career and recent-form datasets"
             git pull --rebase origin main
             git push origin main
           fi
