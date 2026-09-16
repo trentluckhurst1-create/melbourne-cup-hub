@@ -1,5 +1,5 @@
 {
-  "snapshotDate":"2026-09-13",
+  "snapshotDate":"2026-09-16",
   "definition":"Dated lead-up activity for official 2026 Melbourne Cup nominees. Results and plans are preserved as separate events rather than overwritten.",
   "events":[
     {"date":"2026-09-12","horse":"Shockletz","type":"Result","race":"Lexus Archer Stakes","track":"Flemington","distanceM":2500,"result":"1st","status":"Golden Ticket","note":"Won by 2.25 lengths and secured ballot exemption for the Melbourne Cup.","source":"Victoria Racing Club"},
@@ -21,6 +21,6 @@
     {"date":"2026-08-23","horse":"Defiantly","type":"Result","race":"Sumbe Prix Kergorlay","track":"Deauville","distanceM":3000,"result":"1st","status":"Golden Ticket","note":"Won the Group 2 Prix Kergorlay over 3000m by 5.5 lengths and secured a Melbourne Cup ballot exemption.","source":"Victoria Racing Club / Racing Post"},
     {"date":"2026-06-05","horse":"Tawny Port","type":"Result","race":"Belmont Gold Cup","track":"Saratoga","distanceM":3200,"result":"1st","status":"Golden Ticket","note":"Won the Grade 2 Belmont Gold Cup over two miles and earned a Melbourne Cup Golden Ticket.","source":"Victoria Racing Club"},
     {"date":"2026-05-16","horse":"Zakouma","type":"Result","race":"Lexus Andrew Ramsden","track":"Flemington","distanceM":2800,"result":"1st","status":"Golden Ticket","note":"Won the Listed Andrew Ramsden over 2800m at Flemington and secured ballot exemption.","source":"Victoria Racing Club"},
-    {"date":"2026-09-13","horse":"Trustyourinstinct","type":"Planned Start","race":"Comer Group International Irish St. Leger","track":"Curragh","distanceM":2816,"result":"Pending","status":"Declared","note":"Enters the Group 1 Irish St Leger off a Curragh Cup win over roughly 2800m; this is a major staying-class test for his Melbourne Cup profile.","source":"Racing.com / Racing Post"}
+    {"date":"2026-09-13","horse":"Trustyourinstinct","type":"Result","race":"Comer Group International Irish St. Leger","track":"Curragh","distanceM":2816,"going":"Good (Yielding In Places)","classGroup":"Group 1","fieldSize":7,"result":"4th","status":"Group 1","note":"Finished fourth in the Group 1 Irish St Leger at the Curragh.","source":"Racing TV / Racing Post"}
   ]
 }
