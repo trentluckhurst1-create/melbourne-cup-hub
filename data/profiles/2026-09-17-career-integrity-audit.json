@@ -3,9 +3,9 @@
   "universe": 101,
   "policy": "Recent-form/PFR windows are never career evidence. Unicode/punctuation-normalized joins are collision checked. Identity-certified overrides take precedence over verified records, which take precedence over broad public baseline. Informational stale-baseline differences do not fail a horse. Provisional records remain warnings until independent verification completes.",
   "summary": {
-    "pass": 89,
+    "pass": 92,
     "warning": 9,
-    "critical": 3,
+    "critical": 0,
     "provisionalRecords": 9,
     "identityCertifiedOverrides": 8
   },
@@ -363,17 +363,12 @@
     },
     {
       "horse": "Juja Kibo",
-      "status": "CRITICAL",
-      "publicRuns": 0,
+      "status": "PASS",
+      "publicRuns": 15,
       "verifiedOverride": false,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": null,
-      "issues": [
-        {
-          "severity": "CRITICAL",
-          "code": "NO_CAREER_EVIDENCE"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "King Pedro",
@@ -535,17 +530,12 @@
     },
     {
       "horse": "Okita Soushi",
-      "status": "CRITICAL",
-      "publicRuns": 0,
+      "status": "PASS",
+      "publicRuns": 20,
       "verifiedOverride": false,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": null,
-      "issues": [
-        {
-          "severity": "CRITICAL",
-          "code": "NO_CAREER_EVIDENCE"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Omni Man",
@@ -863,17 +853,12 @@
     },
     {
       "horse": "Tarvue",
-      "status": "CRITICAL",
-      "publicRuns": 0,
+      "status": "PASS",
+      "publicRuns": 22,
       "verifiedOverride": false,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": null,
-      "issues": [
-        {
-          "severity": "CRITICAL",
-          "code": "NO_CAREER_EVIDENCE"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Tawny Port",

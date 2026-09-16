@@ -7388,10 +7388,267 @@
       }
     },
     "Juja Kibo": {
-      "status": "REQUEST_ERROR",
+      "status": "OK",
+      "source": "RaceHub public form history",
       "sourceUrl": "https://racehub.com.au/horses/juja-kibo",
-      "runs": [],
-      "error": "ConnectionError"
+      "runs": [
+        {
+          "date": "2026-08-20",
+          "track": "Hawkesbury",
+          "distanceM": 1600,
+          "going": "SOFT6",
+          "classGroup": "Open",
+          "finish": "3rd of 11",
+          "weightCarried": "56kg",
+          "margin": "2.09L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2026-04-11",
+          "track": "Randwick",
+          "distanceM": 3200,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "9th of 14",
+          "weightCarried": "52kg",
+          "margin": "6.6L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2026-04-04",
+          "track": "Randwick",
+          "distanceM": 2600,
+          "going": "Soft(7)",
+          "classGroup": "Open",
+          "finish": "3rd of 11",
+          "weightCarried": "55.5kg",
+          "margin": "2.6L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2026-03-21",
+          "track": "Rosehill",
+          "distanceM": 2400,
+          "going": "Soft(6)",
+          "classGroup": "Open",
+          "finish": "3rd of 14",
+          "weightCarried": "55kg",
+          "margin": "0.3L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2026-03-07",
+          "track": "Randwick",
+          "distanceM": 2000,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "3rd of 9",
+          "weightCarried": "53.5kg",
+          "margin": "1.6L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2026-02-07",
+          "track": "Randwick",
+          "distanceM": 1600,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "9th of 15",
+          "weightCarried": "57kg",
+          "margin": "5.8L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2025-10-04",
+          "track": "Randwick",
+          "distanceM": 2400,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "3rd of 18",
+          "weightCarried": "50kg",
+          "margin": "1L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2025-08-23",
+          "track": "Randwick",
+          "distanceM": 2400,
+          "going": "Heavy(10)",
+          "classGroup": "BM78",
+          "finish": "6th of 12",
+          "weightCarried": "57.5kg",
+          "margin": "4.4L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2025-08-02",
+          "track": "Rosehill",
+          "distanceM": 2000,
+          "going": "Heavy(10)",
+          "classGroup": "BM78",
+          "finish": "1st of 9",
+          "weightCarried": "54.5kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2025-07-16",
+          "track": "Sandown-Hillside",
+          "distanceM": 1800,
+          "going": "Soft(5)",
+          "classGroup": "BM70",
+          "finish": "1st of 14",
+          "weightCarried": "58kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2025-06-22",
+          "track": "Cranbourne",
+          "distanceM": 1600,
+          "going": "Good(4)",
+          "classGroup": "BM64",
+          "finish": "3rd of 10",
+          "weightCarried": "61kg",
+          "margin": "1.2L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2025-05-30",
+          "track": "Bendigo",
+          "distanceM": 1400,
+          "going": "Good(4)",
+          "classGroup": "BM64",
+          "finish": "2nd of 10",
+          "weightCarried": "61kg",
+          "margin": "0.1L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2024-12-18",
+          "track": "Caulfield Heath",
+          "distanceM": 1500,
+          "going": "Good(3)",
+          "classGroup": "BM64",
+          "finish": "6th of 9",
+          "weightCarried": "61kg",
+          "margin": "2.5L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2024-06-24",
+          "track": "Ire - Ballinrobe",
+          "distanceM": 1911,
+          "going": "Good",
+          "classGroup": "Mdn",
+          "finish": "1st of 12",
+          "weightCarried": "61kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        },
+        {
+          "date": "2024-06-17",
+          "track": "Ire - Gowran Park",
+          "distanceM": 1609,
+          "going": "Good",
+          "classGroup": "Mdn",
+          "finish": "9th of 14",
+          "weightCarried": "61kg",
+          "margin": "9.8L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+        }
+      ],
+      "career": {
+        "starts": 15,
+        "wins": 3,
+        "seconds": 1,
+        "thirds": 6,
+        "places": 10
+      },
+      "going": {
+        "Good": {
+          "starts": 9,
+          "wins": 1,
+          "seconds": 1,
+          "thirds": 3,
+          "places": 5
+        },
+        "Soft": {
+          "starts": 4,
+          "wins": 1,
+          "seconds": 0,
+          "thirds": 3,
+          "places": 4
+        },
+        "Heavy": {
+          "starts": 2,
+          "wins": 1,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 1
+        }
+      },
+      "distance": {
+        "<1600m": {
+          "starts": 2,
+          "wins": 0,
+          "seconds": 1,
+          "thirds": 0,
+          "places": 1
+        },
+        "1600-1999m": {
+          "starts": 6,
+          "wins": 2,
+          "seconds": 0,
+          "thirds": 2,
+          "places": 4
+        },
+        "2000-2399m": {
+          "starts": 2,
+          "wins": 1,
+          "seconds": 0,
+          "thirds": 1,
+          "places": 2
+        },
+        "2400-2799m": {
+          "starts": 4,
+          "wins": 0,
+          "seconds": 0,
+          "thirds": 3,
+          "places": 3
+        },
+        "2800m+": {
+          "starts": 1,
+          "wins": 0,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 0
+        }
+      },
+      "class": {
+        "Other": {
+          "starts": 15,
+          "wins": 3,
+          "seconds": 1,
+          "thirds": 6,
+          "places": 10
+        }
+      }
     },
     "King Pedro": {
       "status": "OK",
@@ -11518,10 +11775,334 @@
       }
     },
     "Okita Soushi": {
-      "status": "REQUEST_ERROR",
+      "status": "OK",
+      "source": "RaceHub public form history",
       "sourceUrl": "https://racehub.com.au/horses/okita-soushi",
-      "runs": [],
-      "error": "ConnectionError"
+      "runs": [
+        {
+          "date": "2026-08-29",
+          "track": "Caulfield",
+          "distanceM": 1700,
+          "going": "Soft7",
+          "classGroup": "Open",
+          "finish": "16th of 16",
+          "weightCarried": "58.5kg",
+          "margin": "28.36L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2025-08-23",
+          "track": "Moonee Valley",
+          "distanceM": 1523,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "10th of 10",
+          "weightCarried": "61kg",
+          "margin": "17.4L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2025-01-18",
+          "track": "Flemington",
+          "distanceM": 2000,
+          "going": "Good(3)",
+          "classGroup": "BM100",
+          "finish": "10th of 14",
+          "weightCarried": "60kg",
+          "margin": "4.6L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2024-11-05",
+          "track": "Flemington",
+          "distanceM": 3200,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "3rd of 23",
+          "weightCarried": "51kg",
+          "margin": "0.9L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2024-10-25",
+          "track": "Moonee Valley",
+          "distanceM": 2500,
+          "going": "Good(3)",
+          "classGroup": "Open",
+          "finish": "1st of 10",
+          "weightCarried": "55kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2024-10-12",
+          "track": "Caulfield",
+          "distanceM": 2400,
+          "going": "Good(3)",
+          "classGroup": "Open",
+          "finish": "2nd of 15",
+          "weightCarried": "54.5kg",
+          "margin": "1.3L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2024-08-31",
+          "track": "Caulfield",
+          "distanceM": 2000,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "8th of 10",
+          "weightCarried": "58.5kg",
+          "margin": "11.7L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2023-11-07",
+          "track": "Flemington",
+          "distanceM": 3200,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "11th of 23",
+          "weightCarried": "51.5kg",
+          "margin": "8.4L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2023-10-21",
+          "track": "Caulfield",
+          "distanceM": 2400,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "12th of 18",
+          "weightCarried": "51.5kg",
+          "margin": "9.9L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2023-08-20",
+          "track": "Ire - Curragh",
+          "distanceM": 2816,
+          "going": "Good",
+          "classGroup": "Open",
+          "finish": "3rd of 4",
+          "weightCarried": "61kg",
+          "margin": "6.5L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2023-06-23",
+          "track": "G B - Ascot",
+          "distanceM": 2414,
+          "going": "Good",
+          "classGroup": "RS105",
+          "finish": "1st of 18",
+          "weightCarried": "61kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2023-05-19",
+          "track": "Ire - Leopardstown",
+          "distanceM": 2816,
+          "going": "Good",
+          "classGroup": "Open",
+          "finish": "5th of 9",
+          "weightCarried": "59.5kg",
+          "margin": "3L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2023-02-24",
+          "track": "Ire - Dundalk",
+          "distanceM": 2149,
+          "going": "Synthetic",
+          "classGroup": "Open",
+          "finish": "1st of 6",
+          "weightCarried": "59.5kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2023-02-10",
+          "track": "Ire - Dundalk",
+          "distanceM": 3219,
+          "going": "Synthetic",
+          "classGroup": "Open",
+          "finish": "1st of 5",
+          "weightCarried": "61kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2022-08-20",
+          "track": "G B - York",
+          "distanceM": 2787,
+          "going": "Good(0)",
+          "classGroup": "Cls 2",
+          "finish": "15th of 20",
+          "weightCarried": "59.5kg",
+          "margin": "14.3L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2022-07-07",
+          "track": "Ire - Leopardstown",
+          "distanceM": 3018,
+          "going": "Good(0)",
+          "classGroup": "HiWgt",
+          "finish": "2nd of 7",
+          "weightCarried": "75kg",
+          "margin": "100L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2022-06-14",
+          "track": "G B - Ascot",
+          "distanceM": 2847,
+          "going": "Good(0)",
+          "classGroup": "RS105",
+          "finish": "3rd of 16",
+          "weightCarried": "62kg",
+          "margin": "2.1L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2022-05-21",
+          "track": "Ire - Curragh",
+          "distanceM": 2414,
+          "going": "Soft(0)",
+          "classGroup": "Open",
+          "finish": "2nd of 12",
+          "weightCarried": "60.5kg",
+          "margin": "3.5L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2021-07-22",
+          "track": "Ire - Leopardstown",
+          "distanceM": 2579,
+          "going": "Good(0)",
+          "classGroup": "Open",
+          "finish": "3rd of 3",
+          "weightCarried": "60.5kg",
+          "margin": "3.3L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        },
+        {
+          "date": "2021-06-11",
+          "track": "Ire - Fairyhouse",
+          "distanceM": 2414,
+          "going": "Firm(0)",
+          "classGroup": "Mdn",
+          "finish": "1st of 15",
+          "weightCarried": "60.5kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+        }
+      ],
+      "career": {
+        "starts": 20,
+        "wins": 5,
+        "seconds": 3,
+        "thirds": 4,
+        "places": 12
+      },
+      "going": {
+        "Fast": {
+          "starts": 1,
+          "wins": 1,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 1
+        },
+        "Good": {
+          "starts": 15,
+          "wins": 2,
+          "seconds": 2,
+          "thirds": 4,
+          "places": 8
+        },
+        "Soft": {
+          "starts": 2,
+          "wins": 0,
+          "seconds": 1,
+          "thirds": 0,
+          "places": 1
+        },
+        "Synthetic": {
+          "starts": 2,
+          "wins": 2,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 2
+        }
+      },
+      "distance": {
+        "<1600m": {
+          "starts": 1,
+          "wins": 0,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 0
+        },
+        "1600-1999m": {
+          "starts": 1,
+          "wins": 0,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 0
+        },
+        "2000-2399m": {
+          "starts": 3,
+          "wins": 1,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 1
+        },
+        "2400-2799m": {
+          "starts": 8,
+          "wins": 3,
+          "seconds": 2,
+          "thirds": 1,
+          "places": 6
+        },
+        "2800m+": {
+          "starts": 7,
+          "wins": 1,
+          "seconds": 1,
+          "thirds": 3,
+          "places": 5
+        }
+      },
+      "class": {
+        "Other": {
+          "starts": 20,
+          "wins": 5,
+          "seconds": 3,
+          "thirds": 4,
+          "places": 12
+        }
+      }
     },
     "Omni Man": {
       "status": "OK",
@@ -17226,10 +17807,344 @@
       }
     },
     "Tarvue": {
-      "status": "REQUEST_ERROR",
+      "status": "OK",
+      "source": "RaceHub public form history",
       "sourceUrl": "https://racehub.com.au/horses/tarvue",
-      "runs": [],
-      "error": "ConnectionError"
+      "runs": [
+        {
+          "date": "2026-08-29",
+          "track": "Caulfield",
+          "distanceM": 1400,
+          "going": "Soft(7)",
+          "classGroup": "BM78",
+          "finish": "12th of 12",
+          "weightCarried": "61kg",
+          "margin": "5.3L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2026-08-15",
+          "track": "Caulfield",
+          "distanceM": 1400,
+          "going": "Soft(6)",
+          "classGroup": "BM78",
+          "finish": "12th of 12",
+          "weightCarried": "61kg",
+          "margin": "7.9L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2026-03-06",
+          "track": "Pakenham",
+          "distanceM": 2500,
+          "going": "Good(4)",
+          "classGroup": "Open",
+          "finish": "6th of 7",
+          "weightCarried": "54kg",
+          "margin": "7.2L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2026-02-14",
+          "track": "Flemington",
+          "distanceM": 2000,
+          "going": "Good(4)",
+          "classGroup": "BM78",
+          "finish": "1st of 14",
+          "weightCarried": "54.5kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2026-01-31",
+          "track": "Caulfield",
+          "distanceM": 2000,
+          "going": "Good(4)",
+          "classGroup": "BM100",
+          "finish": "6th of 7",
+          "weightCarried": "53kg",
+          "margin": "3.8L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2026-01-17",
+          "track": "Flemington",
+          "distanceM": 2520,
+          "going": "Good(4)",
+          "classGroup": "BM78",
+          "finish": "2nd of 10",
+          "weightCarried": "54kg",
+          "margin": "0.2L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2026-01-10",
+          "track": "Flemington",
+          "distanceM": 1800,
+          "going": "Good(4)",
+          "classGroup": "BM78",
+          "finish": "1st of 9",
+          "weightCarried": "53kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2025-12-27",
+          "track": "Cranbourne",
+          "distanceM": 1600,
+          "going": "Good(4)",
+          "classGroup": "BM74",
+          "finish": "2nd of 10",
+          "weightCarried": "57kg",
+          "margin": "2.3L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2025-12-13",
+          "track": "Pakenham",
+          "distanceM": 1600,
+          "going": "Good(4)",
+          "classGroup": "BM78",
+          "finish": "7th of 11",
+          "weightCarried": "55.5kg",
+          "margin": "2.2L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2025-11-15",
+          "track": "Caulfield",
+          "distanceM": 1700,
+          "going": "Good(4)",
+          "classGroup": "BM74",
+          "finish": "11th of 11",
+          "weightCarried": "53kg",
+          "margin": "8.1L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2025-05-17",
+          "track": "Flemington",
+          "distanceM": 2800,
+          "going": "Soft(7)",
+          "classGroup": "Open",
+          "finish": "18th of 18",
+          "weightCarried": "56kg",
+          "margin": "52.5L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2025-05-08",
+          "track": "Pakenham",
+          "distanceM": 2000,
+          "going": "Good(4)",
+          "classGroup": "BM70",
+          "finish": "2nd of 11",
+          "weightCarried": "59kg",
+          "margin": "0.5L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2025-04-01",
+          "track": "Geelong",
+          "distanceM": 2460,
+          "going": "Good(3)",
+          "classGroup": "BM64",
+          "finish": "1st of 8",
+          "weightCarried": "58kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2025-03-12",
+          "track": "Sandown-Hillside",
+          "distanceM": 1800,
+          "going": "Soft(6)",
+          "classGroup": "BM64",
+          "finish": "7th of 9",
+          "weightCarried": "58.5kg",
+          "margin": "6.4L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2025-02-15",
+          "track": "Flemington",
+          "distanceM": 2000,
+          "going": "Good(4)",
+          "classGroup": "BM78",
+          "finish": "5th of 11",
+          "weightCarried": "54kg",
+          "margin": "4.2L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2025-01-17",
+          "track": "Pakenham",
+          "distanceM": 1600,
+          "going": "Good(4)",
+          "classGroup": "BM64",
+          "finish": "1st of 10",
+          "weightCarried": "55kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2024-12-22",
+          "track": "Sale",
+          "distanceM": 1400,
+          "going": "Good(4)",
+          "classGroup": "BM70",
+          "finish": "7th of 8",
+          "weightCarried": "54kg",
+          "margin": "3.1L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2024-04-23",
+          "track": "Sale",
+          "distanceM": 1717,
+          "going": "Good(4)",
+          "classGroup": "Mdn",
+          "finish": "1st of 11",
+          "weightCarried": "57kg",
+          "margin": "—",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2024-03-28",
+          "track": "Pakenham",
+          "distanceM": 1400,
+          "going": "Good(4)",
+          "classGroup": "Mdn",
+          "finish": "5th of 9",
+          "weightCarried": "57kg",
+          "margin": "6.3L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2023-12-14",
+          "track": "Caulfield",
+          "distanceM": 1600,
+          "going": "Good(4)",
+          "classGroup": "Mdn",
+          "finish": "4th of 9",
+          "weightCarried": "56kg",
+          "margin": "0.6L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2023-11-29",
+          "track": "Sandown-Lakeside",
+          "distanceM": 1500,
+          "going": "Soft(5)",
+          "classGroup": "Mdn",
+          "finish": "4th of 9",
+          "weightCarried": "53kg",
+          "margin": "7.45L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        },
+        {
+          "date": "2023-11-10",
+          "track": "Pakenham",
+          "distanceM": 1400,
+          "going": "Soft(5)",
+          "classGroup": "Mdn",
+          "finish": "4th of 9",
+          "weightCarried": "55kg",
+          "margin": "4.1L",
+          "source": "RaceHub public form history",
+          "sourceUrl": "https://racehub.com.au/horses/tarvue"
+        }
+      ],
+      "career": {
+        "starts": 22,
+        "wins": 5,
+        "seconds": 3,
+        "thirds": 0,
+        "places": 8
+      },
+      "going": {
+        "Good": {
+          "starts": 16,
+          "wins": 5,
+          "seconds": 3,
+          "thirds": 0,
+          "places": 8
+        },
+        "Soft": {
+          "starts": 6,
+          "wins": 0,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 0
+        }
+      },
+      "distance": {
+        "<1600m": {
+          "starts": 6,
+          "wins": 0,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 0
+        },
+        "1600-1999m": {
+          "starts": 8,
+          "wins": 3,
+          "seconds": 1,
+          "thirds": 0,
+          "places": 4
+        },
+        "2000-2399m": {
+          "starts": 4,
+          "wins": 1,
+          "seconds": 1,
+          "thirds": 0,
+          "places": 2
+        },
+        "2400-2799m": {
+          "starts": 3,
+          "wins": 1,
+          "seconds": 1,
+          "thirds": 0,
+          "places": 2
+        },
+        "2800m+": {
+          "starts": 1,
+          "wins": 0,
+          "seconds": 0,
+          "thirds": 0,
+          "places": 0
+        }
+      },
+      "class": {
+        "Other": {
+          "starts": 22,
+          "wins": 5,
+          "seconds": 3,
+          "thirds": 0,
+          "places": 8
+        }
+      }
     },
     "Tawny Port": {
       "status": "HTTP_404",

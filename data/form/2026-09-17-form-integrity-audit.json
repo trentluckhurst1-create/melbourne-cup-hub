@@ -2,10 +2,10 @@
   "snapshotDate": "2026-09-17",
   "universe": 101,
   "canonicalFile": "data/form/2026-09-15-unique-full-form.json",
-  "policy": "Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. Every nomination profile is audited for duplicate dates, repeated named races too close together, and possible copied performances sharing track/distance/finish within 14 days. Annual renewals remain valid distinct starts.",
+  "policy": "Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. Every nomination profile is audited for duplicate dates, repeated named races too close together, and strongly matching copied-row fingerprints. Track/distance/finish alone is not treated as a duplicate because legitimate consecutive performances can share those facts. Annual renewals remain valid distinct starts.",
   "summary": {
-    "pass": 98,
-    "warning": 3,
+    "pass": 99,
+    "warning": 2,
     "criticalHorses": 0,
     "globalCritical": false
   },
@@ -237,24 +237,10 @@
     },
     {
       "horse": "Jennivamoose",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "POSSIBLE_DUPLICATE_PERFORMANCE",
-          "run": 4,
-          "otherRun": 3,
-          "otherDate": "2025-08-23",
-          "date": "2025-08-09",
-          "daysApart": 14,
-          "race": "Donnellans The Tyremen",
-          "track": "Moonee Valley",
-          "distanceM": 2500,
-          "finish": "1st"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Johnich",

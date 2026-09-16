@@ -1,8 +1,8 @@
 {
   "snapshotDate": "2026-09-17",
   "universe": 101,
-  "profilesWithPublicCareerRuns": 73,
-  "profilesWithoutRuns": 28,
+  "profilesWithPublicCareerRuns": 76,
+  "profilesWithoutRuns": 25,
   "rows": [
     {
       "horse": "Aeliana",
@@ -210,8 +210,8 @@
     },
     {
       "horse": "Juja Kibo",
-      "status": "REQUEST_ERROR",
-      "careerRunsLoaded": 0,
+      "status": "OK",
+      "careerRunsLoaded": 15,
       "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
     },
     {
@@ -318,8 +318,8 @@
     },
     {
       "horse": "Okita Soushi",
-      "status": "REQUEST_ERROR",
-      "careerRunsLoaded": 0,
+      "status": "OK",
+      "careerRunsLoaded": 20,
       "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
     },
     {
@@ -498,8 +498,8 @@
     },
     {
       "horse": "Tarvue",
-      "status": "REQUEST_ERROR",
-      "careerRunsLoaded": 0,
+      "status": "OK",
+      "careerRunsLoaded": 22,
       "sourceUrl": "https://racehub.com.au/horses/tarvue"
     },
     {
