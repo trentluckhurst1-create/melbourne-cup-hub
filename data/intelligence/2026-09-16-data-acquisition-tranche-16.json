@@ -1,0 +1,126 @@
+{
+  "schema": "melbourne_cup_hub.data_acquisition.tranche16.v1",
+  "as_of": "2026-09-16T15:44:00+10:00",
+  "policy": {
+    "acquisition_only": true,
+    "no_rating_inference": true,
+    "timeform_separate": true,
+    "source_conflicts_quarantined": true
+  },
+  "verified_public_evidence": {
+    "Age Of Sail": {
+      "identity": {
+        "country": "GB",
+        "foaled": "2019-04-18",
+        "sex": "gelding",
+        "sire": "Frankel",
+        "dam": "Concordia",
+        "damsire": "Pivotal",
+        "trainer": "K A Lees",
+        "source": "https://www.breednet.com.au/horse/age-of-sail"
+      },
+      "stakes_performances_2026": [
+        "2nd 2026 Inglis Australia Day Cup (Listed)",
+        "3rd 2026 Trackside Auckland Cup (Group 2)"
+      ],
+      "latest_run": {
+        "date": "2026-09-04",
+        "course": "Wyong",
+        "race": "Wyong Cup",
+        "class": "Listed",
+        "distance_m": 2100,
+        "going": "Good(4)",
+        "result": "7th",
+        "carried_weight_kg": 54,
+        "jockey": "Dylan Gibbons",
+        "margin_from_winner_lengths": 2.8,
+        "winner": "Matusalem",
+        "sp": "50/1",
+        "source": "https://www.breednet.com.au/horse/age-of-sail"
+      },
+      "previous_run": {
+        "date": "2026-08-08",
+        "course": "Randwick",
+        "race": "Premier's Cup Prelude",
+        "distance_m": 1800,
+        "going": "Good(4)",
+        "result": "9th",
+        "carried_weight_kg": 54,
+        "jockey": "Dylan Gibbons",
+        "margin_from_winner_lengths": 5.0,
+        "winner": "Eliyass",
+        "sp": "150/1",
+        "source": "https://www.breednet.com.au/horse/age-of-sail"
+      },
+      "trial": {
+        "date": "2026-07-22",
+        "course": "Gosford",
+        "distance_m": 1200,
+        "going": "Heavy(8)",
+        "result": "1st",
+        "jockey": "A Bullock",
+        "runner_up": "Zonkstar",
+        "winning_margin_lengths": 0.1,
+        "source": "https://www.breednet.com.au/horse/age-of-sail"
+      },
+      "ratings": {
+        "official_or_ras_run_rating": null,
+        "note": "No official/RAS numeric run rating promoted from this tranche. Public profile numbers from other providers are not relabelled as official or RAS ratings."
+      }
+    },
+    "Christmas Day": {
+      "current_2026_preparation": {
+        "latest_run": {
+          "date": "2026-09-12",
+          "course": "Doncaster",
+          "race": "Betfred St Leger Stakes",
+          "class": "Group 1",
+          "distance": "1m6f115yds",
+          "going": "Good",
+          "result": "9th of 11",
+          "carried_weight": "9st 3lb",
+          "official_rating": 118,
+          "racing_post_rating": 93,
+          "topspeed": 91,
+          "jockey": "Ronan Whelan",
+          "trainer": "A P O'Brien",
+          "margin_from_winner_lengths": 15.25,
+          "winner": "Highwayman",
+          "source": "https://www.racingpost.com/results/15/doncaster/2026-09-12/925161/"
+        },
+        "race_comment": {
+          "text": "Led, headed after 1f, led over 3f out, pushed along and headed over 2f out, weakened over 1f out.",
+          "source": "https://m.attheraces.com/festivals/leger/racecard/Doncaster/12-September-2026/1535"
+        },
+        "post_race_context": {
+          "fact": "Aidan O'Brien subsequently said his Ballydoyle operation had been dealing with a low-grade infection and specifically referenced Christmas Day and Pierre Bonnard failing to fire in the St Leger. This is retained as dated trainer-reported context, not converted into a continuing veterinary diagnosis.",
+          "source": "https://m.attheraces.com/news/2026/September/13/o%27brien-reveals-%27low-grade-infection%27-has-hit-ballydoyle"
+        }
+      },
+      "rating_separation": {
+        "official_rating": 118,
+        "racing_post_rating_latest_run": 93,
+        "ras_rating": null,
+        "timeform": null,
+        "note": "Racing Post RPR and Topspeed are provider-specific fields and are not Racing & Sports or Timeform figures. No RAS or Timeform figure inferred."
+      }
+    }
+  },
+  "quarantine": [
+    {
+      "horse": "Age Of Sail",
+      "issue": "RaceHub search result exposed internally inconsistent career totals (37 starts in one section versus 50 in stats breakdown), so those totals are not promoted. Breednet evidence is used for identity and run-level facts instead."
+    }
+  ],
+  "coverage_ledger_check": {
+    "universe": 101,
+    "identity_accounted": 101,
+    "form_present": 101,
+    "historical_coverage_ledger_file": "data/form/2026-09-15-form-coverage-ledger.json",
+    "historical_ledger_complete": 58,
+    "historical_ledger_career_complete": 2,
+    "historical_ledger_unresolved": 41,
+    "status": "INCOMPLETE_PUBLIC_FIELD_LEVEL_ACQUISITION_CONTINUES",
+    "note": "Age Of Sail and Christmas Day receive additional verified run/preparation evidence, but the fixed 101-horse universe is not yet exhausted at required public field level and unavailable fields are not yet definitively documented for every horse. No completion notification warranted."
+  }
+}
