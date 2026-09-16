@@ -3,14 +3,8 @@
   const nav=document.getElementById('nav');
   if(!nav)return;
 
-  if(!nav.querySelector('button[data-view="silks"]')){
-    const horses=nav.querySelector('button[data-view="horses"]');
-    if(horses){
-      const btn=document.createElement('button');btn.dataset.view='silks';btn.textContent='Silks & Colours';
-      btn.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentView='silks';selectedHorse=null;render('silks');});
-      horses.after(btn);
-    }
-  }
+  // Silks are integrated throughout Nominations and Horse Profiles; no separate Silks & Colours workspace tab.
+  nav.querySelector('button[data-view="silks"]')?.remove();
 
   const groups=[
     {before:'dashboard',label:'Workspace'},
