@@ -2,10 +2,10 @@
   "snapshotDate": "2026-09-17",
   "universe": 101,
   "canonicalFile": "data/form/2026-09-15-unique-full-form.json",
-  "policy": "Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. One actual start per horse/date; no trials, jump-outs, non-starters, future runs, impossible finish/field relationships, or non-nominee identities.",
+  "policy": "Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. One actual start per horse/date; no trials, jump-outs, non-starters, future runs, impossible finish/field relationships, or non-nominee identities. Repeated-race warnings apply only to named races, not generic race numbers, benchmark labels or placeholder source labels.",
   "summary": {
-    "pass": 87,
-    "warning": 14,
+    "pass": 94,
+    "warning": 7,
     "criticalHorses": 0,
     "globalCritical": false
   },
@@ -139,20 +139,10 @@
     },
     {
       "horse": "Don Diego De Vega",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
-          "run": 7,
-          "otherDate": "2025-06-14",
-          "date": "2025-05-31",
-          "race": "R8",
-          "track": "Rosehill Gardens"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Enfjaar",
@@ -162,7 +152,7 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
           "run": 4,
           "otherDate": "2026-06-16",
           "date": "2025-06-17",
@@ -173,20 +163,10 @@
     },
     {
       "horse": "Floating",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
-          "run": 6,
-          "otherDate": "2024-12-26",
-          "date": "2024-12-14",
-          "race": "Public race record",
-          "track": "Randwick"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Future History",
@@ -210,7 +190,7 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
           "run": 5,
           "otherDate": "2026-08-01",
           "date": "2025-08-02",
@@ -219,7 +199,7 @@
         },
         {
           "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
           "run": 6,
           "otherDate": "2026-07-08",
           "date": "2025-07-09",
@@ -264,7 +244,7 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
           "run": 2,
           "otherDate": "2026-08-27",
           "date": "2026-08-20",
@@ -296,20 +276,10 @@
     },
     {
       "horse": "Jennivamoose",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
-          "run": 7,
-          "otherDate": "2025-06-18",
-          "date": "2025-05-21",
-          "race": "Public race record",
-          "track": "Sandown-Hillside"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Johnich",
@@ -334,29 +304,10 @@
     },
     {
       "horse": "Kings Valley",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
-          "run": 5,
-          "otherDate": "2026-02-21",
-          "date": "2025-10-15",
-          "race": "BM84",
-          "track": "Caulfield"
-        },
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
-          "run": 6,
-          "otherDate": "2026-02-21",
-          "date": "2025-09-20",
-          "race": "BM84",
-          "track": "Caulfield"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Kizlyar",
@@ -430,20 +381,10 @@
     },
     {
       "horse": "Mr Monaco",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
-          "run": 6,
-          "otherDate": "2026-02-07",
-          "date": "2025-09-20",
-          "race": "IVE BM84",
-          "track": "Caulfield"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Nearco Frod",
@@ -621,7 +562,7 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
           "run": 5,
           "otherDate": "2026-09-12",
           "date": "2025-09-13",
@@ -695,29 +636,10 @@
     },
     {
       "horse": "Tarvue",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
-          "run": 5,
-          "otherDate": "2026-02-14",
-          "date": "2026-01-17",
-          "race": "Public race record",
-          "track": "Flemington"
-        },
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
-          "run": 6,
-          "otherDate": "2026-02-14",
-          "date": "2026-01-10",
-          "race": "Public race record",
-          "track": "Flemington"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Tawny Port",
@@ -727,7 +649,7 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
           "run": 2,
           "otherDate": "2026-06-05",
           "date": "2026-06-04",
@@ -758,7 +680,7 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
           "run": 7,
           "otherDate": "2025-09-28",
           "date": "2024-10-13",
@@ -817,7 +739,7 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
           "run": 1,
           "otherDate": "2026-05-09",
           "date": "2026-05-02",
@@ -870,20 +792,10 @@
     },
     {
       "horse": "Zakouma",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_RACE_TRACK_IDENTITY",
-          "run": 6,
-          "otherDate": "2026-03-11",
-          "date": "2025-07-30",
-          "race": "Public race record",
-          "track": "Sandown-Hillside"
-        }
-      ]
+      "issues": []
     }
   ]
 }
