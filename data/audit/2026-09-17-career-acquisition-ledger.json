@@ -1,0 +1,77 @@
+{
+  "snapshotDate": "2026-09-17",
+  "universe": 101,
+  "policy": "All 101 original nominees remain in scope. A source failure is not a missing horse. Public baseline records are acquisition evidence only until identity and career integrity are verified. Recent-form windows must never be substituted for full-career statistics.",
+  "publicBaseline": {
+    "raceHubProfilesWithRuns": 76,
+    "raceHubFailures": 25
+  },
+  "raceHubFailureRecovery": {
+    "accountedFor": 25,
+    "horses": [
+      "Amelia Earhart",
+      "Causeway",
+      "Christmas Day",
+      "Constitution Hill",
+      "Enfjaar",
+      "Goodie Two Shoes",
+      "Highwayman",
+      "Hopewell Rock",
+      "James J Braddock",
+      "Kizlyar",
+      "Knight’s Choice",
+      "Nil Bua Gan Dua",
+      "Onesmoothoperator",
+      "Piazza San Marco",
+      "Pierre Bonnard",
+      "Point Of Law",
+      "She’s A Hustler",
+      "Small Fry",
+      "Sons And Lovers",
+      "Starford",
+      "Stinger Glass",
+      "Tawny Port",
+      "Trustyourinstinct",
+      "Winday",
+      "Wine Dark Sea"
+    ],
+    "note": "Each former RaceHub failure now has replacement public/subscriber evidence in the verified career registry. Goodie Two Shoes remains deliberately quarantined from Flat career totals until Flat-only rows are separated. Mixed-code totals are not published as Melbourne Cup Flat career totals."
+  },
+  "verificationBacklog": {
+    "status": "IN_PROGRESS",
+    "requirements": [
+      "Identity/pedigree/connections cross-check for all baseline horses",
+      "Chronological full-career run integrity and duplicate/conflict audit",
+      "Distance/surface/going/course and class/stakes splits where publicly exposed",
+      "Carried weights and margins where publicly exposed",
+      "Official ratings kept distinct from Racing & Sports and Timeform ratings",
+      "Current 2026 preparation/latest run/trials where relevant",
+      "Cup status and official weight evidence",
+      "Evidence URL/provenance for every promoted field",
+      "Quarantine same-name and contaminated evidence rather than infer"
+    ],
+    "priorityIdentityRisk": [
+      "Aethelwulf",
+      "Golden Century",
+      "Pounding",
+      "Saint George",
+      "Portland",
+      "Sapphire Siren",
+      "Klondike",
+      "Kings Valley",
+      "Ohope Wins",
+      "Shockletz"
+    ],
+    "specialQuarantine": [
+      {
+        "horse": "Goodie Two Shoes",
+        "reason": "Current evidence contains mixed Flat/jumps totals; Flat-only career split still required."
+      }
+    ]
+  },
+  "completion": {
+    "all101AccountedForAtAcquisitionLevel": true,
+    "all101FullyVerifiedForPublication": false,
+    "notifyUser": false
+  }
+}
