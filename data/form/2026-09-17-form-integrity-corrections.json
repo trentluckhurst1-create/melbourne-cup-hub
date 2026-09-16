@@ -1,0 +1,16 @@
+{
+  "snapshotDate": "2026-09-17",
+  "purpose": "Evidence-backed exclusions applied before canonical recent-form output is built.",
+  "exclusions": {
+    "Highwayman": [
+      {
+        "date": "2026-08-27",
+        "reason": "False duplicate of the 2026 Vinnie Roe Stakes. Authoritative public results place the Vinnie Roe Stakes at Leopardstown on 2026-08-20, won by Highwayman; there was no second Vinnie Roe Stakes start seven days later.",
+        "evidence": [
+          "https://www.racingpost.com/results/187/leopardstown/2026-08-20/926945/",
+          "https://www.irishracing.com/racecards/Thu-20th-Aug-2026/Leopardstown/1830"
+        ]
+      }
+    ]
+  }
+}
