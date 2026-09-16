@@ -5,7 +5,6 @@
     "legacy-pfr-cleanup.js",
     "evolve.js",
     "enhancements.js",
-    "trainer-bases.js",
     "training-base-complete.js",
     "training-base-evidence-upgrades.js",
     "projected-field.js",
@@ -1032,7 +1031,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "37 files passed node --check"
+      "detail": "36 files passed node --check"
     }
   ],
   "pass": true,
