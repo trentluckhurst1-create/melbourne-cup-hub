@@ -2,7 +2,7 @@
   "snapshotDate": "2026-09-15",
   "type": "strict-unique-public-form",
   "targetRunsPerHorse": 8,
-  "dedupeRule": "one actual start per horse per calendar date; trials/jump-outs/non-starters excluded",
+  "dedupeRule": "one actual start per horse per calendar date; trials/jump-outs/non-starters excluded; evidence-backed exclusions applied before merge",
   "sourceFiles": [
     "2026-09-13-form-index.json",
     "2026-09-13-form-supplement-10.json",
@@ -3247,21 +3247,6 @@
           "source": "The Times / Sporting Life public result coverage"
         },
         {
-          "date": "2026-08-27",
-          "race": "Vinnie Roe Stakes",
-          "track": "Leopardstown",
-          "country": "IRE",
-          "distanceM": 2816,
-          "going": null,
-          "classGroup": "Listed",
-          "finish": "1st",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Public race coverage"
-        },
-        {
           "date": "2026-08-20",
           "race": "Vinnie Roe Stakes",
           "track": "Leopardstown",
@@ -3351,7 +3336,8 @@
           "timefigure": null,
           "source": "Sporting Life public race record"
         }
-      ]
+      ],
+      "careerComplete": true
     },
     "Hopewell Rock": {
       "runs": [
