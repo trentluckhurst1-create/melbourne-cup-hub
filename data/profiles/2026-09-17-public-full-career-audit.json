@@ -1,0 +1,614 @@
+{
+  "snapshotDate": "2026-09-17",
+  "universe": 101,
+  "profilesWithPublicCareerRuns": 76,
+  "profilesWithoutRuns": 25,
+  "rows": [
+    {
+      "horse": "Aeliana",
+      "status": "OK",
+      "careerRunsLoaded": 17,
+      "sourceUrl": "https://racehub.com.au/horses/aeliana"
+    },
+    {
+      "horse": "Aethelflaed",
+      "status": "OK",
+      "careerRunsLoaded": 6,
+      "sourceUrl": "https://racehub.com.au/horses/aethelflaed"
+    },
+    {
+      "horse": "Aethelwulf",
+      "status": "OK",
+      "careerRunsLoaded": 6,
+      "sourceUrl": "https://racehub.com.au/horses/aethelwulf"
+    },
+    {
+      "horse": "Age Of Sail",
+      "status": "OK",
+      "careerRunsLoaded": 34,
+      "sourceUrl": "https://racehub.com.au/horses/age-of-sail"
+    },
+    {
+      "horse": "Amelia Earhart",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/amelia-earhart"
+    },
+    {
+      "horse": "Asterix",
+      "status": "OK",
+      "careerRunsLoaded": 28,
+      "sourceUrl": "https://racehub.com.au/horses/asterix"
+    },
+    {
+      "horse": "Athabascan",
+      "status": "OK",
+      "careerRunsLoaded": 15,
+      "sourceUrl": "https://racehub.com.au/horses/athabascan"
+    },
+    {
+      "horse": "Barnavara",
+      "status": "OK",
+      "careerRunsLoaded": 14,
+      "sourceUrl": "https://racehub.com.au/horses/barnavara"
+    },
+    {
+      "horse": "Bella Montagna",
+      "status": "OK",
+      "careerRunsLoaded": 16,
+      "sourceUrl": "https://racehub.com.au/horses/bella-montagna"
+    },
+    {
+      "horse": "Birdman",
+      "status": "OK",
+      "careerRunsLoaded": 21,
+      "sourceUrl": "https://racehub.com.au/horses/birdman"
+    },
+    {
+      "horse": "Campaldino",
+      "status": "OK",
+      "careerRunsLoaded": 15,
+      "sourceUrl": "https://racehub.com.au/horses/campaldino"
+    },
+    {
+      "horse": "Causeway",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/causeway"
+    },
+    {
+      "horse": "Changingoftheguard",
+      "status": "OK",
+      "careerRunsLoaded": 20,
+      "sourceUrl": "https://racehub.com.au/horses/changingoftheguard"
+    },
+    {
+      "horse": "Christmas Day",
+      "status": "REQUEST_ERROR",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/christmas-day"
+    },
+    {
+      "horse": "Constitution Hill",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/constitution-hill"
+    },
+    {
+      "horse": "Darkbonee",
+      "status": "OK",
+      "careerRunsLoaded": 11,
+      "sourceUrl": "https://racehub.com.au/horses/darkbonee"
+    },
+    {
+      "horse": "Deakin",
+      "status": "OK",
+      "careerRunsLoaded": 18,
+      "sourceUrl": "https://racehub.com.au/horses/deakin"
+    },
+    {
+      "horse": "Defiantly",
+      "status": "OK",
+      "careerRunsLoaded": 8,
+      "sourceUrl": "https://racehub.com.au/horses/defiantly"
+    },
+    {
+      "horse": "Don Diego De Vega",
+      "status": "OK",
+      "careerRunsLoaded": 8,
+      "sourceUrl": "https://racehub.com.au/horses/don-diego-de-vega"
+    },
+    {
+      "horse": "Enfjaar",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/enfjaar"
+    },
+    {
+      "horse": "Floating",
+      "status": "OK",
+      "careerRunsLoaded": 35,
+      "sourceUrl": "https://racehub.com.au/horses/floating"
+    },
+    {
+      "horse": "Future History",
+      "status": "OK",
+      "careerRunsLoaded": 39,
+      "sourceUrl": "https://racehub.com.au/horses/future-history"
+    },
+    {
+      "horse": "Golden Century",
+      "status": "OK",
+      "careerRunsLoaded": 22,
+      "sourceUrl": "https://racehub.com.au/horses/golden-century"
+    },
+    {
+      "horse": "Goodie Two Shoes",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/goodie-two-shoes"
+    },
+    {
+      "horse": "Grand Pierro",
+      "status": "OK",
+      "careerRunsLoaded": 37,
+      "sourceUrl": "https://racehub.com.au/horses/grand-pierro"
+    },
+    {
+      "horse": "Green Spaces",
+      "status": "OK",
+      "careerRunsLoaded": 11,
+      "sourceUrl": "https://racehub.com.au/horses/green-spaces"
+    },
+    {
+      "horse": "Half Yours",
+      "status": "OK",
+      "careerRunsLoaded": 17,
+      "sourceUrl": "https://racehub.com.au/horses/half-yours"
+    },
+    {
+      "horse": "Highland Bling",
+      "status": "OK",
+      "careerRunsLoaded": 16,
+      "sourceUrl": "https://racehub.com.au/horses/highland-bling"
+    },
+    {
+      "horse": "Highwayman",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/highwayman"
+    },
+    {
+      "horse": "Hopewell Rock",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/hopewell-rock"
+    },
+    {
+      "horse": "James J Braddock",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/james-j-braddock"
+    },
+    {
+      "horse": "Jenni Multabella",
+      "status": "OK",
+      "careerRunsLoaded": 8,
+      "sourceUrl": "https://racehub.com.au/horses/jenni-multabella"
+    },
+    {
+      "horse": "Jennivamoose",
+      "status": "OK",
+      "careerRunsLoaded": 16,
+      "sourceUrl": "https://racehub.com.au/horses/jennivamoose"
+    },
+    {
+      "horse": "Johnich",
+      "status": "OK",
+      "careerRunsLoaded": 10,
+      "sourceUrl": "https://racehub.com.au/horses/johnich"
+    },
+    {
+      "horse": "Juja Kibo",
+      "status": "OK",
+      "careerRunsLoaded": 15,
+      "sourceUrl": "https://racehub.com.au/horses/juja-kibo"
+    },
+    {
+      "horse": "King Pedro",
+      "status": "OK",
+      "careerRunsLoaded": 16,
+      "sourceUrl": "https://racehub.com.au/horses/king-pedro"
+    },
+    {
+      "horse": "Kings Valley",
+      "status": "OK",
+      "careerRunsLoaded": 23,
+      "sourceUrl": "https://racehub.com.au/horses/kings-valley"
+    },
+    {
+      "horse": "Kizlyar",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/kizlyar"
+    },
+    {
+      "horse": "Klondike",
+      "status": "OK",
+      "careerRunsLoaded": 2,
+      "sourceUrl": "https://racehub.com.au/horses/klondike"
+    },
+    {
+      "horse": "Knight’s Choice",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/knights-choice"
+    },
+    {
+      "horse": "Land Legend",
+      "status": "OK",
+      "careerRunsLoaded": 24,
+      "sourceUrl": "https://racehub.com.au/horses/land-legend"
+    },
+    {
+      "horse": "Light Infantry Man",
+      "status": "OK",
+      "careerRunsLoaded": 32,
+      "sourceUrl": "https://racehub.com.au/horses/light-infantry-man"
+    },
+    {
+      "horse": "Litzdeel",
+      "status": "OK",
+      "careerRunsLoaded": 15,
+      "sourceUrl": "https://racehub.com.au/horses/litzdeel"
+    },
+    {
+      "horse": "Machine Gun Gracie",
+      "status": "OK",
+      "careerRunsLoaded": 13,
+      "sourceUrl": "https://racehub.com.au/horses/machine-gun-gracie"
+    },
+    {
+      "horse": "Male Model",
+      "status": "OK",
+      "careerRunsLoaded": 22,
+      "sourceUrl": "https://racehub.com.au/horses/male-model"
+    },
+    {
+      "horse": "Manzor Blue",
+      "status": "OK",
+      "careerRunsLoaded": 23,
+      "sourceUrl": "https://racehub.com.au/horses/manzor-blue"
+    },
+    {
+      "horse": "Middle Earth",
+      "status": "OK",
+      "careerRunsLoaded": 20,
+      "sourceUrl": "https://racehub.com.au/horses/middle-earth"
+    },
+    {
+      "horse": "Mr Monaco",
+      "status": "OK",
+      "careerRunsLoaded": 24,
+      "sourceUrl": "https://racehub.com.au/horses/mr-monaco"
+    },
+    {
+      "horse": "Nearco Frod",
+      "status": "OK",
+      "careerRunsLoaded": 13,
+      "sourceUrl": "https://racehub.com.au/horses/nearco-frod"
+    },
+    {
+      "horse": "Newlook",
+      "status": "OK",
+      "careerRunsLoaded": 16,
+      "sourceUrl": "https://racehub.com.au/horses/newlook"
+    },
+    {
+      "horse": "Nil Bua Gan Dua",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/nil-bua-gan-dua"
+    },
+    {
+      "horse": "Ohope Wins",
+      "status": "OK",
+      "careerRunsLoaded": 9,
+      "sourceUrl": "https://racehub.com.au/horses/ohope-wins"
+    },
+    {
+      "horse": "Okita Soushi",
+      "status": "OK",
+      "careerRunsLoaded": 20,
+      "sourceUrl": "https://racehub.com.au/horses/okita-soushi"
+    },
+    {
+      "horse": "Omni Man",
+      "status": "OK",
+      "careerRunsLoaded": 2,
+      "sourceUrl": "https://racehub.com.au/horses/omni-man"
+    },
+    {
+      "horse": "Onesmoothoperator",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/onesmoothoperator"
+    },
+    {
+      "horse": "Piazza San Marco",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/piazza-san-marco"
+    },
+    {
+      "horse": "Pierre Bonnard",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/pierre-bonnard"
+    },
+    {
+      "horse": "Piggyback",
+      "status": "OK",
+      "careerRunsLoaded": 22,
+      "sourceUrl": "https://racehub.com.au/horses/piggyback"
+    },
+    {
+      "horse": "Pinhole",
+      "status": "OK",
+      "careerRunsLoaded": 11,
+      "sourceUrl": "https://racehub.com.au/horses/pinhole"
+    },
+    {
+      "horse": "Point Of Law",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/point-of-law"
+    },
+    {
+      "horse": "Portland",
+      "status": "OK",
+      "careerRunsLoaded": 20,
+      "sourceUrl": "https://racehub.com.au/horses/portland"
+    },
+    {
+      "horse": "Pounding",
+      "status": "OK",
+      "careerRunsLoaded": 63,
+      "sourceUrl": "https://racehub.com.au/horses/pounding"
+    },
+    {
+      "horse": "River Of Stars",
+      "status": "OK",
+      "careerRunsLoaded": 23,
+      "sourceUrl": "https://racehub.com.au/horses/river-of-stars"
+    },
+    {
+      "horse": "Royal Supremacy",
+      "status": "OK",
+      "careerRunsLoaded": 18,
+      "sourceUrl": "https://racehub.com.au/horses/royal-supremacy"
+    },
+    {
+      "horse": "Saint George",
+      "status": "OK",
+      "careerRunsLoaded": 19,
+      "sourceUrl": "https://racehub.com.au/horses/saint-george"
+    },
+    {
+      "horse": "Sam Hawkens",
+      "status": "OK",
+      "careerRunsLoaded": 15,
+      "sourceUrl": "https://racehub.com.au/horses/sam-hawkens"
+    },
+    {
+      "horse": "Sapphire Siren",
+      "status": "OK",
+      "careerRunsLoaded": 5,
+      "sourceUrl": "https://racehub.com.au/horses/sapphire-siren"
+    },
+    {
+      "horse": "She’s A Hustler",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/shes-a-hustler"
+    },
+    {
+      "horse": "Shockletz",
+      "status": "OK",
+      "careerRunsLoaded": 16,
+      "sourceUrl": "https://racehub.com.au/horses/shockletz"
+    },
+    {
+      "horse": "Sir Chartwell",
+      "status": "OK",
+      "careerRunsLoaded": 7,
+      "sourceUrl": "https://racehub.com.au/horses/sir-chartwell"
+    },
+    {
+      "horse": "Small Fry",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/small-fry"
+    },
+    {
+      "horse": "So You Are",
+      "status": "OK",
+      "careerRunsLoaded": 22,
+      "sourceUrl": "https://racehub.com.au/horses/so-you-are"
+    },
+    {
+      "horse": "Sons And Lovers",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/sons-and-lovers"
+    },
+    {
+      "horse": "Soul Of Spain",
+      "status": "OK",
+      "careerRunsLoaded": 19,
+      "sourceUrl": "https://racehub.com.au/horses/soul-of-spain"
+    },
+    {
+      "horse": "Soulcombe",
+      "status": "OK",
+      "careerRunsLoaded": 15,
+      "sourceUrl": "https://racehub.com.au/horses/soulcombe"
+    },
+    {
+      "horse": "Starford",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/starford"
+    },
+    {
+      "horse": "Starzintheireyes",
+      "status": "OK",
+      "careerRunsLoaded": 6,
+      "sourceUrl": "https://racehub.com.au/horses/starzintheireyes"
+    },
+    {
+      "horse": "Stinger Glass",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/stinger-glass"
+    },
+    {
+      "horse": "Storm Leopard",
+      "status": "OK",
+      "careerRunsLoaded": 8,
+      "sourceUrl": "https://racehub.com.au/horses/storm-leopard"
+    },
+    {
+      "horse": "Strictly Business",
+      "status": "OK",
+      "careerRunsLoaded": 2,
+      "sourceUrl": "https://racehub.com.au/horses/strictly-business"
+    },
+    {
+      "horse": "Suffolk Star",
+      "status": "OK",
+      "careerRunsLoaded": 26,
+      "sourceUrl": "https://racehub.com.au/horses/suffolk-star"
+    },
+    {
+      "horse": "Tajanis",
+      "status": "OK",
+      "careerRunsLoaded": 24,
+      "sourceUrl": "https://racehub.com.au/horses/tajanis"
+    },
+    {
+      "horse": "Tarvue",
+      "status": "OK",
+      "careerRunsLoaded": 22,
+      "sourceUrl": "https://racehub.com.au/horses/tarvue"
+    },
+    {
+      "horse": "Tawny Port",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/tawny-port"
+    },
+    {
+      "horse": "The Euphrates",
+      "status": "OK",
+      "careerRunsLoaded": 8,
+      "sourceUrl": "https://racehub.com.au/horses/the-euphrates"
+    },
+    {
+      "horse": "Thebudgiesmugla",
+      "status": "OK",
+      "careerRunsLoaded": 14,
+      "sourceUrl": "https://racehub.com.au/horses/thebudgiesmugla"
+    },
+    {
+      "horse": "Think Giant",
+      "status": "OK",
+      "careerRunsLoaded": 8,
+      "sourceUrl": "https://racehub.com.au/horses/think-giant"
+    },
+    {
+      "horse": "Torranzino",
+      "status": "OK",
+      "careerRunsLoaded": 11,
+      "sourceUrl": "https://racehub.com.au/horses/torranzino"
+    },
+    {
+      "horse": "Treasurethe Moment",
+      "status": "OK",
+      "careerRunsLoaded": 17,
+      "sourceUrl": "https://racehub.com.au/horses/treasurethe-moment"
+    },
+    {
+      "horse": "Trustyourinstinct",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/trustyourinstinct"
+    },
+    {
+      "horse": "Valiant King",
+      "status": "OK",
+      "careerRunsLoaded": 23,
+      "sourceUrl": "https://racehub.com.au/horses/valiant-king"
+    },
+    {
+      "horse": "Vauban",
+      "status": "OK",
+      "careerRunsLoaded": 8,
+      "sourceUrl": "https://racehub.com.au/horses/vauban"
+    },
+    {
+      "horse": "Vegas Jack",
+      "status": "OK",
+      "careerRunsLoaded": 12,
+      "sourceUrl": "https://racehub.com.au/horses/vegas-jack"
+    },
+    {
+      "horse": "Wigmore",
+      "status": "OK",
+      "careerRunsLoaded": 3,
+      "sourceUrl": "https://racehub.com.au/horses/wigmore"
+    },
+    {
+      "horse": "Winday",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/winday"
+    },
+    {
+      "horse": "Wine Dark Sea",
+      "status": "HTTP_404",
+      "careerRunsLoaded": 0,
+      "sourceUrl": "https://racehub.com.au/horses/wine-dark-sea"
+    },
+    {
+      "horse": "Wolfgang",
+      "status": "OK",
+      "careerRunsLoaded": 64,
+      "sourceUrl": "https://racehub.com.au/horses/wolfgang"
+    },
+    {
+      "horse": "Wootton Verni",
+      "status": "OK",
+      "careerRunsLoaded": 21,
+      "sourceUrl": "https://racehub.com.au/horses/wootton-verni"
+    },
+    {
+      "horse": "Yellow Jersey",
+      "status": "OK",
+      "careerRunsLoaded": 7,
+      "sourceUrl": "https://racehub.com.au/horses/yellow-jersey"
+    },
+    {
+      "horse": "Zahrann",
+      "status": "OK",
+      "careerRunsLoaded": 8,
+      "sourceUrl": "https://racehub.com.au/horses/zahrann"
+    },
+    {
+      "horse": "Zakouma",
+      "status": "OK",
+      "careerRunsLoaded": 15,
+      "sourceUrl": "https://racehub.com.au/horses/zakouma"
+    }
+  ]
+}
