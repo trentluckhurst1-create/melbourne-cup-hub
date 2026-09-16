@@ -56,7 +56,7 @@ const commandRenderBase=render;
 let commandDashboardLoading=false;
 render=function(view='dashboard'){
   if(view==='dashboard'){
-    document.getElementById('page-title').textContent='Cup Command Centre';
+    document.getElementById('page-title').textContent='Cup Dashboard';
     const root=document.getElementById('app-content');
     const pending=[];
     if(!qualificationData||!weightPredictions)pending.push(Promise.resolve().then(()=>loadExtras()));
@@ -65,13 +65,17 @@ render=function(view='dashboard'){
     if(!formIntelData||!timeformStatusData)pending.push(Promise.resolve().then(()=>loadFormIntel()));
     if(typeof loadInternationalPrep==='function'&&!internationalPrepData)pending.push(Promise.resolve().then(()=>loadInternationalPrep()));
     if(typeof loadMarketWorkbench==='function'&&!marketSnapshots.length)pending.push(Promise.resolve().then(()=>loadMarketWorkbench()));
-    if(pending.length&&!commandDashboardLoading){
-      commandDashboardLoading=true;
-      root.innerHTML='<div class="placeholder">Loading command centre intelligence…</div>';
-      Promise.allSettled(pending).finally(()=>{commandDashboardLoading=false;commandRenderBase('dashboard');});
+    if(pending.length){
+      if(!commandDashboardLoading){
+        commandDashboardLoading=true;
+        root.innerHTML='<div class="placeholder">Loading command centre intelligence…</div>';
+        Promise.allSettled(pending).finally(()=>{
+          commandDashboardLoading=false;
+          render('dashboard');
+        });
+      }
       return;
     }
-    if(commandDashboardLoading)return;
   }
   commandRenderBase(view);
 };
