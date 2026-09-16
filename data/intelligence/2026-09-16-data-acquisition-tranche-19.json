@@ -1,0 +1,58 @@
+{
+  "schema": "melbourne_cup_hub.data_acquisition.tranche19.v1",
+  "as_of": "2026-09-16T19:26:41+10:00",
+  "policy": {"acquisition_only":true,"no_rating_inference":true,"timeform_separate":true,"source_conflicts_quarantined":true},
+  "verified_public_evidence": {
+    "Age Of Sail": {
+      "identity": {"country":"GB","sex":"gelding","sire":"Frankel","dam":"Concordia","dam_sire":"Pivotal","trainer":"Kris Lees"},
+      "latest_run": {"date":"2026-09-04","track":"Wyong","race":"Wyong Cup","class":"Listed","distance_m":2100,"going":"Good(4)","finish":7,"field_size":7,"weight_kg":54,"margin":"2.8L","winner":"Matusalem"},
+      "stakes_performances": ["2nd 2026 Australia Day Cup (Listed)","3rd 2026 Auckland Cup (Group 2)"],
+      "source":"https://www.breednet.com.au/horse/age-of-sail"
+    },
+    "Barnavara": {
+      "identity": {"country":"IRE","sex":"mare","sire":"Calyx","dam":"Alfea","trainer":"Chris Waller"},
+      "career_public_snapshot": {"starts":15,"wins":5,"seconds":0,"thirds":5,"good":"7:2-0-3","soft":"7:3-0-2"},
+      "latest_run": {"date":"2026-08-29","track":"Caulfield","finish":15,"field_size":16},
+      "class_context":"Public reporting records her as winner of the 2025 Group 1 Prix de l'Opera at Longchamp before transfer to Australia.",
+      "source":"https://racehub.com.au/horses/barnavara"
+    },
+    "Don Diego De Vega": {
+      "identity": {"country":"FR","sex":"gelding","sire":"Lope De Vega","dam":"Fairly Fair","dam_sire":"Sinndar","trainer":"Annabel & Rob Archibald"},
+      "career_public_snapshot":{"starts":16,"wins":2,"seconds":2,"thirds":0},
+      "latest_run":{"date":"2026-05-02","track":"Eagle Farm","class":"BM90","distance_m":1825,"going":"Heavy(8)","finish":12,"field_size":12,"carried_weight_kg":59,"declared_weight_kg":61,"margin":"9.86L","winner":"So You Are"},
+      "stakes_performances":["1st 2025 Grafton Cup (Listed)"],
+      "source":"https://www.horise.com/horse/don-diego-de-vega/"
+    },
+    "James J Braddock": {
+      "verified_run":{"date":"2026-05-10","track":"Leopardstown","race":"Cashel Palace Hotel Derby Trial Stakes","class":"Group 3","distance_m":2012,"finish":1,"weight":"9-5","official_rating_pre_run":100,"trainer":"J P O'Brien","jockey":"Dylan Browne McMonagle"},
+      "source":"https://www.skysports.com/racing/racecards/leopardstown/10-05-2026/1360571/cashel-palace-hotel-derby-trial-stakes-group-3",
+      "rating_note":"100 is retained strictly as the explicitly labelled official rating shown on the racecard; it is not an R&S or Timeform figure."
+    },
+    "Storm Leopard": {
+      "identity":{"sex":"gelding","sire":"Ghaiyyath","dam":"Brilliance","trainer":"Ben, Will & JD Hayes"},
+      "career_public_snapshot":{"starts":11,"wins":4,"seconds":1,"thirds":2,"good":"5:2-1-0","soft":"3:1-0-1"},
+      "latest_run":{"date":"2026-09-12","track":"Flemington","finish":12,"field_size":15},
+      "source":"https://racehub.com.au/horses/storm-leopard",
+      "rating_quarantine":{"displayed_value":93,"reason":"Source displays generic 'Rating 93 Thoroughbred' without establishing R&S/Timeform/official namespace; do not map to any required rating field."}
+    },
+    "Torranzino": {
+      "identity":{"sex":"gelding","sire":"Tarzino","dam":"Goldilicious","trainer":"Paul Preusker"},
+      "career_public_snapshot":{"starts":34,"wins":6,"seconds":7,"thirds":2},
+      "distance_surface_records":{"2400m":"2:1-0-0","2520m":"1:0-1-0","good":"19:3-4-1","soft":"14:3-3-1","heavy":"1:0-0-0"},
+      "course_records":{"Flemington":"3:0-1-1","Caulfield":"7:3-0-0","Geelong":"1:1-0-0"},
+      "verified_2025_cup_run":{"date":"2025-11-04","track":"Flemington","race":"Melbourne Cup","class":"Group 1","distance_m":3200,"going":"Soft(5)","finish":5,"field_size":24,"weight_kg":51,"margin":"8.00L","winner":"Half Yours"},
+      "source":"https://www.horise.com/horse/torranzino/"
+    }
+  },
+  "coverage_ledger_check": {
+    "universe":101,
+    "identity_accounted":101,
+    "form_present":101,
+    "historical_coverage_ledger_file":"data/form/2026-09-15-form-coverage-ledger.json",
+    "historical_ledger_complete":58,
+    "historical_ledger_career_complete":2,
+    "historical_ledger_unresolved":41,
+    "status":"INCOMPLETE_PUBLIC_FIELD_LEVEL_ACQUISITION_CONTINUES",
+    "note":"This tranche adds verified public identity, run, condition-record, stakes and official-rating evidence for six unresolved/partially resolved nominees. It does not promote generic source ratings into R&S or Timeform namespaces. The full 101-horse required field-level acquisition is not yet exhausted or complete."
+  }
+}
