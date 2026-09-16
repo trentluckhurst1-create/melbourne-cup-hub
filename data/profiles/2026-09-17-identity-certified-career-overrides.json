@@ -1,0 +1,67 @@
+{
+  "snapshotDate": "2026-09-17",
+  "type": "identity-certified-career-overrides",
+  "policy": "These records resolve same-name identity holds using horse country/year, pedigree and trainer. They override ambiguous slug-only public baseline totals. Trials and jump-outs are not career starts.",
+  "horses": {
+    "Aethelwulf": {
+      "identity": {"country":"AUS","yob":2022,"sire":"Saxon Warrior","dam":"Bouboulina","trainer":"Matthew Smith"},
+      "career": {"starts":6,"wins":4,"seconds":1,"thirds":0,"places":5},
+      "source":"Breednet current profile",
+      "sourceUrl":"https://www.breednet.com.au/horse/aethelwulf",
+      "verifiedAsAt":"2026-09-17"
+    },
+    "Golden Century": {
+      "identity": {"country":"NZ","yob":2021,"sire":"Pierro","dam":"Breeze","trainer":"C J Waller"},
+      "career": {"starts":25,"wins":2,"seconds":3,"thirds":7,"places":12},
+      "source":"Breednet current profile",
+      "sourceUrl":"https://www.breednet.com.au/horses/profile?horse=Golden+Century&horsecountry=NZ&horseyob=2021",
+      "verifiedAsAt":"2026-09-17",
+      "note":"Do not confuse with the 2011 AUS mare by Von Costa De Hero."
+    },
+    "Portland": {
+      "identity": {"country":"IRE","yob":2021,"sire":"Dubawi","dam":"Zagitova","trainer":"Matthew Smith"},
+      "career": {"starts":7,"wins":1,"seconds":0,"thirds":1,"places":2},
+      "source":"Breednet current profile",
+      "sourceUrl":"https://www.breednet.com.au/horse/portland",
+      "verifiedAsAt":"2026-09-17",
+      "note":"Do not confuse with the 2022 NZ filly by Banquo or other Portland-named horses."
+    },
+    "Pounding": {
+      "identity": {"country":"AUS","yob":2018,"sire":"Exceed And Excel","dam":"Silent Entrance","trainer":"P G Moody & Katherine Coleman"},
+      "career": {"starts":66,"wins":8,"seconds":14,"thirds":7,"places":29},
+      "source":"Breednet current profile",
+      "sourceUrl":"https://www.breednet.com.au/horse/pounding",
+      "verifiedAsAt":"2026-09-17"
+    },
+    "Saint George": {
+      "identity": {"country":"GB","yob":2020,"sire":"Roaring Lion","dam":"Lady Dragon","trainer":"C Maher"},
+      "career": {"starts":14,"wins":4,"seconds":2,"thirds":0,"places":6},
+      "source":"Breednet current profile",
+      "sourceUrl":"https://www.breednet.com.au/horse/saint-george",
+      "verifiedAsAt":"2026-09-17",
+      "note":"Do not confuse with Saint George NZ 2012."
+    },
+    "Sapphire Siren": {
+      "identity": {"country":"AUS","yob":2021,"sire":"Highland Reel","dam":"Fictional Account","trainer":"Bill Papazaharoudakis"},
+      "career": {"starts":5,"wins":3,"seconds":0,"thirds":2,"places":5},
+      "source":"Breednet current profile",
+      "sourceUrl":"https://www.breednet.com.au/horse/sapphire-siren",
+      "verifiedAsAt":"2026-09-17"
+    },
+    "Wolfgang": {
+      "identity": {"country":"NZ","yob":2018,"sire":"Puccini","dam":"Navy Beach","trainer":"Peter & Shaun Mckay"},
+      "career": {"starts":52,"wins":9,"seconds":6,"thirds":5,"places":20},
+      "source":"Breednet current profile",
+      "sourceUrl":"https://www.breednet.com.au/horse/wolfgang",
+      "verifiedAsAt":"2026-09-17",
+      "note":"Do not confuse with Wolfgang AUS 2021 or Wolfgang SAF 2016."
+    },
+    "Valiant King": {
+      "identity": {"country":"GB","yob":2020,"sire":"Roaring Lion","dam":"Assembly","trainer":"C J Waller"},
+      "career": {"starts":18,"wins":1,"seconds":0,"thirds":2,"places":3},
+      "source":"Breednet current profile",
+      "sourceUrl":"https://www.breednet.com.au/horse/valiant-king",
+      "verifiedAsAt":"2026-09-17"
+    }
+  }
+}
