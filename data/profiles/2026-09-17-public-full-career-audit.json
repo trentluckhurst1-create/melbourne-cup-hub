@@ -1,8 +1,8 @@
 {
   "snapshotDate": "2026-09-17",
   "universe": 101,
-  "profilesWithPublicCareerRuns": 76,
-  "profilesWithoutRuns": 25,
+  "profilesWithPublicCareerRuns": 75,
+  "profilesWithoutRuns": 26,
   "rows": [
     {
       "horse": "Aeliana",
@@ -84,7 +84,7 @@
     },
     {
       "horse": "Christmas Day",
-      "status": "REQUEST_ERROR",
+      "status": "HTTP_404",
       "careerRunsLoaded": 0,
       "sourceUrl": "https://racehub.com.au/horses/christmas-day"
     },
@@ -432,8 +432,8 @@
     },
     {
       "horse": "So You Are",
-      "status": "OK",
-      "careerRunsLoaded": 22,
+      "status": "REQUEST_ERROR",
+      "careerRunsLoaded": 0,
       "sourceUrl": "https://racehub.com.au/horses/so-you-are"
     },
     {
