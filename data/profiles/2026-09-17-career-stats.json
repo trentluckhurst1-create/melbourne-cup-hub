@@ -1,0 +1,23 @@
+{
+  "snapshotDate": "2026-09-17",
+  "type": "verified-full-career-stats",
+  "policy": "Profile career statistics must come from full-career evidence, never the recent-form window.",
+  "horses": {
+    "Age Of Sail": {
+      "source": "Racing Australia",
+      "sourceUrl": "https://www.racingaustralia.horse/InteractiveForm/HorseFullForm.aspx?Key=2026Apr04%2CNSW%2CRoyal+Randwick&horsecode=MjAxMjA2MjQ4MA%3D%3D&raceentry=NTg0Mzk0MTY0OA%3D%3D&src=horseform&stage=FinalFields",
+      "verifiedAsAt": "2026-09-17",
+      "career": {"starts": 39, "wins": 5, "seconds": 5, "thirds": 8, "places": 18, "prizemoney": 469865},
+      "firstUp": {"starts": 8, "wins": 1, "seconds": 0, "thirds": 2, "places": 3},
+      "secondUp": {"starts": 7, "wins": 0, "seconds": 1, "thirds": 2, "places": 3},
+      "going": {
+        "Good": {"starts": 28, "wins": 4, "seconds": 4, "thirds": 5, "places": 13},
+        "Soft": {"starts": 6, "wins": 1, "seconds": 1, "thirds": 0, "places": 2},
+        "Heavy": {"starts": 2, "wins": 0, "seconds": 0, "thirds": 2, "places": 2},
+        "Synthetic": {"starts": 3, "wins": 0, "seconds": 0, "thirds": 1, "places": 1}
+      },
+      "winningDistances": {"1600": 1, "2000": 1, "2200": 1, "2414": 2},
+      "note": "Racing Australia profile showed 37:5-5-8 before the Aug 8 and Sep 4 2026 starts; current public record is 39:5-5-8. Going and first/second-up totals updated with those two Good-track starts."
+    }
+  }
+}
