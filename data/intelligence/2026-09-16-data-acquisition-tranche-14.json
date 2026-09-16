@@ -1,0 +1,16 @@
+{
+  "schema":"melbourne_cup_hub.data_acquisition.tranche14.v1",
+  "as_of":"2026-09-16T13:31:47+10:00",
+  "policy":{"acquisition_only":true,"no_rating_inference":true,"timeform_separate":true,"source_conflicts_quarantined":true},
+  "verified_ras_run_ratings":{
+    "Green Spaces":{"rating":116,"race":"ATC Australian Derby","distance_m":2400,"class":"Group 1","result":"1st","scale":"Racing & Sports","source":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-07-04/talking-points-saturday-4th-of-april-2026/712365","evidence":"Article explicitly states Green Spaces ran to a RAS rating of 116."},
+    "Aeliana":{"rating":119,"race":"ATC Australian Derby","distance_m":2400,"class":"Group 1","result":"1st","scale":"Racing & Sports","source":"https://www.racingandsports.com.au/news/racing/news/2025-04-08/talking-points-the-championships-day-1/686415","evidence":"Article explicitly states Aeliana earned 119 on the Racing And Sports rating scale."},
+    "Aeliana_Hobartville":{"rating":112,"race":"Hobartville Stakes","distance_m":1400,"class":"Group 2","result":"3rd","scale":"Racing & Sports","source":"https://www.racingandsports.com.au/news/racing/news/2025-03-06/a-closer-look-randwick-guineas/683293","evidence":"Article explicitly states Aeliana ran to 112 on the Racing And Sports Rating scale."}
+  },
+  "verified_2026_preparation_evidence":{
+    "Aeliana":{"facts":["Won 2026 Ranvet Stakes at Rosehill over 2000m","Won 2026 Tancred Stakes at Rosehill over 2400m","Chris Waller stated Cox Plate is the primary spring target with Melbourne Cup the dream after that","Barrier-trial mishap in August 2026 was reported with minimal swelling and soundness afterward"],"sources":["https://www.racingandsports.com.au/news/racing/news/2026-03-21/aeliana-wins-group-1-ranvet-stakes-post-race-trainer-and-jockey-quotes/711353","https://www.racingandsports.com.au/news/racing/news/2026-03-28/aeliana-wins-group-1-kia-tancred-stakes-post-race-trainer-and-jockey-quotes/711815","https://www.racingandsports.com.au/news/racing/news/2026-06-24/the-big-waller-guns-are-back-and-may-be-better-than-ever/716994","https://www.racingandsports.com.au/news/racing/news/2026-08-05/positive-signs-for-aeliana-following-barrier-mishap/719242"]},
+    "Birdman":{"facts":["Racing & Sports analysis states Birdman is a 2600m winner in Ireland and has won over 2000m in Australia","Doomben Cup performance assessed at 124 in the cited analysis"],"sources":["https://www.racingandsports.com.au/news/racing/insight-analysis/2026-05-25/talking-points-23rd-of-may-2026/715300"]}
+  },
+  "quarantine":[],
+  "coverage_ledger_check":{"universe":101,"identity_accounted":101,"form_present":101,"historical_coverage_ledger_file":"data/form/2026-09-15-form-coverage-ledger.json","historical_ledger_complete":58,"historical_ledger_career_complete":2,"historical_ledger_unresolved":41,"note":"Historical ledger predates subsequent acquisition/recovery tranches and must not be treated as current field-level completion. Current acquisition remains incomplete because publicly obtainable required fields are not yet exhausted/documented for all 101 horses.","status":"INCOMPLETE_PUBLIC_FIELD_LEVEL_ACQUISITION_CONTINUES"}
+}
