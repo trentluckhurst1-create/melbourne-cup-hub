@@ -1,0 +1,13 @@
+/* Public-launch cleanup — 16 Sep 2026.
+   Remove dashboard-style summary/KPI strips from the circled workspaces.
+   The underlying tables, filters, search, form and race intelligence remain unchanged. */
+.wh-summary,
+.oe-summary,
+.fg-summary,
+.lu-summary,
+.ir-summary,
+.rr-summary,
+.news-summary,
+.ri-summary{
+  display:none!important;
+}
