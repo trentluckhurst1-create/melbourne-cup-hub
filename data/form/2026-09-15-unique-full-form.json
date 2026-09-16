@@ -9481,21 +9481,6 @@
           "source": "Public Kentucky Downs result coverage"
         },
         {
-          "date": "2026-06-05",
-          "race": "Belmont Gold Cup",
-          "track": "Saratoga",
-          "country": "USA",
-          "distanceM": 3200,
-          "going": null,
-          "classGroup": "Grade 2",
-          "finish": "1st",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Victoria Racing Club"
-        },
-        {
           "date": "2026-06-04",
           "race": "Belmont Gold Cup",
           "track": "Saratoga",
@@ -9561,6 +9546,17 @@
           "classGroup": "Group 2",
           "finish": "3rd",
           "fieldSize": 11,
+          "source": "Sporting Life public race record"
+        },
+        {
+          "date": "2024-06-15",
+          "race": "Monmouth 1m1f",
+          "track": "Monmouth",
+          "country": "USA",
+          "distanceM": 1800,
+          "classGroup": "Group 3",
+          "finish": "3rd",
+          "fieldSize": 9,
           "source": "Sporting Life public race record"
         }
       ]
@@ -10668,21 +10664,6 @@
     "Wigmore": {
       "runs": [
         {
-          "date": "2026-05-09",
-          "race": "South Australian Derby",
-          "track": "Morphettville",
-          "country": "AUS",
-          "distanceM": 2500,
-          "going": null,
-          "classGroup": "Group 1",
-          "finish": "1st",
-          "fieldSize": null,
-          "weightCarried": null,
-          "performanceRating": null,
-          "timefigure": null,
-          "source": "Breednet stakes record"
-        },
-        {
           "date": "2026-05-02",
           "race": "South Australian Derby",
           "track": "Morphettville",
@@ -10771,6 +10752,19 @@
           "finish": "3rd",
           "weightCarried": "57.5kg",
           "margin": 1.7,
+          "source": "Breednet public race record"
+        },
+        {
+          "date": "2025-11-14",
+          "race": "Johnny & Matty Neil Builders - Hawera 3yo",
+          "track": "Waverley",
+          "country": "NZ",
+          "distanceM": 1400,
+          "going": "Good 4",
+          "classGroup": "Handicap",
+          "finish": "5th",
+          "weightCarried": "54kg",
+          "margin": 5.7,
           "source": "Breednet public race record"
         }
       ]

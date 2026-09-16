@@ -760,7 +760,7 @@
       "horse": "Tawny Port",
       "state": "COMPLETE",
       "uniqueActualRuns": 8,
-      "knownUniqueCareerDates": 9,
+      "knownUniqueCareerDates": 8,
       "missingRuns": 0,
       "careerComplete": false
     },
@@ -850,7 +850,7 @@
       "horse": "Wigmore",
       "state": "COMPLETE",
       "uniqueActualRuns": 8,
-      "knownUniqueCareerDates": 9,
+      "knownUniqueCareerDates": 8,
       "missingRuns": 0,
       "careerComplete": false
     },
