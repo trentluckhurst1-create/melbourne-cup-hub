@@ -39,10 +39,32 @@
     if(!weightPredictions){root.innerHTML='<div class="placeholder">Loading…</div>';loadExtras().then(showWeights);return;}
     root.innerHTML=weightsWorkspace();paint();
   }
+  function showFormGuide(){
+    currentView='form';selectedHorse=null;removeSilksTab();
+    document.querySelectorAll('#nav button[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view==='form'));
+    document.getElementById('page-title').textContent='Form Guide';
+    const root=document.getElementById('app-content');
+    const draw=()=>{
+      if(typeof window.formGuideV2View!=='function'||typeof window.paintFormGuideV2!=='function')return;
+      root.innerHTML=window.formGuideV2View();window.paintFormGuideV2();
+    };
+    if(typeof formIntelData!=='undefined'&&!formIntelData&&typeof loadFormIntel==='function'){
+      root.innerHTML='<div class="placeholder">Loading form guide…</div>';loadFormIntel().then(draw);return;
+    }
+    draw();
+  }
   const legacyRender=window.render;
-  window.render=function(view='dashboard'){if(view==='weights'){showWeights();return;}const out=legacyRender(view);removeSilksTab();return out;};
+  window.render=function(view='dashboard'){
+    if(view==='weights'){showWeights();return;}
+    if(view==='form'){showFormGuide();return;}
+    const out=legacyRender(view);removeSilksTab();return out;
+  };
   const legacyOpenView=window.openView;
-  window.openView=function(view){if(view==='weights'){showWeights();return;}return legacyOpenView(view);};
+  window.openView=function(view){
+    if(view==='weights'){showWeights();return;}
+    if(view==='form'){showFormGuide();return;}
+    return legacyOpenView(view);
+  };
   document.addEventListener('click',e=>{
     const w=e.target.closest('#nav button[data-view="weights"]');if(!w)return;
     e.preventDefault();e.stopImmediatePropagation();showWeights();
