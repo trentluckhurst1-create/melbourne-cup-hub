@@ -27,6 +27,8 @@ def generic_race_name(v):
 def days_between(a,b):
  try:return abs((date.fromisoformat(a)-date.fromisoformat(b)).days)
  except Exception:return None
+def run_signature(r):
+ return (norm(r.get('race')),norm(r.get('track')),r.get('distanceM'),norm(r.get('finish')))
 def main():
  noms=json.loads(NOMS.read_text(encoding='utf-8'))
  data=json.loads(FORM.read_text(encoding='utf-8'))
@@ -39,7 +41,7 @@ def main():
  if extra: global_issues.append({'severity':'CRITICAL','code':'NON_NOMINEE_RECORDS','horses':extra})
  rows=[]; warning=0
  for nk,name in ni.items():
-  rec=horses.get(fi.get(nk,''),{}) or {}; runs=rec.get('runs',[]) or []; issues=[]; seen_date={}; seen_race={}
+  rec=horses.get(fi.get(nk,''),{}) or {}; runs=rec.get('runs',[]) or []; issues=[]; seen_date={}; seen_race={}; seen_sig={}
   for i,r in enumerate(runs):
    if not actual(r): issues.append({'severity':'CRITICAL','code':'NON_ACTUAL_RUN_IN_CANONICAL','run':i})
    ds=str(r.get('date') or '')[:10]
@@ -51,15 +53,23 @@ def main():
     if ds in seen_date: issues.append({'severity':'CRITICAL','code':'DUPLICATE_START_DATE','run':i,'otherRun':seen_date[ds],'date':ds})
     else: seen_date[ds]=i
    race=r.get('race'); rk=(norm(race),norm(r.get('track')))
-   # A repeated named race at the same track is suspicious only when the two
-   # records are close enough that they cannot plausibly be annual renewals.
-   # Verified examples: Goodie Two Shoes contested both the 2025 and 2026
-   # Lillie Langtry/Stanerra renewals, roughly a year apart.
    if rk[0] and rk[1] and not generic_race_name(race):
     if rk in seen_race and seen_race[rk]!=ds:
      gap=days_between(seen_race[rk],ds)
      if gap is None or gap<180: issues.append({'severity':'WARNING','code':'REPEATED_NAMED_RACE_TOO_CLOSE','run':i,'otherDate':seen_race[rk],'date':ds,'daysApart':gap,'race':race,'track':r.get('track')})
     else: seen_race[rk]=ds
+   # Profile-wide duplicate detector: catches the same apparent performance
+   # copied to another date even when the race label is generic or slightly
+   # different upstream. Same track + distance + finishing position within
+   # 14 days is review evidence; exact named-race logic above remains stronger.
+   sig=run_signature(r)
+   if sig[1] and sig[2] and sig[3]:
+    for oldsig,(old_date,old_i) in list(seen_sig.items()):
+     gap=days_between(old_date,ds)
+     same_core=(oldsig[1],oldsig[2],oldsig[3])==(sig[1],sig[2],sig[3])
+     if same_core and old_date!=ds and gap is not None and gap<=14 and oldsig[0]!=sig[0]:
+      issues.append({'severity':'WARNING','code':'POSSIBLE_DUPLICATE_PERFORMANCE','run':i,'otherRun':old_i,'otherDate':old_date,'date':ds,'daysApart':gap,'race':race,'track':r.get('track'),'distanceM':r.get('distanceM'),'finish':r.get('finish')})
+    seen_sig[sig]=(ds,i)
    dm=r.get('distanceM')
    if dm is not None and (not isinstance(dm,(int,float)) or dm<800 or dm>5000): issues.append({'severity':'WARNING','code':'IMPLAUSIBLE_DISTANCE','run':i,'distanceM':dm})
    f=pos(r.get('finish')); fs=r.get('fieldSize')
@@ -72,7 +82,7 @@ def main():
   if any(x['severity']=='CRITICAL' for x in issues): sev='CRITICAL'
   elif any(x['severity']=='WARNING' for x in issues): sev='WARNING';warning+=1
   rows.append({'horse':name,'status':sev,'runs':len(runs),'careerComplete':career,'issues':issues})
- out={'snapshotDate':'2026-09-17','universe':len(names),'canonicalFile':str(FORM.relative_to(ROOT)).replace('\\','/'),'policy':'Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. One actual start per horse/date; no trials, jump-outs, non-starters, future runs, impossible finish/field relationships, or non-nominee identities. Repeated named races are flagged only when less than 180 days apart; annual renewals are valid distinct starts.','summary':{'pass':sum(r['status']=='PASS' for r in rows),'warning':warning,'criticalHorses':sum(r['status']=='CRITICAL' for r in rows),'globalCritical':any(x['severity']=='CRITICAL' for x in global_issues)},'globalIssues':global_issues,'rows':rows}
+ out={'snapshotDate':'2026-09-17','universe':len(names),'canonicalFile':str(FORM.relative_to(ROOT)).replace('\\','/'),'policy':'Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. Every nomination profile is audited for duplicate dates, repeated named races too close together, and possible copied performances sharing track/distance/finish within 14 days. Annual renewals remain valid distinct starts.','summary':{'pass':sum(r['status']=='PASS' for r in rows),'warning':warning,'criticalHorses':sum(r['status']=='CRITICAL' for r in rows),'globalCritical':any(x['severity']=='CRITICAL' for x in global_issues)},'globalIssues':global_issues,'rows':rows}
  OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(json.dumps(out['summary']))
 if __name__=='__main__': main()
