@@ -1,0 +1,46 @@
+{
+  "schema": "melbourne_cup_hub.data_acquisition.tranche18.v1",
+  "as_of": "2026-09-16T18:06:58+10:00",
+  "policy": {"acquisition_only":true,"no_rating_inference":true,"timeform_separate":true,"source_conflicts_quarantined":true},
+  "verified_public_evidence": {
+    "Constitution Hill": {
+      "cup_status": {
+        "status": "OUT_NOT_QUALIFIED",
+        "determined": "2026-09-05",
+        "latest_qualification_attempt": {
+          "course": "Kempton",
+          "race": "September Stakes",
+          "class": "Group 3",
+          "distance_m": 2400,
+          "result": "4th of 5",
+          "margin_from_winner": "approximately 6 lengths",
+          "winner": "Pride Of Arras"
+        },
+        "fact": "The required top-three Group-race placing was not achieved and trainer Nicky Henderson confirmed the Melbourne Cup trip was off.",
+        "source": "https://www.racing.com/news/2026/09/06/news-melbourne-cup-consititution-hill-fails-to-qualify"
+      },
+      "current_preparation_context": {
+        "flat_record_before_latest_run": "Won first two Flat starts before the September Stakes qualification attempt.",
+        "post_race_vet_report": "Racing.com reported that Constitution Hill bled from one nostril after the September Stakes. This is retained only as dated reported veterinary context.",
+        "source": "https://www.racing.com/news/2026/09/06/news-melbourne-cup-consititution-hill-fails-to-qualify"
+      },
+      "ratings": {
+        "official_flat_rating": null,
+        "ras_rating": null,
+        "timeform": null,
+        "note": "No numeric rating inferred from descriptive reporting."
+      }
+    }
+  },
+  "coverage_ledger_check": {
+    "universe":101,
+    "identity_accounted":101,
+    "form_present":101,
+    "historical_coverage_ledger_file":"data/form/2026-09-15-form-coverage-ledger.json",
+    "historical_ledger_complete":58,
+    "historical_ledger_career_complete":2,
+    "historical_ledger_unresolved":41,
+    "status":"INCOMPLETE_PUBLIC_FIELD_LEVEL_ACQUISITION_CONTINUES",
+    "note":"Constitution Hill now has verified current Cup qualification/status evidence. The fixed universe remains incomplete at required chronological form and field-level public exhaustion, so no completion notification is warranted."
+  }
+}
