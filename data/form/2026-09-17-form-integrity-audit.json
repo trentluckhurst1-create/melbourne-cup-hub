@@ -2,10 +2,10 @@
   "snapshotDate": "2026-09-17",
   "universe": 101,
   "canonicalFile": "data/form/2026-09-15-unique-full-form.json",
-  "policy": "Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. One actual start per horse/date; no trials, jump-outs, non-starters, future runs, impossible finish/field relationships, or non-nominee identities. Repeated-race warnings apply only to named races, not generic race numbers, benchmark labels or placeholder source labels.",
+  "policy": "Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. One actual start per horse/date; no trials, jump-outs, non-starters, future runs, impossible finish/field relationships, or non-nominee identities. Repeated named races are flagged only when less than 180 days apart; annual renewals are valid distinct starts.",
   "summary": {
-    "pass": 94,
-    "warning": 7,
+    "pass": 98,
+    "warning": 3,
     "criticalHorses": 0,
     "globalCritical": false
   },
@@ -146,20 +146,10 @@
     },
     {
       "horse": "Enfjaar",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
-          "run": 4,
-          "otherDate": "2026-06-16",
-          "date": "2025-06-17",
-          "race": "Royal Ascot Handicap",
-          "track": "Ascot"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Floating",
@@ -184,29 +174,10 @@
     },
     {
       "horse": "Goodie Two Shoes",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
-          "run": 5,
-          "otherDate": "2026-08-01",
-          "date": "2025-08-02",
-          "race": "Lillie Langtry Stakes",
-          "track": "Goodwood"
-        },
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
-          "run": 6,
-          "otherDate": "2026-07-08",
-          "date": "2025-07-09",
-          "race": "Stanerra Stakes",
-          "track": "Fairyhouse"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Grand Pierro",
@@ -244,10 +215,11 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TOO_CLOSE",
           "run": 2,
           "otherDate": "2026-08-27",
           "date": "2026-08-20",
+          "daysApart": 7,
           "race": "Vinnie Roe Stakes",
           "track": "Leopardstown"
         }
@@ -556,20 +528,10 @@
     },
     {
       "horse": "Sons And Lovers",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
-          "run": 5,
-          "otherDate": "2026-09-12",
-          "date": "2025-09-13",
-          "race": "Kilternan Stakes",
-          "track": "Leopardstown"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Soul Of Spain",
@@ -649,10 +611,11 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TOO_CLOSE",
           "run": 2,
           "otherDate": "2026-06-05",
           "date": "2026-06-04",
+          "daysApart": 1,
           "race": "Belmont Gold Cup",
           "track": "Saratoga"
         }
@@ -674,20 +637,10 @@
     },
     {
       "horse": "Think Giant",
-      "status": "WARNING",
+      "status": "PASS",
       "runs": 8,
       "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
-          "run": 7,
-          "otherDate": "2025-09-28",
-          "date": "2024-10-13",
-          "race": "Cologne Open",
-          "track": "Cologne"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Torranzino",
@@ -739,10 +692,11 @@
       "issues": [
         {
           "severity": "WARNING",
-          "code": "REPEATED_NAMED_RACE_TRACK_IDENTITY",
+          "code": "REPEATED_NAMED_RACE_TOO_CLOSE",
           "run": 1,
           "otherDate": "2026-05-09",
           "date": "2026-05-02",
+          "daysApart": 7,
           "race": "South Australian Derby",
           "track": "Morphettville"
         }
