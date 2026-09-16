@@ -1,0 +1,20 @@
+// Historical Melbourne Cup — modern benchmark workspace.
+(function(){
+const cupHistory=[
+[2025,'Half Yours','5G','Tony & Calvin McEvoy','Jamie Melham',53,8,'3:22.46','Goodie Two Shoes','Middle Earth'],
+[2024,"Knight's Choice",'5G','John Symons & Sheila Laxon','Robbie Dolan',51.5,5,'3:19.53','Warp Speed','Okita Soushi'],
+[2023,'Without A Fight','6G','Anthony & Sam Freedman','Mark Zahra',56.5,null,'3:18.37','Soulcombe','Sheraz'],
+[2022,'Gold Trip','6H','Ciaron Maher & David Eustace','Mark Zahra',57.5,null,'3:24.04','Emissary','High Emocean'],
+[2021,'Verry Elleegant','6M','Chris Waller','James McDonald',57,null,'3:17.43','Incentivise','Spanish Mission'],
+[2020,'Twilight Payment','8G','Joseph O’Brien','Jye McNeil',55.5,null,'3:17.34','Tiger Moth','Prince Of Arran'],
+[2019,'Vow And Declare','4G','Danny O’Brien','Craig Williams',52,null,'3:24.76','Prince Of Arran','Il Paradiso'],
+[2018,'Cross Counter','4G','Charlie Appleby','Kerrin McEvoy',51,null,'3:21.17','Marmelo','Prince Of Arran'],
+[2017,'Rekindling','4H','Joseph O’Brien','Corey Brown',51.5,null,'3:21.19','Johannes Vermeer','Max Dynamite'],
+[2016,'Almandin','7G','Robert Hickmott','Kerrin McEvoy',52,null,'3:20.58','Heartbreak City','Hartnell'],
+[2015,'Prince Of Penzance','6G','Darren Weir','Michelle Payne',53,null,'3:23.15','Max Dynamite','Criterion'],
+[2014,'Protectionist','5H','Andreas Wohler','Ryan Moore',56.5,null,'3:17.71','Red Cadeaux','Who Shot Thebarman'],
+[2013,'Fiorente','6H','Gai Waterhouse','Damien Oliver',55,null,'3:20.30','Red Cadeaux','Mount Athos']
+];
+function historicalCupView(){const avg=(cupHistory.reduce((s,r)=>s+r[5],0)/cupHistory.length).toFixed(1),light=[...cupHistory].sort((a,b)=>a[5]-b[5])[0],heavy=[...cupHistory].sort((a,b)=>b[5]-a[5])[0];return `<div class="hc-head"><div><div class="kicker">MELBOURNE CUP BENCHMARKS</div><h2>Historical Cup</h2><div class="section-copy">Recent winners and the race-shape benchmarks that matter for the 2026 Cup.</div></div></div><section class="hc-summary"><div><span>RECENT CUPS</span><strong>${cupHistory.length}</strong><small>2013–2025</small></div><div><span>AVG WINNING WT</span><strong>${avg}kg</strong><small>Recent winner benchmark</small></div><div><span>LIGHTEST</span><strong>${light[5].toFixed(1)}kg</strong><small>${light[1]} · ${light[0]}</small></div><div><span>HEAVIEST</span><strong>${heavy[5].toFixed(1)}kg</strong><small>${heavy[1]} · ${heavy[0]}</small></div></section><div class="hc-grid"><div class="panel"><div class="hc-title"><h3>Recent Melbourne Cup Winners</h3><span>Weight, connections and finishing time</span></div><div class="table-wrap"><table class="data-table hc-table"><thead><tr><th>Year</th><th>Winner</th><th>Age/Sex</th><th>Trainer</th><th>Jockey</th><th>Wt</th><th>Barrier</th><th>Time</th><th>2nd</th><th>3rd</th></tr></thead><tbody>${cupHistory.map(r=>`<tr><td><strong>${r[0]}</strong></td><td class="horse">${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td><td><strong>${r[5].toFixed(1)}</strong></td><td>${r[6]??'—'}</td><td>${r[7]}</td><td>${r[8]}</td><td>${r[9]}</td></tr>`).join('')}</tbody></table></div></div><aside class="panel hc-notes"><div class="hc-title"><h3>2026 Benchmark Lens</h3><span>Historical context, not a selection model</span></div><div class="hc-note"><strong>Weight</strong><p>Recent winners span ${light[5].toFixed(1)}–${heavy[5].toFixed(1)}kg in this sample, with a ${avg}kg average.</p></div><div class="hc-note"><strong>Repeat relevance</strong><p>Current nominees include recent Cup performers and horses from proven staying pathways; use this history alongside current PFR, weight and lead-up form.</p></div><div class="hc-note"><strong>Race conditions</strong><p>Historical results are context only. Field strength, pace, track, barrier and handicap conditions change year to year.</p></div></aside></div>`;}
+window.historicalCupView=historicalCupView;const oldRender=render;render=function(view='dashboard'){if(view==='history'){document.getElementById('page-title').textContent='Historical Cup';document.getElementById('app-content').innerHTML=historicalCupView();return;}oldRender(view);};
+})();
