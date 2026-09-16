@@ -4,6 +4,8 @@ on:
     paths:
       - 'scripts/collect_career_profiles.py'
       - 'scripts/audit_career_integrity.py'
+      - 'data/profiles/2026-09-17-career-stats.json'
+      - 'data/profiles/2026-09-17-identity-certified-career-overrides.json'
       - '.github/workflows/build-career-profiles.yml'
   workflow_dispatch:
 permissions:
