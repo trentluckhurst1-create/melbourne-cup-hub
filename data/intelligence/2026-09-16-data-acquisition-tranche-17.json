@@ -1,0 +1,121 @@
+{
+  "schema": "melbourne_cup_hub.data_acquisition.tranche17.v1",
+  "as_of": "2026-09-16T16:54:00+10:00",
+  "policy": {
+    "acquisition_only": true,
+    "no_rating_inference": true,
+    "timeform_separate": true,
+    "source_conflicts_quarantined": true
+  },
+  "verified_public_evidence": {
+    "Barnavara": {
+      "identity": {
+        "country": "IRE",
+        "sex": "mare",
+        "sire": "Calyx",
+        "dam": "Alfea",
+        "damsire": "Kentucky Dynamite",
+        "trainer": "Chris Waller",
+        "owner": "Yu Long Investments",
+        "source": "https://www.racingpost.com/profile/horse/5884452/barnavara/form/"
+      },
+      "current_2026_preparation": {
+        "australian_debut": {
+          "date": "2026-03-28",
+          "course": "Rosehill",
+          "race": "Neville Sellwood Stakes",
+          "class": "Group 2",
+          "distance_m": 2000,
+          "going": "Soft 6",
+          "result": "4th",
+          "carried_weight_kg": 57,
+          "jockey": "James McDonald",
+          "source": "https://www.racingandsports.com.au/news/racing/news/2026-03-28/wootton-verni-wins-group-2-asahi-super-dry-neville-sellwood-stakes-post-race-trainer-and-jockey-quotes/711794"
+        },
+        "latest_run_public_profile": {
+          "date": "2026-08-29",
+          "course": "Caulfield",
+          "result": "15th of 16",
+          "source": "https://racehub.com.au/horses/barnavara"
+        }
+      },
+      "ratings": {
+        "official_or_ras_run_rating": null,
+        "timeform": null,
+        "note": "No numeric figure promoted as Racing & Sports or Timeform from this tranche."
+      }
+    },
+    "Athabascan": {
+      "identity": {
+        "sex": "gelding",
+        "sire": "Almanzor",
+        "dam": "Alzubra",
+        "trainer": "Tom Charlton",
+        "source": "https://practicalpunting.com.au/horse/athabascan/977967"
+      },
+      "public_career_record": {
+        "starts": 48,
+        "wins": 4,
+        "seconds": 7,
+        "thirds": 6,
+        "win_distance_range_m": "2000-2600",
+        "good": "24:1-5-0",
+        "soft": "23:3-2-6",
+        "heavy": "1:0-0-0",
+        "last_race_date": "2026-05-30",
+        "last_race_course": "Eagle Farm",
+        "source": "https://practicalpunting.com.au/horse/athabascan/977967"
+      },
+      "ratings": {
+        "official_or_ras_run_rating": null,
+        "timeform": null,
+        "note": "Provider profile rating is not relabelled as official, Racing & Sports, or Timeform."
+      }
+    },
+    "Campaldino": {
+      "current_2026_preparation": {
+        "randwick_city_stakes": {
+          "date": "2026-03-07",
+          "course": "Randwick",
+          "race": "Randwick City Stakes",
+          "class": "Listed",
+          "distance_m": 2000,
+          "result": "1st",
+          "source": "https://www.darbyracing.com/single-post/campaldino-charges-into-sydney-cup-favouritism-with-randwick-city-stakes-triumph"
+        },
+        "sydney_cup_status": {
+          "date": "2026-04-10",
+          "status": "SCRATCHED",
+          "fact": "Withdrawn from the Sydney Cup after blood testing reported elevated cardiac troponin following an arrhythmia detected during veterinary inspection; connections sent the horse for a spell.",
+          "source": "https://thestraight.com.au/heart-issue-sees-campaldino-withdrawn-from-sydney-cup/"
+        }
+      },
+      "ratings": {
+        "official_or_ras_run_rating": null,
+        "timeform": null,
+        "note": "No numeric rating inferred from performance reporting."
+      }
+    }
+  },
+  "quarantine": [
+    {
+      "horse": "Barnavara",
+      "issue": "RaceHub profile currently displays internally inconsistent career totals (14 starts in narrative versus 15 in stats breakdown); neither total is promoted as canonical."
+    },
+    {
+      "horse": "Athabascan",
+      "issue": "Other public profile pages expose conflicting career totals; the Practical Punting 48-start snapshot is retained with provider/date provenance rather than silently reconciled."
+    }
+  ],
+  "coverage_ledger_check": {
+    "universe": 101,
+    "identity_accounted": 101,
+    "form_present": 101,
+    "historical_coverage_ledger_file": "data/form/2026-09-15-form-coverage-ledger.json",
+    "historical_ledger_complete": 58,
+    "historical_ledger_career_complete": 2,
+    "historical_ledger_unresolved": 41,
+    "status": "INCOMPLETE_PUBLIC_FIELD_LEVEL_ACQUISITION_CONTINUES",
+    "note": "Additional verified evidence acquired for Barnavara, Athabascan and Campaldino. The fixed 101-horse universe is still not exhausted at the required public field level; unresolved/missing fields are not yet definitively documented as unavailable for every horse, so no completion notification is warranted."
+  }
+}
