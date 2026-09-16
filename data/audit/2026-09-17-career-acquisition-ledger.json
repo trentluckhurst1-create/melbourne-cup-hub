@@ -1,76 +1,74 @@
 {
   "snapshotDate": "2026-09-17",
   "universe": 101,
-  "policy": "All 101 original nominees remain in scope. A source failure is not a missing horse. Public baseline records are acquisition evidence only until identity and career integrity are verified. Recent-form windows must never be substituted for full-career statistics.",
+  "policy": "All 101 original nominees remain in scope. A source failure is not a missing horse. Recent-form windows are never substituted for full-career statistics. Ratings systems remain separate and missing ratings are never inferred.",
+  "careerIntegrity": {
+    "pass": 101,
+    "warning": 0,
+    "critical": 0,
+    "provisionalRecords": 0,
+    "source": "data/profiles/2026-09-17-career-integrity-audit.json"
+  },
+  "recentFormIntegrity": {
+    "accountedFor": 101,
+    "duplicateAnomaliesOutstanding": 0,
+    "note": "Evidence-backed false duplicate dates have been excluded and the canonical recent-form window rebuilt."
+  },
   "publicBaseline": {
     "raceHubProfilesWithRuns": 76,
-    "raceHubFailures": 25
+    "raceHubFailures": 25,
+    "raceHubFailuresRecovered": 25
   },
-  "raceHubFailureRecovery": {
-    "accountedFor": 25,
-    "horses": [
-      "Amelia Earhart",
-      "Causeway",
-      "Christmas Day",
-      "Constitution Hill",
-      "Enfjaar",
-      "Goodie Two Shoes",
-      "Highwayman",
-      "Hopewell Rock",
-      "James J Braddock",
-      "Kizlyar",
-      "Knight’s Choice",
-      "Nil Bua Gan Dua",
-      "Onesmoothoperator",
-      "Piazza San Marco",
-      "Pierre Bonnard",
-      "Point Of Law",
-      "She’s A Hustler",
-      "Small Fry",
-      "Sons And Lovers",
-      "Starford",
-      "Stinger Glass",
-      "Tawny Port",
-      "Trustyourinstinct",
-      "Winday",
-      "Wine Dark Sea"
-    ],
-    "note": "Each former RaceHub failure now has replacement public/subscriber evidence in the verified career registry. Goodie Two Shoes remains deliberately quarantined from Flat career totals until Flat-only rows are separated. Mixed-code totals are not published as Melbourne Cup Flat career totals."
+  "ratingsCoverage": {
+    "racingAndSportsVerifiedPublicRatings": 45,
+    "racingAndSportsUniverse": 101,
+    "internationalNomineesCoveredByVrcRasArticle": 23,
+    "source": "data/ratings/2026-09-15-ras-public-peaks.json",
+    "unavailablePolicy": "No R&S value is inferred where an explicitly labelled public R&S rating cannot be found. Timeform, RSSR, official handicap ratings and unlabelled numeric fields are not substitutes."
   },
-  "verificationBacklog": {
+  "freshPublicEvidence": [
+    {
+      "source": "VRC / Racing & Sports",
+      "url": "https://www.vrc.com.au/latest-news/lexus-melbourne-cup-rating-the-internationals/",
+      "verifiedOn": "2026-09-17",
+      "scope": "All 23 international nominees with explicitly published peak RAS ratings",
+      "status": "CAPTURED"
+    },
+    {
+      "source": "VRC",
+      "url": "https://www.vrc.com.au/latest-news/101-nominations-received-for-the-166th-lexus-melbourne-cup/",
+      "verifiedOn": "2026-09-17",
+      "scope": "Fixed 101-nomination universe, golden-ticket status and official milestone schedule",
+      "status": "CAPTURED"
+    },
+    {
+      "source": "Racing Victoria",
+      "url": "https://www.racingvictoria.com.au/racing/handicapping",
+      "verifiedOn": "2026-09-17",
+      "scope": "2026 Cup handicap minimum topweight 59kg and minimum allotted weight 51kg",
+      "status": "CAPTURED"
+    }
+  ],
+  "cupWeights": {
+    "officialReleaseScheduled": "2026-09-17T12:00:00+10:00",
+    "statusAtThisRun": "NOT_YET_SCHEDULED_FOR_RELEASE",
+    "rule": "Do not promote predicted weights to official before Racing Victoria/VRC publishes the 2026 handicap list."
+  },
+  "remainingPublicAcquisition": {
     "status": "IN_PROGRESS",
     "requirements": [
-      "Identity/pedigree/connections cross-check for all baseline horses",
-      "Chronological full-career run integrity and duplicate/conflict audit",
-      "Distance/surface/going/course and class/stakes splits where publicly exposed",
-      "Carried weights and margins where publicly exposed",
-      "Official ratings kept distinct from Racing & Sports and Timeform ratings",
-      "Current 2026 preparation/latest run/trials where relevant",
-      "Cup status and official weight evidence",
-      "Evidence URL/provenance for every promoted field",
-      "Quarantine same-name and contaminated evidence rather than infer"
-    ],
-    "priorityIdentityRisk": [
-      "Aethelwulf",
-      "Golden Century",
-      "Pounding",
-      "Saint George",
-      "Portland",
-      "Sapphire Siren",
-      "Klondike",
-      "Kings Valley",
-      "Ohope Wins",
-      "Shockletz"
-    ],
-    "specialQuarantine": [
-      {
-        "horse": "Goodie Two Shoes",
-        "reason": "Current evidence contains mixed Flat/jumps totals; Flat-only career split still required."
-      }
+      "Complete evidence-backed identity/pedigree/connections provenance across the 101-horse ledger",
+      "Fill distance/surface/going/course and class/stakes splits only where public sources expose them",
+      "Fill carried weights and margins only where exposed in verified chronological results",
+      "Continue explicit public R&S rating acquisition for the 56 nominees without a verified published R&S figure; document NOT_PUBLICLY_EXPOSED where exhaustive public search fails",
+      "Keep official ratings, Racing & Sports ratings, RSSR and Timeform in separate fields",
+      "Capture official 2026 Melbourne Cup weights after the scheduled 12:00pm release",
+      "Retain evidence URLs and quarantine identity/source conflicts"
     ]
   },
   "completion": {
     "all101AccountedForAtAcquisitionLevel": true,
+    "all101CareerIntegrityPass": true,
     "all101FullyVerifiedForPublication": false,
     "notifyUser": false
   }
