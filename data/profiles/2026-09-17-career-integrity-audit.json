@@ -3,10 +3,10 @@
   "universe": 101,
   "policy": "Recent-form/PFR windows are never career evidence. Unicode/punctuation-normalized joins are collision checked. Identity-certified overrides take precedence over verified records, which take precedence over broad public baseline. Informational stale-baseline differences do not fail a horse. Provisional records remain warnings until independent verification completes.",
   "summary": {
-    "pass": 92,
-    "warning": 9,
+    "pass": 101,
+    "warning": 0,
     "critical": 0,
-    "provisionalRecords": 9,
+    "provisionalRecords": 0,
     "identityCertifiedOverrides": 8
   },
   "rows": [
@@ -130,17 +130,12 @@
     },
     {
       "horse": "Causeway",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": 8,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "PROVISIONAL_FULL_RECORD_RECHECK"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Changingoftheguard",
@@ -162,17 +157,12 @@
     },
     {
       "horse": "Constitution Hill",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": 3,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "PROVISIONAL_FLAT_RECORD_RECHECK"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Darkbonee",
@@ -259,17 +249,12 @@
     },
     {
       "horse": "Goodie Two Shoes",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": 16,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "PROVISIONAL_SPLIT"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Grand Pierro",
@@ -408,17 +393,12 @@
     },
     {
       "horse": "Knight’s Choice",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": 28,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "PROVISIONAL_OFFICIAL_CROSSCHECK_PENDING"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Land Legend",
@@ -548,17 +528,12 @@
     },
     {
       "horse": "Onesmoothoperator",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
       "identityCertifiedOverride": false,
-      "authoritativeCareerStarts": 49,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "PROVISIONAL_OFFICIAL_CROSSCHECK_PENDING"
-        }
-      ]
+      "authoritativeCareerStarts": 48,
+      "issues": []
     },
     {
       "horse": "Piazza San Marco",
@@ -571,17 +546,12 @@
     },
     {
       "horse": "Pierre Bonnard",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
       "identityCertifiedOverride": false,
-      "authoritativeCareerStarts": 9,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "PROVISIONAL_FULL_RECORD_RECHECK"
-        }
-      ]
+      "authoritativeCareerStarts": 10,
+      "issues": []
     },
     {
       "horse": "Piggyback",
@@ -713,17 +683,12 @@
     },
     {
       "horse": "She’s A Hustler",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": 16,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "PROVISIONAL_OFFICIAL_CROSSCHECK_PENDING"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Shockletz",
@@ -862,17 +827,12 @@
     },
     {
       "horse": "Tawny Port",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": 34,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "PROVISIONAL_SEMANTICS_REVIEW"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "The Euphrates",
@@ -977,17 +937,12 @@
     },
     {
       "horse": "Winday",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
       "identityCertifiedOverride": false,
       "authoritativeCareerStarts": 5,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "PROVISIONAL_CODE_SPLIT_RECHECK"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Wine Dark Sea",
