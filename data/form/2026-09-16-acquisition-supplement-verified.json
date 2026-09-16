@@ -1,0 +1,38 @@
+{
+  "as_of":"2026-09-16",
+  "scope":"fixed original 101 Melbourne Cup 2026 nominees",
+  "policy":"Public-source facts only. Ratings are not inferred. Racing & Sports RR fields remain explicitly source-labelled and separate from Timeform.",
+  "horses":[
+    {
+      "horse":"Zakouma",
+      "identity":{"sex":"gelding","colour":"bay","sire":"Crowded House (GB)","dam":"Dar Es Salaam (NZ)","damsire":"Zabeel (NZ)","trainer":"Grahame Begg","owner":"Wyadup Valley Farm (Mgr: T J Delroy)"},
+      "cup_status":{"qualified":true,"basis":"Won 2026 VRC Andrew Ramsden Plate (2800m), carrying Melbourne Cup ballot exemption"},
+      "verified_runs":[{"date":"2026-05-16","course":"Flemington","distance_m":2800,"finish":1,"field":14,"class":"Listed / Andrew Ramsden Plate","sp":"$5"},{"date":"2026-04-25","course":"Flemington","distance_m":2000,"finish":7,"field":14,"class":"BM100","sp":"$2.10"},{"date":"2026-03-28","course":"Flemington","distance_m":2000,"finish":1,"field":12,"class":"BM84","sp":"$2.30"}],
+      "2026_preparation":[{"date":"2026-08-03","course":"Cranbourne","type":"barrier trial","distance_m":1000,"finish":5,"field":10},{"date":"2026-08-19","course":"Caulfield Heath","type":"barrier trial","distance_m":1400,"finish":7,"field":7}],
+      "ratings":{"racing_and_sports_rr":"Source exposes an RR column on the cited race card; no numeric RR was captured for Zakouma in the accessible extract, therefore unavailable here and not inferred.","timeform":"Not populated from these sources."},
+      "evidence":["https://my.racingandsports.com/race-card/2026-08-29/152/Australia/1","https://thoroughbredexpress.com.au/news-archives/wa-stayer-zakouma-en-route-to-melbourne-cup/"],
+      "provenance":"Racing & Sports race-card extract plus Thoroughbred Express report dated 18 May 2026."
+    },
+    {
+      "horse":"Zahrann",
+      "identity":{"country":"IRE","sex":"horse","colour":"bay","foaled":"2022-02-25","sire":"Night Of Thunder (IRE)","dam":"Zannda (IRE)","damsire":"Azamour (IRE)","trainer":"Ciaron Maher","breeder":"His Highness The Aga Khan's Studs S C"},
+      "verified_runs":[{"date":"2026-08-29","course":"Caulfield","distance_m":1700,"finish":4,"field":16,"margin_l":1.65},{"date":"2026-06-06","course":"Flemington","distance_m":2000,"going":"Heavy(8)","class":"BM100","finish":3,"field":14,"margin_l":1.0,"weight_kg":57,"sp":"$4.60"},{"date":"2026-05-16","course":"Flemington","distance_m":1600,"going":"Good(4)","class":"BM100","finish":5,"field":11,"margin_l":1.8,"weight_kg":60,"sp":"$3.70"},{"date":"2025-09-13","course":"Leopardstown","distance_m":2011,"finish":7,"field":8,"margin_l":10.5,"weight_kg":58.5,"sp":"$6.50"},{"date":"2025-08-16","course":"Curragh","distance_m":2011,"going":"Good","finish":1,"field":6,"weight_kg":58,"sp":"$3.00"},{"date":"2025-06-20","course":"Ascot","distance_m":2414,"going":"Firm","class":"Class 1","finish":2,"field":9,"margin_l":0.8,"weight_kg":58,"sp":"$3.75"},{"date":"2025-06-05","course":"Leopardstown","distance_m":2414,"going":"Good","finish":1,"field":9,"weight_kg":59.5,"sp":"$3.50"},{"date":"2025-05-06","course":"Cork","distance_m":2112,"going":"Good","class":"Maiden","finish":1,"field":5,"weight_kg":60,"sp":"$1.33"},{"date":"2025-04-08","course":"Navan","distance_m":1609,"going":"Good","class":"Maiden","finish":2,"field":12,"margin_l":0.2,"weight_kg":60,"sp":"$6.00"}],
+      "2026_preparation":[{"date":"2026-03-26","course":"Caulfield Heath","type":"trial","distance_m":1500,"finish":4,"field":6,"margin_l":4.3},{"date":"2026-04-23","course":"Caulfield Heath","type":"trial","distance_m":1500,"finish":1,"field":5}],
+      "ratings":{"official_rating":"Racing Post profile exposes OR/RPR columns but the accessible extract did not expose numeric row values; no value inferred.","racing_and_sports_rr":"Not captured from cited public extracts.","timeform":"Not populated from these sources."},
+      "evidence":["https://racehub.com.au/horses/zahrann","https://www.racingpost.com/profile/horse/6604814/zahrann/form/","https://www.racingandsports.com.au/news/racing/news/2026-05-01/irish-import-kicks-off-campaign-at-bendigo/713852"],
+      "provenance":"RaceHub public profile/form, Racing Post identity/pedigree page and Racing & Sports Australian-debut report."
+    },
+    {
+      "horse":"Ohope Wins",
+      "identity":{"sire":"Ocean Park","trainer_2026":"Chris Waller","previous_trainers":"Lance O'Sullivan & Andrew Scott","ownership_note":"Purchased by Yulong Investments during 2026 NZ campaign"},
+      "stakes_performance":[{"date":"2026-02-21","race":"New Zealand Oaks","course":"Ellerslie","distance_m":2400,"class":"Group 1","finish":1,"margin_l":2.2},{"date":"2026-03-28","race":"Vinery Stud Stakes","course":"Rosehill","distance_m":2000,"going":"Soft 6","class":"Group 1","weight_kg":56},{"date":"2026-04-11","race":"Australian Oaks","course":"Randwick","distance_m":2400,"class":"Group 1","finish":1}],
+      "campaign_note":"Completed the New Zealand Oaks–Australian Oaks double in 2026 after earlier wins in the G2 Sir Patrick Hogan Stakes (2000m) and G2 David & Karyn Ellis Fillies' Classic (2100m).",
+      "ratings":{"racing_and_sports_rr":"Not exposed in cited extracts; unavailable and not inferred.","timeform":"Not populated from these sources."},
+      "evidence":["https://sportnation.nz/article/horse-racing-2026-ohope-wins-joins-exclusive-club-after-completing-oaks","https://www.justracing.com.au/horse-racing/ohope-wins-notches-rare-oaks-double/153066","https://www.justhorseracing.com.au/general-news/betting/ohope-wins-a-narrow-vinery-stud-stakes-market-elect/887334"],
+      "provenance":"LOVERACING.NZ syndicated report, AAP report and published Vinery race-card data."
+    }
+  ],
+  "conflict_quarantine":[{"horse":"Zahrann","field":"career starts","conflict":"RaceHub page text reports 8 starts in one section and 9 starts in stats/form history.","resolution":"Do not use aggregate start count; retain individually dated runs only."}],
+  "completion_status":"IN_PROGRESS",
+  "notification_gate":"Do not notify until all 101 are fully accounted for or remaining fields are explicitly documented unavailable."
+}
