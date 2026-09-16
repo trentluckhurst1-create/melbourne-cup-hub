@@ -11,6 +11,26 @@
           "https://www.irishracing.com/racecards/Thu-20th-Aug-2026/Leopardstown/1830"
         ]
       }
+    ],
+    "Tawny Port": [
+      {
+        "date": "2026-06-05",
+        "reason": "False adjacent-date duplicate of the 2026 Belmont Gold Cup. The race was run at Saratoga on 2026-06-04 local time; 2026-06-05 is the Australian publication/calendar date, not a second start.",
+        "evidence": [
+          "https://www.vrc.com.au/racing/2026-lexus-melbourne-cup-golden-ticket-entry/",
+          "https://www.winstarfarm.com/winstar-bred-tawny-port-captures-g2-belmont-gold-cup-earns-trip-to-g1-melbourne-cup/"
+        ]
+      }
+    ],
+    "Wigmore": [
+      {
+        "date": "2026-05-09",
+        "reason": "False duplicate of the 2026 South Australian Derby. Wigmore won the Group 1 South Australian Derby at Morphettville on 2026-05-02; there was no second South Australian Derby start on 2026-05-09.",
+        "evidence": [
+          "https://www.racing.com/news/2026/05/02/news-review-morphettville-sa-derby-main-020526",
+          "https://www.breednet.com.au/stakes-race-results/race-history?racename=sajc+south+australian+derby"
+        ]
+      }
     ]
   }
 }
