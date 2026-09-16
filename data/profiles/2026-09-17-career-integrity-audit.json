@@ -1,25 +1,28 @@
 {
   "snapshotDate": "2026-09-17",
   "universe": 101,
-  "policy": "Recent-form/PFR windows are never career evidence. Horse-name joins are punctuation/Unicode normalized. Verified/official career records override public baseline. Warnings require review before promotion; critical records must not be shown as verified career data.",
+  "policy": "Recent-form/PFR windows are never career evidence. Unicode/punctuation-normalized joins are collision checked. Identity-certified overrides take precedence over verified records, which take precedence over broad public baseline. Informational stale-baseline differences do not fail a horse. Provisional records remain warnings until independent verification completes.",
   "summary": {
-    "pass": 91,
-    "warning": 10,
-    "critical": 0
+    "pass": 92,
+    "warning": 9,
+    "critical": 0,
+    "provisionalRecords": 9,
+    "identityCertifiedOverrides": 8
   },
   "rows": [
     {
       "horse": "Aeliana",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 17,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 19,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "VERIFIED_VS_PUBLIC_STARTS",
-          "verified": 19,
-          "publicRuns": 17,
-          "note": "May be a stale public snapshot; verified layer must take precedence."
+          "severity": "INFO",
+          "code": "AUTHORITATIVE_OVERRIDES_PUBLIC_STARTS",
+          "authoritative": 19,
+          "publicRuns": 17
         }
       ]
     },
@@ -28,32 +31,37 @@
       "status": "PASS",
       "publicRuns": 6,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
       "horse": "Aethelwulf",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 6,
       "verifiedOverride": false,
+      "identityCertifiedOverride": true,
+      "authoritativeCareerStarts": 6,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "IDENTITY_REVIEW_REQUIRED"
+          "severity": "INFO",
+          "code": "IDENTITY_CERTIFIED_OVERRIDE"
         }
       ]
     },
     {
       "horse": "Age Of Sail",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 34,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 39,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "VERIFIED_VS_PUBLIC_STARTS",
-          "verified": 39,
-          "publicRuns": 34,
-          "note": "May be a stale public snapshot; verified layer must take precedence."
+          "severity": "INFO",
+          "code": "AUTHORITATIVE_OVERRIDES_PUBLIC_STARTS",
+          "authoritative": 39,
+          "publicRuns": 34
         }
       ]
     },
@@ -62,6 +70,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 11,
       "issues": []
     },
     {
@@ -69,6 +79,8 @@
       "status": "PASS",
       "publicRuns": 28,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -76,6 +88,8 @@
       "status": "PASS",
       "publicRuns": 15,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -83,6 +97,8 @@
       "status": "PASS",
       "publicRuns": 14,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -90,6 +106,8 @@
       "status": "PASS",
       "publicRuns": 16,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -97,6 +115,8 @@
       "status": "PASS",
       "publicRuns": 21,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -104,20 +124,31 @@
       "status": "PASS",
       "publicRuns": 15,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
       "horse": "Causeway",
-      "status": "PASS",
+      "status": "WARNING",
       "publicRuns": 0,
       "verifiedOverride": true,
-      "issues": []
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 8,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "PROVISIONAL_FULL_RECORD_RECHECK"
+        }
+      ]
     },
     {
       "horse": "Changingoftheguard",
       "status": "PASS",
       "publicRuns": 20,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -125,20 +156,31 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 10,
       "issues": []
     },
     {
       "horse": "Constitution Hill",
-      "status": "PASS",
+      "status": "WARNING",
       "publicRuns": 0,
       "verifiedOverride": true,
-      "issues": []
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 3,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "PROVISIONAL_FLAT_RECORD_RECHECK"
+        }
+      ]
     },
     {
       "horse": "Darkbonee",
       "status": "PASS",
       "publicRuns": 11,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -146,6 +188,8 @@
       "status": "PASS",
       "publicRuns": 18,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -153,6 +197,8 @@
       "status": "PASS",
       "publicRuns": 8,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -160,6 +206,8 @@
       "status": "PASS",
       "publicRuns": 8,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -167,6 +215,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 16,
       "issues": []
     },
     {
@@ -174,6 +224,8 @@
       "status": "PASS",
       "publicRuns": 35,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -181,32 +233,51 @@
       "status": "PASS",
       "publicRuns": 39,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
       "horse": "Golden Century",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 22,
       "verifiedOverride": false,
+      "identityCertifiedOverride": true,
+      "authoritativeCareerStarts": 25,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "IDENTITY_REVIEW_REQUIRED"
+          "severity": "INFO",
+          "code": "AUTHORITATIVE_OVERRIDES_PUBLIC_STARTS",
+          "authoritative": 25,
+          "publicRuns": 22
+        },
+        {
+          "severity": "INFO",
+          "code": "IDENTITY_CERTIFIED_OVERRIDE"
         }
       ]
     },
     {
       "horse": "Goodie Two Shoes",
-      "status": "PASS",
+      "status": "WARNING",
       "publicRuns": 0,
       "verifiedOverride": true,
-      "issues": []
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 16,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "PROVISIONAL_SPLIT"
+        }
+      ]
     },
     {
       "horse": "Grand Pierro",
       "status": "PASS",
       "publicRuns": 37,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -214,6 +285,8 @@
       "status": "PASS",
       "publicRuns": 11,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -221,6 +294,8 @@
       "status": "PASS",
       "publicRuns": 17,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -228,6 +303,8 @@
       "status": "PASS",
       "publicRuns": 16,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -235,6 +312,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 7,
       "issues": []
     },
     {
@@ -242,6 +321,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 10,
       "issues": []
     },
     {
@@ -249,6 +330,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 7,
       "issues": []
     },
     {
@@ -256,6 +339,8 @@
       "status": "PASS",
       "publicRuns": 8,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -263,6 +348,8 @@
       "status": "PASS",
       "publicRuns": 16,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -270,6 +357,8 @@
       "status": "PASS",
       "publicRuns": 10,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -277,6 +366,8 @@
       "status": "PASS",
       "publicRuns": 15,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -284,6 +375,8 @@
       "status": "PASS",
       "publicRuns": 16,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -291,6 +384,8 @@
       "status": "PASS",
       "publicRuns": 23,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -298,6 +393,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 10,
       "issues": []
     },
     {
@@ -305,20 +402,31 @@
       "status": "PASS",
       "publicRuns": 2,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
       "horse": "Knight’s Choice",
-      "status": "PASS",
+      "status": "WARNING",
       "publicRuns": 0,
       "verifiedOverride": true,
-      "issues": []
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 28,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "PROVISIONAL_OFFICIAL_CROSSCHECK_PENDING"
+        }
+      ]
     },
     {
       "horse": "Land Legend",
       "status": "PASS",
       "publicRuns": 24,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -326,6 +434,8 @@
       "status": "PASS",
       "publicRuns": 32,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -333,6 +443,8 @@
       "status": "PASS",
       "publicRuns": 15,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -340,6 +452,8 @@
       "status": "PASS",
       "publicRuns": 13,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -347,6 +461,8 @@
       "status": "PASS",
       "publicRuns": 22,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -354,6 +470,8 @@
       "status": "PASS",
       "publicRuns": 23,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -361,6 +479,8 @@
       "status": "PASS",
       "publicRuns": 20,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -368,6 +488,8 @@
       "status": "PASS",
       "publicRuns": 24,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -375,6 +497,8 @@
       "status": "PASS",
       "publicRuns": 13,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -382,6 +506,8 @@
       "status": "PASS",
       "publicRuns": 16,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -389,6 +515,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 9,
       "issues": []
     },
     {
@@ -396,6 +524,8 @@
       "status": "PASS",
       "publicRuns": 9,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -403,6 +533,8 @@
       "status": "PASS",
       "publicRuns": 20,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -410,34 +542,54 @@
       "status": "PASS",
       "publicRuns": 2,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
       "horse": "Onesmoothoperator",
-      "status": "PASS",
+      "status": "WARNING",
       "publicRuns": 0,
       "verifiedOverride": true,
-      "issues": []
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 49,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "PROVISIONAL_OFFICIAL_CROSSCHECK_PENDING"
+        }
+      ]
     },
     {
       "horse": "Piazza San Marco",
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 6,
       "issues": []
     },
     {
       "horse": "Pierre Bonnard",
-      "status": "PASS",
+      "status": "WARNING",
       "publicRuns": 0,
       "verifiedOverride": true,
-      "issues": []
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 9,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "PROVISIONAL_FULL_RECORD_RECHECK"
+        }
+      ]
     },
     {
       "horse": "Piggyback",
       "status": "PASS",
       "publicRuns": 22,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -445,6 +597,8 @@
       "status": "PASS",
       "publicRuns": 11,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -452,29 +606,47 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 4,
       "issues": []
     },
     {
       "horse": "Portland",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 20,
       "verifiedOverride": false,
+      "identityCertifiedOverride": true,
+      "authoritativeCareerStarts": 7,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "IDENTITY_REVIEW_REQUIRED"
+          "severity": "INFO",
+          "code": "AUTHORITATIVE_OVERRIDES_PUBLIC_STARTS",
+          "authoritative": 7,
+          "publicRuns": 20
+        },
+        {
+          "severity": "INFO",
+          "code": "IDENTITY_CERTIFIED_OVERRIDE"
         }
       ]
     },
     {
       "horse": "Pounding",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 63,
       "verifiedOverride": false,
+      "identityCertifiedOverride": true,
+      "authoritativeCareerStarts": 66,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "IDENTITY_REVIEW_REQUIRED"
+          "severity": "INFO",
+          "code": "AUTHORITATIVE_OVERRIDES_PUBLIC_STARTS",
+          "authoritative": 66,
+          "publicRuns": 63
+        },
+        {
+          "severity": "INFO",
+          "code": "IDENTITY_CERTIFIED_OVERRIDE"
         }
       ]
     },
@@ -483,6 +655,8 @@
       "status": "PASS",
       "publicRuns": 23,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -490,17 +664,27 @@
       "status": "PASS",
       "publicRuns": 18,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
       "horse": "Saint George",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 19,
       "verifiedOverride": false,
+      "identityCertifiedOverride": true,
+      "authoritativeCareerStarts": 14,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "IDENTITY_REVIEW_REQUIRED"
+          "severity": "INFO",
+          "code": "AUTHORITATIVE_OVERRIDES_PUBLIC_STARTS",
+          "authoritative": 14,
+          "publicRuns": 19
+        },
+        {
+          "severity": "INFO",
+          "code": "IDENTITY_CERTIFIED_OVERRIDE"
         }
       ]
     },
@@ -509,32 +693,45 @@
       "status": "PASS",
       "publicRuns": 15,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
       "horse": "Sapphire Siren",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 5,
       "verifiedOverride": false,
+      "identityCertifiedOverride": true,
+      "authoritativeCareerStarts": 5,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "IDENTITY_REVIEW_REQUIRED"
+          "severity": "INFO",
+          "code": "IDENTITY_CERTIFIED_OVERRIDE"
         }
       ]
     },
     {
       "horse": "She’s A Hustler",
-      "status": "PASS",
+      "status": "WARNING",
       "publicRuns": 0,
       "verifiedOverride": true,
-      "issues": []
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 16,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "PROVISIONAL_OFFICIAL_CROSSCHECK_PENDING"
+        }
+      ]
     },
     {
       "horse": "Shockletz",
       "status": "PASS",
       "publicRuns": 16,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -542,6 +739,8 @@
       "status": "PASS",
       "publicRuns": 7,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -549,6 +748,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 20,
       "issues": []
     },
     {
@@ -556,6 +757,8 @@
       "status": "PASS",
       "publicRuns": 22,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -563,6 +766,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 17,
       "issues": []
     },
     {
@@ -570,6 +775,8 @@
       "status": "PASS",
       "publicRuns": 19,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -577,6 +784,8 @@
       "status": "PASS",
       "publicRuns": 15,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -584,6 +793,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 12,
       "issues": []
     },
     {
@@ -591,6 +802,8 @@
       "status": "PASS",
       "publicRuns": 6,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -598,6 +811,8 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 12,
       "issues": []
     },
     {
@@ -605,6 +820,8 @@
       "status": "PASS",
       "publicRuns": 8,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -612,6 +829,8 @@
       "status": "PASS",
       "publicRuns": 2,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -619,6 +838,8 @@
       "status": "PASS",
       "publicRuns": 26,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -626,6 +847,8 @@
       "status": "PASS",
       "publicRuns": 24,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -633,20 +856,31 @@
       "status": "PASS",
       "publicRuns": 22,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
       "horse": "Tawny Port",
-      "status": "PASS",
+      "status": "WARNING",
       "publicRuns": 0,
       "verifiedOverride": true,
-      "issues": []
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 34,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "PROVISIONAL_SEMANTICS_REVIEW"
+        }
+      ]
     },
     {
       "horse": "The Euphrates",
       "status": "PASS",
       "publicRuns": 8,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -654,6 +888,8 @@
       "status": "PASS",
       "publicRuns": 14,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -661,6 +897,8 @@
       "status": "PASS",
       "publicRuns": 8,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -668,6 +906,8 @@
       "status": "PASS",
       "publicRuns": 11,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -675,6 +915,8 @@
       "status": "PASS",
       "publicRuns": 17,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -682,17 +924,27 @@
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 19,
       "issues": []
     },
     {
       "horse": "Valiant King",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 23,
       "verifiedOverride": false,
+      "identityCertifiedOverride": true,
+      "authoritativeCareerStarts": 18,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "IDENTITY_REVIEW_REQUIRED"
+          "severity": "INFO",
+          "code": "AUTHORITATIVE_OVERRIDES_PUBLIC_STARTS",
+          "authoritative": 18,
+          "publicRuns": 23
+        },
+        {
+          "severity": "INFO",
+          "code": "IDENTITY_CERTIFIED_OVERRIDE"
         }
       ]
     },
@@ -701,6 +953,8 @@
       "status": "PASS",
       "publicRuns": 8,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -708,6 +962,8 @@
       "status": "PASS",
       "publicRuns": 12,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -715,31 +971,50 @@
       "status": "PASS",
       "publicRuns": 3,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
       "horse": "Winday",
-      "status": "PASS",
+      "status": "WARNING",
       "publicRuns": 0,
       "verifiedOverride": true,
-      "issues": []
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 5,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "PROVISIONAL_CODE_SPLIT_RECHECK"
+        }
+      ]
     },
     {
       "horse": "Wine Dark Sea",
       "status": "PASS",
       "publicRuns": 0,
       "verifiedOverride": true,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": 10,
       "issues": []
     },
     {
       "horse": "Wolfgang",
-      "status": "WARNING",
+      "status": "PASS",
       "publicRuns": 64,
       "verifiedOverride": false,
+      "identityCertifiedOverride": true,
+      "authoritativeCareerStarts": 52,
       "issues": [
         {
-          "severity": "WARNING",
-          "code": "IDENTITY_REVIEW_REQUIRED"
+          "severity": "INFO",
+          "code": "AUTHORITATIVE_OVERRIDES_PUBLIC_STARTS",
+          "authoritative": 52,
+          "publicRuns": 64
+        },
+        {
+          "severity": "INFO",
+          "code": "IDENTITY_CERTIFIED_OVERRIDE"
         }
       ]
     },
@@ -748,6 +1023,8 @@
       "status": "PASS",
       "publicRuns": 21,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -755,6 +1032,8 @@
       "status": "PASS",
       "publicRuns": 7,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -762,6 +1041,8 @@
       "status": "PASS",
       "publicRuns": 8,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     },
     {
@@ -769,6 +1050,8 @@
       "status": "PASS",
       "publicRuns": 15,
       "verifiedOverride": false,
+      "identityCertifiedOverride": false,
+      "authoritativeCareerStarts": null,
       "issues": []
     }
   ]
