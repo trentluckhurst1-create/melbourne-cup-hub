@@ -29,11 +29,11 @@ body{overflow:hidden;font-family:Inter,"Segoe UI",Arial,sans-serif;font-size:13p
 
 .nav{padding:12px 10px 18px;gap:2px;scrollbar-width:thin;scrollbar-color:#253245 transparent}
 .nav button{position:relative;min-height:34px;padding:8px 10px 8px 32px;border-radius:6px;color:#8f9cad;font-size:11.5px;font-weight:650;letter-spacing:.005em;transition:background .12s ease,color .12s ease,border-color .12s ease}
-.nav button::before{content:"";position:absolute;left:13px;top:50%;width:6px;height:6px;border:1px solid #4c5b70;border-radius:2px;transform:translateY(-50%);opacity:.9}
+.nav button::before{content:"";position:absolute;left:13px;top:50%;width:6px;height:6px;border:1px solid #315b82;border-radius:2px;transform:translateY(-50%);opacity:.95}
 .nav button:hover{background:#101923;color:#d7e0ea}
 .nav button.active{background:#17212d;color:#f4f7fa;box-shadow:none}
-.nav button.active::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 3px rgba(214,178,74,.09)}
-.nav button.active::after{content:"";position:absolute;left:-10px;top:7px;bottom:7px;width:2px;border-radius:2px;background:var(--accent)}
+.nav button.active::before{background:#2f80ed;border-color:#2f80ed;box-shadow:0 0 0 3px rgba(47,128,237,.13)}
+.nav button.active::after{content:"";position:absolute;left:-10px;top:7px;bottom:7px;width:2px;border-radius:2px;background:#2f80ed}
 .nav button:nth-child(2),.nav button:nth-child(7),.nav button:nth-child(12),.nav button:nth-child(16){margin-top:12px}
 .nav button:nth-child(2)::after,.nav button:nth-child(7)::after,.nav button:nth-child(12)::after,.nav button:nth-child(16)::after{box-shadow:0 -12px 0 -1px #1d2836}
 
