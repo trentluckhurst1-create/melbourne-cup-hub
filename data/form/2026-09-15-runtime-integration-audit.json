@@ -36,7 +36,6 @@
     "command-centre-integrity.js",
     "silks.js",
     "integrity-fixes.js",
-    "ui-polish.js",
     "form-guide-pro.js",
     "pfr-ui-labels.js"
   ],
@@ -1033,7 +1032,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "38 files passed node --check"
+      "detail": "37 files passed node --check"
     }
   ],
   "pass": true,
