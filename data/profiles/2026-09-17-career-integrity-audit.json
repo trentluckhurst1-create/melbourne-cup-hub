@@ -1,11 +1,11 @@
 {
   "snapshotDate": "2026-09-17",
   "universe": 101,
-  "policy": "Recent-form/PFR windows are never career evidence. Verified/official career records override public baseline. Warnings require review before promotion; critical records must not be shown as verified career data.",
+  "policy": "Recent-form/PFR windows are never career evidence. Horse-name joins are punctuation/Unicode normalized. Verified/official career records override public baseline. Warnings require review before promotion; critical records must not be shown as verified career data.",
   "summary": {
-    "pass": 88,
+    "pass": 91,
     "warning": 10,
-    "critical": 3
+    "critical": 0
   },
   "rows": [
     {
@@ -309,15 +309,10 @@
     },
     {
       "horse": "Knight’s Choice",
-      "status": "CRITICAL",
+      "status": "PASS",
       "publicRuns": 0,
-      "verifiedOverride": false,
-      "issues": [
-        {
-          "severity": "CRITICAL",
-          "code": "NO_CAREER_EVIDENCE"
-        }
-      ]
+      "verifiedOverride": true,
+      "issues": []
     },
     {
       "horse": "Land Legend",
@@ -530,15 +525,10 @@
     },
     {
       "horse": "She’s A Hustler",
-      "status": "CRITICAL",
+      "status": "PASS",
       "publicRuns": 0,
-      "verifiedOverride": false,
-      "issues": [
-        {
-          "severity": "CRITICAL",
-          "code": "NO_CAREER_EVIDENCE"
-        }
-      ]
+      "verifiedOverride": true,
+      "issues": []
     },
     {
       "horse": "Shockletz",
@@ -563,15 +553,10 @@
     },
     {
       "horse": "So You Are",
-      "status": "CRITICAL",
-      "publicRuns": 0,
+      "status": "PASS",
+      "publicRuns": 22,
       "verifiedOverride": false,
-      "issues": [
-        {
-          "severity": "CRITICAL",
-          "code": "NO_CAREER_EVIDENCE"
-        }
-      ]
+      "issues": []
     },
     {
       "horse": "Sons And Lovers",

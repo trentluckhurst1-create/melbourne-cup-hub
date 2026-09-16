@@ -1,8 +1,8 @@
 {
   "snapshotDate": "2026-09-17",
   "universe": 101,
-  "profilesWithPublicCareerRuns": 75,
-  "profilesWithoutRuns": 26,
+  "profilesWithPublicCareerRuns": 76,
+  "profilesWithoutRuns": 25,
   "rows": [
     {
       "horse": "Aeliana",
@@ -432,8 +432,8 @@
     },
     {
       "horse": "So You Are",
-      "status": "REQUEST_ERROR",
-      "careerRunsLoaded": 0,
+      "status": "OK",
+      "careerRunsLoaded": 22,
       "sourceUrl": "https://racehub.com.au/horses/so-you-are"
     },
     {
