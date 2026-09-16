@@ -17,13 +17,34 @@ function mergeFormDatasets(primary,supplements=[]){
   return out;
 }
 
+function applyKnownFormIntegrityCorrections(data){
+  if(!data?.horses)return data;
+  /* Verified 17 Sep 2026 against Racing Australia + Breednet public results.
+     Wigmore had one impossible synthetic duplicate: 9 May 2026, SA Derby, 2500m.
+     The actual G1 SA Derby was 2 May 2026 at Morphettville, 2518m, Soft 7.
+     Replace the contaminated window with the verified career sequence. */
+  if(data.horses.Wigmore){
+    data.horses.Wigmore.runs=[
+      {date:'2026-05-02',race:'South Australian Derby',track:'Morphettville',country:'AUS',distanceM:2518,going:'Soft 7',classGroup:'Group 1',finish:'1st',fieldSize:16,weightCarried:'56.5kg',margin:0.2,source:'Racing Australia / Breednet verified result'},
+      {date:'2026-04-25',race:"Chairman's Stakes",track:'Morphettville',country:'AUS',distanceM:2000,going:'Good 4',classGroup:'Group 3',finish:'7th',weightCarried:'57.5kg',margin:4.0,source:'Breednet verified race record'},
+      {date:'2026-03-07',race:'NZ Derby',track:'Ellerslie',country:'NZ',distanceM:2400,going:'Good 4',classGroup:'Group 1',finish:'4th',weightCarried:'57kg',margin:2.1,source:'Breednet verified race record'},
+      {date:'2026-02-22',race:'Sharen Tunnell @ Arizto Real Estate BM65',track:'Wanganui',country:'NZ',distanceM:2060,going:'Soft 5',classGroup:'BM65',finish:'5th',weightCarried:'59kg',margin:1.8,source:'Breednet verified race record'},
+      {date:'2026-01-28',race:'Can-Am Marine Services Wanganui BM65',track:'Waverley',country:'NZ',distanceM:2200,going:'Soft 6',classGroup:'BM65',finish:'2nd',weightCarried:'59kg',margin:0.3,source:'Breednet verified race record'},
+      {date:'2026-01-02',race:'Kuripuni Sports Bar And TAB Maiden',track:'Tauherenikau',country:'NZ',distanceM:1600,going:'Soft 5',classGroup:'Maiden',finish:'1st',weightCarried:'57.5kg',margin:1.0,source:'Breednet verified race record'},
+      {date:'2025-12-10',race:"Scott's Ag Contracting Maiden",track:'Tauherenikau',country:'NZ',distanceM:1600,going:'Good 4',classGroup:'Maiden',finish:'3rd',weightCarried:'57.5kg',margin:1.7,source:'Breednet verified race record'}
+    ];
+    data.horses.Wigmore.careerComplete=true;
+  }
+  return data;
+}
+
 function loadFormIntel(){
   if(formIntelPromise) return formIntelPromise;
   formIntelPromise=Promise.all([
     fetch('./data/form/2026-09-15-unique-full-form.json',{cache:'no-store'}).then(r=>r.ok?r.json():null),
     fetch('./data/timeform/2026-09-13-public-status.json',{cache:'no-store'}).then(r=>r.ok?r.json():null)
   ]).then(([f,s])=>{
-    formIntelData=f||{snapshotDate:'2026-09-15',targetRunsPerHorse:8,horses:{}};
+    formIntelData=applyKnownFormIntegrityCorrections(f||{snapshotDate:'2026-09-15',targetRunsPerHorse:8,horses:{}});
     timeformStatusData=s;
     return formIntelData;
   }).catch(()=>null);
@@ -32,11 +53,21 @@ function loadFormIntel(){
 
 function publicActualRuns(horse){
   const runs=formIntelData?.horses?.[horse]?.runs||[];
-  return runs.filter(r=>{
+  const actual=runs.filter(r=>{
     const text=`${r.classGroup||''} ${r.race||''}`.toLowerCase();
     const finish=String(r.finish||'').trim().toLowerCase();
     return !text.includes('trial')&&!text.includes('jump-out')&&!text.includes('jumpout')&&!['scr','scratched','wd','withdrawn','nr','non-runner','dns','did not start'].includes(finish);
   });
+  /* Integrity contract: a horse cannot have two actual starts on one calendar date.
+     Prefer the richer record if upstream sources ever collide. */
+  const byDate=new Map();
+  for(const r of actual){
+    const key=String(r.date||'').trim()||`${r.race}|${r.track}`;
+    const prev=byDate.get(key);
+    const score=x=>['race','track','distanceM','going','classGroup','finish','weightCarried','margin','fieldSize'].reduce((n,k)=>n+(x?.[k]!==null&&x?.[k]!==undefined&&x?.[k]!==''?1:0),0);
+    if(!prev||score(r)>score(prev))byDate.set(key,r);
+  }
+  return [...byDate.values()].sort((a,b)=>(b.date||'').localeCompare(a.date||''));
 }
 function formCoverage(){
   const total=(cupData?.horses||[]).length;
