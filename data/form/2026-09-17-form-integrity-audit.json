@@ -2,7 +2,7 @@
   "snapshotDate": "2026-09-17",
   "universe": 101,
   "canonicalFile": "data/form/2026-09-15-unique-full-form.json",
-  "policy": "Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. One actual start per horse/date; no trials, jump-outs, non-starters, future runs, impossible finish/field relationships, or non-nominee identities. Repeated named races are flagged only when less than 180 days apart; annual renewals are valid distinct starts.",
+  "policy": "Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. Every nomination profile is audited for duplicate dates, repeated named races too close together, and possible copied performances sharing track/distance/finish within 14 days. Annual renewals remain valid distinct starts.",
   "summary": {
     "pass": 98,
     "warning": 3,
@@ -209,21 +209,10 @@
     },
     {
       "horse": "Highwayman",
-      "status": "WARNING",
-      "runs": 8,
-      "careerComplete": false,
-      "issues": [
-        {
-          "severity": "WARNING",
-          "code": "REPEATED_NAMED_RACE_TOO_CLOSE",
-          "run": 2,
-          "otherDate": "2026-08-27",
-          "date": "2026-08-20",
-          "daysApart": 7,
-          "race": "Vinnie Roe Stakes",
-          "track": "Leopardstown"
-        }
-      ]
+      "status": "PASS",
+      "runs": 7,
+      "careerComplete": true,
+      "issues": []
     },
     {
       "horse": "Hopewell Rock",
@@ -248,10 +237,24 @@
     },
     {
       "horse": "Jennivamoose",
-      "status": "PASS",
+      "status": "WARNING",
       "runs": 8,
       "careerComplete": false,
-      "issues": []
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "POSSIBLE_DUPLICATE_PERFORMANCE",
+          "run": 4,
+          "otherRun": 3,
+          "otherDate": "2025-08-23",
+          "date": "2025-08-09",
+          "daysApart": 14,
+          "race": "Donnellans The Tyremen",
+          "track": "Moonee Valley",
+          "distanceM": 2500,
+          "finish": "1st"
+        }
+      ]
     },
     {
       "horse": "Johnich",
