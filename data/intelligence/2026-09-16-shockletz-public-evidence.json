@@ -1,0 +1,13 @@
+{
+  "snapshotDate":"2026-09-16",
+  "horse":"Shockletz",
+  "identity":{"sex":"mare","age":5,"sire":"Shocking","country":"NZ-bred","trainer":"Ciaron Maher","confidence":"verified from Racing & Sports reporting"},
+  "preparation2026":{"latestVerifiedRun":{"date":"2026-09-12","track":"Flemington","race":"Lexus Archer Stakes","group":"G3","distanceM":2500,"finish":1,"margin":"2.25 lengths","startingPrice":"$2.90 favourite","jockey":"Harry Coffey","gear":"blinkers first time"},"cupStatus":"ballot-exempt / qualified","cupRaceDate":"2026-11-03","trainerPlan":"work back from Melbourne Cup; not over-raced; kept fresh"},
+  "pedigreeContext":{"sire":"Shocking","note":"Shocking won the 2009 Melbourne Cup; Shockletz races for Eales Racing and carries the associated colours."},
+  "ratings":{"racingAndSports":null,"policy":"No numeric R&S rating stored because the public evidence located here does not explicitly label a numeric figure as a Racing & Sports rating.","quarantined":[{"value":83,"system":"unknown/unlabelled public form numeric field","reason":"Not explicitly labelled Racing & Sports; must not be promoted or inferred."}],"timeform":null},
+  "sources":[
+    {"url":"https://www.racingandsports.com.au/news/racing/news/2026-09-12/shockletz-earns-melbourne-cup-berth/721323","publisher":"Racing & Sports","evidence":"Archer win, 2500m, 2.25L margin, $2.90 favourite, Harry Coffey, blinkers, Cup ballot exemption and trainer preparation comments"},
+    {"url":"https://www.racingandsports.com.au/news/international/new-zealand/2026-09-13/shockletz-books-melbourne-cup-berth-with-archer-triumph/721377","publisher":"Racing & Sports","evidence":"NZ-bred five-year-old mare, sire Shocking, Ciaron Maher, Eales Racing, Archer qualification"}
+  ],
+  "provenance":{"acquisition":"public web evidence","ratingSeparation":"R&S and Timeform remain separate; no missing rating inferred","identityCollision":"none detected for cited evidence"}
+}
