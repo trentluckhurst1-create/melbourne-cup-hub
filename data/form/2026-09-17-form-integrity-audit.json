@@ -1,0 +1,889 @@
+{
+  "snapshotDate": "2026-09-17",
+  "universe": 101,
+  "canonicalFile": "data/form/2026-09-15-unique-full-form.json",
+  "policy": "Canonical recent form is an eight-run-or-complete-career window only. It is never a full-career statistics source. One actual start per horse/date; no trials, jump-outs, non-starters, future runs, impossible finish/field relationships, or non-nominee identities.",
+  "summary": {
+    "pass": 87,
+    "warning": 14,
+    "criticalHorses": 0,
+    "globalCritical": false
+  },
+  "globalIssues": [],
+  "rows": [
+    {
+      "horse": "Aeliana",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Aethelflaed",
+      "status": "PASS",
+      "runs": 7,
+      "careerComplete": true,
+      "issues": []
+    },
+    {
+      "horse": "Aethelwulf",
+      "status": "PASS",
+      "runs": 6,
+      "careerComplete": true,
+      "issues": []
+    },
+    {
+      "horse": "Age Of Sail",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Amelia Earhart",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Asterix",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Athabascan",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Barnavara",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Bella Montagna",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Birdman",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Campaldino",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Causeway",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Changingoftheguard",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Christmas Day",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Constitution Hill",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Darkbonee",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Deakin",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Defiantly",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Don Diego De Vega",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 7,
+          "otherDate": "2025-06-14",
+          "date": "2025-05-31",
+          "race": "R8",
+          "track": "Rosehill Gardens"
+        }
+      ]
+    },
+    {
+      "horse": "Enfjaar",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 4,
+          "otherDate": "2026-06-16",
+          "date": "2025-06-17",
+          "race": "Royal Ascot Handicap",
+          "track": "Ascot"
+        }
+      ]
+    },
+    {
+      "horse": "Floating",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 6,
+          "otherDate": "2024-12-26",
+          "date": "2024-12-14",
+          "race": "Public race record",
+          "track": "Randwick"
+        }
+      ]
+    },
+    {
+      "horse": "Future History",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Golden Century",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Goodie Two Shoes",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 5,
+          "otherDate": "2026-08-01",
+          "date": "2025-08-02",
+          "race": "Lillie Langtry Stakes",
+          "track": "Goodwood"
+        },
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 6,
+          "otherDate": "2026-07-08",
+          "date": "2025-07-09",
+          "race": "Stanerra Stakes",
+          "track": "Fairyhouse"
+        }
+      ]
+    },
+    {
+      "horse": "Grand Pierro",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Green Spaces",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Half Yours",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Highland Bling",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Highwayman",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 2,
+          "otherDate": "2026-08-27",
+          "date": "2026-08-20",
+          "race": "Vinnie Roe Stakes",
+          "track": "Leopardstown"
+        }
+      ]
+    },
+    {
+      "horse": "Hopewell Rock",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "James J Braddock",
+      "status": "PASS",
+      "runs": 6,
+      "careerComplete": true,
+      "issues": []
+    },
+    {
+      "horse": "Jenni Multabella",
+      "status": "PASS",
+      "runs": 7,
+      "careerComplete": true,
+      "issues": []
+    },
+    {
+      "horse": "Jennivamoose",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 7,
+          "otherDate": "2025-06-18",
+          "date": "2025-05-21",
+          "race": "Public race record",
+          "track": "Sandown-Hillside"
+        }
+      ]
+    },
+    {
+      "horse": "Johnich",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Juja Kibo",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "King Pedro",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Kings Valley",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 5,
+          "otherDate": "2026-02-21",
+          "date": "2025-10-15",
+          "race": "BM84",
+          "track": "Caulfield"
+        },
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 6,
+          "otherDate": "2026-02-21",
+          "date": "2025-09-20",
+          "race": "BM84",
+          "track": "Caulfield"
+        }
+      ]
+    },
+    {
+      "horse": "Kizlyar",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Klondike",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Knight’s Choice",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Land Legend",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Light Infantry Man",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Litzdeel",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Machine Gun Gracie",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Male Model",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Manzor Blue",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Middle Earth",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Mr Monaco",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 6,
+          "otherDate": "2026-02-07",
+          "date": "2025-09-20",
+          "race": "IVE BM84",
+          "track": "Caulfield"
+        }
+      ]
+    },
+    {
+      "horse": "Nearco Frod",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Newlook",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Nil Bua Gan Dua",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Ohope Wins",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Okita Soushi",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Omni Man",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Onesmoothoperator",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Piazza San Marco",
+      "status": "PASS",
+      "runs": 6,
+      "careerComplete": true,
+      "issues": []
+    },
+    {
+      "horse": "Pierre Bonnard",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Piggyback",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Pinhole",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Point Of Law",
+      "status": "PASS",
+      "runs": 4,
+      "careerComplete": true,
+      "issues": []
+    },
+    {
+      "horse": "Portland",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Pounding",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "River Of Stars",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Royal Supremacy",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Saint George",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Sam Hawkens",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Sapphire Siren",
+      "status": "PASS",
+      "runs": 5,
+      "careerComplete": true,
+      "issues": []
+    },
+    {
+      "horse": "She’s A Hustler",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Shockletz",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Sir Chartwell",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Small Fry",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "So You Are",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Sons And Lovers",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 5,
+          "otherDate": "2026-09-12",
+          "date": "2025-09-13",
+          "race": "Kilternan Stakes",
+          "track": "Leopardstown"
+        }
+      ]
+    },
+    {
+      "horse": "Soul Of Spain",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Soulcombe",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Starford",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Starzintheireyes",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Stinger Glass",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Storm Leopard",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Strictly Business",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Suffolk Star",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Tajanis",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Tarvue",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 5,
+          "otherDate": "2026-02-14",
+          "date": "2026-01-17",
+          "race": "Public race record",
+          "track": "Flemington"
+        },
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 6,
+          "otherDate": "2026-02-14",
+          "date": "2026-01-10",
+          "race": "Public race record",
+          "track": "Flemington"
+        }
+      ]
+    },
+    {
+      "horse": "Tawny Port",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 2,
+          "otherDate": "2026-06-05",
+          "date": "2026-06-04",
+          "race": "Belmont Gold Cup",
+          "track": "Saratoga"
+        }
+      ]
+    },
+    {
+      "horse": "The Euphrates",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Thebudgiesmugla",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Think Giant",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 7,
+          "otherDate": "2025-09-28",
+          "date": "2024-10-13",
+          "race": "Cologne Open",
+          "track": "Cologne"
+        }
+      ]
+    },
+    {
+      "horse": "Torranzino",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Treasurethe Moment",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Trustyourinstinct",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Valiant King",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Vauban",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Vegas Jack",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Wigmore",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 1,
+          "otherDate": "2026-05-09",
+          "date": "2026-05-02",
+          "race": "South Australian Derby",
+          "track": "Morphettville"
+        }
+      ]
+    },
+    {
+      "horse": "Winday",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Wine Dark Sea",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Wolfgang",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Wootton Verni",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Yellow Jersey",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Zahrann",
+      "status": "PASS",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": []
+    },
+    {
+      "horse": "Zakouma",
+      "status": "WARNING",
+      "runs": 8,
+      "careerComplete": false,
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "REPEATED_RACE_TRACK_IDENTITY",
+          "run": 6,
+          "otherDate": "2026-03-11",
+          "date": "2025-07-30",
+          "race": "Public race record",
+          "track": "Sandown-Hillside"
+        }
+      ]
+    }
+  ]
+}
