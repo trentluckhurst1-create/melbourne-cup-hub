@@ -1,0 +1,50 @@
+{
+  "schema": "melbourne_cup_hub.data_acquisition.tranche20.v1",
+  "as_of": "2026-09-16T21:03:58+10:00",
+  "policy": {"acquisition_only":true,"no_rating_inference":true,"timeform_separate":true,"source_conflicts_quarantined":true},
+  "verified_public_evidence": {
+    "Age Of Sail": {
+      "career_source_conflict": {
+        "racehub_display": "50:6-6-9 in stats breakdown; 37:5-5-8 in profile summary",
+        "breednet_display": "26:3-3-4",
+        "action": "QUARANTINE career totals; do not overwrite canonical career record until provenance scope is reconciled"
+      },
+      "2026_runs_added": [
+        {"date":"2026-08-08","track":"Randwick","race":"TAB Premier's Cup Prelude","distance_m":1800,"going":"Good(4)","finish":9,"field_size":11,"weight_kg":54,"margin":"5L","winner":"Eliyass"},
+        {"date":"2026-09-04","track":"Wyong","race":"Wyong Cup","class":"Listed","distance_m":2100,"going":"Good(4)","finish":7,"field_size":7,"weight_kg":54,"margin":"2.8L","winner":"Matusalem"}
+      ],
+      "trial":{"date":"2026-07-22","track":"Gosford","distance_m":1200,"going":"Heavy(8)","finish":1,"margin":"0.1L","runner_up":"Zonkstar"},
+      "stakes_performances":["2nd 2026 Australia Day Cup (Listed)","3rd 2026 Auckland Cup (Group 2)"],
+      "sources":["https://www.breednet.com.au/horse/age-of-sail","https://racehub.com.au/horses/age-of-sail"]
+    },
+    "Barnavara": {
+      "verified_2026_run":{"date":"2026-03-28","track":"Rosehill","race":"Neville Sellwood Stakes","class":"Group 3","distance_m":2000,"finish":4,"weight_kg":57,"starting_price":"$1.70F"},
+      "international_class_sequence":["Listed winner at Navan","Group 3 winner at Naas","3rd Snow Fairy Stakes (Group 3)","1st Blandford Stakes (Group 2)","1st Prix de l'Opera (Group 1)"],
+      "transfer_provenance":"Public reporting dated 2026-02-13 records intended transfer to Chris Waller after quarantine/shipping from Britain.",
+      "sources":["https://www.anzbloodstocknews.com/prix-de-lopera-winner-barnavara-heading-to-waller/","https://www.races.com.au/races/group-2/neville-sellwood-stakes/","https://racehub.com.au/horses/barnavara"]
+    },
+    "James J Braddock": {
+      "2026_derby_run":{"date":"2026-06-06","track":"Epsom","race":"Derby","class":"Group 1","distance_m":2420,"going":"Soft","finish":3,"trainer":"Joseph O'Brien"},
+      "sequence_note":"Follows verified 2026-05-10 Leopardstown Derby Trial Stakes Group 3 win already stored in tranche 19.",
+      "source":"https://www.reuters.com/sports/horse-racing-christmas-day-wins-epsom-derby-obriens-12th-triumph-2026-06-06/"
+    },
+    "Storm Leopard": {
+      "2026_stakes_runs":[
+        {"date":"2026-03-28","track":"Rosehill","race":"Tulloch Stakes","class":"Group 2","distance_m":2000,"finish":1,"weight_kg":56,"margin":"1.75L","time":"2:04.13","last600":"36.88","jockey":"Tommy Berry"},
+        {"date":"2026-04-04","track":"Randwick","race":"Australian Derby","class":"Group 1","distance_m":2400,"finish":3,"winner":"Green Spaces"}
+      ],
+      "sources":["https://www.racingandsports.com.au/news/racing/news/2026-03-28/storm-leopard-wins-group-2-toyota-forklifts-tulloch-stakes-post-race-trainer-and-jockey-quotes/711801","https://www.races.com.au/2026/04/04/2026-australian-derby-results-green-spaces-wins-by-3-lengths-king-becomes-first-female-hoop-to-salute/"],
+      "rating_quarantine":"RaceHub generic Rating 93 remains unassigned to R&S, Timeform or official-rating fields."
+    }
+  },
+  "coverage_ledger_check": {
+    "universe":101,
+    "identity_accounted":101,
+    "form_present":101,
+    "historical_ledger_complete":58,
+    "historical_ledger_career_complete":2,
+    "historical_ledger_unresolved":41,
+    "status":"INCOMPLETE_PUBLIC_FIELD_LEVEL_ACQUISITION_CONTINUES",
+    "note":"Fresh public evidence expands chronological/class coverage and documents an Age Of Sail career-total conflict. No ambiguous generic ratings were promoted. Full required field-level acquisition is not yet complete or definitively exhausted."
+  }
+}
