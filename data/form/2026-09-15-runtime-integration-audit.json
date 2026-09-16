@@ -80,8 +80,8 @@
         "snapshotDate": "2026-09-15",
         "universe": 101,
         "targetRunsPerHorse": 8,
-        "complete": 94,
-        "careerComplete": 7,
+        "complete": 93,
+        "careerComplete": 8,
         "resolved": 101,
         "partial": 0,
         "zero": 0,
@@ -341,11 +341,11 @@
           {
             "nominationNumber": 29,
             "horse": "Highwayman",
-            "state": "COMPLETE",
-            "uniqueActualRuns": 8,
-            "knownUniqueCareerDates": 8,
+            "state": "CAREER_COMPLETE",
+            "uniqueActualRuns": 7,
+            "knownUniqueCareerDates": 7,
             "missingRuns": 0,
-            "careerComplete": false
+            "careerComplete": true
           },
           {
             "nominationNumber": 30,
@@ -838,7 +838,7 @@
             "horse": "Tawny Port",
             "state": "COMPLETE",
             "uniqueActualRuns": 8,
-            "knownUniqueCareerDates": 9,
+            "knownUniqueCareerDates": 8,
             "missingRuns": 0,
             "careerComplete": false
           },
@@ -928,7 +928,7 @@
             "horse": "Wigmore",
             "state": "COMPLETE",
             "uniqueActualRuns": 8,
-            "knownUniqueCareerDates": 9,
+            "knownUniqueCareerDates": 8,
             "missingRuns": 0,
             "careerComplete": false
           },
