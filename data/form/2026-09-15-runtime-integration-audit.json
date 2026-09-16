@@ -37,7 +37,8 @@
     "silks.js",
     "integrity-fixes.js",
     "form-guide-pro.js",
-    "pfr-ui-labels.js"
+    "pfr-ui-labels.js",
+    "workspace-final-guard-20260916.js"
   ],
   "checks": [
     {
@@ -1032,7 +1033,7 @@
     {
       "name": "active_js_syntax",
       "ok": true,
-      "detail": "37 files passed node --check"
+      "detail": "38 files passed node --check"
     }
   ],
   "pass": true,
