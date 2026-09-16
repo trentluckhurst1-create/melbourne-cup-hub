@@ -11,3 +11,22 @@
 .ri-summary{
   display:none!important;
 }
+
+/* Launch colour polish: dashboard update labels use the program blue,
+   while market-board current odds remain neutral white. */
+.command-update-type,
+.command-change-type,
+.command-update-kind,
+.command-change-kind,
+.command-feed-type,
+.command-feed-kind,
+.form-pulse-kicker,
+.command-centre .tag,
+.command-centre .pill{
+  color:#67baff!important;
+  border-color:#24577f!important;
+}
+
+.mk-table .mk-odds{
+  color:#fff!important;
+}
