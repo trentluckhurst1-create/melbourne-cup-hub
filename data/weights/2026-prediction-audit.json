@@ -1,0 +1,34 @@
+{
+  "auditDate": "2026-09-17",
+  "status": "POST_RELEASE_AUDIT",
+  "predictionSnapshot": "data/weights/2026-09-13-working-predictions.json",
+  "officialSnapshot": "data/weights/2026-official.json",
+  "errorDefinition": "predictedKg - officialKg",
+  "coverage": {"official":101,"predicted":101,"matched":101},
+  "metrics": {"maeKg":1.4059,"rmseKg":1.8788,"biasKg":-0.2079,"medianAbsErrorKg":1.0,"exact":17,"within0_5Kg":35,"within1_0Kg":51},
+  "sensitivity": {"excludingConstitutionHill":{"n":100,"maeKg":1.36,"biasKg":-0.27},"nh3yoCohort":{"n":6,"maeKg":3.5,"biasKg":-3.5},"excludingNh3yoAndConstitutionHill":{"n":94,"maeKg":1.2234,"biasKg":-0.0638}},
+  "nh3yoCohort": [
+    {"horse":"Christmas Day","officialKg":56.5,"predictedKg":50.5,"errorKg":-6.0},
+    {"horse":"Highwayman","officialKg":56.5,"predictedKg":51.5,"errorKg":-5.0},
+    {"horse":"Pierre Bonnard","officialKg":55.0,"predictedKg":50.0,"errorKg":-5.0},
+    {"horse":"Causeway","officialKg":53.0,"predictedKg":50.0,"errorKg":-3.0},
+    {"horse":"Piazza San Marco","officialKg":51.0,"predictedKg":49.5,"errorKg":-1.5},
+    {"horse":"Amelia Earhart","officialKg":51.0,"predictedKg":50.5,"errorKg":-0.5}
+  ],
+  "largestAbsoluteErrors": [
+    {"horse":"Christmas Day","officialKg":56.5,"predictedKg":50.5,"errorKg":-6.0},
+    {"horse":"Constitution Hill","officialKg":51.0,"predictedKg":57.0,"errorKg":6.0,"note":"Frozen prediction explicitly marked qualification failed / not active; retain in full 101 audit but treat separately in sensitivity analysis."},
+    {"horse":"Highwayman","officialKg":56.5,"predictedKg":51.5,"errorKg":-5.0},
+    {"horse":"Pierre Bonnard","officialKg":55.0,"predictedKg":50.0,"errorKg":-5.0},
+    {"horse":"Birdman","officialKg":58.0,"predictedKg":54.5,"errorKg":-3.5},
+    {"horse":"Sons And Lovers","officialKg":57.5,"predictedKg":54.0,"errorKg":-3.5},
+    {"horse":"Green Spaces","officialKg":56.0,"predictedKg":52.5,"errorKg":-3.5},
+    {"horse":"Barnavara","officialKg":56.0,"predictedKg":52.5,"errorKg":-3.5}
+  ],
+  "interpretation": [
+    "The full 101-horse audit has MAE 1.41kg and a small -0.21kg signed bias, so aggregate scale location was close but individual dispersion was material.",
+    "The largest systematic miss is the Northern Hemisphere three-year-old treatment: six horses average 3.50kg too light in the frozen model.",
+    "Excluding the six NH 3YOs and the inactive Constitution Hill case reduces MAE to 1.22kg and signed bias to -0.06kg across 94 horses.",
+    "The frozen prediction file must not be rewritten after release. Any future model change belongs in a new versioned methodology or prediction file."
+  ]
+}
