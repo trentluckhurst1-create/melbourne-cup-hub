@@ -1,0 +1,49 @@
+{
+  "version": "2026.1-post-release",
+  "createdAt": "2026-09-17",
+  "status": "RESEARCH_FINDINGS_NOT_RETROACTIVE_PREDICTIONS",
+  "purpose": "Record lessons from the 2026 official Melbourne Cup weights without altering the frozen 13 September pre-release prediction snapshot.",
+  "sources": [
+    {
+      "name": "Racing Victoria Handicapping",
+      "url": "https://www.racingvictoria.com.au/racing/handicapping",
+      "finding": "Feature-race handicapping can adjust ratings for direct relativities, previous feature-race form and peak performance; the Melbourne Cup has a 59kg minimum topweight and 51kg minimum for older horses, with 49kg minimum for three-year-olds."
+    },
+    {
+      "name": "Racing Victoria 2025 Melbourne Cup weights release",
+      "url": "https://www.racingvictoria.com.au/news/2025/09/16/weights-announced-for-caulfield-and-melbourne-cups",
+      "finding": "NH three-year-old St Leger winner Scandinavia was assigned 55.5kg, described as 1kg below WFA; prior St Leger winners Kew Gardens and Jan Brueghel were cited as receiving 0.5kg less above the minimum than Scandinavia."
+    }
+  ],
+  "2026Audit": {
+    "fullField": {"n":101,"maeKg":1.4059,"biasKg":-0.2079},
+    "nh3yo": {"n":6,"maeKg":3.5,"biasKg":-3.5},
+    "coreExNh3yoAndInactiveConstitutionHill": {"n":94,"maeKg":1.2234,"biasKg":-0.0638}
+  },
+  "nh3yoFinding": {
+    "classification": "SYSTEMATIC_COHORT_ERROR",
+    "description": "The frozen model treated the NH 3YO age allowance too aggressively. Official 2026 weights show that elite or high-class NH 3YOs can sit deep into the open-age Cup handicap rather than clustering near the 49kg three-year-old minimum.",
+    "examples": [
+      {"horse":"Christmas Day","predictedKg":50.5,"officialKg":56.5,"errorKg":-6.0},
+      {"horse":"Highwayman","predictedKg":51.5,"officialKg":56.5,"errorKg":-5.0},
+      {"horse":"Pierre Bonnard","predictedKg":50.0,"officialKg":55.0,"errorKg":-5.0},
+      {"horse":"Causeway","predictedKg":50.0,"officialKg":53.0,"errorKg":-3.0},
+      {"horse":"Piazza San Marco","predictedKg":49.5,"officialKg":51.0,"errorKg":-1.5},
+      {"horse":"Amelia Earhart","predictedKg":50.5,"officialKg":51.0,"errorKg":-0.5}
+    ]
+  },
+  "methodologyForFutureResearch": [
+    "Do not anchor NH 3YO estimates to the 49kg race minimum. The minimum is a floor, not a class benchmark.",
+    "Estimate underlying relative handicap merit first, then apply age/sex treatment and the race-wide scale independently.",
+    "For elite NH 3YOs, explicitly compare the horse with historical NH 3YO Cup allocations and its WFA relationship; St Leger/elite open-age evidence must be capable of producing mid-to-upper-50kg Cup weights.",
+    "Model the mandatory minimum-topweight uplift as a separate uniform scale transformation when required rather than embedding it horse-by-horse.",
+    "Retain feature-race relativities and handicapper discretion as explicit uncertainty drivers; international ratings are evidence, not a direct kilograms conversion.",
+    "Keep qualification/inactive status separate from handicap merit so cases such as Constitution Hill do not contaminate active-contender calibration.",
+    "Validate any revised methodology on historical Cups before using it prospectively. Do not fit a new rule solely to the 2026 outcomes."
+  ],
+  "governance": {
+    "frozenPredictionFile": "data/weights/2026-09-13-working-predictions.json",
+    "postReleaseAuditFile": "data/weights/2026-prediction-audit.json",
+    "rule": "Never overwrite the frozen prediction snapshot. Post-release learning must be versioned separately and tested out-of-sample before promotion."
+  }
+}
