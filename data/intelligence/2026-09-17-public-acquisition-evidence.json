@@ -1,0 +1,66 @@
+{
+  "snapshotDate": "2026-09-17",
+  "policy": "Evidence captured only where the public source explicitly exposes the field. Ratings are not inferred or cross-substituted between systems.",
+  "horses": {
+    "Deakin": {
+      "identity": {
+        "country": "FR",
+        "sex": "G",
+        "ageAtRace": 5,
+        "sire": "Australia (GB)",
+        "dam": "Dealbata (IRE)",
+        "trainerAtRace": "Phillip Stokes"
+      },
+      "verifiedRuns": [
+        {
+          "date": "2025-03-29",
+          "track": "Flemington",
+          "race": "Lexus Roy Higgins",
+          "class": "Listed",
+          "distanceM": 2600,
+          "surface": "Turf",
+          "going": "Good",
+          "finish": 1,
+          "carriedWeightKg": 57.0,
+          "winningTime": "2:45.05",
+          "winningMargin": "Neck",
+          "fieldContext": "3yo and up OPEN",
+          "cupStatusImpact": "Won Melbourne Cup ballot exemption",
+          "source": "https://www.racingandsports.com.au/news/racing/news/2025-03-29/deakin-wins-listed-lexus-roy-higgins-post-race-trainer-and-jockey-quotes/685534",
+          "sourceType": "Racing & Sports public race result/article",
+          "verifiedOn": "2026-09-17"
+        }
+      ],
+      "ratings": {
+        "racingAndSports": null,
+        "racingAndSportsStatus": "NOT_EXPLICITLY_LABELLED_IN_THIS_SOURCE",
+        "timeform": null,
+        "officialRating": null
+      }
+    },
+    "Campaldino": {
+      "verifiedRuns": [
+        {
+          "date": "2025-06-14",
+          "track": "Eagle Farm",
+          "race": "XXXX Brisbane Cup",
+          "class": "Group 2",
+          "finish": 1,
+          "winningTime": "3:22.89",
+          "last600m": "34.44",
+          "winningMargin": "1.25L",
+          "secondMargin": "3L",
+          "source": "https://www.racingandsports.com.au/news/racing/news/2025-06-14/campaldino-wins-the-brisbane-cup-post-race-trainer-and-jockey-quotes/692504",
+          "sourceType": "Racing & Sports public race result/article",
+          "verifiedOn": "2026-09-17"
+        }
+      ],
+      "ratings": {
+        "racingAndSports": null,
+        "racingAndSportsStatus": "NOT_EXPLICITLY_LABELLED_IN_THIS_SOURCE",
+        "timeform": null,
+        "officialRating": null
+      }
+    }
+  }
+}
