@@ -1,5 +1,5 @@
 const navItems = [
-  ['dashboard','Cup Dashboard'],['nominations','Nominations'],['horses','Horse Profiles'],['weights','Weights & Handicap'],['order','Order of Entry'],['markets','Markets'],['timeform','Timeform'],['form','Form Guide'],['leadups','Lead-up Tracker'],['international','International Raiders'],['ratings','Ratings & Rankings'],['news','News Centre'],['connections','Jockeys & Trainers'],['history','Historical Cup'],['analysis','Race Analysis'],['raceday','Final Field / Race Day']
+  ['dashboard','Cup Dashboard'],['nominations','Nominations'],['horses','Horse Profiles'],['weights','Weights & Handicap'],['handicap-intelligence','Handicap Intelligence'],['order','Order of Entry'],['markets','Markets'],['timeform','Timeform'],['form','Form Guide'],['leadups','Lead-up Tracker'],['international','International Raiders'],['ratings','Ratings & Rankings'],['news','News Centre'],['connections','Jockeys & Trainers'],['history','Historical Cup'],['analysis','Race Analysis'],['raceday','Final Field / Race Day']
 ];
 
 const GOLDEN_TICKETS = new Set(['Defiantly','Tawny Port','Zakouma']);
@@ -149,6 +149,7 @@ function horseDetailView(name){
 
 const descriptions = {
  weights:['Weights & Handicap','Our pre-release projected weights will sit beside the official handicaps from 17 September, with variance and reasoning retained.'],
+ 'handicap-intelligence':['Handicap Intelligence','Post-release audit of the frozen pre-release handicap model, including official weight architecture, cohort errors and versioned methodology lessons.'],
  order:['Order of Entry','Live ballot ranking, golden-ticket exemptions, qualification clauses and projected 24-horse cut line.'],
  markets:['Markets','Current Cup odds plus dated price snapshots, implied probability and mover/drifter history.'],
  timeform:['Timeform','Your subscription figures will be imported from data you provide and attached to each horse without scraping protected subscriber content.'],
