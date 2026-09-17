@@ -2,74 +2,16 @@
   "snapshotDate": "2026-09-17",
   "universe": 101,
   "policy": "All 101 original nominees remain in scope. A source failure is not a missing horse. Recent-form windows are never substituted for full-career statistics. Ratings systems remain separate and missing ratings are never inferred.",
-  "careerIntegrity": {
-    "pass": 101,
-    "warning": 0,
-    "critical": 0,
-    "provisionalRecords": 0,
-    "source": "data/profiles/2026-09-17-career-integrity-audit.json"
-  },
-  "recentFormIntegrity": {
-    "accountedFor": 101,
-    "duplicateAnomaliesOutstanding": 0,
-    "note": "Evidence-backed false duplicate dates have been excluded and the canonical recent-form window rebuilt."
-  },
-  "publicBaseline": {
-    "raceHubProfilesWithRuns": 76,
-    "raceHubFailures": 25,
-    "raceHubFailuresRecovered": 25
-  },
-  "ratingsCoverage": {
-    "racingAndSportsVerifiedPublicRatings": 45,
-    "racingAndSportsUniverse": 101,
-    "internationalNomineesCoveredByVrcRasArticle": 23,
-    "source": "data/ratings/2026-09-15-ras-public-peaks.json",
-    "unavailablePolicy": "No R&S value is inferred where an explicitly labelled public R&S rating cannot be found. Timeform, RSSR, official handicap ratings and unlabelled numeric fields are not substitutes."
-  },
+  "careerIntegrity": {"pass":101,"warning":0,"critical":0,"provisionalRecords":0,"source":"data/profiles/2026-09-17-career-integrity-audit.json"},
+  "recentFormIntegrity": {"accountedFor":101,"duplicateAnomaliesOutstanding":0,"note":"Evidence-backed false duplicate dates have been excluded and the canonical recent-form window rebuilt."},
+  "publicBaseline": {"raceHubProfilesWithRuns":76,"raceHubFailures":25,"raceHubFailuresRecovered":25},
+  "ratingsCoverage": {"racingAndSportsVerifiedPublicRatings":45,"racingAndSportsUniverse":101,"internationalNomineesCoveredByVrcRasArticle":23,"source":"data/ratings/2026-09-15-ras-public-peaks.json","unavailablePolicy":"No R&S value is inferred where an explicitly labelled public R&S rating cannot be found. Timeform, RSSR, official handicap ratings and unlabelled numeric fields are not substitutes."},
   "freshPublicEvidence": [
-    {
-      "source": "VRC / Racing & Sports",
-      "url": "https://www.vrc.com.au/latest-news/lexus-melbourne-cup-rating-the-internationals/",
-      "verifiedOn": "2026-09-17",
-      "scope": "All 23 international nominees with explicitly published peak RAS ratings",
-      "status": "CAPTURED"
-    },
-    {
-      "source": "VRC",
-      "url": "https://www.vrc.com.au/latest-news/101-nominations-received-for-the-166th-lexus-melbourne-cup/",
-      "verifiedOn": "2026-09-17",
-      "scope": "Fixed 101-nomination universe, golden-ticket status and official milestone schedule",
-      "status": "CAPTURED"
-    },
-    {
-      "source": "Racing Victoria",
-      "url": "https://www.racingvictoria.com.au/racing/handicapping",
-      "verifiedOn": "2026-09-17",
-      "scope": "2026 Cup handicap minimum topweight 59kg and minimum allotted weight 51kg",
-      "status": "CAPTURED"
-    }
+    {"source":"VRC / Racing & Sports","url":"https://www.vrc.com.au/latest-news/lexus-melbourne-cup-rating-the-internationals/","verifiedOn":"2026-09-17","scope":"All 23 international nominees with explicitly published peak RAS ratings","status":"CAPTURED"},
+    {"source":"VRC","url":"https://www.vrc.com.au/latest-news/101-nominations-received-for-the-166th-lexus-melbourne-cup/","verifiedOn":"2026-09-17","scope":"Fixed 101-nomination universe, golden-ticket status and official milestone schedule","status":"CAPTURED"},
+    {"source":"Racing Australia","url":"https://racingaustralia.horse/FreeFields/Weights.aspx?Key=2026Nov03%2CVIC%2CFlemington","verifiedOn":"2026-09-17","scope":"All 101 official Melbourne Cup weights, ballot positions, sex, age, trainer and exposed handicap-rating field; weights last published 1:01PM AEST","status":"CAPTURED_AND_RECONCILED"}
   ],
-  "cupWeights": {
-    "officialReleaseScheduled": "2026-09-17T12:00:00+10:00",
-    "statusAtThisRun": "NOT_YET_SCHEDULED_FOR_RELEASE",
-    "rule": "Do not promote predicted weights to official before Racing Victoria/VRC publishes the 2026 handicap list."
-  },
-  "remainingPublicAcquisition": {
-    "status": "IN_PROGRESS",
-    "requirements": [
-      "Complete evidence-backed identity/pedigree/connections provenance across the 101-horse ledger",
-      "Fill distance/surface/going/course and class/stakes splits only where public sources expose them",
-      "Fill carried weights and margins only where exposed in verified chronological results",
-      "Continue explicit public R&S rating acquisition for the 56 nominees without a verified published R&S figure; document NOT_PUBLICLY_EXPOSED where exhaustive public search fails",
-      "Keep official ratings, Racing & Sports ratings, RSSR and Timeform in separate fields",
-      "Capture official 2026 Melbourne Cup weights after the scheduled 12:00pm release",
-      "Retain evidence URLs and quarantine identity/source conflicts"
-    ]
-  },
-  "completion": {
-    "all101AccountedForAtAcquisitionLevel": true,
-    "all101CareerIntegrityPass": true,
-    "all101FullyVerifiedForPublication": false,
-    "notifyUser": false
-  }
+  "cupWeights": {"publishedAt":"2026-09-17T13:01:00+10:00","statusAtThisRun":"OFFICIAL_RELEASED","accountedFor":101,"source":"data/weights/2026-official.json","verification":"Live Racing Australia table checked against the canonical ledger. Two transcription conflicts were corrected: Knight's Choice 56.5kg and She's A Hustler 54.5kg."},
+  "remainingPublicAcquisition": {"status":"IN_PROGRESS","requirements":["Complete evidence-backed identity/pedigree/connections provenance across the 101-horse ledger","Fill distance/surface/going/course and class/stakes splits only where public sources expose them","Fill carried weights and margins only where exposed in verified chronological results","Continue explicit public R&S rating acquisition for nominees without a verified published R&S figure; document NOT_PUBLICLY_EXPOSED where exhaustive public search fails","Keep official ratings, Racing & Sports ratings, RSSR and Timeform in separate fields","Retain evidence URLs and quarantine identity/source conflicts"]},
+  "completion": {"all101AccountedForAtAcquisitionLevel":true,"all101CareerIntegrityPass":true,"all101OfficialCupWeightsVerified":true,"all101FullyVerifiedForPublication":false,"notifyUser":false}
 }
