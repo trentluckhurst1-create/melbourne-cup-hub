@@ -60,9 +60,9 @@
       "pct": 79.21
     },
     "rasPublicRating": {
-      "count": 45,
+      "count": 46,
       "total": 101,
-      "pct": 44.55
+      "pct": 45.54
     },
     "marketObserved": {
       "count": 100,
@@ -177,7 +177,6 @@
       "The Euphrates",
       "Thebudgiesmugla",
       "Think Giant",
-      "Treasurethe Moment",
       "Vegas Jack",
       "Wigmore",
       "Wolfgang",
@@ -2144,7 +2143,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
