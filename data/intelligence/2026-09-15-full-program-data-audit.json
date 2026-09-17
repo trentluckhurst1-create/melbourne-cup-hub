@@ -60,9 +60,9 @@
       "pct": 79.21
     },
     "rasPublicRating": {
-      "count": 46,
+      "count": 47,
       "total": 101,
-      "pct": 45.54
+      "pct": 46.53
     },
     "marketObserved": {
       "count": 100,
@@ -162,7 +162,6 @@
       "Saint George",
       "Sam Hawkens",
       "Sapphire Siren",
-      "Shockletz",
       "Sir Chartwell",
       "So You Are",
       "Sons And Lovers",
@@ -1703,7 +1702,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
