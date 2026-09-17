@@ -1,5 +1,5 @@
 {
-  "version": "2026.1-post-release",
+  "version": "2026.2-post-release",
   "createdAt": "2026-09-17",
   "status": "RESEARCH_FINDINGS_NOT_RETROACTIVE_PREDICTIONS",
   "purpose": "Record lessons from the 2026 official Melbourne Cup weights without altering the frozen 13 September pre-release prediction snapshot.",
@@ -7,14 +7,30 @@
     {
       "name": "Racing Victoria Handicapping",
       "url": "https://www.racingvictoria.com.au/racing/handicapping",
-      "finding": "Feature-race handicapping can adjust ratings for direct relativities, previous feature-race form and peak performance; the Melbourne Cup has a 59kg minimum topweight and 51kg minimum for older horses, with 49kg minimum for three-year-olds."
+      "finding": "The Caulfield and Melbourne Cups have a 59kg minimum topweight at handicap release. The Melbourne Cup minimum is 51kg for older horses and 49kg for three-year-olds. Victorian feature-race handicapping also allows horse-specific assessment and handicapper discretion rather than mechanical ratings-to-kilograms conversion."
+    },
+    {
+      "name": "2025 Lexus Melbourne Cup Race Conditions",
+      "url": "https://vrc-prod-cdn-cxdkhbhwgvh3e0g5.z01.azurefd.net/media/sjbfzntk/706-11-2025-20250730-lexus-melbourne-cup-full-conditions.pdf",
+      "finding": "The published Cup conditions explicitly separate benchmark weights from minimum handicap weights. They list NH 3YO C&G at 56.5kg and NH 3YO fillies at 55.0kg, while the 3YO minimum handicap weight is 49.0kg. The appended-weight/ballot mechanism is separate again."
     },
     {
       "name": "Racing Victoria 2025 Melbourne Cup weights release",
       "url": "https://www.racingvictoria.com.au/news/2025/09/16/weights-announced-for-caulfield-and-melbourne-cups",
-      "finding": "NH three-year-old St Leger winner Scandinavia was assigned 55.5kg, described as 1kg below WFA; prior St Leger winners Kew Gardens and Jan Brueghel were cited as receiving 0.5kg less above the minimum than Scandinavia."
+      "finding": "The 2025 official release provides a practical example of the NH 3YO benchmark structure being used in a live Cup handicap and reinforces that elite NH 3YOs need not sit near the 49kg minimum."
     }
   ],
+  "officialStructure": {
+    "minimumTopweightAtHandicapReleaseKg": 59.0,
+    "minimumHandicapWeightOlderKg": 51.0,
+    "minimumHandicapWeightThreeYearOldKg": 49.0,
+    "historicalConditionsReference": {
+      "season": "2025",
+      "nh3yoColtGeldingBenchmarkKg": 56.5,
+      "nh3yoFillyBenchmarkKg": 55.0,
+      "note": "These are benchmark weights in the published Cup conditions, not minimum handicap weights and not automatic allocations. The 2026 methodology must use the applicable 2026 race conditions when available."
+    }
+  },
   "2026Audit": {
     "fullField": {"n":101,"maeKg":1.4059,"biasKg":-0.2079},
     "nh3yo": {"n":6,"maeKg":3.5,"biasKg":-3.5},
@@ -22,7 +38,7 @@
   },
   "nh3yoFinding": {
     "classification": "SYSTEMATIC_COHORT_ERROR",
-    "description": "The frozen model treated the NH 3YO age allowance too aggressively. Official 2026 weights show that elite or high-class NH 3YOs can sit deep into the open-age Cup handicap rather than clustering near the 49kg three-year-old minimum.",
+    "description": "The frozen model conflated the 49kg three-year-old minimum with the much higher NH 3YO benchmark structure. That made the NH 3YO cohort systematically too light. The next model must begin from the applicable Cup benchmark for age/sex and then assess each horse's merit relative to that benchmark, subject to the race-wide scale and handicapper relativities.",
     "examples": [
       {"horse":"Christmas Day","predictedKg":50.5,"officialKg":56.5,"errorKg":-6.0},
       {"horse":"Highwayman","predictedKg":51.5,"officialKg":56.5,"errorKg":-5.0},
@@ -33,13 +49,14 @@
     ]
   },
   "methodologyForFutureResearch": [
-    "Do not anchor NH 3YO estimates to the 49kg race minimum. The minimum is a floor, not a class benchmark.",
-    "Estimate underlying relative handicap merit first, then apply age/sex treatment and the race-wide scale independently.",
-    "For elite NH 3YOs, explicitly compare the horse with historical NH 3YO Cup allocations and its WFA relationship; St Leger/elite open-age evidence must be capable of producing mid-to-upper-50kg Cup weights.",
-    "Model the mandatory minimum-topweight uplift as a separate uniform scale transformation when required rather than embedding it horse-by-horse.",
-    "Retain feature-race relativities and handicapper discretion as explicit uncertainty drivers; international ratings are evidence, not a direct kilograms conversion.",
-    "Keep qualification/inactive status separate from handicap merit so cases such as Constitution Hill do not contaminate active-contender calibration.",
-    "Validate any revised methodology on historical Cups before using it prospectively. Do not fit a new rule solely to the 2026 outcomes."
+    "Use the applicable Melbourne Cup benchmark table as the structural starting point. Do not use the 49kg three-year-old minimum as an NH 3YO class anchor.",
+    "Keep three concepts separate: benchmark weight, actual handicap allocation, and minimum handicap weight. They are not interchangeable.",
+    "Estimate each NH 3YO's merit relative to its age/sex benchmark using exposed Group/Listed and open-age form, then position it within the full Cup field relativities.",
+    "Model the mandatory minimum-topweight requirement as a race-wide scale constraint rather than embedding the uplift horse-by-horse.",
+    "Treat international ratings, WFA relationships, feature-race form and direct horse-to-horse relativities as evidence inputs, not as a mechanical kilograms conversion.",
+    "Keep ballot/qualification status separate from handicap merit. Appended ballot figures and race weights serve different purposes.",
+    "Keep inactive or non-prospective cases separate from active-contender calibration so they cannot distort model diagnostics.",
+    "Validate the revised structure on historical Cup handicaps before prospective use. The 2026 official weights are an audit set, not a training target to fit exactly."
   ],
   "governance": {
     "frozenPredictionFile": "data/weights/2026-09-13-working-predictions.json",
