@@ -1,8 +1,20 @@
 {
   "status": "PENDING_RELEASE",
   "expectedReleaseDate": "2026-09-17",
+  "expectedReleaseTimeLocal": "12:00",
   "source": "Racing Victoria / Victoria Racing Club official Melbourne Cup handicaps",
   "sourceUrl": null,
-  "observedAt": null,
+  "observedAt": "2026-09-17T11:08:28+10:00",
+  "evidence": [
+    {
+      "url": "https://www.vrc.com.au/latest-news/101-nominations-received-for-the-166th-lexus-melbourne-cup/",
+      "fact": "VRC milestone table states weights are released at 12:00pm Thursday 17 September 2026."
+    },
+    {
+      "url": "https://www.racingvictoria.com.au/racing/international-resources",
+      "fact": "Racing Victoria lists handicaps on Thursday 17 September 2026."
+    }
+  ],
+  "note": "Checked before the stated 12:00pm release time. No authoritative 2026 handicap list was publicly exposed in the checked official sources at observation time. Predictions must remain separate and must not populate this ledger.",
   "weights": []
 }
