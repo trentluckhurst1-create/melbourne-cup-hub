@@ -60,9 +60,9 @@
       "pct": 79.21
     },
     "rasPublicRating": {
-      "count": 47,
+      "count": 48,
       "total": 101,
-      "pct": 46.53
+      "pct": 47.52
     },
     "marketObserved": {
       "count": 100,
@@ -159,7 +159,6 @@
       "Point Of Law",
       "Portland",
       "Pounding",
-      "Saint George",
       "Sam Hawkens",
       "Sapphire Siren",
       "Sir Chartwell",
@@ -1614,7 +1613,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
