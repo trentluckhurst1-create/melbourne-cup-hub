@@ -1,0 +1,60 @@
+{
+  "snapshotDate": "2026-09-19",
+  "policy": "Evidence captured only where the cited public source explicitly exposes the field. No rating is inferred from race class, weight, margin or performance.",
+  "horse": "Portland",
+  "identity": {
+    "country": "IRE",
+    "sex": "G",
+    "ageAtVerifiedRun": 5,
+    "sire": "Dubawi (IRE)",
+    "dam": "Zagitova (IRE)",
+    "trainer": "Matthew Smith"
+  },
+  "verifiedRuns": [
+    {
+      "date": "2026-05-30",
+      "track": "Rosehill",
+      "race": "Lord Mayors Cup",
+      "class": "Listed",
+      "distanceM": 2000,
+      "surface": "Turf",
+      "finish": 1,
+      "carriedWeightKg": 53.5,
+      "winningMargin": "Long Head",
+      "source": "https://www.racingandsports.com.au/news/racing/news/2026-06-12/portland-no-certainty-to-line-up-in-cup/716304",
+      "sourceType": "Racing & Sports public article",
+      "verifiedOn": "2026-09-19",
+      "note": "The article explicitly states Portland rose 5.5kg from the 53.5kg carried in his Lord Mayors Cup victory."
+    },
+    {
+      "date": "2026-06-13",
+      "track": "Rosehill",
+      "race": "The Queen Elizabeth II Cup",
+      "class": "Listed",
+      "distanceM": 2400,
+      "surface": "Turf",
+      "going": "Soft",
+      "finish": 5,
+      "carriedWeightKg": 59.0,
+      "source": "https://www.racingandsports.com.au/news/racing/news/2026-06-12/portland-no-certainty-to-line-up-in-cup/716304",
+      "sourceType": "Racing & Sports public article/result table",
+      "verifiedOn": "2026-09-19"
+    }
+  ],
+  "distanceEvidence": {
+    "2400m": "Public Racing & Sports article explicitly states Portland had won over 2400m in the UK before the 2026 Queen Elizabeth II Cup.",
+    "source": "https://www.racingandsports.com.au/news/racing/news/2026-06-12/portland-no-certainty-to-line-up-in-cup/716304"
+  },
+  "currentPreparationEvidence": {
+    "asOf": "2026-06-12",
+    "summary": "Four middle-distance runs had formed his preparation; he entered the Queen Elizabeth II Cup off a Lord Mayors Cup win and was being assessed for staying targets.",
+    "source": "https://www.racingandsports.com.au/news/racing/news/2026-06-12/portland-no-certainty-to-line-up-in-cup/716304"
+  },
+  "ratings": {
+    "racingAndSports": null,
+    "racingAndSportsStatus": "NOT_EXPLICITLY_LABELLED_IN_CAPTURED_SOURCE",
+    "timeform": null,
+    "officialRating": null
+  },
+  "conflictPolicy": "No unlabelled numeric field has been promoted to a Racing & Sports, Timeform or official rating."
+}
