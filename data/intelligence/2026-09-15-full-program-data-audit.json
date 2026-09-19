@@ -60,9 +60,9 @@
       "pct": 79.21
     },
     "rasPublicRating": {
-      "count": 49,
+      "count": 50,
       "total": 101,
-      "pct": 48.51
+      "pct": 49.5
     },
     "marketObserved": {
       "count": 100,
@@ -132,7 +132,6 @@
       "Asterix",
       "Barnavara",
       "Bella Montagna",
-      "Campaldino",
       "Darkbonee",
       "Deakin",
       "Don Diego De Vega",
@@ -424,7 +423,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
