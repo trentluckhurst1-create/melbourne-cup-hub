@@ -1,16 +1,12 @@
 {
   "snapshotDate": "2026-09-19",
-  "policy": "Current-preparation evidence only. Carried weights, race class, distance, surface and going are copied only where explicitly exposed by the public Racing & Sports race field. This file does not infer finishing positions, R&S ratings, official ratings or Timeform figures.",
+  "policy": "Current-preparation evidence only. Carried weights, race class, distance, surface, going and results are copied only where explicitly exposed by public Racing & Sports pages. This file does not infer unexposed margins, R&S ratings, official ratings or Timeform figures.",
   "source": {
     "publisher": "Racing & Sports",
     "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-09-19/race-fields",
     "verifiedOn": "2026-09-19"
   },
-  "meeting": {
-    "track": "Caulfield",
-    "going": "Good 4",
-    "rail": "Out 7m Entire Circuit"
-  },
+  "meeting": {"track":"Caulfield","going":"Good 4","rail":"Out 7m Entire Circuit"},
   "cupNomineePrepEntries": [
     {"horse":"Birdman","race":7,"raceName":"Henley Homes Underwood Stakes","class":"Group 1","distanceM":1800,"surface":"Turf","carriedWeightKg":59.0,"trainer":"Chris Waller"},
     {"horse":"Middle Earth","race":7,"raceName":"Henley Homes Underwood Stakes","class":"Group 1","distanceM":1800,"surface":"Turf","carriedWeightKg":59.0,"trainer":"Ciaron Maher"},
@@ -27,8 +23,12 @@
     {"horse":"Zahrann","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":55.0,"trainer":"Ciaron Maher"},
     {"horse":"Zakouma","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":54.0,"trainer":"Grahame Begg"}
   ],
+  "verifiedResults": [
+    {"horse":"Birdman","date":"2026-09-19","track":"Caulfield","race":7,"raceName":"Henley Homes Underwood Stakes","class":"Group 1","distanceM":1800,"surface":"Turf","going":"Good 4","carriedWeightKg":59.0,"finish":1,"result":"Won","sourceUrl":"https://www.racingandsports.com.au/horse-racing-results","evidence":"Racing & Sports meeting results explicitly lists Birdman as the Underwood Stakes winner; field source supplies Group 1, 1800m, Good 4 and 59kg. Margin was not exposed in the captured result and remains null.","marginL":null}
+  ],
   "quarantine": {
-    "results": "NOT_CAPTURED_AT_SNAPSHOT_TIME",
-    "reason": "Race-field source was live before a verified official result was exposed. No finish, margin or post-race rating has been inferred."
+    "race7UnexposedDetails":"Exact margins and non-top-three finishing positions are not inferred from the currently captured meeting-result summary.",
+    "race8Results":"NOT_CAPTURED_AT_SNAPSHOT_TIME",
+    "reason":"Naturalism Stakes result was not yet exposed by the verified captured source. No finish, margin or post-race rating has been inferred."
   }
 }
