@@ -60,9 +60,9 @@
       "pct": 79.21
     },
     "rasPublicRating": {
-      "count": 48,
+      "count": 49,
       "total": 101,
-      "pct": 47.52
+      "pct": 48.51
     },
     "marketObserved": {
       "count": 100,
@@ -128,7 +128,6 @@
     ],
     "rasPublicRating": [
       "Aethelflaed",
-      "Aethelwulf",
       "Age Of Sail",
       "Asterix",
       "Barnavara",
@@ -249,7 +248,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
