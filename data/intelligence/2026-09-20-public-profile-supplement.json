@@ -1,0 +1,77 @@
+{
+  "snapshotDate": "2026-09-20",
+  "policy": "Supplemental public evidence only. Values are captured exactly from cited public sources. No rating is inferred. Racing & Sports ratings, Timeform and official handicap ratings remain separate systems.",
+  "horses": {
+    "Campaldino": {
+      "identity": {
+        "country": "NZ",
+        "foalDate": "2020-08-28",
+        "sex": "G",
+        "colour": "CH",
+        "sire": "Ghibellines (AUS)",
+        "dam": "Zuzana (NZ)",
+        "damsire": "Shocking (AUS)",
+        "trainer": "G Waterhouse & A Bott"
+      },
+      "careerSnapshot": {
+        "starts": 18,
+        "wins": 7,
+        "placings": 5,
+        "winDistancesM": [1750, 2000, 2100, 2200, 2400, 2400, 3200],
+        "newZealand": {"starts": 4, "wins": 2},
+        "australia": {"starts": 14, "wins": 5, "seconds": 4, "thirds": 1},
+        "source": "https://www.racingandsports.com.au/thoroughbred/horse/campaldino/2111109",
+        "verifiedOn": "2026-09-20"
+      },
+      "stakesPerformances": [
+        {
+          "date": "2025-06-14",
+          "race": "XXXX Brisbane Cup",
+          "class": "Group 2",
+          "distanceM": 3200,
+          "track": "Eagle Farm",
+          "finish": 1,
+          "winningTime": "3:22.89",
+          "last600m": "34.44",
+          "winningMargin": "1.25L",
+          "source": "https://www.racingandsports.com.au/news/racing/news/2025-06-14/campaldino-wins-the-brisbane-cup-post-race-trainer-and-jockey-quotes/692504"
+        }
+      ],
+      "ratings": {
+        "racingAndSports": null,
+        "racingAndSportsStatus": "NOT_EXPLICITLY_LABELLED_IN_CAPTURED_PROFILE_SOURCE",
+        "timeform": null,
+        "officialRating": null
+      }
+    },
+    "Asterix": {
+      "identity": {
+        "country": "NZ",
+        "foalDate": "2018-11-10",
+        "sex": "G",
+        "colour": "B",
+        "sire": "Tavistock (NZ)",
+        "dam": "Mourasana (GB)",
+        "damsire": "Shirocco (GER)",
+        "trainer": "Chris Waller"
+      },
+      "careerSnapshot": {
+        "starts": 30,
+        "wins": 8,
+        "placings": 2,
+        "winDistancesM": [1600, 2000, 2100, 2100, 2300, 2400, 2400, 2400],
+        "newZealand": {"starts": 13, "wins": 4, "seconds": 0, "thirds": 1},
+        "australia": {"starts": 17, "wins": 4, "seconds": 1, "thirds": 0},
+        "source": "https://www.racingandsports.com.au/thoroughbred/horse/asterix/1772973",
+        "verifiedOn": "2026-09-20",
+        "note": "Current public profile supersedes the earlier 29-start snapshot after the latest verified run."
+      },
+      "ratings": {
+        "racingAndSports": null,
+        "racingAndSportsStatus": "NOT_EXPLICITLY_LABELLED_IN_CAPTURED_PROFILE_SOURCE",
+        "timeform": null,
+        "officialRating": null
+      }
+    }
+  }
+}
