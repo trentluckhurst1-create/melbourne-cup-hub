@@ -1,0 +1,40 @@
+{
+  "snapshotDate": "2026-09-19",
+  "policy": "Only explicit public result facts are stored. Ratings systems remain separate; no rating is inferred from finishing position, market, time or margin.",
+  "sources": [
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-19/zahrann-wins-group-3-tobin-brothers-naturalism-stakes-post-race-trainer-and-jockey-quotes/721721",
+      "source": "Racing & Sports",
+      "verifiedOn": "2026-09-19",
+      "race": "Tobin Brothers Naturalism Stakes",
+      "track": "Caulfield",
+      "distanceM": 2000,
+      "class": "Group 3",
+      "winner": "Zahrann",
+      "second": "Saint George",
+      "third": "Asterix",
+      "winningTime": "2:02.27",
+      "margins": "1L x Half-Neck",
+      "cupNomineeEvidence": [
+        {"horse":"Zahrann","finish":1,"resultStatus":"VERIFIED"},
+        {"horse":"Saint George","finish":2,"beatenByWinner":"1L","resultStatus":"VERIFIED"},
+        {"horse":"Asterix","finish":3,"beatenBySecond":"Half-Neck","resultStatus":"VERIFIED"}
+      ],
+      "note": "Article explicitly states Zahrann and Saint George qualified for the Caulfield Cup. No RAS run rating is assigned here unless separately exposed by an explicitly labelled ratings source."
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/ratings-analysis",
+      "source": "Racing & Sports Ratings And Analysis",
+      "verifiedOn": "2026-09-19",
+      "explicitRatings": [
+        {"horse":"Birdman","rating":111,"track":"Caulfield","raceNumber":7,"distanceM":1800,"date":"2026-09-19","ratingSystem":"Racing & Sports","interpretation":"explicit published run/value; not automatically asserted as career peak"},
+        {"horse":"Campaldino","rating":110,"track":"Caulfield","raceNumber":8,"distanceM":2000,"date":"2026-09-19","ratingSystem":"Racing & Sports","interpretation":"explicit published run/value; not automatically asserted as career peak"}
+      ]
+    }
+  ],
+  "quarantine": {
+    "unverifiedResults": "Any Caulfield nominee result not explicitly exposed by a verified public result source remains unresolved in this supplement.",
+    "timeform": "Timeform values are not stored in Racing & Sports fields.",
+    "inferredRatings": "PROHIBITED"
+  }
+}
