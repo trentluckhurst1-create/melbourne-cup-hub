@@ -1,0 +1,40 @@
+{
+  "snapshotDate": "2026-09-19",
+  "policy": "Incremental public acquisition evidence. Fields are captured only when explicitly exposed by the cited public source; rating systems are not inferred or cross-substituted.",
+  "horses": {
+    "Campaldino": {
+      "identity": {
+        "country": "NZ",
+        "sex": "G",
+        "sire": "Ghibellines",
+        "dam": "Zuzana",
+        "damsire": "Shocking",
+        "breeder": "Ricky & Anna Rhodes Partnership",
+        "currentTrainer": "Gai Waterhouse & Adrian Bott"
+      },
+      "careerEvidence": {
+        "asAt2025BrisbaneCup": {"starts": 14, "wins": 6, "placings": 4},
+        "newZealandPhase": {"starts": 4, "wins": 2},
+        "australianPhaseAsAt2025BrisbaneCup": {"starts": 10, "wins": 4, "seconds": 3, "thirds": 1, "fifths": 2},
+        "source": "https://www.racingandsports.com.au/news/international/new-zealand/0001-01-01/campaldino-triumphs-in-brisbane-cup/692626",
+        "verifiedOn": "2026-09-19"
+      },
+      "stakesPerformances": [
+        {"date": "2025-06-14", "race": "Brisbane Cup", "class": "Group 2", "distanceM": 3200, "finish": 1},
+        {"date": "2026-03-28", "race": "Chairman's Handicap", "distanceM": 2600, "finish": 2}
+      ],
+      "current2026Preparation": {
+        "status": "Spring preparation active",
+        "evidence": "Returned for the 2026 spring after a four-start autumn campaign that included a Listed Randwick City Stakes win and second in the Chairman's Quality; scheduled to resume in the Group 2 Chelmsford Stakes at Randwick on 5 Sep 2026.",
+        "source": "https://www.racingandsports.com.au/news/racing/news/2026-09-01/brisbane-cup-winner-out-of-the-spring-carnival/720615",
+        "verifiedOn": "2026-09-19"
+      },
+      "ratings": {
+        "racingAndSports": null,
+        "racingAndSportsStatus": "NOT_EXPLICITLY_LABELLED_IN_CAPTURED_SOURCES",
+        "timeform": null,
+        "officialRating": null
+      }
+    }
+  }
+}
