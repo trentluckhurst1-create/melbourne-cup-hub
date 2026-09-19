@@ -1,0 +1,75 @@
+{
+  "snapshotDate": "2026-09-19",
+  "horse": "Campaldino",
+  "policy": "Public fields captured verbatim by system meaning; rating systems are not cross-substituted.",
+  "identity": {
+    "country": "NZ",
+    "sex": "G",
+    "ageAtSource": 6,
+    "colour": "Chestnut",
+    "sire": "Ghibellines",
+    "dam": "Zuzana",
+    "trainer": "G Waterhouse & A Bott",
+    "location": "Flemington"
+  },
+  "careerSnapshot": {
+    "starts": 16,
+    "wins": 7,
+    "seconds": 3,
+    "thirds": 1,
+    "prizemoneyAud": 615697,
+    "good": {"starts": 9, "wins": 3, "seconds": 3, "thirds": 1},
+    "soft": {"starts": 3, "wins": 1, "seconds": 0, "thirds": 0},
+    "heavy": {"starts": 4, "wins": 3, "seconds": 0, "thirds": 0},
+    "firstUp": {"starts": 3, "wins": 0, "seconds": 1, "thirds": 0},
+    "secondUp": {"starts": 3, "wins": 1, "seconds": 1, "thirds": 0},
+    "group1": {"starts": 0, "wins": 0, "seconds": 0, "thirds": 0},
+    "group2": {"starts": 1, "wins": 1, "seconds": 0, "thirds": 0},
+    "group3": {"starts": 3, "wins": 1, "seconds": 0, "thirds": 0},
+    "listed": {"starts": 1, "wins": 1, "seconds": 0, "thirds": 0}
+  },
+  "officialRating": {
+    "value": 105,
+    "label": "BEST HCP RATING",
+    "system": "public racecard handicap field",
+    "note": "Retained as an official/handicap field only; not promoted to Racing & Sports, Timeform, RSSR or PFR."
+  },
+  "verifiedRuns": [
+    {
+      "date": "2026-09-05",
+      "track": "Royal Randwick",
+      "race": "Chelmsford Stakes",
+      "distanceM": 1600,
+      "going": "Good",
+      "finish": 9,
+      "fieldSize": 9,
+      "margin": "44.1L",
+      "carriedWeightKg": 59,
+      "jockey": "Tim Clark"
+    },
+    {
+      "date": "2026-04-04",
+      "track": "Royal Randwick",
+      "race": "Chairmans Qlty",
+      "distanceM": 2600,
+      "going": "Soft",
+      "finish": 2,
+      "fieldSize": 11,
+      "margin": "1.3L",
+      "carriedWeightKg": 59,
+      "jockey": "Tim Clark"
+    }
+  ],
+  "ratings": {
+    "racingAndSports": null,
+    "racingAndSportsStatus": "NOT_EXPLICITLY_LABELLED_IN_CAPTURED_SOURCE",
+    "timeform": null,
+    "rssr": null
+  },
+  "source": {
+    "url": "https://pricekentracing.com.au/racing-detail/26080080124/114060/A/",
+    "sourceType": "Public racecard/profile page",
+    "verifiedOn": "2026-09-19"
+  },
+  "conflictNote": "The source header reports CAREER 16:7-3-1 while a separate page calculation may differ as later races accrue. This snapshot is retained with source date context and is not used to overwrite the canonical audited career registry without reconciliation."
+}
