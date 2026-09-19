@@ -1,0 +1,34 @@
+{
+  "snapshotDate": "2026-09-19",
+  "policy": "Current-preparation evidence only. Carried weights, race class, distance, surface and going are copied only where explicitly exposed by the public Racing & Sports race field. This file does not infer finishing positions, R&S ratings, official ratings or Timeform figures.",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-09-19/race-fields",
+    "verifiedOn": "2026-09-19"
+  },
+  "meeting": {
+    "track": "Caulfield",
+    "going": "Good 4",
+    "rail": "Out 7m Entire Circuit"
+  },
+  "cupNomineePrepEntries": [
+    {"horse":"Birdman","race":7,"raceName":"Henley Homes Underwood Stakes","class":"Group 1","distanceM":1800,"surface":"Turf","carriedWeightKg":59.0,"trainer":"Chris Waller"},
+    {"horse":"Middle Earth","race":7,"raceName":"Henley Homes Underwood Stakes","class":"Group 1","distanceM":1800,"surface":"Turf","carriedWeightKg":59.0,"trainer":"Ciaron Maher"},
+    {"horse":"Aeliana","race":7,"raceName":"Henley Homes Underwood Stakes","class":"Group 1","distanceM":1800,"surface":"Turf","carriedWeightKg":57.0,"trainer":"Chris Waller"},
+    {"horse":"Knight's Choice","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":59.0,"trainer":"John Symons & Sheila Laxon"},
+    {"horse":"Asterix","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":58.5,"trainer":"Chris Waller"},
+    {"horse":"Saint George","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":58.5,"trainer":"Ciaron Maher"},
+    {"horse":"Campaldino","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":57.5,"trainer":"Gai Waterhouse & Adrian Bott"},
+    {"horse":"Onesmoothoperator","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":57.0,"trainer":"T Fitzsimmons"},
+    {"horse":"Okita Soushi","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":56.0,"trainer":"Ciaron Maher"},
+    {"horse":"River Of Stars","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":56.0,"trainer":"Chris Waller"},
+    {"horse":"Deakin","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":55.5,"trainer":"Phillip Stokes"},
+    {"horse":"Valiant King","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":55.0,"trainer":"Chris Waller"},
+    {"horse":"Zahrann","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":55.0,"trainer":"Ciaron Maher"},
+    {"horse":"Zakouma","race":8,"raceName":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","carriedWeightKg":54.0,"trainer":"Grahame Begg"}
+  ],
+  "quarantine": {
+    "results": "NOT_CAPTURED_AT_SNAPSHOT_TIME",
+    "reason": "Race-field source was live before a verified official result was exposed. No finish, margin or post-race rating has been inferred."
+  }
+}
