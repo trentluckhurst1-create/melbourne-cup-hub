@@ -1,14 +1,15 @@
 {
-  "snapshotDate": "2026-09-19",
+  "snapshotDate": "2026-09-20",
   "ratingScale": "Racing And Sports",
   "metric": "explicitly published current-run RAS rating",
   "policy": "These are individual-run ratings explicitly exposed on the public Racing & Sports Ratings And Analysis page. They are not automatically promoted to career peaks. Timeform, RSSR, official handicap ratings and unlabelled enhanced-form numeric fields are not substitutes.",
   "source": {
     "publisher": "Racing & Sports",
     "url": "https://www.racingandsports.com.au/news/ratings-analysis",
-    "verifiedOn": "2026-09-19"
+    "verifiedOn": "2026-09-20"
   },
   "runs": [
+    {"horse":"Aethelwulf","date":"2026-09-18","track":"Newcastle","race":6,"distanceM":2300,"rasRating":103,"note":"Newcastle Gold Cup run; explicitly exposed on the public Ratings And Analysis page and currently establishes the best verified public RAS value held for this horse."},
     {"horse":"Birdman","date":"2026-09-19","track":"Caulfield","race":7,"distanceM":1800,"rasRating":111,"note":"Underwood Stakes run; career-peak file remains 124."},
     {"horse":"Green Spaces","date":"2026-09-19","track":"Randwick","race":6,"distanceM":2000,"rasRating":113,"note":"Kingston Town Stakes run; career-peak file remains 116."},
     {"horse":"Campaldino","date":"2026-09-19","track":"Caulfield","race":8,"distanceM":2000,"rasRating":110,"note":"Naturalism Stakes run; currently also establishes the best verified public RAS value held for this horse."},
