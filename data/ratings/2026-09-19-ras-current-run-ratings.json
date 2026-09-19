@@ -1,0 +1,21 @@
+{
+  "snapshotDate": "2026-09-19",
+  "ratingScale": "Racing And Sports",
+  "metric": "explicitly published current-run RAS rating",
+  "policy": "These are individual-run ratings explicitly exposed on the public Racing & Sports Ratings And Analysis page. They are not automatically promoted to career peaks. Timeform, RSSR, official handicap ratings and unlabelled enhanced-form numeric fields are not substitutes.",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/ratings-analysis",
+    "verifiedOn": "2026-09-19"
+  },
+  "runs": [
+    {"horse":"Birdman","date":"2026-09-19","track":"Caulfield","race":7,"distanceM":1800,"rasRating":111,"note":"Underwood Stakes run; career-peak file remains 124."},
+    {"horse":"Green Spaces","date":"2026-09-19","track":"Randwick","race":6,"distanceM":2000,"rasRating":113,"note":"Kingston Town Stakes run; career-peak file remains 116."},
+    {"horse":"Campaldino","date":"2026-09-19","track":"Caulfield","race":8,"distanceM":2000,"rasRating":110,"note":"Naturalism Stakes run; currently also establishes the best verified public RAS value held for this horse."},
+    {"horse":"Zahrann","date":"2026-09-19","track":"Caulfield","race":8,"distanceM":2000,"rasRating":102,"note":"Naturalism Stakes win; career-peak file remains 115."}
+  ],
+  "quarantine": {
+    "peakPromotion": "No run rating in this file supersedes a higher verified career/public peak.",
+    "otherNominees": "No value is inferred for nominees absent from the captured public Ratings And Analysis output."
+  }
+}
