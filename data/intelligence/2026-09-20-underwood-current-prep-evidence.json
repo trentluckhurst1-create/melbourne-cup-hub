@@ -1,0 +1,61 @@
+{
+  "snapshotDate": "2026-09-20",
+  "policy": "Evidence-backed current-preparation supplement for fixed 101 original 2026 Melbourne Cup nominees. Only explicitly exposed public fields are retained. No rating, margin, finishing position or campaign status is inferred.",
+  "sources": [
+    {
+      "publisher": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-19/birdman-wins-group-1-henley-homes-underwood-stakes-post-race-trainer-and-jockey-quotes/721718",
+      "verifiedOn": "2026-09-20",
+      "scope": "Underwood Stakes result, Birdman identity/pedigree/connections, carried weight, winning time, margins and Middle Earth beaten-jockey comment"
+    },
+    {
+      "publisher": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-09-19/race-tips",
+      "verifiedOn": "2026-09-20",
+      "scope": "Underwood Stakes race conditions including 1800m turf and Good 3 going"
+    }
+  ],
+  "verifiedNomineeEvidence": [
+    {
+      "horse": "Birdman",
+      "identity": {"country": "IRE", "age": 5, "sex": "G", "sire": "Free Eagle", "dam": "Carol", "trainer": "Chris Waller"},
+      "date": "2026-09-19",
+      "track": "Caulfield",
+      "raceName": "Henley Homes Underwood Stakes",
+      "class": "Group 1",
+      "distanceM": 1800,
+      "surface": "Turf",
+      "going": "Good 3",
+      "carriedWeightKg": 59.0,
+      "finish": 1,
+      "result": "Won",
+      "winningTime": "1:47.15",
+      "winningMarginL": 1.75,
+      "secondToThirdMarginL": 2.25,
+      "connectionsExposed": true,
+      "campaignContext": "Racing & Sports reports this as Birdman's second Group 1 win; the Waller camp identified the Turnbull Stakes 2000m at Flemington on 3 Oct as the likely next assignment.",
+      "rating": null,
+      "ratingStatus": "NOT_INFERRED_FROM_RESULT"
+    },
+    {
+      "horse": "Middle Earth",
+      "date": "2026-09-19",
+      "track": "Caulfield",
+      "raceName": "Henley Homes Underwood Stakes",
+      "class": "Group 1",
+      "distanceM": 1800,
+      "surface": "Turf",
+      "going": "Good 3",
+      "carriedWeightKg": 59.0,
+      "finish": null,
+      "beatenJockeyEvidence": "Ethan Brown said he was happy with the run; Middle Earth struggled around the sharp corner, dropped the bit, was outsprinted, then worked satisfactorily over the final 300m.",
+      "rating": null,
+      "ratingStatus": "NOT_INFERRED_FROM_COMMENT_OR_RESULT"
+    }
+  ],
+  "quarantine": {
+    "Middle Earth finish": "The cited post-race text exposes the jockey comment but does not explicitly state Middle Earth's finishing position in the captured evidence; it remains null here.",
+    "ratings": "No R&S, Timeform, RSSR or official rating is inferred from the race result or narrative.",
+    "meetingGoingConflict": "Earlier pre-race capture recorded Good 4 at meeting level. The Racing & Sports race page for the Underwood explicitly exposes Good 3; this race-specific value takes precedence for Race 7 only."
+  }
+}
