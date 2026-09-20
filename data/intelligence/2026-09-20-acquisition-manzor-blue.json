@@ -1,0 +1,73 @@
+{
+  "snapshotDate": "2026-09-20",
+  "horse": "Manzor Blue",
+  "identity": {
+    "country": "NZ",
+    "sex": "M",
+    "trainer": "Lisa Latta",
+    "sire": "Almanzor (FR)",
+    "dam": "Turquoise Coast (NZ)",
+    "breeder": "T V Rider",
+    "owners": "Go Racing Amalfi Syndicate (Mgr: Albert Bosma)",
+    "status": "VERIFIED"
+  },
+  "careerSnapshot": {
+    "starts": 23,
+    "wins": 3,
+    "seconds": 5,
+    "thirds": 3,
+    "prizemoney": 386835,
+    "winningDistances": {"2100": 2, "3200": 1},
+    "good": "10:2-2-1",
+    "soft": "6:1-1-0",
+    "heavy": "3:0-1-0",
+    "firstUp": "4:0-1-0",
+    "secondUp": "3:0-2-0",
+    "thirdUp": "3:0-0-1",
+    "source": "https://breednet-web.azurewebsites.net/race-meeting/caul/171026/8",
+    "status": "PUBLIC_SNAPSHOT_CAPTURED"
+  },
+  "verifiedRuns": [
+    {
+      "date": "2026-09-19",
+      "track": "Trentham",
+      "distanceM": 1600,
+      "class": "Hunterville Vet Club G3",
+      "going": "Heavy10",
+      "finish": 6,
+      "fieldSize": 15,
+      "jockey": "K A Myers",
+      "carriedWeightKg": 53,
+      "marginL": 11.5,
+      "source": "https://breednet-web.azurewebsites.net/race-meeting/caul/171026/8"
+    },
+    {
+      "date": "2026-03-07",
+      "track": "Ellerslie",
+      "distanceM": 3200,
+      "class": "Auckland Cup G2",
+      "going": "Good4",
+      "finish": 2,
+      "fieldSize": 18,
+      "jockey": "Kate Hercock",
+      "carriedWeightKg": 53,
+      "marginL": 6.3,
+      "source": "https://www.tab.co.nz/punters/betting-info/auckland-cup/",
+      "officialIdentitySource": "https://loveracing.nz/RaceInfo/54916/Meeting-Overview.aspx"
+    }
+  ],
+  "ratings": {
+    "racingAndSports": null,
+    "racingAndSportsStatus": "NOT_CAPTURED_EXPLICITLY_LABELLED",
+    "timeform": null,
+    "timeformStatus": "KEPT_SEPARATE_NO_VALUE_ACQUIRED_THIS_RUN",
+    "note": "No rating inferred from form, class, margins or official handicap data."
+  },
+  "provenance": [
+    {"url": "https://breednet-web.azurewebsites.net/race-meeting/caul/171026/8", "scope": "Career snapshot, going splits and 19 Sep current-preparation run", "verifiedOn": "2026-09-20"},
+    {"url": "https://www.tab.co.nz/punters/betting-info/auckland-cup/", "scope": "2026 Auckland Cup result, class, distance and carried weight", "verifiedOn": "2026-09-20"},
+    {"url": "https://loveracing.nz/RaceInfo/54916/Meeting-Overview.aspx", "scope": "Official NZ Auckland Cup identity, connections, pedigree and result", "verifiedOn": "2026-09-20"}
+  ],
+  "conflicts": [],
+  "quarantine": []
+}
