@@ -1,0 +1,90 @@
+{
+  "snapshotDate": "2026-09-20",
+  "scope": "Current 2026 Melbourne Cup preparation / travel evidence for original nominees entering UK/Ireland pre-export quarantine",
+  "source": {
+    "publisher": "Racing.com",
+    "url": "https://www.racing.com/news/2026/09/13/news-international-caulfield-cup-horses-enter-quarantine",
+    "publishedDate": "2026-09-13",
+    "verifiedDate": "2026-09-20"
+  },
+  "policy": "Campaign/travel evidence only. No rating is inferred from this source. Trainer and target statements are retained as published; ratings systems remain separate.",
+  "horses": [
+    {
+      "horse": "Wine Dark Sea",
+      "trainerAtSource": "Harry Charlton",
+      "countryAtSource": "England",
+      "status": "ENTERED_PRE_EXPORT_QUARANTINE",
+      "quarantineEntered": "2026-09-12",
+      "plannedFlightDate": "2026-09-27",
+      "cupTargets": ["Caulfield Cup", "Melbourne Cup"],
+      "veterinaryStatusAtSource": "Passed compulsory distal-limb scan and two physical veterinary examinations; final examination still required in quarantine"
+    },
+    {
+      "horse": "Enfjaar",
+      "trainerAtSource": "Roger Varian",
+      "countryAtSource": "Ireland",
+      "status": "ENTERED_PRE_EXPORT_QUARANTINE",
+      "quarantineEntered": "2026-09-12",
+      "plannedFlightDate": "2026-09-27",
+      "cupTargets": ["Caulfield Cup", "Melbourne Cup"],
+      "additionalPublishedTarget": "Champions Stakes (2000m) may follow Caulfield Cup",
+      "veterinaryStatusAtSource": "Passed compulsory distal-limb scan and two physical veterinary examinations; final examination still required in quarantine"
+    },
+    {
+      "horse": "Point Of Law",
+      "trainerAtSource": "Ciaron Maher",
+      "countryAtSource": "England",
+      "status": "ENTERED_PRE_EXPORT_QUARANTINE",
+      "quarantineEntered": "2026-09-12",
+      "plannedFlightDate": "2026-09-27",
+      "cupTargets": ["Caulfield Cup", "Melbourne Cup"],
+      "connectionNote": "Published as sold from King Charles III ownership to Ciaron Maher clients",
+      "veterinaryStatusAtSource": "Passed compulsory distal-limb scan and two physical veterinary examinations; final examination still required in quarantine"
+    },
+    {
+      "horse": "Starford",
+      "trainerAtSource": "Joseph O'Brien",
+      "countryAtSource": "Ireland",
+      "status": "ENTERED_PRE_EXPORT_QUARANTINE",
+      "quarantineEntered": "2026-09-12",
+      "plannedFlightDate": "2026-09-27",
+      "cupTargets": ["Caulfield Cup", "Melbourne Cup"],
+      "veterinaryStatusAtSource": "Passed compulsory distal-limb scan and two physical veterinary examinations; final examination still required in quarantine"
+    },
+    {
+      "horse": "Omni Man",
+      "trainerAtSource": "Joseph O'Brien",
+      "countryAtSource": "Ireland",
+      "status": "ENTERED_PRE_EXPORT_QUARANTINE",
+      "quarantineEntered": "2026-09-12",
+      "plannedFlightDate": "2026-09-27",
+      "cupTargets": ["Caulfield Cup", "Melbourne Cup"],
+      "veterinaryStatusAtSource": "Passed compulsory distal-limb scan and two physical veterinary examinations; final examination still required in quarantine"
+    },
+    {
+      "horse": "Small Fry",
+      "trainerAtSource": "Joseph O'Brien",
+      "countryAtSource": "Ireland",
+      "status": "ENTERED_PRE_EXPORT_QUARANTINE",
+      "quarantineEntered": "2026-09-12",
+      "plannedFlightDate": "2026-09-27",
+      "cupTargets": ["Melbourne Cup"],
+      "publishedPath": "Expected to attempt Melbourne Cup qualification via Geelong Cup",
+      "veterinaryStatusAtSource": "Passed compulsory distal-limb scan and two physical veterinary examinations; final examination still required in quarantine"
+    },
+    {
+      "horse": "Kizlyar",
+      "trainerAtSource": "Joseph O'Brien",
+      "countryAtSource": "Ireland",
+      "status": "ENTERED_PRE_EXPORT_QUARANTINE",
+      "quarantineEntered": "2026-09-12",
+      "plannedFlightDate": "2026-09-27",
+      "cupTargets": ["Caulfield Cup", "Melbourne Cup"],
+      "veterinaryStatusAtSource": "Passed compulsory distal-limb scan and two physical veterinary examinations; final examination still required in quarantine"
+    }
+  ],
+  "horseCount": 7,
+  "ratingFieldsAdded": 0,
+  "identityConflicts": [],
+  "quarantinedEvidence": []
+}
