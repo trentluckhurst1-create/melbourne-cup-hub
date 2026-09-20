@@ -1,0 +1,50 @@
+{
+  "snapshotDate": "2026-09-21",
+  "policy": "Campaign-status evidence only. Preserve the fixed original 101-nominee universe; a discontinued Cup campaign does not delete the nomination record. Rating systems remain separate and no rating is inferred.",
+  "horses": [
+    {
+      "horse": "Constitution Hill",
+      "identityStatus": "MATCHED_CANONICAL_NOMINEE",
+      "currentPreparation": [
+        {
+          "date": "2026-09-05",
+          "race": "September Stakes",
+          "track": "Kempton",
+          "surface": "All-Weather",
+          "distanceM": 2400,
+          "class": "Group 3",
+          "finish": 4,
+          "fieldSize": 5,
+          "winner": "Pride Of Arras",
+          "marginApproxLengths": 6,
+          "evidenceStatus": "PUBLICLY_REPORTED"
+        }
+      ],
+      "campaignStatus": {
+        "asAt": "2026-09-21",
+        "status": "MELBOURNE_CUP_CAMPAIGN_ENDED",
+        "detail": "Trainer Nicky Henderson confirmed after the September Stakes that the Melbourne Cup campaign was off after Constitution Hill failed to satisfy the qualifying requirement. This status does not alter the fixed original 101-nominee research universe."
+      },
+      "ratings": {
+        "racingAndSports": null,
+        "timeform": null,
+        "officialRating": null,
+        "note": "No rating value is promoted from this campaign-status evidence."
+      },
+      "evidence": [
+        {
+          "publisher": "Just Horse Racing",
+          "publishedDate": "2026-09-07",
+          "url": "https://www.justhorseracing.com.au/news/australian-racing/constitution-hill-ruled-out-of-melbourne-cup-campaign/905697",
+          "supports": [
+            "Constitution Hill fourth of five in the September Stakes at Kempton",
+            "approximately six lengths behind Pride Of Arras",
+            "Nicky Henderson confirmed the Melbourne Cup campaign was ended after the qualifying attempt"
+          ]
+        }
+      ]
+    }
+  ],
+  "quarantine": [],
+  "notes": "Campaign status is distinct from nomination-universe membership and from all rating systems."
+}
