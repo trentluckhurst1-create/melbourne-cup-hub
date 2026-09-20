@@ -1,0 +1,18 @@
+{
+  "snapshotDate": "2026-09-21",
+  "policy": "Numeric ratings are promoted only when the source explicitly identifies the rating system or the value is taken from an authoritative official rating field. Ambiguous editorial references remain quarantined and are not substituted for Racing & Sports, Timeform, RSSR or official handicap ratings.",
+  "evidence": [
+    {
+      "horse": "Ohope Wins",
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/07/news-contenders-in-the-noms-flemington-120926",
+      "published": "2026-09-07",
+      "verifiedOn": "2026-09-21",
+      "context": "Makybe Diva Stakes nominations preview states Ohope Wins was the second-lowest-rated horse among the 15 nominations and gives 106 in parentheses.",
+      "value": 106,
+      "status": "QUARANTINED_AMBIGUOUS_RATING_SYSTEM",
+      "promotion": "NONE",
+      "reason": "The article does not explicitly label the 106 as Racing & Sports, Timeform, RSSR or an official handicap rating. It therefore cannot be promoted into any governed rating field."
+    }
+  ]
+}
