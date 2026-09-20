@@ -1,0 +1,51 @@
+{
+  "snapshotDate": "2026-09-20",
+  "policy": "Current-preparation evidence only. Rating systems remain separate; no rating is inferred from race performance or Cup weight.",
+  "horses": [
+    {
+      "horse": "Aeliana",
+      "identityStatus": "MATCHED_CANONICAL_NOMINEE",
+      "cup": {
+        "officialWeightKg": 58.0,
+        "weightStatus": "OFFICIAL_RELEASED"
+      },
+      "currentPreparation": [
+        {
+          "date": "2026-09-19",
+          "race": "Seven Sunrise Stakes",
+          "track": "Randwick",
+          "class": "Group 2",
+          "distanceM": 1600,
+          "finish": 2,
+          "winner": "Autumn Glow",
+          "evidenceStatus": "PUBLICLY_VERIFIED"
+        }
+      ],
+      "campaignStatus": {
+        "asAt": "2026-09-20",
+        "status": "MELBOURNE_CUP_TARGET_UNDER_RECONSIDERATION",
+        "detail": "Trainer Chris Waller publicly said he was revisiting whether to send Aeliana to the Melbourne Cup after she received 58kg. This is campaign context, not a withdrawal and not a change to the fixed 101-nominee universe."
+      },
+      "ratings": {
+        "racingAndSports": null,
+        "timeform": null,
+        "officialRating": null,
+        "note": "No rating value is acquired from this source. Existing verified rating ledgers remain authoritative and separate."
+      },
+      "evidence": [
+        {
+          "publisher": "Racing.com",
+          "publishedDate": "2026-09-20",
+          "url": "https://www.racing.com/news/2026/09/20/news-contenders-aeliana-200926",
+          "supports": [
+            "Aeliana allocated 58kg for 2026 Melbourne Cup",
+            "Aeliana second to Autumn Glow in 2026-09-19 Group 2 Seven Sunrise Stakes 1600m at Randwick",
+            "Chris Waller reconsidering Melbourne Cup target after weight release"
+          ]
+        }
+      ]
+    }
+  ],
+  "quarantine": [],
+  "notes": "Do not interpret Waller's comments as a withdrawal. Aeliana remains in the canonical original 101 nomination universe."
+}
