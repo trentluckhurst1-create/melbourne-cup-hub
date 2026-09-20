@@ -1,5 +1,5 @@
 {
-  "auditDate": "2026-09-19",
+  "auditDate": "2026-09-20",
   "universe": 101,
   "policy": {
     "membership": "All 101 official original nominees are permanent. Missing evidence must never remove a horse.",
@@ -60,9 +60,9 @@
       "pct": 79.21
     },
     "rasPublicRating": {
-      "count": 50,
+      "count": 51,
       "total": 101,
-      "pct": 49.5
+      "pct": 50.5
     },
     "marketObserved": {
       "count": 100,
@@ -133,7 +133,6 @@
       "Barnavara",
       "Bella Montagna",
       "Darkbonee",
-      "Deakin",
       "Don Diego De Vega",
       "Floating",
       "Future History",
@@ -555,7 +554,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
