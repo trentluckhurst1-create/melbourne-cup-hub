@@ -1,0 +1,50 @@
+{
+  "snapshotDate":"2026-09-22",
+  "policy":"Only explicitly exposed public fields are captured. No rating is inferred from profile, result or editorial fields. Racing & Sports ratings remain separate and require explicit RAS labelling.",
+  "records":[
+    {
+      "horse":"Bella Montagna",
+      "source":"Racing & Sports",
+      "url":"https://www.racingandsports.com.au/thoroughbred/horse/bella-montagna/2110434",
+      "verifiedOn":"2026-09-22",
+      "identity":{"country":"NZ","foalDate":"2021-08-31","sexAge":"5yo B Mare","sire":"Belardo (IRE)","dam":"Lochnagar (AUS)","damsire":"So You Think (NZ)","trainer":"Gai Waterhouse & Adrian Bott"},
+      "career":{"starts":17,"wins":2,"placings":6,"totalPrizeMoneyAud":302038,"winningDistancesM":[1600,2400]},
+      "jurisdictionSplits":{"NZ":{"starts":5,"wins":0,"placings":3,"prizeMoneyNzd":59327},"Australia":{"starts":12,"wins":2,"placings":3,"prizeMoneyAud":248100}},
+      "currentPrepEvidence":{"source":"https://www.racingandsports.com.au/news/racing/news/2026-03-09/king-confident-diamond-can-sparkle-in-mona-lisa-stakes/720717","scope":"Public R&S article records close second to Alalcance in the Premier's Cup 2400m and fifth behind Alalcance in the Brisbane Cup 3200m before a Wyong Gold Cup return."},
+      "rating":null,
+      "ratingStatus":"NOT_EXPLICITLY_EXPOSED_IN_CAPTURED_EVIDENCE"
+    },
+    {
+      "horse":"Grand Pierro",
+      "source":"Racing & Sports",
+      "url":"https://www.racingandsports.com.au/thoroughbred/horse/grand-pierro/1858730",
+      "verifiedOn":"2026-09-22",
+      "identity":{"country":"AUS","foalDate":"2019-10-16","sexAge":"7yo BR Gelding","sire":"Pierro (AUS)","dam":"Le Societe (AUS)","damsire":"Anabaa (USA)","trainer":"Jason Warren"},
+      "career":{"starts":43,"wins":4,"placings":9,"totalPrizeMoneyAud":667100,"winningDistancesM":[1600,2200,2800]},
+      "rating":null,
+      "ratingStatus":"NOT_EXPLICITLY_EXPOSED_IN_CAPTURED_EVIDENCE"
+    },
+    {
+      "horse":"Jenni Multabella",
+      "source":"Racing & Sports",
+      "url":"https://www.racingandsports.com.au/horse-racing-results/australia/sale/2026-06-28/R8",
+      "verifiedOn":"2026-09-22",
+      "chronologicalRun":{"date":"2026-06-28","track":"Sale","race":"Ladbrokes Place Extra to 10th BM62 Handicap","distanceM":1205,"surface":"TURF","going":"HEAVY","finish":3,"marginL":1.7,"carriedWeightKg":58.5,"jockey":"Thomas Stockdale","trainer":"Lloyd Kennewell","barrier":6,"sp":3.5},
+      "rating":null,
+      "ratingStatus":"PUBLIC_RESULT_GATES_RATING; NO RATING INFERRED"
+    },
+    {
+      "horse":"Asterix",
+      "source":"Racing & Sports / LOVERACING.NZ syndicated article",
+      "url":"https://www.racingandsports.com.au/news/international/new-zealand/0001-01-01/tattersalls-cup-continues-strong-campaign-for-asterix/717278",
+      "verifiedOn":"2026-09-22",
+      "identity":{"sire":"Tavistock","dam":"Mourasana","damsire":"Shirocco","trainer":"Chris Waller"},
+      "careerAtPublication":{"starts":29,"wins":8,"placings":2,"stakesAud":1410000},
+      "stakesEvidence":[{"race":"Tattersall's Cup","grade":"Group 3","distanceM":2400,"result":"1st","margin":"long neck"},{"race":"New Zealand Derby","grade":"Group 1","distanceM":2400,"result":"winner"},{"race":"Avondale Cup","grade":"Group 2","distanceM":2400,"result":"winner"}],
+      "rating":null,
+      "ratingStatus":"NOT_EXPLICITLY_EXPOSED_IN_CAPTURED_EVIDENCE"
+    }
+  ],
+  "quarantine":[],
+  "notes":"These records expand public identity/career/run/stakes provenance only. They do not alter any R&S rating field without an explicitly labelled R&S figure."
+}
