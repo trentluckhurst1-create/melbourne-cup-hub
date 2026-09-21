@@ -1,0 +1,20 @@
+{
+  "snapshotDate": "2026-09-21",
+  "horse": "Asterix",
+  "policy": "Only explicit public evidence is captured. No rating is inferred from stakes performance.",
+  "identity": {
+    "sire": "Tavistock",
+    "dam": "Mourasana",
+    "damSire": "Shirocco",
+    "trainer": "Chris Waller",
+    "careerSnapshotAt2026-05-10": {"starts":26,"wins":7,"placings":2,"stakesAud":1270000},
+    "source": "https://www.racingandsports.com.au/news/international/new-zealand/2026-05-10/gosford-gold-cup-completes-black-type-double-for-asterix/714404"
+  },
+  "verifiedPerformances": [
+    {"date":"2026-04-18","track":"Randwick","race":"JRA Plate","class":"Group 3","distanceM":2000,"finish":1,"winningTime":"2:02.94","last600":"34.75","publishedMargins":"1/2L x Long Head","source":"https://www.racingandsports.com.au/news/racing/news/2026-04-18/asterix-wins-group-3-myplates-jra-plate-post-race-trainer-and-jockey-quotes/713048"},
+    {"date":"2026-05-09","track":"Gosford","race":"Gosford Gold Cup","class":"Listed","distanceM":2100,"finish":1,"carriedWeightKg":61.0,"winningMarginL":1.0,"note":"Racing & Sports reports 61kg as a metric-era race weight-carrying record.","source":"https://www.racingandsports.com.au/news/racing/news/2026-05-09/asterix-sets-weight-carrying-record-in-the-gosford-gold-cup/714368"},
+    {"date":"2026-06-27","track":"Eagle Farm","race":"Tattersall's Cup","class":"Group 3","distanceM":2400,"finish":1,"winningTime":"2:29.22","last600":"35.96","publishedMargins":"Long Neck x 2L","source":"https://www.racingandsports.com.au/news/racing/news/2026-06-27/asterix-wins-group-3-tattersalls-cup-post-race-trainer-and-jockey-quotes/717210"}
+  ],
+  "rating": {"racingAndSports":null,"status":"NOT_CAPTURED_FROM_THESE_SOURCES","note":"No explicitly labelled R&S rating is promoted from these articles."},
+  "provenanceStatus":"VERIFIED_PUBLIC_STRUCTURED_EVIDENCE"
+}
