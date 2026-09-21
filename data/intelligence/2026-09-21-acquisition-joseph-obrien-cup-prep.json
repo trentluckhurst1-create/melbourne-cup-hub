@@ -1,0 +1,47 @@
+{
+  "snapshotDate": "2026-09-21",
+  "policy": "Publicly stated preparation, travel and race evidence only. No rating is inferred from editorial language, betting markets or race class. Melbourne Cup weights remain canonical in data/weights/2026-official.json.",
+  "sources": [
+    {
+      "publisher": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/18/news-contenders-joseph-obrien-on-his-melbourne-and-caulfield-cup-horses",
+      "publishedDate": "2026-09-17",
+      "verifiedOn": "2026-09-21",
+      "evidence": [
+        {
+          "horse": "Highwayman",
+          "trainer": "Joseph O'Brien",
+          "latestMajorRun": {
+            "race": "Betfred St Leger",
+            "class": "Group 1",
+            "result": "1st",
+            "country": "GB"
+          },
+          "careerContext": "Seven career starts at publication",
+          "officialMelbourneCupWeightKg": 56.5,
+          "campaignStatus": "Melbourne Cup contender",
+          "jockeyContext": "Saffie Osborne won the St Leger aboard Highwayman; Joseph O'Brien stated Melbourne jockey plans were still to be decided.",
+          "provenanceStatus": "VERIFIED_PUBLIC_EDITORIAL"
+        }
+      ]
+    },
+    {
+      "publisher": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/13/news-international-caulfield-cup-horses-enter-quarantine",
+      "publishedDate": "2026-09-13",
+      "verifiedOn": "2026-09-21",
+      "evidence": [
+        {"horse":"Starford","trainer":"Joseph O'Brien","prepStatus":"Entered UK/Ireland pre-export quarantine for Melbourne spring travel","travelTargetDate":"2026-09-27","provenanceStatus":"VERIFIED_PUBLIC_EDITORIAL"},
+        {"horse":"Omni Man","trainer":"Joseph O'Brien","prepStatus":"Entered UK/Ireland pre-export quarantine for Melbourne spring travel","travelTargetDate":"2026-09-27","provenanceStatus":"VERIFIED_PUBLIC_EDITORIAL"},
+        {"horse":"Kizlyar","trainer":"Joseph O'Brien","prepStatus":"Entered UK/Ireland pre-export quarantine for Melbourne spring travel","travelTargetDate":"2026-09-27","provenanceStatus":"VERIFIED_PUBLIC_EDITORIAL"},
+        {"horse":"Small Fry","trainer":"Joseph O'Brien","prepStatus":"Entered UK/Ireland pre-export quarantine for Melbourne spring travel; expected to pursue Melbourne Cup qualification via Geelong Cup","travelTargetDate":"2026-09-27","provenanceStatus":"VERIFIED_PUBLIC_EDITORIAL"}
+      ]
+    }
+  ],
+  "ratings": {
+    "ras": null,
+    "timeform": null,
+    "officialHandicapRating": null,
+    "note": "This acquisition file does not promote or infer ratings. Existing rating datasets remain authoritative for their own systems."
+  }
+}
