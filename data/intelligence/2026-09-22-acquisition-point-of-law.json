@@ -1,0 +1,48 @@
+{
+  "snapshotDate": "2026-09-22",
+  "horse": "Point Of Law",
+  "policy": "Publicly exposed facts only. No rating is inferred. Racing & Sports, official handicap, Timeform and other rating systems remain separate.",
+  "identity": {
+    "sex": "gelding",
+    "sire": "Frankel",
+    "dam": "Portfolio",
+    "damSire": "Deep Impact",
+    "breeder": "The King",
+    "formerTrainer": "John & Thady Gosden",
+    "australianTrainer": "Ciaron Maher",
+    "transferStatus": "Purchased for Ciaron Maher clients; Racing.com reported on 19 Sep that the official transfer to Maher would occur on arrival in Melbourne.",
+    "ownershipContext": "Formerly raced and bred by The King and Queen; Racing & Sports reported the new ownership partnership includes ARE Investments, DEG Racing, Adrian Willoughby, John Simmons, John O'Neill, Rupert Legh and Cameron Massie."
+  },
+  "verifiedChronology": [
+    {"date":"2026-04","race":"Yarmouth debut","result":"2nd","note":"Runner-up on career debut; exact public date not asserted from the cited article."},
+    {"date":"2026-05","race":"Newbury","result":"1st","note":"Won on second career appearance; exact public date not asserted from the cited article."},
+    {"date":"2026-06-17","track":"Royal Ascot","race":"Queen's Vase","class":"Group 2","distanceM":2816,"result":"4th","note":"Racing & Sports reported he was knocked back and had to circle the field before finishing fourth."},
+    {"date":"2026-07-09","track":"Newmarket","race":"Bahrain Trophy Stakes","class":"Group 3","distanceM":2615,"result":"1st","margin":"0.5L","jockey":"James Doyle","carriedWeightKg":58.5,"note":"Half-length winner; first stakes success."}
+  ],
+  "careerSnapshot": {
+    "asAt":"2026-07-10",
+    "starts":4,
+    "wins":2,
+    "basis":"Racing & Sports chronology states debut second, second-start Newbury win, Queen's Vase fourth and Bahrain Trophy win. This is a dated snapshot, not asserted as current career total after July."
+  },
+  "current2026Preparation": {
+    "status":"PRE_EXPORT_QUARANTINE",
+    "quarantineEntered":"2026-09-12",
+    "location":"England",
+    "plannedFlightToMelbourne":"2026-09-27",
+    "targets":["Caulfield Cup","Melbourne Cup"],
+    "veterinaryStatus":"Racing.com reported the seven quarantined internationals had satisfied Racing Victoria pre-travel veterinary protocols to that point, including distal-limb scans and two physical examinations, with a final examination still required in quarantine."
+  },
+  "ratings": {
+    "racingAndSports": null,
+    "timeform": null,
+    "official": null,
+    "note":"No explicitly labelled public R&S, Timeform or official rating was established from these sources; none is inferred."
+  },
+  "evidence": [
+    {"source":"Racing & Sports","url":"https://www.racingandsports.com.au/news/international/uk-ire-and-europe/2026-08-14/point-of-law-set-for-australian-switch/719683","verifiedOn":"2026-09-22","scope":"Identity, pedigree, Australian transfer, ownership context, first four career performances and Australian targets."},
+    {"source":"Racing & Sports","url":"https://www.racingandsports.com.au/news/international/uk-ire-and-europe/2026-07-10/point-of-law-has-royal-connections-dreaming-of-leger-glory/717897","verifiedOn":"2026-09-22","scope":"Bahrain Trophy win, Queen's Vase context, James Doyle ride and John Gosden comments."},
+    {"source":"Racing.com","url":"https://www.racing.com/news/2026/09/13/news-international-caulfield-cup-horses-enter-quarantine","verifiedOn":"2026-09-22","scope":"Pre-export quarantine, flight timing, veterinary protocol and Cup campaign context."},
+    {"source":"Racing.com","url":"https://www.racing.com/news/2026/09/19/news-review-caulfield-maher-cup-contenders-190926","verifiedOn":"2026-09-22","scope":"Transfer to Ciaron Maher to become official on Melbourne arrival."}
+  ]
+}
