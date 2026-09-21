@@ -1,0 +1,42 @@
+{
+  "snapshotDate": "2026-09-22",
+  "policy": "Capture only explicit public facts. Cup weights are updated only when Racing Victoria publicly announces a penalty or authoritative Racing Australia data reflects it. Ratings are not inferred from editorial language.",
+  "evidence": [
+    {
+      "horse": "Zahrann",
+      "source": "Racing.com / Racing Victoria handicapping statement",
+      "url": "https://www.racing.com/news/2026/09/21/news-contenders-zahrann-cops-cups-penalty",
+      "published": "2026-09-21",
+      "verifiedOn": "2026-09-22",
+      "facts": {
+        "latestRun": "Won Group 3 Naturalism Stakes (2000m) at Caulfield on 19 Sep 2026",
+        "melbourneCupPenaltyKg": 0.5,
+        "melbourneCupWeightAfterPenaltyKg": 54.5,
+        "melbourneCupOrderAfterPenalty": 38,
+        "caulfieldCupWeightAfterPenaltyKg": 53.0,
+        "caulfieldCupBallotExempt": true
+      },
+      "status": "CAPTURED_OFFICIAL_HANDICAPPING_UPDATE",
+      "ratingPromotion": "NONE"
+    },
+    {
+      "horse": "Aethelwulf",
+      "source": "Racing.com / Racing Victoria order-of-entry update",
+      "url": "https://www.racing.com/news/2026/09/21/news-contenders-zahrann-cops-cups-penalty",
+      "published": "2026-09-21",
+      "verifiedOn": "2026-09-22",
+      "facts": {
+        "latestRun": "Won Newcastle Gold Cup (2300m) on 18 Sep 2026",
+        "melbourneCupFirstEliminationClausePassed": true,
+        "melbourneCupOrderAfterRun": 64,
+        "originalCupWeightKg": 51.0
+      },
+      "status": "CAPTURED_QUALIFICATION_UPDATE",
+      "ratingPromotion": "NONE"
+    }
+  ],
+  "notes": [
+    "Zahrann's 54.5kg is a post-release penalty and supersedes his original 54.0kg for current Cup-weight display while the original released handicap should remain preserved for audit history.",
+    "Aethelwulf's Newcastle Gold Cup win passed the Melbourne Cup first elimination clause; no rating is inferred from the result."
+  ]
+}
