@@ -1,0 +1,21 @@
+{
+  "snapshotDate": "2026-09-21",
+  "policy": "Current-preparation logistics evidence only. Quarantine entry is not treated as a declaration, final travel confirmation, or Melbourne Cup acceptance. No rating is inferred from this source.",
+  "source": {
+    "publisher": "Racing.com",
+    "publishedDate": "2026-09-13",
+    "verifiedOn": "2026-09-21",
+    "url": "https://www.racing.com/news/2026/09/13/news-international-caulfield-cup-horses-enter-quarantine",
+    "title": "Seven Caulfield Cup raiders enter quarantine"
+  },
+  "evidence": [
+    {"horse":"Wine Dark Sea","trainer":"Harry Charlton","country":"GB","status":"ENTERED_PRE_EXPORT_QUARANTINE","location":"UK/Ireland quarantine","entered":"2026-09-12","plannedFlightDate":"2026-09-27","cupContext":"Holds Caulfield Cup and Melbourne Cup nominations; passed pre-travel veterinary protocols reported by Racing Victoria.","rating":null},
+    {"horse":"Enfjaar","trainer":"Roger Varian","country":"IRE","status":"ENTERED_PRE_EXPORT_QUARANTINE","location":"UK/Ireland quarantine","entered":"2026-09-12","plannedFlightDate":"2026-09-27","cupContext":"Holds Caulfield Cup and Melbourne Cup nominations; passed pre-travel veterinary protocols reported by Racing Victoria.","rating":null},
+    {"horse":"Point Of Law","trainer":"Ciaron Maher","country":"GB","status":"ENTERED_PRE_EXPORT_QUARANTINE","location":"UK/Ireland quarantine","entered":"2026-09-12","plannedFlightDate":"2026-09-27","cupContext":"Holds Caulfield Cup and Melbourne Cup nominations; passed pre-travel veterinary protocols reported by Racing Victoria.","rating":null},
+    {"horse":"Starford","trainer":"Joseph O’Brien","country":"IRE","status":"ENTERED_PRE_EXPORT_QUARANTINE","location":"UK/Ireland quarantine","entered":"2026-09-12","plannedFlightDate":"2026-09-27","cupContext":"Holds Caulfield Cup and Melbourne Cup nominations; passed pre-travel veterinary protocols reported by Racing Victoria.","rating":null},
+    {"horse":"Omni Man","trainer":"Joseph O’Brien","country":"IRE","status":"ENTERED_PRE_EXPORT_QUARANTINE","location":"UK/Ireland quarantine","entered":"2026-09-12","plannedFlightDate":"2026-09-27","cupContext":"Holds Caulfield Cup and Melbourne Cup nominations; passed pre-travel veterinary protocols reported by Racing Victoria.","rating":null},
+    {"horse":"Small Fry","trainer":"Joseph O’Brien","country":"IRE","status":"ENTERED_PRE_EXPORT_QUARANTINE","location":"UK/Ireland quarantine","entered":"2026-09-12","plannedFlightDate":"2026-09-27","cupContext":"Expected to pursue Melbourne Cup qualification via the Geelong Cup; passed pre-travel veterinary protocols reported by Racing Victoria.","rating":null},
+    {"horse":"Kizlyar","trainer":"Joseph O’Brien","country":"IRE","status":"ENTERED_PRE_EXPORT_QUARANTINE","location":"UK/Ireland quarantine","entered":"2026-09-12","plannedFlightDate":"2026-09-27","cupContext":"Holds Caulfield Cup and Melbourne Cup nominations; passed pre-travel veterinary protocols reported by Racing Victoria.","rating":null}
+  ],
+  "quarantineNotes": "Racing Victoria stated all seven had passed compulsory distal-limb scans and two physical veterinary examinations, with a final examination still required in quarantine. This evidence must not be upgraded to travelled/arrived until separately verified."
+}
