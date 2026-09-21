@@ -1,0 +1,41 @@
+{
+  "snapshotDate": "2026-09-21",
+  "horse": "Changingoftheguard",
+  "policy": "Public Racing & Sports form evidence only. Ratings are not inferred from unlabelled numeric fields. Timeform remains separate.",
+  "identity": {
+    "sexAge": "7yo gelding",
+    "sire": "Galileo (IRE)",
+    "dam": "Lady Lara (IRE)",
+    "trainerAtSource": "Kris Lees",
+    "source": "https://www.racingandsports.com.au/form-guide/arabian/australia/newcastle/2026-09-18/R6",
+    "verifiedOn": "2026-09-21"
+  },
+  "careerSnapshot": {
+    "starts": 24,
+    "wins": 5,
+    "seconds": 3,
+    "thirds": 2,
+    "course": "0:0-0-0",
+    "last12m": "9:1-0-0",
+    "distance": "0:0-0-0",
+    "firstUp": "7:1-0-1",
+    "secondUp": "6:1-1-1",
+    "good": "12:3-2-1",
+    "soft": "11:1-1-1",
+    "heavy": "0:0-0-0",
+    "allWeather": "1:1-0-0",
+    "turf": "23:4-3-2",
+    "sourceDateContext": "Newcastle form guide published for 2026-09-18"
+  },
+  "verifiedRuns": [
+    {"date":"2026-08-22","track":"Randwick","class":"G3 3U Quality","distanceM":2000,"surface":"Turf","going":"Soft","finish":8,"marginL":4.3,"carriedKg":59.5,"jockey":"Tim Clark","winner":"Boniface","winnerKg":54.0},
+    {"date":"2026-05-16","track":"Flemington","class":"Listed Open","distanceM":2800,"surface":"Turf","going":"Good","finish":13,"marginL":44.5,"carriedKg":58.5,"jockey":"Declan Bates","winner":"Zakouma","winnerKg":58.5},
+    {"date":"2026-04-11","track":"Randwick","class":"G1 3U Open","distanceM":3200,"surface":"Turf","going":"Good","finish":1,"marginL":0.3,"carriedKg":55.5,"jockey":"Jason Collett","second":"Soul Of Spain","secondKg":54.5}
+  ],
+  "ratings": {
+    "racingAndSports": null,
+    "timeform": null,
+    "note": "The public result exposes form and splits but states that login is required to view all runs and ratings. No rating is promoted from this source."
+  },
+  "provenance": [{"source":"Racing & Sports","url":"https://www.racingandsports.com.au/form-guide/arabian/australia/newcastle/2026-09-18/R6","verifiedOn":"2026-09-21","fields":"identity, pedigree, trainer, career/surface/going/preparation splits, three exposed chronological runs, carried weights and margins"}]
+}
