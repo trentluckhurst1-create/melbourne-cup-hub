@@ -1,0 +1,41 @@
+{
+  "snapshotDate": "2026-09-21",
+  "horse": "Age Of Sail",
+  "policy": "Only explicit public Racing & Sports form-guide fields are captured. No rating is inferred from form, class or weights.",
+  "identity": {
+    "country": "GB",
+    "age": 7,
+    "sex": "Gelding",
+    "sire": "Frankel",
+    "dam": "Concordia",
+    "trainer": "Kris Lees",
+    "source": "https://www.racingandsports.com.au/form-guide/arabian/australia/newcastle/2026-09-18/R6"
+  },
+  "careerSnapshotAt2026-09-18": {
+    "starts": 39,
+    "wins": 5,
+    "seconds": 5,
+    "thirds": 8,
+    "course": {"starts":1,"wins":0,"seconds":0,"thirds":0},
+    "distance": {"starts":1,"wins":0,"seconds":0,"thirds":0},
+    "firstUp": {"starts":8,"wins":1,"seconds":0,"thirds":2},
+    "secondUp": {"starts":7,"wins":0,"seconds":1,"thirds":2},
+    "good": {"starts":28,"wins":4,"seconds":4,"thirds":5},
+    "soft": {"starts":6,"wins":1,"seconds":1,"thirds":0},
+    "heavy": {"starts":2,"wins":0,"seconds":0,"thirds":2},
+    "allWeather": {"starts":3,"wins":0,"seconds":0,"thirds":1},
+    "turf": {"starts":36,"wins":5,"seconds":5,"thirds":7},
+    "source": "https://www.racingandsports.com.au/form-guide/arabian/australia/newcastle/2026-09-18/R6"
+  },
+  "verifiedRecentRuns": [
+    {"date":"2026-09-04","track":"Wyong","class":"Listed Quality","distanceM":2100,"surface":"Turf","going":"Good","finish":7,"fieldSize":7,"marginL":2.8,"carriedWeightKg":54.0,"jockey":"Dylan Gibbons","source":"https://www.racingandsports.com.au/form-guide/arabian/australia/newcastle/2026-09-18/R6"},
+    {"date":"2026-08-08","track":"Randwick","class":"Open","distanceM":1800,"surface":"Turf","going":"Good","finish":9,"fieldSize":11,"marginL":5.0,"carriedWeightKg":54.0,"jockey":"Dylan Gibbons","source":"https://www.racingandsports.com.au/form-guide/arabian/australia/newcastle/2026-09-18/R6"},
+    {"date":"2026-04-04","track":"Randwick","class":"Group 2 Quality","distanceM":2600,"surface":"Turf","going":"Soft","finish":8,"fieldSize":11,"marginL":5.1,"carriedWeightKg":53.0,"jockey":"Tyler Schiller","source":"https://www.racingandsports.com.au/form-guide/arabian/australia/newcastle/2026-09-18/R6"}
+  ],
+  "rating": {
+    "racingAndSports": null,
+    "status": "NOT_PUBLICLY_EXPOSED_ON_CAPTURED_PAGE",
+    "note": "The public page states that all runs and ratings require login; no R&S rating is inferred from other numeric fields."
+  },
+  "provenanceStatus": "VERIFIED_PUBLIC_STRUCTURED_EVIDENCE"
+}
