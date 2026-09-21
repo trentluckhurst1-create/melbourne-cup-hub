@@ -1,0 +1,49 @@
+{
+  "snapshotDate": "2026-09-22",
+  "horse": "Zahrann",
+  "identity": {
+    "canonicalName": "Zahrann",
+    "countrySuffix": "IRE",
+    "trainer": "Ciaron Maher"
+  },
+  "melbourneCup": {
+    "releaseWeightKg": 54.0,
+    "currentWeightKg": 54.5,
+    "penaltyKg": 0.5,
+    "penaltyReason": "Group 3 Naturalism Stakes (2000m) win at Caulfield on 2026-09-19",
+    "orderOfEntryAfterPenalty": 38,
+    "firstEliminationClause": "NOT_YET_PASSED_AS_AT_SOURCE_PUBLICATION"
+  },
+  "currentPreparation": {
+    "latestVerifiedRun": {
+      "date": "2026-09-19",
+      "race": "Naturalism Stakes",
+      "group": "Group 3",
+      "distanceM": 2000,
+      "result": 1
+    },
+    "note": "Racing Victoria Head of Handicapping David Hegan imposed a 0.5kg penalty for both the Caulfield and Melbourne Cups after the Naturalism Stakes win. The published article states Zahrann moved to 54.5kg in the Melbourne Cup and 38th in the order of entry. It also states Zahrann had not yet passed the Melbourne Cup first elimination clause at publication."
+  },
+  "evidence": [
+    {
+      "publisher": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/21/news-contenders-zahrann-cops-cups-penalty",
+      "published": "2026-09-21",
+      "verifiedOn": "2026-09-22",
+      "status": "VERIFIED_PUBLIC_RACING_VICTORIA_HANDICAPPING_REPORT"
+    },
+    {
+      "publisher": "Racing Australia",
+      "url": "https://racingaustralia.horse/FreeFields/Weights.aspx?Key=2026Nov03%2CVIC%2CFlemington",
+      "verifiedOn": "2026-09-22",
+      "status": "RELEASE_WEIGHT_BASELINE",
+      "note": "Racing Australia page still reports Weights Last Published 17-Sep-26 1:01PM AEST and the original 54kg release weight; retained as the release-weight baseline rather than treated as contradictory current evidence."
+    }
+  ],
+  "ratings": {
+    "racingAndSports": null,
+    "timeform": null,
+    "officialHandicapRating": null,
+    "policy": "No rating inferred from the penalty or from unrelated numeric fields. Rating systems remain separate."
+  }
+}
