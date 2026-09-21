@@ -1,0 +1,13 @@
+{
+  "snapshotDate":"2026-09-22",
+  "horse":"Pounding",
+  "identity":{"country":"AUS","sex":"G","sire":"Exceed And Excel (AUS)","dam":"Silent Entrance (GB)","trainer":"Peter G Moody & Katherine Coleman"},
+  "verifiedRuns":[
+    {"race":"Lexus Andrew Ramsden","date":"2026-05-16","track":"Flemington","distanceM":2800,"class":"Listed","surface":"Turf","going":"Good","finish":2,"carriedKg":58.5,"source":"https://www.racingandsports.com.au/news/racing/news/2026-05-15/sa-raiders-eyeing-off-melbourne-cup-start/714690"},
+    {"race":"Tattersall's Cup","date":"2026-06-27","track":"Eagle Farm","distanceM":2400,"class":"Group 3","surface":"Turf","going":"Soft","finish":2,"carriedKg":56.0,"source":"https://www.racingandsports.com.au/news/racing/news/2026-06-25/hickman-looking-to-the-future-with-cup-hopeful/717068"},
+    {"race":"Mornington Cup","date":"2026-04-18","track":"Mornington","finish":2,"carriedKg":54.5,"source":"https://www.racingandsports.com.au/news/racing/news/2026-04-16/basilinna-in-order-for-mornington-cup-tilt/712891"}
+  ],
+  "historicalStakesEvidence":[{"race":"C F Orr Stakes","date":"2023-02-11","track":"Sandown","distanceM":1400,"class":"Group 1","finish":1,"carriedKg":57.0,"going":"Good 3","timeformFieldExplicitlyLabelled":113,"source":"https://www.racingandsports.com.au/transcription/Racing-Victoria-2025-2026/index.asp?did=4yh9"}],
+  "ratingsPolicy":"The historical transcription labels its numeric field TF; it is retained as Timeform-labelled evidence and is not promoted to Racing & Sports rating, RSSR or official handicap rating. No missing rating is inferred.",
+  "provenance":{"verifiedOn":"2026-09-22","sourcePublisher":"Racing & Sports","status":"CAPTURED_VERIFIED_PUBLIC_EVIDENCE"}
+}
