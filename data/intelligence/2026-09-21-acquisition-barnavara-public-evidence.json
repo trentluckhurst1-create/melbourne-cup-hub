@@ -1,0 +1,76 @@
+{
+  "snapshotDate": "2026-09-21",
+  "horse": "Barnavara",
+  "identity": {
+    "country": "IRE",
+    "sex": "Mare",
+    "sire": "Calyx",
+    "dam": "Alfea",
+    "currentTrainer": "Chris Waller",
+    "status": "VERIFIED_PUBLIC_CROSS_SOURCE"
+  },
+  "careerSnapshot": {
+    "starts": 15,
+    "wins": 5,
+    "seconds": 0,
+    "thirds": 5,
+    "prizemoneyAud": 894718,
+    "source": "https://racehub.com.au/horses/barnavara",
+    "retrievedOn": "2026-09-21",
+    "note": "RaceHub page contains an internally stale prose line saying 14 starts but its current stats breakdown and results summary report 15:5-0-5. The 15-start total is retained; the stale 14-start prose is quarantined as a source inconsistency."
+  },
+  "goingSplits": {
+    "good": {"starts": 7, "wins": 2, "seconds": 0, "thirds": 3},
+    "soft": {"starts": 7, "wins": 3, "seconds": 0, "thirds": 2},
+    "source": "https://racehub.com.au/horses/barnavara",
+    "retrievedOn": "2026-09-21",
+    "note": "Only explicitly exposed public splits retained."
+  },
+  "historicalOfficialRatingEvidence": {
+    "rating": 102,
+    "jurisdictionContext": "Ireland",
+    "race": "Darley Irish EBF Kooyonga Stakes",
+    "track": "Navan",
+    "date": "2025-06-07",
+    "distance": "1m 30y",
+    "going": "Yielding (Good in places)",
+    "carriedWeight": "8-12",
+    "finish": 1,
+    "source": "https://www.skysports.com/racing/results/full-result/1313089/navan/07-06-2025/darley-irish-ebf-kooyonga-stakes-fillies-and-mares-listed",
+    "retrievedOn": "2026-09-21",
+    "status": "HISTORICAL_OFFICIAL_RATING_ONLY",
+    "note": "This is an explicitly labelled Official Rating on the dated race result. It is not promoted as Barnavara's current Australian official handicap rating and is not a Racing & Sports rating."
+  },
+  "laterRatingContext": {
+    "reportedMark": 111,
+    "asOf": "2025-10-20",
+    "source": "https://www.irishracing.com/news/barnavara-an-eyecatching-part-of-sales-season/260233",
+    "retrievedOn": "2026-09-21",
+    "status": "EDITORIAL_MARK_CONTEXT",
+    "note": "Trainer Jessica Harrington is quoted saying Barnavara progressed to a mark of 111 after her 2025 Listed, Group 3, Group 2 and Group 1 progression. Retained as rating context, not relabelled as R&S or Timeform."
+  },
+  "stakesProgression": {
+    "verifiedNarrative": [
+      "Listed winner at Navan",
+      "Group 3 winner at Naas",
+      "Group 2 winner at the Curragh",
+      "Group 1 Prix de l'Opera winner at ParisLongchamp"
+    ],
+    "source": "https://www.irishracing.com/news/barnavara-an-eyecatching-part-of-sales-season/260233",
+    "retrievedOn": "2026-09-21"
+  },
+  "ratingSystemSeparation": {
+    "racingAndSports": null,
+    "timeform": null,
+    "rssr": null,
+    "currentOfficialRating": null,
+    "policy": "No rating is inferred or cross-labelled. The dated 102 official rating and later editorial 111 mark remain in their own provenance fields."
+  },
+  "conflictsAndQuarantine": [
+    {
+      "field": "careerStarts",
+      "conflict": "RaceHub prose says 14 starts while the same current page's stats/results summary says 15 starts.",
+      "resolution": "Use current structured 15:5-0-5 snapshot; retain conflict note."
+    }
+  ]
+}
