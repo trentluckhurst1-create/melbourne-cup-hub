@@ -1,0 +1,89 @@
+{
+  "snapshotDate": "2026-09-23",
+  "horse": "Asterix",
+  "identity": {
+    "country": "NZ",
+    "sex": "G",
+    "sire": "Tavistock (NZ)",
+    "dam": "Mourasana (GB)",
+    "trainer": "Chris Waller",
+    "status": "VERIFIED_PUBLIC_EVIDENCE"
+  },
+  "currentPreparation": [
+    {
+      "date": "2026-09-19",
+      "course": "Caulfield",
+      "race": "Tobin Brothers Naturalism Stakes",
+      "class": "Group 3",
+      "distanceM": 2000,
+      "finish": 3,
+      "jockey": "Ben Melham",
+      "carriedWeightKg": 58.5,
+      "winner": "Zahrann",
+      "runnerUp": "Saint George",
+      "winnerTime": "2:02.27",
+      "marginContext": "Zahrann won by 1L; Saint George beat Asterix by a half-neck for second.",
+      "source": "https://www.racingandsports.com.au/news/racing/news/2026-09-19/zahrann-wins-group-3-tobin-brothers-naturalism-stakes-post-race-trainer-and-jockey-quotes/721721"
+    },
+    {
+      "date": "2026-09-05",
+      "course": "Sandown Hillside",
+      "distanceM": 1600,
+      "finish": 5,
+      "carriedWeightKg": 58.5,
+      "note": "Public Racing & Sports Melbourne Mail/result evidence identifies Asterix as fifth at Sandown carrying 58.5kg. Retained as chronological preparation evidence; no rating inferred.",
+      "source": "https://www.racingandsports.com.au/news/racing/previews/2026-03-09/the-melbourne-mail-sandown-5th-of-september-2026/720748?courseCode=SANH"
+    },
+    {
+      "date": "2026-06-27",
+      "course": "Eagle Farm",
+      "race": "Tattersall's Cup",
+      "class": "Group 3",
+      "distanceM": 2400,
+      "surface": "Turf",
+      "going": "Soft",
+      "finish": 1,
+      "jockey": "Tim Clark",
+      "carriedWeightKg": 56.5,
+      "sp": 4.2,
+      "winnerTime": "2:29.22",
+      "last600": "35.96",
+      "margin": "Long neck",
+      "runnerUp": "Pounding",
+      "third": "Etna Rosso",
+      "source": "https://www.racingandsports.com.au/news/racing/news/2026-06-27/asterix-wins-group-3-tattersalls-cup-post-race-trainer-and-jockey-quotes/717210"
+    }
+  ],
+  "stakesPerformance": {
+    "verified2026Group3Wins": [
+      {
+        "race": "MyPlates JRA Plate",
+        "date": "2026-04-18",
+        "course": "Randwick",
+        "distanceM": 2000,
+        "winnerTime": "2:02.94",
+        "last600": "34.75",
+        "margin": "0.5L",
+        "source": "https://www.racingandsports.com.au/news/racing/news/2026-04-18/asterix-wins-group-3-myplates-jra-plate-post-race-trainer-and-jockey-quotes/713048"
+      },
+      {
+        "race": "Tattersall's Cup",
+        "date": "2026-06-27",
+        "course": "Eagle Farm",
+        "distanceM": 2400,
+        "source": "https://www.racingandsports.com.au/news/racing/news/2026-06-27/asterix-wins-group-3-tattersalls-cup-post-race-trainer-and-jockey-quotes/717210"
+      }
+    ]
+  },
+  "ratings": {
+    "racingAndSports": null,
+    "timeform": null,
+    "officialHandicap": null,
+    "policy": "No rating is inferred from unlabeled numeric fields on public enhanced-form pages. R&S, Timeform and official handicap systems remain separate."
+  },
+  "evidenceNotes": [
+    "Racing & Sports public race evidence verifies identity, pedigree, trainer, carried weights and the listed stakes performances.",
+    "The 19 Sep Naturalism Stakes is the latest verified public race captured here and establishes current spring preparation form.",
+    "No explicitly labelled public R&S rating was found in the evidence used for this acquisition record; rating remains unpopulated rather than inferred."
+  ]
+}
