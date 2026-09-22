@@ -1,0 +1,46 @@
+{
+  "snapshotDate": "2026-09-22",
+  "horse": "Half Yours",
+  "scope": "current 2026 Melbourne Cup preparation and official weight context",
+  "evidence": [
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/17/news-contenders-mcevoy-not-surprised-by-cup-weight-for-half-yours",
+      "published": "2026-09-17",
+      "verifiedOn": "2026-09-22",
+      "facts": {
+        "melbourneCupWeightKg": 59.0,
+        "melbourneCupIntent": "Trainer Tony McEvoy confirmed the horse will run in the Melbourne Cup.",
+        "likelyLeadUpsAtPublication": ["Turnbull Stakes", "Cox Plate"],
+        "caulfieldCupWeightKg": 57.5
+      }
+    },
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/08/news-preview-half-yours-prepares-for-spring-return",
+      "published": "2026-09-08",
+      "verifiedOn": "2026-09-22",
+      "facts": {
+        "springReturn": "Makybe Diva Stakes (1600m), Flemington, 12 Sep 2026",
+        "campaignTargetAtPublication": ["Cox Plate", "Melbourne Cup"],
+        "trainingEvidence": "Galloped 1400m on the Flemington course proper on 8 Sep and improved over the final 600m."
+      }
+    },
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/08/17/news-jockeys-jamie-melham-half-yours-spring-cup-defence",
+      "published": "2026-08-17",
+      "verifiedOn": "2026-09-22",
+      "facts": {
+        "jockey": "Jamie Melham",
+        "jockeyStatus": "retained for Melbourne Cup defence at publication",
+        "trialEvidence": "Flemington jump-out in August 2026; Harry Coffey rode while Jamie Melham was unavailable for that hit-out."
+      }
+    }
+  ],
+  "governance": {
+    "ratingsInferred": false,
+    "timeformUsed": false,
+    "note": "Campaign statements and official weights are retained as dated evidence. No numerical performance rating is inferred from editorial commentary or market prices."
+  }
+}
