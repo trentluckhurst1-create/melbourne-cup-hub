@@ -1,0 +1,45 @@
+{
+  "snapshotDate": "2026-09-23",
+  "horse": "Wine Dark Sea",
+  "policy": "Evidence-backed current-preparation acquisition only. No rating is inferred from narrative or unlabelled numbers.",
+  "evidence": [
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/22/news-contenders-lane-to-ride-import-in-caulfield-cup",
+      "published": "2026-09-22",
+      "verifiedOn": "2026-09-23",
+      "facts": {
+        "trainer": "Harry Charlton",
+        "currentLocationContext": "UK pre-export quarantine; article says one week remained before the planned flight the following Saturday",
+        "caulfieldCupJockey": "Damian Lane",
+        "caulfieldCupWeightKg": 54.5,
+        "latestRun": {
+          "result": "won",
+          "race": "Group 3 Geoffrey Freer Stakes",
+          "distanceM": 2671,
+          "track": "Newbury"
+        },
+        "campaign": "Caulfield Cup first; connections intend to press on to the Melbourne Cup if he runs well at Caulfield"
+      }
+    },
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/15/news-contenders-australian-bloodstock-trio-aim-up-at-cups",
+      "published": "2026-09-15",
+      "verifiedOn": "2026-09-23",
+      "facts": {
+        "ownershipContext": "Australian Bloodstock-owned",
+        "latestRunCorroboration": "last-start Group 3 Newbury winner",
+        "travelContext": "already in UK quarantine for a late-September flight to Melbourne",
+        "campaignCorroboration": "Caulfield Cup and Melbourne Cup campaign"
+      }
+    }
+  ],
+  "ratings": {
+    "racingAndSports": "NO_NEW_EXPLICITLY_LABELLED_VALUE_IN_THESE_SOURCES",
+    "timeform": "NOT_USED",
+    "officialHandicapRating": "NOT_DERIVED_FROM_THESE_SOURCES"
+  },
+  "quarantine": [],
+  "status": "CAPTURED_CURRENT_PREP_LATEST_STAKES_RUN_TRAVEL_AND_JOCKEY"
+}
