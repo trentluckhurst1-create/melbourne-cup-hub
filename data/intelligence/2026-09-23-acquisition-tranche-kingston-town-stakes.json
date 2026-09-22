@@ -1,0 +1,93 @@
+{
+  "acquisitionDate": "2026-09-23",
+  "policy": "Publicly obtainable evidence only. Current-preparation evidence is stored separately from ratings. No Racing & Sports rating is inferred from race performance, bookmaker commentary or third-party generic rating fields.",
+  "event": {
+    "date": "2026-09-19",
+    "race": "Kingston Town Stakes",
+    "track": "Randwick",
+    "class": "Group 2",
+    "distanceM": 2000,
+    "winnerTime": "2:00.48"
+  },
+  "horses": [
+    {
+      "horse": "The Euphrates",
+      "currentPrepEvidence": {
+        "finish": 1,
+        "margin": "approximately 1L",
+        "runningStyle": "led throughout",
+        "priorRun": "4th in Chelmsford Stakes over 1600m",
+        "nextTargetReported": "The Metropolitan",
+        "melbourneCupWeightKg": 54.0,
+        "cupWeightStatus": "OFFICIAL_WEIGHT_REPORTED_IN_PUBLIC_RACE-COVERAGE_SOURCE"
+      },
+      "historicalEvidence": {
+        "formerTrainer": "Aidan O'Brien",
+        "formerCareerReported": "4 wins from 13 starts for Aidan O'Brien",
+        "listedWin": "Marble City Stakes",
+        "irishStLeger": "4th behind Kyprios and Vauban",
+        "officialRatingHistory": [
+          {"date":"2024-06-21","race":"King Edward VII Stakes","officialRating":102,"source":"Sky Sports Racing racecard"},
+          {"date":"2024-07-27","race":"Marble City Stakes","officialRating":104,"source":"Sky Sports Racing racecard"},
+          {"date":"2024-08-08","race":"Ballyroan Stakes","officialRating":105,"source":"Sky Sports Racing racecard"}
+        ]
+      },
+      "sources": [
+        "https://www.racingandsports.com.au/news/racing/news/0001-01-01/boom-imported-stayer-the-euphrates-romps-home-in-kingston-town-stakes/721716",
+        "https://www.sportsnews.com.au/horse-racing/boom-imported-stayer-the-euphrates-wins-2026-kingston-town-stakes/610351",
+        "https://www.skysports.com/racing/racecards/ascot/21-06-2024/1240082/king-edward-vii-stakes-group-2",
+        "https://www.skysports.com/racing/racecards/gowran-park/27-07-2024/1248425/irish-stallion-farms-ebf-marble-city-stakes-listed",
+        "https://www.skysports.com/racing/racecards/leopardstown/08-08-2024/1251145/xin-gin-ballyroan-stakes-group-3"
+      ],
+      "rasRating": null,
+      "ratingStatus": "NO_EXPLICIT_RAS_RATING_CAPTURED"
+    },
+    {
+      "horse": "Juja Kibo",
+      "currentPrepEvidence": {
+        "finish": 2,
+        "marginBehindWinner": "approximately 1L",
+        "race": "Kingston Town Stakes",
+        "distanceM": 2000
+      },
+      "sources": [
+        "https://www.racingandsports.com.au/news/racing/news/0001-01-01/boom-imported-stayer-the-euphrates-romps-home-in-kingston-town-stakes/721716",
+        "https://www.sportsnews.com.au/horse-racing/boom-imported-stayer-the-euphrates-wins-2026-kingston-town-stakes/610351"
+      ],
+      "rasRating": null,
+      "ratingStatus": "NO_EXPLICIT_RAS_RATING_CAPTURED"
+    },
+    {
+      "horse": "Soul Of Spain",
+      "currentPrepEvidence": {
+        "finish": 3,
+        "marginBehindWinner": "approximately 2L",
+        "race": "Kingston Town Stakes",
+        "distanceM": 2000
+      },
+      "sources": [
+        "https://www.racingandsports.com.au/news/racing/news/0001-01-01/boom-imported-stayer-the-euphrates-romps-home-in-kingston-town-stakes/721716",
+        "https://www.sportsnews.com.au/horse-racing/boom-imported-stayer-the-euphrates-wins-2026-kingston-town-stakes/610351"
+      ],
+      "rasRating": null,
+      "ratingStatus": "NO_EXPLICIT_RAS_RATING_CAPTURED"
+    }
+  ],
+  "quarantine": [
+    {
+      "item": "RaceHub generic rating fields for The Euphrates/Soulcombe/Future History",
+      "reason": "Rating system is not explicitly identified as Racing & Sports; prohibited from promotion to the R&S rating ledger."
+    }
+  ],
+  "coverageLedgerReference": "data/intelligence/2026-09-15-full-program-data-audit.json",
+  "coverageLedgerState": {
+    "universe": 101,
+    "formPresent": 101,
+    "weightModel": 101,
+    "trainingBaseAvailable": 101,
+    "identity": 101,
+    "rasPublicRating": 51,
+    "rasPublicRatingMissing": 50
+  },
+  "completionStatus": "IN_PROGRESS"
+}
