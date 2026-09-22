@@ -1,0 +1,71 @@
+{
+  "acquisitionDate": "2026-09-23",
+  "policy": "Publicly obtainable evidence only. No inferred ratings. Racing & Sports horse-profile identity and career data are evidence, but no R&S rating is recorded unless explicitly labelled/published as such.",
+  "horses": [
+    {
+      "horse": "Asterix",
+      "identity": {"country":"NZ","foalDate":"2018-11-10","sex":"Gelding","sire":"Tavistock (NZ)","dam":"Mourasana (GB)","damSire":"Shirocco (GER)","trainer":"Chris Waller","owner":"D A J Kelt, M J Greatbatch, A J Scott, Mrs L J Scott & J P Hunter"},
+      "career": {"starts":30,"wins":8,"placings":2,"winDistancesM":[1600,2000,2100,2300,2400],"prizemoneyAud":1407702},
+      "stakesEvidence": [
+        {"date":"2026-05-09","race":"Gosford Gold Cup","class":"Listed","distanceM":2100,"finish":1,"carriedKg":61,"margin":"1L","note":"Racing & Sports reports record metric-era weight-carrying performance."},
+        {"date":"2026-06-27","race":"Tattersall's Cup","class":"Group 3","distanceM":2400,"finish":1,"margin":"long neck"}
+      ],
+      "sources": [
+        "https://www.racingandsports.com.au/thoroughbred/horse/asterix/1772973",
+        "https://www.racingandsports.com.au/news/international/new-zealand/2026-05-10/gosford-gold-cup-completes-black-type-double-for-asterix/714404",
+        "https://www.racingandsports.com.au/news/international/new-zealand/0001-01-01/tattersalls-cup-continues-strong-campaign-for-asterix/717278"
+      ],
+      "rasRating": null,
+      "ratingStatus": "NOT_EXPLICITLY_PUBLISHED_IN_CAPTURED_EVIDENCE"
+    },
+    {
+      "horse": "Barnavara",
+      "identity": {"country":"IRE","foalDate":"2022-05-03","sex":"Mare","sire":"Calyx (GB)","dam":"Alfea (GB)","damSire":"Kentucky Dynamite (USA)","trainer":"Chris Waller","owner":"Yu Long Investments"},
+      "career": {"starts":15,"wins":5,"placings":5,"winDistancesM":[1207,1609,2000,2011,2112],"prizemoneyAud":994508},
+      "stakesEvidence": [{"date":"2025-10-05","race":"Prix de l'Opera","class":"Group 1","distanceM":2000,"finish":1,"margin":"head","note":"First Group 1 start; Racing & Sports reports all-the-way victory at Longchamp."}],
+      "sources": [
+        "https://www.racingandsports.com.au/thoroughbred/horse/barnavara/2167998",
+        "https://www.racingandsports.com.au/news/international/uk-ire-and-europe/2025-10-06/barnavara-battles-to-opera-glory/701506"
+      ],
+      "rasRating": null,
+      "ratingStatus": "NOT_EXPLICITLY_PUBLISHED_IN_CAPTURED_EVIDENCE"
+    },
+    {
+      "horse": "Age Of Sail",
+      "identity": {"country":"GB","foalDate":"2019-04-18","sex":"Gelding","sire":"Frankel","dam":"Concordia","damSire":"Pivotal","trainer":"Kris Lees"},
+      "career": {"starts":26,"wins":3,"seconds":3,"thirds":4,"prizemoneyAud":469865},
+      "currentPrepEvidence": [
+        {"date":"2026-09-04","race":"Wyong Cup","class":"Listed","distanceM":2100,"going":"Good(4)","finish":7,"carriedKg":54,"marginBehindWinnerL":2.8},
+        {"date":"2026-08-08","race":"Premier's Cup Prelude","distanceM":1800,"going":"Good(4)","finish":9,"carriedKg":54,"marginBehindWinnerL":5.0}
+      ],
+      "stakesEvidence": [{"date":"2026-03-07","race":"Auckland Cup","class":"Group 2","distanceM":3200,"finish":3}],
+      "sources": [
+        "https://www.breednet.com.au/horse/age-of-sail",
+        "https://www.racingandsports.com.au/news/racing/news/2026-03-06/lees-chasing-rare-big-race-double-with-rivellino-and-age-of-sail/710411"
+      ],
+      "rasRating": null,
+      "ratingStatus": "NOT_EXPLICITLY_PUBLISHED_IN_CAPTURED_EVIDENCE"
+    },
+    {
+      "horse": "Don Diego De Vega",
+      "identity": {"country":"FR","foalDate":"2020-03-08","sex":"Gelding","sire":"Lope De Vega (IRE)","dam":"Fairly Fair (FR)","damSire":"Sinndar (IRE)","trainer":"Annabel & Rob Archibald"},
+      "career": {"starts":21,"wins":4,"placings":4,"winDistancesM":[1800,1900,2000,2350],"prizemoneyAud":407538},
+      "stakesEvidence": [
+        {"date":"2025-07-17","race":"Grafton Cup","distanceM":2350,"finish":1,"margin":"0.75L","note":"First Australian win."},
+        {"date":"2025-11-04","race":"Australian Heritage Cup","distanceM":2800,"finish":2,"marginBehindWinner":"3.5L"}
+      ],
+      "sources": [
+        "https://www.racingandsports.com.au/thoroughbred/horse/don-diego-de-vega/1952704",
+        "https://www.racingandsports.com.au/news/racing/news/2025-07-17/archibalds-import-captures-messygrafton-cup/695319",
+        "https://www.racingandsports.co.uk/news/racing/news/2025-11-04/litzdeel-wins-australian-heritage-cup-post-race-trainer-and-jockey-quotes/703720"
+      ],
+      "rasRating": null,
+      "ratingStatus": "NOT_EXPLICITLY_PUBLISHED_IN_CAPTURED_EVIDENCE"
+    }
+  ],
+  "identityCollisionAudit": {"status":"PASS","note":"Asterix evidence was restricted to the NZ thoroughbred profile; similarly named harness runner Asterix De Bomo was explicitly excluded."},
+  "quarantine": [],
+  "coverageLedgerReference": "data/intelligence/2026-09-15-full-program-data-audit.json",
+  "coverageLedgerState": {"universe":101,"formPresent":101,"weightModel":101,"trainingBaseAvailable":101,"identity":101,"rasPublicRating":51,"rasPublicRatingMissing":50},
+  "completionStatus": "IN_PROGRESS"
+}
