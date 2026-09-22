@@ -1,0 +1,43 @@
+{
+  "snapshotDate": "2026-09-22",
+  "horse": "Half Yours",
+  "scope": "current 2026 Melbourne Cup preparation and official weight context",
+  "policy": "Evidence-backed public facts only. No rating is inferred from editorial or market language.",
+  "verified": [
+    {
+      "fact": "Official 2026 Melbourne Cup weight",
+      "value": "59.0kg",
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/17/news-melbourne-cup-and-caulfield-cup-weights-released-2026",
+      "published": "2026-09-17",
+      "verifiedOn": "2026-09-22"
+    },
+    {
+      "fact": "Campaign status after weights",
+      "value": "Tony McEvoy confirmed the Melbourne Cup defence remains on; Turnbull Stakes and Cox Plate were the likely stepping stones at publication.",
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/17/news-contenders-mcevoy-not-surprised-by-cup-weight-for-half-yours",
+      "published": "2026-09-17",
+      "verifiedOn": "2026-09-22"
+    },
+    {
+      "fact": "Pre-spring preparation",
+      "value": "Jamie Melham retained the Melbourne Cup ride. Half Yours had a Flemington 1000m jump-out in August and was scheduled to resume in the Group 1 Makybe Diva Stakes over 1600m on 12 September.",
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/08/17/news-jockeys-jamie-melham-half-yours-spring-cup-defence",
+      "published": "2026-08-17",
+      "verifiedOn": "2026-09-22"
+    },
+    {
+      "fact": "Makybe Diva lead-in intent",
+      "value": "The Makybe Diva Stakes was described by the stable as a stepping stone toward the Cox Plate and Melbourne Cup; Flemington trackwork on 8 September was reported positively.",
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/08/news-preview-half-yours-prepares-for-spring-return",
+      "published": "2026-09-08",
+      "verifiedOn": "2026-09-22"
+    }
+  ],
+  "ratingTreatment": "No Racing & Sports, Timeform, RSSR or official handicap rating is created from these sources. Existing rating-system datasets remain separate.",
+  "identityStatus": "MATCHED_CANONICAL_NOMINEE",
+  "status": "CAPTURED_CURRENT_PREP"
+}
