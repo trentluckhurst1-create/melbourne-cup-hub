@@ -1,0 +1,9 @@
+{
+  "snapshotDate":"2026-09-22",
+  "horse":"Aethelwulf",
+  "scope":"Current 2026 preparation and Melbourne Cup qualification evidence",
+  "source":{"publisher":"Racing.com","url":"https://www.racing.com/news/2026/09/18/news-review-aethelwulf-bart-cummings-melbourne-cup-newcastle-gold-cup","published":"2026-09-18","verifiedOn":"2026-09-22"},
+  "verifiedFacts":{"latestRun":{"race":"Newcastle Gold Cup","distanceM":2300,"result":1,"date":"2026-09-18","evidence":"Racing.com reports a dominant Newcastle Gold Cup win."},"careerSnapshot":{"starts":7,"wins":5,"asAt":"2026-09-18"},"melbourneCup":{"releasedWeightKg":51.0,"firstEliminationClause":"PASSED_AFTER_NEWCASTLE_GOLD_CUP","orderOfEntryAfterRun":64},"nextRaceOptions":[{"race":"The Metropolitan","distanceM":2400,"date":"2026-10-03","status":"UNDER_CONSIDERATION"},{"race":"The Bart Cummings","status":"UNDER_CONSIDERATION","note":"Winner earns automatic Melbourne Cup entry."}],"connections":{"trainer":"Matt Smith","latestRunJockey":"Zac Lloyd"}},
+  "ratingPolicy":"No rating value is captured from this article because it does not explicitly publish a rating-system figure.",
+  "provenanceStatus":"VERIFIED_PUBLIC_EDITORIAL_AND_HANDICAPPING_CONTEXT"
+}
