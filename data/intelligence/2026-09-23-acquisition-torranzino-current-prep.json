@@ -1,0 +1,21 @@
+{
+  "snapshotDate":"2026-09-23",
+  "horse":"Torranzino",
+  "scope":"current 2026 preparation / Melbourne Cup acquisition",
+  "evidence":[
+    {
+      "source":"Racing.com",
+      "url":"https://www.racing.com/news/2026/09/21/news-contenders-in-the-noms-manikato-stakes-day",
+      "publishedDate":"2026-09-21",
+      "verifiedOn":"2026-09-23",
+      "facts":{
+        "nextPreparationContext":"Nominated for the Group 3 JRA Cup (2000m) at the Caulfield Manikato Stakes meeting.",
+        "springKickoffContext":"Racing.com also identified the Group 2 Feehan Stakes (1600m) as a possible spring kick-off point.",
+        "mostRecentRaceContext":"His most recent race trip was described as a Group 3 Geelong Cup victory followed by fifth in the 2025 Melbourne Cup.",
+        "melbourneCupNominee":true
+      },
+      "ratingPolicy":"No numeric rating from this article is assigned to Torranzino. No R&S, Timeform, RSSR, Racing.com WPR or official handicap rating is inferred."
+    }
+  ],
+  "status":"CAPTURED_CURRENT_PREP_AND_PRIOR_CUP_CONTEXT"
+}
