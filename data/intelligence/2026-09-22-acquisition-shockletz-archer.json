@@ -1,0 +1,53 @@
+{
+  "snapshotDate": "2026-09-22",
+  "horse": "Shockletz",
+  "identityStatus": "MATCHED_TO_2026_MELBOURNE_CUP_NOMINEE",
+  "evidence": [
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/15/news-power-rankings-sheza-alibi-makybe-diva-september-12-2026",
+      "published": "2026-09-15",
+      "verifiedOn": "2026-09-22",
+      "facts": {
+        "race": "The Archer Stakes",
+        "distanceM": 2500,
+        "course": "Flemington",
+        "result": "WIN",
+        "melbourneCupBallotExemption": true,
+        "wpr": 97,
+        "previousWprAt2500m": 96,
+        "wprSystem": "Racing.com WFA Performance Ratings"
+      },
+      "notes": "The article explicitly states the 97 WPR was a new peak and describes the prior 96 as coming over 2500m. WPR is retained as Racing.com's WFA Performance Rating only; it is not Racing & Sports, Timeform, RSSR or an official handicap rating."
+    },
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-12/shockletz-earns-melbourne-cup-berth/721323",
+      "published": "2026-09-12",
+      "verifiedOn": "2026-09-22",
+      "facts": {
+        "melbourneCupBallotExemption": true,
+        "campaignContext": "Trainer Ciaron Maher said the mare would not be over-raced and would be kept on the fresher side after earning her Cup berth."
+      },
+      "notes": "No numerical Racing & Sports rating is promoted from this article because no explicitly labelled R&S rating is exposed in the captured public evidence."
+    },
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/17/news-melbourne-cup-and-caulfield-cup-weights-released-2026",
+      "published": "2026-09-17",
+      "verifiedOn": "2026-09-22",
+      "facts": {
+        "originalMelbourneCupWeightKg": 51.0
+      }
+    }
+  ],
+  "ratingSeparation": {
+    "racingComWpr": 97,
+    "racingAndSportsRating": null,
+    "timeform": null,
+    "rssr": null,
+    "officialHandicapRating": null,
+    "policy": "Do not substitute one rating system for another. Missing values remain null unless explicitly evidenced."
+  },
+  "status": "VERIFIED_PUBLIC_ACQUISITION_PROGRESS"
+}
