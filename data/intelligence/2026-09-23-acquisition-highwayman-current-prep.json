@@ -1,0 +1,29 @@
+{
+  "snapshotDate": "2026-09-23",
+  "horse": "Highwayman",
+  "identityStatus": "MATCHED_TO_FIXED_101_NOMINEE",
+  "evidence": [
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/18/news-contenders-joseph-obrien-on-his-melbourne-and-caulfield-cup-horses",
+      "published": "2026-09-17",
+      "verifiedOn": "2026-09-23",
+      "facts": {
+        "trainer": "Joseph O'Brien",
+        "recentMajorWin": "G1 Betfred St Leger",
+        "careerStartsAtPublication": 7,
+        "melbourneCupWeightKg": 56.5,
+        "jockeyOnStLegerWin": "Saffie Osborne",
+        "melbourneCupJockeyStatus": "To be decided",
+        "trainerAssessment": "Progressive; Joseph O'Brien identified Highwayman as the horse it would be hard not to choose among his Cup contenders, subject to training and travel between publication and race day."
+      }
+    }
+  ],
+  "governance": {
+    "ratingsInferred": false,
+    "timeformSubstituted": false,
+    "rasRatingSubstituted": false,
+    "officialWeightPolicy": "The 56.5kg value is independently corroborative of the official released Melbourne Cup weight ledger; this intelligence record does not replace that canonical ledger.",
+    "scope": "Current 2026 preparation/campaign evidence only. No unexposed run rating, official rating or R&S rating is inferred."
+  }
+}
