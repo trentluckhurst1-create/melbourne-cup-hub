@@ -1,0 +1,36 @@
+{
+  "snapshotDate": "2026-09-22",
+  "horse": "Torranzino",
+  "universe": "2026 Melbourne Cup original 101 nominees",
+  "status": "VERIFIED_PUBLIC_CURRENT_PREP",
+  "evidence": [
+    {
+      "source": "Racing.com",
+      "publishedDate": "2026-09-21",
+      "url": "https://www.racing.com/news/2026/09/21/news-contenders-in-the-noms-manikato-stakes-day",
+      "verifiedOn": "2026-09-22",
+      "facts": {
+        "feehanStakesNomination": true,
+        "feehanStakes": {
+          "group": "Group 2",
+          "distanceM": 1600,
+          "conditions": "WFA"
+        },
+        "jraCupNomination": true,
+        "jraCup": {
+          "group": "Group 3",
+          "distanceM": 2000
+        },
+        "editorialContext": "Racing.com identified the Feehan Stakes as a possible spring kick-off point for Torranzino and also listed him among the JRA Cup nominations.",
+        "priorVerifiedContext": {
+          "mostRecentRaceTripAsDescribedBySource": "Group 3 Geelong Cup victory followed by fifth in the 2025 Melbourne Cup"
+        }
+      }
+    }
+  ],
+  "ratingPolicy": {
+    "ratingCaptured": false,
+    "reason": "The cited article does not explicitly publish a rating for Torranzino. No rating is inferred from nomination or performance context."
+  },
+  "provenancePolicy": "Current-preparation evidence only. This record does not replace canonical career, form, official weight, R&S, Timeform, RSSR or official handicap datasets."
+}
