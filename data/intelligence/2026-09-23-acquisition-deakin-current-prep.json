@@ -1,0 +1,28 @@
+{
+  "snapshotDate": "2026-09-23",
+  "horse": "Deakin",
+  "evidence": [
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-15/deakin-ticking-over-for-caulfield-cup-target/721466",
+      "publishedDate": "2026-09-15",
+      "verifiedDate": "2026-09-23",
+      "facts": {
+        "trainer": "Phillip and Tommy Stokes",
+        "ageAtPublication": 7,
+        "currentPreparation": "Caulfield Cup preparation",
+        "jumpOut": {
+          "surface": "Pakenham synthetic",
+          "placing": 3,
+          "context": "Behind stablemates Regal Award and Ferivia; described by Phillip Stokes as a tick-over jump-out under a good hold."
+        },
+        "campaignPlan": "Trainer stated the intention was to have Deakin fourth-up for the Caulfield Cup.",
+        "historicalContext": "Trainer said Deakin had a break after the 2025 Caulfield Cup and only one start earlier in 2026 before the current preparation."
+      },
+      "ratingPolicy": "No Racing & Sports rating is inferred from this article; no explicitly labelled R&S numerical rating is promoted from this evidence."
+    }
+  ],
+  "provenanceStatus": "VERIFIED_PUBLIC_CURRENT_PREPARATION_AND_TRIAL_EVIDENCE",
+  "identityConflict": false,
+  "quarantine": []
+}
