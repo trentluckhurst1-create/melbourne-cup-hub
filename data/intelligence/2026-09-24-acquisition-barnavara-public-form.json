@@ -1,0 +1,58 @@
+{
+  "snapshotDate": "2026-09-24",
+  "horse": "Barnavara",
+  "scope": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/ireland/curragh/2026-09-13/R7",
+    "verifiedOn": "2026-09-24"
+  },
+  "identity": {
+    "ageSex": "4yo bay filly",
+    "sire": "Make Believe (GB)",
+    "dam": "Pedisnap (IRE)"
+  },
+  "careerSnapshot": {
+    "starts": 12,
+    "wins": 2,
+    "seconds": 3,
+    "thirds": 2,
+    "course": "2:0-0-1",
+    "last12Months": "8:2-2-1",
+    "firstUp": "4:0-1-0",
+    "secondUp": "3:0-2-0",
+    "good": "7:1-2-1",
+    "soft": "3:1-1-0",
+    "heavy": "1:0-0-1",
+    "allWeather": "1:0-0-0",
+    "turf": "11:2-3-2"
+  },
+  "publicChronologicalRuns": [
+    {"date":"2026-09-08","track":"Galway","class":"Listed","distanceM":2414,"surface":"Turf","going":"Soft","finish":8,"marginL":10.5,"carriedWeightKg":61.0,"winner":"Beset"},
+    {"date":"2026-08-14","track":"Cork","class":"Group 3","distanceM":2414,"surface":"Turf","going":"Good","finish":4,"marginL":2.0,"carriedWeightKg":61.0,"winner":"Believed"},
+    {"date":"2026-05-23","track":"Curragh","class":"Listed","distanceM":2414,"surface":"Turf","going":"Good","finish":6,"marginL":11.3,"carriedWeightKg":58.0,"winner":"Purview"},
+    {"date":"2026-05-05","track":"Gowran Park","class":"Listed","distanceM":2816,"surface":"Turf","going":"Good to Yielding","finish":2,"marginL":0.5,"carriedWeightKg":58.0,"winner":"Moody"},
+    {"date":"2026-04-04","track":"Cork","class":"Listed","distanceM":2414,"surface":"Turf","going":"Soft to Heavy","finish":2,"marginL":0.5,"carriedWeightKg":58.0,"winner":"Moody"}
+  ],
+  "stakesContext": {
+    "verifiedPriorWins": [
+      {"date":"2025-08-30","track":"Curragh","class":"Group 3","distanceM":1810,"marginL":1.5,"carriedWeightKg":57.0,"runnerUp":"Sand Gazelle"},
+      {"date":"2025-07-16","track":"Killarney","class":"Listed","distanceM":1609,"marginL":0.5,"carriedWeightKg":58.0,"runnerUp":"Fiery Lucy"}
+    ],
+    "verifiedGroup1Evidence": [
+      {"date":"2025-05-04","race":"1000 Guineas","track":"Newmarket","finish":7,"marginL":2.8,"distanceM":1609},
+      {"date":"2024-09-15","track":"Curragh","class":"Group 1","finish":4,"marginL":1.5,"distanceM":1408}
+    ]
+  },
+  "ratings": {
+    "racingAndSports": null,
+    "status": "NOT_EXPLICITLY_EXPOSED_ON_PUBLIC_FORM_PAGE",
+    "note": "The public Racing & Sports page explicitly states that additional runs and ratings require login. No numeric form-guide field or unlabelled value is promoted to an R&S rating. Timeform, RSSR and official handicap ratings remain separate."
+  },
+  "provenance": {
+    "confidence": "HIGH_FOR_FIELDS_EXPLICITLY_EXPOSED",
+    "limitations": "Public page exposes a career snapshot and a limited chronological run window. It gates remaining runs and ratings behind login, so this record does not claim exhaustive lifetime run-level coverage.",
+    "identityConflict": false,
+    "quarantine": []
+  }
+}
