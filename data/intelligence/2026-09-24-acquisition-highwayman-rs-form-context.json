@@ -1,0 +1,34 @@
+{
+  "snapshotDate": "2026-09-24",
+  "horse": "Highwayman",
+  "identityStatus": "MATCHED_EXISTING_NOMINEE",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/international/uk-ire-and-europe/2026-09-15/highwayman-possible-melbourne-cup-runner-for-joseph-obrien/721440",
+    "published": "2026-09-15",
+    "verifiedOn": "2026-09-24"
+  },
+  "verifiedEvidence": {
+    "trainer": "Joseph O'Brien",
+    "sire": "Persian King",
+    "latestMajorRun": {
+      "race": "Betfred St Leger Stakes",
+      "grade": "Group 1",
+      "track": "Doncaster",
+      "result": "1st",
+      "jockey": "Saffie Osborne"
+    },
+    "precedingWins": [
+      {"raceContext": "Killarney maiden", "result": "1st"},
+      {"race": "Vinnie Roe Stakes", "grade": "Listed", "result": "1st"}
+    ],
+    "formContext": "The source states Highwayman had finished no better than eighth in his first four starts before winning three consecutive races: a Killarney maiden, the Listed Vinnie Roe Stakes and the Group 1 St Leger.",
+    "cupContextAtPublication": "Joseph O'Brien described a Melbourne Cup trip as quite possible subject to the horse remaining well and owner preference."
+  },
+  "ratingGovernance": {
+    "racingAndSportsRating": null,
+    "status": "NOT_EXPLICITLY_PUBLISHED_IN_THIS_SOURCE",
+    "note": "No numeric value from this article is promoted into the R&S rating ledger."
+  },
+  "provenance": "Public Racing & Sports editorial evidence; retained as chronological preparation/stakes context only."
+}
