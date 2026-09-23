@@ -1,0 +1,65 @@
+{
+  "snapshotDate": "2026-09-23",
+  "horse": "Machine Gun Gracie",
+  "scope": "2026 Melbourne Cup acquisition evidence",
+  "identity": {
+    "country": "AUS",
+    "sex": "Mare",
+    "age": 5,
+    "sire": "Maschino (AUS)",
+    "dam": "Gracie May (AUS)",
+    "trainer": "Ben, Will & JD Hayes",
+    "status": "VERIFIED_PUBLIC"
+  },
+  "currentPreparation": {
+    "latestRun": {
+      "date": "2026-09-19",
+      "track": "Caulfield",
+      "race": "Tobin Brothers Naturalism Stakes",
+      "class": "Group 3",
+      "distanceM": 2000,
+      "surface": "Turf",
+      "going": "Good 3",
+      "finish": 4,
+      "fieldSize": 16,
+      "carriedWeightKg": 54.0,
+      "jockey": "Luke Currie",
+      "startingPrice": "$10",
+      "marginFromWinnerL": 1.4,
+      "winner": "Zahrann",
+      "status": "VERIFIED_PUBLIC"
+    },
+    "earlier2026Runs": [
+      {"date":"2026-08-29","track":"Caulfield","distanceM":2000,"going":"Soft 7","finish":5,"carriedWeightKg":56.5,"marginFromWinnerL":3.7,"winner":"Saint George"},
+      {"date":"2026-08-15","track":"Caulfield","distanceM":1600,"going":"Soft 6","class":"BM100","finish":6,"carriedWeightKg":58.0,"marginFromWinnerL":4.4,"winner":"Darkbonee"},
+      {"date":"2026-04-11","track":"Randwick","race":"Sydney Cup","class":"Group 1","distanceM":3200,"going":"Good 4","finish":14,"carriedWeightKg":51.0,"marginFromWinnerL":15.7,"winner":"Changingoftheguard"},
+      {"date":"2026-03-21","track":"Rosehill","race":"Epona Stakes","class":"Group 3","distanceM":1900,"going":"Soft 6","finish":1,"carriedWeightKg":58.0,"winningMarginL":2.0}
+    ]
+  },
+  "careerEvidence": {
+    "stakesPerformances": [
+      "1st 2025 WATC Derby (Group 2)",
+      "1st 2026 Epona Stakes (Group 3)",
+      "1st 2025 WA Oaks (Group 3)",
+      "1st 2025 Natasha Stakes (Listed)",
+      "2nd 2025 Ascot 1000 Guineas (Listed)"
+    ],
+    "note": "Breednet current profile reports 14 starts, 5 wins, 2 seconds, 0 thirds and $720,875. RaceHub search result showed an internally stale 13-start headline while its latest run table included 19 Sep; therefore the current career aggregate is retained as corroborative evidence only until reconciled against the canonical career registry. The 19 Sep run itself is independently corroborated by Racing & Sports and TABtouch."
+  },
+  "ratings": {
+    "racingAndSports": null,
+    "timeform": null,
+    "rssr": null,
+    "officialHandicapRating": null,
+    "policy": "No rating inferred. Numeric profile ratings from other systems are not substituted for an explicitly labelled Racing & Sports, Timeform, RSSR or official handicap rating."
+  },
+  "sources": [
+    {"publisher":"Racing & Sports","url":"https://www.racingandsports.com.au/news/racing/news/2026-09-19/zahrann-wins-group-3-tobin-brothers-naturalism-stakes-post-race-trainer-and-jockey-quotes/721721","verifiedOn":"2026-09-23","supports":["Naturalism Group 3 identity","4th place","trainer","jockey","54kg","SP","pedigree"]},
+    {"publisher":"TABtouch","url":"https://www.tabtouch.com.au/racing/2026-09-19/mr/8/first4","verifiedOn":"2026-09-23","supports":["Naturalism Group 3","Good 3","2000m","4th place","54kg"]},
+    {"publisher":"Breednet","url":"https://www.breednet.com.au/horse/machine-gun-gracie","verifiedOn":"2026-09-23","supports":["pedigree","foaling date","trainer","stakes record","chronological 2026 runs","carried weights","going","margins"]}
+  ],
+  "conflictsAndQuarantine": [
+    {"field":"Naturalism class","conflict":"Breednet profile prose labels the latest start Gr.1 while its race record labels it Gr3; Racing & Sports and TABtouch independently identify Group 3.","resolution":"GROUP_3_VERIFIED; ERRONEOUS_GR1_PROSE_QUARANTINED"},
+    {"field":"career starts","conflict":"RaceHub search result headline reports 13 starts while Breednet reports 14 after the 19 Sep run.","resolution":"DO_NOT_OVERWRITE_CANONICAL_CAREER_TOTAL_FROM_CONFLICTING_AGGREGATE"}
+  ]
+}
