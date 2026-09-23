@@ -1,0 +1,9 @@
+{
+  "snapshotDate":"2026-09-23",
+  "horse":"Aethelwulf",
+  "scope":"Current 2026 preparation path update after Newcastle Gold Cup",
+  "source":{"publisher":"Racing.com","url":"https://www.racing.com/news/2026/09/22/news-podcast-smith-mulls-aethelwulf-path","published":"2026-09-22","verifiedOn":"2026-09-23"},
+  "verifiedFacts":{"latestRun":{"race":"Newcastle Gold Cup","distanceM":2300,"result":1,"date":"2026-09-18"},"careerSnapshot":{"starts":7,"wins":5,"asAt":"2026-09-18"},"melbourneCup":{"weightKg":51.0,"orderOfEntry":64,"status":"NOMINATED_AND_FIRST_ELIMINATION_CLAUSE_PASSED"},"nextStart":{"timing":"2026-10","decisionStatus":"UNDECIDED","options":[{"race":"The Metropolitan","distanceM":2400,"track":"Randwick","date":"2026-10-03"},{"race":"The Bart Cummings","distanceM":2500,"track":"Flemington","goldenTicket":true},{"race":"Moonee Valley Cup","distanceM":2500,"track":"Moonee Valley","date":"2026-10-23","goldenTicket":true,"note":"Later qualification option mentioned by trainer"}]},"trainerAssessment":"Next couple of runs will determine whether the lightly raced gelding is ready for 3200m; travel and seasoning are factors in the immediate path decision.","connections":{"trainer":"Matthew Smith"}},
+  "ratingPolicy":"No rating captured: the source does not explicitly publish a rating-system figure.",
+  "provenanceStatus":"VERIFIED_CURRENT_PREPARATION_AND_CUP_PATH"
+}
