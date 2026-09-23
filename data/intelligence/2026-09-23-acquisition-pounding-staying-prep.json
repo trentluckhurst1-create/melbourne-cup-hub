@@ -1,0 +1,40 @@
+{
+  "snapshotDate": "2026-09-23",
+  "horse": "Pounding",
+  "identity": {
+    "sex": "gelding",
+    "sire": "Exceed And Excel",
+    "trainer": "Peter Moody & Katherine Coleman",
+    "identityStatus": "VERIFIED_PUBLIC_EVIDENCE"
+  },
+  "careerSnapshot": {
+    "asPublished2026-05-29": {"starts": 65, "wins": 8, "placings": 20},
+    "publishedWinningDistances": {"1400m": 2, "1600m": 6},
+    "approxPrizemoneyAud": 1600000,
+    "note": "Career snapshot is publication-date evidence and must not overwrite a later canonical career registry without reconciliation."
+  },
+  "chronologicalEvidence": [
+    {"date": "2026-05-16", "race": "Andrew Ramsden", "track": "Flemington", "distanceM": 2800, "class": "Listed", "finish": 2, "carriedKg": 58.5, "sourceStatus": "PUBLICLY_EXPOSED"},
+    {"date": "2026-05-31", "race": "Sandown Cup", "track": "Sandown", "distanceM": 3200, "class": "Listed", "prepContext": "First attempt at 3200m announced by trainer after Andrew Ramsden second", "sourceStatus": "PRE_RACE_CONTEXT"},
+    {"date": "2026-06", "race": "Q22", "distanceM": 2200, "finish": 2, "sourceStatus": "PUBLIC_REPORT"},
+    {"date": "2026-06", "race": "Tattersall's Cup", "distanceM": 2400, "finish": 2, "winner": "Asterix", "sourceStatus": "PUBLIC_REPORT"},
+    {"date": "2026-07-04", "race": "Caloundra Cup", "track": "Sunshine Coast", "distanceM": 2400, "class": "Listed", "prepContext": "Seven-day back-up after Tattersall's Cup; Daniel Moor booked", "sourceStatus": "PRE_RACE_CONTEXT"}
+  ],
+  "distanceAndStakesEvidence": {
+    "pre2026LongDistanceContext": "Third in the 2023 Australian Cup 2000m; second in the 2026 Mornington Cup 2400m; second in the 2026 Andrew Ramsden 2800m before first 3200m attempt.",
+    "trainerGoingComment": "Trainer stated slow/heavy ground was not ideal before the Sandown Cup.",
+    "stakesContext": "Multiple 2026 staying-feature placings publicly documented."
+  },
+  "ratings": {
+    "racingAndSports": null,
+    "timeform": null,
+    "officialRating": null,
+    "policy": "No rating inferred from unlabelled public numbers or performance descriptions."
+  },
+  "sources": [
+    {"publisher": "Racing & Sports", "url": "https://www.racingandsports.com.au/news/racing/news/2026-05-29/pounding-a-path-to-two-miles/715532", "verifiedOn": "2026-09-23", "scope": "Identity, trainer, 65-start career snapshot, winning-distance summary, prizemoney approximation, Mornington Cup/Andrew Ramsden placings, first 3200m attempt and going comment."},
+    {"publisher": "Racing & Sports", "url": "https://www.racingandsports.com.au/news/racing/news/2026-02-07/victorian-raider-pounding-on-the-door-for-a-win/717456", "verifiedOn": "2026-09-23", "scope": "2026 staying preparation sequence including Andrew Ramsden, Q22 and Tattersall's Cup seconds and Caloundra Cup plan."}
+  ],
+  "quarantine": [],
+  "acquisitionStatus": "CAPTURED_VERIFIED_PUBLIC_STAYING_PREP_AND_CAREER_SNAPSHOT"
+}
