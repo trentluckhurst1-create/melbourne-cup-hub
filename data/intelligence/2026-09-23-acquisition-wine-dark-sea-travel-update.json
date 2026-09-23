@@ -1,0 +1,34 @@
+{
+  "snapshotDate": "2026-09-23",
+  "horse": "Wine Dark Sea",
+  "identityStatus": "MATCHED_EXISTING_NOMINEE",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/international/uk-ire-and-europe/2026-09-23/damian-lane-to-ride-british-challenger-wine-dark-sea-in-melbourne-cup/721891",
+    "publishedDate": "2026-09-23",
+    "verifiedDate": "2026-09-23"
+  },
+  "verifiedEvidence": {
+    "trainer": "Harry Charlton",
+    "ownershipContext": "Australian Bloodstock bought into the horse before the Newbury Group 3 win",
+    "jockeyPlan": "Damian Lane expected to ride in Melbourne",
+    "currentLocationStatus": "In UK pre-export quarantine",
+    "travelPlan": "Article states one further week of quarantine before flying to Melbourne the following Saturday",
+    "caulfieldCupPlan": "First Australian target is the Caulfield Cup on 2026-10-17",
+    "melbourneCupPlan": "Melbourne Cup intended after the Caulfield Cup; trainer states the horse can get into the Melbourne Cup without needing the Caulfield Cup as a qualifying prep",
+    "current2026Form": [
+      "Won handicaps at Ascot and Carlisle",
+      "Only defeat of the campaign came at Newmarket's July Festival",
+      "Won the Group 3 Geoffrey Freer Stakes at Newbury in August by 1.5 lengths on first start in Stakes company"
+    ]
+  },
+  "ratings": {
+    "racingAndSports": null,
+    "timeform": null,
+    "officialRating": null,
+    "policy": "No rating inferred from this article. Any rating system remains separate and requires an explicitly labelled source."
+  },
+  "provenanceStatus": "VERIFIED_CURRENT_PREP_TRAVEL_JOCKEY_AND_STAKES_CONTEXT",
+  "conflicts": [],
+  "quarantine": []
+}
