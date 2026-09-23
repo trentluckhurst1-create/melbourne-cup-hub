@@ -1,0 +1,53 @@
+{
+  "snapshotDate": "2026-09-24",
+  "horse": "Birdman",
+  "policy": "Public-source acquisition only. Racing.com WPR, Racing & Sports ratings, Timeform, official handicap ratings and Melbourne Cup weights remain separate systems; no rating is inferred from this evidence.",
+  "identity": {
+    "name": "Birdman",
+    "country": "IRE",
+    "sexAgeAtRun": "5G",
+    "sire": "Free Eagle (IRE)",
+    "dam": "Carol (IRE)",
+    "damsire": "Acclamation (GB)",
+    "trainer": "Chris Waller"
+  },
+  "currentPreparation": {
+    "latestVerifiedRun": {
+      "date": "2026-09-19",
+      "race": "Underwood Stakes",
+      "class": "Group 1",
+      "track": "Caulfield",
+      "distanceM": 1800,
+      "conditions": "Weight For Age",
+      "finish": 1,
+      "carriedWeightKg": 59.0,
+      "marginLengths": 1.75,
+      "time": "1:47.15",
+      "jockey": "Ben Melham"
+    },
+    "campaignContext": "The Underwood Stakes win moved Birdman into Cox Plate calculations. Racing.com reported the Cox Plate at Flemington as the immediate major target context after the win, with stable commentary suggesting 2000m may suit him better than 2400m.",
+    "cupStatusNote": "Birdman remains part of the fixed 101 original 2026 Melbourne Cup nomination universe. This file does not alter his separately stored official Cup weight or ballot record."
+  },
+  "evidence": [
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/19/news-review-caulfield-Underwood-main-190926",
+      "verifiedOn": "2026-09-24",
+      "supports": ["winner", "margin", "race time", "jockey", "trainer", "current campaign context"]
+    },
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/thoroughbred/feature-race/australia/underwood-stakes/359",
+      "verifiedOn": "2026-09-24",
+      "supports": ["date", "Group 1 Underwood Stakes winner", "identity/pedigree", "carried weight", "trainer", "jockey"]
+    }
+  ],
+  "ratings": {
+    "racingAndSports": null,
+    "timeform": null,
+    "racingComWPR": null,
+    "officialHandicapRating": null,
+    "note": "No rating is inferred from the Underwood evidence. Existing verified rating records elsewhere in the repository remain authoritative within their own labelled systems."
+  },
+  "status": "CAPTURED_CURRENT_PREP_IDENTITY_PEDIGREE_GROUP1_RUN_WEIGHT_MARGIN_AND_CAMPAIGN_CONTEXT"
+}
