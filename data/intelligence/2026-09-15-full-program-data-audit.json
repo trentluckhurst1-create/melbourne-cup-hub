@@ -55,9 +55,9 @@
       "pct": 100.0
     },
     "silkExact": {
-      "count": 77,
+      "count": 80,
       "total": 101,
-      "pct": 76.24
+      "pct": 79.21
     },
     "rasPublicRating": {
       "count": 51,
@@ -105,7 +105,6 @@
     "silkPresent": [],
     "silkExact": [
       "Causeway",
-      "Changingoftheguard",
       "Christmas Day",
       "Defiantly",
       "Enfjaar",
@@ -120,11 +119,9 @@
       "Pierre Bonnard",
       "Small Fry",
       "Sons And Lovers",
-      "Soulcombe",
       "Starford",
       "Stinger Glass",
       "Tawny Port",
-      "The Euphrates",
       "Trustyourinstinct",
       "Wine Dark Sea",
       "Wolfgang"
@@ -466,9 +463,9 @@
       "runtimeTrainingBaseEvidence": true,
       "trainerOperationBase": "Newcastle, NSW",
       "trainerOperationBaseVerified": true,
-      "silkStatus": "partial",
+      "silkStatus": "exact",
       "silkPresent": true,
-      "silkExact": false,
+      "silkExact": true,
       "rasPublicRating": true,
       "marketObserved": true
     },
@@ -1830,9 +1827,9 @@
       "runtimeTrainingBaseEvidence": false,
       "trainerOperationBase": "Rosehill / Sydney, NSW",
       "trainerOperationBaseVerified": true,
-      "silkStatus": "partial",
+      "silkStatus": "exact",
       "silkPresent": true,
-      "silkExact": false,
+      "silkExact": true,
       "rasPublicRating": false,
       "marketObserved": true
     },
@@ -2050,9 +2047,9 @@
       "runtimeTrainingBaseEvidence": true,
       "trainerOperationBase": "Tulloch Lodge / Randwick, NSW",
       "trainerOperationBaseVerified": true,
-      "silkStatus": "partial",
+      "silkStatus": "exact",
       "silkPresent": true,
-      "silkExact": false,
+      "silkExact": true,
       "rasPublicRating": false,
       "marketObserved": true
     },
