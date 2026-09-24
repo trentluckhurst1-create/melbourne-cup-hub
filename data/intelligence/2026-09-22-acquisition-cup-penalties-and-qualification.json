@@ -1,5 +1,5 @@
 {
-  "snapshotDate": "2026-09-23",
+  "snapshotDate": "2026-09-25",
   "policy": "Capture only explicit public facts. Cup weights are updated only when Racing Victoria publicly announces a penalty or authoritative Racing Australia data reflects it. Ratings are not inferred from editorial language.",
   "evidence": [
     {
@@ -24,11 +24,12 @@
       "horse": "Aethelwulf",
       "source": "Racing Victoria",
       "url": "https://www.racingvictoria.com.au/news/2026/09/21/naturalism-stakes-winner-zahrann-penalised",
-      "corroboratingUrl": "https://www.racing.com/news/2026/09/21/news-contenders-zahrann-cops-cups-penalty",
+      "corroboratingUrl": "https://www.racing.com/news/2026/09/21/news-contenders-aethelwulf-bart-cummings-melbourne-cup-newcastle-gold-cup",
       "published": "2026-09-21",
-      "verifiedOn": "2026-09-23",
+      "verifiedOn": "2026-09-25",
       "facts": {
         "latestRun": "Won Newcastle Gold Cup (2300m) on 18 Sep 2026",
+        "careerAfterRun": "7 starts, 5 wins",
         "melbourneCupFirstEliminationClausePassed": true,
         "melbourneCupOrderAfterRun": 64,
         "originalCupWeightKg": 51.0,
@@ -36,11 +37,29 @@
       },
       "status": "CAPTURED_PRIMARY_QUALIFICATION_UPDATE",
       "ratingPromotion": "NONE"
+    },
+    {
+      "horse": "Saint George",
+      "source": "Racing Victoria",
+      "url": "https://www.racingvictoria.com.au/news/2026/09/21/naturalism-stakes-winner-zahrann-penalised",
+      "published": "2026-09-21",
+      "verifiedOn": "2026-09-25",
+      "facts": {
+        "latestRun": "Runner-up in Group 3 Naturalism Stakes (2000m) at Caulfield on 19 Sep 2026",
+        "caulfieldCupFirstEliminationClausePassed": true,
+        "caulfieldCupOrderAfterRun": 42,
+        "caulfieldCupWeightKg": 53.5,
+        "melbourneCupFirstEliminationClausePassed": false,
+        "melbourneCupQualificationNote": "Racing Victoria states a peak performance over 2300m or further remains the most likely avenue to pass the Melbourne Cup first elimination clause."
+      },
+      "status": "CAPTURED_PRIMARY_ELIMINATION_STATUS_UPDATE",
+      "ratingPromotion": "NONE"
     }
   ],
   "notes": [
-    "Racing Victoria is now retained as the primary authority for both post-release changes; Racing.com is retained as corroboration.",
+    "Racing Victoria is retained as the primary authority for post-release handicap and elimination-clause changes; Racing.com is retained only as corroboration where used.",
     "Zahrann's 54.5kg is a post-release penalty and supersedes his original 54.0kg for current Cup-weight display while the original released handicap remains preserved for audit history.",
-    "Racing Victoria explicitly states Aethelwulf passed the Melbourne Cup first elimination clause and that his Newcastle Gold Cup win did not warrant a weight penalty; no rating is inferred from the result."
+    "Racing Victoria explicitly states Aethelwulf passed the Melbourne Cup first elimination clause and that his Newcastle Gold Cup win did not warrant a weight penalty; Racing.com independently reports his post-race career as five wins from seven starts. No rating is inferred.",
+    "Racing Victoria explicitly states Saint George remains yet to pass the Melbourne Cup first elimination clause after his Naturalism Stakes second; his Caulfield Cup qualification is not promoted to Melbourne Cup qualification."
   ]
 }
