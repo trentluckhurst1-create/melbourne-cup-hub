@@ -1,0 +1,52 @@
+{
+  "snapshotDate": "2026-09-24",
+  "horse": "Aethelflaed",
+  "identity": {
+    "trainer": "Matthew Smith",
+    "identityStatus": "MATCHED_TO_CANONICAL_NOMINEE",
+    "collisionCheck": "Racing & Sports also exposes a different horse named Queen Aethelflaed in Ireland. Evidence for Queen Aethelflaed is excluded and must never be merged into this nominee."
+  },
+  "verifiedEvidence": [
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/horse-racing-results/australia/rosehill/2026-09-12/r6",
+      "retrievedOn": "2026-09-24",
+      "note": "Racing & Sports meeting-results page exposes Aethelflaed in Rosehill Race 4 on 12 Sep 2026: trainer Matthew Smith, jockey Mollie Fitzgerald, finishing position 6th and recorded time 1:35.05."
+    },
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/rosehill/2026-09-12/runners-index",
+      "retrievedOn": "2026-09-24",
+      "note": "Runner index identifies Aethelflaed as Race 4, tab 5, 57.0kg, barrier 7; jockey index separately shows Mollie Fitzgerald and Aethelflaed at 57.0kg."
+    },
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/rosehill/2026-09-12/R4/enhanced-form",
+      "retrievedOn": "2026-09-24",
+      "note": "Enhanced-form row identifies Aethelflaed, Matthew Smith, Mollie Fitzgerald (a3), 57.0kg and barrier 7. Numeric enhanced-form fields are not promoted to R&S ratings because the page does not explicitly label those values as a Racing & Sports rating."
+    }
+  ],
+  "latestVerifiedRun": {
+    "date": "2026-09-12",
+    "track": "Rosehill",
+    "raceNumber": 4,
+    "finish": 6,
+    "carriedWeightKg": 57.0,
+    "barrier": 7,
+    "jockey": "Mollie Fitzgerald",
+    "trainer": "Matthew Smith",
+    "recordedTime": "1:35.05"
+  },
+  "ratings": {
+    "racingAndSportsRating": null,
+    "status": "NOT_EXPLICITLY_LABELLED_IN_CAPTURED_PUBLIC_EVIDENCE",
+    "policy": "Do not infer a Racing & Sports rating from enhanced-form numeric columns."
+  },
+  "quarantine": [
+    {
+      "horse": "Queen Aethelflaed",
+      "jurisdiction": "Ireland",
+      "reason": "Distinct horse returned by name search; excluded from Aethelflaed (Matthew Smith) evidence."
+    }
+  ]
+}
