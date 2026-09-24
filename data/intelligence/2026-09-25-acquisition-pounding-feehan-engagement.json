@@ -1,0 +1,43 @@
+{
+  "snapshotDate": "2026-09-25",
+  "horse": "Pounding",
+  "identity": {
+    "trainer": "Peter G Moody & Katherine Coleman",
+    "status": "IDENTITY_SAFE"
+  },
+  "currentPreparation": {
+    "nextEngagement": {
+      "date": "2026-09-27",
+      "track": "Caulfield",
+      "race": 5,
+      "raceName": "Ladbrokes Feehan Stakes",
+      "grade": "Group 2",
+      "distanceM": 1600,
+      "barrier": 5,
+      "carriedWeightKg": 59,
+      "jockey": "Luke Nolen"
+    },
+    "exposedFormString": "2228x",
+    "note": "Public Racing & Sports race fields list Pounding in the G2 Feehan Stakes. This is an engagement, not a completed run; do not promote it to chronological results until the race is run."
+  },
+  "evidence": [
+    {
+      "publisher": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-09-27/race-fields",
+      "verifiedOn": "2026-09-25",
+      "scope": "Upcoming Feehan Stakes engagement, barrier, weight, jockey, trainer and exposed form string"
+    },
+    {
+      "publisher": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/thoroughbred/trainer/peter-g-moody-katherine-coleman-130427",
+      "verifiedOn": "2026-09-25",
+      "scope": "Trainer page independently lists Pounding as an upcoming runner at Caulfield on 27 Sep 2026"
+    }
+  ],
+  "ratings": {
+    "racingAndSports": null,
+    "status": "NOT_CAPTURED_FROM_THESE_SOURCES",
+    "note": "Unlabelled enhanced-form numeric fields are not promoted to R&S ratings."
+  },
+  "provenancePolicy": "Only explicit public facts captured. Future engagement is kept separate from completed form; no rating inferred."
+}
