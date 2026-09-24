@@ -1,0 +1,10 @@
+{
+  "snapshotDate":"2026-09-24",
+  "horse":"Aethelwulf",
+  "identity":{"trainer":"Matthew Smith","sire":"Saxon Warrior","identityStatus":"VERIFIED","collisionPolicy":"Do not merge with Queen Aethelflaed or similarly named overseas horses."},
+  "careerAndPreparation":{"newcastleGoldCup":{"date":"2026-09-18","track":"Newcastle","race":"Newcastle Gold Cup","class":"Group 3","distanceM":2300,"finish":1,"careerAfterRun":"5 wins from 7 starts","source":"https://www.racingandsports.com.au/news/racing/news/2026-09-18/boom-stayer-aethelwulf-puts-himself-into-the-melbourne-cup-conversation/721662"},"priorProgression":{"note":"Racing & Sports records three successive pre-Newcastle wins at Kembla, Canterbury and Rosehill; the Rosehill 2000m win was his fourth win from six starts before Newcastle.","source":"https://www.racingandsports.com.au/news/racing/news/2026-08-29/boom-stayer-aethelwulf-romps-in-again/720472"}},
+  "cup":{"releasedWeightKg":51.0,"postNewcastlePenaltyKg":0.0,"firstEliminationClause":"PASSED","orderAfterNewcastle":64,"status":"Melbourne Cup remains possible; trainer considering Bart Cummings or The Metropolitan next.","officialUpdateSource":"https://www.racingvictoria.com.au/news/2026/09/21/naturalism-stakes-winner-zahrann-penalised"},
+  "ratings":{"racingAndSports":null,"policy":"No explicitly labelled numeric R&S rating was found in the captured articles; none inferred from other rating systems or unlabelled fields."},
+  "provenance":[{"publisher":"Racing & Sports","url":"https://www.racingandsports.com.au/news/racing/news/2026-09-18/boom-stayer-aethelwulf-puts-himself-into-the-melbourne-cup-conversation/721662","verifiedOn":"2026-09-24"},{"publisher":"Racing & Sports","url":"https://www.racingandsports.com.au/news/racing/news/2026-08-29/boom-stayer-aethelwulf-romps-in-again/720472","verifiedOn":"2026-09-24"},{"publisher":"Racing Victoria","url":"https://www.racingvictoria.com.au/news/2026/09/21/naturalism-stakes-winner-zahrann-penalised","verifiedOn":"2026-09-24"}],
+  "status":"VERIFIED_PUBLIC_ACQUISITION_PROGRESS"
+}
