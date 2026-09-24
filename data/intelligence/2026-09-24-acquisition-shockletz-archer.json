@@ -1,0 +1,44 @@
+{
+  "snapshotDate": "2026-09-24",
+  "horse": "Shockletz",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-12/shockletz-earns-melbourne-cup-berth/721323",
+    "verifiedOn": "2026-09-24"
+  },
+  "identity": {
+    "country": "NZ",
+    "age": 5,
+    "sex": "M",
+    "sire": "Shocking (AUS)",
+    "dam": "Zelt (AUS)",
+    "trainer": "Ciaron Maher"
+  },
+  "run": {
+    "race": "Lexus Archer Stakes",
+    "class": "G3",
+    "track": "Flemington",
+    "distanceM": 2500,
+    "surface": "Turf",
+    "going": "Good",
+    "finish": 1,
+    "carriedWeightKg": 54.5,
+    "jockey": "Harry Coffey",
+    "startingPrice": 2.90,
+    "winningMarginLengths": 2.25,
+    "equipment": "Blinkers first time"
+  },
+  "stakesAndCupStatus": {
+    "melbourneCupBallotExemption": true,
+    "basis": "Winner of the Group 3 Archer Stakes at Flemington",
+    "campaignNote": "Trainer indicated she would not be over-raced and would be kept on the fresher side working back from the 3 November Melbourne Cup."
+  },
+  "ratings": {
+    "ras": 113,
+    "rasSource": "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-09-14/talking-points-12th-of-september-2026/721405",
+    "rasStatus": "EXPLICITLY_LABELLED_RAS",
+    "timeform": 109,
+    "timeformStatus": "EXPLICITLY_LABELLED_TIMEFORM_SEPARATE"
+  },
+  "provenancePolicy": "R&S and Timeform values are retained as separate rating systems. No unlabelled numeric field is promoted to either scale."
+}
