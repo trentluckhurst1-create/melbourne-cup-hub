@@ -1,0 +1,43 @@
+{
+  "snapshotDate": "2026-09-24",
+  "horse": "Nil Bua Gan Dua",
+  "status": "VERIFIED_PUBLIC_RESULT_EVIDENCE",
+  "identity": {
+    "trainer": "Joseph O'Brien",
+    "countryContext": "Ireland",
+    "note": "Matched to the fixed 101-horse Melbourne Cup nomination universe; no identity conflict detected in this result."
+  },
+  "result": {
+    "date": "2026-07-25",
+    "track": "Gowran Park",
+    "race": "John Fleming Irish EBF Marble City Stakes",
+    "class": "Listed",
+    "distance": "1m4f",
+    "surface": "TURF",
+    "going": "GOOD",
+    "finish": 1,
+    "carriedWeightKg": 59.5,
+    "barrier": 6,
+    "jockey": "Dylan Browne McMonagle",
+    "trainer": "Joseph O'Brien",
+    "fieldEvidence": {
+      "second": "Vauntingly",
+      "third": "Believed"
+    }
+  },
+  "ratings": {
+    "rasRunRating": null,
+    "officialRating": null,
+    "timeform": null,
+    "policy": "The Racing & Sports result page exposes result, class, distance, surface, going, carried weight, barrier, jockey and trainer but no explicitly labelled numeric R&S run rating in the retrieved public evidence. No rating is inferred. The separately verified peak RAS rating remains governed by data/ratings/2026-09-15-ras-public-peaks.json."
+  },
+  "evidence": [
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/horse-racing-results/ireland/gowran-park/2026-07-25/R4",
+      "verifiedOn": "2026-09-24",
+      "scope": "Listed win; 1m4f turf good; carried 59.5kg; barrier 6; Dylan Browne McMonagle; Joseph O'Brien."
+    }
+  ],
+  "provenancePolicy": "Only fields explicitly exposed by the cited public source are captured. Missing numeric ratings and margins are not inferred."
+}
