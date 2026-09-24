@@ -8,65 +8,17 @@
   },
   "policy": "Narrative handicap and campaign evidence only. Official Cup weights remain governed by the Racing Australia/Racing Victoria official ledger. No R&S rating is inferred from handicap commentary or cross-horse comparisons.",
   "evidence": [
-    {
-      "horse": "Half Yours",
-      "facts": {
-        "melbourneCup2026WeightKg": 59.0,
-        "melbourneCup2025WinningWeightKg": 53.0,
-        "caulfieldCup2026WeightKg": 57.5
-      },
-      "note": "R&S describes the reigning Melbourne Cup winner rising 6kg for the 2026 Melbourne Cup. The article's 2025 comparison is retained as narrative evidence; the canonical 2026 official value remains governed by the official weights ledger."
-    },
-    {
-      "horse": "Highwayman",
-      "facts": {
-        "melbourneCup2026WeightKg": 56.5,
-        "latestMajorWin": "English St Leger"
-      },
-      "note": "R&S reports the handicapper assessed the St Leger performance at the same level as 2024 winner Jan Brueghel and allocated 56.5kg under the new scale. This comparison is not promoted into an R&S numeric rating."
-    },
-    {
-      "horse": "Goodie Two Shoes",
-      "facts": {
-        "melbourneCup2026WeightKg": 55.0,
-        "melbourneCup2025WeightKg": 51.5,
-        "melbourneCup2025Result": "2nd"
-      }
-    },
-    {
-      "horse": "Aeliana",
-      "facts": {
-        "melbourneCup2026WeightKg": 58.0,
-        "mareWeightForAgeAllowanceKg": 2.0
-      },
-      "note": "R&S reports Aeliana would have been topweight without the 2kg weight-for-age mare allowance."
-    },
-    {
-      "horse": "Defiantly",
-      "facts": {"melbourneCup2026WeightKg": 56.5}
-    },
-    {
-      "horse": "Green Spaces",
-      "facts": {
-        "caulfieldCup2026WeightKg": 54.5,
-        "majorWinContext": "Australian Derby"
-      }
-    },
-    {
-      "horse": "Enfjaar",
-      "facts": {"caulfieldCup2026WeightKg": 54.5},
-      "note": "Article identifies recent European Group 3-winning context."
-    },
-    {
-      "horse": "Wine Dark Sea",
-      "facts": {"caulfieldCup2026WeightKg": 54.5},
-      "note": "Article identifies recent European Group 3-winning context."
-    }
+    {"horse":"Half Yours","facts":{"melbourneCup2026WeightKg":59.0,"melbourneCup2025WinningWeightKg":52.5,"caulfieldCup2026WeightKg":57.5},"note":"R&S text explicitly states 52.5kg for the 2025 Cup and 59kg for 2026, while also calling the rise 6kg. The stated weights imply 6.5kg, so the arithmetic claim is quarantined rather than corrected by inference."},
+    {"horse":"Highwayman","facts":{"melbourneCup2026WeightKg":56.5,"latestMajorWin":"English St Leger"},"note":"R&S reports the handicapper assessed the St Leger performance at the same level as 2024 winner Jan Brueghel and allocated 56.5kg under the new scale. This comparison is not promoted into an R&S numeric rating."},
+    {"horse":"Goodie Two Shoes","facts":{"melbourneCup2026WeightKg":55.0,"melbourneCup2025WeightKg":51.5,"melbourneCup2025Result":"2nd"}},
+    {"horse":"Aeliana","facts":{"melbourneCup2026WeightKg":58.0,"mareWeightForAgeAllowanceKg":2.0},"note":"R&S reports Aeliana would have been topweight without the 2kg weight-for-age mare allowance."},
+    {"horse":"Defiantly","facts":{"melbourneCup2026WeightKg":56.5}},
+    {"horse":"Green Spaces","facts":{"caulfieldCup2026WeightKg":54.5,"majorWinContext":"Australian Derby"}},
+    {"horse":"Enfjaar","facts":{"caulfieldCup2026WeightKg":54.5},"note":"Article identifies recent European Group 3-winning context."},
+    {"horse":"Wine Dark Sea","facts":{"caulfieldCup2026WeightKg":54.5},"note":"Article identifies recent European Group 3-winning context."}
   ],
   "quarantine": [
-    {
-      "claim": "Highwayman's St Leger performance achieved the same rating as Jan Brueghel",
-      "reason": "The article does not expose an explicit numeric Racing & Sports rating for Highwayman in this passage. No numeric R&S value is derived from the comparison."
-    }
+    {"claim":"Highwayman's St Leger performance achieved the same rating as Jan Brueghel","reason":"The article does not expose an explicit numeric Racing & Sports rating for Highwayman in this passage. No numeric R&S value is derived from the comparison."},
+    {"claim":"Half Yours rises 6kg from 52.5kg in 2025 to 59kg in 2026","reason":"The source's stated weights imply a 6.5kg rise. Preserve the explicit weights and quarantine the inconsistent arithmetic statement."}
   ]
 }
