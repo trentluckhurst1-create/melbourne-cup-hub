@@ -1,0 +1,42 @@
+{
+  "snapshotDate": "2026-09-25",
+  "horse": "Pounding",
+  "identity": {
+    "trainer": "Peter G Moody & Katherine Coleman",
+    "sire": "Exceed And Excel",
+    "dam": "Silent Entrance",
+    "country": "AUS",
+    "status": "IDENTITY_SAFE"
+  },
+  "evidence": [
+    {
+      "date": "2026-06-13",
+      "race": "HKJC World Pool Q22",
+      "grade": "Group 2",
+      "track": "Eagle Farm",
+      "finish": 2,
+      "marginFromWinner": "1.5L",
+      "jockey": "Luke Nolen",
+      "source": "https://www.racingandsports.com.au/news/racing/news/2026-06-13/royal-supremacy-wins-group-2-hkjc-world-pool-q22-post-race-trainer-and-jockey-quotes/716413"
+    },
+    {
+      "date": "2026-06-27",
+      "race": "Tattersall's Cup",
+      "grade": "Group 3",
+      "track": "Eagle Farm",
+      "distanceM": 2400,
+      "surface": "TURF",
+      "going": "SOFT",
+      "finish": 2,
+      "carriedWeightKg": 56,
+      "jockey": "Luke Nolen",
+      "source": "https://www.racingandsports.com.au/news/racing/news/2026-06-27/asterix-wins-group-3-tattersalls-cup-post-race-trainer-and-jockey-quotes/717210"
+    }
+  ],
+  "ratings": {
+    "racingAndSports": null,
+    "status": "NOT_CAPTURED_FROM_THESE_SOURCES",
+    "note": "Enhanced-form numeric columns and other unlabelled figures are not promoted to an explicitly labelled R&S rating."
+  },
+  "provenancePolicy": "Only explicit public facts captured; no rating inferred."
+}
