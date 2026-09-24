@@ -1,0 +1,33 @@
+{
+  "snapshotDate": "2026-09-24",
+  "horse": "Shockletz",
+  "identity": {
+    "sex": "mare",
+    "sire": "Shocking",
+    "identityStatus": "VERIFIED_IN_SOURCE"
+  },
+  "melbourneCup2026": {
+    "status": "BALLOT_EXEMPT_GOLDEN_TICKET",
+    "qualifyingRace": "Lexus Archer Stakes",
+    "raceDate": "2026-09-12",
+    "track": "Flemington",
+    "distanceM": 2500,
+    "class": "Group 3",
+    "result": 1,
+    "marginLengths": 2.25,
+    "jockey": "Harry Coffey",
+    "startingPrice": 2.90,
+    "equipmentContext": "Blinkers first time",
+    "second": "Think Giant",
+    "third": "Jennivamoose"
+  },
+  "provenance": [{
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-12/shockletz-earns-melbourne-cup-berth/721323",
+    "publishedDate": "2026-09-12",
+    "verifiedOn": "2026-09-24",
+    "evidenceType": "PUBLIC_RACE_AND_CUP_QUALIFICATION_REPORT"
+  }],
+  "ratingsPolicy": "The source does not explicitly publish a numeric Racing & Sports rating for this performance. No R&S rating is inferred from the result, margin, market or other numeric fields.",
+  "status": "CAPTURED_STAKES_RESULT_MARGIN_CONNECTION_AND_CUP_BALLOT_EXEMPTION"
+}
