@@ -1,0 +1,35 @@
+{
+  "snapshotDate": "2026-09-24",
+  "horse": "Shockletz",
+  "identity": {
+    "sex": "mare",
+    "sire": "Shocking",
+    "trainer": "Ciaron Maher"
+  },
+  "verifiedEvidence": [
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-12/shockletz-earns-melbourne-cup-berth/721323",
+      "retrieved": "2026-09-24",
+      "facts": {
+        "race": "Lexus Archer Stakes",
+        "grade": "Group 3",
+        "track": "Flemington",
+        "distanceM": 2500,
+        "finish": 1,
+        "winningMargin": "2-1/4 lengths",
+        "startingPrice": 2.90,
+        "jockey": "Harry Coffey",
+        "gear": "blinkers first time",
+        "runnerUp": "Think Giant",
+        "third": "Jennivamoose",
+        "cupStatus": "Melbourne Cup ballot exemption / Golden Ticket"
+      },
+      "campaignContext": "Ciaron Maher said the Cup had been a long-range plan, that Shockletz would run two miles, and after earning the ballot exemption her program could be worked back from the 3 November Melbourne Cup. He indicated she would not be over-raced and would be kept on the fresher side."
+    }
+  ],
+  "ratingGovernance": {
+    "note": "No rating is inferred from this acquisition record. Any Racing & Sports rating remains governed by the separate explicitly-labelled RAS ratings dataset; Timeform remains separate."
+  },
+  "status": "VERIFIED_PUBLIC_CAMPAIGN_STAKES_RESULT_CAPTURED"
+}
