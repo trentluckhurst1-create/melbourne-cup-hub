@@ -1,0 +1,25 @@
+{
+  "snapshotDate": "2026-09-24",
+  "horse": "Aeliana",
+  "source": {
+    "publisher": "Racing.com",
+    "url": "https://www.racing.com/news/2026/09/20/news-contenders-aeliana-200926",
+    "published": "2026-09-20",
+    "verifiedOn": "2026-09-24"
+  },
+  "verifiedFacts": {
+    "trainer": "Chris Waller",
+    "melbourneCupWeightKg": 58.0,
+    "latestRun": {
+      "race": "Seven Sunrise Stakes",
+      "group": "G2",
+      "distanceM": 1600,
+      "track": "Randwick",
+      "finish": 2,
+      "winner": "Autumn Glow",
+      "date": "2026-09-19"
+    },
+    "cupStatus": "Trainer publicly reconsidering Melbourne Cup participation after allocation of 58kg; no withdrawal is asserted by this source."
+  },
+  "provenancePolicy": "Campaign status is captured as a dated public statement only. It does not change the fixed 101-horse nomination universe. No rating is inferred from this article."
+}
