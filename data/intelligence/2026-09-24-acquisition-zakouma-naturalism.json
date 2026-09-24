@@ -1,0 +1,14 @@
+{
+  "snapshotDate":"2026-09-24",
+  "horse":"Zakouma",
+  "identity":{"trainer":"Grahame Begg","sire":"Crowded House (GB)","dam":"Dar Es Salaam (NZ)","status":"IDENTITY_RECONCILED"},
+  "latestVerifiedRun":{"date":"2026-09-19","track":"Caulfield","race":"Tobin Brothers Naturalism Stakes","class":"Group 3","distanceM":2000,"surface":"Turf","going":"Good 3","finish":6,"carriedWeightKg":54.0,"jockey":"William Pike"},
+  "cupContext":{"melbourneCupWeightKg":52.0,"ballotExemption":"Andrew Ramsden Stakes winner","campaignPlan":"After the Naturalism, trainer's pre-race plan was one 2400m run before going straight into the Melbourne Cup; without a Naturalism win the stated route was the Herbert Power Stakes.","status":"CUP_CAMPAIGN_ACTIVE"},
+  "evidence":[
+    {"source":"Racing & Sports","url":"https://www.racingandsports.com.au/news/racing/news/2026-09-19/zahrann-wins-group-3-tobin-brothers-naturalism-stakes-post-race-trainer-and-jockey-quotes/721721","verifiedOn":"2026-09-24","supports":["Naturalism result context","Zakouma 6th","54kg","William Pike","pedigree and trainer"]},
+    {"source":"Racing & Sports","url":"https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-09-19/race-tips","verifiedOn":"2026-09-24","supports":["Naturalism 2000m","turf","Good 3","Group 3"]},
+    {"source":"Racing & Sports","url":"https://www.racingandsports.com.au/news/racing/news/2026-09-17/cup-campaign-ticking-over-for-zakouma/721584","verifiedOn":"2026-09-24","supports":["Melbourne Cup weight 52kg","Andrew Ramsden ballot exemption","pre-race campaign route"]}
+  ],
+  "ratings":{"racingAndSports":null,"timeform":null,"policy":"No numeric rating is promoted from these sources. The preview mentions rating systems but does not supply an explicitly labelled public R&S horse rating for this run; Timeform remains separate."},
+  "provenanceStatus":"VERIFIED_PUBLIC_EVIDENCE_CAPTURED"
+}
