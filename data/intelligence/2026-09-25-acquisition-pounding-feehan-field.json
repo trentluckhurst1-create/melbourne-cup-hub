@@ -1,0 +1,21 @@
+{
+  "snapshotDate": "2026-09-25",
+  "horse": "Pounding",
+  "identity": {"trainer": "Peter G Moody & Katherine Coleman", "status": "IDENTITY_SAFE"},
+  "currentPreparation": {
+    "nextEngagement": {
+      "date": "2026-09-27",
+      "track": "Caulfield",
+      "race": "Ladbrokes Feehan Stakes",
+      "grade": "Group 2",
+      "distanceM": 1600,
+      "barrier": 5,
+      "jockey": "Luke Nolen",
+      "carriedWeightKg": 59,
+      "source": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-09-27/race-fields",
+      "status": "ACCEPTED_FIELD_AS_PUBLISHED_2026-09-25"
+    }
+  },
+  "ratings": {"racingAndSports": null, "status": "NO_NEW_EXPLICIT_RAS_RATING_IN_THIS_SOURCE"},
+  "provenancePolicy": "Only explicit public field facts captured; no result or rating inferred before the race is run."
+}
