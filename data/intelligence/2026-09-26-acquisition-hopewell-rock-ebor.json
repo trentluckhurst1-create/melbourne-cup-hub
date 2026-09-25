@@ -1,0 +1,49 @@
+{
+  "snapshotDate": "2026-09-26",
+  "horse": "Hopewell Rock",
+  "identity": {
+    "trainer": "George Boughey",
+    "owner": "Wathnan Racing",
+    "status": "identity-safe against fixed 101 nominee"
+  },
+  "evidence": [
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/news/international/uk-ire-and-europe/0001-01-01/i-think-its-tailormade-for-him-hopewell-rock-set-for-melbourne-cup-challenge-after-ebor-effort/720143",
+      "scope": "2026 Ebor Handicap at York; second to Daiquiri Bay by a head over 2787m; prior start was a valuable handicap win at Glorious Goodwood; gelding status and Melbourne Cup campaign confirmed by trainer/owner representative."
+    }
+  ],
+  "chronologicalForm": [
+    {
+      "race": "Ebor Handicap",
+      "track": "York",
+      "distanceM": 2787,
+      "finish": 2,
+      "margin": "head",
+      "class": "Handicap",
+      "stakesContext": "major international staying handicap"
+    },
+    {
+      "race": "valuable handicap",
+      "track": "Goodwood",
+      "finish": 1,
+      "note": "Immediately preceding start per source; exact race title/weight not promoted from this article."
+    }
+  ],
+  "cupStatus": {
+    "campaign": "Melbourne Cup intended",
+    "firstBallotClause": "passed via Ebor second placing",
+    "publishedRatingContext": {
+      "value": 106,
+      "system": "qualification/handicap rating as stated in article",
+      "racingAndSportsRating": false
+    },
+    "note": "Article states he needs to improve on 106 to climb into the final 24."
+  },
+  "ratingsPolicy": "The stated 106 is not promoted into the R&S ratings ledger because the article does not explicitly label it as a Racing & Sports rating.",
+  "unavailable": [
+    "Ebor carried weight not exposed in this article",
+    "Explicit R&S numeric run rating not exposed in this article"
+  ],
+  "verifiedOn": "2026-09-26"
+}
