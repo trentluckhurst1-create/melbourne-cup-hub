@@ -1,0 +1,16 @@
+{
+  "snapshotDate": "2026-09-25",
+  "source": "Racing.com",
+  "url": "https://www.racing.com/news/2026/09/13/news-international-caulfield-cup-horses-enter-quarantine",
+  "verifiedOn": "2026-09-25",
+  "horses": ["Kizlyar","Omni Man","Small Fry","Starford","Enfjaar","Wine Dark Sea","Point Of Law"],
+  "facts": [
+    "Seven UK/Ireland-based spring raiders entered pre-export quarantine and were scheduled to fly to Melbourne on 27 September.",
+    "Small Fry was expected to seek Melbourne Cup qualification via the Geelong Cup.",
+    "Point Of Law was sold to Ciaron Maher clients and was to transfer to Maher on arrival."
+  ],
+  "governance": {
+    "ratings": "No numeric rating is stated in this source; none is inferred.",
+    "status": "Travel and connection evidence only. Scheduled travel is not treated as confirmed arrival."
+  }
+}
