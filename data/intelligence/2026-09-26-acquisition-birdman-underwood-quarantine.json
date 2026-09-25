@@ -1,0 +1,31 @@
+{
+  "snapshotDate": "2026-09-26",
+  "type": "acquisition-evidence-quarantine",
+  "horse": "Birdman",
+  "policy": "Conflicting public-source observations are retained as evidence and quarantined from canonical promotion until reconciled. No rating is inferred.",
+  "observations": [
+    {
+      "source": "Racing & Sports jockey profile — Ben Melham",
+      "url": "https://www.racingandsports.com.au/thoroughbred/jockey/ben-melham/9606",
+      "observed": "Lists Birdman (IRE) as winner at Caulfield on 19 Sep 2026, 1800m, Group 1, Chris Waller."
+    },
+    {
+      "source": "Racing Post result",
+      "url": "https://www.racingpost.com/results/469/caulfield/2026-09-19/928996/",
+      "observed": "Lists Birdman first in the Henley Homes Underwood Stakes (G1), 1800m, Good, 59kg, Ben Melham; published RPR 120 and OR 113 are Racing Post fields, not Racing & Sports ratings."
+    },
+    {
+      "source": "TABtouch race page",
+      "url": "https://www.tabtouch.com.au/racing/2026-09-19/mr/7",
+      "observed": "Search-visible page is internally inconsistent with the above result evidence and displays ABANDONED/CLOSED state. Treat as contaminated/stale for result promotion."
+    }
+  ],
+  "disposition": "QUARANTINED_SOURCE_CONFLICT",
+  "canonicalPromotion": false,
+  "safeFacts": [
+    "Birdman identity remains unchanged",
+    "Do not promote Racing Post RPR/OR into Racing & Sports rating fields",
+    "Do not infer a Racing & Sports run rating from result position"
+  ],
+  "notes": "This evidence file records the conflict so later acquisition passes do not silently overwrite canonical form with a potentially stale TAB page. Reconcile against an authoritative official result before canonical latest-run promotion."
+}
