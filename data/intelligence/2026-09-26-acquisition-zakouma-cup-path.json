@@ -1,0 +1,42 @@
+{
+  "snapshotDate": "2026-09-26",
+  "horse": "Zakouma",
+  "identity": {
+    "trainer": "Grahame Begg",
+    "status": "IDENTITY_SAFE"
+  },
+  "currentPreparation": {
+    "melbourneCupTarget": true,
+    "melbourneCupDistanceM": 3200,
+    "melbourneCupDate": "2026-11-03",
+    "officialCupWeightKg": 52.0,
+    "ballotExemption": true,
+    "ballotExemptionSource": "Listed Lexus Andrew Ramsden (2800m), Flemington, May 2026",
+    "firstUp": {
+      "race": "Heatherlie Stakes",
+      "distanceM": 1700,
+      "track": "Caulfield",
+      "finish": 6,
+      "marginFromWinner": "just over 4L"
+    },
+    "nextRunAtSourcePublication": {
+      "race": "Naturalism Stakes",
+      "distanceM": 2000,
+      "track": "Caulfield",
+      "date": "2026-09-19"
+    },
+    "plannedPathAtSourcePublication": "If successful in the Naturalism Stakes, Caulfield Cup (2400m); otherwise Herbert Power Stakes (2400m) on 10 Oct; then Melbourne Cup."
+  },
+  "evidence": [{
+    "source": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-17/cup-campaign-ticking-over-for-zakouma/721584",
+    "published": "2026-09-17",
+    "verifiedOn": "2026-09-26"
+  }],
+  "ratings": {
+    "racingAndSports": null,
+    "status": "NOT_STATED_IN_SOURCE",
+    "note": "No numeric R&S rating is inferred."
+  },
+  "provenancePolicy": "Only explicit public facts captured; later results supersede planned-path statements but do not erase this dated preparation evidence."
+}
