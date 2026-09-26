@@ -1,32 +1,161 @@
 {
-  "snapshotDate":"2026-09-22",
-  "ratingScale":"Racing And Sports",
-  "metric":"best verified published RAS rating",
-  "policy":"Only figures explicitly supported by Racing And Sports evidence are stored. Where an article explicitly states a career/peak rating that is used. Otherwise an explicitly labelled Racing & Sports Rating is retained as a verified published RAS value and may establish a lower bound for the horse's public best. Racing And Sports-authored material published by an official racing body is acceptable. Timeform figures, unlabeled form-guide numbers, RSSR and inferred values are never substituted.",
-  "sources":[
-    {"url":"https://www.racingandsports.com.au/news/racing/news/2026-09-02/melbourne-cup-rating-the-internationals/720667","scope":"All 23 international nominees peak RAS ratings as published 2 Sep 2026"},
-    {"url":"https://www.racingandsports.com.au/news/ratings-analysis","scope":"Racing & Sports Ratings And Analysis page explicitly lists Aethelwulf 103 for Newcastle R6 2300m on 18 Sep 2026; Knight's Choice 116, Campaldino 110, Deakin 110 and Zahrann 112 for Caulfield on 19 Sep 2026. Each is retained as a verified published RAS value/lower bound unless a higher verified peak is held."},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-07-21/talking-points-20th-of-july-2026/718490","scope":"Trustyourinstinct Curragh Cup career-peak RAS 118; supersedes stale 117 summary value"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-03-23/talking-points-21st-of-march-2026/711437","scope":"Aeliana peak 123"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2025-10-11/talking-points-flemington-carnival-2025/704138","scope":"Half Yours Melbourne Cup peak 122"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-05-25/talking-points-23rd-of-may-2026/715300","scope":"Birdman peak 124"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-05-18/talking-points-saturday-16th-of-may-2026/714873","scope":"Zakouma peak 109"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-04-07/talking-points-saturday-4th-of-april-2026/712365","scope":"Green Spaces 116"},
-    {"url":"https://www.racingandsports.com.au/news/racing/news/2026-03-26/real-punters-play-here-australian-cup/711607","scope":"Light Infantry Man career peak 122"},
-    {"url":"https://www.racingandsports.com.au/news/racing/previews/2026-03-26/the-melbourne-mail-flemington-28th-of-march-2026/711608","scope":"Litzdeel 108"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-04-13/talking-points-saturday-11th-of-april-2026/712714","scope":"She's A Hustler prior peak 116"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-07-21/talking-points-20th-of-july-2026/718490","scope":"King Pedro peak 110"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/0001-01-01/talking-points-saturday-11th-of-april-2026/712714","scope":"Ohope Wins peak 111"},
-    {"url":"https://www.racingandsports.com.au/news/racing/previews/0001-01-01/the-melbourne-mail-2nd-of-may-2026/713786","scope":"Zahrann top rating 115"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2025-10-06/talking-points-saturday-4th-of-october-2025/701524","scope":"Land Legend 115; Royal Supremacy 113 at that date"},
-    {"url":"https://www.racingandsports.com.au/news/racing/news/2025-03-27/a-closer-look-australian-cup/685283","scope":"Middle Earth 119"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2025-09-29/talking-points-26th-27th-of-september-2025/700996","scope":"Treasurethe Moment explicitly described as 124 rated on the RAS scale"},
-    {"url":"https://www.racingandsports.com.au/news/racing/insight-analysis/0001-01-01/talking-points-12th-of-september-2026/721405","scope":"Shockletz explicitly rated 113 on the RAS scale for Group 3 Archer Stakes; article separately identifies Timeform 109"},
-    {"url":"https://www.racingandsports.com.au/news/racing/previews/2026-01-15/the-melbourne-mail-flemington-17th-of-january-2026/707663","scope":"Saint George explicitly ran RAS 113 at Cranbourne; article identifies it as his best Australian rating and equal to his Group 3 Newmarket placing"},
-    {"url":"https://www.vrc.com.au/latest-news/melbourne-cup-what-it-takes-to-win/","scope":"Racing & Sports-authored analysis explicitly identifies Vauban peak rating 122"},
-    {"url":"https://www.vrc.com.au/inside-run/lexus-melbourne-cup-day-2024/news/lexus-melbourne-cup-final-field/","scope":"Racing And Sports-authored 2024 Cup field: Knight's Choice 112; Okita Soushi 114; Onesmoothoperator 116; Athabascan 113; Vauban 122"},
-    {"url":"https://www.vrc.com.au/latest-news/the-24-runners-in-this-years-lexus-melbourne-cup/","scope":"Racing And Sports-authored 2025 Cup field: Valiant King 116; Torranzino 112; Changingoftheguard 118; Athabascan 112; River Of Stars 118; Royal Supremacy 114"}
+  "snapshotDate": "2026-09-26",
+  "ratingScale": "Racing And Sports",
+  "metric": "best verified published RAS rating",
+  "policy": "Only figures explicitly supported by Racing And Sports evidence are stored. Where an article explicitly states a career/peak rating that is used. Otherwise an explicitly labelled Racing & Sports Rating is retained as a verified published RAS value and may establish a lower bound for the horse's public best. Racing And Sports-authored material published by an official racing body is acceptable. Timeform figures, unlabeled form-guide numbers, RSSR and inferred values are never substituted.",
+  "sources": [
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-02/melbourne-cup-rating-the-internationals/720667",
+      "scope": "All 23 international nominees peak RAS ratings as published 2 Sep 2026"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/ratings-analysis",
+      "scope": "Racing & Sports Ratings And Analysis page explicitly lists Aethelwulf 103 for Newcastle R6 2300m on 18 Sep 2026; Knight's Choice 116, Campaldino 110, Deakin 110 and Zahrann 112 for Caulfield on 19 Sep 2026. Each is retained as a verified published RAS value/lower bound unless a higher verified peak is held."
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-07-21/talking-points-20th-of-july-2026/718490",
+      "scope": "Trustyourinstinct Curragh Cup career-peak RAS 118; supersedes stale 117 summary value"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-03-23/talking-points-21st-of-march-2026/711437",
+      "scope": "Aeliana peak 123"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2025-10-11/talking-points-flemington-carnival-2025/704138",
+      "scope": "Half Yours Melbourne Cup peak 122"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-05-25/talking-points-23rd-of-may-2026/715300",
+      "scope": "Birdman peak 124"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-05-18/talking-points-saturday-16th-of-may-2026/714873",
+      "scope": "Zakouma peak 109"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-04-07/talking-points-saturday-4th-of-april-2026/712365",
+      "scope": "Green Spaces 116"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-03-26/real-punters-play-here-australian-cup/711607",
+      "scope": "Light Infantry Man career peak 122"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/previews/2026-03-26/the-melbourne-mail-flemington-28th-of-march-2026/711608",
+      "scope": "Litzdeel 108"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-04-13/talking-points-saturday-11th-of-april-2026/712714",
+      "scope": "She's A Hustler prior peak 116"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-07-21/talking-points-20th-of-july-2026/718490",
+      "scope": "King Pedro peak 110"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/0001-01-01/talking-points-saturday-11th-of-april-2026/712714",
+      "scope": "Ohope Wins peak 111"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/previews/0001-01-01/the-melbourne-mail-2nd-of-may-2026/713786",
+      "scope": "Zahrann top rating 115"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2025-10-06/talking-points-saturday-4th-of-october-2025/701524",
+      "scope": "Land Legend 115; Royal Supremacy 113 at that date"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/news/2025-03-27/a-closer-look-australian-cup/685283",
+      "scope": "Middle Earth 119"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2025-09-29/talking-points-26th-27th-of-september-2025/700996",
+      "scope": "Treasurethe Moment explicitly described as 124 rated on the RAS scale"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/0001-01-01/talking-points-12th-of-september-2026/721405",
+      "scope": "Shockletz explicitly rated 113 on the RAS scale for Group 3 Archer Stakes; article separately identifies Timeform 109"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/previews/2026-01-15/the-melbourne-mail-flemington-17th-of-january-2026/707663",
+      "scope": "Saint George explicitly ran RAS 113 at Cranbourne; article identifies it as his best Australian rating and equal to his Group 3 Newmarket placing"
+    },
+    {
+      "url": "https://www.vrc.com.au/latest-news/melbourne-cup-what-it-takes-to-win/",
+      "scope": "Racing & Sports-authored analysis explicitly identifies Vauban peak rating 122"
+    },
+    {
+      "url": "https://www.vrc.com.au/inside-run/lexus-melbourne-cup-day-2024/news/lexus-melbourne-cup-final-field/",
+      "scope": "Racing And Sports-authored 2024 Cup field: Knight's Choice 112; Okita Soushi 114; Onesmoothoperator 116; Athabascan 113; Vauban 122"
+    },
+    {
+      "url": "https://www.vrc.com.au/latest-news/the-24-runners-in-this-years-lexus-melbourne-cup/",
+      "scope": "Racing And Sports-authored 2025 Cup field: Valiant King 116; Torranzino 112; Changingoftheguard 118; Athabascan 112; River Of Stars 118; Royal Supremacy 114"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/ratings-analysis",
+      "scope": "Pinhole 99, Rosehill R4 1900m, 26 Sep 2026; explicitly published on Racing & Sports Ratings And Analysis."
+    }
   ],
-  "ratings":{"Half Yours":122,"Aeliana":123,"Christmas Day":123,"Defiantly":121,"Pierre Bonnard":120,"Enfjaar":119,"Causeway":118,"Hopewell Rock":117,"Stinger Glass":117,"Trustyourinstinct":118,"Wine Dark Sea":117,"Starford":116,"Tawny Port":116,"Goodie Two Shoes":114,"James J Braddock":114,"Small Fry":113,"Constitution Hill":111,"Omni Man":111,"Kizlyar":109,"Amelia Earhart":108,"Highwayman":107,"Nil Bua Gan Dua":108,"Piazza San Marco":104,"Winday":88,"Zakouma":109,"Birdman":124,"Middle Earth":119,"Zahrann":115,"Land Legend":115,"King Pedro":110,"Ohope Wins":111,"Green Spaces":116,"Light Infantry Man":122,"Litzdeel":108,"She's A Hustler":116,"Royal Supremacy":114,"Vauban":122,"Athabascan":113,"Changingoftheguard":118,"River Of Stars":118,"Knight's Choice":116,"Okita Soushi":114,"Onesmoothoperator":116,"Valiant King":116,"Torranzino":112,"Treasurethe Moment":124,"Shockletz":113,"Saint George":113,"Aethelwulf":103,"Campaldino":110,"Deakin":110},
-  "quarantined_not_ras":{"Sapphire Siren":{"value":60.0,"system":"RSSR","reason":"Result-page RSSR field retained separately"}}
+  "ratings": {
+    "Half Yours": 122,
+    "Aeliana": 123,
+    "Christmas Day": 123,
+    "Defiantly": 121,
+    "Pierre Bonnard": 120,
+    "Enfjaar": 119,
+    "Causeway": 118,
+    "Hopewell Rock": 117,
+    "Stinger Glass": 117,
+    "Trustyourinstinct": 118,
+    "Wine Dark Sea": 117,
+    "Starford": 116,
+    "Tawny Port": 116,
+    "Goodie Two Shoes": 114,
+    "James J Braddock": 114,
+    "Small Fry": 113,
+    "Constitution Hill": 111,
+    "Omni Man": 111,
+    "Kizlyar": 109,
+    "Amelia Earhart": 108,
+    "Highwayman": 107,
+    "Nil Bua Gan Dua": 108,
+    "Piazza San Marco": 104,
+    "Winday": 88,
+    "Zakouma": 109,
+    "Birdman": 124,
+    "Middle Earth": 119,
+    "Zahrann": 115,
+    "Land Legend": 115,
+    "King Pedro": 110,
+    "Ohope Wins": 111,
+    "Green Spaces": 116,
+    "Light Infantry Man": 122,
+    "Litzdeel": 108,
+    "She's A Hustler": 116,
+    "Royal Supremacy": 114,
+    "Vauban": 122,
+    "Athabascan": 113,
+    "Changingoftheguard": 118,
+    "River Of Stars": 118,
+    "Knight's Choice": 116,
+    "Okita Soushi": 114,
+    "Onesmoothoperator": 116,
+    "Valiant King": 116,
+    "Torranzino": 112,
+    "Treasurethe Moment": 124,
+    "Shockletz": 113,
+    "Saint George": 113,
+    "Aethelwulf": 103,
+    "Campaldino": 110,
+    "Deakin": 110,
+    "Pinhole": 99
+  },
+  "quarantined_not_ras": {
+    "Sapphire Siren": {
+      "value": 60,
+      "system": "RSSR",
+      "reason": "Result-page RSSR field retained separately"
+    }
+  }
 }
