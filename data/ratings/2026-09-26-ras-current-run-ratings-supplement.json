@@ -1,9 +1,34 @@
 {
-  "snapshotDate":"2026-09-26",
-  "ratingScale":"Racing And Sports",
-  "metric":"explicitly published current-run RAS rating",
-  "policy":"Individual-run rating only; do not infer or automatically promote to career peak.",
-  "source":{"publisher":"Racing & Sports","url":"https://www.racingandsports.com.au/news/ratings-analysis","verifiedOn":"2026-09-26"},
-  "runs":[{"horse":"Pinhole","date":"2026-09-26","track":"Rosehill","race":4,"distanceM":1900,"rasRating":99}],
-  "quarantine":{"enhancedForm":"Unlabelled numeric enhanced-form columns are not treated as R&S ratings."}
+  "snapshotDate": "2026-09-26",
+  "ratingScale": "Racing And Sports",
+  "metric": "explicitly published current-run RAS rating",
+  "policy": "Individual-run rating only; do not infer or automatically promote to career peak.",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/ratings-analysis",
+    "verifiedOn": "2026-09-26"
+  },
+  "runs": [
+    {
+      "horse": "Pinhole",
+      "date": "2026-09-26",
+      "track": "Rosehill",
+      "race": 4,
+      "distanceM": 1900,
+      "rasRating": 99,
+      "finish": 1,
+      "carriedWeightKg": 57,
+      "jockey": "Damian Lane",
+      "trackCondition": "Good (4)",
+      "raceClass": "BM88",
+      "ratingSource": "https://www.racingandsports.com.au/news/ratings-analysis"
+    }
+  ],
+  "quarantine": {
+    "enhancedForm": "Unlabelled numeric enhanced-form columns are not treated as R&S ratings."
+  },
+  "provenance": {
+    "verifiedOn": "2026-09-27",
+    "note": "Racing & Sports explicitly lists Pinhole 99 for Rosehill R4 1900m on 26 Sep 2026; race evidence confirms the win and 57kg carried. Timeform remains separate."
+  }
 }
