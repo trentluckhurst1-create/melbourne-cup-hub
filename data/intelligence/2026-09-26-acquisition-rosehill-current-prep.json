@@ -1,0 +1,48 @@
+{
+  "snapshotDate": "2026-09-26",
+  "source": "Racing & Sports",
+  "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-25/weekend-racing-preview-with-chris-scholtz-september-2627/722063",
+  "verifiedOn": "2026-09-26",
+  "policy": "Current-preparation evidence only. Do not convert selections, preview language or unlabelled figures into ratings.",
+  "horses": [
+    {
+      "horse": "Bella Montagna",
+      "evidence": {
+        "date": "2026-09-26",
+        "meeting": "Rosehill",
+        "race": 3,
+        "entryNumber": 2,
+        "status": "DECLARED_IN_WEEKEND_PREVIEW"
+      },
+      "notes": "Listed by Racing & Sports among Rosehill Saturday selections. Result not yet acquired in this snapshot; no rating inferred."
+    },
+    {
+      "horse": "So You Are",
+      "evidence": {
+        "date": "2026-09-26",
+        "meeting": "Rosehill",
+        "race": 3,
+        "entryNumber": 1,
+        "status": "DECLARED_IN_WEEKEND_PREVIEW"
+      },
+      "notes": "Listed by Racing & Sports among Rosehill Saturday selections. Result not yet acquired in this snapshot; no rating inferred."
+    },
+    {
+      "horse": "Pinhole",
+      "evidence": {
+        "date": "2026-09-26",
+        "meeting": "Rosehill",
+        "race": 4,
+        "entryNumber": 6,
+        "status": "DECLARED_AND_BLACKBOOK_RUNNER"
+      },
+      "notes": "Listed by Racing & Sports in Rosehill Race 4 selections and Blackbook runners. Result not yet acquired in this snapshot; no rating inferred."
+    }
+  ],
+  "quarantined": [
+    {
+      "field": "rating",
+      "reason": "Source contains qualitative preview/selection commentary but no explicitly labelled numeric Racing & Sports rating for these nominees."
+    }
+  ]
+}
