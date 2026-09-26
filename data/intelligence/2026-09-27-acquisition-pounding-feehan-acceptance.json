@@ -1,0 +1,24 @@
+{
+  "snapshotDate": "2026-09-27",
+  "horse": "Pounding",
+  "acquisitionType": "CURRENT_PREPARATION_ACCEPTANCE",
+  "evidence": [
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-09-27",
+      "verifiedOn": "2026-09-27",
+      "facts": {
+        "meeting": "Caulfield",
+        "date": "2026-09-27",
+        "race": "Ladbrokes Feehan Stakes",
+        "distanceM": 1600,
+        "listedInCurrentField": true
+      }
+    }
+  ],
+  "governance": {
+    "identity": "MATCHED_TO_EXISTING_101_NOMINEE",
+    "ratings": "NO_RAS_NUMERIC_RATING_INFERRED",
+    "note": "Current public field evidence only. Market price is transient and is not promoted into horse identity/form history."
+  }
+}
