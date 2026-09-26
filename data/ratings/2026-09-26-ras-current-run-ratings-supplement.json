@@ -1,0 +1,9 @@
+{
+  "snapshotDate":"2026-09-26",
+  "ratingScale":"Racing And Sports",
+  "metric":"explicitly published current-run RAS rating",
+  "policy":"Individual-run rating only; do not infer or automatically promote to career peak.",
+  "source":{"publisher":"Racing & Sports","url":"https://www.racingandsports.com.au/news/ratings-analysis","verifiedOn":"2026-09-26"},
+  "runs":[{"horse":"Pinhole","date":"2026-09-26","track":"Rosehill","race":4,"distanceM":1900,"rasRating":99}],
+  "quarantine":{"enhancedForm":"Unlabelled numeric enhanced-form columns are not treated as R&S ratings."}
+}
