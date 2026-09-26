@@ -1,0 +1,31 @@
+{
+  "snapshotDate": "2026-09-27",
+  "scope": "First-shipment international Melbourne Cup nominees: pre-export quarantine status rechecked on scheduled travel date",
+  "source": {
+    "publisher": "Racing.com",
+    "url": "https://www.racing.com/news/2026/09/13/news-international-caulfield-cup-horses-enter-quarantine",
+    "publishedDate": "2026-09-13",
+    "verifiedDate": "2026-09-27"
+  },
+  "policy": "Preserve only explicitly published campaign/travel facts. The source says the seven were scheduled to fly to Melbourne on 27 September after final quarantine veterinary examination; absence of a fresh public arrival confirmation is not treated as proof that they travelled. No rating is inferred.",
+  "horses": [
+    "Wine Dark Sea",
+    "Enfjaar",
+    "Point Of Law",
+    "Starford",
+    "Omni Man",
+    "Small Fry",
+    "Kizlyar"
+  ],
+  "verifiedFacts": {
+    "preExportQuarantineEntered": "2026-09-12",
+    "scheduledMelbourneFlightDate": "2026-09-27",
+    "veterinaryProtocolAtPublishedSource": "Compulsory distal-limb scan and two physical examinations passed; final examination in quarantine still required before travel."
+  },
+  "currentStatusAtVerification": "SCHEDULED_TO_TRAVEL_2026-09-27_ARRIVAL_NOT_YET_PUBLICLY_CONFIRMED",
+  "ratingFieldsAdded": 0,
+  "quarantine": [
+    "Do not promote scheduled flight to ARRIVED/TRAVELLED until a dated public source confirms departure or arrival.",
+    "Do not infer any R&S, Timeform, official or other rating from travel/campaign reporting."
+  ]
+}
