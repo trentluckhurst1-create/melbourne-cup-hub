@@ -60,9 +60,9 @@
       "pct": 76.24
     },
     "rasPublicRating": {
-      "count": 51,
+      "count": 52,
       "total": 101,
-      "pct": 50.5
+      "pct": 51.49
     },
     "marketObserved": {
       "count": 100,
@@ -155,7 +155,6 @@
       "Nearco Frod",
       "Newlook",
       "Piggyback",
-      "Pinhole",
       "Point Of Law",
       "Portland",
       "Pounding",
@@ -1481,7 +1480,7 @@
       "silkStatus": "exact",
       "silkPresent": true,
       "silkExact": true,
-      "rasPublicRating": false,
+      "rasPublicRating": true,
       "marketObserved": true
     },
     {
