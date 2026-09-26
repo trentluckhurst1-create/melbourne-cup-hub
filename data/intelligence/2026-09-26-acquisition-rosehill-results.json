@@ -1,0 +1,14 @@
+{
+  "snapshotDate":"2026-09-26",
+  "source":"Racing & Sports",
+  "policy":"Verified race-result facts only; no missing rating inferred.",
+  "results":[
+    {"horse":"So You Are","date":"2026-09-26","track":"Rosehill","race":"Asahi Super Dry Colin Stephen Quality","class":"Group 3","distanceM":2400,"finish":1,"carriedWeightKg":58.5,"jockey":"Rachel King","winningTime":"2:28.95","winningMargin":"half-neck","cupContext":"Melbourne Cups campaign remains alive"},
+    {"horse":"Bella Montagna","date":"2026-09-26","track":"Rosehill","race":"Asahi Super Dry Colin Stephen Quality","class":"Group 3","distanceM":2400,"finish":3,"carriedWeightKg":53,"jockey":"Tim Clark"}
+  ],
+  "evidenceUrls":[
+    "https://www.racingandsports.com.au/news/racing/news/0001-01-01/so-you-are-wins-group-3-asahi-super-dry-colin-stephen-quality-post-race-trainer-and-jockey-quotes/722103",
+    "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/rosehill/2026-09-26/race-fields"
+  ],
+  "ratings":{"status":"NOT_INFERRED"}
+}
