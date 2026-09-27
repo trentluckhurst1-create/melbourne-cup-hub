@@ -14,6 +14,11 @@
       "horse": "Hopewell Rock",
       "status": "CAPTURED_EBOR_FORM_WEIGHT_MARGIN_PEDIGREE_AND_RATING_QUARANTINE",
       "data": "data/intelligence/2026-09-27-acquisition-hopewell-rock-ebor.json"
+    },
+    {
+      "horse": "James J Braddock",
+      "status": "CAPTURED_FRESH_JOCKEY_CAMPAIGN_STAKES_AND_LATEST_RUN_CONTEXT",
+      "data": "data/intelligence/2026-09-27-acquisition-james-j-braddock-campaign.json"
     }
   ],
   "remainingStatus": "IN_PROGRESS",
