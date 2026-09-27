@@ -1,0 +1,83 @@
+{
+  "snapshotDate": "2026-09-28",
+  "horse": "Royal Supremacy",
+  "identity": {
+    "country": "IRE",
+    "yearFoaled": 2021,
+    "sex": "gelding",
+    "sire": "Make Believe (GB)",
+    "dam": "Adelasia (IRE)",
+    "trainer": "Ciaron Maher",
+    "identityStatus": "VERIFIED"
+  },
+  "latestRun": {
+    "date": "2026-09-27",
+    "track": "Caulfield",
+    "race": "Drummond Golf JRA Cup",
+    "class": "Group 3",
+    "distanceM": 2000,
+    "surface": "Turf",
+    "going": "Good 4",
+    "finish": 1,
+    "carriedWeightKg": 60.0,
+    "barrier": 4,
+    "jockey": "Mark Zahra",
+    "startingPrice": 4.8,
+    "winningTime": "2:04.36",
+    "winningMarginL": 0.8,
+    "prizemoneyAUD": 200000
+  },
+  "stakesContext": {
+    "verifiedStatements": [
+      "Royal Supremacy won the 2026 Group 3 JRA Cup carrying top weight of 60kg.",
+      "The winner defeated Future History by 0.8L; See That Storm was third 3.8L from the winner.",
+      "Trainer Ciaron Maher said the horse has good 2400m form and will improve from this run.",
+      "The source identifies Royal Supremacy as a prior Metropolitan Handicap winner."
+    ]
+  },
+  "publicCareerSnapshot": {
+    "starts": 20,
+    "wins": 6,
+    "seconds": 3,
+    "thirds": 4,
+    "prizemoneyAUD": 1998212,
+    "bestHcpRating": 108,
+    "good": "5:2-1-0",
+    "soft": "11:1-2-3",
+    "heavy": "2:2-0-0",
+    "firstUp": "4:1-0-1",
+    "secondUp": "4:0-1-1",
+    "group1": "3:1-0-0",
+    "group2": "3:1-1-1",
+    "group3BeforeLatestRun": "5:0-2-2",
+    "note": "Snapshot exposed on Wilde Racing race-detail page before/at the JRA Cup. Do not silently recompute stored career aggregates from this page; latest G3 win may require post-race refresh."
+  },
+  "ratingsPolicy": {
+    "explicitRacingAndSportsRatingCaptured": false,
+    "bestHcpRating": 108,
+    "bestHcpRatingSystem": "public race-detail HCP field; not promoted to Racing & Sports rating",
+    "timeform": "SEPARATE_NOT_CAPTURED",
+    "note": "No unlabeled neural/form numeric is promoted to an R&S rating."
+  },
+  "evidence": [
+    {
+      "url": "https://www.racingandsports.com.au/horse-racing-results/australia/caulfield/2026-09-27/R3",
+      "publisher": "Racing and Sports",
+      "supports": ["result", "margin", "carried weight", "jockey", "trainer", "surface", "going", "class"]
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-27/royal-supremacy-wins-group-3-drummond-golf-jra-cup-post-race-trainer-and-jockey-quotes/722152",
+      "publisher": "Racing and Sports",
+      "supports": ["result", "winning time", "stakes context", "trainer comments", "pedigree"]
+    },
+    {
+      "url": "https://wilderacing.com.au/racing-detail/26270080271/119426/A/",
+      "publisher": "Wilde Racing",
+      "supports": ["public career snapshot", "going splits", "class record", "prior runs", "best HCP rating"]
+    }
+  ],
+  "quarantine": [
+    "Racing & Sports neurals contain numeric fields whose labels are not sufficiently explicit in the indexed output; none are promoted as an R&S horse rating.",
+    "Career aggregate is retained as a dated public snapshot and not treated as automatically post-race updated."
+  ]
+}
