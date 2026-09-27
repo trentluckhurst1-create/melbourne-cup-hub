@@ -1,5 +1,5 @@
 {
-  "snapshotDate": "2026-09-27",
+  "snapshotDate": "2026-09-28",
   "universe": 101,
   "baseLedger": "data/audit/2026-09-17-career-acquisition-ledger.json",
   "baseLedgerState": {
@@ -11,24 +11,9 @@
   },
   "thisRun": [
     {
-      "horse": "Hopewell Rock",
-      "status": "CAPTURED_EBOR_FORM_WEIGHT_MARGIN_PEDIGREE_AND_RATING_QUARANTINE",
-      "data": "data/intelligence/2026-09-27-acquisition-hopewell-rock-ebor.json"
-    },
-    {
-      "horse": "James J Braddock",
-      "status": "CAPTURED_FRESH_JOCKEY_CAMPAIGN_STAKES_AND_LATEST_RUN_CONTEXT",
-      "data": "data/intelligence/2026-09-27-acquisition-james-j-braddock-campaign.json"
-    },
-    {
-      "horse": "Pinhole",
-      "status": "CAPTURED_FRESH_ROSEHILL_WIN_IDENTITY_PEDIGREE_CARRIED_WEIGHT_AND_EXPLICIT_RUN_RAS_RATING",
-      "data": "data/intelligence/2026-09-27-acquisition-pinhole-rosehill.json"
-    },
-    {
-      "horse": "Half Yours / Shockletz / Sons And Lovers",
-      "status": "CAPTURED_PRIMARY_RV_HANDICAPPER_CONTEXT_AND_SONS_AND_LOVERS_RECENT_CARRIED_WEIGHT_STAYING_EVIDENCE",
-      "data": "data/intelligence/2026-09-27-rv-cup-handicap-context.json"
+      "horse": "Royal Supremacy",
+      "status": "CAPTURED_FRESH_JRA_CUP_G3_WIN_IDENTITY_PEDIGREE_CARRIED_WEIGHT_MARGIN_GOING_AND_PUBLIC_CAREER_CONTEXT",
+      "data": "data/intelligence/2026-09-28-acquisition-royal-supremacy-jra-cup.json"
     }
   ],
   "remainingStatus": "IN_PROGRESS",
