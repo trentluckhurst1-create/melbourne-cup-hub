@@ -19,6 +19,11 @@
       "horse": "James J Braddock",
       "status": "CAPTURED_FRESH_JOCKEY_CAMPAIGN_STAKES_AND_LATEST_RUN_CONTEXT",
       "data": "data/intelligence/2026-09-27-acquisition-james-j-braddock-campaign.json"
+    },
+    {
+      "horse": "Pinhole",
+      "status": "CAPTURED_FRESH_ROSEHILL_WIN_IDENTITY_PEDIGREE_CARRIED_WEIGHT_AND_EXPLICIT_RUN_RAS_RATING",
+      "data": "data/intelligence/2026-09-27-acquisition-pinhole-rosehill.json"
     }
   ],
   "remainingStatus": "IN_PROGRESS",
