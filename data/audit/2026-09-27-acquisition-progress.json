@@ -11,6 +11,16 @@
   },
   "thisRun": [
     {
+      "horse": "Pounding",
+      "status": "CAPTURED_FRESH_FEEHAN_G2_RESULT_WITH_CARRIED_WEIGHT_GOING_MARGIN_AND_CONNECTIONS",
+      "data": "data/intelligence/2026-09-28-acquisition-pounding-feehan-result.json"
+    },
+    {
+      "horse": "Royal Supremacy",
+      "status": "CAPTURED_FRESH_JRA_CUP_WIN_IDENTITY_PEDIGREE_CARRIED_WEIGHT_GOING_STAKES_AND_CAREER_SNAPSHOT",
+      "data": "data/intelligence/2026-09-28-acquisition-royal-supremacy-jra-cup.json"
+    },
+    {
       "horse": "Torranzino / Land Legend",
       "status": "CAPTURED_FRESH_JRA_CUP_RESULT_IDENTITY_PEDIGREE_CARRIED_WEIGHT_AND_GOING_EVIDENCE",
       "data": "data/intelligence/2026-09-28-acquisition-jra-cup-torranzino-land-legend.json"
