@@ -1,0 +1,42 @@
+{
+  "snapshotDate": "2026-09-28",
+  "horse": "Pounding",
+  "acquisitionType": "CURRENT_PREP_RESULT",
+  "status": "VERIFIED_PUBLIC_EVIDENCE",
+  "event": {
+    "date": "2026-09-27",
+    "track": "Caulfield",
+    "race": "Ladbrokes Feehan Stakes",
+    "class": "Group 2",
+    "distanceM": 1600,
+    "going": "Good 4",
+    "carriedWeightKg": 59,
+    "finish": 3,
+    "marginFromWinnerLengths": 3.25,
+    "jockey": "Luke Nolen",
+    "trainer": "Peter Moody & Katherine Coleman"
+  },
+  "evidence": [
+    {
+      "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/caulfield/2026-09-27/race-fields",
+      "supports": [
+        "field",
+        "class",
+        "distance",
+        "going",
+        "carried weight",
+        "jockey",
+        "trainer"
+      ]
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-27/pride-of-jenni-wins-group-2-ladbrokes-feehan-stakes-post-race-trainer-and-jockey-quotes/722156",
+      "supports": [
+        "finish",
+        "race result",
+        "margins"
+      ]
+    }
+  ],
+  "provenanceNote": "Margin from winner is arithmetic from published margins 1.5L winner-to-second plus 1.75L second-to-third; retained as derived public-result context, not a published rating. No R&S rating or Timeform figure inferred."
+}
