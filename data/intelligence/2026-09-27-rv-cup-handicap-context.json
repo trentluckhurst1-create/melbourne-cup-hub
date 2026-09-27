@@ -1,0 +1,12 @@
+{
+  "snapshotDate": "2026-09-27",
+  "sourceUrl": "https://www.racingvictoria.com.au/news/2026/09/17/caulfield-and-melbourne-cup-weights",
+  "publisher": "Racing Victoria",
+  "verifiedOn": "2026-09-27",
+  "horses": {
+    "Half Yours": {"cupKg":59.0,"context":"2025 Cup winner; 2026 topweight. RV says effective 4.5kg rise before the 1.5kg scale increase."},
+    "Shockletz": {"cupKg":51.0,"context":"Archer Stakes ballot exemption; RV says the 51kg minimum was not increased."},
+    "Sons And Lovers": {"latestCarriedKg":63.5,"latestDistanceM":2414,"latestResult":"2nd","latestTrack":"Leopardstown","stakes":"Group 2 wins at 2800m and 3000m"}
+  },
+  "ratingPolicy": "No R&S or Timeform rating inferred from this source."
+}
