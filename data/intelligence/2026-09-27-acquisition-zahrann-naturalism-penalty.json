@@ -1,0 +1,30 @@
+{
+  "snapshotDate": "2026-09-27",
+  "horse": "Zahrann",
+  "identityStatus": "CERTIFIED_EXISTING_HUB_IDENTITY",
+  "acquisitionType": "OFFICIAL_HANDICAP_AND_CURRENT_PREP_UPDATE",
+  "verified": {
+    "latestRelevantRun": {
+      "race": "Naturalism Stakes",
+      "grade": "Group 3",
+      "distanceM": 2000,
+      "result": "1st",
+      "date": "2026-09-19"
+    },
+    "melbourneCupPenaltyKg": 0.5,
+    "melbourneCupWeightAfterPenaltyKg": 54.5,
+    "melbourneCupOrderOfEntryAfterPenalty": 38,
+    "caulfieldCupWeightAfterPenaltyKg": 53.0,
+    "caulfieldCupStatus": "BALLOT_EXEMPT"
+  },
+  "source": {
+    "publisher": "Racing.com",
+    "title": "Zahrann cops Melbourne Cup penalty",
+    "published": "2026-09-21",
+    "url": "https://www.racing.com/news/2026/09/21/news-contenders-zahrann-cops-cups-penalty"
+  },
+  "governance": {
+    "ratingPromotion": "NONE",
+    "note": "No R&S or Timeform figure is promoted from this source. This acquisition records only explicitly published race, penalty, Cup weight/order and ballot-status facts."
+  }
+}
