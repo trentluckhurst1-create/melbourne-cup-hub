@@ -1,0 +1,40 @@
+{
+  "snapshotDate": "2026-09-27",
+  "horse": "Hopewell Rock",
+  "identity": {
+    "country": "IRE",
+    "trainer": "George Boughey",
+    "sire": "New Bay",
+    "dam": "Tidewalker",
+    "status": "IDENTITY_SAFE"
+  },
+  "evidence": [
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/news/international/uk-ire-and-europe/0001-01-01/i-think-its-tailormade-for-him-hopewell-rock-set-for-melbourne-cup-challenge-after-ebor-effort/720143",
+      "scope": "2026 Ebor Handicap at York",
+      "facts": {
+        "race": "Ebor Handicap",
+        "track": "York",
+        "distanceM": 2787,
+        "going": "Good Soft",
+        "finish": "2nd",
+        "margin": "head",
+        "weightCarriedLb": 133,
+        "jockey": "Callum Rodriguez",
+        "trainer": "George Boughey",
+        "sire": "New Bay",
+        "dam": "Tidewalker",
+        "campaign": "Melbourne Cup remains intended target; Ebor second satisfies the cited qualification clause"
+      },
+      "ratingPolicy": "Article states 106 in qualification context, but does not explicitly label it as a Racing & Sports rating. It is not promoted to the R&S ratings ledger."
+    }
+  ],
+  "quarantine": [
+    {
+      "field": "rating",
+      "value": 106,
+      "reason": "Numeric rating mentioned without explicit R&S label; preserve as contextual evidence only and do not substitute into R&S/Timeform/official rating fields."
+    }
+  ]
+}
