@@ -11,9 +11,9 @@
   },
   "thisRun": [
     {
-      "horse": "Royal Supremacy",
-      "status": "CAPTURED_FRESH_JRA_CUP_G3_WIN_IDENTITY_PEDIGREE_CARRIED_WEIGHT_MARGIN_GOING_AND_PUBLIC_CAREER_CONTEXT",
-      "data": "data/intelligence/2026-09-28-acquisition-royal-supremacy-jra-cup.json"
+      "horse": "Torranzino / Land Legend",
+      "status": "CAPTURED_FRESH_JRA_CUP_RESULT_IDENTITY_PEDIGREE_CARRIED_WEIGHT_AND_GOING_EVIDENCE",
+      "data": "data/intelligence/2026-09-28-acquisition-jra-cup-torranzino-land-legend.json"
     }
   ],
   "remainingStatus": "IN_PROGRESS",
