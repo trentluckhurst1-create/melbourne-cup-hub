@@ -1,0 +1,51 @@
+{
+  "snapshotDate": "2026-09-28",
+  "horses": [
+    {
+      "horse": "Torranzino",
+      "latestRun": {
+        "date": "2026-09-27",
+        "track": "Caulfield",
+        "race": "Drummond Golf JRA Cup",
+        "class": "Group 3",
+        "distanceM": 2000,
+        "surface": "Turf",
+        "going": "Good 4",
+        "finish": 10,
+        "carriedWeightKg": 56.5,
+        "jockey": "Celine Gaudray",
+        "startingPrice": 61
+      },
+      "identity": {
+        "country": "NZ",
+        "sire": "Tarzino (NZ)",
+        "dam": "Goldilicious (NZ)",
+        "trainer": "Paul Preusker"
+      }
+    },
+    {
+      "horse": "Land Legend",
+      "latestRun": {
+        "date": "2026-09-27",
+        "track": "Caulfield",
+        "race": "Drummond Golf JRA Cup",
+        "class": "Group 3",
+        "distanceM": 2000,
+        "surface": "Turf",
+        "going": "Good 4",
+        "finish": 11,
+        "carriedWeightKg": 56.5,
+        "jockey": "Ethan Brown",
+        "startingPrice": 12
+      },
+      "identity": {
+        "country": "FR",
+        "sire": "Galileo (IRE)",
+        "dam": "Landikusic (IRE)",
+        "trainer": "Ciaron Maher"
+      }
+    }
+  ],
+  "ratingsPolicy": "No unlabelled numeric field promoted to Racing and Sports rating.",
+  "source": "Racing and Sports, Caulfield 27 Sep 2026 JRA Cup result and post-race report"
+}
