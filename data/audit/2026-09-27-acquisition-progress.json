@@ -1,0 +1,21 @@
+{
+  "snapshotDate": "2026-09-27",
+  "universe": 101,
+  "baseLedger": "data/audit/2026-09-17-career-acquisition-ledger.json",
+  "baseLedgerState": {
+    "all101AccountedForAtAcquisitionLevel": true,
+    "all101CareerIntegrityPass": true,
+    "all101OriginalOfficialCupWeightsVerified": true,
+    "all101FullyVerifiedForPublication": false,
+    "racingAndSportsVerifiedPublicRatings": 51
+  },
+  "thisRun": [
+    {
+      "horse": "Hopewell Rock",
+      "status": "CAPTURED_EBOR_FORM_WEIGHT_MARGIN_PEDIGREE_AND_RATING_QUARANTINE",
+      "data": "data/intelligence/2026-09-27-acquisition-hopewell-rock-ebor.json"
+    }
+  ],
+  "remainingStatus": "IN_PROGRESS",
+  "notifyUser": false
+}
