@@ -24,6 +24,11 @@
       "horse": "Pinhole",
       "status": "CAPTURED_FRESH_ROSEHILL_WIN_IDENTITY_PEDIGREE_CARRIED_WEIGHT_AND_EXPLICIT_RUN_RAS_RATING",
       "data": "data/intelligence/2026-09-27-acquisition-pinhole-rosehill.json"
+    },
+    {
+      "horse": "Half Yours / Shockletz / Sons And Lovers",
+      "status": "CAPTURED_PRIMARY_RV_HANDICAPPER_CONTEXT_AND_SONS_AND_LOVERS_RECENT_CARRIED_WEIGHT_STAYING_EVIDENCE",
+      "data": "data/intelligence/2026-09-27-rv-cup-handicap-context.json"
     }
   ],
   "remainingStatus": "IN_PROGRESS",
