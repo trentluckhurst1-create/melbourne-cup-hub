@@ -1,0 +1,23 @@
+{
+  "snapshotDate": "2026-09-27",
+  "horse": "James J Braddock",
+  "identity": {
+    "trainer": "Joseph O'Brien",
+    "status": "IDENTITY_SAFE"
+  },
+  "evidence": [
+    {
+      "source": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/news/international/uk-ire-and-europe/2026-09-21/craig-williams-booked-for-james-j-braddock-melbourne-cup-mount/721788",
+      "verifiedOn": "2026-09-27",
+      "facts": {
+        "jockeyBooked": "Craig Williams",
+        "melbourneCupProgrammed": true,
+        "derbyPerformance": "3rd, Group 1 Betfred Derby",
+        "latestRun": "6th, Group 3 Kilternan Stakes at Leopardstown",
+        "latestRunMargin": "3.75 lengths"
+      }
+    }
+  ],
+  "ratingPolicy": "No numeric R&S rating is explicitly stated in this source; none is inferred."
+}
