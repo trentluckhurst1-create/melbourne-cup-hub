@@ -1,0 +1,50 @@
+{
+  "snapshotDate": "2026-09-27",
+  "horse": "Pinhole",
+  "identity": {
+    "trainer": "Chris Waller",
+    "sire": "Frankel",
+    "status": "IDENTITY_SAFE",
+    "evidence": "Racing & Sports Rosehill runner index and enhanced form both identify PINHOLE under Chris Waller; runner index places Pinhole under sire Frankel."
+  },
+  "latestRun": {
+    "date": "2026-09-26",
+    "track": "Rosehill",
+    "race": 4,
+    "raceName": "Toyota Forklifts Handicap",
+    "distanceM": 1900,
+    "raceClass": "BM88",
+    "finish": 1,
+    "carriedWeightKg": 57.0,
+    "jockey": "Damian Lane",
+    "rasRating": 99
+  },
+  "ratingPolicy": "99 is retained only as an explicitly published individual-run Racing & Sports rating. It is not promoted to a career peak or substituted for any official handicap, RSSR, WPR or Timeform figure.",
+  "evidence": [
+    {
+      "publisher": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/horse-racing-results/australia/rosehill/2026-09-26",
+      "scope": "Rosehill 26 Sep 2026 meeting/results evidence."
+    },
+    {
+      "publisher": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/rosehill/2026-09-26/runners-index",
+      "scope": "Identity/pedigree: Pinhole under Frankel; Chris Waller runner."
+    },
+    {
+      "publisher": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/rosehill/2026-09-26/R4/enhanced-form",
+      "scope": "Pre-race identity, 57kg, Damian Lane, Chris Waller and prior-run context."
+    },
+    {
+      "publisher": "Racing & Sports",
+      "url": "https://www.racingandsports.com.au/news/ratings-analysis",
+      "scope": "Explicit individual-run RAS rating 99; already preserved in data/ratings/2026-09-26-ras-current-run-ratings-supplement.json."
+    }
+  ],
+  "quarantine": [
+    "Unlabelled enhanced-form numeric columns are not treated as Racing & Sports ratings.",
+    "No career-peak R&S rating is inferred from the run rating of 99."
+  ],
+  "verifiedOn": "2026-09-27"
+}
