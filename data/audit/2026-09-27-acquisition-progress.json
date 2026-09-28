@@ -80,6 +80,26 @@
         "verifiedOn": "2026-09-28",
         "facts": "Reported for G1 Turnbull Stakes at Flemington; latest run sixth in G1 Makybe Diva Stakes on 12 Sep, 4.65L from winner; Turnbull to inform Cox Plate versus Caulfield Cup path. No numeric R&S rating inferred."
       }
+    },
+    {
+      "horse": "Wine Dark Sea / Enfjaar / Starford / Point Of Law / Omni Man / Kizlyar / Small Fry",
+      "status": "CAPTURED_FRESH_CONFIRMED_MELBOURNE_ARRIVAL_AND_CURRENT_SPRING_TARGETS",
+      "evidence": {
+        "source": "Racing.com",
+        "url": "https://www.racing.com/news/2026/09/28/news-international-raiders-arrive-in-melbourne",
+        "verifiedOn": "2026-09-28",
+        "facts": "Seven European-trained original Cup nominees arrived in Melbourne and are based at Werribee post-arrival quarantine. Report confirms current spring targets and recent stakes evidence: Wine Dark Sea G3 Geoffrey Freer winner; Enfjaar G3 Glorious Stakes winner and Caulfield Cup exemption; Starford G3 Alleged Stakes winner; Omni Man fourth G3 Ballyroan with Caulfield/Geelong Cup path; Point Of Law G3 Bahrain Trophy winner and future Ciaron Maher transfer; Kizlyar Ascot Stakes winner; Small Fry York Stayers Handicap winner with Geelong Cup path. Campaign/status evidence only; no numeric rating inferred."
+      }
+    },
+    {
+      "horse": "Zahrann / Saint George / Aethelwulf",
+      "status": "CAPTURED_OFFICIAL_HANDICAPPING_AND_ELIMINATION_STATUS_UPDATE",
+      "evidence": {
+        "source": "Racing Victoria",
+        "url": "https://www.racingvictoria.com.au/news/2026/09/21/naturalism-stakes-winner-zahrann-penalised",
+        "verifiedOn": "2026-09-28",
+        "facts": "Official RV handicapping report: Zahrann received 0.5kg Caulfield and Melbourne Cup penalty after Naturalism Stakes win; Saint George passed Caulfield Cup first elimination but remained yet to pass Melbourne Cup first elimination at publication; Aethelwulf passed Melbourne Cup first elimination after Newcastle Gold Cup win and received no weight penalty. No rating inferred."
+      }
     }
   ],
   "remainingStatus": "IN_PROGRESS",
