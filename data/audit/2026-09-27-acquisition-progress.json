@@ -44,6 +44,26 @@
         "verifiedOn": "2026-09-28",
         "facts": "Current public report says Birdman is unlikely to head to either the Caulfield Cup or Melbourne Cup despite remaining in futures markets. Treated as campaign-status reporting only; not an official withdrawal and no rating inferred."
       }
+    },
+    {
+      "horse": "Ohope Wins / Saint George / She's A Hustler / Zahrann",
+      "status": "CAPTURED_FRESH_TURNBULL_STAKES_LIKELY_FIELD_CAMPAIGN_SIGNAL",
+      "evidence": {
+        "source": "Racing.com",
+        "url": "https://www.racing.com/news/2026/09/27/new-preview-likely-fields-270926",
+        "verifiedOn": "2026-09-28",
+        "facts": "Public likely-fields report lists original Cup nominees Ohope Wins, Saint George, She's A Hustler and Zahrann among expected Turnbull Stakes runners at Flemington. Treated as current campaign-intent evidence only; not a declared field, result, rating or Cup acceptance."
+      }
+    },
+    {
+      "horse": "Knight's Choice / Onesmoothoperator / Aethelwulf",
+      "status": "CAPTURED_FRESH_BART_CUMMINGS_LIKELY_FIELD_CAMPAIGN_SIGNAL",
+      "evidence": {
+        "source": "Racing.com",
+        "url": "https://www.racing.com/news/2026/09/27/new-preview-likely-fields-270926",
+        "verifiedOn": "2026-09-28",
+        "facts": "Public likely-fields report lists Knight's Choice and Onesmoothoperator as likely Bart Cummings runners; Aethelwulf is expected to be nominated but may instead run in the G2 Metropolitan in Sydney. Campaign intent only; no result/rating inferred."
+      }
     }
   ],
   "remainingStatus": "IN_PROGRESS",
