@@ -1,0 +1,18 @@
+{
+  "snapshotDate": "2026-09-29",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "checks": [
+    {
+      "status": "FIRST_DECLARATIONS_NOT_YET_DUE",
+      "facts": "Official VRC schedule: first declarations close 12:00pm Tuesday 29 September 2026. At this acquisition check the deadline had not yet passed; no acceptance or withdrawal is inferred before official publication.",
+      "source": "https://www.vrc.com.au/latest-news/101-nominations-received-for-the-166th-lexus-melbourne-cup/"
+    },
+    {
+      "status": "RAS_RATING_QUARANTINE_PRESERVED",
+      "facts": "The VRC/Racing & Sports international article explicitly labels peak RAS ratings for the 23 international nominees. No unlabeled numeric field was promoted to an R&S rating in this check.",
+      "source": "https://www.vrc.com.au/latest-news/lexus-melbourne-cup-rating-the-internationals/"
+    }
+  ],
+  "notifyUser": false
+}
