@@ -22,8 +22,13 @@
       "status": "FIRST_DECLARATIONS_STILL_PENDING_AT_CHECK_TIME",
       "facts": "Official schedule sets first declarations for 12:00pm Tuesday 29 September 2026. This 08:07 Melbourne check precedes that deadline, so no acceptance/withdrawal is inferred.",
       "source": "https://www.vrc.com.au/latest-news/weights-announced-for-over-100-lexus-melbourne-cup-hopefuls/"
+    },
+    {
+      "status": "FIRST_DECLARATIONS_DEADLINE_REACHED_NO_OFFICIAL_ACCEPTANCE_LIST_YET",
+      "facts": "Official VRC schedule fixes first declarations at 12:00pm Tuesday 29 September 2026. A fresh public-source check after the deadline found the VRC race-program page still exposing the 17 September elimination order rather than a 29 September first-declarations list. No horse is marked accepted or withdrawn without authoritative publication.",
+      "source": "https://www.vrc.com.au/racing/race-programs-and-conditions/"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-09-29T08:07:41+10:00"
+  "checkedAt": "2026-09-29T13:18:00+10:00"
 }
