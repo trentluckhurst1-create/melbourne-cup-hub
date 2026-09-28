@@ -12,7 +12,18 @@
       "status": "RAS_RATING_QUARANTINE_PRESERVED",
       "facts": "The VRC/Racing & Sports international article explicitly labels peak RAS ratings for the 23 international nominees. No unlabeled numeric field was promoted to an R&S rating in this check.",
       "source": "https://www.vrc.com.au/latest-news/lexus-melbourne-cup-rating-the-internationals/"
+    },
+    {
+      "status": "SO_YOU_ARE_PENALTY_REVERIFIED",
+      "facts": "Official RV: So You Are received a 0.5kg Melbourne Cup penalty after the G3 Colin Stephen Quality, moving to 52.5kg and 49th in the order of entry. Royal Supremacy received no Cups penalty and remains 56kg for the Melbourne Cup. No performance rating inferred.",
+      "source": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty"
+    },
+    {
+      "status": "FIRST_DECLARATIONS_STILL_PENDING_AT_CHECK_TIME",
+      "facts": "Official schedule sets first declarations for 12:00pm Tuesday 29 September 2026. This 08:07 Melbourne check precedes that deadline, so no acceptance/withdrawal is inferred.",
+      "source": "https://www.vrc.com.au/latest-news/weights-announced-for-over-100-lexus-melbourne-cup-hopefuls/"
     }
   ],
-  "notifyUser": false
+  "notifyUser": false,
+  "checkedAt": "2026-09-29T08:07:41+10:00"
 }
