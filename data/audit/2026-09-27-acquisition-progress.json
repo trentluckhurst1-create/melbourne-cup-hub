@@ -34,6 +34,16 @@
         "verifiedOn": "2026-09-28",
         "facts": "G3 JRA Cup winner at Caulfield 27 Sep; winning time 2:04.36; margin 0.75L; trainer Ciaron Maher; jockey Mark Zahra; trainer states prior Metropolitan win and Caulfield Cup fifth; no numeric R&S rating inferred."
       }
+    },
+    {
+      "horse": "Birdman",
+      "status": "CAPTURED_FRESH_PUBLIC_CAMPAIGN_STATUS_REPORT",
+      "evidence": {
+        "source": "SEN",
+        "url": "https://www.sen.com.au/news/2026/09/23/horse-racing-queensland-winter-form-melbourne-and-caulfield-cups",
+        "verifiedOn": "2026-09-28",
+        "facts": "Current public report says Birdman is unlikely to head to either the Caulfield Cup or Melbourne Cup despite remaining in futures markets. Treated as campaign-status reporting only; not an official withdrawal and no rating inferred."
+      }
     }
   ],
   "remainingStatus": "IN_PROGRESS",
