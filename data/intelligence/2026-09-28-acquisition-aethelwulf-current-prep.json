@@ -1,0 +1,50 @@
+{
+  "snapshotDate": "2026-09-28",
+  "horse": "Aethelwulf",
+  "acquisitionStatus": "VERIFIED_CURRENT_PREP_AND_CUP_WEIGHT",
+  "identity": {
+    "name": "Aethelwulf",
+    "sire": "Saxon Warrior",
+    "trainer": "Matthew Smith"
+  },
+  "currentPrep": {
+    "latestVerifiedRun": {
+      "race": "Newcastle Gold Cup",
+      "group": "Group 3",
+      "distanceM": 2300,
+      "result": "1st",
+      "date": "2026-09-18"
+    },
+    "careerSnapshotAtSource": {
+      "starts": 7,
+      "wins": 5
+    },
+    "nextStartOptions": [
+      "The Metropolitan (2400m), Randwick",
+      "The Bart Cummings (2500m), Flemington"
+    ],
+    "note": "Trainer remained undecided between the two paths on 22 Sep; Bart Cummings carries a Melbourne Cup golden ticket."
+  },
+  "melbourneCup": {
+    "originalWeightKg": 51,
+    "status": "original nominee; qualification path still active as at source dates"
+  },
+  "evidence": [
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/18/news-review-aethelwulf-bart-cummings-melbourne-cup-newcastle-gold-cup",
+      "verifiedOn": "2026-09-28",
+      "facts": "Newcastle Gold Cup win; five wins from seven starts; Saxon Warrior; trainer Matt Smith; Cup weight 51kg; Bart Cummings qualification option."
+    },
+    {
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/09/22/news-podcast-smith-mulls-aethelwulf-path",
+      "verifiedOn": "2026-09-28",
+      "facts": "Trainer Matthew Smith undecided between The Metropolitan and The Bart Cummings for next start."
+    }
+  ],
+  "governance": {
+    "rating": "No numeric rating inferred.",
+    "status": "Campaign reports are not treated as declarations or Cup acceptance evidence."
+  }
+}
