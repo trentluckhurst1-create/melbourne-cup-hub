@@ -24,6 +24,16 @@
       "horse": "Torranzino / Land Legend",
       "status": "CAPTURED_FRESH_JRA_CUP_RESULT_IDENTITY_PEDIGREE_CARRIED_WEIGHT_AND_GOING_EVIDENCE",
       "data": "data/intelligence/2026-09-28-acquisition-jra-cup-torranzino-land-legend.json"
+    },
+    {
+      "horse": "Royal Supremacy",
+      "status": "RECHECKED_FRESH_G3_JRA_CUP_WIN_WITH_WINNING_MARGIN_TIME_AND_CAULFIELD_CUP_PREP_CONTEXT",
+      "evidence": {
+        "source": "Racing & Sports",
+        "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-27/royal-supremacy-wins-group-3-drummond-golf-jra-cup-post-race-trainer-and-jockey-quotes/722152",
+        "verifiedOn": "2026-09-28",
+        "facts": "G3 JRA Cup winner at Caulfield 27 Sep; winning time 2:04.36; margin 0.75L; trainer Ciaron Maher; jockey Mark Zahra; trainer states prior Metropolitan win and Caulfield Cup fifth; no numeric R&S rating inferred."
+      }
     }
   ],
   "remainingStatus": "IN_PROGRESS",
