@@ -1,0 +1,28 @@
+{
+  "snapshotDate": "2026-09-29",
+  "horse": "So You Are",
+  "universeContext": "One of the fixed 101 original 2026 Melbourne Cup nominees.",
+  "status": "OFFICIAL_MELBOURNE_CUP_PENALTY_AND_ORDER_UPDATE",
+  "verifiedFacts": {
+    "latestResultContext": "Won the Group 3 Colin Stephen Quality (2400m) at Rosehill on Saturday 26 September 2026.",
+    "melbourneCupPenaltyKg": 0.5,
+    "revisedMelbourneCupWeightKg": 52.5,
+    "revisedMelbourneCupOrderOfEntry": 49,
+    "caulfieldCupWeightKg": 51,
+    "revisedCaulfieldCupOrderOfEntry": 34,
+    "handicappingContext": "Racing Victoria stated So You Are carried 58.5kg in the Colin Stephen Quality. The Melbourne Cup penalty was 0.5kg. He was not penalised in the Caulfield Cup; his relative WFA position improved."
+  },
+  "provenance": [
+    {
+      "source": "Racing Victoria",
+      "url": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty",
+      "published": "2026-09-28",
+      "verifiedOn": "2026-09-29",
+      "authority": "OFFICIAL_HANDICAPPER"
+    }
+  ],
+  "governance": {
+    "ratingInference": "NONE",
+    "note": "No numeric performance rating is inferred from the penalty, carried weight or order-of-entry movement."
+  }
+}
