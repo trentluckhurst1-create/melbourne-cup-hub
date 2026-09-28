@@ -64,6 +64,11 @@
         "verifiedOn": "2026-09-28",
         "facts": "Public likely-fields report lists Knight's Choice and Onesmoothoperator as likely Bart Cummings runners; Aethelwulf is expected to be nominated but may instead run in the G2 Metropolitan in Sydney. Campaign intent only; no result/rating inferred."
       }
+    },
+    {
+      "horse": "Aethelwulf",
+      "status": "CAPTURED_VERIFIED_NEWCASTLE_CUP_CAREER_SNAPSHOT_ORIGINAL_CUP_WEIGHT_AND_NEXT_START_OPTIONS",
+      "data": "data/intelligence/2026-09-28-acquisition-aethelwulf-current-prep.json"
     }
   ],
   "remainingStatus": "IN_PROGRESS",
