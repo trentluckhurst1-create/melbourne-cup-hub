@@ -1,0 +1,23 @@
+{
+  "snapshotDate": "2026-09-28",
+  "horse": "Half Yours",
+  "evidenceType": "CURRENT_PREPARATION_AND_CAMPAIGN_PATH",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-28/turnbull-to-tell-all-with-half-yours/722190",
+    "published": "2026-09-28",
+    "verifiedOn": "2026-09-28"
+  },
+  "verifiedFacts": {
+    "nextStart": "G1 Turnbull Stakes, Flemington, 2000m, 2026-10-03 (planned/reported)",
+    "currentPrepLatestRun": "6th, G1 Makybe Diva Stakes, Flemington, 1600m, 2026-09-12",
+    "latestRunMargin": "4.65L from winner Sheza Alibi",
+    "campaignOptions": [
+      "Cox Plate if Turnbull performance confirms suitability",
+      "G1 Caulfield Cup otherwise/alternative"
+    ],
+    "caulfieldCupWeightKg": 57.5,
+    "melbourneCupWeightKg": 59
+  },
+  "governance": "Campaign reporting and explicitly stated facts only. No numeric Racing & Sports rating inferred from this article."
+}
