@@ -27,8 +27,14 @@
       "status": "FIRST_DECLARATIONS_DEADLINE_REACHED_NO_OFFICIAL_ACCEPTANCE_LIST_YET",
       "facts": "Official VRC schedule fixes first declarations at 12:00pm Tuesday 29 September 2026. A fresh public-source check after the deadline found the VRC race-program page still exposing the 17 September elimination order rather than a 29 September first-declarations list. No horse is marked accepted or withdrawn without authoritative publication.",
       "source": "https://www.vrc.com.au/racing/race-programs-and-conditions/"
+    },
+    {
+      "status": "FIRST_DECLARATIONS_PUBLICATION_RECHECK_1109_AEST",
+      "facts": "Fresh official-source check at 11:09 AEST on 29 Sep: VRC race-program page still exposes the 17 September 2026 Melbourne Cup elimination order and nominations, not a first-declarations list. Racing Victoria's 28 Sep penalty notice confirms first acceptances close at 12 noon 29 Sep. No acceptance or withdrawal is inferred before authoritative publication.",
+      "source": "https://www.vrc.com.au/racing/race-programs-and-conditions/",
+      "supportingSource": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-09-29T13:18:00+10:00"
+  "checkedAt": "2026-09-29T11:09:17+10:00"
 }
