@@ -51,8 +51,13 @@
       "facts": "Fresh official-source check at 20:21 AEST on 29 Sep, more than eight hours after the 12 noon first-declarations deadline: current VRC/RV public search still does not expose an authoritative 29 September first-declarations list. VRC confirms the first-declarations deadline; RV's latest Cup-specific handicapping notice remains the 28 Sep So You Are penalty report. No acceptance or withdrawal is inferred without authoritative publication.",
       "source": "https://www.vrc.com.au/racing/race-programs-and-conditions/",
       "supportingSource": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty"
+    },
+    {
+      "status": "FIRST_DECLARATIONS_PUBLISHED_71_REMAIN",
+      "facts": "Official VRC publication dated 29 September 2026 confirms 71 horses remain after first acceptances. This supersedes earlier same-day checks that found no published list. Preserve the fixed 101 original nomination universe; acceptance status is a current-status field only and must not delete the 30 non-acceptors from historical acquisition coverage.",
+      "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-09-29T20:21:06+10:00"
+  "checkedAt": "2026-09-30T01:30:38+10:00"
 }
