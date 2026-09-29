@@ -56,8 +56,13 @@
       "status": "FIRST_DECLARATIONS_PUBLISHED_71_REMAIN",
       "facts": "Official VRC publication dated 29 September 2026 confirms 71 horses remain after first acceptances. This supersedes earlier same-day checks that found no published list. Preserve the fixed 101 original nomination universe; acceptance status is a current-status field only and must not delete the 30 non-acceptors from historical acquisition coverage.",
       "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
+    },
+    {
+      "status": "FIRST_ACCEPTANCES_PUBLICATION_REVERIFIED_71_REMAIN_13_INTERNATIONAL",
+      "facts": "Fresh VRC recheck on 30 Sep confirms 71 horses remain after first acceptances, including 13 international horses. The fixed 101 original nomination universe remains the acquisition ledger universe; this status update must not delete the 30 non-acceptors from historical coverage. Second declarations are due noon Tuesday 13 October 2026.",
+      "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-09-30T01:30:38+10:00"
+  "checkedAt": "2026-09-30T02:47:09+10:00"
 }
