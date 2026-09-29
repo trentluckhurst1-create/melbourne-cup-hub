@@ -61,8 +61,18 @@
       "status": "FIRST_ACCEPTANCES_PUBLICATION_REVERIFIED_71_REMAIN_13_INTERNATIONAL",
       "facts": "Fresh VRC recheck on 30 Sep confirms 71 horses remain after first acceptances, including 13 international horses. The fixed 101 original nomination universe remains the acquisition ledger universe; this status update must not delete the 30 non-acceptors from historical coverage. Second declarations are due noon Tuesday 13 October 2026.",
       "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
+    },
+    {
+      "status": "FIRST_ACCEPTANCES_REVERIFIED_0344_AEST_71_REMAIN",
+      "facts": "Fresh official VRC recheck on 30 Sep confirms 71 horses remain after first acceptances, including 13 international horses. Preserve the fixed 101 original nomination universe; the 30 non-acceptors remain in historical acquisition coverage. VRC states second declarations are due noon Tuesday 13 October 2026.",
+      "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
+    },
+    {
+      "status": "SO_YOU_ARE_PENALTY_REVERIFIED_52_5KG_ORDER_49",
+      "facts": "Fresh official Racing Victoria recheck confirms So You Are received a 0.5kg Melbourne Cup penalty after the Group 3 Colin Stephen Quality, rising from 52kg to 52.5kg and to 49th in the order of entry. Royal Supremacy received no Melbourne Cup penalty and remains 56kg. No performance rating inferred.",
+      "source": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-09-30T02:47:09+10:00"
+  "checkedAt": "2026-09-30T03:44:26+10:00"
 }
