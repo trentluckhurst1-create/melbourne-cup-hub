@@ -76,8 +76,14 @@
       "status": "FIRST_ACCEPTANCES_REVERIFIED_0433_AEST_71_REMAIN",
       "facts": "Fresh official VRC recheck on 30 Sep confirms 71 horses remain after first acceptances, including 13 international horses. Preserve the fixed 101 original nomination universe; the 30 non-acceptors remain in historical acquisition coverage. Second declarations are due noon Tuesday 13 October 2026.",
       "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
+    },
+    {
+      "status": "FIRST_ACCEPTANCES_REVERIFIED_0759_AEST_71_REMAIN",
+      "facts": "Fresh official VRC recheck on 30 Sep confirms 71 horses remain after first acceptances. Preserve the fixed 101 original nomination universe; the 30 non-acceptors remain in historical acquisition coverage. Racing Victoria also confirms So You Are's post-release Melbourne Cup penalty to 52.5kg and order position 49; no performance rating is inferred.",
+      "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/",
+      "supportingSource": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-09-30T04:33:56+10:00"
+  "checkedAt": "2026-09-30T07:59:21+10:00"
 }
