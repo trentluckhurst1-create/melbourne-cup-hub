@@ -1,0 +1,45 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.first_acceptances.v1",
+  "snapshotDate": "2026-09-30",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "verifiedFacts": {
+    "originalNominees": 101,
+    "firstAcceptors": 71,
+    "nonAcceptors": 30,
+    "overseasTrainedFirstAcceptors": 13,
+    "australasianTrainedFirstAcceptors": 58,
+    "firstDeclarationsClosed": "2026-09-29T12:00:00+10:00",
+    "secondDeclarationsClose": "2026-10-13T12:00:00+11:00"
+  },
+  "provenance": [
+    {
+      "publisher": "Neds",
+      "url": "https://www.neds.com.au/blog/betting-info/melbourne-cup-nominations/",
+      "verifiedOn": "2026-09-30"
+    },
+    {
+      "publisher": "Ladbrokes",
+      "url": "https://www.ladbrokes.com.au/blog/2026/09/30/melbourne-cup-first-acceptances-2026/",
+      "verifiedOn": "2026-09-30"
+    }
+  ],
+  "governance": {
+    "preserveOriginalUniverse": true,
+    "ratingInference": "NONE",
+    "horseLevelAcceptanceMapping": "NOT_PROMOTED_IN_THIS_TRANCHE",
+    "note": "The 30 non-acceptors remain in the fixed 101 research universe. Horse-level acceptance flags require a complete authoritative name list before promotion."
+  },
+  "coverageLedgerCheck": {
+    "universe": 101,
+    "identityAccounted": 101,
+    "accepted": 71,
+    "notAccepted": 30,
+    "historicalFormLedgerBaseline": {
+      "complete": 58,
+      "careerComplete": 2,
+      "unresolved": 41,
+      "source": "data/form/2026-09-15-form-coverage-ledger.json"
+    },
+    "status": "INCOMPLETE_PUBLIC_FIELD_LEVEL_ACQUISITION_CONTINUES"
+  }
+}
