@@ -88,8 +88,14 @@
       "facts": "Fresh official VRC recheck on 30 Sep: the race-program page now exposes both the 2026 Lexus Melbourne Cup First acceptances and the Order of Entry as at 29 Sep. VRC separately confirms 71 horses remain after first acceptances, including 13 internationals. Preserve the fixed 101 original nomination universe; acceptance/order status is current-status evidence only and does not remove the 30 non-acceptors from acquisition coverage.",
       "source": "https://www.vrc.com.au/racing/race-programs-and-conditions/",
       "supportingSource": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
+    },
+    {
+      "status": "FIRST_ACCEPTANCES_AND_ORDER_REVERIFIED_1115_AEST_71_REMAIN",
+      "facts": "Fresh official VRC check on 30 Sep confirms 71 horses remain after first acceptances, including 13 internationals. The VRC race-program page now publicly exposes both the 2026 Lexus Melbourne Cup First acceptances and Order of Entry as at 29 Sep. Preserve the fixed 101 original nomination universe; the 30 non-acceptors remain in historical acquisition coverage. Second declarations are due noon Tuesday 13 October 2026.",
+      "source": "https://www.vrc.com.au/racing/race-programs-and-conditions/",
+      "supportingSource": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-09-30T09:10:04+10:00"
+  "checkedAt": "2026-09-30T11:15:09+10:00"
 }
