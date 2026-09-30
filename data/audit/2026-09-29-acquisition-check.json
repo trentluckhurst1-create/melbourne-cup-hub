@@ -100,8 +100,14 @@
       "facts": "Fresh official VRC check on 30 Sep confirms 71 horses remain after first acceptances, including 13 internationals. Preserve the fixed 101 original nomination universe; the 30 non-acceptors remain in historical acquisition coverage. Second declarations are due noon Tuesday 13 October 2026. Racing Victoria's current Cup handicapping notice continues to confirm So You Are at 52.5kg/order 49 and Royal Supremacy at 56kg with no penalty; no performance rating is inferred.",
       "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/",
       "supportingSource": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty"
+    },
+    {
+      "status": "FIRST_ACCEPTANCES_REVERIFIED_1633_AEST_71_REMAIN",
+      "facts": "Fresh official VRC check on 30 Sep confirms 71 horses remain after first acceptances, including 13 international horses. Preserve the fixed 101 original nomination universe; the 30 non-acceptors remain in historical acquisition coverage. Second declarations are due noon Tuesday 13 October 2026. Racing Victoria continues to confirm So You Are at 52.5kg/order 49 after a 0.5kg Melbourne Cup penalty and Royal Supremacy at 56kg with no penalty; no performance rating is inferred.",
+      "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/",
+      "supportingSource": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-09-30T13:13:47+10:00"
+  "checkedAt": "2026-09-30T16:33:18+10:00"
 }
