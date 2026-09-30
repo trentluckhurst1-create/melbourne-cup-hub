@@ -1,0 +1,48 @@
+{
+  "snapshotDate": "2026-10-01",
+  "universe": 101,
+  "policy": "Fixed original nomination universe preserved. Current-preparation evidence does not remove non-acceptors. Race-day weights are not Melbourne Cup handicap weights. No missing rating is inferred.",
+  "verified": [
+    {
+      "scope": "Flemington 3 Oct TAB Turnbull Stakes accepted field",
+      "horses": [
+        "Half Yours",
+        "Aeliana",
+        "Asterix",
+        "Zahrann",
+        "Ohope Wins",
+        "Middle Earth",
+        "Soul Of Spain",
+        "She's A Hustler",
+        "Saint George",
+        "Deakin"
+      ],
+      "distanceM": 2000,
+      "evidence": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-10-03/race-fields",
+      "ratingInference": false
+    },
+    {
+      "horse": "Campaldino",
+      "date": "2026-10-03",
+      "race": "The Lexus Bart Cummings",
+      "track": "Flemington",
+      "distanceM": 2520,
+      "fact": "Racing & Sports reports Campaldino is set to run in the Bart Cummings after finishing 12th in the Naturalism Stakes at Caulfield on 19 Sep.",
+      "evidence": "https://www.racingandsports.com.au/news/racing/news/0001-01-01/waterhouse-expecting-campaldino-improvement/722334",
+      "ratingInference": false
+    },
+    {
+      "horse": "Knight's Choice",
+      "date": "2026-10-03",
+      "race": "The Lexus Bart Cummings",
+      "track": "Flemington",
+      "distanceM": 2520,
+      "fact": "Racing & Sports reports the 2024 Melbourne Cup winner returns to Flemington in the Bart Cummings as part of his 2026 Cup campaign.",
+      "evidence": "https://www.racingandsports.com.au/news/racing/news/2026-09-29/back-to-flemington-for-knights-choice/722261",
+      "ratingInference": false
+    }
+  ],
+  "completion": false,
+  "notifyUser": false,
+  "checkedAt": "2026-10-01T06:34:19+10:00"
+}
