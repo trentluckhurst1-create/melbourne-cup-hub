@@ -33,6 +33,24 @@
       "finish": 3,
       "evidence": "Racing & Sports result/quotes page 722103",
       "ratingInference": false
+    },
+    {
+      "scope": "international first shipment",
+      "horses": [
+        "Wine Dark Sea",
+        "Enfjaar",
+        "Point Of Law",
+        "Starford",
+        "Omni Man",
+        "Small Fry",
+        "Kizlyar"
+      ],
+      "fact": "Dated public racing reports now explicitly confirm the first-shipment horses are in Australia / arrived in Melbourne; prior SCHEDULED_TO_TRAVEL status is superseded.",
+      "evidence": [
+        "https://thestraight.com.au/half-yours-melbourne-cup-defence/",
+        "https://www.justhorseracing.com.au/news/australian-racing/melbourne-cup-dream-alive-for-71-hopefuls/908149"
+      ],
+      "ratingInference": false
     }
   ],
   "ratingGapRecheck": {
@@ -50,5 +68,6 @@
     "quarantinePolicy": "Never infer missing R&S ratings."
   },
   "completion": false,
-  "notifyUser": false
+  "notifyUser": false,
+  "checkedAt": "2026-10-01T05:54:15+10:00"
 }
