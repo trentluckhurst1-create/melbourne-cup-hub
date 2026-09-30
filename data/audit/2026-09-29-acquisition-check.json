@@ -112,8 +112,13 @@
       "facts": "Fresh official VRC/Racing Victoria check on 30 Sep confirms the published first-acceptance state remains 71 horses, including 13 internationals, with the VRC race-program page exposing the 29 Sep first acceptances and order of entry. Racing Victoria continues to confirm So You Are at 52.5kg/order 49 after a 0.5kg Melbourne Cup penalty and Royal Supremacy at 56kg with no penalty. No new authoritative rating or declaration evidence was found in this check; no performance rating is inferred. Preserve the fixed 101 original nomination universe.",
       "source": "https://www.vrc.com.au/racing/race-programs-and-conditions/",
       "supportingSource": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty"
+    },
+    {
+      "status": "FIRST_ACCEPTANCES_REVERIFIED_1824_AEST_71_REMAIN_NO_NEW_OFFICIAL_ACQUISITION_CHANGE",
+      "facts": "Fresh official-source check on 30 Sep confirms the published first-acceptance state remains 71 horses, including 13 internationals. No new authoritative rating, declaration, penalty or horse-level acquisition evidence was found; no missing rating is inferred. Preserve the fixed 101 original nomination universe.",
+      "source": "https://www.vrc.com.au/racing/race-programs-and-conditions/"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-09-30T17:38:37+10:00"
+  "checkedAt": "2026-09-30T18:24:42+10:00"
 }
