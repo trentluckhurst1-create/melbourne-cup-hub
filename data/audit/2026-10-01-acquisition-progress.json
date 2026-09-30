@@ -1,0 +1,54 @@
+{
+  "snapshotDate": "2026-10-01",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverageLedger": "data/intelligence/2026-09-15-full-program-data-audit.json",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "horse": "So You Are",
+      "date": "2026-09-26",
+      "race": "Group 3 Colin Stephen Quality",
+      "track": "Rosehill",
+      "distanceM": 2400,
+      "finish": 1,
+      "winningTime": "2:28.95",
+      "margins": "1/2 neck x 1L",
+      "evidence": "Racing & Sports result/quotes page 722103",
+      "ratingInference": false
+    },
+    {
+      "horse": "Bella Montagna",
+      "date": "2026-09-26",
+      "race": "Group 3 Colin Stephen Quality",
+      "track": "Rosehill",
+      "distanceM": 2400,
+      "finish": 3,
+      "evidence": "Racing & Sports result/quotes page 722103",
+      "ratingInference": false
+    }
+  ],
+  "ratingGapRecheck": {
+    "horses": [
+      "Aethelflaed",
+      "Age Of Sail",
+      "Asterix",
+      "Barnavara",
+      "Bella Montagna",
+      "Darkbonee",
+      "Floating",
+      "Future History"
+    ],
+    "result": "No explicitly labelled numeric Racing & Sports rating found in fresh public searches; unlabeled enhanced-form numeric columns not promoted.",
+    "quarantinePolicy": "Never infer missing R&S ratings."
+  },
+  "completion": false,
+  "notifyUser": false
+}
