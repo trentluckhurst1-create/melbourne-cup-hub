@@ -140,6 +140,50 @@
       ],
       "ratingInference": false,
       "note": "Preserve in fixed original 101-nominee universe; status update does not remove original nomination."
+    },
+    {
+      "scope": "Bart Cummings acceptance / current-prep update",
+      "raceDate": "2026-10-03",
+      "race": "The Lexus Bart Cummings",
+      "track": "Flemington",
+      "distanceM": 2520,
+      "class": "Group 3",
+      "nominees": [
+        {
+          "horse": "Campaldino",
+          "barrier": 20,
+          "carriedWeightKg": 58
+        },
+        {
+          "horse": "Onesmoothoperator",
+          "barrier": 4,
+          "carriedWeightKg": 58
+        },
+        {
+          "horse": "Okita Soushi",
+          "barrier": 19,
+          "carriedWeightKg": 56.5
+        },
+        {
+          "horse": "Valiant King",
+          "barrier": 6,
+          "carriedWeightKg": 55.5
+        },
+        {
+          "horse": "Aethelwulf",
+          "barrier": 8,
+          "carriedWeightKg": 55
+        },
+        {
+          "horse": "Litzdeel",
+          "barrier": 12,
+          "carriedWeightKg": 54
+        }
+      ],
+      "evidence": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-10-03/race-fields",
+      "goldenTicketEvidence": "https://www.vrc.com.au/racing/2026-lexus-melbourne-cup-golden-ticket-entry/",
+      "note": "Published accepted field verifies barrier and race-day weight. Knight's Choice earlier intended-run evidence is quarantined because the horse is absent from the published field. No numeric R&S rating inferred.",
+      "ratingInference": false
     }
   ],
   "ratingGapRecheck": {
@@ -159,5 +203,5 @@
   },
   "completion": false,
   "notifyUser": false,
-  "checkedAt": "2026-10-01T12:26:55+10:00"
+  "checkedAt": "2026-10-01T18:35:38+10:00"
 }
