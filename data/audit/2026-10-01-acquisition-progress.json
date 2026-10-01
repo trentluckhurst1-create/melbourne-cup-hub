@@ -191,6 +191,16 @@
       "fact": "Racing Victoria imposed a 0.5kg Melbourne Cup penalty after the G3 Colin Stephen Quality win, raising the official Cup weight from 52.0kg to 52.5kg and improving the horse to 49th in the order of entry.",
       "evidence": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty",
       "ratingInference": false
+    },
+    {
+      "scope": "full 101-horse public-source recheck",
+      "fact": "VRC continues to confirm the fixed original universe was 101 nominations (78 local, 23 international), official weights were allocated to all 101 on 17 Sep, and first acceptances reduced the active Cup pool to 71 on 29 Sep. The acquisition ledger remains fixed to the original 101 rather than deleting non-acceptors.",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/101-nominations-received-for-the-166th-lexus-melbourne-cup/",
+        "https://www.vrc.com.au/latest-news/weights-announced-for-over-100-lexus-melbourne-cup-hopefuls/",
+        "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
+      ],
+      "ratingInference": false
     }
   ],
   "ratingGapRecheck": {
@@ -204,11 +214,11 @@
       "Floating",
       "Future History"
     ],
-    "result": "Fresh public recheck still found no explicitly labelled numeric Racing & Sports rating for the sampled gap horses; R&S Neurals/enhanced-form numeric columns remain quarantined and are not promoted.",
+    "result": "Fresh 2 Oct public recheck still found no explicitly labelled numeric Racing & Sports rating for the sampled gap horses; R&S Neurals/enhanced-form numeric columns remain quarantined and are not promoted.",
     "quarantinePolicy": "Never infer missing R&S ratings.",
-    "checkedOn": "2026-10-01"
+    "checkedOn": "2026-10-02"
   },
   "completion": false,
   "notifyUser": false,
-  "checkedAt": "2026-10-01T23:11:47+10:00"
+  "checkedAt": "2026-10-02T06:20:35+10:00"
 }
