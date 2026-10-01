@@ -51,6 +51,84 @@
         "https://www.justhorseracing.com.au/news/australian-racing/melbourne-cup-dream-alive-for-71-hopefuls/908149"
       ],
       "ratingInference": false
+    },
+    {
+      "scope": "Turnbull Stakes acceptance / current-prep update",
+      "raceDate": "2026-10-03",
+      "race": "Group 1 TAB Turnbull Stakes",
+      "track": "Flemington",
+      "distanceM": 2000,
+      "nominees": [
+        {
+          "horse": "Half Yours",
+          "barrier": 14,
+          "carriedWeightKg": 59
+        },
+        {
+          "horse": "Light Infantry Man",
+          "barrier": 3,
+          "carriedWeightKg": 58
+        },
+        {
+          "horse": "Aeliana",
+          "barrier": 2,
+          "carriedWeightKg": 57
+        },
+        {
+          "horse": "Asterix",
+          "barrier": 11,
+          "carriedWeightKg": 56.5
+        },
+        {
+          "horse": "Zahrann",
+          "barrier": 1,
+          "carriedWeightKg": 56.5
+        },
+        {
+          "horse": "Ohope Wins",
+          "barrier": 5,
+          "carriedWeightKg": 56
+        },
+        {
+          "horse": "Middle Earth",
+          "barrier": 6,
+          "carriedWeightKg": 56
+        },
+        {
+          "horse": "Soul Of Spain",
+          "barrier": 15,
+          "carriedWeightKg": 56
+        },
+        {
+          "horse": "She's A Hustler",
+          "barrier": 7,
+          "carriedWeightKg": 55
+        },
+        {
+          "horse": "Saint George",
+          "barrier": 13,
+          "carriedWeightKg": 55
+        },
+        {
+          "horse": "Deakin",
+          "barrier": 12,
+          "carriedWeightKg": 55
+        },
+        {
+          "horse": "Kings Valley",
+          "barrier": 10,
+          "carriedWeightKg": 55
+        }
+      ],
+      "evidence": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-10-03/race-fields",
+      "note": "Public R&S race field verifies acceptance, barrier and race-day weight. No numeric R&S performance rating inferred from Neurals/enhanced-form columns.",
+      "ratingInference": false
+    },
+    {
+      "scope": "first acceptances / international shipment status recheck",
+      "fact": "VRC confirms 71 remain after first acceptances, including 13 internationals. First shipment in Melbourne: Small Fry, Kizlyar, Omni Man, Starford, Wine Dark Sea, Enfjaar, Point Of Law. Second shipment in pre-export quarantine: Sons And Lovers, Trustyourinstinct, Defiantly, James J Braddock, Goodie Two Shoes, Stinger Glass, Hopewell Rock. Second declarations due 13 Oct 2026.",
+      "evidence": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/",
+      "ratingInference": false
     }
   ],
   "ratingGapRecheck": {
@@ -64,10 +142,11 @@
       "Floating",
       "Future History"
     ],
-    "result": "No explicitly labelled numeric Racing & Sports rating found in fresh public searches; unlabeled enhanced-form numeric columns not promoted.",
-    "quarantinePolicy": "Never infer missing R&S ratings."
+    "result": "Fresh public recheck still found no explicitly labelled numeric Racing & Sports rating for the sampled gap horses; R&S Neurals/enhanced-form numeric columns remain quarantined and are not promoted.",
+    "quarantinePolicy": "Never infer missing R&S ratings.",
+    "checkedOn": "2026-10-01"
   },
   "completion": false,
   "notifyUser": false,
-  "checkedAt": "2026-10-01T05:54:15+10:00"
+  "checkedAt": "2026-10-01T10:45:40+10:00"
 }
