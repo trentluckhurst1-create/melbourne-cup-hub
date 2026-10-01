@@ -129,6 +129,17 @@
       "fact": "VRC confirms 71 remain after first acceptances, including 13 internationals. First shipment in Melbourne: Small Fry, Kizlyar, Omni Man, Starford, Wine Dark Sea, Enfjaar, Point Of Law. Second shipment in pre-export quarantine: Sons And Lovers, Trustyourinstinct, Defiantly, James J Braddock, Goodie Two Shoes, Stinger Glass, Hopewell Rock. Second declarations due 13 Oct 2026.",
       "evidence": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/",
       "ratingInference": false
+    },
+    {
+      "horse": "Constitution Hill",
+      "scope": "Cup qualification / current campaign status",
+      "fact": "Melbourne Cup campaign is no longer active. Constitution Hill finished fourth in the Group 3 September Stakes at Kempton, missing the top-three qualifying performance; connections now target the Group 2 Gran Premio del Jockey Club at San Siro on 25 Oct 2026.",
+      "evidence": [
+        "https://www.racingtv.com/news/constitution-hill-beaten-but-not-out-with-kempton-disappointment",
+        "https://www.sportinglife.com/racing/news/constitution-hill-heading-to-milan-group-two-for-next-race/234554"
+      ],
+      "ratingInference": false,
+      "note": "Preserve in fixed original 101-nominee universe; status update does not remove original nomination."
     }
   ],
   "ratingGapRecheck": {
@@ -148,5 +159,5 @@
   },
   "completion": false,
   "notifyUser": false,
-  "checkedAt": "2026-10-01T10:45:40+10:00"
+  "checkedAt": "2026-10-01T12:26:55+10:00"
 }
