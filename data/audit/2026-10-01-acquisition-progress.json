@@ -221,11 +221,11 @@
       "Floating",
       "Future History"
     ],
-    "result": "Fresh 2 Oct public recheck still found no explicitly labelled numeric Racing & Sports rating for the sampled gap horses; R&S Neurals/enhanced-form numeric columns remain quarantined and are not promoted.",
+    "result": "Fresh 2 Oct 09:40 AEST public recheck still found no explicitly labelled numeric Racing & Sports rating for the sampled gap horses; R&S Neurals/enhanced-form numeric columns remain quarantined and are not promoted.",
     "quarantinePolicy": "Never infer missing R&S ratings.",
     "checkedOn": "2026-10-02"
   },
   "completion": false,
   "notifyUser": false,
-  "checkedAt": "2026-10-02T08:43:26+10:00"
+  "checkedAt": "2026-10-02T09:40:18+10:00"
 }
