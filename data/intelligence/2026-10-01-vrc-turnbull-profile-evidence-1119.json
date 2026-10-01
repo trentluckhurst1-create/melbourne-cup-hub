@@ -1,0 +1,15 @@
+{
+  "snapshotDate": "2026-10-01",
+  "universe": 101,
+  "source": "VRC",
+  "url": "https://www.vrc.com.au/latest-news/2026-tab-turnbull-stakes-contenders/",
+  "facts": [
+    {"horse":"Half Yours","career":"20:8-3-0","prizemoneyAUD":9398340,"flemington":"3:1-0-0","distance2000m":"4:1-1-0","latestRun":"6th Makybe Diva Stakes; last 400m 22.14","turnbullBarrier":14,"turnbullWeightKg":59},
+    {"horse":"Middle Earth","career":"23:6-2-3","prizemoneyAUD":1413040,"flemington":"4:1-0-1","distance2000m":"8:2-1-1","latestRun":"7th Underwood Stakes; beaten 6.06L","turnbullBarrier":6,"turnbullWeightKg":56},
+    {"horse":"Saint George","career":"21:6-4-2","prizemoneyAUD":677972,"flemington":"7:2-1-0","distance2000m":"8:4-1-1","latestRun":"2nd Naturalism Stakes","turnbullBarrier":13,"turnbullWeightKg":55},
+    {"horse":"Deakin","career":"21:5-2-2","prizemoneyAUD":599492,"flemington":"4:1-1-0","distance2000m":"7:1-2-0","latestRun":"8th Naturalism Stakes; beaten 1.97L","turnbullBarrier":12,"turnbullWeightKg":55},
+    {"horse":"Kings Valley","career":"27:6-6-4","prizemoneyAUD":567094,"flemington":"2:0-1-0","distance2000m":"8:1-1-2","latestRun":"7th Naturalism Stakes; last 200m 11.82","turnbullBarrier":10,"turnbullWeightKg":55}
+  ],
+  "governance": "Turnbull weights are race-day carried weights, not Melbourne Cup handicap weights. No missing rating inferred.",
+  "completion": false
+}
