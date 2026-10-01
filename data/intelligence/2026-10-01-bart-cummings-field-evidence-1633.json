@@ -1,0 +1,63 @@
+{
+  "snapshotDate": "2026-10-01",
+  "universe": 101,
+  "policy": "Fixed original nomination universe preserved. Accepted-field evidence only; race-day weights are not Melbourne Cup handicap weights. No R&S rating inferred from Neurals or enhanced-form algorithm fields.",
+  "verified": {
+    "race": "The Lexus Bart Cummings",
+    "date": "2026-10-03",
+    "track": "Flemington",
+    "distanceM": 2520,
+    "class": "Group 3",
+    "surface": "Turf",
+    "publishedGoing": "Good 3",
+    "prizemoneyAUD": 350000,
+    "originalCupNomineesInPublishedField": [
+      {
+        "horse": "Campaldino",
+        "barrier": 20,
+        "carriedWeightKg": 58
+      },
+      {
+        "horse": "Onesmoothoperator",
+        "barrier": 4,
+        "carriedWeightKg": 58
+      },
+      {
+        "horse": "Okita Soushi",
+        "barrier": 19,
+        "carriedWeightKg": 56.5
+      },
+      {
+        "horse": "Valiant King",
+        "barrier": 6,
+        "carriedWeightKg": 55.5
+      },
+      {
+        "horse": "Aethelwulf",
+        "barrier": 8,
+        "carriedWeightKg": 55
+      },
+      {
+        "horse": "Litzdeel",
+        "barrier": 12,
+        "carriedWeightKg": 54
+      }
+    ],
+    "evidence": "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-10-03/race-fields",
+    "goldenTicketEvidence": "https://www.vrc.com.au/racing/2026-lexus-melbourne-cup-golden-ticket-entry/",
+    "note": "VRC identifies the Bart Cummings as 2026 Melbourne Cup Golden Ticket #7. The published R&S field is authoritative for acceptance/barrier/race-day weight at this snapshot. A prior article said Knight's Choice was headed to the race, but Knight's Choice is absent from the published field; the earlier intended-run evidence is therefore not promoted to accepted-field status."
+  },
+  "quarantined": [
+    {
+      "scope": "R&S Neurals/enhanced-form numeric algorithms",
+      "reason": "Not promoted as an explicitly labelled public R&S horse rating/run-rating."
+    },
+    {
+      "horse": "Knight's Choice",
+      "reason": "Earlier intended-run report conflicts with current published accepted field; retain campaign evidence separately but do not mark accepted."
+    }
+  ],
+  "completion": false,
+  "notifyUser": false,
+  "checkedAt": "2026-10-01T16:33:27+10:00"
+}
