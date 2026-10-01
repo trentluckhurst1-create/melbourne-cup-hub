@@ -184,6 +184,13 @@
       "goldenTicketEvidence": "https://www.vrc.com.au/racing/2026-lexus-melbourne-cup-golden-ticket-entry/",
       "note": "Published accepted field verifies barrier and race-day weight. Knight's Choice earlier intended-run evidence is quarantined because the horse is absent from the published field. No numeric R&S rating inferred.",
       "ratingInference": false
+    },
+    {
+      "horse": "So You Are",
+      "scope": "official Melbourne Cup handicap penalty",
+      "fact": "Racing Victoria imposed a 0.5kg Melbourne Cup penalty after the G3 Colin Stephen Quality win, raising the official Cup weight from 52.0kg to 52.5kg and improving the horse to 49th in the order of entry.",
+      "evidence": "https://www.racingvictoria.com.au/news/2026/09/28/so-you-are-handed-melbourne-cup-penalty",
+      "ratingInference": false
     }
   ],
   "ratingGapRecheck": {
@@ -203,5 +210,5 @@
   },
   "completion": false,
   "notifyUser": false,
-  "checkedAt": "2026-10-01T18:35:38+10:00"
+  "checkedAt": "2026-10-01T23:11:47+10:00"
 }
