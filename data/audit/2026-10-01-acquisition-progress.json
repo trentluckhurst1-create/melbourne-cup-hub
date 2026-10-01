@@ -201,6 +201,13 @@
         "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
       ],
       "ratingInference": false
+    },
+    {
+      "scope": "second international shipment / scheduled arrival verification",
+      "fact": "Fresh public reporting verifies Sons And Lovers, Trustyourinstinct, Defiantly, James J Braddock and Goodie Two Shoes are in mandatory two-week pre-export quarantine in Ireland; Hopewell Rock is also in quarantine. The European shipment is scheduled to arrive Melbourne on 13 Oct 2026. Stinger Glass is preparing to travel from Japan and is scheduled to arrive on 11 Oct 2026. Highwayman has been withdrawn from the Melbourne Cup campaign despite completing veterinary requirements and will remain in Europe.",
+      "evidence": "https://www.racing.com/news/2026/09/29/news-international-obrien-melbourne-cup-team-grows-as-highwayman-stays-home",
+      "ratingInference": false,
+      "note": "Campaign/travel status only. Preserve Highwayman in the fixed original 101-nominee ledger; do not treat scheduled arrival as completed travel."
     }
   ],
   "ratingGapRecheck": {
@@ -220,5 +227,5 @@
   },
   "completion": false,
   "notifyUser": false,
-  "checkedAt": "2026-10-02T06:20:35+10:00"
+  "checkedAt": "2026-10-02T08:43:26+10:00"
 }
