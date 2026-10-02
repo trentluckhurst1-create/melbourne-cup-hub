@@ -1,0 +1,42 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-02",
+  "checkedAt": "2026-10-02T19:10:00+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "horse": "Aeliana",
+      "scope": "2026 preparation",
+      "fact": "VRC Inside Run lists Aeliana in the Group 1 Turnbull Stakes (2000m) at Flemington on 3 Oct 2026. The preview records her latest preparation run as second in the 7 Stakes and states rain-affected credentials of four wins from six soft-track starts plus a second placing; it also notes her sole heavy-track attempt was in the 2025 Winx Stakes.",
+      "evidence": [
+        "https://www.vrc.com.au/inside-run/tab-turnbull-stakes-day-2026/race-schedule/race-8/"
+      ],
+      "ratingInference": false
+    },
+    {
+      "horse": "Aethelwulf",
+      "scope": "2026 preparation",
+      "fact": "VRC Inside Run lists Aethelwulf in the Group 3 Lexus Bart Cummings (2520m) at Flemington on 3 Oct 2026 while he also remains entered in The Metropolitan in Sydney. The page is retained as dated field evidence only; preview commentary is not treated as a confirmed scratching or result.",
+      "evidence": [
+        "https://www.vrc.com.au/inside-run/tab-turnbull-stakes-day-2026/race-schedule/race-7/"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "R&S rating-gap recheck",
+      "fact": "No new explicitly labelled numeric Racing & Sports ratings were promoted. Generic tips, predictor fields and unrelated numeric fields remain quarantined.",
+      "ratingInference": false
+    }
+  ],
+  "completion": false,
+  "notifyUser": false
+}
