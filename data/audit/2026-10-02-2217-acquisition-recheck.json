@@ -1,0 +1,50 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-02",
+  "checkedAt": "2026-10-02T22:17:00+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "horse": "Onesmoothoperator",
+      "scope": "2026 preparation / Bart Cummings decision",
+      "fact": "Racing & Sports reports the 8yo remains in the 3 Oct Lexus Bart Cummings field at Flemington, but trainer Tim Fitzsimmons said the decision depends on the rain/track; if Flemington is too wet he will instead be reserved for the Herbert Power Stakes or head directly to the Caulfield Cup. Treat as current-preparation intent, not a confirmed start or scratching.",
+      "evidence": [
+        "https://www.racingandsports.com.au/news/racing/news/2026-10-01/flemington-or-gunbower-for-fitzsimmons/722380"
+      ],
+      "ratingInference": false
+    },
+    {
+      "horse": "Wootton Verni",
+      "scope": "2026 preparation / Bart Cummings",
+      "fact": "Racing & Sports current Flemington form guide lists Wootton Verni in the 3 Oct Group 3 Lexus Bart Cummings (2520m), 59kg, barrier 5, for Chris Waller/Jye McNeil. This is pre-race field evidence only.",
+      "evidence": [
+        "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-10-03/race-tips"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "Turnbull Stakes Day conditions",
+      "fact": "VRC confirms the 3 Oct program includes the Group 3 Lexus Bart Cummings (2520m), whose winner receives a 2026 Melbourne Cup ballot exemption, and the Group 1 Turnbull Stakes (2000m).",
+      "evidence": [
+        "https://www.vrc.com.au/race-days-and-events/2026-2027/tab-turnbull-stakes-day/"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "R&S rating-gap recheck",
+      "fact": "No new explicitly labelled numeric Racing & Sports ratings were promoted in this pass. Generic tips, predictor fields and unrelated numeric fields remain quarantined.",
+      "ratingInference": false
+    }
+  ],
+  "completion": false,
+  "notifyUser": false
+}
