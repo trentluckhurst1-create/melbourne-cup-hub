@@ -1,0 +1,37 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.current_prep.v1",
+  "snapshotDate": "2026-10-02",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "verifiedFacts": [
+    {
+      "horse": "Aethelwulf",
+      "fact": "Trainer Matthew Smith is weather-watching before choosing between the Group 3 Bart Cummings at Flemington and Group 2 Metropolitan at Randwick on 3 Oct. Flemington was Good 3 on Thursday morning; Smith explicitly said he did not want a heavy track. Aethelwulf remained in both fields at the source time.",
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/10/01/news-contenders-smith-on-weather-watch-with-aethelwulf",
+      "ratingInference": false
+    },
+    {
+      "horse": "She's A Hustler",
+      "fact": "Trainer Grahame Begg confirmed the mare will run in the Group 1 Turnbull Stakes at Flemington on 3 Oct despite the wet-weather risk. Her latest run was fifth in the Makybe Diva Stakes on 12 Sep; the Caulfield Cup on 17 Oct remains the stated focus.",
+      "source": "VRC / Racing & Sports",
+      "url": "https://www.vrc.com.au/latest-news/wet-or-dry-hustler-will-be-at-flemington/",
+      "ratingInference": false
+    }
+  ],
+  "governance": {
+    "preserveOriginalUniverse": true,
+    "noRatingInference": true,
+    "raceDayIntentNotCupAcceptance": true,
+    "note": "Current-preparation evidence only. Do not promote market prices, unlabeled numeric fields, or intended race plans to official ratings or completed results."
+  },
+  "coverageLedgerCheck": {
+    "universe": 101,
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101",
+    "status": "IN_PROGRESS"
+  }
+}
