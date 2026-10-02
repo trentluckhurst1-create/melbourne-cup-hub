@@ -1,0 +1,52 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-02",
+  "checkedAt": "2026-10-02T20:48:00+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "horse": "Aeliana",
+      "scope": "2026 preparation / going evidence",
+      "fact": "VRC/Racing & Sports reports Flemington was Heavy 9 on 2 Oct after 52mm rain ahead of the 3 Oct Turnbull Stakes. Aeliana is a Turnbull runner; source states she has four wins from six soft starts plus a second and her only heavy start was second to Via Sistina in the 2025 Winx Stakes.",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/tricky-turnbull-conditions-at-flemington/",
+        "https://www.vrc.com.au/inside-run/tab-turnbull-stakes-day-2026/race-schedule/race-8/"
+      ],
+      "ratingInference": false
+    },
+    {
+      "horse": "Aethelwulf",
+      "scope": "2026 preparation / Cup status",
+      "fact": "VRC field page retains Aethelwulf in the 3 Oct Lexus Bart Cummings (2520m), noting he is also entered/favourite in The Metropolitan. Racing & Sports reports his Newcastle Cup win and 51kg Melbourne Cup allocation, while noting he remains down the order of entry. Treat Bart Cummings/Metropolitan choice as unresolved until a confirmed start/result.",
+      "evidence": [
+        "https://www.vrc.com.au/inside-run/tab-turnbull-stakes-day-2026/race-schedule/race-7/",
+        "https://www.racingandsports.com.au/news/racing/news/2026-09-18/boom-stayer-aethelwulf-puts-himself-into-the-melbourne-cup-conversation/721662"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "official Cup weight cross-check",
+      "fact": "Racing & Sports weight-release report independently confirms key official allocations including Half Yours 59kg, Aeliana 58kg, Highwayman 56.5kg, Goodie Two Shoes 55kg, Defiantly 56.5kg, Green Spaces 54.5kg, Enfjaar 54.5kg and Wine Dark Sea 54.5kg. These are corroborative evidence only; canonical 101-horse official ledger remains authoritative.",
+      "evidence": [
+        "https://www.racingandsports.com.au/news/racing/news/2026-09-17/cup-weights-released/721602"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "R&S rating-gap recheck",
+      "fact": "No new explicitly labelled numeric Racing & Sports ratings were promoted in this pass. Generic tips, predictor fields and unrelated numeric fields remain quarantined.",
+      "ratingInference": false
+    }
+  ],
+  "completion": false,
+  "notifyUser": false
+}
