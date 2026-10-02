@@ -208,6 +208,25 @@
       "evidence": "https://www.racing.com/news/2026/09/29/news-international-obrien-melbourne-cup-team-grows-as-highwayman-stays-home",
       "ratingInference": false,
       "note": "Campaign/travel status only. Preserve Highwayman in the fixed original 101-nominee ledger; do not treat scheduled arrival as completed travel."
+    },
+    {
+      "scope": "2 Oct current-prep evidence",
+      "facts": [
+        {
+          "horse": "Aethelwulf",
+          "fact": "Trainer Matthew Smith is weather-watching before choosing between the Bart Cummings at Flemington and Metropolitan at Randwick on 3 Oct; no completed run or rating inferred."
+        },
+        {
+          "horse": "She's A Hustler",
+          "fact": "Trainer Grahame Begg confirmed she will run in the Turnbull Stakes at Flemington on 3 Oct; latest run remains fifth in the Makybe Diva Stakes and Caulfield Cup remains the stated target."
+        }
+      ],
+      "evidence": [
+        "https://www.racing.com/news/2026/10/01/news-contenders-smith-on-weather-watch-with-aethelwulf",
+        "https://www.vrc.com.au/latest-news/wet-or-dry-hustler-will-be-at-flemington/"
+      ],
+      "ratingInference": false,
+      "tranche": "data/intelligence/2026-10-02-acquisition-current-prep.json"
     }
   ],
   "ratingGapRecheck": {
@@ -227,5 +246,5 @@
   },
   "completion": false,
   "notifyUser": false,
-  "checkedAt": "2026-10-02T09:40:18+10:00"
+  "checkedAt": "2026-10-02T10:44:47+10:00"
 }
