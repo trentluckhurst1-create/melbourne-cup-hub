@@ -1,0 +1,10 @@
+{
+  "snapshotDate": "2026-10-02",
+  "source": "https://www.vrc.com.au/latest-news/2026-tab-turnbull-stakes-contenders/",
+  "status": "VERIFIED_PUBLIC_SOURCE",
+  "scope": "12 original 101 nominees accepted for the 2026 TAB Turnbull Stakes",
+  "fieldsVerified": ["pedigree", "career record", "prizemoney", "Flemington record", "2000m record", "Turnbull carried weight", "barrier"],
+  "horses": ["Half Yours","Light Infantry Man","Aeliana","Asterix","Zahrann","Ohope Wins","Middle Earth","Soul Of Spain","She's A Hustler","Saint George","Deakin","Kings Valley"],
+  "ratingInference": false,
+  "note": "VRC article dated 1 Oct 2026 explicitly publishes these fields. No numeric performance rating inferred. Detailed values remain in source and should be merged only through identity-safe acquisition pipeline."
+}
