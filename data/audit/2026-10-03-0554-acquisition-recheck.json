@@ -1,0 +1,38 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-03",
+  "checkedAt": "2026-10-03T05:54:54+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "2026 Cup declarations / fixed original universe",
+      "fact": "VRC public media index records that 71 horses remained in the 2026 Lexus Melbourne Cup after first declarations on 29 September. Preserve the acquisition universe at the original 101 nominees; declaration status is a current-status field and must not delete the other 30 dossiers.",
+      "evidence": ["https://www.vrc.com.au/media-sponsors/media-releases/"],
+      "ratingInference": false
+    },
+    {
+      "horse": "Zahrann",
+      "scope": "Cup weight / 2026 preparation",
+      "fact": "Racing.com reports a 0.5kg Melbourne Cup penalty after the Naturalism Stakes win, lifting Zahrann from 54kg to 54.5kg and moving him to 38th in the order of entry. Preserve the original allocation separately from the post-penalty current weight.",
+      "evidence": ["https://www.racing.com/news/2026/09/21/news-contenders-zahrann-cops-cups-penalty"],
+      "ratingInference": false
+    },
+    {
+      "scope": "R&S rating-gap recheck",
+      "fact": "The VRC Racing & Sports-authored international rating article remains explicit evidence for the 23 international nominees' peak RAS ratings. No unlabelled predictor or generic form-guide number was promoted as an R&S rating in this pass.",
+      "evidence": ["https://www.vrc.com.au/latest-news/lexus-melbourne-cup-rating-the-internationals/"],
+      "ratingInference": false
+    }
+  ],
+  "completion": false,
+  "notifyUser": false
+}
