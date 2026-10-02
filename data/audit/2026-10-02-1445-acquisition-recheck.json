@@ -1,0 +1,34 @@
+{
+  "snapshotDate": "2026-10-02",
+  "checkedAt": "2026-10-02T14:45:00+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "horse": "Knight's Choice",
+      "scope": "2026 preparation / Bart Cummings",
+      "fact": "Fresh VRC/Racing & Sports evidence confirms Knight's Choice is intended to return to Flemington in The Lexus Bart Cummings (2520m) on 3 Oct 2026, carrying 60kg, with 56.5kg in the Melbourne Cup. His two runs this preparation are 12th in the Heatherlie Stakes (1700m) and 9th in the Naturalism Stakes (2000m).",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/back-to-flemington-for-knight-s-choice/",
+        "https://www.racingandsports.com.au/news/racing/news/2026-09-29/back-to-flemington-for-knights-choice/722261"
+      ],
+      "ratingInference": false,
+      "reconciliation": "Supersedes the earlier acquisition-progress note that quarantined Knight's Choice merely because he was absent from the then-captured published field subset. Current horse-specific VRC/R&S evidence is explicit. Race classification is retained only as stated by source; no R&S numeric rating is inferred."
+    },
+    {
+      "scope": "R&S rating-gap recheck",
+      "fact": "No new explicitly labelled numeric Racing & Sports ratings were promoted in this run. Search results containing generic R&S Tips, Neurals, enhanced-form or unrelated numeric fields remain quarantined.",
+      "ratingInference": false
+    }
+  ],
+  "completion": false,
+  "notifyUser": false
+}
