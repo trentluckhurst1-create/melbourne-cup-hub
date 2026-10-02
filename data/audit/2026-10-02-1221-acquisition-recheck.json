@@ -1,13 +1,18 @@
 {
   "snapshotDate": "2026-10-02",
+  "checkedAtLocal": "2026-10-02T15:36:06+10:00",
   "universe": 101,
   "status": "IN_PROGRESS",
   "coverage": {"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101","marketObserved":"100/101"},
   "freshChecks": [
+    {"scope":"Melbourne Cup first acceptances","status":"71_REMAIN_AFTER_FIRST_ACCEPTANCES_29_SEP","source":"https://www.racing.com/news/2026/09/29/news-maher-with-plenty-in-melbourne-cup-mix","note":"13 internationals remain; original 101 universe retained for acquisition ledger.","ratingInference":false},
     {"horse":"Highwayman","status":"WITHDRAWN_FROM_CUP_CAMPAIGN","source":"https://www.racing.com/news/2026/09/29/news-international-obrien-melbourne-cup-team-grows-as-highwayman-stays-home","ratingInference":false},
+    {"horse":"Tawny Port","status":"NOT_IN_FIRST_ACCEPTANCES","source":"https://www.racing.com/news/2026/09/29/news-maher-with-plenty-in-melbourne-cup-mix","note":"Original nominee remains in fixed 101 research universe.","ratingInference":false},
     {"horse":"Zahrann","status":"CUP_WEIGHT_54.5KG_AFTER_0.5KG_PENALTY","source":"https://www.racing.com/news/2026/09/21/news-contenders-zahrann-cops-cups-penalty","ratingInference":false},
-    {"horse":"Aethelwulf","status":"CUP_WEIGHT_51KG_PUBLICLY_VERIFIED","source":"https://www.racing.com/news/2026/09/18/news-review-aethelwulf-bart-cummings-melbourne-cup-newcastle-gold-cup","ratingInference":false}
+    {"horse":"Aethelwulf","status":"CUP_WEIGHT_51KG_PUBLICLY_VERIFIED","source":"https://www.racing.com/news/2026/09/18/news-review-aethelwulf-bart-cummings-melbourne-cup-newcastle-gold-cup","ratingInference":false},
+    {"scope":"official feature-race status","status":"RV_PUBLISHES_MELBOURNE_CUP_ORDER_OF_ENTRY_AS_AT_28_SEP","source":"https://www.racingvictoria.com.au/racing/feature-race-conditions","ratingInference":false}
   ],
+  "nextAcceptanceDate": "2026-10-13T12:00:00+11:00",
   "ratingPolicy":"Never infer missing R&S ratings.",
   "completion":false,
   "notifyUser":false
