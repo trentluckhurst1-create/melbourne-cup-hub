@@ -1,0 +1,14 @@
+{
+  "snapshotDate": "2026-10-02",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101","marketObserved":"100/101"},
+  "freshChecks": [
+    {"horse":"Highwayman","status":"WITHDRAWN_FROM_CUP_CAMPAIGN","source":"https://www.racing.com/news/2026/09/29/news-international-obrien-melbourne-cup-team-grows-as-highwayman-stays-home","ratingInference":false},
+    {"horse":"Zahrann","status":"CUP_WEIGHT_54.5KG_AFTER_0.5KG_PENALTY","source":"https://www.racing.com/news/2026/09/21/news-contenders-zahrann-cops-cups-penalty","ratingInference":false},
+    {"horse":"Aethelwulf","status":"CUP_WEIGHT_51KG_PUBLICLY_VERIFIED","source":"https://www.racing.com/news/2026/09/18/news-review-aethelwulf-bart-cummings-melbourne-cup-newcastle-gold-cup","ratingInference":false}
+  ],
+  "ratingPolicy":"Never infer missing R&S ratings.",
+  "completion":false,
+  "notifyUser":false
+}
