@@ -1,10 +1,10 @@
 {
   "snapshotDate": "2026-10-03",
-  "checkedAt": "2026-10-03T06:39:00+10:00",
+  "checkedAt": "2026-10-03T08:27:00+10:00",
   "universe": 101,
   "status": "IN_PROGRESS",
   "coverage": {"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101","marketObserved":"100/101"},
-  "note": "Pre-race recheck: 3 Oct Turnbull/Bart Cummings/Metropolitan results were not yet available. Preserve fixed original 101; do not promote previews or intentions into completed results; no ratings inferred.",
+  "note": "08:27 pre-race recheck: 3 Oct Turnbull/Bart Cummings/Metropolitan completed results were still not publicly available in the checked sources. Preserve fixed original 101; do not promote previews, fields or intentions into completed results; no ratings inferred. Aethelwulf remains verified as a 51kg Melbourne Cup nominee and Bart Cummings/Metropolitan option, but no 3 Oct result is recorded until published.",
   "completion": false,
   "notifyUser": false
 }
