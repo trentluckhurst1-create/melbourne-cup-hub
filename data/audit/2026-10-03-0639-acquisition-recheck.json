@@ -1,0 +1,10 @@
+{
+  "snapshotDate": "2026-10-03",
+  "checkedAt": "2026-10-03T06:39:00+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101","marketObserved":"100/101"},
+  "note": "Pre-race recheck: 3 Oct Turnbull/Bart Cummings/Metropolitan results were not yet available. Preserve fixed original 101; do not promote previews or intentions into completed results; no ratings inferred.",
+  "completion": false,
+  "notifyUser": false
+}
