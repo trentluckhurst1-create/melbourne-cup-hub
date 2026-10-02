@@ -3,8 +3,26 @@
   "source": "https://www.vrc.com.au/latest-news/2026-tab-turnbull-stakes-contenders/",
   "status": "VERIFIED_PUBLIC_SOURCE",
   "scope": "12 original 101 nominees accepted for the 2026 TAB Turnbull Stakes",
-  "fieldsVerified": ["pedigree", "career record", "prizemoney", "Flemington record", "2000m record", "Turnbull carried weight", "barrier"],
-  "horses": ["Half Yours","Light Infantry Man","Aeliana","Asterix","Zahrann","Ohope Wins","Middle Earth","Soul Of Spain","She's A Hustler","Saint George","Deakin","Kings Valley"],
+  "fieldsVerified": ["pedigree","career record","prizemoney","Flemington record","2000m record","Turnbull carried weight","barrier"],
   "ratingInference": false,
-  "note": "VRC article dated 1 Oct 2026 explicitly publishes these fields. No numeric performance rating inferred. Detailed values remain in source and should be merged only through identity-safe acquisition pipeline."
+  "records": [
+    {"horse":"Half Yours","pedigree":"St Jean (IRE) - La Gazelle (Desert King (IRE))","career":{"starts":20,"wins":8,"seconds":3,"thirds":0,"prizemoney":9398340},"flemington":{"starts":3,"wins":1,"seconds":0,"thirds":0},"distance2000m":{"starts":4,"wins":1,"seconds":1,"thirds":0},"turnbull":{"weightKg":59,"barrier":14}},
+    {"horse":"Light Infantry Man","pedigree":"Fast Company (IRE) - Lights On Me (GB) (Kyllachy (GB))","career":{"starts":37,"wins":7,"seconds":5,"thirds":4,"prizemoney":5786300},"flemington":{"starts":6,"wins":3,"seconds":0,"thirds":1},"distance2000m":{"starts":6,"wins":2,"seconds":0,"thirds":0},"turnbull":{"weightKg":58,"barrier":3}},
+    {"horse":"Aeliana","pedigree":"Castelvecchio - Temolie (Star Witness)","career":{"starts":20,"wins":6,"seconds":7,"thirds":1,"prizemoney":4634225},"flemington":{"starts":3,"wins":1,"seconds":1,"thirds":0},"distance2000m":{"starts":4,"wins":1,"seconds":1,"thirds":0},"turnbull":{"weightKg":57,"barrier":2}},
+    {"horse":"Asterix","pedigree":"Tavistock (NZ) - Mourasana (GB) (Shirocco (GER))","career":{"starts":31,"wins":8,"seconds":1,"thirds":2,"prizemoney":1440446},"flemington":{"starts":1,"wins":0,"seconds":0,"thirds":0},"distance2000m":{"starts":7,"wins":1,"seconds":0,"thirds":1},"turnbull":{"weightKg":56.5,"barrier":11}},
+    {"horse":"Zahrann","pedigree":"Night of Thunder (IRE) - Zannda (IRE) (Azamour (IRE))","career":{"starts":10,"wins":4,"seconds":2,"thirds":1,"prizemoney":375873},"flemington":{"starts":2,"wins":0,"seconds":0,"thirds":1},"distance2000m":{"starts":4,"wins":2,"seconds":0,"thirds":1},"turnbull":{"weightKg":56.5,"barrier":1}},
+    {"horse":"Ohope Wins","pedigree":"Ocean Park (NZ) - Choux Mania (Redoute's Choice)","career":{"starts":10,"wins":4,"seconds":1,"thirds":0,"prizemoney":1494843},"flemington":{"starts":1,"wins":0,"seconds":0,"thirds":0},"distance2000m":{"starts":2,"wins":1,"seconds":0,"thirds":0},"turnbull":{"weightKg":56,"barrier":5}},
+    {"horse":"Middle Earth","pedigree":"Roaring Lion (USA) - Roheryn (IRE) (Galileo (IRE))","career":{"starts":23,"wins":6,"seconds":2,"thirds":3,"prizemoney":1413040},"flemington":{"starts":4,"wins":1,"seconds":0,"thirds":1},"distance2000m":{"starts":8,"wins":2,"seconds":1,"thirds":1},"turnbull":{"weightKg":56,"barrier":6}},
+    {"horse":"Soul Of Spain","pedigree":"Phoenix Of Spain (IRE) - Aimhirgin Lass (IRE) (Pivotal (GB))","career":{"starts":24,"wins":5,"seconds":5,"thirds":6,"prizemoney":1038278},"flemington":{"starts":0,"wins":0,"seconds":0,"thirds":0},"distance2000m":{"starts":4,"wins":1,"seconds":1,"thirds":2},"turnbull":{"weightKg":56,"barrier":15}},
+    {"horse":"She's A Hustler","pedigree":"Ace High - Snow Petal (Bernardini (USA))","career":{"starts":16,"wins":7,"seconds":4,"thirds":1,"prizemoney":1003206},"flemington":{"starts":3,"wins":1,"seconds":1,"thirds":0},"distance2000m":{"starts":4,"wins":1,"seconds":2,"thirds":0},"turnbull":{"weightKg":55,"barrier":7}},
+    {"horse":"Saint George","pedigree":"Roaring Lion (USA) - Lady Dragon (IRE) (Galileo (IRE))","career":{"starts":21,"wins":6,"seconds":4,"thirds":2,"prizemoney":677972},"flemington":{"starts":7,"wins":2,"seconds":1,"thirds":0},"distance2000m":{"starts":8,"wins":4,"seconds":1,"thirds":1},"turnbull":{"weightKg":55,"barrier":13}},
+    {"horse":"Deakin","pedigree":"Australia (GB) - Dealbata (IRE) (Dubawi (IRE))","career":{"starts":21,"wins":5,"seconds":2,"thirds":2,"prizemoney":599492},"flemington":{"starts":4,"wins":1,"seconds":1,"thirds":0},"distance2000m":{"starts":7,"wins":1,"seconds":2,"thirds":0},"turnbull":{"weightKg":55,"barrier":12}},
+    {"horse":"Kings Valley","pedigree":"Territories (IRE) - Crystal Etoile (GB) (Dansili (GB))","career":{"starts":27,"wins":6,"seconds":6,"thirds":4,"prizemoney":567094},"flemington":{"starts":2,"wins":0,"seconds":1,"thirds":0},"distance2000m":{"starts":8,"wins":1,"seconds":1,"thirds":2},"turnbull":{"weightKg":55,"barrier":10}}
+  ],
+  "governance": {
+    "identitySafe": true,
+    "sourceDate": "2026-10-01",
+    "noRatingInference": true,
+    "note": "Values transcribed from the VRC contender dossiers. These are source-dated public profile records and must not be treated as post-race Turnbull results."
+  }
 }
