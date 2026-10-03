@@ -1,0 +1,61 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-04",
+  "checkedAt": "2026-10-04T03:35:40+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "Lexus Bart Cummings — completed result cross-check",
+      "fact": "Racing & Sports completed result confirms original nominees Litzdeel 2nd by 1.3L carrying 54kg and Valiant King 3rd at 5.3L carrying 55.5kg behind Mr Monaco over 2520m on Heavy at Flemington. Mr Monaco carried 54kg and won.",
+      "evidence": [
+        "https://www.racingandsports.com.au/horse-racing-results/australia/flemington/2026-10-03/R7"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "Lexus Bart Cummings — Cup qualification",
+      "fact": "Racing & Sports reports Mr Monaco's Bart Cummings victory earned a ballot exemption into the 2026 Melbourne Cup. Litzdeel was second and Valiant King third.",
+      "evidence": [
+        "https://www.racingandsports.co.uk/news/racing/news/2026-03-10/mr-monaco-secures-melbourne-cup-berth/722528"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "TAB Turnbull Stakes — current preparation",
+      "fact": "VRC confirms original nominees Light Infantry Man finished second and Aeliana third behind Cosmic Crusader in the G1 Turnbull Stakes at Flemington on 3 October 2026.",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/cosmic-crusader-strikes-group-1-glory-as-melbourne-cup-carnival-momentum-builds/"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "Aeliana — explicitly published R&S run-rating sequence",
+      "fact": "Racing & Sports preview explicitly states Aeliana had gone 107-119 in her first two runs of the current campaign, compared with 118-122-123 in the prior preparation. These are retained only as explicitly published R&S run-rating evidence and are not inferred into an unlabelled official-rating field.",
+      "evidence": [
+        "https://lb-oci.racingandsports.com/news/racing/previews/2026-01-10/the-melbourne-mail-flemington-3rd-of-october-2026/722369"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "First declarations status",
+      "fact": "Fresh public cross-check continues to report 71 first acceptors, including 13 internationals, from the fixed original nomination universe. The acquisition universe remains fixed at 101 and non-acceptors are retained as historical nominees.",
+      "evidence": [
+        "https://www.neds.com.au/blog/betting-info/melbourne-cup/"
+      ],
+      "ratingInference": false
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred. Only explicitly published Racing & Sports rating/run-rating evidence may enter R&S-labelled fields. Timeform remains separate. Ambiguous numeric fields remain quarantined.",
+  "remaining": "Full 101-horse acquisition remains incomplete: horse-specific training-base verification is 84/101, exact silks 77/101, explicitly public R&S rating coverage 52/101, and other obtainable field-level evidence still has gaps. Missing R&S ratings are not treated as definitively unavailable merely because no explicit public figure was found in this pass.",
+  "completion": false,
+  "notifyUser": false
+}
