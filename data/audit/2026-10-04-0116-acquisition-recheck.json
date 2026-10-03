@@ -1,0 +1,38 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-04",
+  "checkedAt": "2026-10-04T01:16:40+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "TAB Turnbull Stakes",
+      "fact": "VRC completed result: Cosmic Crusader won the G1 2000m Turnbull by 1.75L from original nominee Light Infantry Man; original nominee Aeliana was a further 1L away third. VRC reports the track as rain-affected/heavy in the lead-up. This is current-prep/result evidence only; no rating inferred.",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/turnbull-victory-a-cosmic-plate-tune-up/",
+        "https://www.vrc.com.au/latest-news/cosmic-crusader-strikes-group-1-glory-as-melbourne-cup-carnival-momentum-builds/"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "Lexus Bart Cummings",
+      "fact": "VRC confirms Mr Monaco won the G3 2500m Bart Cummings and earned the 2026 Melbourne Cup ballot exemption; Litzdeel was second and Valiant King third.",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/"
+      ],
+      "ratingInference": false
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred. Explicitly labelled R&S evidence only; Timeform remains separate. Search results displaying a 'Current Timeform Runners' list were not promoted into the R&S rating ledger.",
+  "remaining": "Full 101-horse acquisition remains incomplete: training-base verification, exact silks, publicly explicit R&S ratings and other obtainable field-level evidence still have gaps.",
+  "completion": false,
+  "notifyUser": false
+}
