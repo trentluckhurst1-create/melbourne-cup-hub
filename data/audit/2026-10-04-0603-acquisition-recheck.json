@@ -1,0 +1,33 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-04",
+  "checkedAt": "2026-10-04T06:03:56+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "Light Infantry Man stakes provenance",
+      "fact": "Racing and Sports feature-race material confirms Light Infantry Man won the Group 1 Australian Cup at Flemington in 2025 and 2026; the 2026 record shows 59.0kg.",
+      "evidence": ["Racing and Sports Australian Cup feature-race page"],
+      "ratingInference": false
+    },
+    {
+      "scope": "Aeliana stakes provenance",
+      "fact": "Racing and Sports feature-race material confirms Aeliana won the 2026 Group 1 HE Tancred Stakes over 2400m at Rosehill, from Dubai Honour and Vauban.",
+      "evidence": ["Racing and Sports HE Tancred Stakes feature-race page"],
+      "ratingInference": false
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred. Descriptive or ambiguous rating language remains quarantined. Timeform remains separate.",
+  "remaining": "Full 101-horse acquisition remains incomplete: training-base verification 84/101, exact silks 77/101, explicit public R&S rating coverage 52/101, market observed 100/101, plus remaining field-level evidence gaps.",
+  "completion": false,
+  "notifyUser": false
+}
