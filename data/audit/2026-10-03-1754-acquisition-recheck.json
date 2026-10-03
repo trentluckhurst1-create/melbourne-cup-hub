@@ -1,0 +1,47 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-03",
+  "checkedAt": "2026-10-03T17:54:41+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "Flemington live race-day state",
+      "fact": "At 17:54 check, the public Racing & Sports Flemington results index had completed early races but still showed The Lexus Bart Cummings (R7, 2520m) and TAB Turnbull Stakes (R8, 2000m) without results in the indexed page. No result was promoted from an incomplete source.",
+      "evidence": [
+        "https://www.racingandsports.com.au/horse-racing-results/australia/flemington"
+      ],
+      "ratingInference": false
+    },
+    {
+      "horse": "Aethelwulf",
+      "scope": "The Metropolitan public form evidence",
+      "fact": "Racing & Sports public field/form evidence identifies Aethelwulf as a 4yo gelding, Matthew Smith-trained, Zac Lloyd booked, 55.0kg, barrier 3, and displays form string 51111. The page exposes a numeric 108 in the row but its semantic label is not sufficiently explicit in the retrieved public rendering, so it is NOT promoted as an R&S rating.",
+      "evidence": [
+        "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/randwick/2026-10-03/R7?showPriceComparison=1"
+      ],
+      "ratingInference": false,
+      "quarantine": "Unlabelled numeric 108 retained out of canonical R&S ratings until explicitly labelled evidence is obtained."
+    },
+    {
+      "horse": "The Euphrates",
+      "scope": "The Metropolitan public form evidence",
+      "fact": "Racing & Sports public form lists career 13:4-2-1, course 2:1-0-0, distance 4:1-1-0, Good 9:3-1-0, Soft 1:0-0-0, Heavy 3:1-1-1, Turf 13:4-2-1; latest published run before race day was 1st of 14 by 0.9L at Randwick on 19 Sep 2026, G2 2000m, Good, carrying 55.0kg.",
+      "evidence": [
+        "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/randwick/2026-10-03/R7"
+      ],
+      "ratingInference": false
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred. Explicitly labelled R&S evidence only; ambiguous table numerics quarantined. Timeform remains separate.",
+  "completion": false,
+  "notifyUser": false
+}
