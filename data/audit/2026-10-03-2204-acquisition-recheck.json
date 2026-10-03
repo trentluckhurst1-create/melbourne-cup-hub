@@ -1,0 +1,42 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-03",
+  "checkedAt": "2026-10-03T22:04:17+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "The Lexus Bart Cummings",
+      "fact": "Racing & Sports result now complete: Mr Monaco 1st (54kg), Litzdeel 2nd by 1.3L (54kg), Valiant King 3rd at 5.3L (55.5kg), 2520m Heavy. VRC confirms Mr Monaco earned the Melbourne Cup ballot exemption.",
+      "evidence": [
+        "https://lb-oci.racingandsports.com/horse-racing-results/australia/flemington/2026-10-03/r7",
+        "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "The Metropolitan",
+      "fact": "Public completed result coverage records Cup nominees Aethelwulf 2nd (55kg), The Euphrates 3rd (59kg), Green Spaces 4th (56.5kg) and Athabascan 5th (54kg) over 2400m. No ambiguous numeric fields were promoted as R&S ratings.",
+      "evidence": [
+        "https://www.races.com.au/2026/10/03/juja-kibo-claims-the-metropolitan-2026-spring-cups-bid-gains-momentum/"
+      ],
+      "ratingInference": false
+    }
+  ],
+  "repositoryProgress": {
+    "commit": "4759a95092f5ef5c0d86e03574e5e9bc6e7a2fc3",
+    "file": "data/leadups/2026-09-13.json"
+  },
+  "ratingsGovernance": "No ratings inferred. Explicitly labelled R&S evidence only; ambiguous table numerics quarantined. Timeform remains separate.",
+  "remaining": "Full 101-horse acquisition remains incomplete: training-base verification, exact silks, publicly explicit R&S ratings and other obtainable field-level evidence still have gaps.",
+  "completion": false,
+  "notifyUser": false
+}
