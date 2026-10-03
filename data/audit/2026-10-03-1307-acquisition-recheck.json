@@ -1,0 +1,49 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-03",
+  "checkedAt": "2026-10-03T13:07:35+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "Flemington race-day state",
+      "fact": "Public VRC/Racing & Sports pages confirm The Lexus Bart Cummings (G3, 2520m) and TAB Turnbull Stakes (G1, 2000m) are scheduled later on 3 Oct 2026. No completed result was promoted at this check.",
+      "evidence": [
+        "https://www.vrc.com.au/race-days-and-events/2026-2027/tab-turnbull-stakes-day/",
+        "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/flemington/2026-10-03/race-tips"
+      ],
+      "ratingInference": false
+    },
+    {
+      "horse": "Aethelwulf",
+      "scope": "The Metropolitan acceptance/current preparation",
+      "fact": "Racing & Sports field evidence lists Aethelwulf in The Metropolitan at Randwick over 2400m with 55kg and Zac Lloyd; trainer Matthew Smith publicly confirmed the Sydney target after declining the heavy-track Bart Cummings option. This is pre-race evidence only; no result is recorded.",
+      "evidence": [
+        "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/randwick/2026-10-03/race-fields",
+        "https://www.racingandsports.com.au/news/racing/news/2026-10-01/aethelwulf-to-target-the-metropolitan-at-royal-randwick/722398"
+      ],
+      "ratingInference": false
+    },
+    {
+      "horse": "The Euphrates",
+      "scope": "The Metropolitan acceptance/current preparation",
+      "fact": "Racing & Sports lists The Euphrates as topweight 59kg in The Metropolitan; published preview notes his prior G3 Kingston Town Stakes win and 54kg Melbourne Cup handicap. No 3 Oct result is recorded before the race.",
+      "evidence": [
+        "https://www.racingandsports.com.au/form-guide/thoroughbred/australia/randwick/2026-10-03/race-fields",
+        "https://www.racingandsports.com.au/news/racing/news/2026-10-02/sir-delius-and-the-euphrates-poised-for-historic-double/722425"
+      ],
+      "ratingInference": false
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred. Racing & Sports ratings are promoted only when explicitly labelled/published as R&S evidence; Timeform remains separate.",
+  "completion": false,
+  "notifyUser": false
+}
