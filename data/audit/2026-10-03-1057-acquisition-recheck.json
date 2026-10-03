@@ -1,0 +1,33 @@
+{
+  "snapshotDate": "2026-10-03",
+  "checkedAt": "2026-10-03T10:57:32+10:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedUpdates": [
+    {
+      "horse": "Aethelwulf",
+      "finding": "Scratched from The Lexus Bart Cummings at Flemington; remains listed in The Metropolitan at Randwick with 55kg and Zac Lloyd.",
+      "evidence": [
+        "https://www.neds.com.au/blog/betting-info/the-bart-cummings/",
+        "https://www.racingpost.com/racecards/471/randwick/2026-10-03/930102/compact-view/"
+      ],
+      "governance": "Do not record a 3 Oct completed run/result until the race has been run and a completed result is publicly published."
+    }
+  ],
+  "raceDayState": {
+    "turnbullStakes": "Scheduled 16:25 AEST; no completed result available at check time.",
+    "bartCummings": "Scheduled 15:50 AEST; no completed result available at check time.",
+    "metropolitan": "Scheduled later today; no completed result available at check time."
+  },
+  "ratingsGovernance": "No ratings inferred. Racing & Sports ratings are promoted only when explicitly labelled/published as R&S evidence; Timeform remains separate.",
+  "completion": false,
+  "notifyUser": false
+}
