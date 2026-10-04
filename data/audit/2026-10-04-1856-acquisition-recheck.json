@@ -1,0 +1,13 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-04",
+  "checkedAt": "2026-10-04T18:56:46+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101","marketObserved":"100/101"},
+  "freshSearchResult": "No new authoritative horse-specific public evidence found in this recheck that safely closes remaining gaps without inference.",
+  "ratingsGovernance": "No ratings inferred. Timeform remains separate. Only explicitly labelled R&S numerical ratings enter the R&S field.",
+  "remaining": "Training-base verification 84/101; exact silks 77/101; explicit public R&S rating 52/101; market observed 100/101; remaining field-level evidence gaps.",
+  "completion": false,
+  "notifyUser": false
+}
