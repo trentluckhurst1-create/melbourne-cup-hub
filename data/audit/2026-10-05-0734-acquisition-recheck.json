@@ -1,0 +1,20 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-05",
+  "checkedAt": "2026-10-05T07:34:50+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "ratingsGovernance": "No ratings inferred. Only explicitly published Racing & Sports rating/run-rating evidence may enter R&S-labelled fields. Timeform remains separate. Ambiguous numeric fields remain quarantined.",
+  "freshSearchResult": "Fresh public-web searches for explicit labelled Racing & Sports ratings for Mr Monaco, Juja Kibo, Ohope Wins, Aethelwulf and Litzdeel produced no safely promotable numerical R&S rating evidence. No rating was inferred or substituted.",
+  "remaining": "Training base 84/101; exact silks 77/101; explicit public R&S rating 52/101; market observed 100/101; remaining field-level evidence gaps. All 101 remain accounted for at acquisition level, but required publicly obtainable fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
