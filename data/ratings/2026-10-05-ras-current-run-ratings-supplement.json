@@ -1,0 +1,8 @@
+{
+  "snapshotDate": "2026-10-05",
+  "ratingScale": "Racing And Sports",
+  "metric": "explicitly published current-run RAS rating",
+  "source": {"publisher":"Racing & Sports","url":"https://www.racingandsports.com.au/news/ratings-analysis","verifiedOn":"2026-10-05"},
+  "runs": [{"horse":"She's A Hustler","date":"2026-10-03","track":"Flemington","race":8,"distanceM":2000,"rasRating":113,"note":"Turnbull Stakes run; explicitly exposed on public Ratings And Analysis page."}],
+  "policy": "No ratings inferred; run rating kept separate from career peak, Timeform, RSSR and official handicap ratings."
+}
