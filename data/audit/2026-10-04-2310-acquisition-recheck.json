@@ -1,0 +1,37 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-04",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "ratingsGovernance": "No ratings inferred; Timeform separate; explicit labelled R&S only.",
+  "remaining": "Training base 84/101; exact silks 77/101; explicit public R&S rating 52/101; market observed 100/101; remaining field-level evidence gaps. All 101 are accounted for at acquisition level, but all required publicly obtainable fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false,
+  "checkedAt": "2026-10-04T23:10:36+11:00",
+  "freshSearchResult": "Fresh 4 Oct public-source recheck found no safely promotable new numerical R&S rating. Confirmed 3 Oct Flemington updates relevant to the fixed universe: original nominee Mr Monaco won G3 The Lexus Bart Cummings (2500m), earning the Melbourne Cup ballot exemption; Litzdeel finished second and Valiant King third. VRC also records Aeliana third in the G1 Turnbull Stakes (2000m), strengthening her Cup credentials. These facts are public and current, but no rating was inferred from them.",
+  "evidence": [
+    {
+      "url": "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/",
+      "date": "2026-10-03",
+      "scope": "Mr Monaco Bart Cummings win, 2500m, ballot exemption; Litzdeel second; Valiant King third"
+    },
+    {
+      "url": "https://www.vrc.com.au/latest-news/cosmic-crusader-strikes-group-1-glory-as-melbourne-cup-carnival-momentum-builds/",
+      "date": "2026-10-03",
+      "scope": "Aeliana third in G1 Turnbull Stakes 2000m; Mr Monaco Bart Cummings golden ticket"
+    },
+    {
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-10-03/mr-monaco-wins-group-3-the-lexus-bart-cummings-post-race-trainer-and-jockey-quotes/722518",
+      "date": "2026-10-03",
+      "scope": "Bart Cummings result: Mr Monaco 1st, Litzdeel 2nd, Valiant King 3rd; winning time 2:43.65; margins 1.25L x 4L"
+    }
+  ]
+}
