@@ -1,0 +1,13 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-04",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101","marketObserved":"100/101"},
+  "ratingsGovernance": "No ratings inferred; Timeform separate; explicit labelled R&S only.",
+  "remaining": "Training base 84/101; exact silks 77/101; explicit public R&S rating 52/101; market observed 100/101; remaining field-level evidence gaps. All 101 are accounted for at acquisition level, but all required publicly obtainable fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false,
+  "checkedAt": "2026-10-04T22:45:27+11:00",
+  "freshSearchResult": "Fresh VRC recheck confirmed official 101-horse weight-allocation provenance and 2026 golden-ticket governance. No new numerical R&S rating was promoted and no ambiguous evidence was used."
+}
