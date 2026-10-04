@@ -1,0 +1,11 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.current_prep.v1",
+  "snapshotDate": "2026-10-05",
+  "horse": "Ohope Wins",
+  "identity": {"country":"NZ","sex":"Mare","age":4,"sire":"Ocean Park","dam":"Choux Mania","trainer":"Chris Waller"},
+  "careerPublicSnapshot": {"starts":10,"wins":4,"seconds":1,"thirds":0,"prizeMoneyAud":1494843,"trackRecord":"1:0-0-0","distanceRecord":"2:1-0-0","firstUp":"2:0-0-0","secondUp":"2:0-0-0","source":"https://racehub.com.au/profiles/runners/horses/ohope-wins"},
+  "latestRun": {"date":"2026-10-03","track":"Flemington","race":"TAB Turnbull Stakes","class":"Group 1","distanceM":2000,"surface":"Turf","going":"Heavy 8","finish":6,"fieldSize":13,"marginLengths":9.25,"carriedWeightKg":56,"jockey":"Blake Shinn","source":"https://racehub.com.au/profiles/runners/horses/ohope-wins"},
+  "ratingsGovernance": "No rating inferred or promoted from this evidence.",
+  "acquisitionDecision": "PROMOTE_VERIFIED_PUBLIC_FACTS",
+  "retrievedAt": "2026-10-05T05:22:00+11:00"
+}
