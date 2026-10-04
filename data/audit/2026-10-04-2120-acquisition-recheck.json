@@ -1,0 +1,43 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-04",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "horse": "Litzdeel",
+      "fact": "VRC/Racing & Sports: second in G3 The Lexus Bart Cummings at Flemington on 3 Oct 2026, beaten 1.25L by Mr Monaco.",
+      "source": "VRC / Racing & Sports, 3 Oct 2026",
+      "url": "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/",
+      "ratingInference": false
+    },
+    {
+      "horse": "Valiant King",
+      "fact": "VRC/Racing & Sports: third in G3 The Lexus Bart Cummings at Flemington on 3 Oct 2026, four lengths behind runner-up Litzdeel.",
+      "source": "VRC / Racing & Sports, 3 Oct 2026",
+      "url": "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/",
+      "ratingInference": false
+    },
+    {
+      "horse": "Aeliana",
+      "fact": "VRC official recap confirms Aeliana strengthened her Cox Plate and Melbourne Cup credentials with a fast-finishing third in the G1 TAB Turnbull Stakes at Flemington on 3 Oct 2026.",
+      "source": "Victoria Racing Club, 3 Oct 2026",
+      "url": "https://www.vrc.com.au/latest-news/cosmic-crusader-strikes-group-1-glory-as-melbourne-cup-carnival-momentum-builds/",
+      "ratingInference": false
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred; Timeform separate; explicit labelled R&S only.",
+  "remaining": "Training base 84/101; exact silks 77/101; explicit public R&S rating 52/101; market observed 100/101; remaining field-level evidence gaps. All 101 remain accounted for at acquisition level, but all required publicly obtainable fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false,
+  "checkedAt": "2026-10-04T21:20:43+11:00",
+  "freshSearchResult": "Added verified 3 Oct current-preparation placings for Litzdeel and Valiant King and an independent VRC confirmation of Aeliana's Turnbull third. No numerical rating inferred."
+}
