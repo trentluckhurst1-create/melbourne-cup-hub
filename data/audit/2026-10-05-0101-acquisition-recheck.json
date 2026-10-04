@@ -1,0 +1,40 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-05",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "ratingsGovernance": "No ratings inferred; Timeform separate; explicit labelled R&S only.",
+  "verifiedProgress": [
+    {
+      "horse": "Half Yours",
+      "fact": "Racing.com records fourth in the G1 Turnbull Stakes at Flemington on 3 Oct 2026; this is current-preparation evidence only and no rating is inferred.",
+      "url": "https://www.racing.com/news/2026/10/03/news-stewards-jamie-melham-suspended-turnbull-stakes-caulfield",
+      "ratingInference": false
+    },
+    {
+      "horse": "Aethelwulf",
+      "fact": "Racing.com records second in the G2 Metropolitan (2400m) at Randwick on 3 Oct 2026, beaten 1.75L by Juja Kibo; current-preparation evidence only.",
+      "url": "https://www.racing.com/news/2026/10/03/news-review-juja-kibo-firms-for-cups-after-metropolitan-win",
+      "ratingInference": false
+    }
+  ],
+  "cupStatus": {
+    "firstAcceptances": "71 remain as at 29 Sep 2026",
+    "internationalFirstAcceptances": "13",
+    "nextDeclaration": "Second declarations noon 13 Oct 2026",
+    "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
+  },
+  "remaining": "Training base 84/101; exact silks 77/101; explicit public R&S rating 52/101; market observed 100/101; remaining field-level evidence gaps. All 101 remain accounted for at acquisition level, but required publicly obtainable fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false,
+  "checkedAt": "2026-10-05T01:01:00+11:00",
+  "freshSearchResult": "Fresh 5 Oct recheck added Half Yours' 3 Oct Turnbull fourth and independently reconfirmed Aethelwulf's Metropolitan second. No safely promotable new explicit numerical R&S rating found; no rating inferred."
+}
