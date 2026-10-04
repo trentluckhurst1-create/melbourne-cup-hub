@@ -1,0 +1,46 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-04",
+  "checkedAt": "2026-10-04T14:40:25+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "2026 G2 Metropolitan current-prep result",
+      "fact": "Racing & Sports result: Juja Kibo won the G2 Asahi Super Dry Metropolitan (2400m) at Randwick on 3 Oct 2026. Original Cup nominee Aethelwulf was second, 1.75 lengths behind, carrying 55kg; original nominee The Euphrates was third, a further 2 lengths away. Winning time 2:32.04; last 600m 34.60. No performance rating inferred.",
+      "evidence": [
+        "https://www.racingandsports.com.au/news/racing/news/2026-10-03/juja-kibo-wins-group-2-asahi-super-dry-metropolitan-post-race-trainer-and-jockey-quotes/722517"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "2026 TAB Turnbull Stakes current-prep evidence",
+      "fact": "Official VRC/Racing & Sports result: Cosmic Crusader won the G1 TAB Turnbull Stakes (2000m) at Flemington on 3 Oct 2026 by 1.75 lengths from original Cup nominee Light Infantry Man; original nominee Aeliana was third, one length further away. Jockey comments additionally document She's A Hustler struggled on the heavy ground, Ohope Wins was described as ticking over for the Cups, Middle Earth chipped away, Saint George got too far back and Kings Valley was considered suited by further. These are current-preparation observations only; no ratings inferred.",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/turnbull-victory-a-cosmic-plate-tune-up/",
+        "https://www.racing.com/news/2026/10/03/news-jockeys-turnbull-stakes-jockey-comments-031026"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "2026 Lexus Bart Cummings current-prep / ballot exemption",
+      "fact": "Official VRC/Racing & Sports result: Mr Monaco won the G3 Lexus Bart Cummings at Flemington on 3 Oct 2026 by 1.25 lengths from original Cup nominee Litzdeel; original Cup nominee Valiant King was third, a further four lengths away. Mr Monaco received the Melbourne Cup ballot exemption. Preserve the fixed 101 original nominee universe; Mr Monaco is not added to that historical universe unless he was one of the original 101.",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/"
+      ],
+      "ratingInference": false
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred from finishing positions, margins, odds or descriptive language. Timeform remains separate. Explicit R&S numerical ratings only enter the R&S field when labelled as such.",
+  "remaining": "Full 101-horse acquisition remains incomplete: training-base verification 84/101, exact silks 77/101, explicit public R&S rating coverage 52/101, market observed 100/101, plus remaining field-level evidence gaps.",
+  "completion": false,
+  "notifyUser": false
+}
