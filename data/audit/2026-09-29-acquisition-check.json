@@ -122,8 +122,14 @@
       "status": "FIRST_ACCEPTANCES_REVERIFIED_2026_10_01_0030_AEST_71_REMAIN",
       "facts": "Fresh official VRC check at 00:30 AEST on 1 Oct confirms 71 horses remain after first acceptances, including 13 internationals. VRC identifies Half Yours among first acceptances and lists current Turnbull nominations including Aeliana, Birdman, Asterix, Ohope Wins, Soul Of Spain, Valiant King and Soulcombe. Preserve the fixed 101 original nomination universe; current acceptance/campaign status does not remove the 30 non-acceptors from historical acquisition coverage. Second declarations remain due noon Tuesday 13 October 2026. No missing numeric rating is inferred.",
       "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
+    },
+    {
+      "status": "TURNBULL_STAKES_RESULT_CAPTURED_2026_10_03",
+      "facts": "Fresh public Racing & Sports result: G1 Turnbull Stakes, Flemington 3 Oct 2026, 2000m TURF HEAVY. Original Cup nominees Light Infantry Man finished 2nd, 1.8L from Cosmic Crusader, carrying 58kg (Harry Coffey/Ciaron Maher); Aeliana finished 3rd, 2.8L from winner, carrying 57kg (Damian Lane/Chris Waller). Result source also records Sir Delius 4th but he is not in the fixed 101 Cup nomination universe. No numeric R&S performance rating is inferred from result fields.",
+      "source": "https://www.racingandsports.com.au/horse-racing-results/australia/flemington/2026-10-03/r8",
+      "supportingSource": "https://www.racingandsports.com.au/news/racing/news/2026-10-03/cosmic-crusader-wins-group-1-tab-turnbull-stakes-post-race-trainer-and-jockey-quotes/722524"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-10-01T00:30:11+10:00"
+  "checkedAt": "2026-10-05T03:16:03+11:00"
 }
