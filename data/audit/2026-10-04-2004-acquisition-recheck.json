@@ -1,0 +1,17 @@
+{
+  "schema":"melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate":"2026-10-04",
+  "universe":101,
+  "status":"IN_PROGRESS",
+  "coverage":{"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101","marketObserved":"100/101"},
+  "verifiedProgress":[
+    {"horse":"So You Are","fact":"Racing Victoria: 0.5kg Melbourne Cup penalty after G3 Colin Stephen Quality win; Cup weight 52.0kg to 52.5kg; moved to 49th in order; carried 58.5kg in the win.","source":"Racing Victoria, 28 Sep 2026","ratingInference":false},
+    {"horse":"Royal Supremacy","fact":"Racing Victoria: G3 JRA Cup winner received no Melbourne Cup penalty; Cup weight remained 56.0kg.","source":"Racing Victoria, 28 Sep 2026","ratingInference":false},
+    {"horse":"Zahrann","fact":"Racing Victoria: 0.5kg Caulfield/Melbourne Cup penalty after Naturalism Stakes win.","source":"Racing Victoria, 21 Sep 2026","ratingInference":false},
+    {"horse":"Aethelwulf","fact":"Racing Victoria: Newcastle Gold Cup win passed Melbourne Cup first elimination clause; rose 83rd to 64th; no weight penalty.","source":"Racing Victoria, 21 Sep 2026","ratingInference":false}
+  ],
+  "ratingsGovernance":"No ratings inferred; Timeform separate; explicit labelled R&S only.",
+  "remaining":"Training base 84/101; exact silks 77/101; explicit public R&S rating 52/101; market observed 100/101; remaining field-level evidence gaps.",
+  "completion":false,
+  "notifyUser":false
+}
