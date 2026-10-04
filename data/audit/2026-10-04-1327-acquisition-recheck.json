@@ -1,0 +1,37 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-04",
+  "checkedAt": "2026-10-04T13:27:37+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "2026 TAB Turnbull Stakes current-prep evidence",
+      "fact": "Official VRC result: Cosmic Crusader won the G1 TAB Turnbull Stakes (2000m) at Flemington on 3 Oct 2026; Light Infantry Man was second and original Cup nominee Aeliana third. This is current-preparation/result evidence only; no performance rating inferred.",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/cosmic-crusader-strikes-group-1-glory-as-melbourne-cup-carnival-momentum-builds/"
+      ],
+      "ratingInference": false
+    },
+    {
+      "scope": "2026 Lexus Bart Cummings current-prep / ballot exemption",
+      "fact": "Official VRC/Racing & Sports result: Mr Monaco won the G3 Lexus Bart Cummings at Flemington on 3 Oct 2026 by 1.25 lengths from original Cup nominee Litzdeel; original Cup nominee Valiant King was third, a further four lengths away. Mr Monaco received the Melbourne Cup ballot exemption. Preserve the fixed 101 original nominee universe; Mr Monaco is not added to that historical universe unless he was one of the original 101.",
+      "evidence": [
+        "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/"
+      ],
+      "ratingInference": false
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred from finishing positions, margins, odds or descriptive language. Timeform remains separate. Explicit R&S numerical ratings only enter the R&S field when labelled as such.",
+  "remaining": "Full 101-horse acquisition remains incomplete: training-base verification 84/101, exact silks 77/101, explicit public R&S rating coverage 52/101, market observed 100/101, plus remaining field-level evidence gaps.",
+  "completion": false,
+  "notifyUser": false
+}
