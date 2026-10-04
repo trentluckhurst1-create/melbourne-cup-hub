@@ -1,0 +1,40 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-05",
+  "checkedAt": "2026-10-05T05:22:00+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "horse": "Ohope Wins",
+      "fact": "Fresh public profile/result evidence records Ohope Wins as 10:4-1-0 with AUD 1,494,843 prizemoney and confirms her 3 Oct 2026 Flemington Turnbull run: sixth of 13, 9.25L from the winner, 2000m, Heavy 8, carrying 56kg with Blake Shinn.",
+      "evidence": ["https://racehub.com.au/profiles/runners/horses/ohope-wins"],
+      "ratingInference": false
+    },
+    {
+      "scope": "TAB Turnbull Stakes cross-check",
+      "fact": "VRC independently confirms Light Infantry Man second and Aeliana third behind Cosmic Crusader in the Group 1 Turnbull Stakes on 3 Oct 2026. No rating is inferred.",
+      "evidence": ["https://www.vrc.com.au/latest-news/cosmic-crusader-strikes-group-1-glory-as-melbourne-cup-carnival-momentum-builds/"],
+      "ratingInference": false
+    }
+  ],
+  "cupStatus": {
+    "firstAcceptances": "71 remain as at 29 Sep 2026",
+    "internationalFirstAcceptances": "13",
+    "nextDeclaration": "Second declarations noon 13 Oct 2026",
+    "source": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
+  },
+  "ratingsGovernance": "No ratings inferred. Only explicitly published Racing & Sports rating/run-rating evidence may enter R&S-labelled fields. Timeform remains separate. Ambiguous numeric fields remain quarantined.",
+  "remaining": "Training base 84/101; exact silks 77/101; explicit public R&S rating 52/101; market observed 100/101; remaining field-level evidence gaps. All 101 remain accounted for at acquisition level, but required publicly obtainable fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false,
+  "freshSearchResult": "Added verified Ohope Wins career snapshot and 3 Oct Turnbull carried weight/margin/current-preparation evidence. No safely promotable new explicit numerical R&S rating found; no rating inferred."
+}
