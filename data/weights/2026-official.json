@@ -3,13 +3,13 @@
   "publishedAt": "2026-09-17T13:01:00+10:00",
   "source": "Racing Australia — Flemington weights, Lexus Melbourne Cup",
   "sourceUrl": "https://racingaustralia.horse/FreeFields/Weights.aspx?Key=2026Nov03%2CVIC%2CFlemington",
-  "observedAt": "2026-10-01T23:11:47+10:00",
+  "observedAt": "2026-10-05T21:39:51+11:00",
   "race": "Lexus Melbourne Cup",
   "distanceM": 3200,
   "fieldLimit": 24,
   "nominations": 101,
   "minimumWeightKg": 51,
-  "note": "Official release ledger for all 101 original nominees, with verified post-release penalties preserved. Zahrann updated from 54.0kg to 54.5kg after Racing Victoria imposed a 0.5kg Melbourne Cup penalty on 21 Sep 2026 for his G3 Naturalism Stakes win. So You Are updated from 52.0kg to 52.5kg after Racing Victoria imposed a 0.5kg Melbourne Cup penalty on 28 Sep 2026 for his G3 Colin Stephen Quality win. Horse names are normalized to Hub spelling. Predictions remain separate.",
+  "note": "Official release ledger for all 101 original nominees, with verified post-release penalties preserved. Zahrann 54.5kg (+0.5kg, 21 Sep Naturalism Stakes); So You Are 52.5kg (+0.5kg, 28 Sep Colin Stephen Quality); Juja Kibo 53.5kg (+2.0kg, 5 Oct Metropolitan); Mr Monaco 52.5kg (+1.5kg, 5 Oct Bart Cummings). Horse names are normalized to Hub spelling. Predictions remain separate.",
   "weights": [
     {
       "horse": "Defiantly",
@@ -233,7 +233,7 @@
     },
     {
       "horse": "Juja Kibo",
-      "weightKg": 51.5
+      "weightKg": 53.5
     },
     {
       "horse": "Storm Leopard",
@@ -245,7 +245,7 @@
     },
     {
       "horse": "Mr Monaco",
-      "weightKg": 51
+      "weightKg": 52.5
     },
     {
       "horse": "Manzor Blue",
@@ -415,5 +415,8 @@
       "horse": "Wolfgang",
       "weightKg": 51
     }
+  ],
+  "postReleasePenaltySources": [
+    "https://www.racingandsports.com.au/news/racing/news/2026-10-05/maher-stayers-receive-cup-penalties/722615"
   ]
 }
