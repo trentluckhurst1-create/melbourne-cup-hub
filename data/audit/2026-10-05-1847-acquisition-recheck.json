@@ -1,0 +1,20 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-05",
+  "checkedAt": "2026-10-05T18:47:35+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "progressThisRun": "Added VRC/Racing & Sports-published official Melbourne Cup rehandicap evidence dated 5 Oct: Juja Kibo +2kg to 53.5kg and 34th in order of entry; Mr Monaco +1.5kg to 52.5kg and ballot-exempt following his Bart Cummings win. No performance rating inferred.",
+  "ratingsGovernance": "No ratings inferred. Official Cup handicap weights/penalties remain separate from R&S performance ratings, Timeform, RSSR and PFR.",
+  "remaining": "Required public-data fields are not yet closed or explicitly documented unavailable. Training-base, exact-silk, explicit R&S rating and field-level evidence gaps remain.",
+  "completion": false,
+  "notifyUser": false
+}
