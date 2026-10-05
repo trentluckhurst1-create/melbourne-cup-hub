@@ -1,0 +1,30 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.cup_penalty.v1",
+  "snapshotDate": "2026-10-05",
+  "retrievedAt": "2026-10-05T18:47:35+11:00",
+  "source": {
+    "publisher": "Victoria Racing Club",
+    "byline": "Brad Bishop - Racing And Sports",
+    "url": "https://www.vrc.com.au/latest-news/maher-stayers-receive-cup-penalties/",
+    "published": "2026-10-05"
+  },
+  "horses": [
+    {
+      "horse": "Juja Kibo",
+      "trigger": "Group 2 The Metropolitan (2400m) win at Randwick on 2026-10-03",
+      "melbourneCupPenaltyKg": 2.0,
+      "melbourneCupWeightKg": 53.5,
+      "melbourneCupOrderOfEntry": 34,
+      "decision": "PROMOTE_VERIFIED_OFFICIAL_HANDICAP_FACTS"
+    },
+    {
+      "horse": "Mr Monaco",
+      "trigger": "Group 3 The Lexus Bart Cummings (2520m) win at Flemington on 2026-10-03",
+      "melbourneCupPenaltyKg": 1.5,
+      "melbourneCupWeightKg": 52.5,
+      "ballotStatus": "EXEMPT",
+      "decision": "PROMOTE_VERIFIED_OFFICIAL_HANDICAP_FACTS"
+    }
+  ],
+  "ratingsGovernance": "Cup handicap weights and penalties are not Racing & Sports performance ratings, Timeform ratings or PFR. No performance rating is inferred from this evidence."
+}
