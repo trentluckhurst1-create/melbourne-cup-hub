@@ -1,0 +1,20 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-05",
+  "checkedAt": "2026-10-05T20:13:17+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "progressThisRun": "Added VRC page authored by Racing And Sports current-preparation evidence for original nominees Light Infantry Man (2nd, G1 Turnbull Stakes 2000m Flemington, 1.75L from winner) and Aeliana (3rd, 1.0L behind Light Infantry Man). Preserved article-level provenance and did not infer a performance rating, carried weight, official rating or going field not explicitly exposed.",
+  "ratingsGovernance": "No ratings inferred. Article authorship by Racing And Sports does not convert narrative/result evidence into an R&S numerical rating. R&S ratings, Timeform, RSSR, PFR and official Cup handicap remain separate.",
+  "remaining": "Required public-data fields are not yet closed or explicitly documented unavailable. Training-base, exact-silk, explicit R&S rating and field-level evidence gaps remain.",
+  "completion": false,
+  "notifyUser": false
+}
