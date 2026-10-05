@@ -1,0 +1,20 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-05",
+  "checkedAt": "2026-10-05T16:24:45+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "progressThisRun": "Verified fresh public current-preparation evidence for Mr Monaco (3 Oct G3 Bart Cummings win, 2520m Heavy, 54kg, Cup ballot exemption), dated public career/preparation evidence for Pounding, and dated public pedigree/career/going evidence for Sapphire Siren. No R&S numerical rating inferred.",
+  "ratingsGovernance": "No ratings inferred. Timeform remains separate. Ambiguous numeric fields remain quarantined.",
+  "remaining": "Required public-data fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
