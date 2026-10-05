@@ -1,0 +1,8 @@
+{
+  "snapshotDate": "2026-10-06",
+  "horses": [
+    {"horse":"Half Yours","source":"Racing.com","url":"https://www.racing.com/news/2026/10/04/news-jockeys-zahra-to-jump-aboard-half-yours","latestRun":"5th, Turnbull Stakes, Flemington, 2000m, 3 Oct 2026","nextTarget":"Caulfield Cup","note":"Trainer reported horse came out of run well; Mark Zahra rider update."},
+    {"horse":"Enfjaar","source":"Racing.com","url":"https://www.racing.com/news/2026/10/05/news-jockeys-dawson-booked-for-first-caulfield-cup","latestRun":"1st, Glorious Stakes, Goodwood, 2400m, 1 Aug 2026","currentLocation":"Werribee quarantine","nextTarget":"Caulfield Cup","rider":"Ray Dawson"}
+  ],
+  "governance":"No missing numerical ratings, margins, carried weights or going values inferred. Timeform remains separate."
+}
