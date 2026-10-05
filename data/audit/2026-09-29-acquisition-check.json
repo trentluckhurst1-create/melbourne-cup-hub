@@ -128,8 +128,24 @@
       "facts": "Fresh public Racing & Sports result: G1 Turnbull Stakes, Flemington 3 Oct 2026, 2000m TURF HEAVY. Original Cup nominees Light Infantry Man finished 2nd, 1.8L from Cosmic Crusader, carrying 58kg (Harry Coffey/Ciaron Maher); Aeliana finished 3rd, 2.8L from winner, carrying 57kg (Damian Lane/Chris Waller). Result source also records Sir Delius 4th but he is not in the fixed 101 Cup nomination universe. No numeric R&S performance rating is inferred from result fields.",
       "source": "https://www.racingandsports.com.au/horse-racing-results/australia/flemington/2026-10-03/r8",
       "supportingSource": "https://www.racingandsports.com.au/news/racing/news/2026-10-03/cosmic-crusader-wins-group-1-tab-turnbull-stakes-post-race-trainer-and-jockey-quotes/722524"
+    },
+    {
+      "status": "BART_CUMMINGS_RESULT_CAPTURED_2026_10_05",
+      "facts": "Fresh VRC/Racing & Sports evidence confirms original Cup nominees Litzdeel finished 2nd and Valiant King 3rd in the G3 Lexus Bart Cummings at Flemington on 3 Oct 2026. Mr Monaco won by 1.25L and earned a Melbourne Cup ballot exemption; Litzdeel was the $4.60 favourite and Valiant King finished a further 4L away. This is current form/status evidence only; no numeric R&S performance rating is inferred.",
+      "source": "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/",
+      "supportingSource": "https://www.racingandsports.com.au/news/racing/news/2026-10-03/mr-monaco-wins-group-3-the-lexus-bart-cummings-post-race-trainer-and-jockey-quotes/722518"
+    },
+    {
+      "status": "METROPOLITAN_RESULT_CAPTURED_2026_10_05",
+      "facts": "Fresh public result evidence confirms original Cup nominee Aethelwulf finished 2nd in the G2 Metropolitan over 2400m at Randwick on 3 Oct 2026, 1.71L behind Juja Kibo. This updates Aethelwulf's current preparation record; no numeric R&S rating is inferred.",
+      "source": "https://www.races.com.au/races/group-2/the-metropolitan/"
+    },
+    {
+      "status": "CONSTITUTION_HILL_CURRENT_STATUS_CAPTURED_2026_10_05",
+      "facts": "Fresh public report confirms original Cup nominee Constitution Hill failed to qualify for Australia’s Melbourne Cup after finishing fourth in the September Stakes at Kempton; trainer Nicky Henderson is instead targeting the G2 Gran Premio del Jockey Club in Milan on 25 Oct. Treated as campaign-status evidence only; no rating inferred.",
+      "source": "https://talksport.com/sport/4612709/constitution-hill-next-race-confirmed-italy/"
     }
   ],
   "notifyUser": false,
-  "checkedAt": "2026-10-05T03:16:03+11:00"
+  "checkedAt": "2026-10-05T11:36:26+11:00"
 }
