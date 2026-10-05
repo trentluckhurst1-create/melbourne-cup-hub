@@ -1,0 +1,69 @@
+{
+  "snapshotDate": "2026-10-05",
+  "ratingScale": "Racing And Sports",
+  "metric": "explicitly published current-run RAS rating",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/ratings-analysis",
+    "verifiedOn": "2026-10-05"
+  },
+  "runs": [
+    {
+      "horse": "Aethelwulf",
+      "date": "2026-10-03",
+      "track": "Flemington",
+      "race": 7,
+      "distanceM": 2520,
+      "rasRating": 114
+    },
+    {
+      "horse": "Green Spaces",
+      "date": "2026-10-03",
+      "track": "Randwick",
+      "race": 7,
+      "distanceM": 2400,
+      "rasRating": 113
+    },
+    {
+      "horse": "Pinhole",
+      "date": "2026-10-03",
+      "track": "Randwick",
+      "race": 7,
+      "distanceM": 2400,
+      "rasRating": 105
+    },
+    {
+      "horse": "Light Infantry Man",
+      "date": "2026-10-03",
+      "track": "Flemington",
+      "race": 8,
+      "distanceM": 2000,
+      "rasRating": 120
+    },
+    {
+      "horse": "She's A Hustler",
+      "date": "2026-10-03",
+      "track": "Flemington",
+      "race": 8,
+      "distanceM": 2000,
+      "rasRating": 113
+    },
+    {
+      "horse": "Zahrann",
+      "date": "2026-10-03",
+      "track": "Flemington",
+      "race": 8,
+      "distanceM": 2000,
+      "rasRating": 112
+    },
+    {
+      "horse": "Ohope Wins",
+      "date": "2026-10-03",
+      "track": "Flemington",
+      "race": 8,
+      "distanceM": 2000,
+      "rasRating": 110
+    }
+  ],
+  "policy": "No ratings inferred. Individual-run R&S ratings remain separate from career peak, Timeform, RSSR and official handicap ratings."
+}
