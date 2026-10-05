@@ -1,0 +1,21 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.public_evidence.v1",
+  "snapshotDate": "2026-10-05",
+  "horse": "Aethelwulf",
+  "evidence": [
+    {
+      "publishedDate": "2026-10-05",
+      "source": "Racing And Sports",
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-10-05/smith-reveals-spring-carnival-plans-for-stable-stars/722599",
+      "type": "current_preparation",
+      "facts": {
+        "latestRun": "2nd — Group 2 The Metropolitan, Randwick, 2400m, 3 Oct 2026",
+        "winner": "Juja Kibo",
+        "postRace": "Trainer Matthew Smith reported Aethelwulf pulled up fine.",
+        "cupStatus": "Still being aimed at the 2026 Melbourne Cup.",
+        "nextOptions": ["Moonee Valley Cup at Flemington — 24 Oct 2026", "St Leger at Randwick — 17 Oct 2026"]
+      },
+      "governance": "No numerical R&S performance rating, Timeform rating, official rating, carried weight, margin or going value is inferred where not explicitly exposed by this source."
+    }
+  ]
+}
