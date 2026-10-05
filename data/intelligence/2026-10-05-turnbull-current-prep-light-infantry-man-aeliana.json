@@ -1,0 +1,33 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.current_prep_evidence.v1",
+  "snapshotDate": "2026-10-05",
+  "source": {
+    "publisher": "Victoria Racing Club",
+    "byline": "Danny Matthews - Racing And Sports",
+    "published": "2026-10-05",
+    "url": "https://www.vrc.com.au/latest-news/spring-takes-shape-on-tab-turnbull-stakes-day/"
+  },
+  "race": {
+    "name": "TAB Turnbull Stakes",
+    "group": "G1",
+    "distanceM": 2000,
+    "track": "Flemington",
+    "date": "2026-10-03"
+  },
+  "evidence": [
+    {
+      "horse": "Light Infantry Man",
+      "finish": 2,
+      "marginFromWinnerL": 1.75,
+      "sp": 26,
+      "statement": "Second to Cosmic Crusader in the G1 Turnbull Stakes at Flemington; winner scored by 1-3/4 lengths."
+    },
+    {
+      "horse": "Aeliana",
+      "finish": 3,
+      "marginFromSecondL": 1,
+      "statement": "Third in the G1 Turnbull Stakes, one length behind runner-up Light Infantry Man."
+    }
+  ],
+  "governance": "Horse-specific current-preparation/result evidence only. No performance rating, carried weight, official rating or going value inferred where the cited article does not explicitly expose it."
+}
