@@ -1,0 +1,12 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-06",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101","marketObserved":"100/101"},
+  "progressThisRun": "VRC/Racing & Sports confirms Mr Monaco's Bart Cummings win and revised Melbourne Cup weight of 52.5kg, and Juja Kibo's Metropolitan win and revised Melbourne Cup weight of 53.5kg. No rating inference made.",
+  "source": "https://www.vrc.com.au/latest-news/maher-stayers-receive-cup-penalties/",
+  "remaining": "Training-base gaps 17; exact-silk gaps 24; explicit public R&S rating gaps 49; market observation missing for one original nominee.",
+  "completion": false,
+  "notifyUser": false
+}
