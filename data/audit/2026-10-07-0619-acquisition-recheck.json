@@ -1,0 +1,29 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-07",
+  "checkedAt": "2026-10-07T06:19:46+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101"
+  },
+  "progressThisRun": "Rechecked the fixed 101-horse ledger and verified completed 3 Oct Flemington lead-up results from public Racing & Sports records. Turnbull: Light Infantry Man 2nd, Aeliana 3rd, Half Yours 5th, Ohope Wins 6th, She's A Hustler 7th, Middle Earth 8th. Bart Cummings: Mr Monaco 1st, Litzdeel 2nd, Valiant King 3rd. No missing R&S rating was inferred.",
+  "freshEvidence": [
+    {
+      "scope": "3 Oct Flemington results",
+      "url": "https://www.racingandsports.com.au/horse-racing-results/australia/flemington/2026-10-03"
+    },
+    {
+      "scope": "Mr Monaco Bart Cummings report",
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-10-03/mr-monaco-secures-melbourne-cup-berth/722528"
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred. Timeform remains separate from Racing & Sports, RSSR, PFR and official Cup handicap.",
+  "remaining": "Training-base gaps 17; exact-silk gaps 24; explicit public R&S rating gaps 49. Required public-data fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
