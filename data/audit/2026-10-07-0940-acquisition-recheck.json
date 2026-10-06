@@ -1,0 +1,29 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-07",
+  "checkedAt": "2026-10-07T09:40:53+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101"
+  },
+  "progressThisRun": "Rechecked the fixed 101-horse ledger and fresh public racing sources. No additional missing R&S rating was promoted: current fresh Racing & Sports analysis includes mixed RAS and explicitly labelled Timeform figures, so system separation remains enforced. Constitution Hill's post-qualification campaign is independently corroborated as redirected to the Gran Premio del Jockey Club in Milan after failing to qualify for the Melbourne Cup; the existing Hub qualification-status record remains consistent. No ambiguous rating evidence was ingested.",
+  "freshEvidence": [
+    {
+      "scope": "Constitution Hill post-Melbourne-Cup campaign corroboration",
+      "url": "https://talksport.com/sport/4612709/constitution-hill-next-race-confirmed-italy/"
+    },
+    {
+      "scope": "Fresh Racing & Sports ratings article checked for governed rating evidence",
+      "url": "https://www.racingandsports.com.au/news/racing/insight-analysis/2026-10-05/talking-points-3rd-of-october-2026/722612"
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred. Explicitly labelled Timeform remains separate from Racing & Sports, RSSR, PFR and official Cup handicap.",
+  "remaining": "Training-base gaps 17; exact-silk gaps 24; explicit public R&S rating gaps 49. Required public-data fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
