@@ -1,0 +1,20 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-06",
+  "checkedAt": "2026-10-06T15:54:56+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "progressThisRun": "Rechecked the full 101-horse ledger and fresh public Racing & Sports material. Explicitly labelled historical/run ratings located for Half Yours, Wine Dark Sea and Enfjaar were already represented in governed rating coverage; Birdman's published Underwood 124 is explicitly Timeform and was not promoted to R&S. No safe new exact training-base, silk, R&S horse coverage or missing-market observation was established.",
+  "ratingsGovernance": "No ratings inferred. Explicit Timeform remains separate from R&S, RSSR, PFR and official Cup handicap.",
+  "remaining": "Training-base gaps 17; exact-silk gaps 24; explicit public R&S rating gaps 49; market observation missing for one original nominee. Required public-data fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
