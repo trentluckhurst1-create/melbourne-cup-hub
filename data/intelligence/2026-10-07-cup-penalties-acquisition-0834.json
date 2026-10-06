@@ -1,0 +1,11 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.current_handicap.v1",
+  "observedAt": "2026-10-07T08:34:06+11:00",
+  "source": "Victoria Racing Club",
+  "sourceUrl": "https://www.vrc.com.au/latest-news/maher-stayers-receive-cup-penalties/",
+  "horses": [
+    {"horse":"Juja Kibo","evidenceDate":"2026-10-05","melbourneCupPenaltyKg":2.0,"melbourneCupWeightKg":53.5,"orderOfEntry":34},
+    {"horse":"Mr Monaco","evidenceDate":"2026-10-05","melbourneCupPenaltyKg":1.5,"melbourneCupWeightKg":52.5,"status":"Melbourne Cup ballot exempt"}
+  ],
+  "governance": "Post-weights penalties are current handicap evidence and do not overwrite the original 17 September allocation snapshot. No rating is inferred."
+}
