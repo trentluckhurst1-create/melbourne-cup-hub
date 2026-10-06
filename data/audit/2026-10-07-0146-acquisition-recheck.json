@@ -1,7 +1,7 @@
 {
   "schema": "melbourne_cup_hub.acquisition.recheck.v1",
   "snapshotDate": "2026-10-07",
-  "checkedAt": "2026-10-07T01:46:31+11:00",
+  "checkedAt": "2026-10-07T02:15:28+11:00",
   "universe": 101,
   "status": "IN_PROGRESS",
   "coverage": {
@@ -11,23 +11,23 @@
     "silkExact": "77/101",
     "rasPublicRating": "52/101"
   },
-  "progressThisRun": "Rechecked fixed 101-horse acquisition ledger against current repository state and fresh public sources. Confirmed official Cup-weight publication remains available; fresh public preparation evidence confirms the 71 first acceptors and Joseph O'Brien travel/withdrawal status, while no additional explicitly labelled public R&S rating was safely promotable this run.",
+  "progressThisRun": "Rechecked fixed 101-horse acquisition ledger against repository state and fresh public sources. Identity and form remain complete. Fresh searches reconfirmed 71 first acceptors, international shipment/quarantine status, Mr Monaco's Bart Cummings ballot exemption and the published 101-horse Cup weights; no additional explicitly labelled public Racing & Sports rating was safe to promote. Constitution Hill public reporting now confirms he failed to qualify for Australia and is targeting the Gran Premio del Jockey Club in Milan, but this does not close the outstanding fixed-universe acquisition fields.",
   "freshEvidence": [
     {
       "scope": "official 2026 Cup weights",
       "url": "https://www.vrc.com.au/latest-news/weights-announced-for-over-100-lexus-melbourne-cup-hopefuls/"
     },
     {
-      "scope": "first acceptances / 71 remain",
-      "url": "https://www.racing.com/news/2026/09/29/news-maher-with-plenty-in-melbourne-cup-mix"
-    },
-    {
-      "scope": "Joseph O'Brien travel status; Highwayman not travelling",
-      "url": "https://www.racing.com/news/2026/09/29/news-international-obrien-melbourne-cup-team-grows-as-highwayman-stays-home"
+      "scope": "first acceptances / 71 remain / international shipment status",
+      "url": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/"
     },
     {
       "scope": "Mr Monaco Bart Cummings win / ballot exemption",
       "url": "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/"
+    },
+    {
+      "scope": "Constitution Hill failed to qualify for Australia; Milan target",
+      "url": "https://talksport.com/sport/4612709/constitution-hill-next-race-confirmed-italy/"
     }
   ],
   "ratingsGovernance": "No ratings inferred. Timeform remains separate from Racing & Sports, RSSR, PFR and official Cup handicap.",
