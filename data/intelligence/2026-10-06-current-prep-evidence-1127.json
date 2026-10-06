@@ -1,0 +1,22 @@
+{
+  "schema": "melbourne_cup_hub.intelligence.current_prep.v1",
+  "snapshotDate": "2026-10-06",
+  "acquiredAt": "2026-10-06T11:27:39+11:00",
+  "horses": [
+    {
+      "horse": "Birdman",
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/10/05/news-preview-agenda-setter-051026",
+      "evidence": "Last-start winner of the G1 Underwood Stakes (1800m); connections confirmed the G1 Might And Power Stakes (2000m) at Caulfield on 10 Oct 2026 as the immediate target.",
+      "status": "VERIFIED_CURRENT_PREP"
+    },
+    {
+      "horse": "Zahrann",
+      "source": "Racing.com",
+      "url": "https://www.racing.com/news/2026/10/05/news-podcast-time-to-panic-with-caulfield-cup-favourite",
+      "evidence": "Latest run was the Turnbull Stakes at Flemington on 3 Oct 2026, beaten almost 20 lengths; remains on a Caulfield Cup path. Public commentary identified the heavy track as the obvious possible explanation, but this is not promoted as a factual performance cause.",
+      "status": "VERIFIED_CURRENT_PREP"
+    }
+  ],
+  "governance": "Current-preparation facts only. Commentary is not converted into ratings or inferred performance metrics; no missing margin, carried weight, going split or numerical rating is invented."
+}
