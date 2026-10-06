@@ -1,0 +1,33 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-07",
+  "checkedAt": "2026-10-07T05:56:00+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101"
+  },
+  "progressThisRun": "Rechecked the fixed 101-horse acquisition ledger against repository state and fresh public search. Identity and form remain complete. Current public search reconfirmed 71 first acceptors, Mr Monaco's Bart Cummings ballot exemption and the upcoming second-declaration date, but did not expose any additional horse-specific training base, exact silk, or explicitly labelled Racing & Sports rating safe to promote.",
+  "freshEvidence": [
+    {
+      "scope": "71 first acceptors / second declarations 13 October",
+      "url": "https://www.ladbrokes.com.au/blog/2026/09/30/melbourne-cup-first-acceptances-2026/"
+    },
+    {
+      "scope": "Mr Monaco Bart Cummings exemption / order context",
+      "url": "https://www.justhorseracing.com.au/fields-results/race-fields/nominations/melbourne-cup-order-of-entry-horses-odds-updated-october-4th-2026/908883"
+    },
+    {
+      "scope": "Shockletz campaign / Archer ballot exemption context",
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-10/cup-winners-daughter-chasing-cup-start/721192"
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred. Timeform remains separate from Racing & Sports, RSSR, PFR and official Cup handicap.",
+  "remaining": "Training-base gaps 17; exact-silk gaps 24; explicit public R&S rating gaps 49. Required public-data fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
