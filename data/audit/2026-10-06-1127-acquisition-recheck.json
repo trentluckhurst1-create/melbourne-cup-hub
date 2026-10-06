@@ -1,0 +1,20 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-06",
+  "checkedAt": "2026-10-06T11:27:39+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "progressThisRun": "Added identity-safe current-preparation evidence for Birdman (Underwood winner; Might And Power next target) and Zahrann (Turnbull latest run; Caulfield Cup path). Rechecked fresh VRC/Racing Victoria/Racing.com material. No new exact training-base, silk, explicitly labelled numerical Racing & Sports rating, or missing-market evidence was found. Existing 5 Oct Cup penalties remain corroborated: Juja Kibo 53.5kg and Mr Monaco 52.5kg. No rating inference or commentary-to-fact promotion.",
+  "ratingsGovernance": "No ratings inferred. Narrative or race-result evidence is not converted into an R&S numerical rating. R&S ratings, Timeform, RSSR, PFR and official Cup handicap remain separate.",
+  "remaining": "Training-base gaps 17; exact-silk gaps 24; explicit public R&S rating gaps 49; market observation missing for one original nominee. Required public-data fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
