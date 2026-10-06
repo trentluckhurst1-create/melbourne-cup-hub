@@ -1,0 +1,19 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-06",
+  "checkedAt": "2026-10-06T22:47:32+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101"
+  },
+  "progressThisRun": "Added verified Racing & Sports Bart Cummings result evidence for original nominees Mr Monaco, Litzdeel and Valiant King. Rechecked the fixed 101-horse ledger and fresh public preparation and rating sources.",
+  "ratingsGovernance": "No ratings inferred. Timeform remains separate from Racing & Sports, RSSR, PFR and official Cup handicap.",
+  "remaining": "Training-base gaps 17; exact-silk gaps 24; explicit public R&S rating gaps 49. Required public-data fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
