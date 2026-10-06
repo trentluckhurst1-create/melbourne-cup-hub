@@ -1,0 +1,20 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-06",
+  "checkedAt": "2026-10-06T18:21:30+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "progressThisRun": "Rechecked the full 101-horse acquisition ledger against the latest governed repository state and ran fresh public searches for 6 October Melbourne Cup preparation/rating evidence. No safe new exact training-base, silk, explicitly labelled Racing & Sports rating coverage, or missing-market observation was established. Existing governed coverage remains unchanged.",
+  "ratingsGovernance": "No ratings inferred. Explicit Timeform remains separate from Racing & Sports, RSSR, PFR and official Cup handicap. Ambiguous or unlabeled rating evidence is not promoted.",
+  "remaining": "Training-base gaps 17; exact-silk gaps 24; explicit public R&S rating gaps 49; market observation missing for one original nominee. Required public-data fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
