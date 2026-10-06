@@ -1,0 +1,22 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-07",
+  "checkedAt": "2026-10-07T08:34:06+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101"
+  },
+  "progressThisRun": "Rechecked the fixed 101-horse ledger. Added authoritative post-weights handicap evidence: Juja Kibo received a 2kg Melbourne Cup penalty to 53.5kg and moved to 34th in the order of entry after The Metropolitan; Mr Monaco received a 1.5kg Melbourne Cup penalty to 52.5kg after winning the Bart Cummings and remains ballot exempt. No missing R&S rating was inferred.",
+  "freshEvidence": [
+    {"scope":"Juja Kibo and Mr Monaco Melbourne Cup penalties","url":"https://www.vrc.com.au/latest-news/maher-stayers-receive-cup-penalties/"}
+  ],
+  "ratingsGovernance": "No ratings inferred. Timeform remains separate from Racing & Sports, RSSR, PFR and official Cup handicap.",
+  "remaining": "Training-base gaps 17; exact-silk gaps 24; explicit public R&S rating gaps 49. Required public-data fields are not yet closed or explicitly documented unavailable.",
+  "completion": false,
+  "notifyUser": false
+}
