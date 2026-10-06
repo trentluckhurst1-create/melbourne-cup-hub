@@ -1,0 +1,135 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-07",
+  "checkedAt": "2026-10-07T07:35:46+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "Turnbull Stakes result / current preparation",
+      "raceDate": "2026-10-03",
+      "race": "TAB Turnbull Stakes",
+      "track": "Flemington",
+      "distanceM": 2000,
+      "going": "Heavy 8",
+      "nomineeResults": [
+        {
+          "horse": "Light Infantry Man",
+          "finish": 2,
+          "carriedWeightKg": 58
+        },
+        {
+          "horse": "Aeliana",
+          "finish": 3,
+          "carriedWeightKg": 57
+        },
+        {
+          "horse": "Half Yours",
+          "finish": 5,
+          "carriedWeightKg": 59
+        },
+        {
+          "horse": "Ohope Wins",
+          "finish": 6,
+          "carriedWeightKg": 56
+        },
+        {
+          "horse": "She's A Hustler",
+          "finish": 7,
+          "carriedWeightKg": 55
+        },
+        {
+          "horse": "Middle Earth",
+          "finish": 8,
+          "carriedWeightKg": 56
+        },
+        {
+          "horse": "Kings Valley",
+          "finish": 9,
+          "carriedWeightKg": 55
+        },
+        {
+          "horse": "Saint George",
+          "finish": 10,
+          "carriedWeightKg": 55
+        },
+        {
+          "horse": "Zahrann",
+          "finish": 11,
+          "carriedWeightKg": 56.5
+        },
+        {
+          "horse": "Asterix",
+          "finish": 13,
+          "carriedWeightKg": 56.5
+        }
+      ],
+      "evidence": [
+        "https://www.racing.com/form/2026-10-03/flemington/race/8/results",
+        "https://www.racingpost.com/results/297/flemington/2026-10-03/930115/"
+      ],
+      "ratingInference": false,
+      "note": "Result evidence only. Racing Post OR/RPR fields are not promoted to Racing & Sports ratings."
+    },
+    {
+      "scope": "The Lexus Bart Cummings result / current preparation",
+      "raceDate": "2026-10-03",
+      "race": "The Lexus Bart Cummings",
+      "track": "Flemington",
+      "distanceM": 2520,
+      "going": "Heavy 8",
+      "nomineeResults": [
+        {
+          "horse": "Litzdeel",
+          "finish": 2,
+          "carriedWeightKg": 54,
+          "margin": "1.25L"
+        },
+        {
+          "horse": "Valiant King",
+          "finish": 3,
+          "carriedWeightKg": 55.5,
+          "margin": "5.25L"
+        },
+        {
+          "horse": "Campaldino",
+          "finish": 7,
+          "carriedWeightKg": 58
+        }
+      ],
+      "scratchedNominees": [
+        "Onesmoothoperator",
+        "Okita Soushi"
+      ],
+      "winningTime": "2:43.65",
+      "evidence": [
+        "https://www.racing.com/form/2026-10-03/flemington/race/7/tips",
+        "https://www.racingandsports.com.au/news/racing/news/2026-10-03/mr-monaco-wins-group-3-the-lexus-bart-cummings-post-race-trainer-and-jockey-quotes/722518"
+      ],
+      "ratingInference": false,
+      "note": "Published result supersedes pre-race acceptance evidence. Scratchings are not recorded as starts."
+    },
+    {
+      "scope": "R&S rating-gap governance recheck",
+      "fact": "No unambiguously labelled new Racing & Sports numeric rating is promoted by this tranche. Other publishers' OR/RPR, predictor, Neurals and enhanced-form numbers remain separate/quarantined.",
+      "ratingInference": false
+    }
+  ],
+  "completion": false,
+  "notifyUser": false,
+  "remainingPublicGaps": {
+    "horseSpecificTrainingBase": "17/101",
+    "silkExact": "24/101",
+    "rasPublicRating": "49/101",
+    "marketObserved": "1/101"
+  },
+  "note": "Fixed original 101-nominee universe preserved. This run adds post-3-Oct result evidence while retaining source-system separation."
+}
