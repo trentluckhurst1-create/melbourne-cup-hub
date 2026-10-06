@@ -1,0 +1,47 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.current_prep.v1",
+  "observedAt": "2026-10-07T04:14:35+11:00",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "horse": "Aethelwulf",
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/racing/news/2026-10-05/smith-reveals-spring-carnival-plans-for-stable-stars/722599",
+    "published": "2026-10-05"
+  },
+  "verifiedFacts": {
+    "latestRun": {
+      "race": "The Metropolitan",
+      "distanceM": 2400,
+      "track": "Randwick",
+      "date": "2026-10-03",
+      "finish": 2,
+      "winner": "Juja Kibo",
+      "marginLengths": 1.7
+    },
+    "postRace": "Trainer Matthew Smith reported Aethelwulf pulled up fine.",
+    "melbourneCupTarget": true,
+    "nextRaceOptions": [
+      {
+        "race": "St Leger",
+        "track": "Randwick",
+        "date": "2026-10-17"
+      },
+      {
+        "race": "Moonee Valley Gold Cup",
+        "track": "Flemington",
+        "date": "2026-10-24",
+        "ballotExemptionForMelbourneCup": true
+      }
+    ],
+    "melbourneCupWeightKg": 51,
+    "currentOrderOfEntry": 54,
+    "firstEliminationClausePassed": true
+  },
+  "governance": {
+    "noRatingInference": true,
+    "timeformSeparate": true,
+    "rasRatingSeparate": true,
+    "original101UniversePreserved": true
+  },
+  "notes": "Current-preparation evidence only. Does not infer a future start; trainer stated options remain under consideration."
+}
