@@ -1,0 +1,11 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.current_prep.v1",
+  "observedAt": "2026-10-06T22:47:32+11:00",
+  "source": "Racing & Sports",
+  "horses": [
+    {"horse":"Mr Monaco","date":"2026-10-03","race":"The Lexus Bart Cummings","track":"Flemington","distanceM":2500,"class":"Group 3","surface":"Turf","going":"Heavy","finish":1,"carriedWeightKg":54,"margin":"1.25L","status":"Melbourne Cup ballot exempt"},
+    {"horse":"Litzdeel","date":"2026-10-03","race":"The Lexus Bart Cummings","track":"Flemington","distanceM":2500,"class":"Group 3","surface":"Turf","going":"Heavy","finish":2,"carriedWeightKg":54},
+    {"horse":"Valiant King","date":"2026-10-03","race":"The Lexus Bart Cummings","track":"Flemington","distanceM":2500,"class":"Group 3","surface":"Turf","going":"Heavy","finish":3}
+  ],
+  "governance": "Only fields explicitly exposed by the cited public source are recorded; no rating is inferred."
+}
