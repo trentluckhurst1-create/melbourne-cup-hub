@@ -1,0 +1,13 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.cup_penalty.v1",
+  "observedAt": "2026-10-07T00:47:29+11:00",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "source": {"publisher":"Racing Victoria","url":"https://www.racingvictoria.com.au/news/2026/10/05/pair-of-penalties-following-weekend-wins","published":"2026-10-05"},
+  "verifiedFacts": [
+    {"horse":"Mr Monaco","melbourneCupPenaltyKg":1.5,"currentMelbourneCupWeightKg":52.5,"currentOrderOfEntry":33,"ballotExempt":true},
+    {"horse":"Juja Kibo","melbourneCupPenaltyKg":2.0,"currentMelbourneCupWeightKg":53.5,"currentOrderOfEntry":34},
+    {"horse":"The Euphrates","melbourneCupFirstEliminationClausePassed":true,"currentOrderOfEntry":32},
+    {"horse":"Aethelwulf","melbourneCupWeightKg":51.0,"currentOrderOfEntry":54}
+  ],
+  "governance": {"preserveOriginalReleasedWeightHistory":true,"noRatingInference":true,"officialRatingNotInferred":true}
+}
