@@ -1,0 +1,71 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.race_result.v1",
+  "observedAt": "2026-10-08T03:31:54+11:00",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "race": {
+    "name": "TAB Turnbull Stakes",
+    "group": "G1",
+    "date": "2026-10-03",
+    "track": "Flemington",
+    "distanceM": 2000,
+    "surface": "TURF",
+    "going": "HEAVY",
+    "raceTime": "2:04.44"
+  },
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/horse-racing-results/australia/flemington/2026-10-03/r8"
+  },
+  "nomineeResults": [
+    {
+      "horse": "Light Infantry Man",
+      "finish": 2,
+      "marginL": 1.8,
+      "carriedWeightKg": 58,
+      "barrier": 3,
+      "jockey": "Harry Coffey",
+      "trainer": "Ciaron Maher",
+      "sp": 26
+    },
+    {
+      "horse": "Aeliana",
+      "finish": 3,
+      "marginL": 2.8,
+      "carriedWeightKg": 57,
+      "barrier": 2,
+      "jockey": "Damian Lane",
+      "trainer": "Chris Waller",
+      "sp": 3.8
+    },
+    {
+      "horse": "Half Yours",
+      "finish": 5,
+      "marginL": 6.5,
+      "carriedWeightKg": 59,
+      "barrier": 13,
+      "jockey": "Jamie Melham",
+      "trainer": "Tony & Calvin McEvoy",
+      "sp": 16
+    }
+  ],
+  "additionalNomineeContext": [
+    {
+      "horse": "Middle Earth",
+      "raceDayCarriedWeightKg": 56,
+      "barrier": 6,
+      "trainer": "Ciaron Maher"
+    },
+    {
+      "horse": "She's A Hustler",
+      "raceDayCarriedWeightKg": 55,
+      "barrier": 7,
+      "trainer": "Grahame Begg"
+    }
+  ],
+  "governance": {
+    "raceDayWeightsNotMelbourneCupWeights": true,
+    "racingAndSportsRatingInferred": false,
+    "officialRatingInferred": false,
+    "note": "Result and field evidence only. No unlabelled worksheet metric is promoted as a Racing & Sports rating."
+  }
+}
