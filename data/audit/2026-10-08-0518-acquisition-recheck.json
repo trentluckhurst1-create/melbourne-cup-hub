@@ -1,0 +1,28 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-08",
+  "checkedAt": "2026-10-08T05:18:31+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "Zakouma current preparation",
+      "fact": "Verified Zakouma is set for the 2400m Herbert Power Stakes at Caulfield on 10 October as his final Melbourne Cup lead-up; his Andrew Ramsden win already provides Melbourne Cup ballot exemption.",
+      "evidenceFile": "data/intelligence/2026-10-08-acquisition-zakouma-herbert-power.json"
+    }
+  ],
+  "remainingPublicGaps": {
+    "horseSpecificTrainingBase": "17/101",
+    "silkExact": "24/101",
+    "rasPublicRating": "49/101"
+  },
+  "completion": false,
+  "notifyUser": false
+}
