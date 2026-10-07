@@ -1,0 +1,25 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.prep_evidence.v1",
+  "observedAt": "2026-10-08T04:11:24+11:00",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "race": {"name":"TAB Turnbull Stakes","group":"G1","date":"2026-10-03","track":"Flemington","distanceM":2000,"surface":"TURF","going":"HEAVY"},
+  "sources": [
+    {"publisher":"Racing & Sports","url":"https://www.racingandsports.com.au/news/racing/news/2026-10-03/what-the-beaten-brigade-said-flemington-and-randwick/722527"},
+    {"publisher":"Racing & Sports","url":"https://www.racingandsports.com.au/news/racing/insight-analysis/2026-10-05/talking-points-3rd-of-october-2026/722612"}
+  ],
+  "nomineePrepEvidence": [
+    {"horse":"Aeliana","evidence":"Post-race jockey evidence: strong run; race shape not ideal for current preparation; expected to peak next start.","status":"CURRENT_PREP_VERIFIED"},
+    {"horse":"Zahrann","evidence":"Post-race jockey evidence: race shape was against him.","status":"CURRENT_PREP_VERIFIED"},
+    {"horse":"Ohope Wins","evidence":"Post-race jockey evidence: progressing well toward the Cups.","status":"CURRENT_PREP_VERIFIED"},
+    {"horse":"Middle Earth","evidence":"Post-race jockey evidence: kept working and was coming back on the line.","status":"CURRENT_PREP_VERIFIED"},
+    {"horse":"She's A Hustler","evidence":"Post-race jockey evidence: heavy ground was unsuitable; expected to improve on drier ground.","status":"CURRENT_PREP_VERIFIED"},
+    {"horse":"Saint George","evidence":"Post-race jockey evidence: settled too far back from the gate and struggled from there.","status":"CURRENT_PREP_VERIFIED"},
+    {"horse":"Kings Valley","evidence":"Post-race jockey evidence: performance suggested further distance is suitable.","status":"CURRENT_PREP_VERIFIED"},
+    {"horse":"Light Infantry Man","evidence":"Post-race evidence: brave Turnbull second; reported to have pulled up well.","status":"CURRENT_PREP_VERIFIED"}
+  ],
+  "ratingsGovernance": {
+    "racingAndSportsRatingPromoted": false,
+    "timeformKeptSeparate": true,
+    "note": "No unlabeled number from the associated analysis is promoted into the public R&S rating ledger."
+  }
+}
