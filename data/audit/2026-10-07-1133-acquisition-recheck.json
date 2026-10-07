@@ -1,0 +1,67 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-07",
+  "checkedAt": "2026-10-07T11:33:30+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "progressThisRun": "Rechecked the fixed 101-horse ledger and fresh public racing evidence. Saint George's 29 Aug Caulfield win is independently verified with pedigree, trainer, carried weight, surface/going, distance and margin. Pounding's 2026 Q22 and Tattersall's Cup placings are independently corroborated. No new numeric Racing & Sports rating was promoted because the retrieved evidence does not explicitly label a qualifying R&S performance rating for these horses. Search collisions for Wolfgang included greyhound records and were quarantined.",
+  "verifiedEvidence": [
+    {
+      "horse": "Saint George",
+      "date": "2026-08-29",
+      "race": "Brad Masters Plumbing Handicap",
+      "track": "Caulfield",
+      "distanceM": 2000,
+      "surface": "TURF",
+      "going": "SOFT",
+      "finish": 1,
+      "carriedWeightKg": 61.5,
+      "margin": "1.25L",
+      "trainer": "Ciaron Maher",
+      "pedigree": "Roaring Lion (USA) - Lady Dragon (IRE)",
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-08-29/saint-george-wins-brad-masters-plumbing-handicap-post-race-trainer-and-jockey-quotes/720469",
+      "ratingInference": false
+    },
+    {
+      "horse": "Pounding",
+      "date": "2026-06-13",
+      "race": "Group 2 HKJC World Pool Q22",
+      "track": "Eagle Farm",
+      "finish": 2,
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-06-13/royal-supremacy-wins-group-2-hkjc-world-pool-q22-post-race-trainer-and-jockey-quotes/716413",
+      "ratingInference": false
+    },
+    {
+      "horse": "Pounding",
+      "date": "2026-06-27",
+      "race": "Group 3 Tattersall's Cup",
+      "track": "Eagle Farm",
+      "finish": 2,
+      "url": "https://www.racingandsports.com.au/news/racing/news/2026-06-27/asterix-wins-group-3-tattersalls-cup-post-race-trainer-and-jockey-quotes/717210",
+      "ratingInference": false
+    }
+  ],
+  "quarantine": [
+    {
+      "horse": "Wolfgang",
+      "reason": "Fresh search returned same-name greyhound records alongside thoroughbred evidence; greyhound records are identity collisions and must never enter the Cup nominee record."
+    }
+  ],
+  "ratingsGovernance": "No ratings inferred. Timeform, RPR/OR, RSSR, Neurals/enhanced-form and Racing & Sports ratings remain separate unless explicitly labelled by source.",
+  "remainingPublicGaps": {
+    "horseSpecificTrainingBase": "17/101",
+    "silkExact": "24/101",
+    "rasPublicRating": "49/101",
+    "marketObserved": "1/101"
+  },
+  "completion": false,
+  "notifyUser": false
+}
