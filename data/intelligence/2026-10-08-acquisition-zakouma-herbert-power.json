@@ -1,0 +1,32 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.current_prep.v1",
+  "observedAt": "2026-10-08T05:18:31+11:00",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "horse": "Zakouma",
+  "verified": {
+    "nextRun": {
+      "race": "Herbert Power Stakes",
+      "track": "Caulfield",
+      "distanceM": 2400,
+      "date": "2026-10-10",
+      "role": "final lead-up to Melbourne Cup"
+    },
+    "cupStatus": {
+      "ballotExempt": true,
+      "qualificationRace": "Andrew Ramsden",
+      "qualificationDistanceM": 2800,
+      "qualificationTrack": "Flemington",
+      "qualificationMonth": "2026-05"
+    }
+  },
+  "source": {
+    "publisher": "Racing & Sports",
+    "url": "https://www.racingandsports.com.au/news/racing/news/2026-10-07/herbet-power-cup-trial-for-zakouma/722722"
+  },
+  "governance": {
+    "identity": "VERIFIED",
+    "ratingInference": false,
+    "officialRatingInference": false,
+    "note": "Current-preparation/status evidence only; no unlabelled figure promoted as a rating."
+  }
+}
