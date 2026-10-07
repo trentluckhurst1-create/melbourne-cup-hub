@@ -1,7 +1,7 @@
 {
   "schema": "melbourne_cup_hub.acquisition.recheck.v1",
   "snapshotDate": "2026-10-08",
-  "checkedAt": "2026-10-08T06:32:37+11:00",
+  "checkedAt": "2026-10-08T07:54:29+11:00",
   "universe": 101,
   "status": "IN_PROGRESS",
   "coverage": {
@@ -15,22 +15,22 @@
     {
       "publisher": "Victoria Racing Club",
       "url": "https://www.vrc.com.au/latest-news/cosmic-crusader-strikes-group-1-glory-as-melbourne-cup-carnival-momentum-builds/",
-      "finding": "Turnbull result/current Cup context checked; nominee result facts already represented in acquisition evidence, no safe new missing-field promotion identified."
+      "finding": "Turnbull Stakes/current Cup context rechecked; no safe new missing-field promotion identified."
     },
     {
       "publisher": "Victoria Racing Club / Racing & Sports",
       "url": "https://www.vrc.com.au/latest-news/mr-monaco-secures-melbourne-cup-berth/",
-      "finding": "Bart Cummings result and ballot-exemption context checked; no additional fixed-101 missing-field promotion identified."
+      "finding": "Bart Cummings result and Golden Ticket context rechecked; no additional fixed-101 missing-field promotion identified."
     },
     {
-      "publisher": "Racing.com",
-      "url": "https://www.racing.com/news/2026/10/06/news-contenders-new-caulfield-cup-favourite-as-aeliana-exits-noms",
-      "finding": "Current preparation/status checked; Aeliana Caulfield Cup withdrawal is not a Melbourne Cup withdrawal and does not close a fixed-101 acquisition gap."
+      "publisher": "Victoria Racing Club",
+      "url": "https://www.vrc.com.au/latest-news/71-horses-remain-in-running-for-the-102-million-lexus-melbourne-cup/",
+      "finding": "First-acceptance/current international movement evidence checked; useful current campaign context but does not close the remaining training-base, exact-silk, or explicitly-labelled R&S-rating gaps for the fixed 101."
     },
     {
-      "publisher": "Racing & Sports",
-      "url": "https://www.racingandsports.com.au/news/racing/news/2026-10-07/herbet-power-cup-trial-for-zakouma/722722",
-      "finding": "Zakouma Herbert Power final-lead-up evidence remains current and was already acquired in the prior run."
+      "publisher": "Victoria Racing Club / Racing & Sports",
+      "url": "https://www.vrc.com.au/latest-news/lexus-melbourne-cup-rating-the-internationals/",
+      "finding": "International R&S evidence rechecked; existing international rating coverage remains supported and no new domestic R&S rating promotion identified."
     }
   ],
   "remainingPublicGaps": {
@@ -43,7 +43,7 @@
     "noRatingInference": true,
     "timeformSeparate": true,
     "ambiguousEvidenceQuarantined": true,
-    "note": "Full 101-horse coverage ledger rechecked. No newly discovered public evidence in this pass safely closes an outstanding field; absence of a public R&S rating is not converted into an inferred rating."
+    "note": "Full fixed 101-horse coverage ledger rechecked at 07:54 AEDT. Fresh VRC/Racing & Sports public-source search found no newly publishable evidence that safely closes an outstanding required field. Missing public R&S figures remain unavailable rather than inferred; Timeform remains separate; ambiguous evidence remains quarantined."
   },
   "completion": false,
   "notifyUser": false
