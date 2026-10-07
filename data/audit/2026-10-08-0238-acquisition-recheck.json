@@ -1,0 +1,42 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-08",
+  "checkedAt": "2026-10-08T02:38:40+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "101/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "Fixed-universe status recheck",
+      "fact": "VRC public newsroom continues to report 71 horses remained after first acceptances on 29 September 2026; acquisition ledger remains governed against all 101 original nominees.",
+      "evidence": [
+        "https://www.vrc.com.au/media-sponsors/media-releases/"
+      ]
+    },
+    {
+      "scope": "Post-Turnbull/Bart Cummings freshness recheck",
+      "fact": "Fresh VRC and Racing & Sports searches did not expose a new unambiguously labelled numeric Racing & Sports rating for any remaining rating gap. No rating promoted or inferred.",
+      "evidence": [
+        "https://www.vrc.com.au/",
+        "https://www.racingandsports.com.au/news/ratings-analysis"
+      ],
+      "ratingInference": false
+    }
+  ],
+  "remainingPublicGaps": {
+    "horseSpecificTrainingBase": "17/101",
+    "silkExact": "24/101",
+    "rasPublicRating": "49/101",
+    "marketObserved": "0/101"
+  },
+  "ratingsGovernance": "Racing & Sports, Timeform, RSSR and official handicap systems remain separate. Ambiguous/unlabelled figures are not promoted.",
+  "completion": false,
+  "notifyUser": false
+}
