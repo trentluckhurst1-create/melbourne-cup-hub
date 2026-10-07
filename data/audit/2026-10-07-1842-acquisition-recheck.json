@@ -1,0 +1,12 @@
+{
+  "snapshotDate": "2026-10-07",
+  "checkedAt": "2026-10-07T18:42:57+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101","marketObserved":"101/101"},
+  "progressThisRun": "Fresh public-source recheck completed. No additional explicitly labelled public Racing & Sports numeric rating was found, so none was inferred. Aethelwulf current-preparation evidence was rechecked against public Racing & Sports and remains identity-safe. Official 101-horse Cup-weight evidence remains consistent with the canonical release ledger.",
+  "remainingPublicGaps": {"horseSpecificTrainingBase":"17/101","silkExact":"24/101","rasPublicRating":"49/101","marketObserved":"0/101"},
+  "ratingsGovernance": "No ratings inferred; source systems remain separated.",
+  "completion": false,
+  "notifyUser": false
+}
