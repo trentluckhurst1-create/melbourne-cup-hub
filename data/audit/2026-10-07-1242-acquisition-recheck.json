@@ -1,7 +1,7 @@
 {
   "schema": "melbourne_cup_hub.acquisition.recheck.v1",
   "snapshotDate": "2026-10-07",
-  "checkedAt": "2026-10-07T12:42:51+11:00",
+  "checkedAt": "2026-10-07T15:48:31+11:00",
   "universe": 101,
   "status": "IN_PROGRESS",
   "coverage": {
@@ -10,16 +10,34 @@
     "horseSpecificTrainingBaseVerified": "84/101",
     "silkExact": "77/101",
     "rasPublicRating": "52/101",
-    "marketObserved": "100/101"
+    "marketObserved": "101/101"
   },
-  "progressThisRun": "Rechecked fixed 101-horse coverage. Official 5 Oct penalty evidence remains current for Juja Kibo and Mr Monaco; Aethelwulf's post-Metropolitan options remain the St Leger or Moonee Valley Gold Cup. No new explicitly labelled Racing & Sports numeric rating was found for safe promotion.",
+  "progressThisRun": "Rechecked the fixed 101-horse universe. Public market evidence now closes Barnavara's prior market-observation gap: GoldBet's current Melbourne Cup market lists Barnavara at $51 win / $14 place. Current public evidence also confirms Mr Monaco won the 3 Oct Group 3 Bart Cummings at Flemington by 1.25L and earned a Melbourne Cup ballot exemption; no inferred rating has been promoted.",
   "remainingPublicGaps": {
     "horseSpecificTrainingBase": "17/101",
     "silkExact": "24/101",
     "rasPublicRating": "49/101",
-    "marketObserved": "1/101"
+    "marketObserved": "0/101"
   },
   "ratingsGovernance": "No ratings inferred; source systems remain separated.",
   "completion": false,
-  "notifyUser": false
+  "notifyUser": false,
+  "evidenceUpdates": [
+    {
+      "horse": "Barnavara",
+      "field": "marketObserved",
+      "value": true,
+      "source": "https://goldbet.com.au/racing/horse/melbourne-cup-2026/melbourne-cup-2026-race-1/2307452",
+      "evidence": "Current Melbourne Cup market lists Barnavara $51 win / $14 place.",
+      "retrieved": "2026-10-07"
+    },
+    {
+      "horse": "Mr Monaco",
+      "field": "cupStatus",
+      "value": "BALLOT_EXEMPT",
+      "source": "https://www.racingandsports.com.au/news/racing/news/2026-10-03/mr-monaco-secures-melbourne-cup-berth/722528",
+      "evidence": "Won Group 3 The Bart Cummings at Flemington on 3 Oct 2026; ballot exemption into Melbourne Cup.",
+      "retrieved": "2026-10-07"
+    }
+  ]
 }
