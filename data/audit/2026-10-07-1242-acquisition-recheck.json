@@ -1,0 +1,25 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-07",
+  "checkedAt": "2026-10-07T12:42:51+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "100/101"
+  },
+  "progressThisRun": "Rechecked fixed 101-horse coverage. Official 5 Oct penalty evidence remains current for Juja Kibo and Mr Monaco; Aethelwulf's post-Metropolitan options remain the St Leger or Moonee Valley Gold Cup. No new explicitly labelled Racing & Sports numeric rating was found for safe promotion.",
+  "remainingPublicGaps": {
+    "horseSpecificTrainingBase": "17/101",
+    "silkExact": "24/101",
+    "rasPublicRating": "49/101",
+    "marketObserved": "1/101"
+  },
+  "ratingsGovernance": "No ratings inferred; source systems remain separated.",
+  "completion": false,
+  "notifyUser": false
+}
