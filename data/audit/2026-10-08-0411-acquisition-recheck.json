@@ -1,0 +1,36 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-08",
+  "checkedAt": "2026-10-08T04:11:24+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "horseSpecificTrainingBaseVerified": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101",
+    "marketObserved": "101/101"
+  },
+  "verifiedProgress": [
+    {
+      "scope": "Turnbull current-preparation evidence",
+      "fact": "Added source-backed post-race preparation evidence for eight original nominees: Aeliana, Zahrann, Ohope Wins, Middle Earth, She's A Hustler, Saint George, Kings Valley and Light Infantry Man.",
+      "evidenceFile": "data/intelligence/2026-10-08-turnbull-current-prep-evidence-0411.json"
+    },
+    {
+      "scope": "Ratings governance recheck",
+      "fact": "Fresh Racing & Sports analysis was reviewed. No remaining horse received a newly promoted public R&S rating because potentially relevant figures were not unambiguously labelled as R&S; Timeform-labelled material remains separate.",
+      "evidence": ["https://www.racingandsports.com.au/news/racing/insight-analysis/2026-10-05/talking-points-3rd-of-october-2026/722612"],
+      "ratingInference": false
+    }
+  ],
+  "remainingPublicGaps": {
+    "horseSpecificTrainingBase": "17/101",
+    "silkExact": "24/101",
+    "rasPublicRating": "49/101",
+    "marketObserved": "0/101"
+  },
+  "completion": false,
+  "notifyUser": false
+}
