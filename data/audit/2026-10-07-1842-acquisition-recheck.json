@@ -1,6 +1,6 @@
 {
   "snapshotDate": "2026-10-07",
-  "checkedAt": "2026-10-07T20:47:55+11:00",
+  "checkedAt": "2026-10-07T23:13:56+11:00",
   "universe": 101,
   "status": "IN_PROGRESS",
   "coverage": {
@@ -11,7 +11,7 @@
     "rasPublicRating": "52/101",
     "marketObserved": "101/101"
   },
-  "progressThisRun": "Fresh public-source recheck completed. Racing & Sports search evidence was reviewed for remaining public-rating gaps including Barnavara and Golden Century. Public pages exposed race/form context and carried weights but no explicitly labelled numeric R&S rating for those nominees; no rating was inferred. The fixed 101-horse ledger remains identity 101/101 and form-present 101/101. Outstanding public gaps remain governed rather than fabricated.",
+  "progressThisRun": "Fresh public-source recheck completed. Racing & Sports pages were reviewed for remaining gaps including Barnavara, Golden Century and Soulcombe. Barnavara public race-history/news pages expose pedigree, class/result context and carried weight but no explicitly labelled numeric Racing & Sports rating. A Racing & Sports-hosted 2023 Melbourne Cup preview exposes Soulcombe 130 only as a Timeform Weighted Adjusted Cup Rating, so it remains separate from the R&S-rating field. A 2026 Curragh form-guide search result returned a Barnavara-labelled run block with incompatible pedigree/career identity and was rejected rather than merged. Golden Century trial reporting adds preparation context but no numeric R&S rating. No missing rating was inferred.",
   "remainingPublicGaps": {
     "horseSpecificTrainingBase": "17/101",
     "silkExact": "24/101",
