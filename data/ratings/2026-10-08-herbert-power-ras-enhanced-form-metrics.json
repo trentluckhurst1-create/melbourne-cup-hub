@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-08",
+  "sourcePublisher": "Racing & Sports",
+  "sourcePage": "Caulfield 2026-10-10 race 4 enhanced-form",
+  "labels": [
+    "LSR",
+    "12m"
+  ],
+  "scope": "Pre-race form guide fields, NOT official handicap, verified peak R&S rating, or standalone run rating",
+  "rows": [
+    [
+      "Onesmoothoperator",
+      50.5,
+      54
+    ],
+    [
+      "Campaldino",
+      51.5,
+      53.5
+    ],
+    [
+      "Future History",
+      55,
+      55
+    ],
+    [
+      "Zakouma",
+      51,
+      52.5
+    ],
+    [
+      "Knight’s Choice",
+      56.5,
+      56.5
+    ],
+    [
+      "Soulcombe",
+      53,
+      53
+    ],
+    [
+      "Highland Bling",
+      37.5,
+      53
+    ],
+    [
+      "Pinhole",
+      51,
+      51
+    ],
+    [
+      "Strictly Business",
+      49,
+      52.5
+    ],
+    [
+      "Shockletz",
+      53.5,
+      53.5
+    ]
+  ],
+  "noRatingInference": true,
+  "original101Preserved": true
+}
