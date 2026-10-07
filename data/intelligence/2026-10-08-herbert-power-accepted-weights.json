@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-08",
+  "race": "Herbert Power Stakes",
+  "weightsKg": [
+    58,
+    58,
+    57,
+    57,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    55.5,
+    55.5
+  ],
+  "barriers": [
+    12,
+    13,
+    3,
+    9,
+    1,
+    15,
+    2,
+    14,
+    7,
+    8,
+    10,
+    11
+  ],
+  "order": "Matches originalNominees array in 2026-10-08-herbert-power-accepted-field-acquisition.json",
+  "source": "Racing and Sports Caulfield 2026-10-10 race 4 enhanced-form",
+  "ratingInference": false
+}
