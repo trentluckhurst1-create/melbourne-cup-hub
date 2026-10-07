@@ -1,6 +1,6 @@
 {
-  "snapshotDate": "2026-10-07",
-  "checkedAt": "2026-10-07T23:13:56+11:00",
+  "snapshotDate": "2026-10-08",
+  "checkedAt": "2026-10-08T00:08:30+11:00",
   "universe": 101,
   "status": "IN_PROGRESS",
   "coverage": {
@@ -11,7 +11,7 @@
     "rasPublicRating": "52/101",
     "marketObserved": "101/101"
   },
-  "progressThisRun": "Fresh public-source recheck completed. Racing & Sports pages were reviewed for remaining gaps including Barnavara, Golden Century and Soulcombe. Barnavara public race-history/news pages expose pedigree, class/result context and carried weight but no explicitly labelled numeric Racing & Sports rating. A Racing & Sports-hosted 2023 Melbourne Cup preview exposes Soulcombe 130 only as a Timeform Weighted Adjusted Cup Rating, so it remains separate from the R&S-rating field. A 2026 Curragh form-guide search result returned a Barnavara-labelled run block with incompatible pedigree/career identity and was rejected rather than merged. Golden Century trial reporting adds preparation context but no numeric R&S rating. No missing rating was inferred.",
+  "progressThisRun": "Fresh public-source recheck completed. VRC current newsroom confirms 71 horses remained after first acceptances on 29 September 2026; the ledger remains fixed to all 101 original nominees. Racing and Sports current Flemington records confirm the 3 October Bart Cummings result: Mr Monaco defeated Litzdeel and Valiant King, with the winner carrying 54.0kg. No new explicitly labelled numeric Racing and Sports rating was located for remaining gaps; no rating was inferred.",
   "remainingPublicGaps": {
     "horseSpecificTrainingBase": "17/101",
     "silkExact": "24/101",
