@@ -1,0 +1,12 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "snapshotDate": "2026-10-08",
+  "checkedAt": "2026-10-08T09:02:23+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {"identity":"101/101","formPresent":"101/101","horseSpecificTrainingBaseVerified":"84/101","silkExact":"77/101","rasPublicRating":"52/101"},
+  "remainingPublicGaps": {"horseSpecificTrainingBase":"17/101","silkExact":"24/101","rasPublicRating":"49/101"},
+  "governance": {"fixedOriginalNomineeUniverse":true,"noRatingInference":true,"timeformSeparate":true,"ambiguousEvidenceQuarantined":true},
+  "completion": false,
+  "notifyUser": false
+}
