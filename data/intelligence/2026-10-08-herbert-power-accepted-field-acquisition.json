@@ -1,0 +1,39 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.accepted_field.v1",
+  "observedAt": "2026-10-08T10:53:51+11:00",
+  "race": {
+    "name": "Herbert Power Stakes",
+    "date": "2026-10-10",
+    "track": "Caulfield",
+    "distanceM": 2400,
+    "group": "G2",
+    "status": "ACCEPTED_PRE_RACE"
+  },
+  "originalNominees": [
+    "Onesmoothoperator",
+    "Campaldino",
+    "Future History",
+    "Zakouma",
+    "Knight’s Choice",
+    "Soulcombe",
+    "Okita Soushi",
+    "Machine Gun Gracie",
+    "Highland Bling",
+    "Pinhole",
+    "Strictly Business",
+    "Shockletz"
+  ],
+  "nonNominees": [
+    "Newfoundland",
+    "Sunset Park",
+    "Suntora"
+  ],
+  "totalAcceptances": 15,
+  "governance": {
+    "original101Preserved": true,
+    "noRatingsInferred": true,
+    "noStartRecorded": true,
+    "notRaceResult": true
+  },
+  "completion": false
+}
