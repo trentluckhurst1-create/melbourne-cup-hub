@@ -1,0 +1,38 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.recheck.v1",
+  "checkedAt": "2026-10-08T11:07:00+11:00",
+  "universe": 101,
+  "status": "IN_PROGRESS",
+  "coverage": {
+    "identity": "101/101",
+    "formPresent": "101/101",
+    "officialWeights": "101/101",
+    "horseSpecificTrainingBaseVerifiedRuntime": "84/101",
+    "silkExact": "77/101",
+    "rasPublicRating": "52/101"
+  },
+  "newlyVerified": {
+    "horse": "Campaldino",
+    "field": "horseSpecificTrainingBase",
+    "value": "Flemington, VIC",
+    "evidenceFile": "data/intelligence/2026-10-08-campaldino-flemington-base-verification.json",
+    "reconciles": "Randwick trainer-operation fallback",
+    "evidenceStatus": "VERIFIED",
+    "runtimePromotion": "PENDING"
+  },
+  "remainingPublicGaps": {
+    "horseSpecificTrainingBaseRuntime": "17/101",
+    "silkExact": "24/101",
+    "rasPublicRating": "49/101"
+  },
+  "governance": {
+    "fixedOriginalNomineeUniverse": true,
+    "noRatingInference": true,
+    "timeformSeparate": true,
+    "ambiguousEvidenceQuarantined": true,
+    "completion": false,
+    "notifyUser": false
+  },
+  "completion": false,
+  "notifyUser": false
+}
