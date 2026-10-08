@@ -1,0 +1,49 @@
+{
+  "schema": "melbourne_cup_hub.acquisition.horse_specific_training_base.v1",
+  "observedAt": "2026-10-08T11:07:00+11:00",
+  "universe": "Fixed 101 original 2026 Melbourne Cup nominees",
+  "horse": "Campaldino",
+  "identity": {
+    "trainer": "Gai Waterhouse & Adrian Bott",
+    "sire": "Ghibellines",
+    "dam": "Zuzana",
+    "matchStatus": "VERIFIED"
+  },
+  "verified": {
+    "trainingBase": "Flemington, VIC",
+    "stateCountry": "Australia",
+    "basis": "HORSE_SPECIFIC_CURRENT",
+    "effectiveEvidenceDate": "2026-09-30",
+    "context": "Waterhouse explicitly said the horse is now based at Flemington after coming down from Sydney; trainer has Flemington boxes. Horse ran The Bart Cummings at Flemington on 2026-10-03."
+  },
+  "source": {
+    "publisher": "Racing & Sports",
+    "articleDate": "2026-09-30",
+    "url": "https://www.racingandsports.com.au/news/racing/news/2026-09-30/waterhouse-expecting-campaldino-improvement/722334",
+    "evidenceType": "Direct trainer statement reported by racing journalist"
+  },
+  "corroboration": [
+    {
+      "publisher": "Breednet",
+      "url": "https://www.breednet.com.au/horse/campaldino",
+      "scope": "Horse-specific trainer location Flemington and pedigree"
+    },
+    {
+      "publisher": "Gai Waterhouse & Adrian Bott Racing",
+      "url": "https://www.gaiwaterhouse.com.au/about",
+      "scope": "Trainer has Flemington stable boxes; not alone sufficient for horse-specific attribution"
+    }
+  ],
+  "conflictResolution": {
+    "priorValue": "Randwick, NSW",
+    "priorBasis": "USER_DIRECTED_CITY_BASE",
+    "outcome": "REPLACED_BY_DATED_HORSE_SPECIFIC_EVIDENCE",
+    "explanation": "Prior Randwick value was trainer-level city allocation, not horse-specific observation. Direct 30 Sep Waterhouse statement identifies relocation to Flemington."
+  },
+  "governance": {
+    "original101Preserved": true,
+    "noRatingInference": true,
+    "noFormStartInferred": true,
+    "sourceConflictReconciled": true
+  }
+}
